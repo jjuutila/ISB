@@ -66,10 +66,11 @@ Isb::Application.routes.draw do
   #end 
   
   namespace 'admin' do
+    resources :news
     resources :sections
     resources :team_standings do
      get 'edit_multiple', :on => :collection
     end
-    resources :seasons
+    resources :seasons    
   end
 end
