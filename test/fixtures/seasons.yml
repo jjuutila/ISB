@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  division: MyString
+  history: MyText
+  state: MyString
+  section: 
+  start_year: 1
+
+two:
+  division: MyString
+  history: MyText
+  state: MyString
+  section: 
+  start_year: 1

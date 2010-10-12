@@ -1,0 +1,9 @@
+- form_for(edit_multiple_admin_team_standings_path()) do |f|
+
+  - @admin_team_standings.each do |team_standings|
+    = label :for => "team_standings"
+    - team_standings.error
+      %p
+        Virhe
+    = text_field_tag("team_stadings[#{@counter++}][wins]", team_stadings.wins)
+  

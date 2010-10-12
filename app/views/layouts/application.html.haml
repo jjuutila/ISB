@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}/
+    %title= "ISB " + controller.controller_name.capitalize
+    = csrf_meta_tag
+    = stylesheet_link_tag :all
+    = javascript_include_tag :defaults
+  %body
+    .header#header
+      = render :partial => 'layouts/header'
+      .menu#menu= render :partial => 'layouts/menu'
+    .content#content= yield

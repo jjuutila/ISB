@@ -1,0 +1,17 @@
+%h1 Section
+
+#sub-menu
+  %ul
+    %li
+      = link_to t('new', :target => Section.human_name), new_admin_section_path()
+
+%table
+  %thead
+    %tr
+      Nimi
+    %tr
+      Lapset
+    %tr
+      = t('edit', :target => Section.human_name)
+  %tbody
+    = render :partial => 'section_row', :collection => @admin_sections

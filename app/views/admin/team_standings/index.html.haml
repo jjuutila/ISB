@@ -1,0 +1,15 @@
+%h1= t('.title')
+%p= link_to t('.new_team_standind'), new_admin_team_standing_path
+
+%table
+  %thead
+    %tr
+
+      %th{:colspan => 3}= t 'actions'
+  
+  %tbody
+    - for team_standing in @admin_team_standings
+      %tr{ :class => cycle(:odd, :even) }
+
+        %td.action= link_to t('edit'), edit_admin_team_standing_path(team_standing)
+        %td.action= link_to t('destroy'), admin_team_standing_path(team_standing), :confirm => t('are_you_sure'), :method => :delete

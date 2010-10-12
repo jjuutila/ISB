@@ -1,0 +1,15 @@
+%h1= t('.title')
+%p= link_to t('.new_season'), new_admin_season_path
+
+%table
+  %thead
+    %tr
+
+      %th{:colspan => 3}= t 'actions'
+  
+  %tbody
+    - for season in @admin_seasons
+      %tr{ :class => cycle(:odd, :even) }
+
+        %td.action= link_to t('edit'), edit_admin_season_path(season)
+        %td.action= link_to 'poista', admin_season_path(season), :confirm => 'ookko varma', :method => :delete
