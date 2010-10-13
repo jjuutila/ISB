@@ -68,30 +68,30 @@ div.Content {
     padding:10px;
 }
 
-.Content fieldset {
+.content fieldset {
     background-color: #F9F9F9;
     border: 1px solid #e4dee1;
 }
 
-.Content a {
+.content a {
     color:blue;
 }
 
-.Content img {
+.content img {
     vertical-align: middle;
 }
 
-.Content table {
+.content table {
     border-collapse:collapse;
     border-bottom:1px solid #000000;
 }
 
-.Content th {
+.content th {
     font: bold 1.1em Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #000000;
 }
 
-.Content td {
+.content td {
     padding:3px;
 }
 tr.OddRow {
@@ -112,7 +112,11 @@ tr.OddRow {
     width: 180px;   
 }
 
-#Menu {
+.inputs ol, .buttons ol {
+  list-style: none;
+}
+
+#menu {
     margin-top:1px;
     float:left;
     width:280px;
@@ -123,7 +127,7 @@ tr.OddRow {
     background-color:#f9f9f9;   
 }
 
-#Menu ul{
+#menu ul{
     list-style: none;
     margin:0;
     padding:0;
@@ -132,13 +136,13 @@ tr.OddRow {
     border-bottom-style:solid;
 }
 
-#Menu ul li {
+#menu ul li {
     margin-bottom:1px;
     width:280px;
     padding:0px;
 }
 
-#Menu ul li a {
+#menu ul li a {
     display:block;
     padding-left:5px;
     line-height:20px;
@@ -160,7 +164,7 @@ tr.OddRow {
     border-right-color:#7E9AD3;
 }
 
-#Menu a:hover, #Menu a.Active {
+#menu a:hover, #menu a.Active {
     background-color:#7899cf;
     border-color:#4477cc;
 }
@@ -171,15 +175,12 @@ tr.OddRow {
     border-left-width:10px;
 }
 
-#Footer {
+#footer {
     background-color: #f9f9f9;
     border:1px solid #e4dee1;
     border-right:10px solid #c4d1eb;
     border-left:10px solid #c4d1eb;
-    font-family:Arial, Helvetica, sans-serif;
-    font-style:normal;
-    font-weight:bold;
-    display:block;
+    font:bold 1.0em Arial, Helvetica, sans-serif;
     padding:4px 10px 4px 0;
     clear:both;
     color:#303032;

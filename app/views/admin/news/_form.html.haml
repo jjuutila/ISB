@@ -1,12 +1,10 @@
-= form_for(@news) do |f|
-  - if @news.errors.any?
-    #errorExplanation
-      %h2= "#{pluralize(@news.errors.count, 'error')} prohibited this user from being saved:"
-      %ul
-      - @news.errors.full_messages.each do |msg|
-        %li= msg
+    
+- semantic_form_for @news, :url => url do |form| 
+  - form.inputs do
+    = form.input :section, :as => :check_boxes, :label => 'Joukkueosiot',
+      :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])
+    = form.input :title, :label => 'Otsikko'
+    = form.input :content, :label => 'Sisältö'
   
-
-
-  .actions
-    = f.submit
+  - form.buttons do
+    = form.commit_button :label => 'Lähetä'

@@ -1,3 +1,3 @@
 %h1= t '.title'
-%p= link_to t('back'), news_path
-= render 'form'
+%p= link_to 'Takaisin', admin_news_index_path
+= render :partial => 'form', :locals => {:url => admin_news_index_path(@news)}
