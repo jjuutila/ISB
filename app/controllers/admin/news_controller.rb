@@ -1,7 +1,6 @@
 class Admin::NewsController < Admin::BaseController
   # GET /admin/news
   # GET /admin/news.xml
-  
   def index
     @news = Admin::News.all
 
@@ -41,12 +40,12 @@ class Admin::NewsController < Admin::BaseController
   # POST /admin/news
   # POST /admin/news.xml
   def create
-    @news = Admin::News.new(params[:admin_news])
+    @news = Admin::News.new(params[:news])
 
     respond_to do |format|
       if @news.save
-        format.html { redirect_to(@news, :notice => 'News was successfully created.') }
-        format.xml  { render :xml => @news, :status => :created, :location => @admin_news }
+        format.html { redirect_to(admin_news_index_path, :notice => 'Uusi uutinen lisätty.') }
+        format.xml  { render :xml => @news, :status => :created, :location => admin_news_index_path }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @news.errors, :status => :unprocessable_entity }
@@ -60,12 +59,12 @@ class Admin::NewsController < Admin::BaseController
     @news = Admin::News.find(params[:id])
 
     respond_to do |format|
-      if @news.update_attributes(params[:admin_news])
-        format.html { redirect_to(@news, :notice => 'News was successfully updated.') }
+      if @news.update_attributes(params[:news])
+        format.html { redirect_to(admin_news_index_path, :notice => 'Uutinen päivitetty.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @anews.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @news.errors, :status => :unprocessable_entity }
       end
     end
   end

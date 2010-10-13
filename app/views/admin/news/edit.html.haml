@@ -1,5 +1,5 @@
 %h1= t '.title'
 %p
-  = link_to t('back'), admin_news_index_path
-  = link_to t('show'), @news
+  = link_to 'Takaisin', admin_news_index_path
+  = link_to 'Näytä', admin_news_path @news
 = render 'form'
