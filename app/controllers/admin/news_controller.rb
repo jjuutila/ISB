@@ -1,10 +1,9 @@
+# coding: utf-8
 class Admin::NewsController < Admin::BaseController
   # GET /admin/news
   # GET /admin/news.xml
   
   def index
-    @news = Admin::News.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @news }

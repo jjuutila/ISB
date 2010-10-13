@@ -1,3 +1,4 @@
+# coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
   # GET /admin/team_standinds
   # GET /admin/team_standinds.xml
