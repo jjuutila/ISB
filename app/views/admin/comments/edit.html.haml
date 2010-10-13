@@ -1,0 +1,8 @@
+%h1= t '.title'
+%p
+  = link_to t('back'), admin_comments_path
+  
+- semantic_form_for @admin_comment, :url => admin_comment_path(@admin_comment) do |form| 
+  = render :partial => 'form', :object => form
+  - form.buttons do
+    = form.commit_button "Tallenna"
