@@ -1,10 +1,7 @@
-    
-- semantic_form_for @news, :url => url do |form| 
-  - form.inputs do
-    = form.input :section, :as => :check_boxes, :label => 'Joukkueosiot',
-      :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])
-    = form.input :title, :label => 'Otsikko'
-    = form.input :content, :label => 'Sisältö'
+- form.inputs do
+  = form.input :section, :as => :check_boxes, :label => 'Joukkueosiot',
+    :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])
+  = form.input :title, :label => 'Otsikko'
+  = form.input :content, :label => 'Sisältö'
   
-  - form.buttons do
-    = form.commit_button :label => 'Lähetä'
+

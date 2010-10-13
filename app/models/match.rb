@@ -1,3 +1,4 @@
+# coding: utf-8
 class Match < ActiveRecord::Base
   belongs_to :home_team, :class_name => 'TeamStanding'
   belongs_to :visitor_team, :class_name => 'TeamStanding'

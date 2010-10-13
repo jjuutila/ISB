@@ -1,5 +1,5 @@
 namespace :db do
-  desc "Load YAML seed data from db/fixtures"
+  desc "Load YAML seed data from db/data"
   task :import => :environment do
     require 'yaml'
     yml = YAML::load(File.open(File.join( RAILS_ROOT, 'db', 'data', 'sections.yml' )))

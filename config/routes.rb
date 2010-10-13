@@ -72,5 +72,6 @@ Isb::Application.routes.draw do
      get 'edit_multiple', :on => :collection
     end
     resources :seasons    
+    resources :comments
   end
 end

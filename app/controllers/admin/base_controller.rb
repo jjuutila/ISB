@@ -1,4 +1,4 @@
 # coding: utf-8
-class Admin::BaseController < ApplicationController
+class Admin::BaseController < ActionController::Base
   layout 'admin/application'
 end

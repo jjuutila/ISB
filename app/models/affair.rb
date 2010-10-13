@@ -1,3 +1,4 @@
+# coding: utf-8
 class Affair < ActiveRecord::Base
   belongs_to :member
   belongs_to :season

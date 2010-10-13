@@ -1,3 +1,4 @@
+# coding: utf-8
 class Season < ActiveRecord::Base
   belongs_to :section
   has_many :member, :through => :affairs

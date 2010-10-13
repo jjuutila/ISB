@@ -1,3 +1,8 @@
 %h1= t '.title'
+
 %p= link_to 'Takaisin', admin_news_index_path
-= render :partial => 'form', :locals => {:url => admin_news_index_path}
+
+- semantic_form_for @news, :url => admin_news_index_path do |form| 
+  = render :partial => 'form', :object => form
+  - form.buttons do
+    = form.commit_button :label => 'Luo uusi'

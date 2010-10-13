@@ -10,5 +10,9 @@
     .header#header
       = render :partial => 'layouts/admin/header'
     .menu#menu= render :partial => 'layouts/admin/menu'
-    .content#content= yield
+    
+    .content
+      #notice
+        = flash[:warning] || flash[:notice]
+      #content= yield
     #footer © Ilmajoen Salibandy

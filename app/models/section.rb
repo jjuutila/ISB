@@ -1,3 +1,4 @@
+# coding: utf-8
 class Section < ActiveRecord::Base
   belongs_to :parent, :class_name => "Section"
   has_many :sections, :foreign_key => "parent_id"

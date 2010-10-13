@@ -1,5 +1,9 @@
 %h1= t '.title'
 %p
   = link_to 'Takaisin', admin_news_index_path
-  = link_to 'Näytä', admin_news_path @news
-= render 'form'
+  = link_to 'Näytä', admin_news_path(@news)
+  
+- semantic_form_for @news, :url => admin_news_path(@news) do |form| 
+  = render :partial => 'form', :object => form
+  - form.buttons do
+    = form.commit_button :label => 'Tallenna'
