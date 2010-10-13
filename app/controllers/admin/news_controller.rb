@@ -1,3 +1,5 @@
+# coding: utf-8
+
 class Admin::NewsController < Admin::BaseController
   # GET /admin/news
   # GET /admin/news.xml
