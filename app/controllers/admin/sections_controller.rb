@@ -1,4 +1,4 @@
-class Admin::SectionsController < ApplicationController
+class Admin::SectionsController < Admin::BaseController
   # GET /admin/sections
   # GET /admin/sections.xml
   def index
