@@ -1,3 +1,4 @@
+# coding: utf-8
 class Admin::SeasonsController < Admin::BaseController
   # GET /admin/seasons
   # GET /admin/seasons.xml

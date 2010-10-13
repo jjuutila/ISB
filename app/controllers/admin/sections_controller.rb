@@ -1,3 +1,4 @@
+# coding: utf-8
 class Admin::SectionsController < Admin::BaseController
   # GET /admin/sections
   # GET /admin/sections.xml
