@@ -68,6 +68,11 @@ ActiveRecord::Schema.define(:version => 20101009151700) do
     t.datetime "updated_at"
   end
 
+  create_table "news_sections", :id => false, :force => true do |t|
+    t.integer "news_id"
+    t.integer "section_id"
+  end
+
   create_table "partitions", :force => true do |t|
     t.string   "name"
     t.integer  "season_id"

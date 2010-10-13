@@ -1,4 +1,4 @@
-class Admin::SeasonsController < ApplicationController
+class Admin::SeasonsController < Admin::BaseController
   # GET /admin/seasons
   # GET /admin/seasons.xml
   def index

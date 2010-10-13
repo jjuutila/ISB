@@ -1,4 +1,4 @@
-class Admin::TeamStandingsController < ApplicationController
+class Admin::TeamStandingsController < Admin::BaseController
   # GET /admin/team_standinds
   # GET /admin/team_standinds.xml
   def index

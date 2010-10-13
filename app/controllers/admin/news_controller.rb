@@ -1,6 +1,7 @@
-class Admin::NewsController < ApplicationController
+class Admin::NewsController < Admin::BaseController
   # GET /admin/news
   # GET /admin/news.xml
+  
   def index
     @news = Admin::News.all
 
