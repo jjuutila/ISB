@@ -1,5 +1,7 @@
-%h1 Kommentit
-%p= link_to 'Luo uusi vieraskijamerkintä', new_admin_comment_path
+%h1 Vieraskirja
+%p
+  %a{:href => new_admin_comment_path}= image_tag('add.png')
+  %a{:href => new_admin_comment_path}= 'Luo uusi vieraskirjamerkintä'
 
 %table
   %thead
@@ -8,7 +10,7 @@
       %th= 'Aika'
       %th= 'Otsikko'
       %th= 'Kirjoittaja'
-      %th{:colspan => 25}= 'Toiminnot'
+      %th{:colspan => 2}= 'Toiminnot'
   
   %tbody
     - for comment in @admin_comments
@@ -17,8 +19,8 @@
         %td= comment.created_at
         %td= comment.title
         %td= comment.author
-        %td.action= link_to 'Muokkaa', edit_admin_comment_path(comment)
-        %td.action= link_to 'Poista', admin_comment_path(comment),
+        %td.action= link_to image_tag('pencil.png'), edit_admin_comment_path(comment), :title => 'Muokkaa'
+        %td.action= link_to image_tag('cross.png'), admin_comment_path(comment), :title => 'Poista',
           :confirm => "Haluatko varmasti poistaa viestin \"#{comment.title}\"?", :method => :delete
 
 = will_paginate @admin_comments

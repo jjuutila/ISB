@@ -62,39 +62,39 @@ span#header_text {
     margin:55px 0 0 5px;
 }
 
-div.Content {
+div#content {
     margin:20px 10px 20px 300px;
     border:1px solid #e4dee1;
     padding:10px;
 }
 
-.content fieldset {
+#content fieldset {
     background-color: #F9F9F9;
     border: 1px solid #e4dee1;
 }
 
-.content a {
+#content a {
     color:blue;
 }
 
-.content img {
+#content img {
     vertical-align: middle;
 }
 
-.content table {
+#content table {
     border-collapse:collapse;
     border-bottom:1px solid #000000;
 }
 
-.content th {
+#content th {
     font: bold 1.1em Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #000000;
 }
 
-.content td {
+#content td {
     padding:3px;
 }
-tr.OddRow {
+tr.even {
     background-color:#f4f4f4;
 }
 
