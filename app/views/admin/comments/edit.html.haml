@@ -1,6 +1,6 @@
-%h1= t '.title'
+%h1= 'Muokkaa viestiä'
 %p
-  = link_to t('back'), admin_comments_path
+  = link_to 'Takaisin', admin_comments_path
   
 - semantic_form_for @admin_comment, :url => admin_comment_path(@admin_comment) do |form| 
   = render :partial => 'form', :object => form
