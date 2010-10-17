@@ -1,3 +1,4 @@
+# coding: utf-8
 class Admin::CommentsController < Admin::BaseController
   # GET /admin/comments
   # GET /admin/comments.xml
@@ -23,7 +24,7 @@ class Admin::CommentsController < Admin::BaseController
   # GET /admin/comments/new
   # GET /admin/comments/new.xml
   def new
-    @admin_comment = Admin::Comment.new
+    @admin_comment = Comment.new(:commentable_id => selected_section.id)
 
     respond_to do |format|
       format.html # new.html.erb

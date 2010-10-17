@@ -1,4 +1,4 @@
-- form.inputs do
+= form.inputs do
   = form.input :section, :as => :check_boxes, :label => 'Joukkueosiot',
     :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])
   = form.input :title, :label => 'Otsikko'

@@ -63,9 +63,10 @@ Isb::Application.routes.draw do
   #scope(:name => "section", :path_names => { :new => "uusi", :edit => "muokkaa" }) do  
     #resources :news, :path => ":section/uutiset"
     #resources :seasons, :path => "kausi"
-  #end 
+  #end
   
   namespace 'admin' do
+    root :to => "News#index"
     resources :news
     resources :sections
     resources :team_standings do

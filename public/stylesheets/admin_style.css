@@ -174,15 +174,20 @@ tr.even {
     border-left-style:solid;
     border-left-width:10px;
 }
+td.action {
+  text-align: center;
+} 
 
 #footer {
-    background-color: #f9f9f9;
-    border:1px solid #e4dee1;
-    border-right:10px solid #c4d1eb;
-    border-left:10px solid #c4d1eb;
-    font:bold 1.0em Arial, Helvetica, sans-serif;
-    padding:4px 10px 4px 0;
-    clear:both;
-    color:#303032;
-    text-align:right;
+  background-color: #f9f9f9;
+  border:1px solid #e4dee1;
+  border-right:10px solid #c4d1eb;
+  border-left:10px solid #c4d1eb;
+  font:bold 0.90em Arial, Helvetica, sans-serif;
+  padding:4px 0 4px 10px;
+  clear:both;
+  color:#7e7e7e;
+}
+#footer a {
+  color:#7e7e7e;
 }

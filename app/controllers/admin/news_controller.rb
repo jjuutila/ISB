@@ -4,6 +4,10 @@ class Admin::NewsController < Admin::BaseController
   # GET /admin/news
   # GET /admin/news.xml
   def index
+    #first = Admin::Section.find(2)
+    #set_selected_section first
+    @selected_section = selected_section
+    
     @news = Admin::News.find(:all)
     respond_to do |format|
       format.html # index.html.erb
@@ -25,8 +29,8 @@ class Admin::NewsController < Admin::BaseController
   # GET /admin/news/new
   # GET /admin/news/new.xml
   def new
-    @news = Admin::News.new
-
+    @news = News.new()
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @news }
