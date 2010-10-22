@@ -1,7 +1,5 @@
 = form.inputs do
-  = form.input :section, :as => :check_boxes, :label => 'Joukkueosiot',
+  = form.input :sections, :as => :check_boxes, :label => 'Joukkueosiot',
     :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])
   = form.input :title, :label => 'Otsikko'
   = form.input :content, :label => 'Sisältö'
-  
-

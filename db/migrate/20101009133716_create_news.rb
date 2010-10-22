@@ -2,7 +2,6 @@ class CreateNews < ActiveRecord::Migration
   def self.up
     create_table :news do |t|
       t.string :slug
-      t.references :section
       t.string :title
       t.text :content
 
