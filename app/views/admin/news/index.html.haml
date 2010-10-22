@@ -1,5 +1,8 @@
 %h1 Ajankohtaista
-%p= link_to 'Luo uusi uutinen', new_admin_news_path
+%p
+  %a{:href => new_admin_news_path, :title => 'Luo uusi uutinen'}= image_tag('add.png')
+  %a{:href => new_admin_news_path}= 'Luo uusi uutinen'
+  
 %h2 Uutiset
 %table
   %thead
