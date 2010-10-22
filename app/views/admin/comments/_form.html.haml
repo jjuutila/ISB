@@ -1,4 +1,4 @@
-- form.inputs do
+= form.inputs do
   = form.input :title, :label => 'Otsikko'
   = form.input :content, :label => 'Viesti'
   = form.input :commentable, :label => 'Kohde', :as => :select, :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"], :select => [:id, :name])

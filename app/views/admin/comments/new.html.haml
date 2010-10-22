@@ -1,7 +1,7 @@
 %h1= 'Luo uusi vieraskirjaviesti'
 %p= link_to 'Takaisin', admin_comments_path
 
-- semantic_form_for @admin_comment, :url => admin_comments_path() do |form| 
+= semantic_form_for @admin_comment, :url => admin_comments_path() do |form| 
   = render :partial => 'form', :object => form
-  - form.buttons do
+  = form.buttons do
     = form.commit_button "Tallenna"
