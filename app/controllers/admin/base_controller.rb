@@ -3,8 +3,13 @@ class Admin::BaseController < ActionController::Base
   layout 'admin/application'
   
   def selected_section 
-    @_selected_section ||= session[:selected_section] && Section.find(session[:selected_section])
-    @_selected_section ||= Section.find(:first, :conditions => ["parent_id NOT NULL"])
+    @selected_section ||= session[:selected_section] && Section.find(session[:selected_section])
+    @selected_section ||= Section.find(:first, :conditions => ["parent_id NOT NULL"])
+    
+    if !@selected_section
+      throw "No sections in the database."
+    end
+    return @selected_section
   end
   
   def set_selected_section(section)
