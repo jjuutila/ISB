@@ -8,7 +8,7 @@ class Admin::NewsController < Admin::BaseController
     #set_selected_section first
     @selected_section = selected_section
     
-    @news = Admin::News.find(:all)
+    @news = News.find(:all)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @news }
@@ -29,7 +29,7 @@ class Admin::NewsController < Admin::BaseController
   # GET /admin/news/new
   # GET /admin/news/new.xml
   def new
-    @news = News.new()
+    @news = News.new(:sections => [selected_section])
     
     respond_to do |format|
       format.html # new.html.erb
@@ -39,13 +39,13 @@ class Admin::NewsController < Admin::BaseController
 
   # GET /admin/news/1/edit
   def edit
-    @news = Admin::News.find(params[:id])
+    @news = News.find(params[:id])
   end
 
   # POST /admin/news
   # POST /admin/news.xml
   def create
-    @news = Admin::News.new(params[:news])
+    @news = News.new(params[:news])
 
     respond_to do |format|
       if @news.save
@@ -77,7 +77,7 @@ class Admin::NewsController < Admin::BaseController
   # DELETE /admin/news/1
   # DELETE /admin/news/1.xml
   def destroy
-    @news = Admin::News.find(params[:id])
+    @news = News.find(params[:id])
     @news.destroy
 
     respond_to do |format|
