@@ -4,11 +4,9 @@ class Admin::NewsController < Admin::BaseController
   # GET /admin/news
   # GET /admin/news.xml
   def index
-    #first = Admin::Section.find(2)
-    #set_selected_section first
     @selected_section = selected_section
     
-    @news = News.find(:all)
+    @news = News.joins(:sections).where(:sections => {:id => @selected_section.id})
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @news }
