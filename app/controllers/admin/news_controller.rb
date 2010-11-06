@@ -6,7 +6,7 @@ class Admin::NewsController < Admin::BaseController
   def index
     @selected_section = selected_section
     
-    @news = News.joins(:sections).where(:sections => {:id => @selected_section.id})
+    @news = News.in_section(@selected_section)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @news }
