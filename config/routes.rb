@@ -67,6 +67,7 @@ Isb::Application.routes.draw do
   
   namespace 'admin' do
     root :to => "News#index"
+    match "change_section" => "base#change_section" 
     resources :news
     resources :sections
     resources :team_standings do

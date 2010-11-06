@@ -15,4 +15,10 @@ class Admin::BaseController < ActionController::Base
   def set_selected_section(section)
     session[:selected_section] = section
   end
+  
+  def change_section
+  	selected_section_id = params[:selected_section][:id]
+  	set_selected_section Section.find(selected_section_id)
+  	redirect_to :back
+  end
 end
