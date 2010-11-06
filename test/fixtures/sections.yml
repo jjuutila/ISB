@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  slug: MyString
+miehet:
+  slug: miehet
   parent: 
-  name: MyString
+  name: Miehet
 
-two:
-  slug: MyString
-  parent: 
-  name: MyString
+edustus:
+  slug: miehet-edustus
+  parent: miehet 
+  name: Edustus
