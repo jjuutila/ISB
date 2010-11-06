@@ -7,6 +7,9 @@ h1 {
     letter-spacing:.09em;
     
 }
+img {
+	border:none;
+}
 #header {
     background-color: #f9f9f9;
     border-right:10px solid #c4d1eb;
