@@ -1,0 +1,4 @@
+%form(action= admin_change_section_path method='POST')
+  %label{:for => "selected_section_name"} Joukkueosio
+  =collection_select(:selected_section, :id, sections, :id, :name, :prompt => true)
+  %input(type='submit' value='Valitse')

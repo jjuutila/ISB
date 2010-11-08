@@ -3,11 +3,8 @@
   %a{:href => new_admin_news_path, :title => 'Luo uusi uutinen'}= image_tag('add.png')
   %a{:href => new_admin_news_path}= 'Luo uusi uutinen'
   
-%form(action= admin_change_section_path method='POST')
-  %label{:for => "selected_section_name"} Joukkueosio: 
-  =collection_select(:selected_section, :id, Section.leafs, :id, :name, :prompt => true)
-  %input(type='submit' value='Valitse')
-  
+= render :partial => 'admin/section_selection', :locals => { :sections => Section.leafs }
+
 %h2 Uutiset
 %table
   %thead
