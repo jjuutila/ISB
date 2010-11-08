@@ -5,4 +5,13 @@ class Season < ActiveRecord::Base
   
   validates_numericality_of :start_year, :only_integer => true, :greater_than => 2000, :message => 'kebabpizza'
   validates_presence_of :division
+  
+  def to_s
+    timespan + ', ' + division
+  end
+  
+  def timespan
+    end_year = start_year + 1
+    start_year.to_s << '-' + end_year.to_s 
+  end
 end
