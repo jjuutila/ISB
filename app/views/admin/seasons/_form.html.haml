@@ -1,9 +1,9 @@
 - semantic_form_for @admin_season, :url => url do |form| 
   - form.inputs do
-    = form.input :division, :label => 'Division'
-    = form.input :history, :label => 'History'
-    = form.input :section, :as => :select, :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])
-    = form.input :start_year, :label => "Start year"
-  
+    = form.input :section, :as => :select, :label => "Joukkueosio",
+      :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])      
+    = form.input :start_year, :label => "Aloitusvuosi"
+    = form.input :division, :label => 'Divisioona'
+    = form.input :history, :label => 'Historiakertomus'
   - form.buttons do
-    = form.commit_button
+    = form.commit_button :label => 'Tallenna'
