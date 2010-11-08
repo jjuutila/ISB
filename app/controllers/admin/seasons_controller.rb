@@ -3,7 +3,7 @@ class Admin::SeasonsController < Admin::BaseController
   # GET /admin/seasons
   # GET /admin/seasons.xml
   def index
-    @admin_seasons = Admin::Season.all
+    @admin_seasons = Admin::Season.where(:section_id => selected_section.id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,7 +25,7 @@ class Admin::SeasonsController < Admin::BaseController
   # GET /admin/seasons/new
   # GET /admin/seasons/new.xml
   def new
-    @admin_season = Admin::Season.new
+    @admin_season = Admin::Season.new(:section_id => selected_section.id)
 
     respond_to do |format|
       format.html # new.html.haml
@@ -45,8 +45,8 @@ class Admin::SeasonsController < Admin::BaseController
 
     respond_to do |format|
       if @admin_season.save
-        format.html { redirect_to(@admin_season, :notice => 'Season was successfully created.') }
-        format.xml  { render :xml => @admin_season, :status => :created, :location => @admin_season }
+        format.html { redirect_to(admin_seasons_path, :notice => 'Season was successfully created.') }
+        format.xml  { render :xml => @admin_season, :status => :created, :location => admin_seasons_path }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @admin_season.errors, :status => :unprocessable_entity }
