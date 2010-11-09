@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(:version => 20101009151700) do
 
   create_table "news", :force => true do |t|
     t.string   "slug"
+    t.integer  "section_id"
     t.string   "title"
     t.text     "content"
     t.datetime "created_at"

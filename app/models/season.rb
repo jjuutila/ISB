@@ -11,7 +11,6 @@ class Season < ActiveRecord::Base
   end
   
   def timespan
-    end_year = start_year + 1
-    start_year.to_s << '-' + end_year.to_s 
+    "#{start_year}-#{start_year + 1}"
   end
 end
