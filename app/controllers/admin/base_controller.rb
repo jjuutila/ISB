@@ -4,7 +4,7 @@ class Admin::BaseController < ActionController::Base
   
   def selected_section 
     @selected_section ||= session[:selected_section] && Section.find(session[:selected_section])
-    @selected_section ||= Section.find(:first, :conditions => ["parent_id NOT NULL"])
+    @selected_section ||= Section.leafs.first
     
     if !@selected_section
       throw "No sections in the database."
