@@ -3,7 +3,7 @@ class Admin::CommentsController < Admin::BaseController
   # GET /admin/comments
   # GET /admin/comments.xml
   def index
-    @admin_comments = Admin::Comment.paginate :page => params[:page], :order => 'created_at DESC'
+    @admin_comments = Comment.paginate :page => params[:page], :order => 'created_at DESC'
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @admin_comments }
@@ -13,7 +13,7 @@ class Admin::CommentsController < Admin::BaseController
   # GET /admin/comments/1
   # GET /admin/comments/1.xml
   def show
-    @admin_comment = Admin::Comment.find(params[:id])
+    @admin_comment = Comment.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,13 +34,13 @@ class Admin::CommentsController < Admin::BaseController
 
   # GET /admin/comments/1/edit
   def edit
-    @admin_comment = Admin::Comment.find(params[:id])
+    @admin_comment = Comment.find(params[:id])
   end
 
   # POST /admin/comments
   # POST /admin/comments.xml
   def create
-    @admin_comment = Admin::Comment.new(params[:comment])
+    @admin_comment = Comment.new(params[:comment])
     
     respond_to do |format|
       if @admin_comment.save
@@ -56,7 +56,7 @@ class Admin::CommentsController < Admin::BaseController
   # PUT /admin/comments/1
   # PUT /admin/comments/1.xml
   def update
-    @admin_comment = Admin::Comment.find(params[:id])
+    @admin_comment = Comment.find(params[:id])
 
     respond_to do |format|
       if @admin_comment.update_attributes(params[:comment])
@@ -72,7 +72,7 @@ class Admin::CommentsController < Admin::BaseController
   # DELETE /admin/comments/1
   # DELETE /admin/comments/1.xml
   def destroy
-    @admin_comment = Admin::Comment.find(params[:id])
+    @admin_comment = Comment.find(params[:id])
     @admin_comment.destroy
 
     respond_to do |format|

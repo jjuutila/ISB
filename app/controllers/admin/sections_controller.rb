@@ -3,7 +3,7 @@ class Admin::SectionsController < Admin::BaseController
   # GET /admin/sections
   # GET /admin/sections.xml
   def index
-    @admin_sections = Admin::Section.all
+    @admin_sections = Section.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +14,7 @@ class Admin::SectionsController < Admin::BaseController
   # GET /admin/sections/1
   # GET /admin/sections/1.xml
   def show
-    @admin_section = Admin::Section.find(params[:id])
+    @admin_section = Section.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,7 +25,7 @@ class Admin::SectionsController < Admin::BaseController
   # GET /admin/sections/new
   # GET /admin/sections/new.xml
   def new
-    @admin_section = Admin::Section.new
+    @admin_section = Section.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,13 +35,13 @@ class Admin::SectionsController < Admin::BaseController
 
   # GET /admin/sections/1/edit
   def edit
-    @admin_section = Admin::Section.find(params[:id])
+    @admin_section = Section.find(params[:id])
   end
 
   # POST /admin/sections
   # POST /admin/sections.xml
   def create
-    @admin_section = Admin::Section.new(params[:section])
+    @admin_section = Section.new(params[:section])
 
     respond_to do |format|
       if @admin_section.save
@@ -57,7 +57,7 @@ class Admin::SectionsController < Admin::BaseController
   # PUT /admin/sections/1
   # PUT /admin/sections/1.xml
   def update
-    @admin_section = Admin::Section.find(params[:id])
+    @admin_section = Section.find(params[:id])
 
     respond_to do |format|
       if @admin_section.update_attributes(params[:section])
@@ -73,7 +73,7 @@ class Admin::SectionsController < Admin::BaseController
   # DELETE /admin/sections/1
   # DELETE /admin/sections/1.xml
   def destroy
-    @admin_section = Admin::Section.find(params[:id])
+    @admin_section = Section.find(params[:id])
     @admin_section.destroy
 
     respond_to do |format|

@@ -16,7 +16,7 @@ class Admin::NewsController < Admin::BaseController
   # GET /admin/news/1
   # GET /admin/news/1.xml
   def show
-    @news = Admin::News.find(params[:id])
+    @news = News.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -59,7 +59,7 @@ class Admin::NewsController < Admin::BaseController
   # PUT /admin/news/1
   # PUT /admin/news/1.xml
   def update
-    @news = Admin::News.find(params[:id])
+    @news = News.find(params[:id])
 
     respond_to do |format|
       if @news.update_attributes(params[:news])
