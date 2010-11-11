@@ -3,7 +3,7 @@ class Admin::SeasonsController < Admin::BaseController
   # GET /admin/seasons
   # GET /admin/seasons.xml
   def index
-    @admin_seasons = Admin::Season.where(:section_id => selected_section.id)
+    @admin_seasons = Season.where(:section_id => selected_section.id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +14,7 @@ class Admin::SeasonsController < Admin::BaseController
   # GET /admin/seasons/1
   # GET /admin/seasons/1.xml
   def show
-    @admin_season = Admin::Season.find(params[:id])
+    @admin_season = Season.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -25,8 +25,9 @@ class Admin::SeasonsController < Admin::BaseController
   # GET /admin/seasons/new
   # GET /admin/seasons/new.xml
   def new
-    @admin_season = Admin::Season.new(:section_id => selected_section.id)
-
+    @admin_season = Season.new(:section_id => selected_section.id,
+      :partitions => [Partition.new(:name => 'Runkosarja', :position => 1)])
+    
     respond_to do |format|
       format.html # new.html.haml
       format.xml  { render :xml => @admin_season }
@@ -35,17 +36,17 @@ class Admin::SeasonsController < Admin::BaseController
 
   # GET /admin/seasons/1/edit
   def edit
-    @admin_season = Admin::Season.find(params[:id])
+    @admin_season = Season.find(params[:id])
   end
 
   # POST /admin/seasons
   # POST /admin/seasons.xml
   def create
-    @admin_season = Admin::Season.new(params[:season])
+    @admin_season = Season.new(params[:season])
 
     respond_to do |format|
       if @admin_season.save
-        format.html { redirect_to(admin_seasons_path, :notice => 'Season was successfully created.') }
+        format.html { redirect_to(admin_seasons_path, :notice => 'Uusi kausi luotu.') }
         format.xml  { render :xml => @admin_season, :status => :created, :location => admin_seasons_path }
       else
         format.html { render :action => "new" }
@@ -57,7 +58,7 @@ class Admin::SeasonsController < Admin::BaseController
   # PUT /admin/seasons/1
   # PUT /admin/seasons/1.xml
   def update
-    @admin_season = Admin::Season.find(params[:id])
+    @admin_season = Season.find(params[:id])
 
     respond_to do |format|
       if @admin_season.update_attributes(params[:season])
@@ -73,7 +74,7 @@ class Admin::SeasonsController < Admin::BaseController
   # DELETE /admin/seasons/1
   # DELETE /admin/seasons/1.xml
   def destroy
-    @admin_season = Admin::Season.find(params[:id])
+    @admin_season = Season.find(params[:id])
     @admin_season.destroy
 
     respond_to do |format|

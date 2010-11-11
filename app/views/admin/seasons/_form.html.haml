@@ -4,6 +4,10 @@
       :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])      
     = form.input :start_year, :label => "Aloitusvuosi"
     = form.input :division, :label => 'Divisioona'
-    = form.input :history, :label => 'Historiakertomus'
+    
+  = form.semantic_fields_for :partitions do |p|
+    = p.inputs do
+      = p.input :name, :label => "Kausiosio"
+
   = form.buttons do
     = form.commit_button :label => 'Tallenna'
