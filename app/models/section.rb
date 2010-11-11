@@ -5,7 +5,7 @@ class Section < ActiveRecord::Base
   has_and_belongs_to_many :news
   has_many :comments, :as => :commentable
   
-  scope :leafs, :conditions => ["parent_id NOT ?", nil]
+  scope :leafs, :conditions => "parent_id > 0"
   
   def self.possible_parents
     self.where(:parent_id => nil).all
