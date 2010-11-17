@@ -4,7 +4,8 @@ class Season < ActiveRecord::Base
   has_many :members, :through => :affairs
   has_many :partitions
   
-  validates_numericality_of :start_year, :only_integer => true, :greater_than => 2000, :message => 'kebabpizza'
+  validates_numericality_of :start_year, :only_integer => true, :greater_than => 2000,
+    :message => 'Virheellinen aloitusvuosi.'
   validates_presence_of :division, :start_year, :section
   
   accepts_nested_attributes_for :partitions
