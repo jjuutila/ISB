@@ -3,6 +3,8 @@ class News < ActiveRecord::Base
   has_and_belongs_to_many :sections
   has_many :comments, :as => :commentable
   
+  validates_presence_of :title, :content, :slug
+  
   scope :in_section, lambda {|section| joins(:sections).where(:sections => {:id => section.id}).order("created_at DESC")}
   
   before_validation :update_or_create_slug
