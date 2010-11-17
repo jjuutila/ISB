@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '3.0.1'
 
 gem 'jquery-rails'
 gem 'formtastic', '~> 1.1.0'
@@ -12,7 +12,9 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem "spork"
   gem 'rspec-rails'
+  gem 'accept_values_for'
 end
 
 #group :production do
