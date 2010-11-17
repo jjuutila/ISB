@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.1'
 
 gem 'jquery-rails'
-gem 'formtastic', '~> 1.1.0'
+gem 'formtastic', '~> 1.2.0'
 gem 'haml'
 gem 'validation_reflection'
 gem "will_paginate", "~> 3.0.pre2"
@@ -14,7 +14,7 @@ group :development, :test do
   gem 'faker'
   gem "spork"
   gem 'rspec-rails'
-  gem 'accept_values_for'
+  gem "shoulda"
 end
 
 #group :production do

@@ -32,4 +32,8 @@ Isb::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  
+  # Shoulda configuration 
+  config.gem 'rspec-rails', :lib => false
+  config.gem 'shoulda',     :lib => false
 end

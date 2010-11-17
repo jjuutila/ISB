@@ -9,8 +9,7 @@ Spork.prefork do
   # need to restart spork for it take effect.
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
-  require 'accept_values_for'
-  require 'discover'
+  require 'shoulda'
   
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
