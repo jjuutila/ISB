@@ -1,7 +1,7 @@
 # coding: utf-8
 class Section < ActiveRecord::Base
   belongs_to :parent, :class_name => "Section"
-  has_many :sections, :foreign_key => "parent_id"
+  has_many :sections, :class_name => "Section", :foreign_key => "parent_id"
   has_and_belongs_to_many :news
   has_many :comments, :as => :commentable
   
