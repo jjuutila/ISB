@@ -2,7 +2,9 @@
 class Member < ActiveRecord::Base
   has_many :seasons, :through => :affairs
   
-  validates_presence_of :first_name, :last_name, :gender, :all_time_assists, :all_time_goals, :number
+  validates_presence_of :first_name, :last_name, :number
+  
+  validates_inclusion_of :gender, :in => [true, false]
   
   validates_numericality_of :number, :greater_than_or_equal_to => 0, :less_than_or_equal_to => 99,
     :message => 'Numero tulee olla väliltä 0-99.'
@@ -24,10 +26,10 @@ class Member < ActiveRecord::Base
     2 * all_time_goals + all_time_assists
   end
   
-  private
+  protected
   
   def set_defaults
-    all_time_assists = 0 unless all_time_assists
-    all_time_goals = 0 unless all_time_goals
+    self.all_time_assists = 0 unless self.all_time_assists
+    self.all_time_goals = 0 unless self.all_time_goals
   end 
 end

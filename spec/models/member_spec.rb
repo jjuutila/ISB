@@ -9,13 +9,9 @@ describe Member do
     
     it { should validate_presence_of(:last_name) }
     
-    it { should validate_presence_of(:gender) }
-    
-    it { should validate_presence_of(:all_time_assists) }
     it { should validate_numericality_of(:all_time_assists).with_message(/Syötöt tulee olla/) }
     it { should ensure_inclusion_of(:all_time_assists).in_range(0..999).with_message(/Syötöt tulee olla/) }
     
-    it { should validate_presence_of(:all_time_goals) }
     it { should validate_numericality_of(:all_time_goals).with_message(/Maalit tulee olla/) }
     it { should ensure_inclusion_of(:all_time_goals).in_range(0..999).with_message(/Maalit tulee olla/) }
     
@@ -32,4 +28,13 @@ describe Member do
       member.all_time_points.should == 38
     end
   end
+  
+  context "default" do
+    it "alltime values should be set to 0 after validation" do
+      member = Factory.build(:member, :all_time_assists => nil, :all_time_goals => nil)
+      member.valid?
+      member.all_time_assists.should == 0
+      member.all_time_goals.should == 0
+    end
+  end  
 end
