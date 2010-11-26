@@ -8,8 +8,8 @@ class CreateMembers < ActiveRecord::Migration
       t.integer :position
       t.integer :birth_year
       t.string :home_municipality
-      t.integer :all_time_assists
-      t.integer :all_time_goals
+      t.integer :all_time_assists, :null => false, :default => 0
+      t.integer :all_time_goals, :null => false, :default => 0
 
       t.timestamps
     end
