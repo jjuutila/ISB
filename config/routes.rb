@@ -76,5 +76,6 @@ Isb::Application.routes.draw do
     resources :seasons    
     resources :comments
     resources :members
+    resources :statistics
   end
 end
