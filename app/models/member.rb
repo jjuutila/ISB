@@ -21,9 +21,12 @@ class Member < ActiveRecord::Base
   
   before_validation :set_defaults
   
-  
   def all_time_points
     2 * all_time_goals + all_time_assists
+  end
+  
+  def to_s
+    first_name + ' ' + last_name
   end
   
   protected
