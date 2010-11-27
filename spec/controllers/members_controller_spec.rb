@@ -25,7 +25,7 @@ describe Admin::MembersController do
     
     it "should redirect to index page after successfull create." do
       post :create, :member => @attributes
-      #assigns(:publication).user.id.should == @admin.id
+      
       assigns(:member).errors.size.should == 0
       assigns(:member).new_record?.should == false
       response.should redirect_to admin_members_path
@@ -62,6 +62,7 @@ describe Admin::MembersController do
       @attributes[:number] = -1
       put :update, {:member => @attributes, :id => @member.id.to_s }
         
+      assigns(:member).errors.size.should > 0
       response.should be_success
       response.should render_template("edit")
     end
