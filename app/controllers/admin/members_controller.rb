@@ -5,7 +5,7 @@ class Admin::MembersController < Admin::BaseController
   
   def index
     @members = Member.all
-    respond_with @member
+    respond_with @members
   end
   
   def new
