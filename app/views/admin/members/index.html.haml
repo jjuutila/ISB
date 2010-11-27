@@ -1,0 +1,16 @@
+%h1 Pelaajat
+%p
+  %a{:href => new_admin_member_path, :title => 'Luo uusi pelaaja'}= image_tag('add.png')
+  %a{:href => new_admin_member_path}= 'Luo uusi pelaaja'
+
+%table
+  %thead
+    %tr
+      %th Nimi
+      %th Toiminnot
+      
+  %tbody
+    - @members.each do |member|
+      %tr{ :class => cycle(:odd, :even) }
+        %td= member
+        %td.action= link_to image_tag('pencil.png'), edit_admin_member_path(member), :title => 'Muokkaa'

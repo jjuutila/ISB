@@ -1,0 +1,5 @@
+%h1 Luo uusi pelaaja
+%p
+  = link_to 'Takaisin', admin_members_path
+  
+= render :partial => 'form', :locals => {:url => admin_members_path}
