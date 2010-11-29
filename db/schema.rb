@@ -10,10 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101127174342) do
+ActiveRecord::Schema.define(:version => 20101129174208) do
 
   create_table "affairs", :force => true do |t|
-    t.string  "type"
+    t.string  "role"
     t.integer "member_id"
     t.integer "season_id"
   end
