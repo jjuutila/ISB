@@ -33,6 +33,7 @@ class Admin::SeasonsController < Admin::BaseController
   # POST /admin/seasons.xml
   def create
     @season = Season.new(params[:season])
+    @season.partitions.first.season = @season
     @season.partitions.first.position = 1
     @season.save
     
