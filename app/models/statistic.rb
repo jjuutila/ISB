@@ -12,4 +12,8 @@ class Statistic < ActiveRecord::Base
   
   validates_numericality_of :pim, :only_integer => true, :greater_than => 0
   
+  def points
+    self.goals + self.assists
+  end
+  
 end
