@@ -8,17 +8,19 @@ describe Statistic do
     it { should belong_to(:member) }
     it { should validate_presence_of(:member) }
     
-    it { should validate_presence_of(:matches) }
     it { should validate_numericality_of(:matches) }
-    
-    it { should validate_presence_of(:goals) }  
     it { should validate_numericality_of(:goals) }
-    
-    it { should validate_presence_of(:pim) }
     it { should validate_numericality_of(:pim) }
-    
-    it { should validate_presence_of(:assists) }
     it { should validate_numericality_of(:assists) }
+    
+    it "should initialize default values" do
+      statistic = Statistic.new
+      statistic.valid?
+      statistic.goals.should == 0
+      statistic.assists.should == 0
+      statistic.pim.should == 0
+      statistic.matches.should == 0
+    end
   end
   
   context "points" do
