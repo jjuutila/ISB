@@ -1,5 +1,6 @@
 # coding: utf-8
 class Member < ActiveRecord::Base
+  has_many :affairs
   has_many :seasons, :through => :affairs
   
   validates_presence_of :first_name, :last_name, :number

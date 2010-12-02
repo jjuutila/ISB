@@ -3,7 +3,7 @@ require File.expand_path("../../spec_helper.rb", __FILE__)
 
 describe Member do
   context "validations" do
-    it { should have_many(:seasons) }
+    it { should have_many(:seasons).through(:affairs) } 
     
     it { should validate_presence_of(:first_name) }
     
