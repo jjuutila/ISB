@@ -5,6 +5,8 @@ describe Member do
   context "validations" do
     it { should have_many(:seasons).through(:affairs) } 
     
+    it { should have_many(:statistics) }
+    
     it { should validate_presence_of(:first_name) }
     
     it { should validate_presence_of(:last_name) }

@@ -2,6 +2,7 @@
 class Member < ActiveRecord::Base
   has_many :affairs
   has_many :seasons, :through => :affairs
+  has_many :statistics
   
   validates_presence_of :first_name, :last_name, :number
   
