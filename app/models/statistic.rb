@@ -18,6 +18,10 @@ class Statistic < ActiveRecord::Base
     self.goals + self.assists
   end
   
+  def all_0?
+    self.matches == 0 && self.pim == 0 && self.assists == 0 && self.goals == 0
+  end
+  
   private
   
   def set_defaults
