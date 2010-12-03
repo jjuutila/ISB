@@ -3,13 +3,12 @@ require 'spec_helper'
 describe SeasonObserver do
   before(:each) do
     @season = mock_model(Season)
+    @player = Factory.create(:member)
   end
   
   context "member is added to a season" do
     before(:each) do                  
-      @partition = Partition.create(:season => @season, :position => 1, :name => 'Test') 
-           
-      @player = Factory.create(:member)
+      @partition = Partition.create(:season => @season, :position => 1, :name => 'Test')
       @coach = Factory.create(:member)
     end
 
@@ -28,24 +27,23 @@ describe SeasonObserver do
   
   context "partition is added to a season" do
     before(:each) do
-      @player = Factory.create(:member)
       @player.affairs.create :season => @season, :role => 'player'
       
       @coach = Factory.create(:member)
+      @coach.affairs.create :season => @season, :role => 'coach'
     end
     
-    it "should create new Statistics for player when a new partition is added to season" do
+    it "should create new Statistics for players when a new partition is added to season" do
       Partition.create(:season => @season, :position => 1, :name => 'Test 1')
       Partition.create(:season => @season, :position => 2, :name => 'Test 2')
       
-      Statistic.where(:member_id => @player.id).count.should == 2
+      Statistic.all.count.should == 2
     end
   end
   
   context "player is removed from the season" do
     before(:each) do                  
       @partition = Partition.create(:season => @season, :position => 1, :name => 'Test') 
-      @player = Factory.create(:member)
       @player.affairs.create :season => @season, :role => 'player'
     end
     
@@ -57,9 +55,20 @@ describe SeasonObserver do
     
     it "should not remove Statistic row with non zero values" do
       Statistic.where(:member_id => @player.id, :partition_id => @partition.id).count.should == 1
-      @player.statistics.last.matches = 1
-      @player.statistics.last.save.should == true
+      stats = @player.statistics.last
+      stats.matches = 2
+      stats.save
+      @player.affairs.last.destroy
       Statistic.where(:member_id => @player.id, :partition_id => @partition.id).count.should == 1
+    end
+  end
+  
+  context "partition is removed from a season" do    
+    it "should remove all Statistics in that partition" do
+      partition = Partition.create(:season => @season, :position => 1, :name => 'Test')
+      @player.affairs.create :season => @season, :role => 'player'
+      partition.destroy
+      Statistic.where(:partition_id => partition.id).count.should == 0
     end
   end
 end
