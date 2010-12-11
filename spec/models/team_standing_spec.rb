@@ -53,4 +53,11 @@ describe TeamStanding do
       standing.points.should == 0
     end
   end
+  
+  context "games played" do
+    it "should sum wins, losses and overtimes" do
+      standing = TeamStanding.new :losses => 2, :wins => 1, :overtimes => 0
+      standing.games_played.should == 3
+    end
+  end
 end
