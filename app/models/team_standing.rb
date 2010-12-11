@@ -27,4 +27,8 @@ class TeamStanding < ActiveRecord::Base
   def games_played
     wins + overtimes + losses
   end
+  
+  def to_s
+    name
+  end
 end
