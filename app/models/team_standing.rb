@@ -12,7 +12,9 @@ class TeamStanding < ActiveRecord::Base
   validates_numericality_of :goals_for, :only_integer => true, :greater_than_or_equal_to => 0
   validates_numericality_of :goals_against, :only_integer => true, :greater_than_or_equal_to => 0
   
-  def after_initialize
+  after_initialize :set_defaults
+  
+  def set_defaults
     self.wins = 0 unless self.wins
     self.losses = 0 unless self.losses
     self.overtimes = 0 unless self.overtimes
