@@ -5,6 +5,7 @@ gem 'rails', '3.0.3'
 gem 'jquery-rails'
 gem 'formtastic', '~> 1.2.0'
 gem 'haml'
+gem 'haml-rails'
 gem 'validation_reflection'
 gem "will_paginate", "~> 3.0.pre2"
 
