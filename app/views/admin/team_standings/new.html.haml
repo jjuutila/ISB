@@ -1,3 +1,8 @@
-%h1= t '.title'
-%p= link_to t('back'), team_standinds_path
-= render 'form'
+%h1 Luo uusi joukkue
+
+= semantic_form_for @team, :url => admin_team_standings_path() do |form|
+  = form.inputs do
+    = form.input :name, :label => 'Nimi'
+  
+  = form.buttons do
+    = form.commit_button :label => 'Tallenna'

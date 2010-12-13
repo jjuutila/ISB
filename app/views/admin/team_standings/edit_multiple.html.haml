@@ -1,9 +1,22 @@
-- form_for(edit_multiple_admin_team_standings_path()) do |f|
+%h1 Sarjataulukko
 
-  - @admin_team_standings.each do |team_standings|
-    = label :for => "team_standings"
-    - team_standings.error
-      %p
-        Virhe
-    = text_field_tag("team_stadings[#{@counter++}][wins]", team_stadings.wins)
-  
+= form_tag(update_multiple_admin_team_standings_path(), :method => 'put') do
+  %table
+    %thead
+      %tr
+        %th 
+        %th V
+        %th T
+        %th H
+        %th MS
+      %tbody
+        - for standing in @standings
+          %tr{ :class => [cycle(:odd, :even), !standing.errors.empty? && "row_contains_errors"] }
+            %td= standing
+            %td= number_field_tag "standings[#{standing.id}][wins]", standing.wins, :size => 3, :in => 0...300
+            %td= number_field_tag "standings[#{standing.id}][overtimes]", standing.overtimes, :size => 3, :in => 0...300
+            %td= number_field_tag "standings[#{standing.id}][losses]", standing.losses, :size => 3, :in => 0...300
+            %td
+              = number_field_tag("standings[#{standing.id}][goals_for]", standing.goals_for, :size => 3, :in => 0...300) + "-"
+              = number_field_tag "standings[#{standing.id}][goals_against]", standing.goals_against, :size => 3, :in => 0...300
+  = submit_tag 'Tallenna'

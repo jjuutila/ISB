@@ -70,10 +70,11 @@ Isb::Application.routes.draw do
     match "change_section" => "base#change_section" 
     resources :news
     resources :sections
-    resources :team_standings do
+    resources :team_standings, :except => :index do
      get 'edit_multiple', :on => :collection
+     put 'update_multiple', :on => :collection
     end
-    resources :seasons    
+    resources :seasons
     resources :comments
     resources :members
     resources :statistics

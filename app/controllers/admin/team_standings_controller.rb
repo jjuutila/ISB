@@ -1,16 +1,7 @@
 # coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
-  # GET /admin/team_standinds
-  # GET /admin/team_standinds.xml
-  def index
-    @admin_team_standings = Admin::TeamStanding.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @admin_team_standings }
-    end
-  end
-
+  respond_to :html
+  
   # GET /admin/team_standinds/1
   # GET /admin/team_standinds/1.xml
   def show
@@ -25,12 +16,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   # GET /admin/team_standinds/new
   # GET /admin/team_standinds/new.xml
   def new
-    @admin_team_standind = Admin::TeamStanding.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @admin_team_standind }
-    end
+    respond_with @team = Admin::TeamStanding.new
   end
 
   # GET /admin/team_standinds/1/edit
@@ -83,12 +69,20 @@ class Admin::TeamStandingsController < Admin::BaseController
   end
   
   def edit_multiple
-    @counter = 0
-    @admin_team_standings = Admin::TeamStanding.all
-    respond_to do |format|
-      format.html
-    end
+    respond_with @standings = Admin::TeamStanding.all
   end
   
-  
+  def update_multiple
+    standings_params = params[:standings]
+    
+    @standings = TeamStanding.update standings_params.keys, standings_params.values
+    standing_with_error = @standings.detect {|s| !s.errors.empty?}
+    if standing_with_error == nil
+      flash.notice = "Sarjataulukko päivitetty."
+      respond_with @standings, :location => edit_multiple_admin_team_standing
+    else
+      flash.alert = "Sarjataulukko päivitetty vain osittain, koska joissain kentissä on virheitä."
+      render :edit_multiple
+    end
+  end
 end
