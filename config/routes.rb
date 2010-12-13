@@ -74,7 +74,9 @@ Isb::Application.routes.draw do
      get 'edit_multiple', :on => :collection
      put 'update_multiple', :on => :collection
     end
-    resources :seasons
+    resources :seasons do
+      resources :partitions, :except => :index
+    end
     resources :comments
     resources :members
     resources :statistics
