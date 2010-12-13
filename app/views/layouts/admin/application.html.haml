@@ -12,7 +12,7 @@
     .menu#menu= render :partial => 'layouts/admin/menu'
 
     #content
-      #notice= flash[:warning] || flash[:notice]
+      #notice= flash[:alert] || flash[:notice]
       = yield
       
     #footer
