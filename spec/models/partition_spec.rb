@@ -11,4 +11,11 @@ describe Partition do
     it { should validate_presence_of(:position) }  
     it { should validate_numericality_of(:position) }
   end
+  
+  context "to_s" do
+    it "should return name" do
+      partition = Partition.new(:name => 'Runkosarja')
+      partition.to_s.should == 'Runkosarja'
+    end
+  end
 end

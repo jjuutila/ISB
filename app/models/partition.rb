@@ -9,4 +9,8 @@ class Partition < ActiveRecord::Base
   validates_numericality_of :position, :only_integer => true, :greater_than => 0
   
   scope :in_season, lambda { |id| where("season_id = ?", id) }
+  
+  def to_s
+    name
+  end
 end
