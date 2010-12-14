@@ -8,14 +8,6 @@ describe Admin::StatisticsController do
     end
   end
 
-  describe "GET index" do
-    it "assigns all statistics as @statistics" do
-      Statistic.stub(:all) { [mock_statistic] }
-      get :index
-      assigns(:statistics).should eq([mock_statistic])
-    end
-  end
-
   describe "GET edit" do
     it "assigns the requested statistic as @statistic" do
       Statistic.stub(:find).with("37") { mock_statistic }
