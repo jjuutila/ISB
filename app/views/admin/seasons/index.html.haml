@@ -16,3 +16,15 @@
         %td.action= link_to image_tag('pencil.png'), edit_admin_season_path(season), :title => 'Muokkaa'
         %td.action= link_to image_tag('cross.png'), admin_season_path(season), :title => 'Poista',
           :confirm => "Haluatko varmasti poistaa kauden \"#{season}\"?", :method => :delete
+      
+      - for partition in season.partitions
+        %tr
+          %td
+            = image_tag('bullet_blue.png')
+            = link_to partition, admin_season_partition_path(season, partition)
+          %td.action= link_to image_tag('cross.png'), admin_season_partition_path(season, partition), :title => 'Poista',
+          :confirm => "Haluatko varmasti poistaa kausiosion \"#{season}\"?", :method => :delete
+      %tr
+        %td{:colspan => 3}
+          = link_to image_tag('add.png'), new_admin_season_partition_path(season), :title => 'Luo uusi joukkueosio'
+          = link_to "Luo uusi joukkueosio", new_admin_season_partition_path(season), :title => 'Luo uusi joukkueosio'
