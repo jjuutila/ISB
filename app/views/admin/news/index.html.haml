@@ -3,7 +3,7 @@
   %a{:href => new_admin_news_path, :title => 'Luo uusi uutinen'}= image_tag('add.png')
   %a{:href => new_admin_news_path}= 'Luo uusi uutinen'
   
-= render :partial => 'admin/section_selection', :locals => { :sections => Section.leafs }
+= section_selection
 
 %h2 Uutiset
 %table
