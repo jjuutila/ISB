@@ -18,4 +18,17 @@ describe Partition do
       partition.to_s.should == 'Runkosarja'
     end
   end
+  
+  context "latest" do
+    it "should find the latest season's last partition" do
+      section = Factory.create :section
+      latest_season = Season.create :start_year => 2010, :division => "1. divisioona", :section => section
+      Season.create :start_year => 2009, :division => "2. divisioona", :section => section
+      
+      latest_partition = Partition.create :name => 'Playoffs', :position => 2, :season => latest_season
+      Partition.create :name => 'Runkosarja', :position => 1, :season => latest_season
+      
+      Partition.latest(section).should == latest_partition
+    end
+  end
 end

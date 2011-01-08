@@ -10,6 +10,11 @@ class Partition < ActiveRecord::Base
   
   scope :in_season, lambda { |id| where("season_id = ?", id) }
   
+  # Gets the latest season's last partition
+  def self.latest(section)
+    Partition.where('season_id = ?', Season.latest(section)).order('position DESC').first
+  end
+  
   def to_s
     name
   end
