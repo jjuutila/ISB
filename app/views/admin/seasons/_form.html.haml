@@ -1,7 +1,7 @@
 = semantic_form_for @season, :url => url do |form| 
   = form.inputs do
     = form.input :section, :as => :select, :label => "Joukkueosio",
-      :collection => Section.find(:all, :conditions => ["parent_id NOT NULL"])      
+      :collection => Section.leafs, :include_blank => false
     = form.input :start_year, :label => "Aloitusvuosi"
     = form.input :division, :label => 'Divisioona'
     
