@@ -1,4 +1,6 @@
-%h1 Sarjataulukko
+%h1 Sarjataulukko kaudella #{@season}
+%h2 #{@partition}
+%p= link_to 'Takaisin', admin_season_partition_path(@season, @partition)
 
 = form_tag(update_multiple_admin_season_partition_team_standings_path(@season, @partition), :method => 'put') do
   %table
