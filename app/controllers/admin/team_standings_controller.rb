@@ -1,5 +1,6 @@
 # coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
+  before_filter :get_season_and_partition, :only => [:edit_multiple, :update_multiple]
   respond_to :html
 
   # GET /admin/team_standinds/new
@@ -58,7 +59,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   end
   
   def edit_multiple
-    respond_with @standings = TeamStanding.all
+    respond_with @standings = TeamStanding.where("partition_id = ?", @partition.id)
   end
   
   def update_multiple
@@ -79,5 +80,12 @@ class Admin::TeamStandingsController < Admin::BaseController
     latest_season = Season.latest selected_section
     latest_partition = Partition.latest selected_section
     redirect_to(edit_multiple_admin_season_partition_team_standings_path(latest_season, latest_partition))
+  end
+  
+  private
+  
+  def get_season_and_partition
+    @season = Season.find params[:season_id]
+    @partition = Partition.find params[:partition_id]
   end
 end
