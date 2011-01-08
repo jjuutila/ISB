@@ -2,7 +2,7 @@ class Admin::PartitionsController < Admin::BaseController
   respond_to :html
   
   def show
-    respond_with @partition = Partition.find(params[:id], :include => [:season])
+    respond_with @partition = Partition.find(params[:id], :include => [:season, :team_standings])
   end
   
   def new

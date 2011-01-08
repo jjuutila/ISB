@@ -10,7 +10,7 @@ describe Admin::PartitionsController do
 
   describe "GET show" do
     it "assigns the requested partition as @partition" do
-      Partition.stub(:find).with("37", :include => [:season]) { mock_partition }
+      Partition.stub(:find).with("37", :include => [:season, :team_standings]) { mock_partition }
       get :show, :id => "37", :season_id => '2'
       assigns(:partition).should be(mock_partition)
     end
