@@ -74,4 +74,10 @@ class Admin::TeamStandingsController < Admin::BaseController
       render :edit_multiple
     end
   end
+  
+  def latest
+    latest_season = Season.latest selected_section
+    latest_partition = Partition.latest selected_section
+    redirect_to(edit_multiple_admin_season_partition_team_standings_path(latest_season, latest_partition))
+  end
 end
