@@ -28,8 +28,18 @@ describe Admin::TeamStandingsController do
     end
     
     it "recognizes and generates #latest_statistics" do
-      { :delete => "/admin/latest_standings" }.should route_to(:controller => "admin/team_standings",
+      { :get => "/admin/latest_standings" }.should route_to(:controller => "admin/team_standings",
         :action => "latest")
+    end
+    
+    it "recognizes and generates #edit_multiple" do
+      { :get => "/admin/seasons/2/partitions/1/team_standings/edit_multiple" }.should route_to(:controller => "admin/team_standings",
+        :action => "edit_multiple", :season_id => '2', :partition_id => '1')
+    end
+    
+    it "recognizes and generates #update_multiple" do
+      { :put => "/admin/seasons/2/partitions/1/team_standings/update_multiple" }.should route_to(:controller => "admin/team_standings",
+        :action => "update_multiple", :season_id => '2', :partition_id => '1')
     end
   end
 end
