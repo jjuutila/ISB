@@ -1,33 +1,22 @@
 # coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
   respond_to :html
-  
-  # GET /admin/team_standinds/1
-  # GET /admin/team_standinds/1.xml
-  def show
-    @admin_team_standind = Admin::TeamStanding.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @admin_team_standind }
-    end
-  end
 
   # GET /admin/team_standinds/new
   # GET /admin/team_standinds/new.xml
   def new
-    respond_with @team = Admin::TeamStanding.new
+    respond_with @team = TeamStanding.new
   end
 
   # GET /admin/team_standinds/1/edit
   def edit
-    @admin_team_standind = Admin::TeamStanding.find(params[:id])
+    @admin_team_standind = TeamStanding.find(params[:id])
   end
 
   # POST /admin/team_standinds
   # POST /admin/team_standinds.xml
   def create
-    @admin_team_standind = Admin::TeamStanding.new(params[:admin_team_standind])
+    @admin_team_standind = TeamStanding.new(params[:admin_team_standind])
 
     respond_to do |format|
       if @admin_team_standind.save
@@ -43,7 +32,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   # PUT /admin/team_standinds/1
   # PUT /admin/team_standinds/1.xml
   def update
-    @admin_team_standind = Admin::TeamStanding.find(params[:id])
+    @admin_team_standind = TeamStanding.find(params[:id])
 
     respond_to do |format|
       if @admin_team_standind.update_attributes(params[:admin_team_standind])
@@ -59,7 +48,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   # DELETE /admin/team_standinds/1
   # DELETE /admin/team_standinds/1.xml
   def destroy
-    @admin_team_standind = Admin::TeamStanding.find(params[:id])
+    @admin_team_standind = TeamStanding.find(params[:id])
     @admin_team_standind.destroy
 
     respond_to do |format|
@@ -69,7 +58,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   end
   
   def edit_multiple
-    respond_with @standings = Admin::TeamStanding.all
+    respond_with @standings = TeamStanding.all
   end
   
   def update_multiple
