@@ -10,6 +10,11 @@ class Season < ActiveRecord::Base
   
   accepts_nested_attributes_for :partitions
   
+  # Gets the latest season
+  def self.latest(section)
+    Season.where("section_id = ?", section.id).order('start_year DESC').first
+  end
+  
   def to_s
     timespan + ', ' + division
   end
