@@ -1,12 +1,12 @@
 # coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
-  before_filter :get_season_and_partition, :only => [:edit_multiple, :update_multiple]
+  before_filter :get_season_and_partition, :only => [:edit_multiple, :update_multiple, :create]
   respond_to :html
 
   # GET /admin/team_standinds/new
   # GET /admin/team_standinds/new.xml
   def new
-    respond_with @team = TeamStanding.new
+    respond_with @team = TeamStanding.new(:partition_id => params[:partition_id])
   end
 
   # GET /admin/team_standinds/1/edit
@@ -17,15 +17,13 @@ class Admin::TeamStandingsController < Admin::BaseController
   # POST /admin/team_standinds
   # POST /admin/team_standinds.xml
   def create
-    @admin_team_standind = TeamStanding.new(params[:admin_team_standind])
-
+    @team = TeamStanding.new(params[:team_standing].merge(:partition => @partition))
+    
     respond_to do |format|
-      if @admin_team_standind.save
-        format.html { redirect_to(@admin_team_standind, :notice => 'Team standind was successfully created.') }
-        format.xml  { render :xml => @admin_team_standind, :status => :created, :location => @admin_team_standind }
+      if @team.save
+        format.html { redirect_to(admin_season_partition_path(@season, @partition), :notice => 'Uusi joukkue luotu.') }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @admin_team_standind.errors, :status => :unprocessable_entity }
       end
     end
   end
