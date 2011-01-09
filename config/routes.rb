@@ -78,6 +78,7 @@ Isb::Application.routes.draw do
          put 'update_multiple', :on => :collection
         end
         resources :statistics, :except => [:index, :show]
+        resources :matches, :except => [:show]
       end
     end
     resources :comments
