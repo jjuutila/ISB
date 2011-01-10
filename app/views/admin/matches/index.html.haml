@@ -1,17 +1,24 @@
-%h1 Listing admin_matches
+%h1 #{@partition}-ottelut kaudella #{@season} 
+
+%p
+  = link_to image_tag('add.png'), new_admin_season_partition_match_path, :title => 'Luo uusi joukkueosio'
+  = link_to "Luo uusi ottelu", new_admin_season_partition_match_path, :title => 'Luo uusi joukkueosio'
 
 %table
   %tr
-    %th
-    %th
-    %th
+    %th Päivä
+    %th Koti
+    %th Vieras
+    %th Tulos
+    %th{:colspan => 2}
 
-  - @admin_matches.each do |admin_match|
+  - @matches.each do |match|
     %tr
-      %td= link_to 'Show', admin_match
-      %td= link_to 'Edit', edit_admin_match_path(admin_match)
-      %td= link_to 'Destroy', admin_match, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-= link_to 'New Match', new_admin_match_path
+      %td= match.start_time
+      %td= match.home_team
+      %td= match.visitor_team
+      %td= match.result
+      %td.action= link_to image_tag('pencil.png'), edit_admin_season_partition_match_path(@season, @partition, match),
+        :title => 'Muokkaa'
+      %td.action= link_to image_tag('cross.png'), admin_season_partition_match_path(@season, @partition, match),
+        :confirm => 'Haluatko varmasti poistaa ottelun?', :method => :delete, :title => 'Poista'

@@ -1,5 +1,16 @@
-%h1 New admin_match
+%h1 Uusi ottelu
 
-= render 'form'
+= link_to 'Takaisin', admin_season_partition_matches_path
 
-= link_to 'Back', admin_matches_path
+= semantic_form_for @match, :url => admin_season_partition_matches_path(@season, @partition) do |form| 
+  = form.inputs do
+    = form.input :start_time, :label => 'Päiväys', :include_blank => false, :order => [:day, :month, :year],
+      :start_year => @season.start_year, :end_year => @season.start_year + 1
+    = form.input :home_team, :as => :select, :label => "Kotijoukkue",
+      :collection => @partition.team_standings, :include_blank => false
+    = form.input :visitor_team, :as => :select, :label => "Vierasjoukkue",
+      :collection => @partition.team_standings, :include_blank => false
+    = form.input :location, :label => 'Sijainti'
+
+  = form.buttons do
+    = form.commit_button :label => 'Tallenna'
