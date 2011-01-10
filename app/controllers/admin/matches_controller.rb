@@ -1,4 +1,4 @@
-class Admin::MatchesController < ApplicationController
+class Admin::MatchesController < Admin::BaseController
   before_filter :get_season_and_partition
   respond_to :html
 
