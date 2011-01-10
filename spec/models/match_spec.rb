@@ -18,6 +18,11 @@ describe Match do
     it { should validate_presence_of(:start_time) }
   end
   
-  
+  describe "result" do
+    it "should print the result" do
+      match = Match.new :home_goals => 2, :visitor_goals => 3
+      match.result.should == "2-3"
+    end
+  end
   
 end

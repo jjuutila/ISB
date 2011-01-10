@@ -9,4 +9,8 @@ class Match < ActiveRecord::Base
   
   validates_numericality_of :home_goals, :only_integer => true, :greater_than_or_equal_to => 0
   validates_numericality_of :visitor_goals, :only_integer => true, :greater_than_or_equal_to => 0
+  
+  def result
+    "#{home_goals}-#{visitor_goals}"
+  end
 end
