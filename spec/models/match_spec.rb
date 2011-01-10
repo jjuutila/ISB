@@ -16,6 +16,16 @@ describe Match do
     it { should validate_numericality_of(:visitor_goals) }
     it { should validate_presence_of(:location) }
     it { should validate_presence_of(:start_time) }
+    
+    describe "teams" do
+      it "should not be the same" do
+        team = TeamStanding.new :name => 'a team'
+        match = Match.new :home_team => team, :visitor_team => team
+        match.valid?.should be_false
+        match.errors.should have_key(:same_teams)
+      end
+    end
+    
   end
   
   describe "result" do
@@ -24,5 +34,4 @@ describe Match do
       match.result.should == "2-3"
     end
   end
-  
 end
