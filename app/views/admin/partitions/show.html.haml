@@ -2,6 +2,7 @@
 
 %p= link_to 'Takaisin', admin_seasons_path
 %p= link_to 'Sarjataulukko', edit_multiple_admin_season_partition_team_standings_path(@partition.season, @partition)
+%p= link_to 'Ottelut', admin_season_partition_matches_path(@partition.season, @partition)
 
 %h2 Joukkueet
 %p
