@@ -6,6 +6,7 @@
   = form.inputs do
     = form.input :start_time, :label => 'Päiväys', :include_blank => false, :order => [:day, :month, :year],
       :start_year => @season.start_year, :end_year => @season.start_year + 1
+    = form.semantic_errors
     = form.input :home_team, :as => :select, :label => "Kotijoukkue",
       :collection => @partition.team_standings, :include_blank => false
     = form.input :visitor_team, :as => :select, :label => "Vierasjoukkue",
