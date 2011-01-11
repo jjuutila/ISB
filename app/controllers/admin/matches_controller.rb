@@ -1,3 +1,4 @@
+# coding: utf-8
 class Admin::MatchesController < Admin::BaseController
   before_filter :get_season_and_partition
   respond_to :html
@@ -22,7 +23,7 @@ class Admin::MatchesController < Admin::BaseController
 
   def update
     @match = Match.find(params[:id])
-    flash[:notice] = 'Uusi ottelu luotu.' if @match.update_attributes(params[:match])
+    flash[:notice] = "Ottelu '#{@match.to_s}' päivitetty." if @match.update_attributes(params[:match])
     respond_with @match, :location => admin_season_partition_matches_path(@season, @partition)
   end
 
