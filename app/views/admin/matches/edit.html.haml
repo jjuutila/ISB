@@ -1,5 +1,23 @@
-%h1 Editing admin_match
+%h1 Muokkaa ottelua #{@match}
 
-= link_to 'Back', admin_matches_path(@season, @partition)
+= link_to 'Takaisin', admin_season_partition_matches_path
 
-- semantic_form_for
+= semantic_form_for @match, :url => admin_season_partition_match_path(@season, @partition) do |form| 
+  = form.inputs do
+    = form.input :start_time, :label => 'Päiväys', :include_blank => false, :order => [:day, :month, :year],
+      :start_year => @season.start_year, :end_year => @season.start_year + 1
+    = form.semantic_errors
+    
+    = form.input :home_team, :as => :select, :label => "Kotijoukkue",
+      :collection => @partition.team_standings, :include_blank => false
+    = form.input :home_goals, :label => "Maalit", :input_html => { :size => 3 }
+    
+    = form.input :visitor_team, :as => :select, :label => "Vierasjoukkue",
+      :collection => @partition.team_standings, :include_blank => false
+    = form.input :visitor_goals, :label => "Maalit", :input_html => { :size => 3 }
+    
+    = form.input :location, :label => 'Sijainti'
+    = form.input :report, :label => 'Otteluraportti'    
+
+  = form.buttons do
+    = form.commit_button :label => 'Tallenna'
