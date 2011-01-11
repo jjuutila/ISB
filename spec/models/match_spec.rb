@@ -17,19 +17,17 @@ describe Match do
     it { should validate_presence_of(:location) }
     it { should validate_presence_of(:start_time) }
     
-    describe "teams" do
-      it "should not be the same" do
-        team = TeamStanding.new :name => 'a team'
-        match = Match.new :home_team => team, :visitor_team => team
-        match.valid?.should be_false
-        match.errors.should have_key(:same_teams)
-      end
+    it "should set base error when teams are the same" do
+      team = TeamStanding.new :name => 'a team'
+      match = Match.new :home_team => team, :visitor_team => team
+      match.valid?.should be_false
+      match.errors[:base].count.should == 1
+    end
       
-      it "can be nil" do
-        match = Match.new
-        match.valid?
-        match.errors.should_not have_key(:same_teams)
-      end
+    it "should not set base error when teams are nil" do
+      match = Match.new
+      match.valid?
+      match.errors[:base].count.should == 0
     end
     
   end

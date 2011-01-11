@@ -17,6 +17,6 @@ class Match < ActiveRecord::Base
   end
   
   def teams_cannot_be_equal
-    errors.add(:same_teams, "Cannot belong to a root level Section") if home_team == visitor_team and home_team != nil
+    errors[:base] << "Joukkueet eivät voi olla samat." if home_team == visitor_team and home_team != nil
   end
 end
