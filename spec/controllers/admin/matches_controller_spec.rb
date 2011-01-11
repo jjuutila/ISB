@@ -16,6 +16,7 @@ describe Admin::MatchesController do
     
     @partition = mock_model(Partition)
     Partition.stub(:find).with(@partition.id) { @partition }
+    @params = {'these' => 'params'}
   end
 
   describe "GET index" do
@@ -45,15 +46,15 @@ describe Admin::MatchesController do
   describe "POST create" do
     describe "with valid params" do
 
-      it "redirects to matches" do
-        Match.stub(:new) { mock_match(:save => true) }
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => {}
+      it "redirects to matches" do        
+        @partition.stub_chain(:matches, :build).with(@params).and_return(mock_match(:save => true))
+        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => @params
         response.should redirect_to(admin_season_partition_matches_url(@season, @partition))
       end
       
       it "shows a flash message" do
-        Match.stub(:new) { mock_match(:save => true) }
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => {}
+        @partition.stub_chain(:matches, :build).with(@params).and_return(mock_match)
+        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => @params
         flash[:notice].should == 'Uusi ottelu luotu.'
       end      
       
@@ -61,14 +62,14 @@ describe Admin::MatchesController do
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved match as @match" do
-        Match.stub(:new).with({'these' => 'params', 'partition' => @partition}) { mock_match(:save => false) }
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => {'these' => 'params'}
+        @partition.stub_chain(:matches, :build).and_return(mock_match(:save => false))
+        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => @params
         assigns(:match).should be(mock_match)
       end
 
       it "re-renders the 'new' template" do
-        Match.stub(:new) { mock_match(:save => false) }
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => {}
+        @partition.stub_chain(:matches, :build).and_return(mock_match(:save => false))
+        post :create, :season_id => @season.id, :partition_id => @partition.id, :match => @params
         response.should render_template("new")
       end
     end
@@ -78,8 +79,8 @@ describe Admin::MatchesController do
     describe "with valid params" do
       it "updates the requested match" do
         Match.stub(:find).with("37") { mock_match }
-        mock_match.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :season_id => @season.id, :partition_id => @partition.id, :id => "37", :match => {'these' => 'params'}
+        mock_match.should_receive(:update_attributes).with(@params)
+        put :update, :season_id => @season.id, :partition_id => @partition.id, :id => "37", :match => @params
       end
 
       it "assigns the requested match as @match" do

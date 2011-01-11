@@ -15,7 +15,7 @@ class Admin::MatchesController < Admin::BaseController
   end
 
   def create
-    @match = Match.new(params[:match].merge(:partition => @partition))
+    @match = @partition.matches.build(params[:match])
     flash[:notice] = 'Uusi ottelu luotu.' if @match.save
     respond_with @match, :location => admin_season_partition_matches_path(@season, @partition)
   end
