@@ -24,6 +24,12 @@ describe Match do
         match.valid?.should be_false
         match.errors.should have_key(:same_teams)
       end
+      
+      it "can be nil" do
+        match = Match.new
+        match.valid?
+        match.errors.should_not have_key(:same_teams)
+      end
     end
     
   end

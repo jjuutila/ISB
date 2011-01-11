@@ -10,7 +10,13 @@ class Match < ActiveRecord::Base
   validates_numericality_of :home_goals, :only_integer => true, :greater_than_or_equal_to => 0, :allow_nil => true
   validates_numericality_of :visitor_goals, :only_integer => true, :greater_than_or_equal_to => 0, :allow_nil => true
   
+  validate :teams_cannot_be_equal
+  
   def result
     "#{home_goals}-#{visitor_goals}"
+  end
+  
+  def teams_cannot_be_equal
+    errors.add(:same_teams, "Cannot belong to a root level Section") if home_team == visitor_team and home_team != nil
   end
 end
