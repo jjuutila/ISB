@@ -19,4 +19,8 @@ class Match < ActiveRecord::Base
   def teams_cannot_be_equal
     errors[:base] << "Joukkueet eivät voi olla samat." if home_team == visitor_team and home_team != nil
   end
+  
+  def to_s
+    "#{home_team} - #{visitor_team}"
+  end
 end

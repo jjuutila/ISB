@@ -33,9 +33,19 @@ describe Match do
   end
   
   describe "result" do
-    it "should print the result" do
+    it "should return the match result" do
       match = Match.new :home_goals => 2, :visitor_goals => 3
       match.result.should == "2-3"
+    end
+  end
+  
+  describe "to_s" do
+    it "should return teams" do
+      home_team = TeamStanding.new :name => 'home team'
+      visitor_team = TeamStanding.new :name => 'visitor team'
+      
+      match = Match.new :home_team => home_team, :visitor_team => visitor_team
+      match.to_s.should == "home team - visitor team"
     end
   end
 end
