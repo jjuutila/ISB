@@ -1,6 +1,12 @@
 require 'spec_helper'
 
 describe Partition do
+  def mock_partition(stubs={})
+    (@mock_partition ||= mock_model(Partition).as_null_object).tap do |partition|
+      partition.stub(stubs) unless stubs.empty?
+    end
+  end
+  
   context "validations" do
     it { should have_many(:statistics) }
     it { should have_many(:team_standings) }
@@ -30,5 +36,27 @@ describe Partition do
       
       Partition.latest(section).should == latest_partition
     end
+  end
+  
+  context "set_position" do
+    before(:each) do
+      @season = mock_model(Season)
+      Season.stub(:find).with(@season.id) { @season }
+    end
+
+    it "sets new partitions position to next when no position is set" do
+      Partition.stub_chain(:where, :maximum).with(:position) { 1 }
+      Partition.should_receive(:where)
+      
+      new_partition = Partition.create :season => @season, :name => 'foo'
+      new_partition.position.should == 2
+    end
+    
+    it "sets new partitions position to 1 when it is the first partition in that season" do
+      Partition.stub_chain(:where, :maximum).with(:position) { nil }
+      new_partition = Partition.create :season => @season, :name => 'foo'
+      new_partition.position.should == 1
+    end
+    
   end
 end
