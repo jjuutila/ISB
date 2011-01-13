@@ -33,32 +33,45 @@ describe Admin::PartitionsController do
   end
 
   describe "POST create" do
+    
+    before(:each) do
+      @season = mock_model(Season)
+      Season.stub(:find).with(@season.id) { @season }
+      
+      @params = {'these' => 'params'}
+    end
 
     describe "with valid params" do
       it "assigns a newly created partition as @partition" do
-        Partition.stub(:new).with({'these' => 'params'}) { mock_partition(:save => true) }
-        post :create, :season_id => '2', :partition => {'these' => 'params'}
+        Season.should_receive(:find)
+        @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => true))
+        post :create, :season_id => @season.id, :partition => @params
         assigns(:partition).should be(mock_partition)
       end
 
       it "redirects to the created partition" do
-        season = mock_model(Season)
-        Partition.stub(:new) { mock_partition(:save => true, :season => season) }        
-        post :create, :season_id => season.id, :partition => {}
-        response.should redirect_to(admin_season_partition_path(season, mock_partition))
+        @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => true))
+        post :create, :season_id => @season.id, :partition => @params
+        response.should redirect_to(admin_season_partition_path(@season, mock_partition))
+      end
+      
+      it "sets the notice message" do
+        @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => true))
+        post :create, :season_id => @season.id, :partition => @params
+        flash[:notice].should == 'Uusi kausiosio luotu.'
       end
     end
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved partition as @partition" do
-        Partition.stub(:new).with({'these' => 'params'}) { mock_partition(:save => false) }
-        post :create, :season_id => '2', :partition => {'these' => 'params'}
+        @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => false))
+        post :create, :season_id => @season.id, :partition => @params
         assigns(:partition).should be(mock_partition)
       end
 
       it "re-renders the 'new' template" do
-        Partition.stub(:new) { mock_partition(:save => false) }
-        post :create, :season_id => '2', :partition => {}
+        @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => false))
+        post :create, :season_id => @season.id, :partition => @params
         response.should render_template("new")
       end
     end

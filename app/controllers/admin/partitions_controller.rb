@@ -14,12 +14,12 @@ class Admin::PartitionsController < Admin::BaseController
   end
   
   def create
-    @partition = Partition.new(params[:partition])
-    @partition.season_id = params[:season_id]
+    season = Season.find params[:season_id]
+    @partition = season.partitions.build params[:partition]
     
     respond_to do |format|
       if @partition.save
-        format.html { redirect_to(admin_season_partition_path(@partition.season, @partition), :notice => 'Uusi kausiosio luotu.') }
+        format.html { redirect_to(admin_season_partition_path(season, @partition), :notice => 'Uusi kausiosio luotu.') }
       else
         format.html { render :action => "new" }
       end
