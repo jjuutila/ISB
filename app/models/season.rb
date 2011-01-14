@@ -1,5 +1,7 @@
 # coding: utf-8
 class Season < ActiveRecord::Base
+  default_scope :order => 'start_year DESC'
+
   belongs_to :section
   has_many :members, :through => :affairs
   has_many :partitions
@@ -9,6 +11,8 @@ class Season < ActiveRecord::Base
   validates_presence_of :division, :start_year, :section
   
   accepts_nested_attributes_for :partitions
+  
+  scope :in_section, lambda {|section| includes(:partitions).where(:section_id => section.id)}
   
   # Gets the latest season
   def self.latest(section)
