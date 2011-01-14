@@ -7,20 +7,19 @@ describe Admin::SeasonsController do
     end
   end
   
-  def create_sections
-    root_level_section = Factory.create(:section)
-    @section = Factory.create(:section, :parent => root_level_section)
+  def mock_section(stubs={})
+    (@mock_section ||= mock_model(Section).as_null_object).tap do |section|
+      section.stub(stubs) unless stubs.empty?
+    end
   end
   
-  before(:each) do
-    create_sections  
-  end
   
   describe "GET 'index'" do
-    it "should be successful" do
-      create_sections
-      get 'index'
-      response.should be_success
+    it "assigns all selected section's seasons as @seasons" do
+      controller.stub(:selected_section) {mock_section}
+      Season.stub_chain(:includes, :where).with(:section_id => mock_section.id).and_return([mock_season])
+      get :index
+      assigns(:seasons).should eq([mock_season])
     end
   end
   
@@ -33,60 +32,62 @@ describe Admin::SeasonsController do
   end
   
   describe "GET 'new'" do
-    it "should be successful" do
+    it "assigns the new season as @season" do
+      controller.stub(:selected_section) {mock_section}
+      partition = mock_model(Partition)
+      Partition.stub(:new) {partition}
+      Season.stub(:new).with(:section_id => mock_section.id, :partitions => [partition]) { mock_season }
       get 'new'
-      assigns(:season).new_record?.should == true
+      assigns(:season).should == mock_season
       response.should be_success
     end
   end
   
   describe "POST 'create'" do
     before(:each) do
-      @attributes = {:division => "3. Divisioona", :start_year => 2003, :section_id => @section.id.to_s,
-        :partitions_attributes => {0 => {:name => 'Runkosarja'} } }  
+      @params = {'these' => 'params'}
     end
     
-    it "should redirect to index page after successfull create." do
-      post :create, :season => @attributes
-      
-      assigns(:season).errors.size.should == 0
-      assigns(:season).new_record?.should == false
-      response.should redirect_to admin_seasons_path
+    describe "with valid params" do
+      it "should redirect to season page after successfull create." do
+        Season.stub(:new).with(@params) { mock_season(:save => true) }
+        post :create, :season => @params
+        response.should redirect_to admin_season_path(mock_season)
+      end
     end
+
   end
   
-  describe "GET 'edit'" do    
-    before(:each) do
-      @season = Factory(:season, :section => @section)  
-    end
-        
-    it "should be successful" do
-      get 'edit', :id => @season.id.to_s 
-      assigns(:season).id.should == @season.id
+  describe "GET 'edit'" do        
+    it "assigns the requested season as @season" do
+      controller.stub(:selected_section) { mock_section }
+      Season.stub(:find).with(2) { mock_season }
+      get 'edit', :id => 2
+      assigns(:season).should == mock_season
       response.should be_success
     end
   end
   
   describe "PUT 'update'" do
     before(:each) do      
-      @season = Factory(:season, :section => @section)
-      @attributes = {:division => "3. Divisioona", :start_year => 2003, :section_id => @section.id.to_s}
+      @params = {'these' => 'params'}
     end
     
-    it "should redirect to index page after successfull update." do
-      put :update, {:season => @attributes, :id => @season.id.to_s }
-      
-      assigns(:season).errors.size.should == 0
-      response.should redirect_to admin_seasons_path
+    describe "with valid params" do
+      it "redirects to season page after successfull update." do
+        Season.stub(:find).with(2) { mock_season(:update_attributes => true) }
+        put :update, :season => @params, :id => 2
+        response.should redirect_to admin_season_path(mock_season)
+      end
     end
-    
-    it "should render edit page if errors in member." do
-      @attributes[:start_year] = 5
-      put :update, {:season => @attributes, :id => @season.id.to_s }
-        
-      assigns(:season).errors.size.should > 0
-      response.should be_success
-      response.should render_template("edit")
+
+    describe "with invalid params" do
+      it "re-renders the 'edit' template." do
+        Season.stub(:find).with(3) { mock_season(:update_attributes => false,
+          :errors => {:anything => "error"}) }
+        put :update, {:season => @params, :id => 3 }
+        response.should render_template("edit")
+      end
     end
   end
 end
