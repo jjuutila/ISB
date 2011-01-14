@@ -3,8 +3,7 @@ class Admin::SeasonsController < Admin::BaseController
   respond_to :html
   
   def index
-    @seasons = Season.includes(:partitions).where(:section_id => selected_section.id)
-    respond_with @seasons
+    respond_with @seasons = Season.in_section(selected_section)
   end
 
   def show

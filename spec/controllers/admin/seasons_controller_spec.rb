@@ -17,7 +17,7 @@ describe Admin::SeasonsController do
   describe "GET 'index'" do
     it "assigns all selected section's seasons as @seasons" do
       controller.stub(:selected_section) {mock_section}
-      Season.stub_chain(:includes, :where).with(:section_id => mock_section.id).and_return([mock_season])
+      Season.stub(:in_section).with(mock_section).and_return([mock_season])
       get :index
       assigns(:seasons).should eq([mock_season])
     end
