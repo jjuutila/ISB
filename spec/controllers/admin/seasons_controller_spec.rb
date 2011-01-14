@@ -1,6 +1,11 @@
 require 'spec_helper'
 
 describe Admin::SeasonsController do
+  def mock_season(stubs={})
+    (@mock_season ||= mock_model(Season).as_null_object).tap do |season|
+      season.stub(stubs) unless stubs.empty?
+    end
+  end
   
   def create_sections
     root_level_section = Factory.create(:section)
@@ -16,6 +21,14 @@ describe Admin::SeasonsController do
       create_sections
       get 'index'
       response.should be_success
+    end
+  end
+  
+  describe "GET show" do
+    it "assigns the requested season as @season" do
+      Season.stub(:find).with("37") { mock_season }
+      get :show, :id => "37"
+      assigns(:season).should be(mock_season)
     end
   end
   

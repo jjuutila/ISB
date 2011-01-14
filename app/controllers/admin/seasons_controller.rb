@@ -7,15 +7,8 @@ class Admin::SeasonsController < Admin::BaseController
     respond_with @seasons
   end
 
-  # GET /admin/seasons/1
-  # GET /admin/seasons/1.xml
   def show
-    @admin_season = Season.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @admin_season }
-    end
+    respond_with @season = Season.find(params[:id])
   end
 
   def new
