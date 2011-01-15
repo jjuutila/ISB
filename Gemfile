@@ -16,6 +16,7 @@ group :development, :test do
   gem "spork"
   gem 'rspec-rails'
   gem "shoulda"
+  gem "ruby-debug"
 end
 
 #group :production do
