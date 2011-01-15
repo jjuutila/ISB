@@ -25,7 +25,6 @@ class Admin::SeasonsController < Admin::BaseController
     @season.partitions.first.season = @season
     @season.partitions.first.position = 1
     flash[:notice] = "Uusi kausi luotu." if @season.save
-    puts @season.errors
     respond_with @season, :location => admin_season_path(@season)
   end
 
