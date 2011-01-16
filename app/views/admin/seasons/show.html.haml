@@ -1,7 +1,21 @@
-%h1= t '.title'
-%p
-  = link_to t('back'), seasons_path
-  = link_to t('edit'), edit_season_path(@season)
+%h1 Kausi #{@season}
+%ul
+  %li= link_to 'Takaisin', admin_seasons_path
+  %li= link_to 'Muokkaa kautta', edit_admin_season_path(@season)
+  %li
+    = link_to image_tag('add.png', :size => '16x16'), new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
+    = link_to "Luo uusi joukkueosio", new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
 
-%dl
-
+%table
+  %thead
+    %tr
+      %th Kausiosio
+      %th{:colspan => 2}
+  
+  %tbody
+    - for partition in @season.partitions
+      %tr{ :class => cycle(:odd, :even) }
+        %td= link_to partition, admin_season_partition_path(@season, partition)
+        %td
+        %td.action= link_to image_tag('cross.png'), admin_season_partition_path(@season, partition), :title => 'Poista',
+          :confirm => "Haluatko varmasti poistaa kausiosion \"#{partition}\"?", :method => :delete
