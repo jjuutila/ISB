@@ -21,7 +21,7 @@ class Member < ActiveRecord::Base
     :less_than_or_equal_to => DateTime::now().year(),
     :message => "Syntymävuosi tulee olla väliltä 1900-.#{DateTime::now().year()}"
   
-  before_validation :set_defaults
+  after_initialize :set_defaults
   
   def all_time_points
     2 * all_time_goals + all_time_assists

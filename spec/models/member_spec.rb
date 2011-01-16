@@ -1,5 +1,5 @@
 # coding: utf-8
-require File.expand_path("../../spec_helper.rb", __FILE__)
+require 'spec_helper'
 
 describe Member do
   context "validations" do
@@ -25,18 +25,23 @@ describe Member do
   end
   
   context "printing" do
-    it "should return number of all time points" do
+    it "returns number of all time points" do
       member = Factory.build(:member, :all_time_assists => 32, :all_time_goals => 3)
       member.all_time_points.should == 38
     end
   end
   
-  context "default" do
-    it "alltime values should be set to 0 after validation" do
-      member = Factory.build(:member, :all_time_assists => nil, :all_time_goals => nil)
-      member.valid?
+  context "initalization" do
+    it "sets alltime values to 0 if not set previously" do
+      member = Member.new
       member.all_time_assists.should == 0
       member.all_time_goals.should == 0
+    end
+    
+    it "doesn't change alltime values if set previously" do
+      member = Member.new :all_time_assists => 3, :all_time_goals => 12
+      member.all_time_assists.should == 3
+      member.all_time_goals.should == 12
     end
   end  
 end
