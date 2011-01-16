@@ -1,5 +1,12 @@
-%h1= t '.title'
-%p
-  = link_to t('back'), admin_seasons_path
-  
-= render :partial => 'form', :locals => {:url => admin_season_path(@season)}
+%h1 Muokkaa kautta #{@season}
+%p= link_to 'Takaisin', admin_seasons_path
+
+= semantic_form_for @season, :url => admin_season_path(@season) do |form| 
+  = form.inputs do
+    = form.input :section, :as => :select, :label => "Joukkueosio",
+      :collection => Section.leafs, :include_blank => false
+    = form.input :start_year, :label => "Aloitusvuosi"
+    = form.input :division, :label => 'Divisioona'
+
+  = form.buttons do
+    = form.commit_button :label => 'Tallenna'
