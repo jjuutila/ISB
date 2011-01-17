@@ -23,6 +23,9 @@ class Member < ActiveRecord::Base
   
   after_initialize :set_defaults
   
+  scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name DESC") }
+  scope :players, joins(:affairs).where(:affairs => {:role => 'player'})
+  
   def all_time_points
     2 * all_time_goals + all_time_assists
   end
