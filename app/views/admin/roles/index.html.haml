@@ -1,0 +1,13 @@
+%h1 Kokoonpano kaudella #{@season}
+
+.member_column#all_members
+  %h2 Kaikki jäsenet
+  %ul
+    - @all_members.each do |member|
+      %li= member
+
+.member_column
+  %h2 Pelaajat
+  %ul
+    - @players.each do |player|
+      %li= player

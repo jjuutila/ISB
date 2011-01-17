@@ -80,6 +80,7 @@ Isb::Application.routes.draw do
         resources :statistics, :except => [:index, :show]
         resources :matches, :except => [:show]
       end
+      resources :roles, :except => [:show, :new, :edit]
     end
     resources :comments
     resources :members
