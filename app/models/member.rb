@@ -24,6 +24,7 @@ class Member < ActiveRecord::Base
   after_initialize :set_defaults
   
   scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name DESC") }
+  scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }
   scope :players, joins(:affairs).where(:affairs => {:role => 'player'})
   
   def all_time_points
