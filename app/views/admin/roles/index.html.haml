@@ -1,13 +1,15 @@
 %h1 Kokoonpano kaudella #{@season}
 
-.member_column#all_members
+%p= link_to 'Takaisin', admin_seasons_path
+
+.member_column
   %h2 Kaikki jäsenet
-  %ul
-    - @all_members.each do |member|
-      %li= member
+  %ul#unassigned_members
+    - @unassigned_members.each do |member|
+      %li{:id => "#{@season.id}-#{member.id}"}= member
 
 .member_column
   %h2 Pelaajat
-  %ul
+  %ul#players
     - @players.each do |player|
-      %li= player
+      %li{:id => "#{@season.id}-#{player.id}"}= player
