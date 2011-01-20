@@ -16,36 +16,48 @@ $(function() {
     cursor: "move"
   });
   
-  $("ul", $unassigned_members).droppable({
+  $unassigned_members.droppable({
     accept: ":not(#unassigned_members li)",
     drop: function( event, ui ) {
       moveMember($(this), ui.draggable);
     }
   });
   
-  $("ul", $players).droppable({
+  $players.droppable({
     activeClass: "ui-state-default",
     hoverClass: "ui-state-hover",
     accept: ":not(#players li)",
     drop: function( event, ui ) {
       moveMember($(this), ui.draggable);
-      updateRole($(this).attr('id'), ui.draggable.attr('id'), "player");
+
+      if (isFromUnassignedMembers(ui.draggable)) {
+        createRole(ui.draggable.attr('id'), "player");
+      }
+      else {
+        // update
+      }
     }
   });
   
-  function isAcceptable(item) {
-    
+  function isFromUnassignedMembers($item) {
+    return ($item.parent().attr('id') == $unassigned_members.attr('id'))
   }
   
   function moveMember($destination, $item) {
     $item.fadeOut(function() {
-      //var $destination_list = $("ul", $players).length ? $("ul", $players) : $("ul", $unassigned_members).appendTo($players);
       $item.appendTo($destination).show();
     });
   }
   
-  function updateRole(seasonID, playerID, role) {
-    $.post("/admin/seasons/" + seasonID + "/roles/" + playerID + "/set_role", {role: role});
+  function createRole(id, role) {
+    season_and_member_ids = id.split('-');
+    
+    $.ajax({url: "/admin/seasons/" + season_and_member_ids[0] + "/roles.js",
+      data: { member_id: season_and_member_ids[1], role: role },
+      type: 'POST',
+      error: function (data) {
+        alert('ERROR');
+      }
+    });
   }
-
 });
