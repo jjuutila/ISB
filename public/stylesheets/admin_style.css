@@ -179,7 +179,38 @@ tr.even {
 }
 td.action {
   text-align: center;
-} 
+}
+
+.member_column {
+  float:left;
+  width:200px;
+  min-height: 40px;
+  margin-right:15px;
+}
+
+.member_column ul {
+  padding:4px;
+  background-color: #008000;
+  min-height:30px;
+  list-style:none;
+}
+
+.member_column li {
+  margin:3px;
+  background-color: #333333;
+  line-height: 1.9em;
+  cursor:move;
+}
+.member_column li:last-child {
+  margin-bottom:1.9em;
+}
+
+.ui-draggable-dragging {
+  list-style: none;
+}
+.ui-state-hover {
+  background-color: #4477CC;
+}
 
 #footer {
   background-color: #f9f9f9;
