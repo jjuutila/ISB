@@ -39,18 +39,25 @@ describe Admin::RolesController do
   end
   
   describe "POST create" do
-    describe "with valid params" do
-      it "creates a new affair" do
-        Season.stub(:find).with(2) { mock_season }
-        Member.stub(:find).with(1) { mock_member }
-        Affair.stub(:create).with(:season => mock_season, :member => mock_member, :role => 'player') {
-          mock_affair(:save => true) }
-        
-        post :create, :season_id => 2, :id => 1, :role => 'player'
-        xhr :post, :create, {:season_id => 2, :id => 1, :role => 'player', :format => 'js'}
-        puts response.inspect
-        response.should be_success
-      end
+    before(:each) do
+      Season.stub(:find).with(2) { mock_season }
+      Member.stub(:find).with(1) { mock_member }
+    end
+    
+    it "with valid params creates a new affair" do
+      Affair.stub(:new).with(:season => mock_season, :member => mock_member, :role => 'player') {
+        mock_affair(:save => true) }
+      
+      xhr :post, :create, {:season_id => 2, :member_id => 1, :role => 'player', :format => 'js'}
+      response.should be_success
+    end
+    
+    it "with invalid params returns error" do
+      Affair.stub(:new).with(:season => mock_season, :member => mock_member, :role => 'player') {
+        mock_affair(:save => false, :errors => {:anything => "error"}) }
+      
+      xhr :post, :create, {:season_id => 2, :member_id => 1, :role => 'player', :format => 'js'}
+      response.should_not be_success
     end
 
   end

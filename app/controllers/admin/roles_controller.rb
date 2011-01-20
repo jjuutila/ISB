@@ -1,7 +1,7 @@
 # coding: utf-8
 class Admin::RolesController < Admin::BaseController
   respond_to :html, :only => :index
-  respond_to :json, :except => :index
+  respond_to :js, :except => :index
   
   def index
     @season = Season.find(params[:season_id])
@@ -13,12 +13,14 @@ class Admin::RolesController < Admin::BaseController
   
   def create
     season = Season.find(params[:season_id])
-    member = Member.find(params[:id])
+    member = Member.find(params[:member_id])
     
-    affair = Affair.create :season => season, :member => member, :role => params[:role]
+    affair = Affair.new :season => season, :member => member, :role => params[:role]
     
-    #puts 'set_role called'
-    respond_with affair
+    if affair.save
+     render :nothing => true, :status => :created 
+    else
+     render :nothing => true, :status => :not_acceptable
+    end
   end
-
 end
