@@ -20,20 +20,36 @@
 	
 	<script type="text/javascript">
     $(function(){
-     var draggable = new DragDropManager({target: 'draggable-element'});
-     draggable.add_draggable_to_elements();
+     var draggable = new DragDropManager();
+     draggable.init({moveable_element: 'draggable-elements'});
+     console.log(draggable)
     });
     
 	</script>
 	
 	<div id="test-area">
 	 <h2>Test elements</h2>
-	 <ul>
-	   <li class="draggable-element">1. element</li>
-	   <li class="draggable-element">2. element</li>
-	   <li class="draggable-element">3. element</li>
-	   <li class="draggable-element">4. element</li>
+	 <ul class="drop-place draggable-elements" id="usigned">
+	   <li id="element-1">1. element</li>
+	   <li id="element-2">2. element</li>
+	   <li id="element-3">3. element</li>
+	   <li id="element-4">4. element</li>
 	  </ul>
+	
+	  <ul class="drop-place draggable-elements" id="players">
+ 	   <li id="element-5">5. element</li>
+ 	   <li id="element-6">6. element</li>
+ 	   <li id="element-7">7. element</li>
+ 	   <li id="element-8">8. element</li>
+	  </ul>
+	  
+	  <ul class="drop-place draggable-elements" id="chocolate">
+  	   <li id="element-9">9. element</li>
+  	   <li id="element-10">10. element</li>
+  	   <li id="element-11">11. element</li>
+  	   <li id="element-12">12. element</li>	    
+	  </ul>
+	  
 	</div>
 	
 </body>
