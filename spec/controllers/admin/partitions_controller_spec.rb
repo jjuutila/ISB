@@ -41,25 +41,16 @@ describe Admin::PartitionsController do
       @params = {'these' => 'params'}
     end
 
-    describe "before create we should find and set the season" do
-      it "with existing season" do
+    describe "with valid params" do
+      before(:each) do
+        @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => true))
+      end
+      
+      it "assigns requested season as @season" do
         @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => true))
         Season.should_receive(:find).with(@season.id).and_return(@season)
         post :create, :season_id => @season.id, :partition => @params
         assigns(:season).should be(@season)
-      end
-      
-      it "with missing season" do
-        Season.should_receive(:find).with(@season.id).and_raise(ActiveRecord::RecordNotFound)
-        post :create, :season_id => @season.id, :partition => @params
-        response.should redirect_to('/')
-      end
-      
-    end
-
-    describe "with valid params" do
-      before(:each) do
-        @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => true))
       end
       
       it "assigns a newly created partition as @partition" do
@@ -81,6 +72,12 @@ describe Admin::PartitionsController do
     describe "with invalid params" do
       before(:each) do
         @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => false))
+      end
+      
+      it "redirects to seasons if requested season is not found" do
+        Season.should_receive(:find).with(@season.id).and_raise(ActiveRecord::RecordNotFound)
+        post :create, :season_id => @season.id, :partition => @params
+        response.should redirect_to admin_seasons_path
       end
       
       it "assigns a newly created but unsaved partition as @partition" do

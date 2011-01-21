@@ -17,7 +17,7 @@ class Admin::PartitionsController < Admin::BaseController
     begin
       @season = Season.find params[:season_id]
     rescue ActiveRecord::RecordNotFound
-      redirect_to '/' and return
+      redirect_to admin_seasons_path and return
     end
     
     @partition = @season.partitions.build params[:partition]
