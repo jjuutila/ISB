@@ -8,4 +8,22 @@ describe Affair do
     it { should validate_presence_of(:season) }    
     it { should validate_presence_of(:role) }
   end
+  
+  context "custom uniqueness validation on create" do
+    it "sets error when there is an Affair with same member_id and season_id" do
+      Affair.should_receive(:where).with(:member_id => 2, :season_id => 1).and_return([mock_model(Affair)])
+      
+      affair = Affair.create(:member_id => 2, :season_id => 1)
+      
+      affair.errors[:unique].should include 'Member already assigned to season.'
+    end
+    
+    it "passes if there is no Affair with same member_id and season_id" do
+      Affair.should_receive(:where).with(:member_id => 2, :season_id => 1).and_return([])
+      
+      affair = Affair.create(:member_id => 2, :season_id => 1)
+      
+      affair.errors[:unique].count.should == 0
+    end
+  end
 end
