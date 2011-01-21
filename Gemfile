@@ -17,6 +17,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem "shoulda"
   gem "ruby-debug"
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'capybara'
 end
 
 #group :production do
