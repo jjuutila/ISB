@@ -59,4 +59,22 @@ describe Statistic do
       @statistic.all_0?.should == false
     end
   end
+  
+  context "custom uniqueness validation on create" do
+    it "sets error when there is an Statistic with same member_id and partition_id" do
+      Statistic.should_receive(:where).with(:member_id => 2, :partition_id => 1).and_return([mock_model(Statistic)])
+      
+      statistic = Statistic.create(:member_id => 2, :partition_id => 1)
+      
+      statistic.errors[:unique].should include 'Member already has statistics.'
+    end
+    
+    it "passes if there is no Statistic with same member_id and partition_id" do
+      Statistic.should_receive(:where).with(:member_id => 2, :partition_id => 1).and_return([])
+      
+      statistic = Statistic.create(:member_id => 2, :partition_id => 1)
+      
+      statistic.errors[:unique].count.should == 0
+    end
+  end
 end

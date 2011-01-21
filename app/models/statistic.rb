@@ -12,6 +12,8 @@ class Statistic < ActiveRecord::Base
   
   validates_numericality_of :pim, :only_integer => true, :greater_than_or_equal_to => 0
   
+  validate :member_has_statistics?, :on => :create
+  
   before_validation :set_defaults
   
   def points
@@ -20,6 +22,11 @@ class Statistic < ActiveRecord::Base
   
   def all_0?
     self.matches == 0 && self.pim == 0 && self.assists == 0 && self.goals == 0
+  end
+  
+  def member_has_statistics?
+    matching_stats = Statistic.where :member_id => member_id, :partition_id => partition_id
+    errors.add(:unique, "Member already has statistics.") if matching_stats.count != 0
   end
   
   private
