@@ -6,6 +6,7 @@ class Base
     thisObject = this
     () ->
       func.apply(thisObject, arguments)
+      
 
 class DragDropManager extends Base
   constructor: () ->
@@ -18,29 +19,37 @@ class DragDropManager extends Base
   init: (options) ->
     $.extend(@options, @defaults, options)
     @activateDraggableElements()
-    @activateReceivingElements()
+    #@activateReceivingElements()
 
   parseNotAceptableElement: (element) ->
-    ":not(#" + element + " li)"
+    parsedSelector = ":not(."+element+" li)"
   
   moveableElements: ->
     target_elem = "." + @options.moveable_element + " li"
-    $(target_elem)
+    if $(target_elem)
+      $(target_elem)
+    else
+      nul
 
   receivingElement: ->
     target_elem = "." + @options.receiving_element
-    $(target_elem)
+    if $(target_elem)
+      $(target_elem)
+    else
+      nul
 
   activateDraggableElements: () ->
-    (@moveableElements()).draggable(@options.draggable)
+    if (@moveableElements().length > 0)
+      (@moveableElements()).draggable(@options.draggable)
     
   activateReceivingElements: () ->
-    allOptions = {}
-    eventHandlers = { 
-      drop: @proxy ->
-        @elementDropped(arguments) }
-    allOptions = $.extend(@options.droppable, eventHandlers)
-    @receivingElement().droppable(allOptions)
+    if (@receivingElement().length > 0)
+      allOptions = {}
+      eventHandlers = { 
+        drop: @proxy ->
+          @elementDropped(arguments) }
+        allOptions = $.extend(@options.droppable, eventHandlers)
+      @receivingElement().droppable(allOptions)
    
   elementDropped:(arguments=null) ->
     draggedElement = new DraggedElement(arguments, @options.remote)

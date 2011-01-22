@@ -45,35 +45,47 @@ DragDropManager = (function() {
   }
   DragDropManager.prototype.init = function(options) {
     $.extend(this.options, this.defaults, options);
-    this.activateDraggableElements();
-    return this.activateReceivingElements();
+    return this.activateDraggableElements();
   };
   DragDropManager.prototype.parseNotAceptableElement = function(element) {
-    return ":not(#" + element + " li)";
+    var parsedSelector;
+    return parsedSelector = ":not(." + element + " li)";
   };
   DragDropManager.prototype.moveableElements = function() {
     var target_elem;
     target_elem = "." + this.options.moveable_element + " li";
-    return $(target_elem);
+    if ($(target_elem)) {
+      return $(target_elem);
+    } else {
+      return nul;
+    }
   };
   DragDropManager.prototype.receivingElement = function() {
     var target_elem;
     target_elem = "." + this.options.receiving_element;
-    return $(target_elem);
+    if ($(target_elem)) {
+      return $(target_elem);
+    } else {
+      return nul;
+    }
   };
   DragDropManager.prototype.activateDraggableElements = function() {
-    return (this.moveableElements()).draggable(this.options.draggable);
+    if (this.moveableElements().length > 0) {
+      return (this.moveableElements()).draggable(this.options.draggable);
+    }
   };
   DragDropManager.prototype.activateReceivingElements = function() {
     var allOptions, eventHandlers;
-    allOptions = {};
-    eventHandlers = {
-      drop: this.proxy(function() {
-        return this.elementDropped(arguments);
-      })
-    };
-    allOptions = $.extend(this.options.droppable, eventHandlers);
-    return this.receivingElement().droppable(allOptions);
+    if (this.receivingElement().length > 0) {
+      allOptions = {};
+      eventHandlers = {
+        drop: this.proxy(function() {
+          return this.elementDropped(arguments);
+        })
+      };
+      allOptions = $.extend(this.options.droppable, eventHandlers);
+      return this.receivingElement().droppable(allOptions);
+    }
   };
   DragDropManager.prototype.elementDropped = function(arguments) {
     var draggedElement;
