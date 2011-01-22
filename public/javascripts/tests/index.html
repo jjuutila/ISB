@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="../jquery-ui.js"></script>
 	<script type="text/javascript" src="http://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
 	<!-- Your project file goes here -->
-	<script type="text/javascript" src="../../../coffee/lib/dragdrop.js"></script>
+	<script type="text/javascript" src="../libs/dragdrop.js"></script>
 	<!-- Your tests file goes here -->
 	<script type="text/javascript" src="drag_and_drop_tests.js"></script>
 </head>
@@ -21,7 +21,10 @@
 	<script type="text/javascript">
     $(function(){
      var draggable = new DragDropManager();
-     draggable.init({moveable_element: 'draggable-elements'});
+     draggable.init({moveable_element: 'draggable-elements', 
+                    receiving_element: 'drop-place',
+                    remote: { url: {base: "/admin/seasons/1", format: "/roles.js"}}
+                    });
      console.log(draggable)
     });
     
@@ -29,25 +32,25 @@
 	
 	<div id="test-area">
 	 <h2>Test elements</h2>
-	 <ul class="drop-place draggable-elements" id="usigned">
-	   <li id="element-1">1. element</li>
-	   <li id="element-2">2. element</li>
-	   <li id="element-3">3. element</li>
-	   <li id="element-4">4. element</li>
+	 <ul class="drop-place draggable-elements" id="role-">
+	   <li id="member_id-1">1. element</li>
+	   <li id="member_id-2">2. element</li>
+	   <li id="member_id-3">3. element</li>
+	   <li id="member_id-4">4. element</li>
 	  </ul>
 	
-	  <ul class="drop-place draggable-elements" id="players">
- 	   <li id="element-5">5. element</li>
- 	   <li id="element-6">6. element</li>
- 	   <li id="element-7">7. element</li>
- 	   <li id="element-8">8. element</li>
+	  <ul class="drop-place draggable-elements" id="role-player">
+ 	   <li id="member_id-5">5. element</li>
+ 	   <li id="member_id-6">6. element</li>
+ 	   <li id="member_id-7">7. element</li>
+ 	   <li id="member_id-8">8. element</li>
 	  </ul>
 	  
-	  <ul class="drop-place draggable-elements" id="chocolate">
-  	   <li id="element-9">9. element</li>
-  	   <li id="element-10">10. element</li>
-  	   <li id="element-11">11. element</li>
-  	   <li id="element-12">12. element</li>	    
+	  <ul class="drop-place draggable-elements" id="role-assistant">
+  	   <li id="member_id-9">9. element</li>
+  	   <li id="member_id-10">10. element</li>
+  	   <li id="member_id-11">11. element</li>
+  	   <li id="member_id-12">12. element</li>	    
 	  </ul>
 	  
 	</div>
