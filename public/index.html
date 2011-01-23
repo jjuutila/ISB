@@ -1,89 +1,91 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi"> 
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /> 
-<title>Ajankohtaista</title> 
-</head>
-<body>
-<div id="main-wrapper">
- 
-<div id="top"> 
-<div id="header"> 
-</div> 
-</div>
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset='UTF-8'> 
+    <title>ISB AdminNews</title> 
+    <link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.jcarousel.min.js"></script>
 
-<ul id="sectionMenu"> 
-<li><a href="naiset">Naiset</a></li> 
-<li><a href="miehet">Miehet</a></li> 
-<li><a href="pojat">Pojat</a></li> 
-<li><a href="tytot">Tytöt</a></li> 
-</ul> 
+    <script type="text/javascript">
+    function mycarousel_initCallback(carousel)
+    {
+        // Disable autoscrolling if the user clicks the prev or next button.
+        carousel.buttonNext.bind('click', function() {
+            carousel.startAuto(0);
+        });
+    
+        carousel.buttonPrev.bind('click', function() {
+            carousel.startAuto(0);
+        });
+    
+        // Pause autoscrolling if the user moves with the cursor over the clip.
+        carousel.clip.hover(function() {
+            carousel.stopAuto();
+        }, function() {
+            carousel.startAuto();
+        });
+    };
+    
+    jQuery(document).ready(function() {
+        jQuery('#supporter-carousel').jcarousel({
+            auto: 4,
+            wrap: 'last'
+        });
+    });    
+    </script>
+  </head>
+  
+  <body>
+    <div id="top">
+      <div class="center-wrapper" id="global-nav">global navigation</div>
+    </div>
+    
+    <div id="header-wrapper">
+      <div class="center-wrapper" id="header">
+        <img src="/images/isb-logo-header.png" />
+        <p>Ilmajoen Salibandy</p>
+      </div>
+    </div>
+    
+    <div class="center-wrapper">
+      <div id="breadcrumb">Etusivu</div>
+      
+      <div id="frontpage-matches">
+        <h2>Kuukauden ottelut</h2>
+        otteluita
+      </div>
+      
+      <div id="frontpage-news">
+        <h2>Tuoreimmat uutiset</h2>
+        uutisia
+      </div>
+      
+      <div id="supporters">
+        <h2>Sponsorit</h2>
+          <ul id="supporter-carousel">
+            <li><a rel="nofollow" href="http://www.eepee.fi/" title="Etelä-Pohjanmaan Osuuskauppa"><img src="/images/supporters/eepee.gif" alt="Etelä-Pohjanmaan Osuuskauppa" width="190" height="39" /></a></li>
+            <li><a rel="nofollow" href="http://www.intersport.fi/" title="Intersport"><img src="/images/supporters/intersport.gif" alt="Intersport" width="190" height="55" /></a></li>
+            <li><a rel="nofollow" href="http://www.nordea.fi/" title="Nordea"><img src="/images/supporters/nordea_logo.gif" alt="Nordea" width="150" height="39" /></a></li>
+            <li><a rel="nofollow" href="http://www.botnia-korro.fi/" title="Botnia-Korro Oy"><img src="/images/supporters/botniakorro.gif" alt="Botnia-Korro Oy" width="190" height="28" /></a></li>
+            <li><a rel="nofollow" href="http://sahkoa.net/" title="KORA Installations Oy"><img src="/images/supporters/kora_logo.png" alt="KORA Installations Oy" width="146" height="130" /></a></li>
+            <li><a rel="nofollow" href="http://www.pizzeriapiikki.fi/" title="Pizzeria Piikki"><img src="/images/supporters/piikki_logo.png" alt="Pizzeria Piikki" width="190" height="67" /></a></li>
+            <li><a rel="nofollow" href="http://www.lemminkainen.fi/" title="Lemminkäinen Oyj"><img src="/images/supporters/lemminkainen_logo.png" alt="Lemminkäinen Oyj" width="190" height="48" /></a></li>
+            <li><img src="/images/supporters/ilmajoen_apteekki.gif" alt="Ilmajoen apteekki" width="190" height="42" /></li>
+            <li><a rel="nofollow" href="http://www.carozel.fi/" title="Carozel"><img src="/images/supporters/carozel.png" alt="Carozel" width="190" height="88" /></a></li>
+            <li><a rel="nofollow" href="http://www.artrockcafe.fi/" title="Art Rock Cafe Ilmajoki"><img src="/images/supporters/artti_logo.gif" alt="Art Rock Cafe Ilmajoki" width="145" height="42" /></a></li>
+            <li><a rel="nofollow" href="http://www.ilmajoenosuusmeijeri.fi/" title="Ilmajoen Osuusmeijeri"><img src="/images/supporters/ilmajoen_omeijeri_logo.png" alt="Ilmajoen Osuusmeijeri" width="129" height="130" /></a></li>
+            <li><a rel="nofollow" href="http://www.arj-taloushallinto.fi/" title="Arj-Taloushallinto Oy"><img src="/images/supporters/arj.gif" alt="Arj-Taloushallinto Oy" width="177" height="55" /></a></li>
+            <li><a rel="nofollow" href="http://www.lannenautokatsastus.fi/" title="Lännen Autokatsastus"><img src="/images/supporters/lannen_autokatsastus_logo.gif" alt="Lännen Autokatsastus" width="190" height="51" /></a></li>
+            <li><a rel="nofollow" href="http://www.nesteilmajoki.fi/" title="Neste Ilmajoki"><img src="/images/supporters/NesteIlmajoki.gif" alt="Neste Ilmajoki" width="190" height="41" /></a></li>
+            <li><img src="/images/supporters/kivimaki.gif" alt="Tilausliikenne Kivimäki" width="190" height="45" /></li>
+            <li><a rel="nofollow" href="http://www.fatpipe.fi/" title="Fat Pipe"><img src="/images/supporters/fatpipe.gif" alt="Fat Pipe" width="190" height="43" /></a></li>
+        </ul>
 
-<div id="main">
-    <div id="menu"> 
-    <ul>
-<li><a href="miehet-edustus">Ajankohtaista</a></li><li><a href="miehet-edustus/vieraskirja">Vieraskirja</a></li><li><a href="miehet-edustus/pisteporssi">Pistepörssi</a></li><li><a href="miehet-edustus/sarjataulukko">Sarjataulukko</a></li>    </ul> 
-    </div>     
-<!-- content start --><div id="content">
- <div id="breadcrumb">Breadcrumb</div>
-<h1>Ajankohtaista</h1>
-<div class="message">
-<h2>ISB palkitsi kauden 2009-2010 parhaita</h2>
-<p class="meta">19.04.2010 19:48</p>
-<p>Ilmajoen Salibandy piti onnistuneen päätöspäivän lauantaina 17.4. Ohjelmassa oli ensin 5 ottelua, joissa juniorit ottivat mittaa vanhemmistaan ja kahvitarjoilujen päälle pidettiin palkitsemistilaisuus, jossa muistettiin joukkueiden lisäksi myös 10-vuo</p>
-» <a href="miehet-edustus/ajankohtaista/lue/505/isb_palkitsi_kauden_2009_2010_parhaita">Lue koko uutinen</a></div>
-<div class="message">
-<h2>ISB 10 VUOTTA, JUHLAPÄIVÄ 17.4.</h2>
-<p class="meta">10.04.2010 13:50</p>
-<p>Tulevana lauantaina 17.4. ilmajokisen salibandyn lippulaiva ISB juhlii 10 vuotta kestänyttä taivaltaan Ilmajoki-hallilla tapahtumapäivän merkeissä. Päivän päätapahtumina toimivat klo 11.30 alkavat ottelut juniorijoukkueiden ja heidän vanhempiensa vä</p>
-» <a href="miehet-edustus/ajankohtaista/lue/498/isb_10_vuotta_juhlapaeivae_17_4">Lue koko uutinen</a></div>
-<div class="message">
-<h2>ISB:STÄ UUSI SALIBANDYN ERIKOISSEURA</h2>
-<p class="meta">08.04.2010 12:46</p>
-<p>Keskiviikkona 7.4. pidettiin Ilmajoki-hallilla uuden salibandyn erikoisseuran perustamiskokous. Kokouksen tuloksena syntyi uusi seura, Ilmajoen Salibandy ry. Ilmajoen Kisailijoiden alaisuudessa aiemmin vaikuttanut salibandyjaosto erosi toimestaan Kisailijoissa</p>
-» <a href="miehet-edustus/ajankohtaista/lue/491/isb_stae_uusi_salibandyn_erikoisseura">Lue koko uutinen</a></div>
-<div class="message">
-<h2>I AVOIN ISB:N HIIHTOMESTARUUS RATKAISTU</h2>
-<p class="meta">23.03.2010 20:50</p>
-<p>ISB:n lajivalikoima teki uuden aluevaltauksen beachvolleyn ja golfin (ja pokerin) rinnalle hiihtokisojen muodossa. Palonkylän pururadan laskevan auringon ilta tarjosi pikkupakkasessa huippuolosuhteet kisalle. Osanottajamäärä jäi valitettavan pieneksi, kun</p>
-» <a href="miehet-edustus/ajankohtaista/lue/488/i_avoin_isb_n_hiihtomestaruus_ratkaistu">Lue koko uutinen</a></div>
-<div class="message">
-<h2>KAUSI PÄÄTÖKSEEN ALIVOIMAHARJOITTEILLA</h2>
-<p class="meta">01.03.2010 11:53</p>
-<p>ISB otti kauden päätöspelissään jäähyminuutteja vähintään riittävästi (38 min) ja Blue Foxin ylivoima onnistuikin saman tien 11 kertaa venyttämään verkkoja. Lopullisen taisteluilmeen puuttuminen ja lukuisat sairastapaukset veivät ISB:ltä ne v�</p>
-» <a href="miehet-edustus/ajankohtaista/lue/486/kausi_paeaetoekseen_alivoimaharjoitteilla">Lue koko uutinen</a></div>
-<div class="message">
-<h2>KAUSI PÄÄTTYY TÄHTIHALLILLA</h2>
-<p class="meta">27.02.2010 00:51</p>
-<p>Uusikaarlepyy on se paikka, jossa ISB:n kausi ja samalla taival ykkösdivarissa ainakin tällä erää laitettaan pakettiin. Lauantaisessa ottelussa ei ole enää minkään sortin panoksia kummallakaan joukkueella, mutta silti on harmi, että ISB joutuu lähte</p>
-» <a href="miehet-edustus/ajankohtaista/lue/485/kausi_paeaettyy_taehtihallilla">Lue koko uutinen</a></div>
-<div class="message">
-<h2>KOTIOTTELUT PÄÄTÖKSEEN VOITOLLA</h2>
-<p class="meta">21.02.2010 21:41</p>
-<p>Kauden kahden Woodis-kohtaamisen 120 minuuttiin sattui 88 minuutin ja 18 sekunnin yhtämittainen ajanjakso, jossa ISB piti maalinsa puhtaana. Jostain syystä Woodcutters sytytti tämän kauden divarissa ja niinhän paikallisvastustajan pitääkin. Tämän koko</p>
-» <a href="miehet-edustus/ajankohtaista/lue/483/kotiottelut_paeaetoekseen_voitolla">Lue koko uutinen</a></div>
-<div class="message">
-<h2>ERIKOISTA SEKOILUA ESPOOSSA</h2>
-<p class="meta">21.02.2010 21:40</p>
-<p>Lauantainen etelän reissu Intiaanien kotikotaan oli odotettu tapahtuma, eikä vähiten Janne Kallioniemen kohtaamisen vuoksi. Pelistä olikin tulossa panokset huomioon ottaen yllättävänkin hyvä ja mielenkiintoinen, ennen kuin eräs kaksikko kentän sisäp</p>
-» <a href="miehet-edustus/ajankohtaista/lue/482/erikoista_sekoilua_espoossa">Lue koko uutinen</a></div>
-<div class="message">
-<h2>ESPOON MATKA & KAUDEN VIIMEINEN KOTIPELI</h2>
-<p class="meta">19.02.2010 15:38</p>
-<p>ISB:n ensimmäinen divarikausi on tulossa päätökseensä reilun viikon päästä. Putoaminen sarjaporrasta alemmaksi on jo selvä asia, eikä selittelyille ole juuri sijaa. Tämän vuoden divarissa olisi taakse pitänyt jäädä 4 joukkuetta, jotta sarjapaik</p>
-» <a href="miehet-edustus/ajankohtaista/lue/481/espoon_matka_kauden_viimeinen_kotipeli">Lue koko uutinen</a></div>
-<div class="message">
-<h2>PORISTA SELKEÄ VOITTO</h2>
-<p class="meta">14.02.2010 10:52</p>
-<p>SBS Pori sinnitteli mukana ensimmäisen erän hyvän puolustus- ja peittopelinsä ansiosta, mutta kahdessa viimeisessä erässä ISB meni menojaan loppulukemien ollessa 3-15 (1-1, 1-6, 1-8). Avauserässä peli oli hyvin seisovaa, SBS sumputti ja ISB:llä säil</p>
-» <a href="miehet-edustus/ajankohtaista/lue/479/porista_selkeae_voitto">Lue koko uutinen</a></div>
-<a href="miehet-edustus/ajankohtaista/2">Näytä vanhempia uutisia »</a></div><!-- content end --> 
- 
-<div class="cleaner"></div> 
-<div id="footer"><p>&copy; 2002-2010 ISB Ilmajoki</p></div> 
-</div> 
-</div> 
-</body> 
+      </div>
+    </div>
+    
+  </body> 
 </html>
