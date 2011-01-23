@@ -78,15 +78,17 @@ h2 {
   border:none;
 }
 
-#frontpage-matches {
+#frontpage-matches, #frontpage-news {
   float:left;
-  width:350px;
-  margin-right:10px;
   margin-bottom:10px;
 }
 
+#frontpage-matches {
+  width:350px;
+  margin-right:10px;
+}
+
 #frontpage-news {
-  float:left;
   width:584px;
 }
 
