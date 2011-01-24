@@ -14,5 +14,7 @@ describe Section do
     it { should_not allow_value("").for(:name) }
     
     it { should validate_presence_of(:slug) }
+    
+    it { should have_many(:link_categories) }
   end
 end

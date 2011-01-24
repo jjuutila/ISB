@@ -4,6 +4,7 @@ class Section < ActiveRecord::Base
   has_many :sections, :class_name => "Section", :foreign_key => "parent_id"
   has_and_belongs_to_many :news
   has_many :comments, :as => :commentable
+  has_many :link_categories
   
   validates_presence_of :name, :slug
   
