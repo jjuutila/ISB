@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @link_category.name
+%p
+  %b Section:
+  = @link_category.section
+
+= link_to 'Edit', edit_link_category_path(@link_category)
+\|
+= link_to 'Back', link_categories_path
