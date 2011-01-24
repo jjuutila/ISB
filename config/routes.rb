@@ -31,6 +31,8 @@ Isb::Application.routes.draw do
     end
     resources :comments
     resources :members
-    resources :link_categories
+    resources :link_categories do
+      resources :links, :except => [:index, :show]
+    end
   end
 end

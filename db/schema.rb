@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110124185544) do
+ActiveRecord::Schema.define(:version => 20110124201148) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
@@ -34,6 +34,14 @@ ActiveRecord::Schema.define(:version => 20110124185544) do
   create_table "link_categories", :force => true do |t|
     t.string   "name"
     t.integer  "section_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "links", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
