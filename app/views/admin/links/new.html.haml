@@ -1,5 +1,7 @@
-%h1 New link
+%h1 Luo uusi linkki linkkikategoriaan '#{@category}'
 
-= render 'form'
+.context_navi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_link_category_path(@category)
+  = link_to 'Takaisin', admin_link_category_path(@category)
 
-= link_to 'Back', links_path
+= render :partial => 'form', :locals => {:url => admin_link_category_links_path(@category)}

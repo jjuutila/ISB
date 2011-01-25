@@ -1,12 +1,26 @@
-%p#notice= notice
+%h1= @link_category
 
-%p
-  %b Name:
-  = @link_category.name
-%p
-  %b Section:
-  = @link_category.section
-
-= link_to 'Edit', edit_link_category_path(@link_category)
-\|
-= link_to 'Back', link_categories_path
+.context_navi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_link_categories_path 
+  = link_to 'Takaisin', admin_link_categories_path
+  \|
+  = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_link_category_path(@link_category)
+  = link_to 'Muokkaa', edit_admin_link_category_path(@link_category)
+  \|
+  = link_to image_tag('add.png', :size => '16x16'), new_admin_link_category_link_path(@link_category)
+  = link_to 'Uusi linkki', new_admin_link_category_link_path(@link_category)
+  
+%table
+  %tr
+    %th Nimi
+    %th Osoite
+    %th
+    %th
+  - for link in @link_category.links
+    %tr{ :class => cycle(:odd, :even) }
+      %td= link
+      %td= link_to link.url, link.url, :rel => "nofollow"
+      %td.action= link_to image_tag('pencil.png', :size => '16x16', :title => 'Muokkaa'), edit_admin_link_category_link_path(link)
+      %td.action= link_to image_tag('cross.png', :size => '16x16', :title => 'Poista'), admin_link_category_link_path(link),
+        :confirm => 'Haluatko varmasti poistaa linkin?',
+        :method => :delete

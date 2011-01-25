@@ -1,21 +1,20 @@
-%h1 Listing link_categories
+%h1 Linkkikategoriat
+
+= section_selection
+.context_navi
+  = link_to image_tag('add.png', :size => '16x16'), new_admin_link_category_path
+  = link_to 'Luo uusi linkkikategoria', new_admin_link_category_path
 
 %table
   %tr
-    %th Name
-    %th Section
     %th
     %th
     %th
 
   - @link_categories.each do |link_category|
     %tr
-      %td= link_category.name
-      %td= link_category.section
-      %td= link_to 'Show', link_category
-      %td= link_to 'Edit', edit_link_category_path(link_category)
-      %td= link_to 'Destroy', link_category, :confirm => 'Are you sure?', :method => :delete
-
-%br
-
-= link_to 'New Link category', new_link_category_path
+      %td= link_to link_category, admin_link_category_path(link_category)
+      %td= link_to image_tag('pencil.png'), edit_admin_link_category_path(link_category)
+      %td= link_to image_tag('cross.png'), admin_link_category_path(link_category),
+        :confirm => 'Kaikki linkit poistetaan samalla. Haluatko varmasti poistaa linkkikategorian?',
+        :method => :delete

@@ -1,16 +1,6 @@
-= form_for @link_category do |f|
-  -if @link_category.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@link_category.errors.count, "error")} prohibited this link_category from being saved:"
-      %ul
-        - @link_category.errors.full_messages.each do |msg|
-          %li= msg
+= semantic_form_for @link_category, :url => url do |form| 
+  = form.inputs do
+    = form.input :name, :label => "Nimi"
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :section
-    = f.text_field :section
-  .actions
-    = f.submit 'Save'
+  = form.buttons do
+    = form.commit_button :label => 'Tallenna'
