@@ -21,6 +21,12 @@ describe Admin::LinksController do
       get :new, :link_category_id => 2
       assigns(:link).should be(mock_link)
     end
+    
+    it "assigns the requested link_category as @category" do
+      Link.stub(:new) { mock_link }
+      get :new, :link_category_id => 2
+      assigns(:category).should be(mock_category)
+    end
   end
 
   describe "GET edit" do

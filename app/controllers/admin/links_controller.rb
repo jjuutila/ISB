@@ -1,7 +1,7 @@
 # coding: utf-8
 class Admin::LinksController < Admin::BaseController
   respond_to :html
-  before_filter :find_category, :except => [:new, :edit]
+  before_filter :find_category, :except => [:edit]
   
   def new
     respond_with @link = Link.new
