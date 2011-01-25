@@ -5,4 +5,8 @@ class LinkCategory < ActiveRecord::Base
   validates_presence_of :name
   
   scope :in_section, lambda {|section| includes(:links).where(:section_id => section.id).order("name DESC")}
+  
+  def to_s
+    name
+  end
 end
