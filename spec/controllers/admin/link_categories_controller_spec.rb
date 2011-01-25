@@ -32,9 +32,17 @@ describe Admin::LinkCategoriesController do
 
   describe "GET new" do
     it "assigns a new link_category as @link_category" do
+      controller.stub(:selected_section) {mock_section}
       LinkCategory.stub(:new) { mock_link_category }
       get :new
       assigns(:link_category).should be(mock_link_category)
+    end
+    
+    it "assigns a the selected section as @selected_section" do
+      controller.stub(:selected_section) {mock_section}
+      LinkCategory.stub(:new) { mock_link_category }
+      get :new
+      assigns(:selected_section).should be(mock_section)
     end
   end
 

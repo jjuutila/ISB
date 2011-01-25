@@ -11,6 +11,7 @@ class Admin::LinkCategoriesController < Admin::BaseController
   end
 
   def new
+    @selected_section = selected_section
     respond_with @link_category = LinkCategory.new
   end
 
