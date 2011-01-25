@@ -1,7 +1,7 @@
 # coding: utf-8
 class Admin::LinksController < Admin::BaseController
   respond_to :html
-  before_filter :find_category
+  before_filter :find_category, :except => [:new, :edit]
   
   def new
     respond_with @link = Link.new
@@ -12,9 +12,9 @@ class Admin::LinksController < Admin::BaseController
   end
 
   def create
-    @link = Link.new(params[:link])
+    @link = @category.links.build(params[:link])
     
-    flash.notice = "Uusi linkki luotu" if @link.save
+    flash.notice = "Uusi linkki luotu." if @link.save
     
     respond_with @link, :location => admin_link_category_path(@category)
   end

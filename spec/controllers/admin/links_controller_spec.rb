@@ -21,12 +21,6 @@ describe Admin::LinksController do
       get :new, :link_category_id => 2
       assigns(:link).should be(mock_link)
     end
-    
-    it "assigns the requested category as @category" do
-      Link.stub(:new) { mock_link }
-      get :new, :link_category_id => 2
-      assigns(:category).should be(mock_category)
-    end
   end
 
   describe "GET edit" do
@@ -39,29 +33,38 @@ describe Admin::LinksController do
 
   describe "POST create" do
     describe "with valid params" do
+      before(:each) do
+        mock_category.stub_chain(:links, :build).with({'these' => 'params'}) { mock_link(:save => true) }
+      end
+      
       it "assigns a newly created link as @link" do
-        Link.stub(:new).with({'these' => 'params'}) { mock_link(:save => true) }
         post :create, :link_category_id => 2, :link => {'these' => 'params'}
         assigns(:link).should be(mock_link)
       end
 
-      it "redirects to the created link" do
-        Link.stub(:new) { mock_link(:save => true) }
-        post :create, :link_category_id => 2, :link => {}
+      it "redirects to the link category" do
+        post :create, :link_category_id => 2, :link => {'these' => 'params'}
         response.should redirect_to(admin_link_category_path(mock_category))
+      end
+      
+      it "sets the flash.notice" do
+        post :create, :link_category_id => 2, :link => {'these' => 'params'}
+        flash[:notice].should == 'Uusi linkki luotu.'
       end
     end
 
     describe "with invalid params" do
+      before(:each) do
+        mock_category.stub_chain(:links, :build).with({'these' => 'params'}) { mock_link(:save => false) }
+      end
+      
       it "assigns a newly created but unsaved link as @link" do
-        Link.stub(:new).with({'these' => 'params'}) { mock_link(:save => false) }
         post :create, :link_category_id => 2, :link => {'these' => 'params'}
         assigns(:link).should be(mock_link)
       end
 
       it "re-renders the 'new' template" do
-        Link.stub(:new) { mock_link(:save => false) }
-        post :create, :link_category_id => 2, :link => {}
+        post :create, :link_category_id => 2, :link => {'these' => 'params'}
         response.should render_template("new")
       end
     end
