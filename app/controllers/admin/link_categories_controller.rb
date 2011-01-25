@@ -3,7 +3,7 @@ class Admin::LinkCategoriesController < Admin::BaseController
   respond_to :html
   
   def index
-    respond_with @link_categories = LinkCategory.all
+    respond_with @link_categories = LinkCategory.in_section(selected_section)
   end
 
   def show
@@ -19,7 +19,7 @@ class Admin::LinkCategoriesController < Admin::BaseController
   end
 
   def create
-    @link_category = LinkCategory.new(params[:link_category])
+    @link_category = selected_section.link_categories.build(params[:link_category])
     
     flash.notice = 'Uusi linkkikategoria luotu.' if @link_category.save
     
