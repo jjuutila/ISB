@@ -19,7 +19,7 @@ class DragDropManager extends Base
   init: (options) ->
     $.extend(@options, @defaults, options)
     @activateDraggableElements()
-    #@activateReceivingElements()
+    @activateReceivingElements()
 
   parseNotAceptableElement: (element) ->
     parsedSelector = ":not(."+element+" li)"
@@ -77,7 +77,6 @@ class DraggedElement extends Base
     $(args[1].draggable)    
     
   persistent:() ->
-    console.log "sfdfds"
     if(@needUpate())
       console.log "Need update"
     else
@@ -150,7 +149,8 @@ class DraggedElement extends Base
     element.fadeOut ->
       console.log to, element
       element.appendTo(to).show()
-    
+  
+      
     
   
 

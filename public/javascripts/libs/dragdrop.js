@@ -119,7 +119,6 @@ DraggedElement = (function() {
     return $(args[1].draggable);
   };
   DraggedElement.prototype.persistent = function() {
-    console.log("sfdfds");
     if (this.needUpate()) {
       return console.log("Need update");
     } else {
