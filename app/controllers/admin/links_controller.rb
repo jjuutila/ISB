@@ -22,7 +22,7 @@ class Admin::LinksController < Admin::BaseController
   def update
     @link = Link.find(params[:id])
     
-    flash.notice = "Uusi linkki luotu" if @link.update_attributes(params[:link])
+    flash.notice = "Linkki päivitetty." if @link.update_attributes(params[:link])
     
     respond_with @link, :location => admin_link_category_path(@category)
   end

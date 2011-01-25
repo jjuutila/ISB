@@ -95,6 +95,12 @@ describe Admin::LinksController do
         put :update, :link_category_id => 2, :id => "1"
         response.should redirect_to(admin_link_category_path(mock_category))
       end
+      
+      it "sets the flash.notice" do
+        Link.stub(:find) { mock_link(:update_attributes => true) }
+        put :update, :link_category_id => 2, :id => "1"
+        flash[:notice].should == 'Linkki päivitetty.'
+      end
     end
 
     describe "with invalid params" do
