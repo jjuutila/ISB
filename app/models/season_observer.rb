@@ -10,7 +10,9 @@ class SeasonObserver < ActiveRecord::Observer
   end
   
   def after_update(object)
-    
+    if object.class == Affair
+      affair_updated object
+    end
   end
   
   def after_destroy(object)
@@ -37,9 +39,17 @@ class SeasonObserver < ActiveRecord::Observer
     end
   end
   
+  def affair_updated(affair)
+    if affair.role == 'player'
+      create_statistics_for_player affair
+    elsif
+      destroy_statistics_from_season affair
+    end
+  end
+  
   def destroy_statistics_from_season(affair)
     partition_ids = Partition.in_season(affair.season_id).collect{|p| p.id}
-    Statistic.where('partition_id IN (?)', partition_ids).each do |statistic|
+    Statistic.where('partition_id IN (?) AND member_id = ?', partition_ids, affair.member_id).each do |statistic|
       statistic.destroy if statistic.all_0?
     end
   end
