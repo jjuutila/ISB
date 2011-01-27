@@ -23,7 +23,7 @@ class Member < ActiveRecord::Base
   
   after_initialize :set_defaults
   
-  scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name DESC") }
+  scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name ASC") }
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }
   scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}
   
