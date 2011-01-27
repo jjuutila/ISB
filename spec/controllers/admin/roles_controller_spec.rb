@@ -31,11 +31,16 @@ describe Admin::RolesController do
     end
     
     it "assigns all players as @players" do
-      Member.stub_chain(:players, :in_season).with(mock_season) { [mock_member] }
+      Member.stub_chain(:with_role, :in_season).with(mock_season) { [mock_member] }
       get :index, :season_id => 2
       assigns(:players).should eq([mock_member])
     end
-
+    
+    it "assigns all coaches as @coaches" do
+      Member.stub_chain(:with_role, :in_season).with(mock_season) { [mock_member] }
+      get :index, :season_id => 2
+      assigns(:coaches).should eq([mock_member])
+    end
   end
   
   describe "POST create" do

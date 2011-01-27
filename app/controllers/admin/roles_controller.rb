@@ -6,7 +6,8 @@ class Admin::RolesController < Admin::BaseController
   def index
     @season = Season.find(params[:season_id])
     @unassigned_members = Member.not_in_season @season
-    @players = Member.players.in_season @season
+    @players = Member.with_role("player").in_season @season
+    @coaches = Member.with_role("coach").in_season @season
     
     respond_with
   end
