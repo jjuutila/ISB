@@ -25,7 +25,7 @@ class Member < ActiveRecord::Base
   
   scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name DESC") }
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }
-  scope :players, joins(:affairs).where(:affairs => {:role => 'player'})
+  scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}
   
   def all_time_points
     2 * all_time_goals + all_time_assists
