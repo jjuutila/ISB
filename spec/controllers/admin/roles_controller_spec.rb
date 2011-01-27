@@ -89,7 +89,24 @@ describe Admin::RolesController do
         response.should_not be_success
       end
     end
-
   end
+  
+  describe "DELETE destroy" do
+    before(:each) do
+      Season.stub(:find).with(2) { mock_season }
+      Member.stub(:find).with(1) { mock_member }
+    end
+    
+    it "destroys the requested affair" do
+      Affair.should_receive(:find_by_season_id_and_member_id!).with(mock_season.id, mock_member.id) {mock_affair}
+      mock_affair.should_receive(:destroy)
+      delete :destroy, :season_id => 2, :id => 1
+    end
 
+    it "returns true on successful delete" do
+      Affair.stub(:find_by_season_id_and_member_id!) {mock_affair}
+      delete :destroy, :season_id => 2, :id => 1
+      response.should be_success
+    end
+  end
 end
