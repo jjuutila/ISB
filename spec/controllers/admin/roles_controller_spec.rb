@@ -47,13 +47,14 @@ describe Admin::RolesController do
     before(:each) do
       Season.stub(:find).with(2) { mock_season }
       Member.stub(:find).with(1) { mock_member }
+      @params = {"role" => "player"}
     end
     
     it "with valid params creates a new affair" do
-      Affair.stub(:new).with(:season => mock_season, :member => mock_member, :role => 'player') {
-        mock_affair(:save => true) }
+      Affair.stub(:new).with(:season => mock_season, :member => mock_member, :role => 'player') {mock_affair}
+      mock_affair.should_receive(:save).and_return(true)
       
-      xhr :post, :create, {:season_id => 2, :member_id => 1, :role => 'player', :format => 'js'}
+      xhr :post, :create, {:season_id => 2, :id => 1, :data => @params, :format => 'js'}
       response.should be_success
     end
     
@@ -61,7 +62,7 @@ describe Admin::RolesController do
       Affair.stub(:new).with(:season => mock_season, :member => mock_member, :role => 'player') {
         mock_affair(:save => false, :errors => {:anything => "error"}) }
       
-      xhr :post, :create, {:season_id => 2, :member_id => 1, :role => 'player', :format => 'js'}
+      xhr :post, :create, {:season_id => 2, :id => 1, :data => @params, :format => 'js'}
       response.should_not be_success
     end
 
@@ -71,26 +72,27 @@ describe Admin::RolesController do
     before(:each) do
       Season.stub(:find).with(2) { mock_season }
       Member.stub(:find).with(1) { mock_member }
+      @params = {"these" => "params"}
     end
     
     describe "with valid params" do
       it "updates affair's role" do
         Affair.should_receive(:find_by_season_id_and_member_id!).with(mock_season.id, mock_member.id) {mock_affair}
-        mock_affair.should_receive(:update_attribute).with(:role, "coach").and_return(true)
-        xhr :put, :update, {:season_id => 2, :id => 1, :role => 'coach', :format => 'js'}
+        mock_affair.should_receive(:update_attributes).with(@params).and_return(true)
+        xhr :put, :update, {:season_id => 2, :id => 1, :data => @params, :format => 'js'}
       end
       
       it "responds with success" do
-        Affair.stub(:find_by_season_id_and_member_id!) {mock_affair(:update_attribute => true)}
-        xhr :put, :update, {:season_id => 2, :id => 1, :role => 'coach', :format => 'js'}
+        Affair.stub(:find_by_season_id_and_member_id!) {mock_affair(:update_attributes => true)}
+        xhr :put, :update, {:season_id => 2, :id => 1, :data => @params, :format => 'js'}
         response.should be_success
       end
     end
     
     describe "with invalid params" do
       it "responds with error" do
-        Affair.stub(:find_by_season_id_and_member_id!) {mock_affair(:update_attribute => false)}
-        xhr :put, :update, {:season_id => 2, :id => 1, :role => 'coach', :format => 'js'}
+        Affair.stub(:find_by_season_id_and_member_id!) {mock_affair(:update_attributes => false)}
+        xhr :put, :update, {:season_id => 2, :id => 1, :data => @params, :format => 'js'}
         response.should_not be_success
       end
     end

@@ -14,9 +14,9 @@ class Admin::RolesController < Admin::BaseController
   
   def create
     season = Season.find(params[:season_id])
-    member = Member.find(params[:member_id])
+    member = Member.find(params[:id])
     
-    affair = Affair.new :season => season, :member => member, :role => params[:role]
+    affair = Affair.new :season => season, :member => member, :role => params[:data][:role]
     
     if affair.save
      render :nothing => true, :status => :created 
@@ -29,7 +29,7 @@ class Admin::RolesController < Admin::BaseController
     begin
       affair = find_affair
     
-      if affair.update_attribute(:role, params[:role])
+      if affair.update_attributes(params[:data])
        render :nothing => true, :status => :accepted 
       else
        render :nothing => true, :status => :not_acceptable
