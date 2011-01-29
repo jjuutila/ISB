@@ -1,15 +1,32 @@
+= javascript_include_tag "dragdrop.js"
+
+:javascript
+  $(document).ready(function() {
+    ddManager = new DragDropManager();
+    ddManager.init({moveable_element: 'draggable-elements', 
+                  receiving_element: 'drop-place',
+                  remote: { url: {base: "/admin/seasons/#{@season.id}/roles", format: ".js"}}
+                  });
+  });
+
 %h1 Kokoonpano kaudella #{@season}
 
 %p= link_to 'Takaisin', admin_seasons_path
 
 .member_column
   %h2 Kaikki jäsenet
-  %ul#unassigned_members
+  %ul{:class => "drop-place draggable-elements", :id => "role-"}
     - @unassigned_members.each do |member|
-      %li{:id => "#{@season.id}-#{member.id}"}= member
+      %li{:id => "id-#{member.id}"}= member
 
 .member_column
   %h2 Pelaajat
-  %ul#players
+  %ul{:class => "drop-place draggable-elements", :id => "role-player"}
     - @players.each do |player|
-      %li{:id => "#{@season.id}-#{player.id}"}= player
+      %li{:id => "id-#{player.id}"}= player
+      
+.member_column
+  %h2 Valmentajat
+  %ul{:class => "drop-place draggable-elements", :id => "role-coach"}
+    - @coaches.each do |coach|
+      %li{:id => "id-#{coach.id}"}= coach
