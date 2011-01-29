@@ -45,7 +45,8 @@ DragDropManager = (function() {
   }
   DragDropManager.prototype.init = function(options) {
     $.extend(this.options, this.defaults, options);
-    return this.activateDraggableElements();
+    this.activateDraggableElements();
+    return this.activateReceivingElements();
   };
   DragDropManager.prototype.parseNotAceptableElement = function(element) {
     var parsedSelector;
@@ -93,7 +94,7 @@ DragDropManager = (function() {
       arguments = null;
     }
     draggedElement = new DraggedElement(arguments, this.options.remote);
-    return draggedElement.persistent();
+    return draggedElement.doRemoteCall();
   };
   DragDropManager.prototype.isAllowedToLand = function(dropped, place) {
     return dropped.id !== place.id;
@@ -107,6 +108,7 @@ DraggedElement = (function() {
     this.newHostElement = this.getNewHostElement(args);
     this.previousHostElement = this.getPreviousHostElement(args);
     this.referenceToSelf = this.getDraggedElement(args);
+    this.idToUrl = "";
     $.extend(this.options, options);
   }
   DraggedElement.prototype.getNewHostElement = function(args) {
@@ -118,23 +120,92 @@ DraggedElement = (function() {
   DraggedElement.prototype.getDraggedElement = function(args) {
     return $(args[1].draggable);
   };
-  DraggedElement.prototype.persistent = function() {
-    if (this.needUpate()) {
-      return console.log("Need update");
+  DraggedElement.prototype.doRemoteCall = function() {
+    if (this.needDestroy()) {
+      this.destroy();
+    }
+    if (this.needUpdate()) {
+      return this.update();
     } else {
       return this.create();
     }
   };
-  DraggedElement.prototype.create = function() {
-    console.log;
+  DraggedElement.prototype.needUpdate = function() {
+    return (this.previousHostElement.attr("id").split("-"))[1].length > 0;
+  };
+  DraggedElement.prototype.needDestroy = function() {
+    return this.getHostId() === null;
+  };
+  DraggedElement.prototype.destroy = function() {
+    console.log("destroy");
+    this.requestMethod = 'DELETE';
+    this.idToUrl = "/" + this.getId();
     return this.makeRequest();
   };
-  DraggedElement.prototype.needUpate = function() {
-    return (this.previousHostElement.attr("id").split("-"))[1].length > 0;
+  DraggedElement.prototype.update = function() {
+    console.log("update");
+    this.requestMethod = 'PUT';
+    this.idToUrl = "/" + this.getId();
+    return this.makeRequest();
+  };
+  DraggedElement.prototype.create = function() {
+    console.log;
+    this.requestMethod = 'POST';
+    return this.makeRequest();
   };
   DraggedElement.prototype.getId = function() {
     if ((this.referenceToSelf.attr("id").split("-")).length === 2) {
       return this.referenceToSelf.attr("id").split("-")[1];
+    } else {
+      return null;
+    }
+  };
+  DraggedElement.prototype.makeRequest = function() {
+    var type;
+    type = this.requestMethod;
+    if (this.requestMethod.toUpperCase() === 'GET') {
+      type = 'GET';
+    }
+    return $.ajax({
+      url: this.buildUrl(),
+      data: this.buildRequestData(),
+      type: type,
+      beforeSend: this.proxy(function() {
+        return this.overwriteRequestHeader(arguments);
+      }),
+      error: this.proxy(function() {
+        return this.failuredRequet(arguments);
+      }),
+      success: this.proxy(function() {
+        return this.successFullRequest(arguments);
+      })
+    });
+  };
+  DraggedElement.prototype.buildUrl = function() {
+    console.log(this.options);
+    return this.options.url.base + this.idToUrl + this.options.url.format;
+  };
+  DraggedElement.prototype.buildRequestData = function() {
+    var data, modelData;
+    modelData = {};
+    modelData[this.getHostType().toString()] = this.getHostId();
+    data = {};
+    data[this.getType().toString()] = this.getId();
+    data["data"] = modelData;
+    return data;
+  };
+  DraggedElement.prototype.getHostType = function() {
+    if ((this.newHostElement.attr("id").split("-")).length === 2) {
+      return (this.newHostElement.attr("id")).split("-")[0];
+    } else {
+      return null;
+    }
+  };
+  DraggedElement.prototype.getHostId = function() {
+    var splittedId;
+    splittedId = this.newHostElement.attr("id").split("-");
+    if (splittedId.length > 1 && splittedId[1]) {
+      return splittedId[1];
     } else {
       return null;
     }
@@ -146,43 +217,10 @@ DraggedElement = (function() {
       return null;
     }
   };
-  DraggedElement.prototype.getHostType = function() {
-    if ((this.newHostElement.attr("id").split("-")).length === 2) {
-      return (this.newHostElement.attr("id")).split("-")[0];
-    } else {
-      return null;
-    }
-  };
-  DraggedElement.prototype.getHostId = function() {
-    if ((this.newHostElement.attr("id").split("-")).length === 2) {
-      return (this.newHostElement.attr("id")).split("-")[1];
-    } else {
-      return null;
-    }
-  };
-  DraggedElement.prototype.buildUrl = function() {
-    console.log(this.options);
-    return this.options.url.base + this.options.url.format;
-  };
-  DraggedElement.prototype.buildRequestData = function() {
-    var data;
-    data = {};
-    data[this.getHostType().toString()] = this.getHostId();
-    data[this.getType().toString()] = this.getId();
-    return data;
-  };
-  DraggedElement.prototype.makeRequest = function() {
-    return $.ajax({
-      url: this.buildUrl(),
-      data: this.buildRequestData(),
-      type: 'POST',
-      error: this.proxy(function() {
-        return this.failuredRequet(arguments);
-      }),
-      success: this.proxy(function() {
-        return this.successFullRequest(arguments);
-      })
-    });
+  DraggedElement.prototype.overwriteRequestHeader = function(arguments) {
+    var xhr;
+    xhr = arguments[0];
+    return xhr.setRequestHeader("X-Http-Method-Override", this.requestMethod);
   };
   DraggedElement.prototype.successFullRequest = function(args) {
     return this.moveItem(this.newHostElement, this.referenceToSelf);

@@ -53,7 +53,7 @@ class DragDropManager extends Base
    
   elementDropped:(arguments=null) ->
     draggedElement = new DraggedElement(arguments, @options.remote)
-    draggedElement.persistent()
+    draggedElement.doRemoteCall()
  
   isAllowedToLand:(dropped, place) ->
     dropped.id != place.id
@@ -65,6 +65,7 @@ class DraggedElement extends Base
     @newHostElement = @getNewHostElement(args)
     @previousHostElement = @getPreviousHostElement(args)
     @referenceToSelf = @getDraggedElement(args)
+    @idToUrl = ""
     $.extend(@options, options)
     
   getNewHostElement:(args) ->
@@ -76,18 +77,36 @@ class DraggedElement extends Base
   getDraggedElement:(args) ->
     $(args[1].draggable)    
     
-  persistent:() ->
-    if(@needUpate())
-      console.log "Need update"
+  doRemoteCall:() ->
+    if(@needDestroy())
+      @destroy()
+    if(@needUpdate())      
+      @update()
     else
       @create()
     
-  create:() ->
-    console.log 
+  needUpdate:() ->
+    (@previousHostElement.attr("id").split("-"))[1].length > 0
+
+  needDestroy:() ->
+    @getHostId() is null
+
+  destroy:() ->
+    console.log("destroy")
+    @requestMethod = 'DELETE'
+    @idToUrl = "/" + @getId()
     @makeRequest()
     
-  needUpate:() ->
-    (@previousHostElement.attr("id").split("-"))[1].length > 0
+  update:() ->
+    console.log("update")
+    @requestMethod = 'PUT'
+    @idToUrl = "/" + @getId()
+    @makeRequest()
+
+  create:() ->
+    console.log
+    @requestMethod = 'POST'
+    @makeRequest()
     
   getId:() ->
     if ((@referenceToSelf.attr("id").split("-")).length == 2)
@@ -95,11 +114,38 @@ class DraggedElement extends Base
     else
       null
   
-  getType:() ->
-    if ((@referenceToSelf.attr("id").split("-")).length == 2)
-      @referenceToSelf.attr("id").split("-")[0]
-    else
-      null    
+  makeRequest:() ->
+    type = @requestMethod
+
+    if (@requestMethod.toUpperCase() is 'GET')
+      type = 'GET'
+
+    $.ajax({
+      url: @buildUrl(),
+      data: @buildRequestData(),
+      type: type,
+      beforeSend: @proxy ->
+        @overwriteRequestHeader(arguments)
+
+      error: @proxy -> 
+        @failuredRequet(arguments)
+      
+      success: @proxy ->
+        @successFullRequest(arguments)
+    });
+  
+  buildUrl:() ->
+    console.log @options
+    @options.url.base + @idToUrl + @options.url.format
+  
+  buildRequestData:() ->
+    modelData = {}
+    modelData[@getHostType().toString()] = @getHostId()
+
+    data = {}
+    data[@getType().toString()] = @getId()
+    data["data"] = modelData
+    data
 
   getHostType:() ->
     if((@newHostElement.attr("id").split("-")).length == 2)
@@ -108,39 +154,28 @@ class DraggedElement extends Base
       null
       
   getHostId:() ->
-    if((@newHostElement.attr("id").split("-")).length == 2)
-      (@newHostElement.attr("id")).split("-")[1]
+    splittedId = @newHostElement.attr("id").split("-")
+    if(splittedId.length > 1 and splittedId[1])
+      splittedId[1]
     else
-      null    
-      
-  buildUrl:() ->
-    console.log @options
-    @options.url.base + @options.url.format 
+      null
   
-  buildRequestData:() ->
-    data = {}
-    data[@getHostType().toString()] = @getHostId()
-    data[@getType().toString()] = @getId()
-    data
-  
-  makeRequest:() ->
-    $.ajax({
-      url: @buildUrl(),
-      data: @buildRequestData(),
-      type: 'POST',
-      error: @proxy -> 
-        @failuredRequet(arguments)
-      
-      success: @proxy ->
-        @successFullRequest(arguments)
-    });  
-  
+  getType:() ->
+    if ((@referenceToSelf.attr("id").split("-")).length == 2)
+      @referenceToSelf.attr("id").split("-")[0]
+    else
+      null
+
+  overwriteRequestHeader:(arguments) ->
+    xhr = arguments[0]
+    xhr.setRequestHeader("X-Http-Method-Override", @requestMethod);
+
   successFullRequest:(args) ->
-    @moveItem(@newHostElement, @referenceToSelf)   
+    @moveItem(@newHostElement, @referenceToSelf)
   
   failuredRequet: (args) ->
     console.log "Failure: "
-    console.log args      
+    console.log args
         
   hide:(element) ->
     elememnt.hide()
@@ -149,9 +184,3 @@ class DraggedElement extends Base
     element.fadeOut ->
       console.log to, element
       element.appendTo(to).show()
-  
-      
-    
-  
-
-
