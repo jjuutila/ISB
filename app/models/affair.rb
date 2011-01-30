@@ -4,7 +4,7 @@ class Affair < ActiveRecord::Base
   belongs_to :season
   
   validates_presence_of :member, :season, :role
-  validates_inclusion_of :role, :in => ['player', 'assistant']
+  validates_inclusion_of :role, :in => ['player', 'assistant', 'coach']
   validate :is_member_already_assigned, :on => :create
   
   scope :players_on_season, lambda { |id| where("season_id = ? AND role = ?", id, 'player') }

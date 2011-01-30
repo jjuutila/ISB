@@ -7,6 +7,10 @@ describe Affair do
     it { should validate_presence_of(:member) }    
     it { should validate_presence_of(:season) }    
     it { should validate_presence_of(:role) }
+    
+    it { should allow_value("player").for(:role) }
+    it { should allow_value("assistant").for(:role) }
+    it { should allow_value("coach").for(:role) }
   end
   
   context "custom uniqueness validation on create" do
