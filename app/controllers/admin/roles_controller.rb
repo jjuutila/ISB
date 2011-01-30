@@ -53,6 +53,15 @@ class Admin::RolesController < Admin::BaseController
     end
   end
   
+  def current_team
+    begin
+      latest_season = Season.latest selected_section
+      redirect_to admin_season_roles_path latest_season
+    rescue
+      redirect_to admin_seasons_path
+    end
+  end
+  
   private
   
   def find_affair

@@ -23,5 +23,9 @@ describe Admin::RolesController do
         :season_id => '2', :id => "1")
     end
 
+    it "recognizes and generates #current_team" do
+      { :get => "/admin/current_team" }.should route_to(:controller => "admin/roles", :action => "current_team")
+    end
+    
   end
 end

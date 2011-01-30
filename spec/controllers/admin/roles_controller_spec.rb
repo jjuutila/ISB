@@ -116,4 +116,23 @@ describe Admin::RolesController do
       response.should be_success
     end
   end
+  
+  describe "GET current_team" do
+    it "redirects to latest season's roles" do
+      mock_section = mock_model(Section)
+      controller.should_receive(:selected_section).and_return(mock_section)
+      Season.should_receive(:latest).with(mock_section) {mock_season}
+      
+      get 'current_team'
+      response.should redirect_to admin_season_roles_path mock_season
+    end
+    
+    it "redirects to seasons if no seasons has not been created" do
+      controller.stub(:selected_section).and_return(mock_model(Section))
+      Season.stub(:latest).and_raise(ActiveRecord::RecordNotFound)
+      
+      get 'current_team'
+      response.should redirect_to admin_seasons_path
+    end
+  end
 end
