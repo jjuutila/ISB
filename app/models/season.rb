@@ -14,9 +14,11 @@ class Season < ActiveRecord::Base
   
   scope :in_section, lambda {|section| includes(:partitions).where(:section_id => section.id)}
   
-  # Gets the latest season
+  # Gets the latest season in section
   def self.latest(section)
-    Season.where("section_id = ?", section.id).order('start_year DESC').first
+    latest_season = Season.where("section_id = ?", section.id).order('start_year DESC').first
+    raise ActiveRecord::RecordNotFound if latest_season.nil?
+    latest_season
   end
   
   def to_s

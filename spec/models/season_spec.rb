@@ -25,12 +25,17 @@ describe Season do
   end
   
   context "latest" do
-    it "should find the latest season" do
-      section = Factory.create :section
+    it "finds the latest season" do
+      section = mock_model(Section)
       latest_season = Season.create :start_year => 2010, :division => "1. divisioona", :section => section
       Season.create :start_year => 2009, :division => "2. divisioona", :section => section
       
       Season.latest(section).should == latest_season
+    end
+    
+    it "throws exception when no season is found" do
+      section = mock_model(Section)
+      lambda { Season.latest(section) }.should raise_error ActiveRecord::RecordNotFound
     end
   end
 end
