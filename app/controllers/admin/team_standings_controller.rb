@@ -1,35 +1,22 @@
 # coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
-  before_filter :get_season_and_partition
+  before_filter :get_season_and_partition, :except => [:latest]
   respond_to :html
 
-  # GET /admin/team_standinds/new
-  # GET /admin/team_standinds/new.xml
   def new
     respond_with @team = TeamStanding.new(:partition_id => params[:partition_id])
   end
 
-  # GET /admin/team_standinds/1/edit
   def edit
     @admin_team_standind = TeamStanding.find(params[:id])
   end
 
-  # POST /admin/team_standinds
-  # POST /admin/team_standinds.xml
   def create
     @team = TeamStanding.new(params[:team_standing].merge(:partition => @partition))
-    
-    respond_to do |format|
-      if @team.save
-        format.html { redirect_to(admin_season_partition_path(@season, @partition), :notice => 'Uusi joukkue luotu.') }
-      else
-        format.html { render :action => "new" }
-      end
-    end
+    flash.notice = 'Uusi joukkue luotu.' if @team.save
+    respond_with @team, :location => admin_season_partition_path(@season, @partition)
   end
 
-  # PUT /admin/team_standinds/1
-  # PUT /admin/team_standinds/1.xml
   def update
     @admin_team_standind = TeamStanding.find(params[:id])
 
@@ -44,16 +31,10 @@ class Admin::TeamStandingsController < Admin::BaseController
     end
   end
 
-  # DELETE /admin/team_standinds/1
-  # DELETE /admin/team_standinds/1.xml
   def destroy
-    @admin_team_standind = TeamStanding.find(params[:id])
-    @admin_team_standind.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(admin_team_standinds_url) }
-      format.xml  { head :ok }
-    end
+    @team = TeamStanding.find(params[:id])
+    @team.destroy
+    respond_with @team, :location => admin_season_partition_path(@season, @partition)
   end
   
   def edit_multiple

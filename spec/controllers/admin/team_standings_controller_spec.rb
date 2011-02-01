@@ -8,48 +8,49 @@ describe Admin::TeamStandingsController do
     end
   end
   
+  before(:each) do
+    @season = mock_model(Season)
+    Season.stub(:find).with(@season.id) { @season }
+    
+    @partition = mock_model(Partition)
+    Partition.stub(:find).with(@partition.id) { @partition }
+  end
+  
   describe "GET edit_multiple" do
     it "assigns the requested standings as @standings" do
-      section = Factory.create :section, :parent_id => 9999
-      season = Season.create :start_year => 2010, :division => "1. divisioona", :section => section
-      partition = Partition.create :name => 'Playoffs', :position => 2, :season => season
-      TeamStanding.create :name => "a team", :partition => partition
+      TeamStanding.should_receive(:where).with("partition_id = ?", @partition.id) { [mock_team_standing] }
       
-      get :edit_multiple, :season_id => season.id, :partition_id => partition.id
-      assigns(:standings).count.should == 1
-      assigns(:season).should == season
-      assigns(:partition).should == partition
+      get :edit_multiple, :season_id => @season.id, :partition_id => @partition.id
+      assigns(:standings).should == [mock_team_standing]
+      assigns(:season).should be @season
+      assigns(:partition).should == @partition
     end
   end
   
   describe "GET 'latest'" do
-    it "should redirect to the latest season's latest partition's team standings" do
-      section = Factory.create :section, :parent_id => 9999
-      latest_season = Season.create :start_year => 2010, :division => "1. divisioona", :section => section
-      latest_partition = Partition.create :name => 'Playoffs', :position => 2, :season => latest_season
+    before(:each) do
+      @section = mock_model(Section)
+      controller.stub(:selected_section) { @section }
+    end
+    
+    it "redirects to the latest season's latest partition's team standings" do
+      Season.should_receive(:latest).with(@section) { @season }
+      Partition.should_receive(:latest).with(@section) { @partition }
       
       get 'latest'
-      response.should redirect_to(edit_multiple_admin_season_partition_team_standings_path(latest_season, latest_partition))
+      response.should redirect_to(edit_multiple_admin_season_partition_team_standings_path(@season, @partition))
     end
   end
   
   describe "GET new" do
     it "assigns a new team as @team" do
-      TeamStanding.stub(:new).with(:partition_id => '1') { mock_team_standing }
-      get :new, :season_id => '2', :partition_id => '1'
+      TeamStanding.stub(:new).with(:partition_id => @partition.id) { mock_team_standing }
+      get :new, :season_id => @season.id, :partition_id => @partition.id
       assigns(:team).should be(mock_team_standing)
     end
   end
   
   describe "POST create" do
-    before(:each) do
-        @season = mock_model(Season)
-        Season.stub(:find).with(@season.id) { @season }
-        
-        @partition = mock_model(Partition)
-        Partition.stub(:find).with(@partition.id) { @partition }
-    end
-    
     describe "with valid params" do
       before(:each) do
         TeamStanding.stub(:new).with({'partition' => @partition}) { mock_team_standing(:save => true) }
@@ -79,7 +80,7 @@ describe Admin::TeamStandingsController do
       end
 
       it "re-renders the 'new' template" do
-        TeamStanding.stub(:new) { mock_team_standing(:save => false) }
+        TeamStanding.stub(:new) { mock_team_standing(:save => false, :errors => {:anything => "error"}) }
         post :create, :season_id => @season.id, :partition_id => @partition.id, :team_standing => {}
         response.should render_template("new")
       end
