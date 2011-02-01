@@ -124,9 +124,8 @@ DraggedElement = (function() {
   };
   DraggedElement.prototype.doRemoteCall = function() {
     if (this.needDestroy()) {
-      this.destroy();
-    }
-    if (this.needUpdate()) {
+      return this.destroy();
+    } else if (this.needUpdate()) {
       return this.update();
     } else {
       return this.create();

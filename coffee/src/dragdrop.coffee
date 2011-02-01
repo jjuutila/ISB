@@ -80,7 +80,7 @@ class DraggedElement extends Base
   doRemoteCall:() ->
     if(@needDestroy())
       @destroy()
-    if(@needUpdate())      
+    else if(@needUpdate())
       @update()
     else
       @create()
