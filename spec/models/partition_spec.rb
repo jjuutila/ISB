@@ -37,6 +37,11 @@ describe Partition do
       
       Partition.latest(section).should == latest_partition
     end
+    
+    it "raises an exception if partition is not found" do
+      section = mock_model(Section)
+      lambda { Partition.latest(section) }.should raise_error ActiveRecord::RecordNotFound
+    end
   end
   
   context "set_position" do

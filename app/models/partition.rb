@@ -14,7 +14,9 @@ class Partition < ActiveRecord::Base
   
   # Gets the latest season's last partition
   def self.latest(section)
-    Partition.where('season_id = ?', Season.latest(section).id).order('position DESC').first
+    latest_partition = Partition.where('season_id = ?', Season.latest(section).id).order('position DESC').first
+    raise ActiveRecord::RecordNotFound if latest_partition.nil?
+    latest_partition
   end
   
   def to_s
