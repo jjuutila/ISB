@@ -56,9 +56,12 @@ class Admin::TeamStandingsController < Admin::BaseController
   end
   
   def latest
-    latest_season = Season.latest selected_section
-    latest_partition = Partition.latest selected_section
-    redirect_to(edit_multiple_admin_season_partition_team_standings_path(latest_season, latest_partition))
+    begin
+      latest_partition = Partition.latest selected_section
+      redirect_to edit_multiple_admin_season_partition_team_standings_path(latest_partition.season, latest_partition)
+    rescue
+      redirect_to admin_seasons_path
+    end
   end
   
   private

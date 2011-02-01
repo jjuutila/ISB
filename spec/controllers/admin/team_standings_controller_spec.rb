@@ -31,14 +31,22 @@ describe Admin::TeamStandingsController do
     before(:each) do
       @section = mock_model(Section)
       controller.stub(:selected_section) { @section }
+      
+      @partition.stub(:season) { @season }
     end
     
     it "redirects to the latest season's latest partition's team standings" do
-      Season.should_receive(:latest).with(@section) { @season }
       Partition.should_receive(:latest).with(@section) { @partition }
       
       get 'latest'
       response.should redirect_to(edit_multiple_admin_season_partition_team_standings_path(@season, @partition))
+    end
+    
+    it "redirects to seasons if no partition is found" do
+      Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
+      
+      get 'latest'
+      response.should redirect_to admin_seasons_path
     end
   end
   
