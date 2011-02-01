@@ -1,6 +1,6 @@
 # coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
-  before_filter :get_season_and_partition, :only => [:edit_multiple, :update_multiple, :create]
+  before_filter :get_season_and_partition
   respond_to :html
 
   # GET /admin/team_standinds/new

@@ -1,5 +1,9 @@
 %h1 Luo uusi joukkue
 
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_partition_path(@season, @partition)
+  = link_to 'Takaisin', admin_season_partition_path(@season, @partition)
+  
 = semantic_form_for @team, :url => admin_season_partition_team_standings_path() do |form|
   = form.inputs do
     = form.input :name, :label => 'Nimi'
