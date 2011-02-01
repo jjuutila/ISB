@@ -1,4 +1,7 @@
 %h1 Luo uusi kausiosio
-%p= link_to 'Takaisin', admin_seasons_path
+
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_seasons_path
+  = link_to 'Takaisin', admin_seasons_path
   
 = render :partial => 'form', :locals => {:url => admin_season_partitions_path()}

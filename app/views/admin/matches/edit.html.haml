@@ -1,6 +1,8 @@
 %h1 Muokkaa ottelua #{@match}
 
-= link_to 'Takaisin', admin_season_partition_matches_path
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_partition_matches_path
+  = link_to 'Takaisin', admin_season_partition_matches_path
 
 = semantic_form_for @match, :url => admin_season_partition_match_path(@season, @partition) do |form| 
   = form.inputs do

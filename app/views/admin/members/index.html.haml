@@ -1,6 +1,7 @@
 %h1 Pelaajat
-%p
-  %a{:href => new_admin_member_path, :title => 'Luo uusi pelaaja'}= image_tag('add.png')
+
+#contextNavi
+  %a{:href => new_admin_member_path, :title => 'Luo uusi pelaaja'}= image_tag('add.png', :size => '16x16')
   %a{:href => new_admin_member_path}= 'Luo uusi pelaaja'
 
 %table

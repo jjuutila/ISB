@@ -1,5 +1,6 @@
 %h1 Muokkaa pelaajaa
-%p
+
+#contextNavi
   = link_to 'Takaisin', admin_members_path
   
 = render :partial => 'form', :locals => {:url => admin_member_path(@member)}

@@ -1,5 +1,8 @@
 %h1 Muokkaa kautta #{@season}
-%p= link_to 'Takaisin', admin_seasons_path
+
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_seasons_path
+  = link_to 'Takaisin', admin_seasons_path
 
 = semantic_form_for @season, :url => admin_season_path(@season) do |form| 
   = form.inputs do

@@ -1,7 +1,10 @@
 %h1 #{@partition}-ottelut kaudella #{@season} 
 
-%p
-  = link_to image_tag('add.png'), new_admin_season_partition_match_path, :title => 'Luo uusi joukkueosio'
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_partition_path(@season, @partition)
+  = link_to 'Takaisin', admin_season_partition_path(@season, @partition)
+  \|
+  = link_to image_tag('add.png', :size => '16x16'), new_admin_season_partition_match_path, :title => 'Luo uusi joukkueosio'
   = link_to "Luo uusi ottelu", new_admin_season_partition_match_path, :title => 'Luo uusi joukkueosio'
 
 %table

@@ -1,10 +1,14 @@
 %h1 Kausi #{@season}
-%ul
-  %li= link_to 'Takaisin', admin_seasons_path
-  %li= link_to 'Muokkaa kautta', edit_admin_season_path(@season)
-  %li
-    = link_to image_tag('add.png', :size => '16x16'), new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
-    = link_to "Luo uusi joukkueosio", new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
+
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_seasons_path
+  = link_to 'Takaisin', admin_seasons_path
+  \|
+  = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_season_path(@season)
+  = link_to 'Muokkaa kautta', edit_admin_season_path(@season)
+  \|
+  = link_to image_tag('add.png', :size => '16x16'), new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
+  = link_to "Luo uusi joukkueosio", new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
 
 %table
   %thead
