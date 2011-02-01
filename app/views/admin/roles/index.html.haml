@@ -9,24 +9,33 @@
                   });
   });
 
-%h1 Kokoonpano kaudella #{@season}
+%h1 Joukkue kaudella #{@season}
 
-%p= link_to 'Takaisin', admin_seasons_path
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_seasons_path
+  = link_to 'Takaisin', admin_seasons_path
+  \|
 
-.member_column
-  %h2 Kaikki jäsenet
-  %ul{:class => "drop-place draggable-elements", :id => "role-"}
-    - @unassigned_members.each do |member|
-      %li{:id => "id-#{member.id}"}= member
+.help
+  = "Huom. Muutokset tallentuvat heti, kun pelaaja raahataan johonkin laatikoista."
 
-.member_column
-  %h2 Pelaajat
-  %ul{:class => "drop-place draggable-elements", :id => "role-player"}
-    - @players.each do |player|
-      %li{:id => "id-#{player.id}"}= player
-      
-.member_column
-  %h2 Valmentajat
-  %ul{:class => "drop-place draggable-elements", :id => "role-coach"}
-    - @coaches.each do |coach|
-      %li{:id => "id-#{coach.id}"}= coach
+#memberSelection
+  .memberColumn
+    %h2 Kaikki jäsenet
+    %ul{:class => "drop-place draggable-elements", :id => "role-"}
+      - @unassigned_members.each do |member|
+        %li{:id => "id-#{member.id}"}= member
+  
+  .selectedTeam
+    %h2 Joukkueeseen valitut
+    .memberColumn
+      %h3 Pelaajat
+      %ul{:class => "drop-place draggable-elements", :id => "role-player"}
+        - @players.each do |player|
+          %li{:id => "id-#{player.id}"}= player
+          
+    .memberColumn
+      %h3 Valmentajat
+      %ul{:class => "drop-place draggable-elements", :id => "role-coach"}
+        - @coaches.each do |coach|
+          %li{:id => "id-#{coach.id}"}= coach

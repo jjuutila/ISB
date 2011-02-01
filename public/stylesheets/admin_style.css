@@ -101,20 +101,6 @@ tr.even {
     background-color:#f4f4f4;
 }
 
-.ContentCol{
-    float:left;
-    margin-right:12px;
-}
-.ContentCol H2 {
-    text-align: center;
-    font: bold 18px Arial;
-    color: #526893;
-    font-style:italic;
-}
-.ContentCol select{
-    width: 180px;   
-}
-
 .inputs ol, .buttons ol {
   list-style: none;
 }
@@ -177,31 +163,68 @@ tr.even {
     border-left-style:solid;
     border-left-width:10px;
 }
+
+#contextNavi {
+  border: 1px solid #e4dee1;
+  margin:16px 0 20px 0;
+  padding:5px;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+#contextNavi a {
+  font-weight: normal;
+}
+
 td.action {
   text-align: center;
 }
 
-.member_column {
+#memberSelection {
+  width: 100%;
+  overflow: hidden;
+}
+
+#memberSelection h2 {
+  text-align: center;
+}
+
+.selectedTeam {
+  border: solid 1px #e4dee1;
+  width: 460px;
+  overflow: hidden;
+  padding:0 10px 0 10px;
+}
+
+.memberColumn {
   float:left;
   width:200px;
   min-height: 40px;
   margin-right:15px;
 }
 
-.member_column ul {
+.memberColumn h3 {
+  margin-bottom:0;
+  line-height: 0.7em;
+}
+
+.memberColumn ul {
   padding:4px;
-  background-color: #008000;
+  background-color:#C4D1EB;
+  border:1px solid #e4dee1;
   min-height:30px;
   list-style:none;
 }
 
-.member_column li {
+.memberColumn li {
   margin:3px;
-  background-color: #333333;
+  padding-left:5px;
+  background-color:#FFFFFF;
+  border: solid 1px #e4dee1;
   line-height: 1.9em;
   cursor:move;
 }
-.member_column li:last-child {
+.memberColumn li:last-child {
   margin-bottom:1.9em;
 }
 
