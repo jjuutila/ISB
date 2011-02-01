@@ -52,12 +52,12 @@ class DragDropManager extends Base
       @receivingElement().droppable(allOptions)
    
   elementDropped:(arguments=null) ->
-    draggedElement = new DraggedElement(arguments, @options.remote)
-    draggedElement.doRemoteCall()
+    if (@isDropAllowed(arguments))
+      draggedElement = new DraggedElement(arguments, @options.remote)
+      draggedElement.doRemoteCall()
  
-  isAllowedToLand:(dropped, place) ->
-    dropped.id != place.id
-      
+  isDropAllowed:(args) ->
+    $(args[0].target).attr('id') != $(args[1].helper.prevObject.parent()).attr('id')
 
 class DraggedElement extends Base
   constructor: (args, options) ->  

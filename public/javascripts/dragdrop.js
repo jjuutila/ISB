@@ -93,11 +93,13 @@ DragDropManager = (function() {
     if (arguments == null) {
       arguments = null;
     }
-    draggedElement = new DraggedElement(arguments, this.options.remote);
-    return draggedElement.doRemoteCall();
+    if (this.isDropAllowed(arguments)) {
+      draggedElement = new DraggedElement(arguments, this.options.remote);
+      return draggedElement.doRemoteCall();
+    }
   };
-  DragDropManager.prototype.isAllowedToLand = function(dropped, place) {
-    return dropped.id !== place.id;
+  DragDropManager.prototype.isDropAllowed = function(args) {
+    return $(args[0].target).attr('id') !== $(args[1].helper.prevObject.parent()).attr('id');
   };
   return DragDropManager;
 })();
