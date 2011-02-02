@@ -1,83 +1,35 @@
+# coding: utf-8
 class Admin::StatisticsController < Admin::BaseController
-  # GET /statistics
-  # GET /statistics.xml
-  def index
-    @statistics = Statistic.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @statistics }
+  respond_to :html
+  before_filter :get_season_and_partition
+  
+  def edit_multiple
+    respond_with @statistics = Statistic.where("partition_id = ?", @partition.id)
+  end
+  
+  def update_multiple
+    statistics_params = params[:statistics]
+    
+    begin
+      @statistics = Statistic.update statistics_params.keys, statistics_params.values
+    rescue
+      flash.alert = "Pistepörssi päivitetty vain osittain, koska joitain tilastoja ei löytynyt enää tietokannasta."
+      redirect_to edit_multiple_admin_season_partition_statistics_path @season, @partition and return
+    end
+    
+    statistics_with_error = @statistics.find_all {|s| !s.errors.empty?}
+    
+    if statistics_with_error.empty?
+      flash.notice = "Pistepörssi päivitetty."
+      redirect_to admin_season_partition_path @season, @partition
+    else
+      flash.alert = "Pistepörssi päivitetty vain osittain, koska joissain kentissä on virheitä."
+      render :edit_multiple
     end
   end
-
-  # GET /statistics/1
-  # GET /statistics/1.xml
-  def show
-    @statistic = Statistic.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @statistic }
-    end
-  end
-
-  # GET /statistics/new
-  # GET /statistics/new.xml
-  def new
-    @statistic = Statistic.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @statistic }
-    end
-  end
-
-  # GET /statistics/1/edit
-  def edit
-    @statistic = Statistic.find(params[:id])
-  end
-
-  # POST /statistics
-  # POST /statistics.xml
-  def create
-    @statistic = Statistic.new(params[:statistic])
-
-    respond_to do |format|
-      if @statistic.save
-        format.html { redirect_to(@statistic, :notice => 'Statistic was successfully created.') }
-        format.xml  { render :xml => @statistic, :status => :created, :location => @statistic }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @statistic.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
-
-  # PUT /statistics/1
-  # PUT /statistics/1.xml
-  def update
-    @statistic = Statistic.find(params[:id])
-
-    respond_to do |format|
-      if @statistic.update_attributes(params[:statistic])
-        format.html { redirect_to(@statistic, :notice => 'Statistic was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @statistic.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /statistics/1
-  # DELETE /statistics/1.xml
-  def destroy
-    @statistic = Statistic.find(params[:id])
-    @statistic.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(statistics_url) }
-      format.xml  { head :ok }
-    end
+  
+  def get_season_and_partition
+    @season = Season.find params[:season_id]
+    @partition = Partition.find params[:partition_id]
   end
 end
