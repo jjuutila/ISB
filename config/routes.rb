@@ -25,7 +25,10 @@ Isb::Application.routes.draw do
          get 'edit_multiple', :on => :collection
          put 'update_multiple', :on => :collection
         end
-        resources :statistics, :except => [:index, :show]
+        resources :statistics, :except => [:index, :show, :new, :update, :create, :destroy] do
+          get 'edit_multiple', :on => :collection
+          put 'update_multiple', :on => :collection
+        end
         resources :matches, :except => [:show]
       end
       resources :roles, :except => [:show, :new, :edit]
