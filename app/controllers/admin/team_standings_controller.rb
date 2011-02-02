@@ -44,11 +44,18 @@ class Admin::TeamStandingsController < Admin::BaseController
   def update_multiple
     standings_params = params[:standings]
     
-    @standings = TeamStanding.update standings_params.keys, standings_params.values
-    standing_with_error = @standings.detect {|s| !s.errors.empty?}
-    if standing_with_error == nil
+    begin
+      @standings = TeamStanding.update standings_params.keys, standings_params.values
+    rescue
+      flash.alert = "Sarjataulukko päivitetty vain osittain, koska joitain tilastorivejä ei löytynyt tietokannasta."
+      redirect_to edit_multiple_admin_season_partition_team_standings_path @season, @partition and return
+    end
+    
+    standings_with_error = @standings.find_all {|s| !s.errors.empty?}
+    
+    if standings_with_error.empty?
       flash.notice = "Sarjataulukko päivitetty."
-      respond_with @standings, :location => edit_multiple_admin_team_standing
+      redirect_to admin_season_partition_path @season, @partition
     else
       flash.alert = "Sarjataulukko päivitetty vain osittain, koska joissain kentissä on virheitä."
       render :edit_multiple

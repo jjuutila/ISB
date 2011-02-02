@@ -27,6 +27,64 @@ describe Admin::TeamStandingsController do
     end
   end
   
+  describe "POST update_multiple" do
+    before(:each) do
+      @params = {:season_id => @season.id, :partition_id => @partition.id, :standings => {1 => :params}}
+    end
+    
+    describe "with valid params" do
+      it "updates standings" do
+        TeamStanding.should_receive(:update).with([1], [:params]) { [mock_team_standing] }
+        
+        put :update_multiple, @params
+      end
+      
+      it "redirects to partition" do
+        TeamStanding.stub(:update) { [mock_team_standing] }
+        put :update_multiple, @params
+        response.should redirect_to admin_season_partition_path @season, @partition
+      end
+      
+      it "sets flash.notice" do
+        TeamStanding.stub(:update) { [mock_team_standing] }
+        put :update_multiple, @params
+        flash.notice.should == "Sarjataulukko päivitetty."
+      end
+    end
+    
+    describe "with invalid params" do
+      it "renders the edit_multiple view" do
+        TeamStanding.stub(:update) { [mock_team_standing(:errors => {:anything => "error"})] }
+        put :update_multiple, @params
+        response.should render_template("edit_multiple")
+      end
+      
+      it "assigns the edited stadings as @standings" do
+        TeamStanding.stub(:update) { [mock_team_standing(:errors => {:anything => "error"})] }
+        put :update_multiple, @params
+        assigns(:standings).should == [mock_team_standing]
+      end
+      
+      it "sets flash.notice" do
+        TeamStanding.stub(:update) { [mock_team_standing(:errors => {:anything => "error"})] }
+        put :update_multiple, @params
+        flash.alert.should == "Sarjataulukko päivitetty vain osittain, koska joissain kentissä on virheitä."
+      end
+      
+      it "redirects to edit_multiple view if one standing is not found from database" do
+        TeamStanding.stub(:update).and_raise(ActiveRecord::RecordNotFound)
+        put :update_multiple, @params
+        response.should redirect_to edit_multiple_admin_season_partition_team_standings_path @season, @partition
+      end
+      
+      it "sets flash.notice if one standing is not found from database" do
+        TeamStanding.stub(:update).and_raise(ActiveRecord::RecordNotFound)
+        put :update_multiple, @params
+        flash.alert.should == "Sarjataulukko päivitetty vain osittain, koska joitain tilastorivejä ei löytynyt tietokannasta."
+      end
+    end
+  end
+  
   describe "GET 'latest'" do
     before(:each) do
       @section = mock_model(Section)
@@ -39,7 +97,7 @@ describe Admin::TeamStandingsController do
       Partition.should_receive(:latest).with(@section) { @partition }
       
       get 'latest'
-      response.should redirect_to(edit_multiple_admin_season_partition_team_standings_path(@season, @partition))
+      response.should redirect_to edit_multiple_admin_season_partition_team_standings_path @season, @partition
     end
     
     it "redirects to seasons if no partition is found" do
