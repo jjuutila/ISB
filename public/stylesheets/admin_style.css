@@ -97,6 +97,23 @@ div#content {
 #content td {
     padding:3px;
 }
+
+#alert, #notice {
+  padding:5px;
+}
+
+#alert {
+  border:2px solid #8f2310;
+  background-color:#f2c0bd;
+  color:#8f2310;
+}
+
+#notice {
+  border:2px solid #0b4d22;
+  color:#0b4d22;
+  background-color:#18bf53;
+}
+
 tr.even {
     background-color:#f4f4f4;
 }

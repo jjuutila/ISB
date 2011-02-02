@@ -13,7 +13,14 @@
     .menu#menu= render :partial => 'layouts/admin/menu'
 
     #content
-      #notice= flash[:alert] || flash[:notice]
+      - unless flash.notice.blank?
+        #notice
+          = image_tag('accept.png', :size => '16x16')
+          = flash.notice
+      - unless flash.alert.blank?
+        #alert
+          = image_tag('error.png', :size => '16x16')
+          = flash.alert
       = yield
       
     #footer
