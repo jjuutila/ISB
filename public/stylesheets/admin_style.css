@@ -118,6 +118,10 @@ tr.even {
     background-color:#f4f4f4;
 }
 
+tr.row_contains_errors {
+  background-color:#f2c0bd;
+}
+
 .inputs ol, .buttons ol {
   list-style: none;
 }
