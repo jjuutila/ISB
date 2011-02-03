@@ -1,7 +1,7 @@
 # coding: utf-8
 class Admin::StatisticsController < Admin::BaseController
   respond_to :html
-  before_filter :get_partition
+  before_filter :get_partition, :except => [:latest]
   
   def edit_multiple
     respond_with @statistics = Statistic.where("partition_id = ?", @partition.id)
@@ -27,6 +27,17 @@ class Admin::StatisticsController < Admin::BaseController
       render :edit_multiple
     end
   end
+  
+  def latest
+    begin
+      latest_partition = Partition.latest selected_section
+      redirect_to edit_multiple_admin_partition_statistics_path(latest_partition)
+    rescue
+      redirect_to admin_seasons_path
+    end
+  end
+  
+  private
   
   def get_partition
     @partition = Partition.find params[:partition_id]

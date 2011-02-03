@@ -17,6 +17,7 @@ Isb::Application.routes.draw do
     match "change_section" => "base#change_section"
     match "latest_standings" => "team_standings#latest", :via => :get
     match "current_team" => "roles#current_team", :via => :get
+    match 'latest_statistics' => "statistics#latest", :via => :get
     
     resources :news
     resources :sections
