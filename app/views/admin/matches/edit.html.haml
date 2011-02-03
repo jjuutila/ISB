@@ -1,13 +1,13 @@
 %h1 Muokkaa ottelua #{@match}
 
 #contextNavi
-  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_partition_matches_path
-  = link_to 'Takaisin', admin_season_partition_matches_path
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_partition_matches_path
+  = link_to 'Takaisin', admin_partition_matches_path
 
-= semantic_form_for @match, :url => admin_season_partition_match_path(@season, @partition) do |form| 
+= semantic_form_for @match, :url => admin_partition_match_path(@partition) do |form| 
   = form.inputs do
     = form.input :start_time, :label => 'Päiväys', :include_blank => false, :order => [:day, :month, :year],
-      :start_year => @season.start_year, :end_year => @season.start_year + 1
+      :start_year => @partition.season.start_year, :end_year => @partition.season.start_year + 1
     = form.semantic_errors
     
     = form.input :home_team, :as => :select, :label => "Kotijoukkue",

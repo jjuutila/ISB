@@ -21,16 +21,15 @@ describe Admin::StatisticsController do
     it "assigns the requested partitions statistics as @statistics" do
       Statistic.should_receive(:where).with("partition_id = ?", @partition.id) { [mock_statistic] }
       
-      get :edit_multiple, :season_id => @season.id, :partition_id => @partition.id
+      get :edit_multiple, :partition_id => @partition.id
       assigns(:statistics).should == [mock_statistic]
-      assigns(:season).should be @season
       assigns(:partition).should == @partition
     end
   end
   
   describe "POST update_multiple" do
     before(:each) do
-      @params = {:season_id => @season.id, :partition_id => @partition.id, :statistics => {1 => :params}}
+      @params = {:partition_id => @partition.id, :statistics => {1 => :params}}
     end
     
     describe "with valid params" do
@@ -42,7 +41,7 @@ describe Admin::StatisticsController do
       it "redirects to partition" do
         Statistic.stub(:update) { [mock_statistic] }
         put :update_multiple, @params
-        response.should redirect_to admin_season_partition_path @season, @partition
+        response.should redirect_to admin_partition_path @partition
       end
       
       it "sets flash.notice" do
@@ -74,7 +73,7 @@ describe Admin::StatisticsController do
       it "redirects to edit_multiple view if any of the statistic is not found from database" do
         Statistic.stub(:update).and_raise(ActiveRecord::RecordNotFound)
         put :update_multiple, @params
-        response.should redirect_to edit_multiple_admin_season_partition_statistics_path @season, @partition
+        response.should redirect_to edit_multiple_admin_partition_statistics_path @partition
       end
       
       it "sets flash.notice if any of the statistic is not found from database" do

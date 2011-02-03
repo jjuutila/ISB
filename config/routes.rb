@@ -17,24 +17,29 @@ Isb::Application.routes.draw do
     match "change_section" => "base#change_section"
     match "latest_standings" => "team_standings#latest", :via => :get
     match "current_team" => "roles#current_team", :via => :get
+    
     resources :news
     resources :sections
-    resources :seasons do
-      resources :partitions, :except => :index do
-        resources :team_standings, :except => [:index, :show] do
-         get 'edit_multiple', :on => :collection
-         put 'update_multiple', :on => :collection
-        end
-        resources :statistics, :except => [:index, :show, :new, :update, :create, :destroy, :edit] do
-          get 'edit_multiple', :on => :collection
-          put 'update_multiple', :on => :collection
-        end
-        resources :matches, :except => [:show]
-      end
-      resources :roles, :except => [:show, :new, :edit]
-    end
     resources :comments
     resources :members
+    
+    resources :seasons do
+      resources :partitions, :except => :index
+      resources :roles, :except => [:show, :new, :edit]
+    end
+    
+    resources :partitions, :except => :index do
+      resources :team_standings, :except => [:index, :show] do
+       get 'edit_multiple', :on => :collection
+       put 'update_multiple', :on => :collection
+      end
+      resources :statistics, :except => [:index, :show, :new, :update, :create, :destroy, :edit] do
+        get 'edit_multiple', :on => :collection
+        put 'update_multiple', :on => :collection
+      end
+      resources :matches, :except => [:show]
+    end
+    
     resources :link_categories do
       resources :links, :except => [:index, :show]
     end

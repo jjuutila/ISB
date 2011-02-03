@@ -1,6 +1,6 @@
 # coding: utf-8
 class Admin::MatchesController < Admin::BaseController
-  before_filter :get_season_and_partition
+  before_filter :get_partition
   respond_to :html
 
   def index
@@ -18,25 +18,24 @@ class Admin::MatchesController < Admin::BaseController
   def create
     @match = @partition.matches.build(params[:match])
     flash[:notice] = 'Uusi ottelu luotu.' if @match.save
-    respond_with @match, :location => admin_season_partition_matches_path(@season, @partition)
+    respond_with @match, :location => admin_partition_matches_path(@partition)
   end
 
   def update
     @match = Match.find(params[:id])
     flash[:notice] = "Ottelu '#{@match.to_s}' päivitetty." if @match.update_attributes(params[:match])
-    respond_with @match, :location => admin_season_partition_matches_path(@season, @partition)
+    respond_with @match, :location => admin_partition_matches_path(@partition)
   end
 
   def destroy
     @match = Match.find(params[:id])
     @match.destroy
-    respond_with @match, :location => admin_season_partition_matches_path(@season, @partition)
+    respond_with @match, :location => admin_partition_matches_path(@partition)
   end
   
   private
   
-  def get_season_and_partition
-    @season = Season.find params[:season_id]
+  def get_partition
     @partition = Partition.find params[:partition_id]
   end
 end

@@ -1,11 +1,11 @@
-%h1 #{@partition}-ottelut kaudella #{@season} 
+%h1 #{@partition}-ottelut kaudella #{@partition.season} 
 
 #contextNavi
-  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_partition_path(@season, @partition)
-  = link_to 'Takaisin', admin_season_partition_path(@season, @partition)
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_partition_path(@partition)
+  = link_to 'Takaisin', admin_partition_path(@partition)
   \|
-  = link_to image_tag('add.png', :size => '16x16'), new_admin_season_partition_match_path, :title => 'Luo uusi joukkueosio'
-  = link_to "Luo uusi ottelu", new_admin_season_partition_match_path, :title => 'Luo uusi joukkueosio'
+  = link_to image_tag('add.png', :size => '16x16'), new_admin_partition_match_path, :title => 'Luo uusi joukkueosio'
+  = link_to "Luo uusi ottelu", new_admin_partition_match_path, :title => 'Luo uusi joukkueosio'
 
 %table
   %tr
@@ -21,7 +21,7 @@
       %td= match.home_team
       %td= match.visitor_team
       %td= match.result
-      %td.action= link_to image_tag('pencil.png'), edit_admin_season_partition_match_path(@season, @partition, match),
+      %td.action= link_to image_tag('pencil.png'), edit_admin_partition_match_path(@partition, match),
         :title => 'Muokkaa'
-      %td.action= link_to image_tag('cross.png'), admin_season_partition_match_path(@season, @partition, match),
+      %td.action= link_to image_tag('cross.png'), admin_partition_match_path(@partition, match),
         :confirm => 'Haluatko varmasti poistaa ottelun?', :method => :delete, :title => 'Poista'

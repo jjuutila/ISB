@@ -1,6 +1,6 @@
 # coding: utf-8
 class Admin::TeamStandingsController < Admin::BaseController
-  before_filter :get_season_and_partition, :except => [:latest]
+  before_filter :get_partition, :except => [:latest]
   respond_to :html
 
   def new
@@ -14,7 +14,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   def create
     @team = TeamStanding.new(params[:team_standing].merge(:partition => @partition))
     flash.notice = 'Uusi joukkue luotu.' if @team.save
-    respond_with @team, :location => admin_season_partition_path(@season, @partition)
+    respond_with @team, :location => admin_partition_path(@partition)
   end
 
   def update
@@ -48,14 +48,14 @@ class Admin::TeamStandingsController < Admin::BaseController
       @standings = TeamStanding.update standings_params.keys, standings_params.values
     rescue
       flash.alert = "Sarjataulukko päivitetty vain osittain, koska joitain tilastorivejä ei löytynyt tietokannasta."
-      redirect_to edit_multiple_admin_season_partition_team_standings_path @season, @partition and return
+      redirect_to edit_multiple_admin_partition_team_standings_path @partition and return
     end
     
     standings_with_error = @standings.find_all {|s| !s.errors.empty?}
     
     if standings_with_error.empty?
       flash.notice = "Sarjataulukko päivitetty."
-      redirect_to admin_season_partition_path @season, @partition
+      redirect_to admin_partition_path @partition
     else
       flash.alert = "Sarjataulukko päivitetty vain osittain, koska joissain kentissä on virheitä."
       render :edit_multiple
@@ -65,7 +65,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   def latest
     begin
       latest_partition = Partition.latest selected_section
-      redirect_to edit_multiple_admin_season_partition_team_standings_path(latest_partition.season, latest_partition)
+      redirect_to edit_multiple_admin_partition_team_standings_path(latest_partition)
     rescue
       redirect_to admin_seasons_path
     end
@@ -73,8 +73,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   
   private
   
-  def get_season_and_partition
-    @season = Season.find params[:season_id]
+  def get_partition
     @partition = Partition.find params[:partition_id]
   end
 end

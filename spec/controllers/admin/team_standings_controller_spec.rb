@@ -9,9 +9,6 @@ describe Admin::TeamStandingsController do
   end
   
   before(:each) do
-    @season = mock_model(Season)
-    Season.stub(:find).with(@season.id) { @season }
-    
     @partition = mock_model(Partition)
     Partition.stub(:find).with(@partition.id) { @partition }
   end
@@ -19,7 +16,7 @@ describe Admin::TeamStandingsController do
   describe "GET new" do
     it "assigns a new team as @team" do
       TeamStanding.stub(:new).with(:partition_id => @partition.id) { mock_team_standing }
-      get :new, :season_id => @season.id, :partition_id => @partition.id
+      get :new, :partition_id => @partition.id
       assigns(:team).should be(mock_team_standing)
     end
   end
@@ -31,17 +28,17 @@ describe Admin::TeamStandingsController do
       end
       
       it "assigns a newly created team as @team" do
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => {}
         assigns(:team).should be(mock_team_standing)
       end
       
       it "redirects to the show partition page" do
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :team_standing => {}
-        response.should redirect_to(admin_season_partition_path(@season, @partition))
+        post :create, :partition_id => @partition.id, :team_standing => {}
+        response.should redirect_to(admin_partition_path(@partition))
       end
       
       it "shows a flash message" do
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => {}
         flash[:notice].should == 'Uusi joukkue luotu.'
       end
     end
@@ -49,13 +46,13 @@ describe Admin::TeamStandingsController do
     describe "with invalid params" do
       it "assigns a newly created but unsaved team as @team" do
         TeamStanding.stub(:new) { mock_team_standing(:save => false) }
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => {}
         assigns(:team).should be(mock_team_standing)
       end
 
       it "re-renders the 'new' template" do
         TeamStanding.stub(:new) { mock_team_standing(:save => false, :errors => {:anything => "error"}) }
-        post :create, :season_id => @season.id, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => {}
         response.should render_template("new")
       end
     end
@@ -65,16 +62,15 @@ describe Admin::TeamStandingsController do
     it "assigns the requested standings as @standings" do
       TeamStanding.should_receive(:where).with("partition_id = ?", @partition.id) { [mock_team_standing] }
       
-      get :edit_multiple, :season_id => @season.id, :partition_id => @partition.id
+      get :edit_multiple, :partition_id => @partition.id
       assigns(:standings).should == [mock_team_standing]
-      assigns(:season).should be @season
       assigns(:partition).should == @partition
     end
   end
   
   describe "POST update_multiple" do
     before(:each) do
-      @params = {:season_id => @season.id, :partition_id => @partition.id, :standings => {1 => :params}}
+      @params = {:partition_id => @partition.id, :standings => {1 => :params}}
     end
     
     describe "with valid params" do
@@ -87,7 +83,7 @@ describe Admin::TeamStandingsController do
       it "redirects to partition" do
         TeamStanding.stub(:update) { [mock_team_standing] }
         put :update_multiple, @params
-        response.should redirect_to admin_season_partition_path @season, @partition
+        response.should redirect_to admin_partition_path @partition
       end
       
       it "sets flash.notice" do
@@ -119,7 +115,7 @@ describe Admin::TeamStandingsController do
       it "redirects to edit_multiple view if one standing is not found from database" do
         TeamStanding.stub(:update).and_raise(ActiveRecord::RecordNotFound)
         put :update_multiple, @params
-        response.should redirect_to edit_multiple_admin_season_partition_team_standings_path @season, @partition
+        response.should redirect_to edit_multiple_admin_partition_team_standings_path @partition
       end
       
       it "sets flash.notice if one standing is not found from database" do
@@ -142,7 +138,7 @@ describe Admin::TeamStandingsController do
       Partition.should_receive(:latest).with(@section) { @partition }
       
       get 'latest'
-      response.should redirect_to edit_multiple_admin_season_partition_team_standings_path @season, @partition
+      response.should redirect_to edit_multiple_admin_partition_team_standings_path @partition
     end
     
     it "redirects to seasons if no partition is found" do
