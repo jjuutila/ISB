@@ -1,10 +1,10 @@
-%h1 #{@partition} pistepörssi kaudella #{@season}
+%h1 #{@partition} pistepörssi kaudella #{@partition.season}
 
 #contextNavi
-  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_partition_path(@season, @partition)
-  = link_to 'Takaisin', admin_season_partition_path(@season, @partition)
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_partition_path(@partition)
+  = link_to 'Takaisin', admin_partition_path(@partition)
 
-= form_tag(update_multiple_admin_season_partition_statistics_path(@season, @partition), :method => 'put') do
+= form_tag(update_multiple_admin_partition_statistics_path(@partition), :method => 'put') do
   %table
     %thead
       %tr
