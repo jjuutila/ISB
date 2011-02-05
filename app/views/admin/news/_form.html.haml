@@ -1,5 +1,7 @@
 = form.inputs do
   = form.input :sections, :as => :check_boxes, :label => 'Joukkueosiot',
     :collection => Section.leafs
-  = form.input :title, :label => 'Otsikko'
+  = form.input :title, :label => 'Otsikko', :input_html => { :size => 80 }
   = form.input :content, :label => 'Sisältö'
+= form.buttons do
+  = form.commit_button :label => 'Tallenna'

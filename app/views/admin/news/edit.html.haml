@@ -1,9 +1,12 @@
-%h1= t '.title'
-%p
+%h1 Muokkaa uutista
+
+#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_news_index_path
   = link_to 'Takaisin', admin_news_index_path
-  = link_to 'Näytä', admin_news_path(@news)
+  \|
+  = link_to 'Näytä uutinen', admin_news_path(@news)
   
+%time{:datetime => @news.created_at.strftime('%Y-%m-%dT%H:%M:%S-%Z')}= "Luotu #{@news.created_at}"
+
 - semantic_form_for @news, :url => admin_news_path(@news) do |form| 
   = render :partial => 'form', :object => form
-  - form.buttons do
-    = form.commit_button :label => 'Tallenna'
