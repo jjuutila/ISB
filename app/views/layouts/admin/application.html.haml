@@ -3,16 +3,17 @@
   %head
     %meta{ :charset => 'UTF-8' }
     %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}/
-    %title= "ISB Admin" + controller.controller_name.capitalize
+    %title= "ISB Hallintasivut - " + controller.controller_name.capitalize
     = csrf_meta_tag
     = stylesheet_link_tag "admin_style.css", "formtastic.css", "formtastic_changes.css"
     = javascript_include_tag :defaults
+  
   %body
-    .header#header
+    %header#main
       = render :partial => 'layouts/admin/header'
-    .menu#menu= render :partial => 'layouts/admin/menu'
+    %nav#menu= render :partial => 'layouts/admin/menu'
 
-    #content
+    %section#content
       - unless flash.notice.blank?
         #notice
           = image_tag('accept.png', :size => '16x16')
@@ -23,6 +24,6 @@
           = flash.alert
       = yield
       
-    #footer
+    %footer
       Ilmajoen Salibandy - 
       %a{:href => 'http://www.famfamfam.com/lab/icons/silk/'} Silk Icon Set by Mark James

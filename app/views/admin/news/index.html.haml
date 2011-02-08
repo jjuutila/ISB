@@ -1,14 +1,17 @@
-%h1 Ajankohtaista
+%header
+  %h1 Ajankohtaista
 
-#contextNavi
+%nav#contextNavi
   %a{:href => new_admin_news_path, :title => 'Luo uusi uutinen'}= image_tag('add.png')
   %a{:href => new_admin_news_path}= 'Luo uusi uutinen'
-  
+
 = section_selection
 
 - @news.each do |news_post|
-  %h2{:class => 'postTitle'}= link_to news_post, admin_news_path(news_post)
-  %time{:datetime => news_post.created_at.strftime('%Y-%m-%dT%H:%M:%S-%Z')}= news_post.created_at
-  = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_news_path(news_post), :title => 'Muokkaa'
-  = link_to image_tag('cross.png', :size => '16x16'), admin_news_path(news_post), :title => 'Poista',
-    :confirm => "Haluatko varmasti poistaa uutisen \"#{news_post}\"?", :method => :delete
+  %article
+    %header
+      %h1{:class => 'postTitle'}= link_to news_post, admin_news_path(news_post)
+      %time{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
+      = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_news_path(news_post), :title => 'Muokkaa'
+      = link_to image_tag('cross.png', :size => '16x16'), admin_news_path(news_post), :title => 'Poista',
+        :confirm => "Haluatko varmasti poistaa uutisen \"#{news_post}\"?", :method => :delete

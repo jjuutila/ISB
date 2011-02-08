@@ -1,12 +1,13 @@
-%h1= @news
+%article
+  %header
+    %h1= @news
+  %nav#contextNavi
+    = link_to image_tag('arrow_left.png', :size => '16x16'), admin_news_index_path
+    = link_to 'Takaisin', admin_news_index_path
+    \|
+    = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_news_path(@news), :title => 'Muokkaa'
+    = link_to 'Muokkaa', edit_admin_news_path(@news)
 
-#contextNavi
-  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_news_index_path
-  = link_to 'Takaisin', admin_news_index_path
-  \|
-  = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_news_path(@news), :title => 'Muokkaa'
-  = link_to 'Muokkaa', edit_admin_news_path(@news)
-
-%div= @news.content
-
-%time{:datetime => @news.created_at.strftime('%Y-%m-%dT%H:%M:%S-%Z')}= "Luotu #{@news.created_at}"
+  %p= @news.content
+  
+  %time{:datetime => html5_datetime(@news.created_at)}= "Luotu #{@news.created_at}"

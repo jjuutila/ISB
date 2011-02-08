@@ -9,7 +9,7 @@ h1 {
 img {
 	border:none;
 }
-#header {
+header#main {
   background-color: #f9f9f9;
   border-right:10px solid #c4d1eb;
   border-bottom:1px solid #e4dee1;
@@ -19,15 +19,15 @@ img {
   color:#303032;
   height:65px;
 }
-#header_left {
-  float:left;
-}
-span#header_text {
+
+#main h1 {
+  display: inline;
   vertical-align:super;
   font:bold 2.6em Arial, Helvetica, sans-serif;
   letter-spacing:.09em;
-  padding-left:10px;
+  padding-left:12px;
 }
+
 .TeamChange {
   margin-top:10px;
   letter-spacing:normal;
@@ -49,7 +49,7 @@ span#header_text {
   margin:55px 0 0 5px;
 }
 
-div#content {
+section#content {
   margin:20px 10px 20px 300px;
   border:1px solid #e4dee1;
   padding:10px;
@@ -234,7 +234,8 @@ td.action {
   background-color: #4477CC;
 }
 
-h2.postTitle {
+h1.postTitle {
+  font: bold 1.8em Arial, Helvetica, sans-serif;
   margin:15px 0 0 0;
 }
 
@@ -253,7 +254,7 @@ time {
   color:#5F5F61;
 }
 
-#footer {
+footer {
   background-color: #f9f9f9;
   border:1px solid #e4dee1;
   border-right:10px solid #c4d1eb;
@@ -263,6 +264,6 @@ time {
   clear:both;
   color:#7e7e7e;
 }
-#footer a {
+footer a {
   color:#7e7e7e;
 }
