@@ -4,9 +4,11 @@ class Comment < ActiveRecord::Base
   cattr_reader :per_page
   @@per_page = 10
   
-  attr_accessible :title, :content, :author, :email, :commentable_id
+  attr_accessible :title, :content, :author, :email
   
-  validates_length_of :title, :in => 2..50, :too_long => "Liian pitkä otsikko.",
+  validates_presence_of :state, :commentable
+  
+  validates_length_of :title, :in => 2..60, :too_long => "Liian pitkä otsikko.",
     :too_short => "Liian lyhyt otsikko."
     
   validates_length_of :content, :in => 5..160, :too_long => "Liian pitkä viesti.",
