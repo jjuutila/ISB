@@ -1,21 +1,16 @@
 %h1 Vieraskirja
-%p
-  %a{:href => new_admin_comment_path}= image_tag('add.png')
-  %a{:href => new_admin_comment_path}= 'Luo uusi vieraskirjamerkintä'
 
 %table
   %thead
     %tr
-      %th= 'Joukkueosio'
       %th= 'Aika'
       %th= 'Otsikko'
       %th= 'Kirjoittaja'
       %th{:colspan => 2}= 'Toiminnot'
   
   %tbody
-    - for comment in @admin_comments
+    - for comment in @comments
       %tr{ :class => cycle(:odd, :even), :id => "comment-#{comment.id}" }
-        %td= comment.commentable
         %td= comment.created_at
         %td= comment.title
         %td= comment.author
@@ -23,4 +18,4 @@
         %td.action= link_to image_tag('cross.png'), admin_comment_path(comment), :title => 'Poista',
           :confirm => "Haluatko varmasti poistaa viestin \"#{comment.title}\"?", :method => :delete
 
-= will_paginate @admin_comments
+= will_paginate @comments
