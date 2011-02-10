@@ -4,6 +4,8 @@ class Comment < ActiveRecord::Base
   cattr_reader :per_page
   @@per_page = 10
   
+  default_scope :order => 'created_at DESC'
+  
   attr_accessible :title, :content, :author, :email
   
   validates_presence_of :state, :commentable
@@ -27,17 +29,13 @@ class Comment < ActiveRecord::Base
   belongs_to :commentable, :polymorphic => true
   before_create :set_type
   
-  scope :section, where(:commentable_type => "Section")
-  
-  def correct?
-    state == "correct"
+  def self.messages(section, page)
+    Comment.paginate :page => page, :conditions => ['commentable_type = (?) AND commentable_id = (?)', "Section", section.id]
   end
     
   protected
   
-  
   def set_type
-    self.state = "correct"
     # Just for first state when comments acts as guestbook
     self.commentable_type = "Section"
   end
