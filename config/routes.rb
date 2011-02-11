@@ -21,7 +21,7 @@ Isb::Application.routes.draw do
     
     resources :news
     resources :sections
-    resources :comments, :except => [:new, :create]
+    resources :comments, :except => [:new, :create, :show]
     resources :members
     
     resources :seasons do

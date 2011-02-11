@@ -7,10 +7,6 @@ class Admin::CommentsController < Admin::BaseController
     respond_with @comments
   end
 
-  def show
-    respond_with @comment = Comment.find(params[:id])
-  end
-
   def edit
     respond_with @comment = Comment.find(params[:id])
   end
