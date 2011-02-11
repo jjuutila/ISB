@@ -12,4 +12,11 @@ describe Comment do
     it { should ensure_length_of(:author).is_at_least(1).is_at_most(40).with_short_message("Anna nimimerkki.").with_long_message(/pitkä/) }
     
   end
+  
+  context "to_s" do
+    it "returns the title" do
+      c = Comment.new :title => "FooBar"
+      c.to_s.should == "FooBar"
+    end
+  end
 end

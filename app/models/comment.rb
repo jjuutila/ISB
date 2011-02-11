@@ -32,6 +32,10 @@ class Comment < ActiveRecord::Base
   def self.messages(section, page)
     Comment.paginate :page => page, :conditions => ['commentable_type = (?) AND commentable_id = (?)', "Section", section.id]
   end
+  
+  def to_s
+    title
+  end
     
   protected
   
