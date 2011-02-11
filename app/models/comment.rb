@@ -8,7 +8,7 @@ class Comment < ActiveRecord::Base
   
   attr_accessible :title, :content, :author, :email
   
-  validates_presence_of :state, :commentable
+  validates_presence_of :commentable
   
   validates_length_of :title, :in => 2..60, :too_long => "Liian pitkä otsikko.",
     :too_short => "Liian lyhyt otsikko."
