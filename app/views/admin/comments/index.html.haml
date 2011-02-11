@@ -1,21 +1,21 @@
-%h1 Vieraskirja
+%header
+  %h1 Vieraskirja
 
-%table
-  %thead
-    %tr
-      %th= 'Aika'
-      %th= 'Otsikko'
-      %th= 'Kirjoittaja'
-      %th{:colspan => 2}= 'Toiminnot'
-  
-  %tbody
-    - for comment in @comments
-      %tr{ :class => cycle(:odd, :even), :id => "comment-#{comment.id}" }
-        %td= comment.created_at
-        %td= comment.title
-        %td= comment.author
-        %td.action= link_to image_tag('pencil.png'), edit_admin_comment_path(comment), :title => 'Muokkaa'
-        %td.action= link_to image_tag('cross.png'), admin_comment_path(comment), :title => 'Poista',
-          :confirm => "Haluatko varmasti poistaa viestin \"#{comment.title}\"?", :method => :delete
+= section_selection
 
-= will_paginate @comments
+= will_paginate @comments, :next_label => "Seuraava", :previous_label => "Edellinen"
+
+- @comments.each do |comment|
+  %article
+    %header
+      %h1{:class => 'postTitle'}= link_to comment, admin_comment_path(comment)
+      %p.meta
+        = comment.author
+        %time{:datetime => html5_datetime(comment.created_at)}= comment.created_at
+        = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_comment_path(comment), :title => 'Muokkaa'
+        = link_to image_tag('cross.png', :size => '16x16'), admin_comment_path(comment), :title => 'Poista',
+          :confirm => "Haluatko varmasti poistaa vieraskirjaviestin?", :method => :delete
+      
+      %p= comment.content
+
+= will_paginate @comments, :next_label => "Seuraava", :previous_label => "Edellinen"

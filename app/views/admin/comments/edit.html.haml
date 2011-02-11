@@ -1,8 +1,18 @@
-%h1= 'Muokkaa viestiä'
-%p
+%header
+  %h1= 'Muokkaa viestiä'
+
+%nav#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_comments_path
   = link_to 'Takaisin', admin_comments_path
+
+%time{:datetime => html5_datetime(@comment.created_at)}= "Lisätty: #{@comment.created_at}"
+
+= semantic_form_for @comment, :url => admin_comment_path(@comment) do |form|  
+  = form.inputs do
+    = form.input :title, :label => 'Otsikko'
+    = form.input :author, :label => 'Kirjoittaja'
+    = form.input :email, :label => 'Sähköposti'
+    = form.input :content, :label => 'Viesti'
   
-= semantic_form_for @admin_comment, :url => admin_comment_path(@admin_comment) do |form| 
-  = render :partial => 'form', :object => form
   = form.buttons do
     = form.commit_button "Tallenna"
