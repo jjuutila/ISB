@@ -13,7 +13,7 @@ class Comment < ActiveRecord::Base
   validates_length_of :title, :in => 2..60, :too_long => "Liian pitkä otsikko.",
     :too_short => "Liian lyhyt otsikko."
     
-  validates_length_of :content, :in => 5..160, :too_long => "Liian pitkä viesti.",
+  validates_length_of :content, :in => 5..320, :too_long => "Liian pitkä viesti.",
     :too_short => "Liian lyhyt viesti."
     
   validates_length_of :author, :in => 1..40, :too_long => "Liian pitkä nimimerkki.",
