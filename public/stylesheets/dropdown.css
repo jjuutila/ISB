@@ -1,0 +1,80 @@
+ul.topnav {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  float: left;
+  font-size: 1.2em;
+}
+ul.topnav li {
+  float: left;
+  margin: 0;
+  padding: 0 15px 0 0;
+  position: relative; /*--Declare X and Y axis base for sub navigation--*/
+  height:45px;
+}
+ul.topnav li a{
+  padding: 10px 5px;
+  color: #f7f8fb;
+  display: block;
+  text-decoration: none;
+  float: left;
+}
+
+ul.topnav li ul.subnav {
+  position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+  left: 0; top: 45px;
+  background:#f7f8fb;
+  margin: 0; padding: 0;
+  display: none;
+  width: 200px;
+  border: 1px solid #e1e1e2;
+  border-top:none;
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li ul.subnav li{
+  clear:both;
+  margin:0;
+  padding:0;
+  width: 200px;
+  line-height: 0.5em;
+  height:auto;
+}
+
+ul.topnav li ul.subnav li.section{
+  margin-top:15px;
+  border-top: 1px solid #e1e1e2;
+  padding-top:4px;
+}
+
+ul.topnav li ul.subnav li.section:first-child{
+  border-top:none;
+  margin-top:0;
+}
+
+ul.topnav li ul.subnav li a {
+  float: left;
+  color:#5f5f61;
+  padding-left: 20px;
+  text-decoration: underline;
+  margin:0;
+  display: block;
+}
+
+ul.topnav li ul.subnav li.section a{
+  padding-left:5px;
+  font-weight:bold;
+}
+
+ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+  text-decoration: none;
+}
+
+ul.topnav li.subhover{
+  background:#f7f8fb;
+}
+
+ul.topnav li.subhover a{
+  color:#5f5f61;
+}

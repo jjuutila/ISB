@@ -4,9 +4,12 @@
     <meta charset='UTF-8'> 
     <title>Ilmajoen Salibandy</title> 
     <link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
     
     <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="/javascripts/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="/javascripts/hoverIntent.js"></script>
+    <script type="text/javascript" src="/javascripts/dropdown.js"></script>
 
     <script type="text/javascript">
     function mycarousel_initCallback(carousel)
@@ -29,7 +32,7 @@
     };
     
     jQuery(document).ready(function() {
-        jQuery('#supporter-carousel').jcarousel({
+        $('#supporter-carousel').jcarousel({
             auto: 4,
             wrap: 'last'
         });
@@ -39,13 +42,39 @@
   
   <body>
     <div id="top">
-      <div class="center-wrapper" id="global-nav">global navigation</div>
+      <div class="center-wrapper">
+        <nav id="global-nav">
+          <ul class="topnav">
+              <li><a href="#">Etusivu</a></li>
+              <li>
+                  <a href="#">Miehet</a>
+                  <ul class="subnav">
+                    <li class="section"><a href="#">Edustus</a></li>
+                    <li><a href="#">Ajankohtaista</a></li>
+                    <li><a href="#">Vieraskirja</a></li>
+                    <li class="section"><a href="#">Miehet II</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+              </li>
+              
+              <li>
+                  <a href="#">Naiset</a>
+              </li>
+              
+              <li><a href="#">Pojat</a></li>
+              <li><a href="#">Tytöt</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     
-    <div id="header-wrapper">
-      <div class="center-wrapper" id="header">
-        <img src="/images/isb-logo-header.png" />
-        <p>Ilmajoen Salibandy</p>
+    <div id="main-header">
+      <div class="center-wrapper">
+        <header class="center-wrapper">
+          <img src="/images/isb-logo-header.png" height="178" width="178" />
+          <h1>Ilmajoen Salibandy</h1>
+        </header>
       </div>
     </div>
     
