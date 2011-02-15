@@ -5,11 +5,11 @@ $(document).ready(function(){
     timeout: 300,
     over: function() {
       $(this).addClass("subhover");
-      $(this).find("img").attr('src', '/images/triangle_grey.png');
+      $(this).find("img").attr('src', '/images/triangle_blue.png');
       $(this).find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
     },
     out: function() {
-      $(this).find("ul.subnav").slideUp('slow');
+      $(this).find("ul.subnav").hide();
       $(this).find("img").attr('src', '/images/triangle_white.png');
       $(this).removeClass("subhover");
       
