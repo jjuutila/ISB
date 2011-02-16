@@ -1,46 +1,38 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <meta charset='UTF-8'> 
-    <title>Ilmajoen Salibandy</title> 
-    <link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
-    
-    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="/javascripts/hoverIntent.js"></script>
-    <script type="text/javascript" src="/javascripts/dropdown.js"></script>
+<!doctype html>  
 
-    <script type="text/javascript">
-    function mycarousel_initCallback(carousel)
-    {
-        // Disable autoscrolling if the user clicks the prev or next button.
-        carousel.buttonNext.bind('click', function() {
-            carousel.startAuto(0);
-        });
-    
-        carousel.buttonPrev.bind('click', function() {
-            carousel.startAuto(0);
-        });
-    
-        // Pause autoscrolling if the user moves with the cursor over the clip.
-        carousel.clip.hover(function() {
-            carousel.stopAuto();
-        }, function() {
-            carousel.startAuto();
-        });
-    };
-    
-    jQuery(document).ready(function() {
-        $('#supporter-carousel').jcarousel({
-            auto: 4,
-            wrap: 'last'
-        });
-    });    
-    </script>
-  </head>
-  
-  <body>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="fi" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Ilmajoen Salibandy</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="/stylesheets/style.css?v=2">
+  <link href="/stylesheets/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+ 
+  <script src="/javascripts/modernizr-1.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
     <div id="top">
       <div class="center-wrapper">
         <nav id="global-nav">
@@ -55,19 +47,54 @@
                     <li class="section"><a href="#">Miehet II</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
+                    <li class="section"><a href="#">Miehet III</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
                   </ul>
               </li>
               
               <li>
                   <a href="#">Naiset</a>
+                  <ul class="subnav">
+                    <li class="section"><a href="#">Edustus</a></li>
+                    <li><a href="#">Ajankohtaista</a></li>
+                    <li><a href="#">Vieraskirja</a></li>
+                  </ul>
               </li>
               
-              <li><a href="#">Pojat</a></li>
-              <li><a href="#">Tytöt</a></li>
+              <li>
+                <a href="#">Pojat</a>
+                <ul class="subnav">
+                  <li class="section"><a href="#">C1-Pojat</a></li>
+                  <li><a href="#">Ajankohtaista</a></li>
+                  <li><a href="#">Vieraskirja</a></li>
+                  <li class="section"><a href="#">C2-Pojat</a></li>
+                  <li><a href="#">Ajankohtaista</a></li>
+                  <li><a href="#">Vieraskirja</a></li>
+                  <li class="section"><a href="#">D-Pojat</a></li>
+                  <li><a href="#">Ajankohtaista</a></li>
+                  <li><a href="#">Vieraskirja</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Tytöt</a>
+                <ul class="subnav">
+                  <li class="section"><a href="#">B-Tytöt</a></li>
+                  <li><a href="#">Ajankohtaista</a></li>
+                  <li><a href="#">Vieraskirja</a></li>
+                  <li class="section"><a href="#">C-Tytöt</a></li>
+                  <li><a href="#">Ajankohtaista</a></li>
+                  <li><a href="#">Vieraskirja</a></li>
+                  <li class="section"><a href="#">D-Tytöt</a></li>
+                  <li><a href="#">Ajankohtaista</a></li>
+                  <li><a href="#">Vieraskirja</a></li>
+                </ul>
+              </li>
           </ul>
         </nav>
       </div>
     </div>
+    
     
     <div id="main-header">
       <header>
@@ -76,7 +103,7 @@
       </header>
     </div>
     
-    <div class="center-wrapper">
+    <div id="main" class="center-wrapper">
       <div id="breadcrumb">Etusivu</div>
       
       <div id="frontpage-matches">
@@ -88,9 +115,15 @@
         <h2>Tuoreimmat uutiset</h2>
         uutisia
       </div>
+
+    </div>
+    
+    <footer>
+      <div class="center-wrapper">
+        <p>© Ilmajoen salibandy 2011</p>
+      </div>
       
-      <div id="supporters">
-        <h2>Sponsorit</h2>
+      <aside class="center-wrapper">
           <ul id="supporter-carousel">
             <li><a rel="nofollow" href="http://www.eepee.fi/" title="Etelä-Pohjanmaan Osuuskauppa"><img src="/images/supporters/eepee.gif" alt="Etelä-Pohjanmaan Osuuskauppa" width="190" height="39" /></a></li>
             <li><a rel="nofollow" href="http://www.intersport.fi/" title="Intersport"><img src="/images/supporters/intersport.gif" alt="Intersport" width="190" height="55" /></a></li>
@@ -109,9 +142,46 @@
             <li><img src="/images/supporters/kivimaki.gif" alt="Tilausliikenne Kivimäki" width="190" height="45" /></li>
             <li><a rel="nofollow" href="http://www.fatpipe.fi/" title="Fat Pipe"><img src="/images/supporters/fatpipe.gif" alt="Fat Pipe" width="190" height="43" /></a></li>
         </ul>
+        
+      </aside>
+    </footer>
+  </div> <!--! end of #container -->
 
-      </div>
-    </div>
-    
-  </body> 
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery.min.js"%3E%3C/script%3E'))</script>
+  
+  <script type="text/javascript" src="/javascripts/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="/javascripts/hoverIntent.js"></script>
+  <script src="/javascripts/script.js"></script>
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+  <!-- yui profiler and profileviewer - remove for production -->
+  <script src="/javascripts/profiling/yahoo-profiling.min.js"></script>
+  <script src="/javascripts/profiling/config.js"></script>
+  <!-- end profiling code -->
+
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 
+       change the UA-XXXXX-X to be your site's ID 
+  <script>
+   var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+  -->
+  
+</body>
 </html>
