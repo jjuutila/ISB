@@ -4,7 +4,11 @@
     = form.input :last_name, :label => 'Sukunimi'
     = form.input :gender, :as => :radio, :label => 'Sukupuoli', :collection => {'Mies' => true, 'Nainen' => false}
     = form.input :birth_year, :label => 'Syntymävuosi'
+    = form.input :home_municipality, :label => 'Kotikunta'
     = form.input :number, :label => 'Numero'
+    = form.input :position, :as => :select, :label => 'Pelipaikka', :include_blank => false,
+      :collection => {'-' => Member::UNASSIGNED, 'Hyökkääjä' => Member::ATTACKER, 'Puolustaja' => Member::DEFENDER, 'Maalivahti' => Member::GOALIE}
+      
   
   = form.buttons do
     = form.commit_button :label => 'Tallenna'

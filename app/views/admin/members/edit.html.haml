@@ -1,6 +1,8 @@
-%h1 Muokkaa pelaajaa
+%header
+  %h1 Muokkaa pelaajaa
 
-#contextNavi
+%nav#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_members_path
   = link_to 'Takaisin', admin_members_path
   
 = render :partial => 'form', :locals => {:url => admin_member_path(@member)}
