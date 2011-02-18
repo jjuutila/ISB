@@ -13,8 +13,8 @@ class Admin::MembersController < Admin::BaseController
   end
   
   def create
-    @member = Member.create(params[:member])
-    flash[:notice] = "Uusi pelaaja luotu." unless @member.new_record?
+    @member = Member.new(params[:member])
+    flash[:notice] = "Uusi pelaaja luotu." if @member.save
     respond_with @member, :location => admin_members_url
   end
   
@@ -24,10 +24,7 @@ class Admin::MembersController < Admin::BaseController
   
   def update
     @member = Member.find(params[:id])
-    
-    if @member.update_attributes(params[:member])
-      flash[:notice] = 'Päivitetty.'
-    end
+    flash[:notice] = 'Päivitetty.' if @member.update_attributes(params[:member])
     respond_with @member, :location => admin_members_url
   end
 end
