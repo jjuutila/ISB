@@ -1,6 +1,7 @@
-%h1 Muokkaa ottelua #{@match}
+%header
+  %h1 Muokkaa ottelua #{@match}
 
-#contextNavi
+%nav#contextNavi
   = link_to image_tag('arrow_left.png', :size => '16x16'), admin_partition_matches_path
   = link_to 'Takaisin', admin_partition_matches_path
 
