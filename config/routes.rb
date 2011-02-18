@@ -22,7 +22,7 @@ Isb::Application.routes.draw do
     resources :news
     resources :sections
     resources :comments, :except => [:new, :create, :show]
-    resources :members
+    resources :members, :except => [:delete, :show]
     
     resources :seasons do
       resources :partitions, :except => :index
