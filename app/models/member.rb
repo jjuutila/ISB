@@ -1,5 +1,10 @@
 # coding: utf-8
 class Member < ActiveRecord::Base
+  UNASSIGNED = 0
+  ATTACKER = 1
+  DEFENDER = 2
+  GOALIE = 3
+  
   has_many :affairs
   has_many :seasons, :through => :affairs
   has_many :statistics
@@ -19,7 +24,10 @@ class Member < ActiveRecord::Base
   
   validates_numericality_of :birth_year, :greater_than_or_equal_to => 1900,
     :less_than_or_equal_to => DateTime::now().year(),
-    :message => "Syntymävuosi tulee olla väliltä 1900-.#{DateTime::now().year()}"
+    :message => "Syntymävuosi tulee olla väliltä 1900-#{DateTime::now().year()}"
+    
+  validates_numericality_of :position, :only_integer => true, :less_than_or_equal_to => GOALIE,
+    :greater_than_or_equal_to => UNASSIGNED, :message => "Epäkelpo pelipaikka."
   
   after_initialize :set_defaults
   

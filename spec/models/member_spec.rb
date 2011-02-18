@@ -22,6 +22,8 @@ describe Member do
     it { should ensure_inclusion_of(:number).in_range(0..99).with_message(/Numero tulee olla/) }
     
     it {should ensure_inclusion_of(:birth_year).in_range(1900..DateTime::now().year()).with_message(/Syntymävuosi/) }
+    
+    it { should ensure_inclusion_of(:position).in_range(0..3).with_message(/pelipaikka/) }
   end
   
   context "printing" do
