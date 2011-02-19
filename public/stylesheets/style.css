@@ -219,7 +219,7 @@ button {  width: auto; overflow: visible; }
 
 
  /* Primary Styles
-    Author: 
+    Author: Jaakko Juutila
  */
 
 body, html {
@@ -271,7 +271,7 @@ div#main-header header h1 {
   font: normal 0.8em verdana, arial, helvetica, sans-seri;
 }
 
-#breadcrumb, #content, #supporters, #frontpage-news, #frontpage-matches {
+#breadcrumb, #frontpage-news, #frontpage-matches, article {
   border:1px solid #e1e1e2;
   margin-top:10px;
   padding:10px;
@@ -292,7 +292,7 @@ div#main-header header h1 {
 
 #frontpage-matches {
   width:350px;
-  margin-right:10px;
+  
 }
 
 #frontpage-matches a{
@@ -304,11 +304,12 @@ div#main-header header h1 {
 
 #frontpage-news {
   width:584px;
+  margin-right:10px;
 }
 
 div#main {
   overflow:visible;
-  padding-bottom:220px; /*footer height*/
+  padding-bottom:200px; /*footer height*/
   overflow:auto;
 }
 
@@ -318,11 +319,10 @@ div#main {
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   font-weight:bold;
   font-size: 2.50em;  
-  margin:0 0 10px 0;
+  margin:10px 0  0;
   line-height:105%;
   padding: 8px 15px 8px 10px;
   letter-spacing:0.05em;
-  background-color:#e5eef9;
 }
 
 #main h2 {
@@ -335,6 +335,14 @@ div#main {
   padding:0;
 }
 
+article p {
+  margin:10px 0 0 10px;
+}
+
+.entry {
+  margin: 10px 0 10px;
+}
+
 ul#supporter-carousel {
   display: none;
 }
@@ -342,8 +350,8 @@ ul#supporter-carousel {
 footer {
   position: relative;
   width:100%;
-  margin-top:-220px;
-  height:220px;
+  margin-top:-200px;
+  height:200px;
   border-top: 1px solid #c4c4c4;
   background: #efefec;
   clear:both;

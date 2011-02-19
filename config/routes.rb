@@ -2,6 +2,9 @@ Isb::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
+  root :to => "home#index", :via => :get
+  match "/uutiset/:id" => "home#show", :via => :get, :as => 'news'
+  
   #match ':section/:controller(/:action(/:id(.:format)))'
   
   match ':section/uutiset' => 'news#index', :constraints => { :section => /[a-z]\d{2,15}/ }
@@ -13,7 +16,7 @@ Isb::Application.routes.draw do
   #end
   
   namespace 'admin' do
-    root :to => "News#index"
+    root :to => "News#index", :via => :get
     match "change_section" => "base#change_section"
     match "latest_standings" => "team_standings#latest", :via => :get
     match "current_team" => "roles#current_team", :via => :get
