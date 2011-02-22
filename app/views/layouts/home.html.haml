@@ -1,0 +1,28 @@
+!!!
+%html
+  <!--[if lt IE 7 ]> <html lang="fi" class="no-js ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html lang="fi" class="no-js ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html lang="fi" class="no-js ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html lang="fi" class="no-js ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html lang="fi" class="no-js"> <!--<![endif]-->
+  %head
+    %meta{ :charset => 'UTF-8' }
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }
+    %meta{ :name => "description", :content => "" }
+    %meta{ :name => "author", :content => "" }
+    
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}/
+    %title= "Ilmajoen Salibandy - Etusivu"
+    = stylesheet_link_tag "style.css?v=2", "dropdown"
+    = javascript_include_tag "modernizr-1.6.min"
+    
+  %body
+    #container
+      #top= render :partial => 'layouts/global_nav'
+      #main-header= render :partial => 'layouts/header'
+      .center-wrapper#main= yield
+    %footer= render :partial => 'layouts/footer'
+
+  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"}
+  = javascript_tag %{!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery-1.4.3.min.js"%3E%3C/script%3E'))}
+  = javascript_include_tag "jquery.jcarousel.min", "hoverIntent", "script"

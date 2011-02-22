@@ -1,6 +1,7 @@
 # coding: utf-8
 class HomeController < ApplicationController
   respond_to :html
+  layout 'home'
   
   def index
     @news = News.recent
