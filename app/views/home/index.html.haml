@@ -1,13 +1,13 @@
-#frontpage-news
-  %h2 Tuoreimmat uutiset
+%section#frontpage-news
+  %h1 Tuoreimmat uutiset
   - @news.each do |news_post|
     .entry
-      %h3= link_to news_post, news_path(news_post)
+      %h2= link_to news_post, news_path(news_post)
       %meta
         %time{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
         = " | "
         = news_post.sections.to_sentence :two_words_connector => " ja ", :last_word_connector => ", ja "
 
-#frontpage-matches
-  %h2 Kuukauden ottelut
+%section#frontpage-matches
+  %h1 Kuukauden ottelut
   = 'Otteluita...'
