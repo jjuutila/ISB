@@ -271,10 +271,35 @@ div#main-header header h1 {
   font: normal 0.8em verdana, arial, helvetica, sans-seri;
 }
 
-#breadcrumb, #frontpage-news, #frontpage-matches, article {
+#breadcrumb, #frontpage-news, #frontpage-matches, article, section#main {
   border:1px solid #e1e1e2;
   margin-top:10px;
   padding:10px;
+}
+
+nav#section-nav {
+  border:1px solid #e1e1e2;
+  float:left;
+  width:200px;
+  margin:0 10px 0 0;
+}
+
+nav#section-nav h1 {
+  background-color:#5f70bf;
+  border-bottom:1px solid #e1e1e2;
+  color:#f7f8fb;
+  font-size:1.3em;
+  padding:6px 0 6px 6px;
+}
+
+nav#section-nav ul {
+  margin:0 10px 10px 10px;
+}
+
+nav#section-nav ul li {
+  border-bottom:1px solid #e1e1e2;
+  line-height: 2.9em;
+  padding-left: 10px;
 }
 
 .jcarousel-item {
@@ -307,7 +332,7 @@ div#main-header header h1 {
   margin-right:10px;
 }
 
-div#main {
+div#main, section#main {
   overflow:visible;
   padding-bottom:200px; /*footer height*/
   overflow:auto;
@@ -330,7 +355,6 @@ div#main {
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   font-weight: normal;  
   font-size: 20px;
-  color:#4e628b;
   margin: 6px 0 0 0;
   padding:0;
 }
@@ -341,6 +365,14 @@ article p {
 
 .entry {
   margin: 10px 0 10px;
+}
+
+.entry h2 a {
+  color:#4e628b;
+}
+
+.entry h2 a:hover {
+  color:#3080c8;
 }
 
 ul#supporter-carousel {

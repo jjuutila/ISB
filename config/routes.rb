@@ -7,8 +7,7 @@ Isb::Application.routes.draw do
   
   #match ':section/:controller(/:action(/:id(.:format)))'
   
-  match ':section/uutiset' => 'news#index', :constraints => { :section => /[a-z]\d{2,15}/ }
-  match ':section/uutiset/:id' => 'news#show', :constraints => { :section => /[a-z]\d{2,15}/ }
+  match ':section/ajankohtaista' => 'section#news', :constraints => { :section => /[a-z0-9-]+/ }, :via => :get
   
   #scope(:name => "section", :path_names => { :new => "uusi", :edit => "muokkaa" }) do  
     #resources :news, :path => ":section/uutiset"

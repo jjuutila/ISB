@@ -20,7 +20,9 @@
     #container
       #top= render :partial => 'layouts/global_nav'
       #main-header= render :partial => 'layouts/header'
-      .center-wrapper#main= yield
+      .center-wrapper
+        %nav#section-nav= render :partial => 'layouts/section_nav'
+        %section#main= yield
     %footer= render :partial => 'layouts/footer'
 
   %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"}
