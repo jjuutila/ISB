@@ -1,8 +1,8 @@
 ul.topnav {
-  list-style: none;
+  list-style:none;
   padding: 0 20px;
   margin: 0;
-  float: left;
+  float:left;
   font-size: 1.2em;
 }
 ul.topnav li {
@@ -24,7 +24,7 @@ ul.topnav li a{
 }
 
 ul.topnav li ul.subnav {
-  position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+  position:absolute; /* Keeps subnav from affecting main navigation flow*/
   left: 0; top: 45px;
   background:#f7f8fb;
   margin: 0; padding: 0;
@@ -67,8 +67,12 @@ ul.topnav li ul.subnav li a {
 
 ul.topnav li ul.subnav li.section a{
   font-size:1em;
-  padding-left:5px;
+  padding:10px 0 0 5px;
   font-weight:bold;
+}
+
+ul.topnav li ul.subnav li.section:first-child a{
+  padding-top:0;
 }
 
 ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
