@@ -1,12 +1,21 @@
 !!!
 %html
+  <!--[if lt IE 7 ]> <html lang="fi" class="no-js ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <html lang="fi" class="no-js ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <html lang="fi" class="no-js ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <html lang="fi" class="no-js ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html lang="fi" class="no-js"> <!--<![endif]-->
   %head
     %meta{ :charset => 'UTF-8' }
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }
+    %meta{ :name => "description", :content => "" }
+    %meta{ :name => "author", :content => "" }
+    
     %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}/
     %title= "ISB Hallintasivut - " + controller.controller_name.capitalize
     = csrf_meta_tag
-    = stylesheet_link_tag "admin_style.css", "formtastic.css", "formtastic_changes.css"
-    = javascript_include_tag :defaults
+    = javascript_include_tag "modernizr-1.6.min"
+    = stylesheet_link_tag "admin_style.css", "formtastic.css", "formtastic_changes.css", "boilerplate"
   
   %body
     %header#main
@@ -27,3 +36,8 @@
     %footer
       Ilmajoen Salibandy - 
       %a{:href => 'http://www.famfamfam.com/lab/icons/silk/'} Silk Icon Set by Mark James
+      
+  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"}
+  = javascript_tag %{!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery-1.4.4.min.js"%3E%3C/script%3E'))}
+  = javascript_include_tag "jquery-ui.min"
+  = yield :javascript

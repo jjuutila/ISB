@@ -1,13 +1,13 @@
-= javascript_include_tag "dragdrop.js"
-
-:javascript
-  $(document).ready(function() {
-    ddManager = new DragDropManager();
-    ddManager.init({moveable_element: 'draggable-elements', 
-                  receiving_element: 'drop-place',
-                  remote: { url: {base: "/admin/seasons/#{@season.id}/roles", format: ".js"}}
-                  });
-  });
+- content_for :javascript do
+  = javascript_include_tag "dragdrop.js"
+  :javascript
+    $(document).ready(function() {
+      ddManager = new DragDropManager();
+      ddManager.init({moveable_element: 'draggable-elements', 
+                    receiving_element: 'drop-place',
+                    remote: { url: {base: "/admin/seasons/#{@season.id}/roles", format: ".js"}}
+                    });
+    });
 
 %h1 Joukkue kaudella #{@season}
 
