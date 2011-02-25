@@ -9,7 +9,7 @@ class News < ActiveRecord::Base
   validates_length_of :title, :minimum => 3, :too_short => "Otsikko on liian lyhyt (vähintään kolme merkkiä)."
 
   scope :in_section, lambda {|section| joins(:sections).where(:sections => {:id => section.id}).order("created_at DESC")}
-  scope :recent, limit(10)
+  scope :recent, limit(10).order("created_at DESC")
   
   before_validation :update_or_create_slug
   
