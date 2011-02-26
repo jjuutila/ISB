@@ -5,6 +5,7 @@ class HomeController < ApplicationController
   
   def index
     @news = News.recent
+    @upcoming_matches = Match.upcoming
   end
   
   def show

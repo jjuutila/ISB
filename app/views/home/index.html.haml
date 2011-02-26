@@ -10,4 +10,9 @@
 
 %section#frontpage-matches
   %h1 Kuukauden ottelut
-  = 'Otteluita...'
+  - @upcoming_matches.each do |match|
+    .entry
+      %h2= match
+      %meta
+        = "#{match.partition.season.section} |"
+        %time{:datetime => html5_datetime(match.start_time)}= match.start_time
