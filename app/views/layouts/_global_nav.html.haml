@@ -1,9 +1,10 @@
 %nav{ :id => 'global-nav', :class => 'center-wrapper' }
   %ul.topnav
     %li= link_to 'Etusivu', '/'
-    %li
-      = link_to 'Miehet', '#'
-      %ul.subnav
-        %li.section= link_to 'Edustus', '#'
-        %li= link_to 'Ajankohtaista', '#'
-        %li.section= link_to 'Miehet II', '#'
+    - Section.top_level.each do |top_level_section|
+      %li
+        = link_to top_level_section, '#'
+        %ul.subnav
+          - top_level_section.sections.each do |child|
+            %li.section= link_to child, {:section => child.slug, :controller => "section", :action => "news" }
+            %li= link_to 'Ajankohtaista', {:section => child.slug, :controller => "section", :action => "news" }
