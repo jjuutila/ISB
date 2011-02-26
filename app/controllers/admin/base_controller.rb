@@ -1,5 +1,6 @@
 # coding: utf-8
 class Admin::BaseController < ActionController::Base
+  protect_from_forgery
   layout 'admin/application'
   
   def selected_section 
