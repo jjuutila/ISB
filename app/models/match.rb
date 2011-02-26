@@ -12,6 +12,8 @@ class Match < ActiveRecord::Base
   
   validate :teams_cannot_be_equal
   
+  scope :upcoming, where(:start_time => (DateTime.now.at_beginning_of_day)..(DateTime.now.advance(:days => 30)))
+  
   def result
     "#{home_goals}-#{visitor_goals}"
   end

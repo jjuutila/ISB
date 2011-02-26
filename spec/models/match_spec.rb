@@ -48,4 +48,26 @@ describe Match do
       match.to_s.should == "home team - visitor team"
     end
   end
+  
+  describe "scope upcoming" do
+    it "gets matches in next 30 days" do
+      match_too_late = Match.new :start_time => DateTime.now.advance(:days => 31)
+      match_too_late.save :validate => false
+      
+      match_tomorrow = Match.new :start_time => DateTime.now.advance(:days => 1)
+      match_tomorrow.save :validate => false
+      
+      match_yesterday = Match.new :start_time => DateTime.now.advance(:days => -1)
+      match_yesterday.save :validate => false
+      
+      Match.upcoming.should == [match_tomorrow]
+    end
+    
+    it "gets also past matches from the current day" do
+      match_today = Match.new :start_time => DateTime.now.at_beginning_of_day
+      match_today.save :validate => false
+      
+      Match.upcoming.should == [match_today]
+    end
+  end
 end
