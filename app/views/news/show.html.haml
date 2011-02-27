@@ -2,7 +2,7 @@
   %header
     %h1= @news
   %meta
-    %time{:datetime => html5_datetime(@news.created_at)}= @news.created_at
+    %time{:datetime => html5_datetime(@news.created_at), :pubdate => :pubdate}= @news.created_at
     = " | "
     = @news.sections.to_sentence :two_words_connector => " ja ", :last_word_connector => ", ja "
   %p= @news.content
