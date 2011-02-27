@@ -22,7 +22,9 @@
       #main-header= render :partial => 'layouts/header'
       .center-wrapper
         %nav#section-nav= render :partial => 'layouts/section_nav'
-        %section#main= yield
+        #main-container
+          %section#main= yield
+          
     %footer= render :partial => 'layouts/footer'
 
   %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"}

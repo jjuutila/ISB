@@ -271,7 +271,7 @@ div#main-header header h1 {
   font: normal 0.8em verdana, arial, helvetica, sans-seri;
 }
 
-#breadcrumb, #frontpage-news, #frontpage-matches, article, section#main {
+#breadcrumb, #frontpage-news, #frontpage-matches, section#main, article#news {
   border:1px solid #e1e1e2;
   margin-top:10px;
   padding:10px;
@@ -281,7 +281,7 @@ nav#section-nav {
   border:1px solid #e1e1e2;
   float:left;
   width:200px;
-  margin:0 10px 0 0;
+  margin:10px 10px 0 0;
 }
 
 nav#section-nav h1 {
@@ -310,35 +310,31 @@ nav#section-nav ul li {
   border:none;
 }
 
-#frontpage-matches, #frontpage-news {
+section#frontpage-matches, section#frontpage-news {
   float:left;
   margin-bottom:10px;
 }
 
-#frontpage-matches {
+section#frontpage-matches {
   width:350px;
   
 }
 
-#frontpage-matches a{
-  color:#3080c8;
-}
-#frontpage-matches a:hover{
-  color:#36A0FF;
-}
-
-#frontpage-news {
+section#frontpage-news {
   width:584px;
   margin-right:10px;
 }
 
-div#main, section#main {
+div#main-container {
   overflow:visible;
   padding-bottom:200px; /*footer height*/
   overflow:auto;
 }
+section#main {
 
-#main h1 
+}
+
+#main-container h1 
 {
   border-left:5px solid #4e628b;
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
@@ -350,7 +346,7 @@ div#main, section#main {
   letter-spacing:0.05em;
 }
 
-#main h2 {
+#main-container h2 {
   word-spacing:0.15em;
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   font-weight: normal;  
