@@ -1,7 +1,7 @@
 %h1= @section
 
 %ul
-  %li= link_to 'Ajankohtaista', {:section => @section.slug, :controller => "section", :action => "news" }
-  %li haa
+  %li= create_menu_item 'Ajankohtaista', :news
+  %li= create_menu_item 'Ottelut', :matches
   %li huu
   %li hoo
