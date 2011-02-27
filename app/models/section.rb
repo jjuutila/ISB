@@ -9,7 +9,7 @@ class Section < ActiveRecord::Base
   validates_presence_of :name, :slug
   
   scope :leafs, :conditions => "parent_id > 0"
-  scope :top_level, joins(:sections).group("sections.id").includes(:sections)
+  scope :top_level, where(:parent_id => nil).includes(:sections)
   
   def self.possible_parents
     self.where(:parent_id => nil).all

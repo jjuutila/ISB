@@ -29,7 +29,7 @@ describe Section do
       other_parent = Section.new :name => "Other Parent"
       other_parent.save :validate => false
       
-      Section.top_level.should == [parent]
+      Section.top_level.should == [parent, other_parent]
     end
   end
 end
