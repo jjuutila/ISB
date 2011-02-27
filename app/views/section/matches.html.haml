@@ -1,0 +1,9 @@
+%header
+  %h1= "Ottelut kaudella #{@partition.season}, #{@partition}"
+  
+- @matches.each do |match|
+  .entry
+    %h2= link_to "#{match} #{match.result}", match_path(match.partition.season.section.slug, match)
+    %meta
+      %time{:datetime => html5_datetime(match.start_time)}= match.start_time
+      = " | #{match.location}"

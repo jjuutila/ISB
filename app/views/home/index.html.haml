@@ -12,7 +12,7 @@
   %h1 Kuukauden ottelut
   - @upcoming_matches.each do |match|
     .entry
-      %h2= match
+      %h2= link_to match, match_path(match.partition.season.section.slug, match)
       %meta
         = "#{match.partition.season.section} |"
         %time{:datetime => html5_datetime(match.start_time)}= match.start_time

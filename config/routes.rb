@@ -5,9 +5,11 @@ Isb::Application.routes.draw do
   root :to => "home#index", :via => :get
   match "/uutiset/:id" => "home#show", :via => :get, :as => 'news'
   
-  #match ':section/:controller(/:action(/:id(.:format)))'
-  
-  match ':section/ajankohtaista' => 'section#news', :constraints => { :section => /[a-z0-9-]+/ }, :via => :get
+  constraints(:section => /[a-z0-9-]+/) do
+    match ':section/ajankohtaista' => 'section#news', :via => :get
+    match ':section/ottelut' => 'section#matches', :via => :get, :as => 'matches'
+    match ':section/ottelu/:id' => 'section#show_match', :via => :get, :as => 'match'
+  end
   
   #scope(:name => "section", :path_names => { :new => "uusi", :edit => "muokkaa" }) do  
     #resources :news, :path => ":section/uutiset"
