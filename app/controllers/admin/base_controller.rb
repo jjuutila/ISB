@@ -1,7 +1,12 @@
 # coding: utf-8
 class Admin::BaseController < ActionController::Base
+  before_filter :set_locale
   protect_from_forgery
   layout 'admin/application'
+  
+  def set_locale
+    I18n.locale = :fi
+  end
   
   def selected_section 
     @selected_section ||= session[:selected_section] && Section.find(session[:selected_section])
