@@ -7,7 +7,7 @@ gem 'formtastic', '~> 1.2.0'
 gem 'haml'
 gem 'haml-rails'
 gem 'validation_reflection'
-gem "will_paginate", "~> 3.0.pre2"
+gem 'kaminari'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'

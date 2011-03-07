@@ -3,7 +3,7 @@
 
 = section_selection
 
-= will_paginate @comments, :next_label => "Seuraava", :previous_label => "Edellinen"
+= paginate @comments
 
 - @comments.each do |comment|
   %article
@@ -18,4 +18,4 @@
       
       %p= comment.content
 
-= will_paginate @comments, :next_label => "Seuraava", :previous_label => "Edellinen"
+= paginate @comments

@@ -30,7 +30,7 @@ class Comment < ActiveRecord::Base
   before_create :set_type
   
   def self.messages(section, page)
-    Comment.paginate :page => page, :conditions => ['commentable_type = (?) AND commentable_id = (?)', "Section", section.id]
+    Comment.where(['commentable_type = (?) AND commentable_id = (?)', "Section", section.id]).page(page).per(10)
   end
   
   def to_s
