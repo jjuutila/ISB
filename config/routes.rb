@@ -9,6 +9,9 @@ Isb::Application.routes.draw do
     match ':section/ajankohtaista' => 'section#news', :via => :get
     match ':section/ottelut' => 'section#matches', :via => :get, :as => 'matches'
     match ':section/ottelu/:id' => 'section#show_match', :via => :get, :as => 'match'
+    match ':section/vieraskirja' => 'section#guestbook', :via => :get, :as => 'guestbook'
+    match ':section/vieraskirja/kirjoita' => 'section#new_guestbook_message', :via => :get, :as => 'new_guestbook_message'
+    match ':section/vieraskirja' => 'section#create_guestbook_message', :via => :post, :as => 'guestbook'
   end
   
   #scope(:name => "section", :path_names => { :new => "uusi", :edit => "muokkaa" }) do  

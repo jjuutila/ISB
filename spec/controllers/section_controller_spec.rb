@@ -20,8 +20,14 @@ describe SectionController do
     end
   end
   
+  def mock_comment(stubs={})
+    (@mock_comment ||= mock_model(Comment).as_null_object).tap do |comment|
+      comment.stub(stubs) unless stubs.empty?
+    end
+  end
+  
   before(:each) do
-    Section.should_receive(:find_by_slug).and_return(mock_section)
+    Section.should_receive(:find_by_slug).and_return(mock_section(:slug => "edustus"))
   end
   
   describe "'GET' news" do
@@ -60,6 +66,59 @@ describe SectionController do
       Match.should_receive(:find).with(3).and_return(mock_match)
       get :show_match, :section => 'edustus', :id => 3
       assigns(:match).should == mock_match
+    end
+  end
+  
+  describe "'GET' guestbook" do
+    it "sets the requested sections comments as @messages" do
+      Comment.should_receive(:messages).with(mock_section, 2).and_return([mock_comment])
+      get :guestbook, :section => 'edustus', :page => 2
+      assigns(:messages).should == [mock_comment]
+    end
+  end
+  
+  describe "'GET' new_guestbook_message" do
+    it "assigns a new comment as @message" do
+      Comment.should_receive(:new).and_return(mock_comment)
+      get :new_guestbook_message, :section => 'edustus'
+      assigns(:message).should == mock_comment
+    end
+  end
+  
+  describe "'POST' create_guestbook_message" do
+    before(:each) do
+      @params = {'these' => 'params'}
+    end
+    
+    describe "with valid params" do
+      it "assigns a newly created comment as @message" do
+        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => true) }
+        post :create_guestbook_message, :section => 'edustus', :comment => @params
+        assigns(:message).should == mock_comment
+      end
+      
+      it "redirects to guestbook page" do
+        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => true) }
+        post :create_guestbook_message, :section => 'edustus', :comment => @params
+        response.should redirect_to(guestbook_path(mock_section.slug))
+      end
+    end
+    
+    describe "with invalid params" do
+      it "assigns a newly created but unsaved comment as @message" do
+        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => false,
+          :errors => {"some" => "error"}) }
+        post :create_guestbook_message, :section => 'edustus', :comment => @params
+        assigns(:message).should == mock_comment
+      end
+      
+      it "re-renders the new_guestbook_message page" do
+        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => false,
+          :errors => {"some" => "error"}) }
+        post :create_guestbook_message, :section => 'edustus', :comment => @params
+        should_not respond_with(:redirect)
+        response.should render_template("new_guestbook_message")
+      end
     end
   end
 end

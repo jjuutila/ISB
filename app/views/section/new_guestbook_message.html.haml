@@ -1,0 +1,12 @@
+%header
+  %h1 Kirjoita vieraskirjaan
+  
+= semantic_form_for @message, :url => guestbook_path(@section.slug) do |form|
+  = form.inputs do
+    = form.input :title, :label => 'Otsikko'
+    = form.input :author, :label => 'Kirjoittaja'
+    = form.input :email, :label => 'Sähköposti'
+    = form.input :content, :label => 'Viesti'
+  
+  = form.buttons do
+    = form.commit_button "Tallenna"
