@@ -36,4 +36,8 @@ class SectionController < ApplicationController
       render "section/new_guestbook_message"
     end
   end
+  
+  def links
+    respond_with @link_categories = LinkCategory.in_section(@section)
+  end
 end

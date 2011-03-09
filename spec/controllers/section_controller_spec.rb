@@ -121,4 +121,13 @@ describe SectionController do
       end
     end
   end
+  
+  describe "'GET' links" do
+    it "assigns requested section's all link categories as @link_categories" do
+      mock_category = mock_model(LinkCategory)
+      LinkCategory.should_receive(:in_section).with(mock_section).and_return([mock_category])
+      get :links, :section => 'edustus'
+      assigns(:link_categories).should == [mock_category]
+    end
+  end
 end

@@ -402,6 +402,16 @@ form.comment fieldset.inputs input {
   width:300px;
 }
 
+dt {
+  margin-top:10px;
+  font-weight:bold;
+  font-size:1.5em;
+}
+
+dd {
+  padding-left:10px;
+}
+
 /*
  * Media queries for responsive design
  * These follow after primary styles so they will successfully override. 

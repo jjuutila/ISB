@@ -1,0 +1,8 @@
+%header
+  %h1 Linkit
+  
+- @link_categories.each do |link_category|
+  %dl
+    %dt= link_category
+    - link_category.links.each do |link|
+      %dd= link_to link, link.url, :rel => "nofollow"
