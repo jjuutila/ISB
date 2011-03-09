@@ -1,0 +1,15 @@
+%header
+  %h1= "Joukkue kaudella #{@season}"
+
+.parallel-col
+  %h2 Pelaajat
+  %ul
+    - @players.each do |player|
+      %li= player
+
+.parallel-col
+  - if @coaches.count > 0
+    %h2 Valmentajat
+    %ul
+      - @coaches.each do |coach|
+        %li= coach

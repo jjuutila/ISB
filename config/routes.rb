@@ -14,6 +14,7 @@ Isb::Application.routes.draw do
     match ':section/vieraskirja' => 'section#create_guestbook_message', :via => :post, :as => 'guestbook'
     match ':section/linkit' => 'section#links', :via => :get, :as => 'links'
     match ':section/pisteporssi' => 'section#statistics', :via => :get, :as => 'statistics'
+    match ':section/joukkue' => 'section#team', :via => :get, :as => 'team'
   end
   
   #scope(:name => "section", :path_names => { :new => "uusi", :edit => "muokkaa" }) do  

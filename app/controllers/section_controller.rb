@@ -58,4 +58,16 @@ class SectionController < ApplicationController
     end
     respond_with @statistics
   end
+  
+  def team
+    begin
+      @season = Season.latest @section
+      @players = Member.with_role("player").in_season @season
+      @coaches = Member.with_role("coach").in_season @season
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Latest Season not found from #{@section}."
+      @players = []
+      @coaches = []
+    end
+  end
 end

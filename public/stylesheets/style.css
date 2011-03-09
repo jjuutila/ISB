@@ -217,11 +217,9 @@ button {  width: auto; overflow: visible; }
 
 
 
-
  /* Primary Styles
     Author: Jaakko Juutila
  */
-
 body, html {
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   background-color:#f7f8fb;
@@ -290,6 +288,8 @@ nav#section-nav h1 {
   color:#f7f8fb;
   font-size:1.3em;
   padding:6px 0 6px 6px;
+  margin:0;
+  border-left:none;
 }
 
 nav#section-nav ul {
@@ -326,12 +326,11 @@ section#frontpage-news {
 }
 
 div#main-container {
-  overflow:visible;
-  padding-bottom:200px; /*footer height*/
+  padding-bottom:210px; /*footer height + 10px*/
   overflow:auto;
 }
 section#main {
-
+  overflow:hidden;
 }
 
 #main-container h1 
@@ -431,6 +430,21 @@ table#statistics tbody tr td:first-child {
 
 tr.even {
   background-color:#EEEEEE;
+}
+
+div.parallel-col {
+  float:left;
+  margin-right: 100px;
+}
+
+div.parallel-col ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+div.parallel-col ul li {
+  line-height: 1.8em;
 }
 
 /*

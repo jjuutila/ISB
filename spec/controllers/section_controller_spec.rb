@@ -26,6 +26,18 @@ describe SectionController do
     end
   end
   
+  def mock_member(stubs={})
+    (@mock_member ||= mock_model(Member).as_null_object).tap do |member|
+      member.stub(stubs) unless stubs.empty?
+    end
+  end
+  
+  def mock_season(stubs={})
+    (@mock_season ||= mock_model(Season).as_null_object).tap do |season|
+      season.stub(stubs) unless stubs.empty?
+    end
+  end
+  
   before(:each) do
     Section.should_receive(:find_by_slug).and_return(mock_section(:slug => "edustus"))
   end
@@ -154,6 +166,22 @@ describe SectionController do
       Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
       get :statistics, :section => 'edustus'
       assigns(:statistics).should == []
+    end
+  end
+  
+  describe "'GET' team" do
+    it "assigns requested section's most recent's season's players as @players" do
+      Season.stub(:latest) {mock_season}
+      Member.stub_chain(:with_role, :in_season).with(mock_season).and_return([mock_member])
+      get :team, :section => 'edustus'
+      assigns(:players).should == [mock_member]
+    end
+    
+    it "assigns an empty array as @players and @coaches if season is not found" do
+      Season.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
+      get :team, :section => 'edustus'
+      assigns(:coaches).should == []
+      assigns(:players).should == []
     end
   end
 end
