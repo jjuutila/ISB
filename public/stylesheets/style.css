@@ -412,6 +412,27 @@ dd {
   padding-left:10px;
 }
 
+table#statistics thead tr th {
+  padding: 0 5px 0 5px;
+}
+
+table#statistics thead tr{
+  border-bottom: 1px solid black;
+}
+
+table#statistics tbody tr td {
+  text-align: center;
+}
+
+table#statistics tbody tr td:first-child {
+  padding-right: 20px;
+  text-align: left;
+}
+
+tr.even {
+  background-color:#EEEEEE;
+}
+
 /*
  * Media queries for responsive design
  * These follow after primary styles so they will successfully override. 
@@ -454,4 +475,3 @@ dd {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
-

@@ -130,4 +130,30 @@ describe SectionController do
       assigns(:link_categories).should == [mock_category]
     end
   end
+  
+  describe "'GET' statistics" do
+    before(:each) do
+      Partition.stub(:latest).with(mock_section) { mock_partition }
+    end
+    
+    it "assigns the requested sections most recents statistics as @statistics" do
+      mock_statistics = mock_model(Statistic)
+      Statistic.should_receive(:in_partition).with(mock_partition).and_return([mock_statistics])
+      get :statistics, :section => 'edustus'
+      assigns(:statistics).should == [mock_statistics]
+    end
+    
+    it "assigns the requested sections newest partition as @partition" do
+      mock_statistics = mock_model(Statistic)
+      Statistic.stub(:in_partition) {[mock_statistics]}
+      get :statistics, :section => 'edustus'
+      assigns(:partition).should == mock_partition
+    end
+    
+    it "assigns an empty array as @statistics if requested section doesn't have any partitions" do
+      Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
+      get :statistics, :section => 'edustus'
+      assigns(:statistics).should == []
+    end
+  end
 end

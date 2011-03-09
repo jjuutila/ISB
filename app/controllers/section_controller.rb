@@ -48,4 +48,14 @@ class SectionController < ApplicationController
   def links
     respond_with @link_categories = LinkCategory.in_section(@section)
   end
+  
+  def statistics
+    begin
+      @partition = Partition.latest @section
+      @statistics = Statistic.in_partition @partition
+    rescue ActiveRecord::RecordNotFound
+      @statistics = []
+    end
+    respond_with @statistics
+  end
 end
