@@ -3,10 +3,10 @@
   
 = semantic_form_for @message, :url => guestbook_path(@section.slug) do |form|
   = form.inputs do
-    = form.input :title, :label => 'Otsikko'
-    = form.input :author, :label => 'Kirjoittaja'
-    = form.input :email, :label => 'Sähköposti'
-    = form.input :content, :label => 'Viesti'
+    = form.input :title, :label => 'Otsikko', :input_html => { :size => 60 }
+    = form.input :author, :label => 'Kirjoittaja', :input_html => { :size => 40 }
+    = form.input :email, :label => 'Sähköposti', :input_html => { :size => 256 }
+    = form.input :content, :label => 'Viesti', :input_html => { :rows => 10, :cols => 70 }
   
   = form.buttons do
     = form.commit_button "Tallenna"

@@ -385,6 +385,23 @@ footer {
   clear:both;
 }
 
+form.comment ol {
+  list-style: none;
+}
+
+form.comment ol label{
+  display: block;
+}
+
+form.comment p.inline-errors {
+  color: #FF0000;
+  margin-bottom: 8px;
+}
+
+form.comment fieldset.inputs input {
+  width:300px;
+}
+
 /*
  * Media queries for responsive design
  * These follow after primary styles so they will successfully override. 
