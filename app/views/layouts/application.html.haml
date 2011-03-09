@@ -21,8 +21,8 @@
       #top= render :partial => 'layouts/global_nav'
       #main-header= render :partial => 'layouts/header'
       .center-wrapper
-        %nav#section-nav= render :partial => 'layouts/section_nav'
         #main-container
+          %nav#section-nav= render :partial => 'layouts/section_nav'
           %section#main= yield
           
     %footer= render :partial => 'layouts/footer'
