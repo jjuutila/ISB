@@ -16,6 +16,11 @@ class Statistic < ActiveRecord::Base
   
   before_validation :set_defaults
   
+  default_scope :order => '2 * goals + assists DESC, matches ASC'
+  
+  scope :in_partition, lambda { |partition| where("partition_id = ?", partition.id).
+    includes(:member) }
+  
   def points
     self.goals + self.assists
   end
