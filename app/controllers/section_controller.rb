@@ -20,8 +20,14 @@ class SectionController < ApplicationController
   end
   
   def matches
-    @partition = Partition.latest @section
-    respond_with @matches = Match.where(:partition_id => @partition.id)
+    begin
+      @partition = Partition.latest @section
+      @matches = Match.where(:partition_id => @partition.id)
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Latest partition not found from #{@section}."
+      @matches = []
+    end
+    respond_with @matches
   end
   
   def show_match

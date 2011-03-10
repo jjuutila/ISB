@@ -70,6 +70,12 @@ describe SectionController do
       get :matches, :section => 'edustus'
       assigns(:matches).should == [mock_match]
     end
+    
+    it "sets empty array as @matches if no partition is found" do
+      Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
+      get :matches, :section => 'edustus'
+      assigns(:matches).should == []
+    end
   end
   
   describe "'GET' show_match" do
