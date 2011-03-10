@@ -76,4 +76,14 @@ class SectionController < ApplicationController
       @coaches = []
     end
   end
+  
+  def standings
+    begin
+      @partition = Partition.latest @section
+      @standings = TeamStanding.in_partition @partition
+    rescue ActiveRecord::RecordNotFound
+      @standings = []
+    end
+    respond_with @standings
+  end
 end

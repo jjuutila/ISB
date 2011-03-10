@@ -190,4 +190,20 @@ describe SectionController do
       assigns(:players).should == []
     end
   end
+  
+  describe "'GET' standings" do
+    it "assigns requested section's latest standings as @standings" do
+      mock_standing = mock_model(TeamStanding)
+      Partition.stub(:latest).with(mock_section) { mock_partition }
+      TeamStanding.should_receive(:in_partition).with(mock_partition).and_return([mock_standing])
+      get :standings, :section => 'edustus'
+      assigns(:standings).should == [mock_standing]
+    end
+    
+    it "sets empty array as @matches if no partition is found" do
+      Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
+      get :standings, :section => 'edustus'
+      assigns(:standings).should == []
+    end
+  end
 end
