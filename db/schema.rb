@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110210204554) do
+ActiveRecord::Schema.define(:version => 20110310201114) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
@@ -108,6 +108,7 @@ ActiveRecord::Schema.define(:version => 20110210204554) do
     t.string  "slug"
     t.integer "parent_id"
     t.string  "name"
+    t.string  "contact_info"
   end
 
   create_table "statistics", :force => true do |t|
