@@ -1,5 +1,8 @@
 %header
-  %h1= "Pistepörssi kaudella #{@partition.season}, #{@partition.name.downcase}"
+  - if @partition and @statistics.size > 0
+    %h1= "Pistepörssi kaudella #{@partition.season}, #{@partition.name.downcase}"
+  - else
+    %h1= "Pistepörssi ei ole saatavilla"
 
 %table#statistics
   %thead
