@@ -14,6 +14,9 @@ class TeamStanding < ActiveRecord::Base
   
   after_initialize :set_defaults
   
+  scope :in_partition, lambda { |partition| where(:partition_id => partition.id).
+    order("2 * wins + overtimes DESC, goals_for - goals_against DESC") }
+  
   def set_defaults
     self.wins = 0 unless self.wins
     self.losses = 0 unless self.losses
