@@ -1,9 +1,13 @@
 %header
-  %h1= "Ottelut kaudella #{@partition.season}, #{@partition}"
-  
+  - if @matches.size > 0
+    %h1= "Ottelut kaudella #{@partition.season}, #{@partition}"
+  - else
+    %h1= "Ei otteluita"
+
+- if @matches.size > 0
 - @matches.each do |match|
   .entry
-    %h2= link_to_if match.report.length > 0, "#{match} #{match.result}", match_path(match.partition.season.section.slug, match)
+    %h2= link_to_unless match.report.blank?, "#{match} #{match.result}", match_path(@section.slug, match)
     %meta
       %time{:datetime => html5_datetime(match.start_time)}= match.start_time
       = " | #{match.location}"
