@@ -86,4 +86,8 @@ class SectionController < ApplicationController
     end
     respond_with @standings
   end
+  
+  def contact_info
+    respond_with
+  end
 end

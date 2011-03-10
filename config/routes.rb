@@ -16,6 +16,7 @@ Isb::Application.routes.draw do
     match ':section/pisteporssi' => 'section#statistics', :via => :get, :as => 'statistics'
     match ':section/joukkue' => 'section#team', :via => :get, :as => 'team'
     match ':section/sarjataulukko' => 'section#standings', :via => :get, :as => 'standings'
+    match ':section/yhteystiedot' => 'section#contact_info', :via => :get, :as => 'contact_info'
   end
   
   #scope(:name => "section", :path_names => { :new => "uusi", :edit => "muokkaa" }) do  
