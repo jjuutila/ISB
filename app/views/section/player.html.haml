@@ -1,0 +1,27 @@
+%article
+  %header
+    %h1= "##{@member.number} #{@member}"
+    
+  %div#player-pic
+    = show_pic_for @member
+    
+  %div#player-info
+    %ul
+      - if @member.birth_year
+        %li
+          %strong Syntynyt:
+          = @member.birth_year
+        
+      - if @member.home_municipality
+        %li
+          %strong Kotikunta:
+          = @member.home_municipality
+        
+      - if @member.position
+        %li
+          %strong Pelipaikka:
+          = t("member.position.#{@member.position}")
+        
+      %li
+        %strong Kätisyys:
+        = "TO-DO"

@@ -401,13 +401,13 @@ form.comment fieldset.inputs input {
   width:300px;
 }
 
-dt {
+dl#links dt {
   margin-top:10px;
   font-weight:bold;
   font-size:1.5em;
 }
 
-dd {
+dl#links dd {
   padding-left:10px;
 }
 
@@ -445,6 +445,23 @@ div.parallel-col ul {
 
 div.parallel-col ul li {
   line-height: 1.8em;
+}
+
+div#player-pic {
+  float:left;
+}
+
+div#player-pic img {
+  margin:10px;
+}
+
+div#player-info {
+  float:left;
+}
+
+div#player-info ul {
+  list-style: none;
+  margin:0;
 }
 
 /*

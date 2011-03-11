@@ -90,4 +90,8 @@ class SectionController < ApplicationController
   def contact_info
     respond_with
   end
+  
+  def player
+    respond_with @member = Member.find(params[:id]) 
+  end
 end

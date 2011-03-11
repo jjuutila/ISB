@@ -206,4 +206,13 @@ describe SectionController do
       assigns(:standings).should == []
     end
   end
+  
+  describe "'GET' player" do
+    it "assigns requested member as @member" do
+      mock_player = mock_model(Member)
+      Member.should_receive(:find).with(3).and_return(mock_player)
+      get :player, :section => 'edustus', :id => 3
+      assigns(:member).should == mock_player
+    end
+  end
 end

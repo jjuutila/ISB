@@ -155,3 +155,10 @@ fi:
     pagination:
       previous: "&lt; Edellinen"
       next: "Seuraava &gt;"
+  
+  member:
+    position:
+      :0: "-"
+      :1: "Hyökkääjä"
+      :2: "Puolustaja"
+      :3: "Maalivahti"
