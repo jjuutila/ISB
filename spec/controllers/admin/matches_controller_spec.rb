@@ -124,5 +124,25 @@ describe Admin::MatchesController do
       response.should redirect_to(admin_partition_matches_url(@partition))
     end
   end
+  
+  describe "GET 'latest'" do
+    before(:each) do
+      @section = mock_model(Section)
+      controller.stub(:selected_section) { @section }
+    end
+    
+    it "redirects to the latest season's latest partition's matches" do
+      Partition.should_receive(:latest).with(@section) { @partition }
+      get 'latest'
+      response.should redirect_to admin_partition_matches_url @partition
+    end
+    
+    it "redirects to seasons if no partition is found" do
+      Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
+      
+      get 'latest'
+      response.should redirect_to admin_seasons_path
+    end
+  end
 
 end

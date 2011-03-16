@@ -31,6 +31,7 @@ Isb::Application.routes.draw do
     match "latest_standings" => "team_standings#latest", :via => :get
     match "current_team" => "roles#current_team", :via => :get
     match 'latest_statistics' => "statistics#latest", :via => :get
+    match 'latest_matches' => "matches#latest", :via => :get
     
     resources :news
     resources :sections

@@ -1,6 +1,6 @@
 # coding: utf-8
 class Admin::MatchesController < Admin::BaseController
-  before_filter :get_partition
+  before_filter :get_partition, :except => [:latest]
   respond_to :html
 
   def index
@@ -31,6 +31,15 @@ class Admin::MatchesController < Admin::BaseController
     @match = Match.find(params[:id])
     @match.destroy
     respond_with @match, :location => admin_partition_matches_path(@partition)
+  end
+  
+  def latest
+    begin
+      latest_partition = Partition.latest selected_section
+      redirect_to admin_partition_matches_path(latest_partition)
+    rescue
+      redirect_to admin_seasons_path
+    end
   end
   
   private
