@@ -15,27 +15,31 @@
     %title= "ISB Hallintasivut - " + controller.controller_name.capitalize
     = csrf_meta_tag
     = javascript_include_tag "modernizr-1.6.min"
-    = stylesheet_link_tag "admin_style.css", "formtastic.css", "formtastic_changes.css", "boilerplate"
+    = stylesheet_link_tag "boilerplate", "formtastic.css", "formtastic_changes.css", "admin_style.css"
   
   %body
-    %header#main
-      = render :partial => 'layouts/admin/header'
-    %nav#menu= render :partial => 'layouts/admin/menu'
-
-    %section#content
-      - unless flash.notice.blank?
-        #notice
-          = image_tag('accept.png', :size => '16x16')
-          = flash.notice
-      - unless flash.alert.blank?
-        #alert
-          = image_tag('error.png', :size => '16x16')
-          = flash.alert
-      = yield
+    #wrapper
+      #header-wrapper
+        %header#main.center-wrap
+          = render :partial => 'layouts/admin/header'
+          %nav#global= render_navigation(:level => 1, :context => :admin)        
       
+      #main-wrapper.center-wrap
+        %section#content
+          - unless flash.notice.blank?
+            #notice
+              = image_tag('accept.png', :size => '16x16')
+              = flash.notice
+          - unless flash.alert.blank?
+            #alert
+              = image_tag('error.png', :size => '16x16')
+              = flash.alert
+          = yield
+
     %footer
-      Ilmajoen Salibandy - 
-      %a{:href => 'http://www.famfamfam.com/lab/icons/silk/'} Silk Icon Set by Mark James
+      #footer.center-wrap
+        Ilmajoen Salibandy - Ikonit tarjoaa: 
+        %a{:href => 'http://www.famfamfam.com/lab/icons/silk/'} Silk Icon Set by Mark James
       
   %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"}
   = javascript_tag %{!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery-1.4.4.min.js"%3E%3C/script%3E'))}

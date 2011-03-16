@@ -1,27 +1,41 @@
 %h1= 'Kaudet'
 
+= section_selection
+
 #contextNavi
   %a{:href => new_admin_season_path, :title => 'Luo uusi kausi'}= image_tag('add.png', :size => '16x16')
   %a{:href => new_admin_season_path}= 'Luo uusi kausi'
-  
-= section_selection
+  \|
+  = link_to 'Pistepörssi', admin_latest_statistics_path
+  \|
+  = link_to 'Sarjataulukko', admin_latest_standings_path
+  \|
+  = link_to 'Ottelut', admin_latest_matches_path
+  \|
+  = link_to 'Joukkue', admin_current_team_path
 
-%table
-  %thead
-    %tr
-      %th{:colspan => 3}= 'Toiminnot'
-  
-  %tbody
-    - for season in @seasons
-      -season_row_class = cycle(:odd, :even)
-      %tr{ :class => season_row_class }
-        %td.action= link_to season, admin_season_path(season)
-        %td.action= link_to image_tag('pencil.png'), edit_admin_season_path(season), :title => 'Muokkaa'
-        %td.action= link_to image_tag('cross.png'), admin_season_path(season), :title => 'Poista',
-          :confirm => "Haluatko varmasti poistaa kauden \"#{season}\"?", :method => :delete
-      
-      - for partition in season.partitions
+- unless @seasons.blank?
+  %table
+    %thead
+      %tr
+        %th{:colspan => 3}= 'Toiminnot'
+    
+    %tbody
+      - for season in @seasons
+        -season_row_class = cycle(:odd, :even)
         %tr{ :class => season_row_class }
-          %td{ :colspan => 3 }
-            = image_tag('bullet_blue.png', :size => '16x16')
-            = link_to partition, admin_season_partition_path(season, partition)
+          %td.action= link_to season, admin_season_path(season)
+          %td.action= link_to image_tag('pencil.png'), edit_admin_season_path(season), :title => 'Muokkaa'
+          %td.action= link_to image_tag('cross.png'), admin_season_path(season), :title => 'Poista',
+            :confirm => "Haluatko varmasti poistaa kauden \"#{season}\"?", :method => :delete
+        
+        - for partition in season.partitions
+          %tr{ :class => season_row_class }
+            %td{ :colspan => 3 }
+              = image_tag('bullet_blue.png', :size => '16x16')
+              = link_to partition, admin_season_partition_path(season, partition)
+
+- else
+  %p
+    = 'Ainuttakaan kautta ei ole lisätty tälle joukkueosiolle.'
+    = link_to 'Luo uusi kausi', new_admin_season_path
