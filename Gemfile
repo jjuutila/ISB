@@ -8,6 +8,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'validation_reflection'
 gem 'kaminari'
+gem 'simple-navigation'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
