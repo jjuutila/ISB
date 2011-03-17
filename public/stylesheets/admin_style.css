@@ -80,10 +80,6 @@ section#content {
   border-bottom: 1px solid #000000;
 }
 
-#content td {
-  padding:3px;
-}
-
 #alert, #notice {
 padding:5px;
 }
@@ -123,7 +119,7 @@ nav#global ul {
 
 nav#global ul li {
   display:inline-block;
-  background-color:#b7c3db;
+  background-color:#5562bc;
   margin-right:10px;
   padding:8px;
   border:1px solid #e1e1e1;
@@ -137,20 +133,31 @@ nav#global ul li.selected {
 nav#global ul li a {
   text-decoration:none;
   font:normal bold 1.1em/1.5em Arial, sans-serif;
-  color:#5967bc;
+  color:#ffffff;
   text-transform: uppercase;
+}
+
+nav#global ul li.selected a {
+  color:#f68d28;
 }
 
 #contextNavi {
   border: 1px solid #e4dee1;
   margin:16px 0 20px 0;
   padding:5px;
-  line-height: 2em;
-  font-weight: bold;
+  line-height:2em;
 }
 
 #contextNavi a {
-  font-weight: normal;
+  font-weight: bold;
+  color:#f68d28;
+}
+
+table tbody tr td {
+  padding:3px;
+}
+table tbody tr td:first-child {
+  padding-right:30px;
 }
 
 td.action {
