@@ -239,6 +239,10 @@ time {
   color:#5F5F61;
 }
 
+li.check_boxes fieldset, li.radio fieldset {
+  padding:10px 0 10px 0;
+}
+
 footer {
   border-top:2px solid #e4dee1;
   font:bold normal 0.90em/1.4em Arial, Helvetica, sans-serif;
