@@ -4,7 +4,8 @@ class SectionController < ApplicationController
   before_filter :get_section_or_404
   
   def get_section_or_404
-    @section = Section.find_by_slug params[:section]
+    # Only leaf sections can be selected
+    @section = Section.leafs.find_by_slug params[:section]
     render_404 if @section.nil?
   end
   
