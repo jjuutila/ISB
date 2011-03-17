@@ -5,6 +5,8 @@ class Member < ActiveRecord::Base
   DEFENDER = 2
   GOALIE = 3
   
+  has_attached_file :photo, :styles => { :normal => "300x400>" }
+  
   has_many :affairs
   has_many :seasons, :through => :affairs
   has_many :statistics
@@ -28,6 +30,9 @@ class Member < ActiveRecord::Base
     
   validates_numericality_of :position, :only_integer => true, :less_than_or_equal_to => GOALIE,
     :greater_than_or_equal_to => UNASSIGNED, :message => "Epäkelpo pelipaikka."
+
+  validates_attachment_size :photo, :less_than => 5.megabytes
+  validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
   
   after_initialize :set_defaults
   
@@ -48,5 +53,5 @@ class Member < ActiveRecord::Base
   def set_defaults
     self.all_time_assists = 0 unless self.all_time_assists
     self.all_time_goals = 0 unless self.all_time_goals
-  end 
+  end
 end

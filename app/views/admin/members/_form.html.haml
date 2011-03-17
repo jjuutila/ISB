@@ -1,4 +1,4 @@
-= semantic_form_for @member, :url => url do |form|
+= semantic_form_for @member, :url => url, :html => { :multipart => true } do |form|
   = form.inputs do
     = form.input :first_name, :label => 'Etunimi'
     = form.input :last_name, :label => 'Sukunimi'
@@ -8,6 +8,8 @@
     = form.input :number, :label => 'Numero'
     = form.input :position, :as => :select, :label => 'Pelipaikka', :include_blank => false,
       :collection => {'-' => Member::UNASSIGNED, 'Hyökkääjä' => Member::ATTACKER, 'Puolustaja' => Member::DEFENDER, 'Maalivahti' => Member::GOALIE}
+    = image_tag @member.photo.url(:normal)
+    = form.input :photo, :label => 'Kuva'
       
   
   = form.buttons do

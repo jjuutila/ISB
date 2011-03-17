@@ -3,7 +3,7 @@
     %h1= "##{@member.number} #{@member}"
     
   %div#player-pic
-    = show_pic_for @member
+    = image_tag @member.photo.url(:normal)
     
   %div#player-info
     %ul
