@@ -4,12 +4,11 @@ class Admin::MembersController < Admin::BaseController
   respond_to :html
   
   def index
-    @members = Member.all
-    respond_with @members
+    respond_with @members = Member.all
   end
   
   def new
-    respond_with(@member = Member.new)
+    respond_with @member = Member.new(:questions => [])
   end
   
   def create

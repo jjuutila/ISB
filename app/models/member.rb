@@ -10,6 +10,7 @@ class Member < ActiveRecord::Base
   has_many :affairs
   has_many :seasons, :through => :affairs
   has_many :statistics
+  has_many :questions
   
   validates_presence_of :first_name, :last_name, :number
   
@@ -35,6 +36,8 @@ class Member < ActiveRecord::Base
   validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
   
   after_initialize :set_defaults
+  
+  accepts_nested_attributes_for :questions
   
   scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name ASC") }
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }

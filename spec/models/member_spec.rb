@@ -7,6 +7,8 @@ describe Member do
     
     it { should have_many(:statistics) }
     
+    it { should have_many(:questions) }
+    
     it { should validate_presence_of(:first_name) }
     
     it { should validate_presence_of(:last_name) }
