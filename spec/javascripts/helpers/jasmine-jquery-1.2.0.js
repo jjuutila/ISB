@@ -14,6 +14,10 @@ var sandbox = function(attributes) {
   return jasmine.getFixtures().sandbox(attributes);
 };
 
+var spyOnEvent = function(selector, eventName) {
+  jasmine.JQuery.events.spyOn(selector, eventName);
+}
+
 jasmine.getFixtures = function() {
   return jasmine.currentFixtures_ = jasmine.currentFixtures_ || new jasmine.Fixtures();
 };
@@ -102,6 +106,31 @@ jasmine.JQuery.elementToString = function(element) {
 
 jasmine.JQuery.matchersClass = {};
 
+(function(namespace) {
+  var data = {
+    spiedEvents: {},
+    handlers:    []
+  };
+
+  namespace.events = {
+    spyOn: function(selector, eventName) {
+      var handler = function(e) {
+        data.spiedEvents[[selector, eventName]] = e;
+      };
+      $(selector).bind(eventName, handler);
+      data.handlers.push(handler);
+    },
+
+    wasTriggered: function(selector, eventName) {
+      return !!(data.spiedEvents[[selector, eventName]]);
+    },
+
+    cleanUp: function() {
+      data.spiedEvents = {};
+      data.handlers    = [];
+    }
+  }
+})(jasmine.JQuery);
 
 (function(){
   var jQueryMatchers = {
@@ -146,7 +175,11 @@ jasmine.JQuery.matchersClass = {};
     },
 
     toHaveText: function(text) {
-      return this.actual.text() == text;
+      if (text && jQuery.isFunction(text.test)) {
+        return text.test(this.actual.text());
+      } else {
+        return this.actual.text() == text;
+      }
     },
 
     toHaveValue: function(value) {
@@ -163,6 +196,10 @@ jasmine.JQuery.matchersClass = {};
 
     toContain: function(selector) {
       return this.actual.find(selector).size() > 0;
+    },
+
+    toBeDisabled: function(selector){
+      return this.actual.attr("disabled") == true;
     }
   };
 
@@ -198,8 +235,20 @@ jasmine.JQuery.matchersClass = {};
 
 beforeEach(function() {
   this.addMatchers(jasmine.JQuery.matchersClass);
+  this.addMatchers({
+    toHaveBeenTriggeredOn: function(selector) {
+      this.message = function() {
+        return [
+          "Expected event " + this.actual + " to have been triggered on" + selector,
+          "Expected event " + this.actual + " not to have been triggered on" + selector
+        ];
+      };
+      return jasmine.JQuery.events.wasTriggered(selector, this.actual);
+    }
+  })
 });
 
 afterEach(function() {
   jasmine.getFixtures().cleanUp();
+  jasmine.JQuery.events.cleanUp();
 });
