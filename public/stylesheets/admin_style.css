@@ -21,6 +21,11 @@ h1 {
   font:bold 2.2em Arial, Helvetica, sans-serif;
   letter-spacing:0.09em;
 }
+
+h2 {
+  font:bold 1.7em Arial, Helvetica, sans-serif;
+  margin-top:10px;
+}
 img {
 	border:none;
 }
@@ -60,6 +65,7 @@ section#content {
 #content fieldset {
   background-color: #F9F9F9;
   border: 1px solid #e4dee1;
+  padding:10px;
 }
 
 #content a {
@@ -108,6 +114,21 @@ tr.row_contains_errors {
   list-style: none;
 }
 
+fieldset.inputs ol li.inline-input {
+  display: inline-block;
+  float:left;
+}
+
+fieldset.inputs ol li.inline-input:first-child {
+  margin-right:30px;
+}
+
+fieldset.inputs ol li.inline-input input {
+  width:361px;
+}
+button.remove-question {
+  float:right;
+}
 nav#global {
   margin:12px 0 -1px;
   clear:both;
@@ -232,6 +253,10 @@ h1.postTitle {
 .postTitle a:hover {
   color:#333333 !important;
   text-decoration:underline;
+}
+
+button.new-question {
+  margin:10px;
 }
 
 time {

@@ -15,7 +15,7 @@ QAItemHandler = (function() {
   };
   QAItemHandler.prototype.addMoreButton = function() {
     var addButton;
-    addButton = $('<button type="button">Moar</button>');
+    addButton = $('<button type="button" class="new-question"><img alt="Add" src="/images/add.png" /> Uusi kysymys</button>');
     this.container.after(addButton);
     return addButton.click(__bind(function() {
       return this.addNewQuestion();
@@ -29,7 +29,7 @@ QAItemHandler = (function() {
   };
   QAItemHandler.prototype.createRemoveButton = function() {
     var removeButton;
-    removeButton = $('<button type="button" class="remove-question">Delete</button>');
+    removeButton = $('<button type="button" class="remove-question"><img alt="cross" src="/images/cross.png" /></button>');
     removeButton.bind('click', {
       questionIndex: this.questionNumber
     }, __bind(function(event) {
@@ -55,9 +55,9 @@ QAItemHandler = (function() {
     this.container.append(fieldset);
     orderedList = $('<ol></ol>');
     fieldset.append(orderedList);
-    orderedList.append("<li class='string required' id='member_questions_attributes_" + this.questionNumber + "_content_input'><label for='member_questions_attributes_" + this.questionNumber + "_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_content' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][content]' type='text' /></li>");
+    orderedList.append("<li class='string required inline-input' id='member_questions_attributes_" + this.questionNumber + "_content_input'><label for='member_questions_attributes_" + this.questionNumber + "_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_content' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][content]' type='text' /></li>");
     orderedList.find(':input:').last().select();
-    orderedList.append("<li class='string required' id='member_questions_attributes_" + this.questionNumber + "_answer_input'><label for='member_questions_attributes_" + this.questionNumber + "_answer'>Vastaus<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_answer' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][answer]' type='text' /></li>");
+    orderedList.append("<li class='string required inline-input' id='member_questions_attributes_" + this.questionNumber + "_answer_input'><label for='member_questions_attributes_" + this.questionNumber + "_answer'>Vastaus<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_answer' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][answer]' type='text' /></li>");
     fieldset.append(this.createRemoveButton());
     return this.questionNumber++;
   };
