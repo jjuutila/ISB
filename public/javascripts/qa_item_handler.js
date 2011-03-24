@@ -1,50 +1,64 @@
 var QAItemHandler;
 var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 QAItemHandler = (function() {
-  function QAItemHandler(afterThisElement) {
-    this.afterThisElement = afterThisElement;
-    this.findFieldset();
-    if (this.fieldset.length === 0) {
-      this.addFieldsetHtml();
-    }
-    this.findOrderedList();
-    if (this.orderedList.length === 0) {
-      this.addOrderedListHtml();
-    }
-    this.countInputs();
-    this.addButton();
+  function QAItemHandler(container) {
+    this.container = container;
+    this.questionNumber = 0;
   }
-  QAItemHandler.prototype.findFieldset = function() {
-    return this.fieldset = this.afterThisElement.next('fieldset.inputs');
-  };
-  QAItemHandler.prototype.findOrderedList = function() {
-    return this.orderedList = this.fieldset.children().first();
-  };
-  QAItemHandler.prototype.addFieldsetHtml = function() {
-    this.afterThisElement.after('<fieldset class="inputs"></fieldset>');
-    return this.fieldset = this.afterThisElement.next();
+  QAItemHandler.prototype.init = function() {
+    this.addMoreButton();
+    return this.addRemoveButtons();
   };
   QAItemHandler.prototype.addOrderedListHtml = function() {
     this.fieldset.append('<ol></ol>');
     return this.orderedList = this.fieldset.children().first();
   };
-  QAItemHandler.prototype.addButton = function() {
+  QAItemHandler.prototype.addMoreButton = function() {
     var addButton;
-    this.fieldset.append('<button type="button">Moar</button>');
-    addButton = this.fieldset.children().last();
+    addButton = $('<button type="button">Moar</button>');
+    this.container.after(addButton);
     return addButton.click(__bind(function() {
       return this.addNewQuestion();
     }, this));
   };
-  QAItemHandler.prototype.countInputs = function() {
-    var foundInputs;
-    foundInputs = this.orderedList.find('input');
-    return this.questionNumber = foundInputs.length / 2;
+  QAItemHandler.prototype.addRemoveButtons = function() {
+    return this.container.children('fieldset').each(__bind(function(index, fieldset) {
+      $(fieldset).append(this.createRemoveButton());
+      return this.questionNumber++;
+    }, this));
+  };
+  QAItemHandler.prototype.createRemoveButton = function() {
+    var removeButton;
+    removeButton = $('<button type="button" class="remove-question">Delete</button>');
+    removeButton.bind('click', {
+      questionIndex: this.questionNumber
+    }, __bind(function(event) {
+      return this.removeQuestion(event);
+    }, this));
+    return removeButton;
+  };
+  QAItemHandler.prototype.removeQuestion = function(event) {
+    this.markForDestruction(event.data.questionIndex);
+    return $(event.target).parent().remove();
+  };
+  QAItemHandler.prototype.markForDestruction = function(index) {
+    var hiddenInput, idInput;
+    idInput = this.container.children("#member_questions_attributes_" + index + "_id");
+    if (idInput.length === 1) {
+      hiddenInput = $("<input id='member_questions_attributes_" + index + "_destroy' name='member[questions_attributes][" + index + "][_destroy]' type='hidden' value='1' />");
+      return this.container.append(hiddenInput);
+    }
   };
   QAItemHandler.prototype.addNewQuestion = function() {
-    this.orderedList.append("<li class='string required' id='member_questions_attributes_" + this.questionNumber + "_content_input'><label for='member_questions_attributes_" + this.questionNumber + "_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_content' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][content]' type='text' /></li>");
-    this.orderedList.find(':input:').last().select();
-    this.orderedList.append("<li class='string required' id='member_questions_attributes_" + this.questionNumber + "_answer_input'><label for='member_questions_attributes_" + this.questionNumber + "_answer'>Vastaus<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_answer' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][answer]' type='text' /></li>");
+    var fieldset, orderedList;
+    fieldset = $('<fieldset class="inputs"></fieldset>');
+    this.container.append(fieldset);
+    orderedList = $('<ol></ol>');
+    fieldset.append(orderedList);
+    orderedList.append("<li class='string required' id='member_questions_attributes_" + this.questionNumber + "_content_input'><label for='member_questions_attributes_" + this.questionNumber + "_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_content' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][content]' type='text' /></li>");
+    orderedList.find(':input:').last().select();
+    orderedList.append("<li class='string required' id='member_questions_attributes_" + this.questionNumber + "_answer_input'><label for='member_questions_attributes_" + this.questionNumber + "_answer'>Vastaus<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_answer' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][answer]' type='text' /></li>");
+    fieldset.append(this.createRemoveButton());
     return this.questionNumber++;
   };
   return QAItemHandler;

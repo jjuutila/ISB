@@ -37,7 +37,7 @@ class Member < ActiveRecord::Base
   
   after_initialize :set_defaults
   
-  accepts_nested_attributes_for :questions
+  accepts_nested_attributes_for :questions, :allow_destroy => true
   
   scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name ASC") }
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }

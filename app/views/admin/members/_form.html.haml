@@ -12,12 +12,12 @@
       :collection => {'-' => Member::UNASSIGNED, 'Hyökkääjä' => Member::ATTACKER, 'Puolustaja' => Member::DEFENDER, 'Maalivahti' => Member::GOALIE}
     = image_tag @member.photo.url(:normal)
     = form.input :photo, :label => 'Kuva'
-  
-  %h2#questions Kysymykset
-  = form.semantic_fields_for :questions do |q|
-    = q.inputs do
-      = q.input :content, :label => "Kysymys"
-      = q.input :answer, :label => "Vastaus"
+  #questions
+    %h2 Kysymykset
+    = form.semantic_fields_for :questions do |q|
+      = q.inputs do
+        = q.input :content, :label => "Kysymys"
+        = q.input :answer, :label => "Vastaus"
 
   = form.buttons do
     = form.commit_button :label => 'Tallenna'
@@ -27,4 +27,5 @@
     :javascript
       $(document).ready(function() {
         questions = new QAItemHandler($('#questions'));
+        questions.init();
       });
