@@ -43,7 +43,7 @@ QAItemHandler = (function() {
   };
   QAItemHandler.prototype.removeQuestion = function(event) {
     this.markForDestruction(event.data.questionIndex);
-    return $(event.target).parent().remove();
+    return this.removeParentFieldset(event.target);
   };
   QAItemHandler.prototype.markForDestruction = function(index) {
     var hiddenInput, idInput;
@@ -52,6 +52,9 @@ QAItemHandler = (function() {
       hiddenInput = $("<input id='member_questions_attributes_" + index + "_destroy' name='member[questions_attributes][" + index + "][_destroy]' type='hidden' value='1' />");
       return this.container.append(hiddenInput);
     }
+  };
+  QAItemHandler.prototype.removeParentFieldset = function(child) {
+    return $(child).closest('fieldset').remove();
   };
   QAItemHandler.prototype.addNewQuestion = function() {
     var fieldset, lastQuestionInput, orderedList;

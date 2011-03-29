@@ -33,14 +33,16 @@ class QAItemHandler
 
   removeQuestion: (event) ->
     @markForDestruction(event.data.questionIndex)
-    $(event.target).parent().remove()
-
+    @removeParentFieldset(event.target)
 
   markForDestruction: (index) ->
     idInput = @container.children("#member_questions_attributes_#{index}_id")
     if idInput.length == 1
       hiddenInput = $("<input id='member_questions_attributes_#{index}_destroy' name='member[questions_attributes][#{index}][_destroy]' type='hidden' value='1' />")
       @container.append(hiddenInput)
+      
+  removeParentFieldset: (child) ->
+    $(child).closest('fieldset').remove()
 
   addNewQuestion: ->
     fieldset = $('<fieldset class="inputs"></fieldset>')
