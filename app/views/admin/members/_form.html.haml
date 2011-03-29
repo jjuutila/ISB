@@ -16,7 +16,7 @@
     %h2 Kysymykset
     = form.semantic_fields_for :questions do |q|
       = q.inputs do
-        = q.input :content, :label => "Kysymys", :wrapper_html => { :class => "inline-input" }
+        = q.input :content, :label => "Kysymys", :wrapper_html => { :class => "inline-input" }, :input_html => {:class => 'question'}
         = q.input :answer, :label => "Vastaus", :wrapper_html => { :class => "inline-input" }
 
   = form.buttons do
@@ -26,6 +26,7 @@
     = javascript_include_tag "qa_item_handler.js"
     :javascript
       $(document).ready(function() {
-        questions = new QAItemHandler($('#questions'));
+        var availableQuestions = #{make_string_array @questions}
+        questions = new QAItemHandler($('#questions'), availableQuestions);
         questions.init();
       });

@@ -1,10 +1,11 @@
 class QAItemHandler
-  constructor: (@container) ->
+  constructor: (@container, @availableQuestions) ->
     @questionNumber = 0
     
   init: ->
     @addMoreButton()
     @addRemoveButtons()
+    $(".question").autocomplete({source: @availableQuestions})
   
   addOrderedListHtml: ->
     @fieldset.append('<ol></ol>')
@@ -48,10 +49,12 @@ class QAItemHandler
     orderedList = $('<ol></ol>')
     fieldset.append(orderedList)
     
-    orderedList.append("<li class='string required inline-input' id='member_questions_attributes_#{@questionNumber}_content_input'><label for='member_questions_attributes_#{@questionNumber}_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_#{@questionNumber}_content' maxlength='255' name='member[questions_attributes][#{@questionNumber}][content]' type='text' /></li>")
-
-    orderedList.find(':input:').last().select()
-
+    orderedList.append("<li class='string required inline-input' id='member_questions_attributes_#{@questionNumber}_content_input'><label for='member_questions_attributes_#{@questionNumber}_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_#{@questionNumber}_content' class='question' maxlength='255' name='member[questions_attributes][#{@questionNumber}][content]' type='text' /></li>")
+    
+    lastQuestionInput = orderedList.find(':input:').last()
+    lastQuestionInput.autocomplete({source: @availableQuestions})
+    lastQuestionInput.select()
+    
     orderedList.append("<li class='string required inline-input' id='member_questions_attributes_#{@questionNumber}_answer_input'><label for='member_questions_attributes_#{@questionNumber}_answer'>Vastaus<abbr title='required'>*</abbr></label><input id='member_questions_attributes_#{@questionNumber}_answer' maxlength='255' name='member[questions_attributes][#{@questionNumber}][answer]' type='text' /></li>")
     
     fieldset.append(@createRemoveButton())

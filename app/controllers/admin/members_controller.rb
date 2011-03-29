@@ -2,6 +2,7 @@
 
 class Admin::MembersController < Admin::BaseController
   respond_to :html
+  before_filter :get_questions, :only => [:new, :create, :edit, :update]
   
   def index
     respond_with @members = Member.all
@@ -25,5 +26,9 @@ class Admin::MembersController < Admin::BaseController
     @member = Member.find(params[:id])
     flash[:notice] = 'Päivitetty.' if @member.update_attributes(params[:member])
     respond_with @member, :location => admin_members_url
+  end
+  
+  def get_questions
+    @questions = Question.unique
   end
 end

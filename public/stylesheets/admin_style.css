@@ -44,18 +44,6 @@ header#main h1 {
 #main-wrapper {
   padding-bottom:40px;
 }
-.TeamChange {
-  margin-top:10px;
-  letter-spacing:normal;
-  float:right;
-  font-size:14px;
-}
-.TeamChange form {
-  margin-top:5px;
-}
-.TeamChange a {
-  color:#526893;
-}
 
 section#content {
   margin:20px 10px 20px 10px;
@@ -267,6 +255,36 @@ time {
 li.check_boxes fieldset, li.radio fieldset {
   padding:10px 0 10px 0;
 }
+
+/* Input autocomplete styles */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+ul.ui-autocomplete {
+  position: absolute;
+  cursor: default;
+  border: 1px solid #000000;
+}
+
+.ui-menu {
+  list-style:none;
+  padding: 2px;
+  margin: 0;
+  display:block;
+  float: left;
+}
+
+.ui-menu .ui-menu-item {
+  margin:0;
+  padding: 0;
+  zoom: 1;
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+.ui-menu-item a { color:#f68d28; }
+
+.ui-corner-all { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 
 footer {
   border-top:2px solid #e4dee1;

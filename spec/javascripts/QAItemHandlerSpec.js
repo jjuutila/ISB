@@ -6,7 +6,7 @@ describe("QAItemHandler", function() {
   describe('init', function() {
     it("adds a more button after #questions element", function() {
       loadFixtures('QAItemHandler/empty-container.html');
-      qaHandler = new QAItemHandler($('#questions'))
+      qaHandler = new QAItemHandler($('#questions'), ['item'])
       qaHandler.init();
       
       expect($('#questions').next()).toBe(':button')
@@ -14,7 +14,7 @@ describe("QAItemHandler", function() {
     
     it("adds remove button to every existing question&answer fieldset", function() {
       loadFixtures('QAItemHandler/container-with-items.html');
-      qaHandler = new QAItemHandler($('#questions'))
+      qaHandler = new QAItemHandler($('#questions'), ['item'])
       qaHandler.init();
       
       expect($('#questions').find('fieldset').first()).toContain('button.remove-question')
@@ -23,7 +23,7 @@ describe("QAItemHandler", function() {
     
     it("adds remove button to every existing question&answer fieldset", function() {
       loadFixtures('QAItemHandler/container-with-items.html');
-      qaHandler = new QAItemHandler($('#questions'))
+      qaHandler = new QAItemHandler($('#questions'), ['item'])
       qaHandler.init();
       expect(qaHandler.questionNumber).toBe(2);
     })
@@ -31,19 +31,22 @@ describe("QAItemHandler", function() {
   
   describe('more button click', function() {
     beforeEach(function() {
-      loadFixtures('QAItemHandler/empty-container.html');
-      container = $('#questions');
-      
-      qaHandler = new QAItemHandler(container)
-      qaHandler.init();
-      
-      moreButton = container.next(':button');
+      $(document).ready(function() {
+        loadFixtures('QAItemHandler/empty-container.html');
+        container = $('#questions');
+        qaHandler = new QAItemHandler(container, ['item'])
+        qaHandler.init();
+        
+        moreButton = container.next(':button');
+      });
     });
     
     it("triggers click event", function() {
-      spyOnEvent(moreButton, 'click');
-      moreButton.click();
-      expect('click').toHaveBeenTriggeredOn(moreButton);
+      $(document).ready(function() {
+        spyOnEvent(moreButton, 'click');
+        moreButton.click();
+        expect('click').toHaveBeenTriggeredOn(moreButton);
+      });
     })
     
     it("creates fieldset", function() {
@@ -84,7 +87,7 @@ describe("QAItemHandler", function() {
       beforeEach(function() {
       loadFixtures('QAItemHandler/container-with-items.html');
       
-      qaHandler = new QAItemHandler($('#questions'))
+      qaHandler = new QAItemHandler($('#questions'), ['item'])
       qaHandler.init();
       
       removeButton = $('#questions').children('fieldset').find(':button').last()

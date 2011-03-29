@@ -1,13 +1,17 @@
 var QAItemHandler;
 var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 QAItemHandler = (function() {
-  function QAItemHandler(container) {
+  function QAItemHandler(container, availableQuestions) {
     this.container = container;
+    this.availableQuestions = availableQuestions;
     this.questionNumber = 0;
   }
   QAItemHandler.prototype.init = function() {
     this.addMoreButton();
-    return this.addRemoveButtons();
+    this.addRemoveButtons();
+    return $(".question").autocomplete({
+      source: this.availableQuestions
+    });
   };
   QAItemHandler.prototype.addOrderedListHtml = function() {
     this.fieldset.append('<ol></ol>');
@@ -50,13 +54,17 @@ QAItemHandler = (function() {
     }
   };
   QAItemHandler.prototype.addNewQuestion = function() {
-    var fieldset, orderedList;
+    var fieldset, lastQuestionInput, orderedList;
     fieldset = $('<fieldset class="inputs"></fieldset>');
     this.container.append(fieldset);
     orderedList = $('<ol></ol>');
     fieldset.append(orderedList);
-    orderedList.append("<li class='string required inline-input' id='member_questions_attributes_" + this.questionNumber + "_content_input'><label for='member_questions_attributes_" + this.questionNumber + "_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_content' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][content]' type='text' /></li>");
-    orderedList.find(':input:').last().select();
+    orderedList.append("<li class='string required inline-input' id='member_questions_attributes_" + this.questionNumber + "_content_input'><label for='member_questions_attributes_" + this.questionNumber + "_content'>Kysymys<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_content' class='question' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][content]' type='text' /></li>");
+    lastQuestionInput = orderedList.find(':input:').last();
+    lastQuestionInput.autocomplete({
+      source: this.availableQuestions
+    });
+    lastQuestionInput.select();
     orderedList.append("<li class='string required inline-input' id='member_questions_attributes_" + this.questionNumber + "_answer_input'><label for='member_questions_attributes_" + this.questionNumber + "_answer'>Vastaus<abbr title='required'>*</abbr></label><input id='member_questions_attributes_" + this.questionNumber + "_answer' maxlength='255' name='member[questions_attributes][" + this.questionNumber + "][answer]' type='text' /></li>");
     fieldset.append(this.createRemoveButton());
     return this.questionNumber++;
