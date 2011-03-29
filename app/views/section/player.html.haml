@@ -25,3 +25,8 @@
       %li
         %strong Kätisyys:
         = "TO-DO"
+        
+      - for question in @member.questions
+        %li
+          %strong= question
+          = question.answer
