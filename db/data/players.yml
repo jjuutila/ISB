@@ -1,0 +1,3536 @@
+-
+  PlayerID: 1
+  Number: 91
+  FirstName: Johannes
+  LastName: Ala-Kauppila
+  Gender: 0
+  Position: 0
+  Birthyear: 1986
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 0
+  AlltimeGoals: 1
+-
+  PlayerID: 2
+  Number: 71
+  FirstName: Timo
+  LastName: Paakkinen
+  Gender: 0
+  Position: 1
+  Birthyear: 1983
+  HomeMunicipality: Koskenkorva
+  AlltimeAssists: 10
+  AlltimeGoals: 1
+-
+  PlayerID: 3
+  Number: 34
+  FirstName: Jani
+  LastName: Latvala
+  Gender: 0
+  Position: 1
+  Birthyear: 1983
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 4
+  Number: 12
+  FirstName: Markku
+  LastName: Neva-Keturi
+  Gender: 0
+  Position: 3
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 128
+  AlltimeGoals: 119
+-
+  PlayerID: 5
+  Number: 9
+  FirstName: Antti
+  LastName: Kuusisto
+  Gender: 0
+  Position: 2
+  Birthyear: 1980
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 27
+  AlltimeGoals: 43
+-
+  PlayerID: 6
+  Number: 10
+  FirstName: Eero
+  LastName: Rahnasto
+  Gender: 0
+  Position: 3
+  Birthyear: 1980
+  HomeMunicipality: Ilmajoki/seinäjoki
+  AlltimeAssists: 111
+  AlltimeGoals: 242
+-
+  PlayerID: 7
+  Number: 81
+  FirstName: Jarkko
+  LastName: Ojala
+  Gender: 0
+  Position: 2
+  Birthyear: 1981
+  HomeMunicipality: Alajärvi (en kyllä m
+  AlltimeAssists: 39
+  AlltimeGoals: 35
+-
+  PlayerID: 8
+  Number: 42
+  FirstName: Heikki
+  LastName: Nikkola
+  Gender: 0
+  Position: 2
+  Birthyear: 1983
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 59
+  AlltimeGoals: 26
+-
+  PlayerID: 9
+  Number: 22
+  FirstName: Ville
+  LastName: Ala-Nikkola
+  Gender: 0
+  Position: 0
+  Birthyear: 1983
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 3
+  AlltimeGoals: 2
+-
+  PlayerID: 10
+  Number: 91
+  FirstName: Jukka
+  LastName: Kantoniemi
+  Gender: 0
+  Position: 2
+  Birthyear: 1979
+  HomeMunicipality: Kurikka
+  AlltimeAssists: 25
+  AlltimeGoals: 17
+-
+  PlayerID: 11
+  Number: 66
+  FirstName: Ville
+  LastName: Loukasmäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1982
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 61
+  AlltimeGoals: 231
+-
+  PlayerID: 12
+  Number: 22
+  FirstName: Sami
+  LastName: Hillu
+  Gender: 0
+  Position: 2
+  Birthyear: 1986
+  HomeMunicipality: Tuomikylä
+  AlltimeAssists: 91
+  AlltimeGoals: 84
+-
+  PlayerID: 13
+  Number: 11
+  FirstName: Sami
+  LastName: Koski
+  Gender: 0
+  Position: 3
+  Birthyear: 1985
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 106
+  AlltimeGoals: 95
+-
+  PlayerID: 14
+  Number: 97
+  FirstName: Miika
+  LastName: Toivio
+  Gender: 0
+  Position: 3
+  Birthyear: 1978
+  HomeMunicipality: Ilmajoki/Seinäjoki
+  AlltimeAssists: 202
+  AlltimeGoals: 160
+-
+  PlayerID: 15
+  Number: 21
+  FirstName: Tuomas
+  LastName: Vierula
+  Gender: 0
+  Position: 0
+  Birthyear: 1980
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 15
+  AlltimeGoals: 21
+-
+  PlayerID: 16
+  Number: 44
+  FirstName: Olli
+  LastName: Yli-Karjanmaa
+  Gender: 0
+  Position: 2
+  Birthyear: 1980
+  HomeMunicipality: Ilmajoki/Tampere
+  AlltimeAssists: 42
+  AlltimeGoals: 60
+-
+  PlayerID: 17
+  Number: 18
+  FirstName: Tatu
+  LastName: Hietikko
+  Gender: 0
+  Position: 3
+  Birthyear: 1985
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 161
+  AlltimeGoals: 87
+-
+  PlayerID: 18
+  Number: 77
+  FirstName: Juha-Matti
+  LastName: Valli
+  Gender: 0
+  Position: 2
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki/Seinäjoki
+  AlltimeAssists: 51
+  AlltimeGoals: 28
+-
+  PlayerID: 19
+  Number: 44
+  FirstName: Kalevi
+  LastName: Kuikka
+  Gender: 0
+  Position: 3
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki/Ylivieska/N
+  AlltimeAssists: 11
+  AlltimeGoals: 5
+-
+  PlayerID: 20
+  Number: 85
+  FirstName: Timo
+  LastName: Fält
+  Gender: 0
+  Position: 2
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 9
+  AlltimeGoals: 12
+-
+  PlayerID: 21
+  Number: 4
+  FirstName: Jarkko
+  LastName: Hietikko
+  Gender: 0
+  Position: 2
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 30
+  AlltimeGoals: 16
+-
+  PlayerID: 22
+  Number: 26
+  FirstName: Jarno
+  LastName: Haapamäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1985
+  HomeMunicipality: Ilmajoki/Espoo
+  AlltimeAssists: 13
+  AlltimeGoals: 6
+-
+  PlayerID: 23
+  Number: 69
+  FirstName: Juha-Matti
+  LastName: Huhtanen
+  Gender: 0
+  Position: 3
+  Birthyear: 1984
+  HomeMunicipality: Ilmajoki/Jyväskylä
+  AlltimeAssists: 22
+  AlltimeGoals: 45
+-
+  PlayerID: 24
+  Number: 20
+  FirstName: Tomi
+  LastName: Ruohoniemi
+  Gender: 0
+  Position: 1
+  Birthyear: 1984
+  HomeMunicipality: Ilmajoki/Seinäjoki
+  AlltimeAssists: 5
+  AlltimeGoals: 0
+-
+  PlayerID: 25
+  Number: 73
+  FirstName: Timo
+  LastName: Viita
+  Gender: 0
+  Position: 0
+  Birthyear: 1973
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 14
+  AlltimeGoals: 11
+-
+  PlayerID: 26
+  Number: 21
+  FirstName: Jani
+  LastName: Mannila
+  Gender: 0
+  Position: 0
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki/Seinäjoki
+  AlltimeAssists: 0
+  AlltimeGoals: 2
+-
+  PlayerID: 27
+  Number: 97
+  FirstName: Petri
+  LastName: Talvitie
+  Gender: 0
+  Position: 0
+  Birthyear: 1980
+  HomeMunicipality: Ilmajoki/Seinäjoki
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 28
+  Number: 26
+  FirstName: Iisakki
+  LastName: Ala-Kauppila
+  Gender: 0
+  Position: 0
+  Birthyear: 1986
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 0
+  AlltimeGoals: 4
+-
+  PlayerID: 29
+  Number: 44
+  FirstName: Sakari
+  LastName: Ala-Kauppila
+  Gender: 0
+  Position: 0
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 0
+  AlltimeGoals: 1
+-
+  PlayerID: 30
+  Number: 77
+  FirstName: Jussi
+  LastName: Parvi
+  Gender: 0
+  Position: 0
+  Birthyear: 1982
+  HomeMunicipality: Ilmajoki/Tampere
+  AlltimeAssists: 2
+  AlltimeGoals: 0
+-
+  PlayerID: 31
+  Number: 4
+  FirstName: Timo
+  LastName: Ala-Lipasti
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 0
+  AlltimeGoals: 3
+-
+  PlayerID: 32
+  Number: 23
+  FirstName: Ville
+  LastName: Metsä-Ketelä
+  Gender: 0
+  Position: 0
+  Birthyear: 1983
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 8
+  AlltimeGoals: 1
+-
+  PlayerID: 33
+  Number: 17
+  FirstName: Manne
+  LastName: Niemelä
+  Gender: 0
+  Position: 3
+  Birthyear: 1984
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 100
+  AlltimeGoals: 56
+-
+  PlayerID: 34
+  Number: 57
+  FirstName: Timo
+  LastName: Jouppila
+  Gender: 0
+  Position: 0
+  Birthyear: 1984
+  HomeMunicipality: Ilmajoki/Rauma
+  AlltimeAssists: 34
+  AlltimeGoals: 59
+-
+  PlayerID: 35
+  Number: 0
+  FirstName: Toni
+  LastName: Liminka
+  Gender: 0
+  Position: 0
+  Birthyear: 1982
+  HomeMunicipality: Peräseinäjoki
+  AlltimeAssists: 3
+  AlltimeGoals: 5
+-
+  PlayerID: 36
+  Number: 66
+  FirstName: Jani
+  LastName: Nurkka
+  Gender: 0
+  Position: 2
+  Birthyear: 1973
+  HomeMunicipality: Vaasa
+  AlltimeAssists: 14
+  AlltimeGoals: 2
+-
+  PlayerID: 37
+  Number: 46
+  FirstName: Aki
+  LastName: Kohtamäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1990
+  HomeMunicipality: Koskenkorva
+  AlltimeAssists: 24
+  AlltimeGoals: 15
+-
+  PlayerID: 38
+  Number: 96
+  FirstName: Jaakko
+  LastName: Juutila
+  Gender: 0
+  Position: 0
+  Birthyear: 1985
+  HomeMunicipality: Ilmajoki/Tampere
+  AlltimeAssists: 3
+  AlltimeGoals: 1
+-
+  PlayerID: 39
+  Number: 21
+  FirstName: Juha
+  LastName: Puhtimäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1985
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 44
+  AlltimeGoals: 90
+-
+  PlayerID: 40
+  Number: 50
+  FirstName: Tomi
+  LastName: Ania
+  Gender: 0
+  Position: 3
+  Birthyear: 1990
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 30
+  AlltimeGoals: 43
+-
+  PlayerID: 41
+  Number: 42
+  FirstName: Juho
+  LastName: Ranto
+  Gender: 0
+  Position: 3
+  Birthyear: 1987
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 14
+  AlltimeGoals: 18
+-
+  PlayerID: 42
+  Number: 0
+  FirstName: Markus
+  LastName: Kujanpää
+  Gender: 0
+  Position: 0
+  Birthyear: 1970
+  HomeMunicipality: Lapua
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 43
+  Number: 2
+  FirstName: Jussi
+  LastName: Ala-Nikkola
+  Gender: 0
+  Position: 3
+  Birthyear: 1977
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 23
+  AlltimeGoals: 40
+-
+  PlayerID: 44
+  Number: 87
+  FirstName: Ari
+  LastName: Ketelä
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 16
+  AlltimeGoals: 14
+-
+  PlayerID: 45
+  Number: 0
+  FirstName: Turo
+  LastName: Toivonen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: Peräseinäjoki
+  AlltimeAssists: 5
+  AlltimeGoals: 6
+-
+  PlayerID: 46
+  Number: 0
+  FirstName: Mikko
+  LastName: Raittinen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: Kurikka
+  AlltimeAssists: 0
+  AlltimeGoals: 1
+-
+  PlayerID: 47
+  Number: 0
+  FirstName: Harri
+  LastName: Viitanen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 3
+  AlltimeGoals: 1
+-
+  PlayerID: 48
+  Number: 42
+  FirstName: Ville
+  LastName: Koskimäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1981
+  HomeMunicipality: Ilmajoki/Oulu
+  AlltimeAssists: 9
+  AlltimeGoals: 14
+-
+  PlayerID: 49
+  Number: 0
+  FirstName: Ville
+  LastName: Ojaniemi
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 5
+  AlltimeGoals: 12
+-
+  PlayerID: 50
+  Number: 11
+  FirstName: Mikko
+  LastName: Kivimäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1984
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 10
+  AlltimeGoals: 20
+-
+  PlayerID: 51
+  Number: 7
+  FirstName: Ismo
+  LastName: Laitinen
+  Gender: 0
+  Position: 0
+  Birthyear: 1985
+  HomeMunicipality: Ilmajoki/Oulu
+  AlltimeAssists: 11
+  AlltimeGoals: 16
+-
+  PlayerID: 52
+  Number: 0
+  FirstName: Matti
+  LastName: Yli-Karjanmaa
+  Gender: 0
+  Position: 0
+  Birthyear: 1983
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 53
+  Number: 39
+  FirstName: Sasu
+  LastName: Hyytiä
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 1
+-
+  PlayerID: 54
+  Number: 29
+  FirstName: Niko
+  LastName: Raunio
+  Gender: 0
+  Position: 0
+  Birthyear: 1987
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 2
+  AlltimeGoals: 2
+-
+  PlayerID: 55
+  Number: 0
+  FirstName: Ville
+  LastName: Kuusela
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 3
+  AlltimeGoals: 2
+-
+  PlayerID: 56
+  Number: 2
+  FirstName: Pekka
+  LastName: Huhtanen
+  Gender: 0
+  Position: 3
+  Birthyear: 1988
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 5
+  AlltimeGoals: 20
+-
+  PlayerID: 57
+  Number: 39
+  FirstName: Miika
+  LastName: Malkamäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1985
+  HomeMunicipality: Seinäjoki/Jyväskylä
+  AlltimeAssists: 3
+  AlltimeGoals: 0
+-
+  PlayerID: 58
+  Number: 7
+  FirstName: Turo
+  LastName: Oja-Lipasti
+  Gender: 0
+  Position: 0
+  Birthyear: 1990
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 11
+  AlltimeGoals: 19
+-
+  PlayerID: 59
+  Number: 41
+  FirstName: Miikka
+  LastName: Mantila
+  Gender: 0
+  Position: 3
+  Birthyear: 1991
+  HomeMunicipality: 
+  AlltimeAssists: 10
+  AlltimeGoals: 5
+-
+  PlayerID: 60
+  Number: 86
+  FirstName: Petri
+  LastName: Vainio-Hynnilä
+  Gender: 0
+  Position: 1
+  Birthyear: 1985
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 7
+  AlltimeGoals: 13
+-
+  PlayerID: 61
+  Number: 20
+  FirstName: Markus
+  LastName: Risku-Rajala
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 62
+  Number: 2
+  FirstName: Ville-Petteri
+  LastName: Luomanen
+  Gender: 0
+  Position: 0
+  Birthyear: 1991
+  HomeMunicipality: 
+  AlltimeAssists: 1
+  AlltimeGoals: 3
+-
+  PlayerID: 63
+  Number: 13
+  FirstName: Iivari
+  LastName: Heikkilä
+  Gender: 0
+  Position: 3
+  Birthyear: 1991
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 1
+-
+  PlayerID: 64
+  Number: 9
+  FirstName: Matias
+  LastName: Saunamäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 65
+  Number: 10
+  FirstName: Miika
+  LastName: Raunio
+  Gender: 0
+  Position: 0
+  Birthyear: 1991
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 66
+  Number: 15
+  FirstName: Jarno
+  LastName: Latva-Hoppala
+  Gender: 0
+  Position: 0
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 67
+  Number: 15
+  FirstName: Jukka
+  LastName: Mäenpää
+  Gender: 0
+  Position: 3
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 17
+  AlltimeGoals: 32
+-
+  PlayerID: 68
+  Number: 25
+  FirstName: Juha
+  LastName: Asp
+  Gender: 0
+  Position: 0
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 69
+  Number: 68
+  FirstName: Lauri
+  LastName: Ketola
+  Gender: 0
+  Position: 2
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 5
+  AlltimeGoals: 1
+-
+  PlayerID: 70
+  Number: 77
+  FirstName: Jarno
+  LastName:  Vierikko
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 71
+  Number: 89
+  FirstName: Tuomas
+  LastName: Tuohisaari
+  Gender: 0
+  Position: 3
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 5
+  AlltimeGoals: 1
+-
+  PlayerID: 72
+  Number: 90
+  FirstName: Saku
+  LastName: Salo-Tuisku
+  Gender: 0
+  Position: 3
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 3
+  AlltimeGoals: 9
+-
+  PlayerID: 73
+  Number: 29
+  FirstName: Joonas
+  LastName: Haapamäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1991
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 15
+  AlltimeGoals: 6
+-
+  PlayerID: 74
+  Number: 47
+  FirstName: Juho
+  LastName: Rinta
+  Gender: 0
+  Position: 1
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 2
+-
+  PlayerID: 75
+  Number: 66
+  FirstName: Arttu
+  LastName: Rahko
+  Gender: 0
+  Position: 2
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 6
+  AlltimeGoals: 10
+-
+  PlayerID: 76
+  Number: 99
+  FirstName: Miki
+  LastName: Salo-Tuisku
+  Gender: 0
+  Position: 3
+  Birthyear: 1991
+  HomeMunicipality: 
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 77
+  Number: 6
+  FirstName: Teemu
+  LastName: Turunen
+  Gender: 0
+  Position: 3
+  Birthyear: 1984
+  HomeMunicipality: Ilmajoki (Parkano)
+  AlltimeAssists: 81
+  AlltimeGoals: 99
+-
+  PlayerID: 78
+  Number: 13
+  FirstName: Petri
+  LastName: Pollarinen
+  Gender: 0
+  Position: 3
+  Birthyear: 1985
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 34
+  AlltimeGoals: 45
+-
+  PlayerID: 79
+  Number: 22
+  FirstName: Petri
+  LastName: Kivimäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1988
+  HomeMunicipality: 
+  AlltimeAssists: 10
+  AlltimeGoals: 19
+-
+  PlayerID: 80
+  Number: 26
+  FirstName: Janne
+  LastName: Haapamäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1983
+  HomeMunicipality: 
+  AlltimeAssists: 31
+  AlltimeGoals: 51
+-
+  PlayerID: 81
+  Number: 23
+  FirstName: Matti
+  LastName: Pollari
+  Gender: 0
+  Position: 0
+  Birthyear: 1981
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 10
+  AlltimeGoals: 7
+-
+  PlayerID: 82
+  Number: 11
+  FirstName: Tommy
+  LastName: Koponen
+  Gender: 0
+  Position: 3
+  Birthyear: 1973
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 10
+  AlltimeGoals: 6
+-
+  PlayerID: 83
+  Number: 57
+  FirstName: Kyösti
+  LastName: Koivuniemi
+  Gender: 0
+  Position: 0
+  Birthyear: 1983
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 84
+  Number: 99
+  FirstName: Sami
+  LastName: Kokko
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 85
+  Number: 44
+  FirstName: Henri
+  LastName: Puputti
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 7
+  AlltimeGoals: 12
+-
+  PlayerID: 86
+  Number: 71
+  FirstName: Jani
+  LastName: Kuusisto
+  Gender: 0
+  Position: 0
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 87
+  Number: 8
+  FirstName: Mika
+  LastName: Yrjänäinen
+  Gender: 0
+  Position: 3
+  Birthyear: 1989
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 14
+-
+  PlayerID: 88
+  Number: 14
+  FirstName: Aki
+  LastName: Vainio-Hynnilä
+  Gender: 0
+  Position: 3
+  Birthyear: 1991
+  HomeMunicipality: 
+  AlltimeAssists: 19
+  AlltimeGoals: 6
+-
+  PlayerID: 89
+  Number: 29
+  FirstName: Tomi
+  LastName: Rinta-Jaskari
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 0
+  AlltimeGoals: 2
+-
+  PlayerID: 90
+  Number: 42
+  FirstName: Jussi
+  LastName: Klemola
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 91
+  Number: 91
+  FirstName: Aki
+  LastName: Vainio-Hynnilä
+  Gender: 0
+  Position: 3
+  Birthyear: 1991
+  HomeMunicipality: 
+  AlltimeAssists: 18
+  AlltimeGoals: 14
+-
+  PlayerID: 92
+  Number: 6
+  FirstName: Jaakko
+  LastName: Sihto
+  Gender: 0
+  Position: 3
+  Birthyear: 1989
+  HomeMunicipality: 
+  AlltimeAssists: 6
+  AlltimeGoals: 9
+-
+  PlayerID: 93
+  Number: 8
+  FirstName: Mika
+  LastName: Yrjänäinen
+  Gender: 0
+  Position: 3
+  Birthyear: 1989
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 94
+  Number: 7
+  FirstName: Pekka
+  LastName: Laitila
+  Gender: 0
+  Position: 3
+  Birthyear: 1983
+  HomeMunicipality: Nurmo
+  AlltimeAssists: 47
+  AlltimeGoals: 48
+-
+  PlayerID: 95
+  Number: 42
+  FirstName: Anssi
+  LastName: Kesonen
+  Gender: 0
+  Position: 0
+  Birthyear: 1986
+  HomeMunicipality: Seinäjoki
+  AlltimeAssists: 0
+  AlltimeGoals: 1
+-
+  PlayerID: 96
+  Number: 44
+  FirstName: Miika
+  LastName: Latvasalo
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: Kurikka
+  AlltimeAssists: 5
+  AlltimeGoals: 4
+-
+  PlayerID: 97
+  Number: 2
+  FirstName: Panu
+  LastName: Kormano
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 98
+  Number: 2
+  FirstName: Panu
+  LastName: Kormano
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 99
+  Number: 3
+  FirstName: Tuomas
+  LastName: Klemola
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 100
+  Number: 6
+  FirstName: Mikael
+  LastName: Kentta
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 101
+  Number: 31
+  FirstName: Severi
+  LastName: Koivuluoma
+  Gender: 0
+  Position: 1
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 102
+  Number: 8
+  FirstName: Henri
+  LastName: Syrjä
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 103
+  Number: 9
+  FirstName: Iiro
+  LastName: Iso-Tuisku
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 104
+  Number: 10
+  FirstName: Sameli
+  LastName: Reinilä
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 105
+  Number: 17
+  FirstName: Eero
+  LastName: Santaharju
+  Gender: 0
+  Position: 3
+  Birthyear: 1996
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 1
+-
+  PlayerID: 106
+  Number: 12
+  FirstName: Jere
+  LastName: Lahti-Röyskö
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 107
+  Number: 30
+  FirstName: Joona
+  LastName: Tuominen
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 108
+  Number: 14
+  FirstName: Matias
+  LastName: Joensuu
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 109
+  Number: 15
+  FirstName: Konsta
+  LastName: Heikkilä
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 110
+  Number: 16
+  FirstName: Kristian
+  LastName: Syrjälä
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 111
+  Number: 18
+  FirstName: Olli
+  LastName: Kivistö
+  Gender: 0
+  Position: 2
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 3
+  AlltimeGoals: 1
+-
+  PlayerID: 112
+  Number: 19
+  FirstName: Teemu
+  LastName: Loukasmäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 113
+  Number: 20
+  FirstName: Henri
+  LastName: Pakka
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 114
+  Number: 20
+  FirstName: Olli
+  LastName: Rinta-Runsala
+  Gender: 0
+  Position: 2
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 115
+  Number: 22
+  FirstName: Aleksanteri
+  LastName: Särkelä
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 116
+  Number: 26
+  FirstName: Juuso
+  LastName: Haapamäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1997
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 117
+  Number: 9
+  FirstName: Jarno
+  LastName: Mäki-Jussila
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 4
+-
+  PlayerID: 118
+  Number: 23
+  FirstName: Artturi
+  LastName: Huhtamäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 119
+  Number: 28
+  FirstName: Jaakko
+  LastName: Renkola
+  Gender: 0
+  Position: 0
+  Birthyear: 1996
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 120
+  Number: 77
+  FirstName: Sameli
+  LastName: Niemi
+  Gender: 0
+  Position: 3
+  Birthyear: 1988
+  HomeMunicipality: Ilmajoki
+  AlltimeAssists: 4
+  AlltimeGoals: 4
+-
+  PlayerID: 121
+  Number: 5
+  FirstName: Karoliina
+  LastName: Mäki-Jussila
+  Gender: 1
+  Position: 2
+  Birthyear: 1984
+  HomeMunicipality: 
+  AlltimeAssists: 14
+  AlltimeGoals: 14
+-
+  PlayerID: 122
+  Number: 9
+  FirstName: Armi
+  LastName: Autio
+  Gender: 1
+  Position: 3
+  Birthyear: 1980
+  HomeMunicipality: 
+  AlltimeAssists: 11
+  AlltimeGoals: 24
+-
+  PlayerID: 123
+  Number: 11
+  FirstName: Leena
+  LastName: Ojala
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 1
+-
+  PlayerID: 124
+  Number: 12
+  FirstName: Jenni
+  LastName: Mukkala
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 125
+  Number: 13
+  FirstName: Noora
+  LastName: Nyrhinen
+  Gender: 1
+  Position: 2
+  Birthyear: 1984
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 0
+-
+  PlayerID: 126
+  Number: 12
+  FirstName: Jenni
+  LastName: Neva-Keturi
+  Gender: 1
+  Position: 3
+  Birthyear: 1984
+  HomeMunicipality: 
+  AlltimeAssists: 4
+  AlltimeGoals: 18
+-
+  PlayerID: 127
+  Number: 15
+  FirstName: Maria
+  LastName: Mattila
+  Gender: 1
+  Position: 2
+  Birthyear: 1983
+  HomeMunicipality: 
+  AlltimeAssists: 5
+  AlltimeGoals: 1
+-
+  PlayerID: 128
+  Number: 16
+  FirstName: Marjaana
+  LastName: Rasku
+  Gender: 1
+  Position: 2
+  Birthyear: 1982
+  HomeMunicipality: 
+  AlltimeAssists: 7
+  AlltimeGoals: 4
+-
+  PlayerID: 129
+  Number: 18
+  FirstName: Niina
+  LastName: Keskinen
+  Gender: 1
+  Position: 3
+  Birthyear: 1981
+  HomeMunicipality: 
+  AlltimeAssists: 5
+  AlltimeGoals: 8
+-
+  PlayerID: 130
+  Number: 20
+  FirstName: Heli
+  LastName: Risku-Rajala
+  Gender: 1
+  Position: 3
+  Birthyear: 1983
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 3
+-
+  PlayerID: 131
+  Number: 21
+  FirstName: Irene
+  LastName: Viita
+  Gender: 1
+  Position: 3
+  Birthyear: 1975
+  HomeMunicipality: 
+  AlltimeAssists: 17
+  AlltimeGoals: 12
+-
+  PlayerID: 132
+  Number: 24
+  FirstName: Pia
+  LastName: Niemelä
+  Gender: 1
+  Position: 3
+  Birthyear: 1981
+  HomeMunicipality: 
+  AlltimeAssists: 6
+  AlltimeGoals: 23
+-
+  PlayerID: 133
+  Number: 25
+  FirstName: Elina
+  LastName: Syrjä
+  Gender: 1
+  Position: 2
+  Birthyear: 1983
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 134
+  Number: 26
+  FirstName: Hanna
+  LastName: Yli-Rahnasto
+  Gender: 1
+  Position: 2
+  Birthyear: 1981
+  HomeMunicipality: 
+  AlltimeAssists: 5
+  AlltimeGoals: 3
+-
+  PlayerID: 135
+  Number: 39
+  FirstName: Minna
+  LastName: Keskinen
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 136
+  Number: 77
+  FirstName: Ulla-Maija
+  LastName: Niemi
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 1
+  AlltimeGoals: 1
+-
+  PlayerID: 137
+  Number: 33
+  FirstName: Laura
+  LastName: Rissane
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 138
+  Number: 82
+  FirstName: Heidi
+  LastName: Vinter
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 139
+  Number: 88
+  FirstName: Mari
+  LastName: Ania
+  Gender: 1
+  Position: 3
+  Birthyear: 1988
+  HomeMunicipality: 
+  AlltimeAssists: 1
+  AlltimeGoals: 1
+-
+  PlayerID: 140
+  Number: 54
+  FirstName: Laura
+  LastName: Rissanen
+  Gender: 1
+  Position: 1
+  Birthyear: 1984
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 141
+  Number: 5
+  FirstName: Antti
+  LastName: Kujala
+  Gender: 0
+  Position: 2
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 142
+  Number: 7
+  FirstName: Jani
+  LastName: Komsi
+  Gender: 0
+  Position: 3
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 2
+-
+  PlayerID: 143
+  Number: 74
+  FirstName: Eero
+  LastName: Rantanen
+  Gender: 0
+  Position: 3
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 4
+  AlltimeGoals: 4
+-
+  PlayerID: 144
+  Number: 10
+  FirstName: Mikael
+  LastName: Rinta-Röyskö
+  Gender: 0
+  Position: 2
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 145
+  Number: 14
+  FirstName: Justus
+  LastName: Ristimäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 1
+-
+  PlayerID: 146
+  Number: 12
+  FirstName: Riku
+  LastName: Heikonen
+  Gender: 0
+  Position: 3
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 3
+  AlltimeGoals: 3
+-
+  PlayerID: 147
+  Number: 24
+  FirstName: Lauri
+  LastName: Jaakkola
+  Gender: 0
+  Position: 0
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 148
+  Number: 16
+  FirstName: Markus
+  LastName: Isomäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 149
+  Number: 17
+  FirstName: Jouni
+  LastName: Lampinen
+  Gender: 0
+  Position: 3
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 1
+-
+  PlayerID: 150
+  Number: 20
+  FirstName: Reima
+  LastName: Salo
+  Gender: 0
+  Position: 0
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 151
+  Number: 21
+  FirstName: Toni
+  LastName: Juonoja
+  Gender: 0
+  Position: 2
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 152
+  Number: 29
+  FirstName: Tommi
+  LastName: Lähdesmäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 6
+  AlltimeGoals: 10
+-
+  PlayerID: 153
+  Number: 26
+  FirstName: Kimi
+  LastName: Salo-Tuisku
+  Gender: 0
+  Position: 3
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 8
+  AlltimeGoals: 4
+-
+  PlayerID: 154
+  Number: 37
+  FirstName: Maria
+  LastName: Syväniemi
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 155
+  Number: 4
+  FirstName: Annika
+  LastName: Kotoneva
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 156
+  Number: 5
+  FirstName: Jenna
+  LastName: Knuuttila
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 157
+  Number: 7
+  FirstName: Päivi
+  LastName: Kiikka
+  Gender: 1
+  Position: 3
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 4
+-
+  PlayerID: 158
+  Number: 50
+  FirstName: Henna
+  LastName: Siltala
+  Gender: 1
+  Position: 0
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 159
+  Number: 9
+  FirstName: Anni
+  LastName: Latva-Karjanmaa
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 160
+  Number: 10
+  FirstName: Miia
+  LastName: Korpela
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 161
+  Number: 33
+  FirstName: Ella
+  LastName: Harju
+  Gender: 1
+  Position: 1
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 162
+  Number: 12
+  FirstName: Pauliina
+  LastName: Ketola
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 163
+  Number: 13
+  FirstName: Hanna
+  LastName: Lehtinen
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 164
+  Number: 14
+  FirstName: Maiju
+  LastName: Kormano
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 165
+  Number: 15
+  FirstName: Niina
+  LastName: Autio
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 166
+  Number: 17
+  FirstName: Virve
+  LastName: Mukkala
+  Gender: 1
+  Position: 3
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 167
+  Number: 18
+  FirstName: Veera
+  LastName: Joensuu
+  Gender: 1
+  Position: 0
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 168
+  Number: 19
+  FirstName: Laura
+  LastName: Santaharju
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 169
+  Number: 20
+  FirstName: Ida-Maria
+  LastName: Pirilä
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 170
+  Number: 21
+  FirstName: Veera
+  LastName: Kosonen
+  Gender: 1
+  Position: 0
+  Birthyear: 1995
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 171
+  Number: 22
+  FirstName: Outi
+  LastName: Latva-Kokko
+  Gender: 1
+  Position: 3
+  Birthyear: 1992
+  HomeMunicipality: 
+  AlltimeAssists: 17
+  AlltimeGoals: 8
+-
+  PlayerID: 172
+  Number: 23
+  FirstName: Linda
+  LastName: Lähdesmäki
+  Gender: 1
+  Position: 3
+  Birthyear: 1994
+  HomeMunicipality: 
+  AlltimeAssists: 5
+  AlltimeGoals: 9
+-
+  PlayerID: 173
+  Number: 24
+  FirstName: Reeta
+  LastName: Kosonen
+  Gender: 1
+  Position: 0
+  Birthyear: 1993
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 174
+  Number: 27
+  FirstName: Noora
+  LastName: Ala-Huikku
+  Gender: 1
+  Position: 0
+  Birthyear: 0000
+  HomeMunicipality: 
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 175
+  Number: 39
+  FirstName: Ulla
+  LastName: Viitala
+  Gender: 1
+  Position: 2
+  Birthyear: 1990
+  HomeMunicipality: 
+  AlltimeAssists: 2
+  AlltimeGoals: 1
+-
+  PlayerID: 176
+  Number: 32
+  FirstName: Jani
+  LastName: Syysmäki
+  Gender: 0
+  Position: 1
+  Birthyear: 1984
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 177
+  Number: 13
+  FirstName: Antti
+  LastName: Laakkonen
+  Gender: 0
+  Position: 3
+  Birthyear: 1983
+  AlltimeAssists: 7
+  AlltimeGoals: 6
+-
+  PlayerID: 178
+  Number: 0
+  FirstName: Raine
+  LastName: Niemistö
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 179
+  Number: 4
+  FirstName: Miikka
+  LastName: Viitasaari
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 180
+  Number: 6
+  FirstName: Tuomas
+  LastName: Sepänmäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 181
+  Number: 7
+  FirstName: Kristian
+  LastName: Hautala
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 182
+  Number: 13
+  FirstName: Sebastian
+  LastName: Iso-Tuisku
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 183
+  Number: 18
+  FirstName: Timo
+  LastName: Palomaa
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 184
+  Number: 13
+  FirstName: Joonas
+  LastName: Wallius
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 185
+  Number: 21
+  FirstName: Valtteri
+  LastName: Majalahti
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 186
+  Number: 22
+  FirstName: Eetu
+  LastName: Takamäki
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 187
+  Number: 23
+  FirstName: Artturi
+  LastName: Heikkilä
+  Gender: 0
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 188
+  Number: 15
+  FirstName: Sallamari
+  LastName: Koskinen
+  Gender: 1
+  Position: 3
+  Birthyear: 1994
+  AlltimeAssists: 10
+  AlltimeGoals: 23
+-
+  PlayerID: 189
+  Number: 20
+  FirstName: Jenna
+  LastName: Nevanperä
+  Gender: 1
+  Position: 3
+  Birthyear: 1993
+  AlltimeAssists: 3
+  AlltimeGoals: 2
+-
+  PlayerID: 190
+  Number: 0
+  FirstName: Hanna
+  LastName: Joensuu
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 191
+  Number: 0
+  FirstName: Timo
+  LastName: Paakkinen
+  Gender: 1
+  Position: 0
+  Birthyear: 1983
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 192
+  Number: 0
+  FirstName: Jani
+  LastName: Mansikkamäki
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 193
+  Number: 8
+  FirstName: Jouni
+  LastName: Mäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 194
+  Number: 11
+  FirstName: Timo
+  LastName: Ranto
+  Gender: 0
+  Position: 1
+  Birthyear: 1992
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 195
+  Number: 48
+  FirstName: Joakim
+  LastName: Matalamäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  AlltimeAssists: 1
+  AlltimeGoals: 1
+-
+  PlayerID: 196
+  Number: 50
+  FirstName: Markus
+  LastName: Viemerö
+  Gender: 0
+  Position: 2
+  Birthyear: 1993
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 197
+  Number: 82
+  FirstName: Salla
+  LastName: Lindgren
+  Gender: 1
+  Position: 0
+  Birthyear: 1986
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 198
+  Number: 11
+  FirstName: Johanna
+  LastName: Nieminen
+  Gender: 1
+  Position: 2
+  Birthyear: 1982
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 199
+  Number: 0
+  FirstName: Manne
+  LastName: Niemelä
+  Gender: 1
+  Position: 0
+  Birthyear: 1984
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 200
+  Number: 0
+  FirstName: Arto
+  LastName: Pekkanen
+  Gender: 1
+  Position: 0
+  Birthyear: 1975
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 201
+  Number: 0
+  FirstName: Pekka
+  LastName: Joensuu
+  Gender: 0
+  Position: 0
+  Birthyear: 1966
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 202
+  Number: 2
+  FirstName: Mikko
+  LastName: Ala-Huikku
+  Gender: 0
+  Position: 2
+  Birthyear: 1991
+  AlltimeAssists: 2
+  AlltimeGoals: 7
+-
+  PlayerID: 203
+  Number: 27
+  FirstName: Toni
+  LastName: Marjamäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1992
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 204
+  Number: 52
+  FirstName: Miro
+  LastName: Koskenranta
+  Gender: 0
+  Position: 3
+  Birthyear: 1991
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 205
+  Number: 11
+  FirstName: Maria
+  LastName: Siltala
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 206
+  Number: 30
+  FirstName: Maria
+  LastName: Siltala
+  Gender: 1
+  Position: 1
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 207
+  Number: 89
+  FirstName: Juha
+  LastName: Udelius
+  Gender: 0
+  Position: 3
+  Birthyear: 1985
+  AlltimeAssists: 7
+  AlltimeGoals: 15
+-
+  PlayerID: 208
+  Number: 4
+  FirstName: Sanna
+  LastName: Ala-Huikku
+  Gender: 1
+  Position: 0
+  Birthyear: 1993
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 209
+  Number: 8
+  FirstName: Jenna
+  LastName: Ala-Riihimäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1993
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 210
+  Number: 42
+  FirstName: Ville
+  LastName: Hotakainen
+  Gender: 0
+  Position: 2
+  Birthyear: 1988
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 211
+  Number: 29
+  FirstName: Niko
+  LastName: Mäkelä
+  Gender: 0
+  Position: 3
+  Birthyear: 1992
+  AlltimeAssists: 2
+  AlltimeGoals: 0
+-
+  PlayerID: 212
+  Number: 23
+  FirstName: Raine
+  LastName: Lamberg
+  Gender: 0
+  Position: 3
+  Birthyear: 1964
+  AlltimeAssists: 7
+  AlltimeGoals: 7
+-
+  PlayerID: 213
+  Number: 0
+  FirstName: Arto
+  LastName: Pekkanen
+  Gender: 0
+  Position: 0
+  Birthyear: 1975
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 214
+  Number: 7
+  FirstName: Teemu
+  LastName: Rahkola
+  Gender: 0
+  Position: 2
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 215
+  Number: 17
+  FirstName: Sanna
+  LastName: Kallio
+  Gender: 1
+  Position: 2
+  Birthyear: 1983
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 216
+  Number: 10
+  FirstName: Satu
+  LastName: Autio
+  Gender: 1
+  Position: 3
+  Birthyear: 1982
+  AlltimeAssists: 3
+  AlltimeGoals: 1
+-
+  PlayerID: 217
+  Number: 66
+  FirstName: Sanna-Maija
+  LastName: Latikka
+  Gender: 1
+  Position: 3
+  Birthyear: 1982
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 218
+  Number: 27
+  FirstName: Johanna
+  LastName: Pukara
+  Gender: 1
+  Position: 3
+  Birthyear: 1989
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 219
+  Number: 29
+  FirstName: Johanna
+  LastName: Mäki
+  Gender: 1
+  Position: 2
+  Birthyear: 1983
+  AlltimeAssists: 2
+  AlltimeGoals: 1
+-
+  PlayerID: 220
+  Number: 2
+  FirstName: Marjut
+  LastName: Kriikku
+  Gender: 1
+  Position: 3
+  Birthyear: 1991
+  AlltimeAssists: 2
+  AlltimeGoals: 4
+-
+  PlayerID: 221
+  Number: 8
+  FirstName: Heidi
+  LastName: Autio
+  Gender: 1
+  Position: 2
+  Birthyear: 1981
+  AlltimeAssists: 2
+  AlltimeGoals: 1
+-
+  PlayerID: 222
+  Number: 3
+  FirstName: Essi
+  LastName: Ala-Huikku
+  Gender: 1
+  Position: 2
+  Birthyear: 1981
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 223
+  Number: 16
+  FirstName: Matias
+  LastName: Niukkala
+  Gender: 0
+  Position: 3
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 224
+  Number: 6
+  FirstName: Juho
+  LastName: Jokela
+  Gender: 0
+  Position: 0
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 225
+  Number: 10
+  FirstName: Tuomas
+  LastName: Sepänmäki
+  Gender: 0
+  Position: 2
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 226
+  Number: 12
+  FirstName: Viljami
+  LastName: Koivuluoma
+  Gender: 0
+  Position: 3
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 227
+  Number: 5
+  FirstName: Juha
+  LastName: Keisala
+  Gender: 0
+  Position: 0
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 228
+  Number: 15
+  FirstName: Eemi
+  LastName: Tuominen
+  Gender: 0
+  Position: 2
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 229
+  Number: 62
+  FirstName: Antti
+  LastName: Latva-Kokko
+  Gender: 0
+  Position: 3
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 230
+  Number: 24
+  FirstName: Veli-Matti
+  LastName: Kivelä
+  Gender: 0
+  Position: 3
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 231
+  Number: 11
+  FirstName: Elias
+  LastName: Ahde
+  Gender: 0
+  Position: 2
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 232
+  Number: 99
+  FirstName: Jetro
+  LastName: Ala-Huikku
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 233
+  Number: 21
+  FirstName: Arttu
+  LastName: Hirvelä
+  Gender: 0
+  Position: 1
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 234
+  Number: 88
+  FirstName: Miika
+  LastName: Lähdesmäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 235
+  Number: 2
+  FirstName: Jussi
+  LastName: Röyskö
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 236
+  Number: 22
+  FirstName: Juha
+  LastName: Palomaa
+  Gender: 0
+  Position: 2
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 237
+  Number: 14
+  FirstName: Ville
+  LastName: Laine
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 238
+  Number: 29
+  FirstName: Mikael
+  LastName: Reinilä
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 239
+  Number: 35
+  FirstName: Jyri
+  LastName: Ala-Renko
+  Gender: 0
+  Position: 2
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 240
+  Number: 23
+  FirstName: Konsta
+  LastName: Koivula
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 241
+  Number: 26
+  FirstName: Juuso
+  LastName: Haapamäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 242
+  Number: 25
+  FirstName: Jarkko
+  LastName: Santaharju
+  Gender: 0
+  Position: 2
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 243
+  Number: 0
+  FirstName: Arto
+  LastName: Hirvelä
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 244
+  Number: 4
+  FirstName: Mariia
+  LastName: Hietikko
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 245
+  Number: 4
+  FirstName: Emilia
+  LastName: Hellsten
+  Gender: 1
+  Position: 0
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 246
+  Number: 14
+  FirstName: Vilma
+  LastName: Kosonen
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 247
+  Number: 7
+  FirstName: Vilma
+  LastName: Välimaa
+  Gender: 1
+  Position: 0
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 248
+  Number: 8
+  FirstName: Aino-Kaisa
+  LastName: Mantere
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 249
+  Number: 0
+  FirstName: Harri
+  LastName: Siltala
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 250
+  Number: 0
+  FirstName: Tommi
+  LastName: Lähdesmäki
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 251
+  Number: 9
+  FirstName: Jori
+  LastName: Ala-Nikkola
+  Gender: 0
+  Position: 3
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 252
+  Number: 8
+  FirstName: Jani
+  LastName: Rantala
+  Gender: 0
+  Position: 1
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 253
+  Number: 3
+  FirstName: Riku-Oskari
+  LastName: Ojajärvi
+  Gender: 0
+  Position: 3
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 254
+  Number: 16
+  FirstName: Teemu
+  LastName: Rantanen
+  Gender: 0
+  Position: 2
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 255
+  Number: 0
+  FirstName: Mikko
+  LastName: Kivimäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1984
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 256
+  Number: 29
+  FirstName: Elina
+  LastName: Pentinmäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 257
+  Number: 27
+  FirstName: Heidi
+  LastName: Nevanperä
+  Gender: 1
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 258
+  Number: 21
+  FirstName: Iina
+  LastName: Pohjola
+  Gender: 1
+  Position: 2
+  Birthyear: 1990
+  AlltimeAssists: 2
+  AlltimeGoals: 0
+-
+  PlayerID: 259
+  Number: 25
+  FirstName: Samuli
+  LastName: Lähteenmaa
+  Gender: 0
+  Position: 0
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 260
+  Number: 2
+  FirstName: Jussi
+  LastName: Latvala
+  Gender: 0
+  Position: 3
+  Birthyear: 1992
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 261
+  Number: 66
+  FirstName: Tommi
+  LastName: Mäki
+  Gender: 0
+  Position: 1
+  Birthyear: 1992
+  AlltimeAssists: 1
+  AlltimeGoals: 6
+-
+  PlayerID: 262
+  Number: 7
+  FirstName: Tero
+  LastName: Lehtinen
+  Gender: 0
+  Position: 2
+  Birthyear: 1980
+  AlltimeAssists: 14
+  AlltimeGoals: 4
+-
+  PlayerID: 263
+  Number: 19
+  FirstName: Emilia
+  LastName: Peltoniemi
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 264
+  Number: 31
+  FirstName: Arttu
+  LastName: Ohraluoma
+  Gender: 0
+  Position: 1
+  Birthyear: 1991
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 265
+  Number: 16
+  FirstName: Antti
+  LastName: Ålander
+  Gender: 0
+  Position: 2
+  Birthyear: 1980
+  AlltimeAssists: 5
+  AlltimeGoals: 8
+-
+  PlayerID: 266
+  Number: 11
+  FirstName: Jukka
+  LastName: Keskisipilä
+  Gender: 0
+  Position: 3
+  Birthyear: 1988
+  AlltimeAssists: 2
+  AlltimeGoals: 0
+-
+  PlayerID: 267
+  Number: 10
+  FirstName: Anni
+  LastName: Isoniemi
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  AlltimeAssists: 3
+  AlltimeGoals: 2
+-
+  PlayerID: 268
+  Number: 25
+  FirstName: Riikka
+  LastName: Heikonen
+  Gender: 1
+  Position: 3
+  Birthyear: 1992
+  AlltimeAssists: 3
+  AlltimeGoals: 3
+-
+  PlayerID: 269
+  Number: 2
+  FirstName: Maria
+  LastName: Viitala
+  Gender: 1
+  Position: 0
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 270
+  Number: 21
+  FirstName: Minna
+  LastName: Ala-Lipasti
+  Gender: 1
+  Position: 3
+  Birthyear: 1985
+  AlltimeAssists: 5
+  AlltimeGoals: 4
+-
+  PlayerID: 271
+  Number: 7
+  FirstName: Sanna
+  LastName: Vuorinen
+  Gender: 1
+  Position: 2
+  Birthyear: 1984
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 272
+  Number: 13
+  FirstName: Noora
+  LastName: Lipponen
+  Gender: 1
+  Position: 2
+  Birthyear: 1984
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 273
+  Number: 20
+  FirstName: Eveliina
+  LastName: Mäki-Jussila
+  Gender: 1
+  Position: 3
+  Birthyear: 1987
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 274
+  Number: 0
+  FirstName: Petri
+  LastName: Kivimäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1988
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 275
+  Number: 21
+  FirstName: Janne
+  LastName: Ojala
+  Gender: 0
+  Position: 3
+  Birthyear: 1978
+  AlltimeAssists: 13
+  AlltimeGoals: 10
+-
+  PlayerID: 276
+  Number: 77
+  FirstName: Juha
+  LastName: Toivio
+  Gender: 0
+  Position: 2
+  Birthyear: 1983
+  AlltimeAssists: 1
+  AlltimeGoals: 7
+-
+  PlayerID: 277
+  Number: 22
+  FirstName: Joakim
+  LastName: Matalamäki
+  Gender: 0
+  Position: 3
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 278
+  Number: 9
+  FirstName: Petri
+  LastName: Haaparanta
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 279
+  Number: 98
+  FirstName: Juuso
+  LastName: Vuorenmäki
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 280
+  Number: 8
+  FirstName: Roope
+  LastName: Pelander
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 281
+  Number: 11
+  FirstName: Roope
+  LastName: Heikinsalo
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 282
+  Number: 12
+  FirstName: Eero
+  LastName: Röyskö
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 283
+  Number: 10
+  FirstName: Tommi
+  LastName: Rahkola
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 284
+  Number: 91
+  FirstName: Ville
+  LastName: Mäkynen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 285
+  Number: 18
+  FirstName: Janne
+  LastName: Kiviharju
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 286
+  Number: 71
+  FirstName: Leevi
+  LastName: Rantanen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 287
+  Number: 24
+  FirstName: Aleksi
+  LastName: Vuorinen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 288
+  Number: 88
+  FirstName: Juha
+  LastName: Salovaara
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 289
+  Number: 7
+  FirstName: Jani
+  LastName: Kivimäki
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 290
+  Number: 19
+  FirstName: Niki
+  LastName: Rantala
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 291
+  Number: 20
+  FirstName: Lauri
+  LastName: Viitala
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 292
+  Number: 50
+  FirstName: Kalle
+  LastName: Mäkynen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 293
+  Number: 21
+  FirstName: Jesse
+  LastName: Pelto-Piri
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 294
+  Number: 6
+  FirstName: Jussi
+  LastName: Rajamäki
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 295
+  Number: 22
+  FirstName: Eetu
+  LastName: Kuusisto
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 296
+  Number: 0
+  FirstName: Jouni
+  LastName: Mäkynen
+  Gender: 0
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 297
+  Number: 24
+  FirstName: Laura
+  LastName: Luuri
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 298
+  Number: 19
+  FirstName: Jenni
+  LastName: Kiviharju
+  Gender: 1
+  Position: 0
+  Birthyear: 1995
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 299
+  Number: 8
+  FirstName: Alina
+  LastName: Metsä-Ketelä
+  Gender: 1
+  Position: 0
+  Birthyear: 1996
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 300
+  Number: 3
+  FirstName: Anna
+  LastName: Tossavainen
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 301
+  Number: 22
+  FirstName: Aurora
+  LastName: Virtanen
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 302
+  Number: 9
+  FirstName: Elina
+  LastName: Viitala
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 303
+  Number: 18
+  FirstName: Petra
+  LastName: Hakoniemi
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 304
+  Number: 88
+  FirstName: Sanna
+  LastName: Mikkonen
+  Gender: 1
+  Position: 3
+  Birthyear: 1986
+  AlltimeAssists: 3
+  AlltimeGoals: 5
+-
+  PlayerID: 305
+  Number: 66
+  FirstName: Sanna-Maija
+  LastName: Loukasmäki
+  Gender: 1
+  Position: 3
+  Birthyear: 1982
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 306
+  Number: 3
+  FirstName: Essi
+  LastName: Valli
+  Gender: 1
+  Position: 2
+  Birthyear: 1981
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 307
+  Number: 18
+  FirstName: Petra
+  LastName: Hakoniemi
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 308
+  Number: 7
+  FirstName: Kiira
+  LastName: Kalliomäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 309
+  Number: 13
+  FirstName: Hanna
+  LastName: Lahtinen
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 310
+  Number: 8
+  FirstName: Oona-Emilia
+  LastName: Latva-Hoppala
+  Gender: 1
+  Position: 0
+  Birthyear: 1999
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 311
+  Number: 24
+  FirstName: Milla
+  LastName: Lehtimäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 312
+  Number: 14
+  FirstName: Emmi
+  LastName: Lähdesmäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 313
+  Number: 20
+  FirstName: Henna
+  LastName: Pakka
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 314
+  Number: 5
+  FirstName: Iida
+  LastName: Rajamäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1999
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 315
+  Number: 11
+  FirstName: Riina
+  LastName: Rajamäki
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 316
+  Number: 12
+  FirstName: Tiia
+  LastName: Siltala
+  Gender: 1
+  Position: 0
+  Birthyear: 2002
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 317
+  Number: 4
+  FirstName: Anna
+  LastName: Tossavainen
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 318
+  Number: 19
+  FirstName: Saija
+  LastName: Valkama
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 319
+  Number: 9
+  FirstName: Elina
+  LastName: Viitala
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 320
+  Number: 22
+  FirstName: Aurora
+  LastName: Virtanen
+  Gender: 1
+  Position: 0
+  Birthyear: 1997
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 321
+  Number: 31
+  FirstName: Virpi
+  LastName: Välimaa
+  Gender: 1
+  Position: 0
+  Birthyear: 1998
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 322
+  Number: 0
+  FirstName: Päivi
+  LastName: Liikala
+  Gender: 1
+  Position: 0
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 323
+  Number: 1
+  FirstName: Harri
+  LastName: Siltala
+  Gender: 0
+  Position: 1
+  Birthyear: 1970
+  AlltimeAssists: 0
+  AlltimeGoals: 3
+-
+  PlayerID: 324
+  Number: 10
+  FirstName: Markku
+  LastName: Ranto
+  Gender: 0
+  Position: 3
+  Birthyear: 1980
+  AlltimeAssists: 2
+  AlltimeGoals: 0
+-
+  PlayerID: 325
+  Number: 44
+  FirstName: Antti
+  LastName: Keskinen
+  Gender: 0
+  Position: 3
+  Birthyear: 1981
+  AlltimeAssists: 2
+  AlltimeGoals: 4
+-
+  PlayerID: 326
+  Number: 29
+  FirstName: Mika
+  LastName: Kiviharju
+  Gender: 0
+  Position: 3
+  Birthyear: 1969
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 327
+  Number: 97
+  FirstName: Jani
+  LastName: Kontiokoski
+  Gender: 0
+  Position: 2
+  Birthyear: 1981
+  AlltimeAssists: 2
+  AlltimeGoals: 2
+-
+  PlayerID: 328
+  Number: 4
+  FirstName: Timo
+  LastName: Talvitie
+  Gender: 0
+  Position: 2
+  Birthyear: 1980
+  AlltimeAssists: 3
+  AlltimeGoals: 0
+-
+  PlayerID: 329
+  Number: 26
+  FirstName: Eero
+  LastName: Leppälä
+  Gender: 0
+  Position: 0
+  Birthyear: 1998
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 330
+  Number: 24
+  FirstName: Heikki
+  LastName: Rantanen
+  Gender: 0
+  Position: 0
+  Birthyear: 1994
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 331
+  Number: 11
+  FirstName: Miika
+  LastName: Huikuri
+  Gender: 0
+  Position: 3
+  Birthyear: 1974
+  AlltimeAssists: 1
+  AlltimeGoals: 2
+-
+  PlayerID: 332
+  Number: 18
+  FirstName: Ville
+  LastName: Valtari
+  Gender: 0
+  Position: 2
+  Birthyear: 1990
+  AlltimeAssists: 1
+  AlltimeGoals: 0
+-
+  PlayerID: 333
+  Number: 30
+  FirstName: Jaakko
+  LastName: Heikkilä
+  Gender: 0
+  Position: 3
+  Birthyear: 1984
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 334
+  Number: 0
+  FirstName: Riku
+  LastName: Harju
+  Gender: 0
+  Position: 0
+  Birthyear: 1993
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 335
+  Number: 0
+  FirstName: Olli
+  LastName: Haapolahti
+  Gender: 0
+  Position: 1
+  Birthyear: 2000
+  AlltimeAssists: 0
+  AlltimeGoals: 0
+-
+  PlayerID: 336
+  Number: 12
+  FirstName: Jussi
+  LastName: Mattila
+  Gender: 0
+  Position: 2
+  Birthyear: 1987
+  AlltimeAssists: 0
+  AlltimeGoals: 3
+...
