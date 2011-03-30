@@ -8,10 +8,13 @@ ul.topnav {
 ul.topnav li {
   float:left;
   margin:0;
-  padding:12px 12px 0 12px;
+  padding:13px 20px 0 20px;
   position:relative; /*--Declare X and Y axis base for sub navigation--*/
-  height:34px;
+  height:32px;
   color:#f7f8fb;
+  text-transform:uppercase;
+  letter-spacing: 0.1em;
+  border-right:1px solid #5565ae;
 }
 
 ul.topnav li img {
@@ -21,6 +24,7 @@ ul.topnav li a{
   color: #f7f8fb;
   display: block;
   float: left;
+  text-decoration:none;
 }
 
 ul.topnav li ul.subnav {
@@ -32,17 +36,19 @@ ul.topnav li ul.subnav {
   width: 200px;
   border: 1px solid #e1e1e2;
   border-top:none;
-  list-style: none;
-  float: left;
+  list-style:none;
+  float:left;
 }
 
 ul.topnav li ul.subnav li{
   clear:both;
   margin:0;
   padding: 10px 5px;
-  width: 200px;
+  width: 190px;
   line-height: 0.6em;
   height:auto;
+  text-transform:none;
+  border:none;
 }
 
 ul.topnav li ul.subnav li.section{
