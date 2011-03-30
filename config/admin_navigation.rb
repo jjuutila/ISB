@@ -49,5 +49,6 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :link_categories, 'Linkit', admin_link_categories_path, :highlights_on => /\/link/
     primary.item :guestbook, 'Vieraskirja', admin_comments_path, :highlights_on => /\/comments/
     primary.item :members, 'Pelaajat', admin_members_path, :highlights_on => /\/members/
+    primary.item :members, 'Joukkueosiot', admin_sections_path, :highlights_on => /\/section/
   end
 end

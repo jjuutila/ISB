@@ -173,6 +173,8 @@ td.action {
   text-align: center;
 }
 
+table thead tr th { padding:0 5px 0 5px; }
+
 #memberSelection {
   width: 100%;
   overflow: hidden;

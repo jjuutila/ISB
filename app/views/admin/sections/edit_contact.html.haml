@@ -1,0 +1,16 @@
+%header
+  %h1 Muokkaa yhteystietoja
+
+%nav#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_sections_path
+  = link_to 'Takaisin', admin_sections_path
+
+%h2= @section
+
+= semantic_form_for @section, :url => update_contact_admin_section_path do |form|  
+  = form.inputs do
+    #help Huom! Tähän lomakkeeseen syötetty HTML-merkkaus näkyy sellaisenaan pääsivuilla.
+    = form.input :contact_info, :label => 'Yhteystiedot'
+    
+  = form.buttons do
+    = form.commit_button :label => 'Tallenna'

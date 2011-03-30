@@ -1,17 +1,26 @@
-%h1 Section
+%header
+  %h1 Joukkueosiot
 
-#sub-menu
-  %ul
-    %li
-      = link_to t('new', :target => Section.human_name), new_admin_section_path()
+%nav#contextNavi
+  %a{:href => new_admin_section_path, :title => 'Luo uusi joukkueosio'}= image_tag('add.png', :size => '16x16')
+  %a{:href => new_admin_section_path}= 'Luo uusi joukkueosio'
 
 %table
   %thead
     %tr
-      Nimi
-    %tr
-      Lapset
-    %tr
-      = t('edit', :target => Section.human_name)
+      %th 
+      %th Joukkueosio
+      %th Muokkaa
+      %th Yhteystiedot
   %tbody
-    = render :partial => 'section_row', :collection => @admin_sections
+    - @sections.each do |section|
+      %tr
+        %td= section
+        %td
+        %td.action= link_to image_tag('pencil.png', :size => '16x16'), edit_admin_section_path(section), :title => 'Muokkaa'
+      - for child in section.sections
+        %tr
+          %td
+          %td= child
+          %td.action= link_to image_tag('pencil.png', :size => '16x16'), edit_admin_section_path(child), :title => 'Muokkaa'
+          %td.action= link_to image_tag('telephone_edit.png', :size => '16x16'), edit_contact_admin_section_path(child), :title => 'Muokkaa'

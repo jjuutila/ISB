@@ -34,9 +34,13 @@ Isb::Application.routes.draw do
     match 'latest_matches' => "matches#latest", :via => :get
     
     resources :news
-    resources :sections
+    resources :sections, :except => [:destroy] do
+      get 'edit_contact', :on => :member
+      put 'update_contact', :on => :member
+    end
+    
     resources :comments, :except => [:new, :create, :show]
-    resources :members, :except => [:delete, :show]
+    resources :members, :except => [:destroy, :show]
     
     resources :seasons do
       resources :partitions, :except => :index

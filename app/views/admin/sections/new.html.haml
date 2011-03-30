@@ -1,5 +1,8 @@
-%h1
-  New Section
+%header
+  %h1 Uusi joukkueosio
 
-= render :partial => "form", :locals => {:url => admin_sections_path(@admin_section)}
-= link_to 'Back', admin_sections_path
+%nav#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_sections_path
+  = link_to 'Takaisin', admin_sections_path
+
+= render :partial => "form", :locals => {:url => admin_sections_path(@section)}

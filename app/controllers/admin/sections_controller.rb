@@ -1,45 +1,23 @@
 # coding: utf-8
 class Admin::SectionsController < Admin::BaseController
-  # GET /admin/sections
-  # GET /admin/sections.xml
+  respond_to :html
+  
   def index
-    @admin_sections = Section.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @admin_sections }
-    end
+    respond_with @sections = Section.top_level
   end
 
-  # GET /admin/sections/1
-  # GET /admin/sections/1.xml
   def show
-    @admin_section = Section.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @admin_section }
-    end
+    respond_with @section = Section.find(params[:id])
   end
 
-  # GET /admin/sections/new
-  # GET /admin/sections/new.xml
   def new
-    @admin_section = Section.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @admin_section }
-    end
+    respond_with @section = Section.new
   end
 
-  # GET /admin/sections/1/edit
   def edit
-    @admin_section = Section.find(params[:id])
+    respond_with @section = Section.find(params[:id])
   end
 
-  # POST /admin/sections
-  # POST /admin/sections.xml
   def create
     @admin_section = Section.new(params[:section])
 
@@ -54,8 +32,6 @@ class Admin::SectionsController < Admin::BaseController
     end
   end
 
-  # PUT /admin/sections/1
-  # PUT /admin/sections/1.xml
   def update
     @admin_section = Section.find(params[:id])
 
@@ -69,16 +45,24 @@ class Admin::SectionsController < Admin::BaseController
       end
     end
   end
-
-  # DELETE /admin/sections/1
-  # DELETE /admin/sections/1.xml
-  def destroy
-    @admin_section = Section.find(params[:id])
-    @admin_section.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(admin_sections_url) }
-      format.xml  { head :ok }
+  
+  def edit_contact
+    @section = Section.find(params[:id])
+    if @section.parent.nil?
+      flash.alert = 'Vain joukkueosioiden historiatietoja voi muokata.'
+      redirect_to admin_sections_path
+    else
+      respond_with @section
+    end 
+  end
+  
+  def update_contact
+    @section = Section.find(params[:id])
+    if @section.update_attributes(params[:section])
+      flash[:notice] = "Yhteystiedot päivitetty." 
+      redirect_to admin_sections_path
+    else
+      render "edit_contact"
     end
   end
 end
