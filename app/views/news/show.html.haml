@@ -5,4 +5,4 @@
     %time{:datetime => html5_datetime(@news.created_at), :pubdate => :pubdate}= @news.created_at
     = " | "
     = @news.sections.to_sentence :two_words_connector => " ja ", :last_word_connector => ", ja "
-  %p= @news.content
+  = auto_link(simple_format(@news.content))

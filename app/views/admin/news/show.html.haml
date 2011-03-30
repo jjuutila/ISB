@@ -8,6 +8,6 @@
     = link_to image_tag('pencil.png', :size => '16x16'), edit_admin_news_path(@news), :title => 'Muokkaa'
     = link_to 'Muokkaa', edit_admin_news_path(@news)
 
-  %p= @news.content
+  = auto_link(simple_format(@news.content))
   
   %time{:datetime => html5_datetime(@news.created_at)}= "Luotu #{@news.created_at}"
