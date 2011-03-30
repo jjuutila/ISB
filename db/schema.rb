@@ -122,7 +122,7 @@ ActiveRecord::Schema.define(:version => 20110330121148) do
     t.string  "slug"
     t.integer "parent_id"
     t.string  "name"
-    t.text    "contact_info", :limit => 500
+    t.text    "contact_info"
   end
 
   create_table "statistics", :force => true do |t|

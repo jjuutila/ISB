@@ -1,6 +1,6 @@
 class ChangeSectionContactInfoToText < ActiveRecord::Migration
   def self.up
-    change_column :sections, :contact_info, :text, :limit => 500
+    change_column :sections, :contact_info, :text
   end
 
   def self.down
