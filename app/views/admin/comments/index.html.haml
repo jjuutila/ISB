@@ -16,6 +16,6 @@
         = link_to image_tag('cross.png', :size => '16x16'), admin_comment_path(comment), :title => 'Poista',
           :confirm => "Haluatko varmasti poistaa vieraskirjaviestin?", :method => :delete
       
-      %p= comment.content
+      = auto_link(simple_format(comment.content))
 
 = paginate @comments

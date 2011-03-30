@@ -12,6 +12,6 @@
       = message.author
       = " - "
       %time{:datetime => html5_datetime(message.created_at)}= message.created_at
-    %p= message.content
+    = auto_link(simple_format(message.content))
 
 = paginate @messages
