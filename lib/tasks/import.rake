@@ -97,6 +97,7 @@ namespace :import do
   end
   
   def load_xml file_name
+    require 'nokogiri'
     Nokogiri::XML(File.open(File.join( RAILS_ROOT, 'db', 'data', "#{file_name}.xml")))
   end
 end
