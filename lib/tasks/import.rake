@@ -89,7 +89,7 @@ namespace :import do
   task :reset => ['db:drop', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :players]
+  task :all => [:sections, :news, :members]
   
   def load_yml file_name
     require 'yaml'
