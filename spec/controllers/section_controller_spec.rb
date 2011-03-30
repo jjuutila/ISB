@@ -44,8 +44,8 @@ describe SectionController do
   
   describe "'GET' news" do
     it "sets requested news posts as @news" do
-      News.should_receive(:in_section).with(mock_section) {[mock_news]}
-      get :news, :section => 'edustus'
+      News.should_receive(:in_section).with(mock_section, 2) {[mock_news]}
+      get :news, :section => 'edustus', :page => 2
       assigns(:news).should == [mock_news]
     end
   end

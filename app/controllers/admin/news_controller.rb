@@ -5,7 +5,7 @@ class Admin::NewsController < Admin::BaseController
   
   def index
     @selected_section = selected_section
-    respond_with @news = News.in_section(@selected_section)
+    respond_with @news = News.in_section(@selected_section, params[:page])
   end
 
   def show

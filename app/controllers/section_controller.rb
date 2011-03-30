@@ -17,7 +17,7 @@ class SectionController < ApplicationController
   end
   
   def news
-    respond_with @news = News.in_section(@section)
+    respond_with @news = News.in_section(@section, params[:page])
   end
   
   def matches

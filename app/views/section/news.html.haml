@@ -1,6 +1,8 @@
 %header
   %h1 Ajankohtaista
 
+= paginate @news
+
 - @news.each do |news_post|
   .entry
     %h2= link_to news_post, news_path(news_post)

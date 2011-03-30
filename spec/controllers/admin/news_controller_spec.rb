@@ -17,8 +17,8 @@ describe Admin::NewsController do
   describe "GET index" do
     it "assigns news in selected section as @news" do
       controller.stub(:selected_section) {mock_section}
-      News.should_receive(:in_section).with(mock_section).and_return([mock_news])
-      get :index
+      News.should_receive(:in_section).with(mock_section, 2) {[mock_news]}
+      get :index, :page => 2
       assigns(:news).should eq([mock_news])
     end
   end
