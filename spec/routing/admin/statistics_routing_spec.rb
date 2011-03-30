@@ -8,7 +8,7 @@ describe Admin::StatisticsController do
         :action => "edit_multiple", :partition_id => '1')
     end
     
-    it "recognizes and generates #edit_multiple" do
+    it "recognizes and generates #update_multiple" do
       { :put => "/admin/partitions/1/statistics/update_multiple" }.should route_to(:controller => "admin/statistics",
         :action => "update_multiple", :partition_id => '1')
     end
