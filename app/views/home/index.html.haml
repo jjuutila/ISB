@@ -3,7 +3,7 @@
   - @news.each do |news_post|
     .entry
       %h2= link_to news_post, news_path(news_post)
-      %meta
+      .meta
         %time{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
         = " | "
         = news_post.sections.to_sentence :two_words_connector => " ja ", :last_word_connector => ", ja "
@@ -13,6 +13,6 @@
   - @upcoming_matches.each do |match|
     .entry
       %h2= link_to match, match_path(match.partition.season.section.slug, match)
-      %meta
+      .meta
         = "#{match.partition.season.section} |"
         %time{:datetime => html5_datetime(match.start_time)}= match.start_time
