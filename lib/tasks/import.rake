@@ -66,7 +66,7 @@ namespace :import do
       end
       
       is_male = false
-      if player["Gender"] == "0"
+      if player["Gender"] == 0
         is_male = true
       end
       
@@ -76,12 +76,15 @@ namespace :import do
         year = 1900
       end
           
-      member = Member.create(:first_name => player["FirstName"], :last_name => player["LastName"], :number => player["Number"],
+      member = Member.new(:first_name => player["FirstName"], :last_name => player["LastName"], :number => player["Number"],
         :birth_year => year, :home_municipality => player["HomeMunicipality"], :all_time_goals => player["AlltimeGoals"],
         :all_time_assists => player["AlltimeAssists"], :position => position, :gender => is_male)
-        
-      puts "Saved member #{member}: #{member.valid?}"
-      puts member.errors if member.errors.count > 0
+      
+      if member.valid?
+        puts "Saved member #{member}"
+      else
+        puts member.errors
+      end
     end
   end
   
