@@ -3,10 +3,10 @@ Isb::Application.routes.draw do
   # first created -> highest priority.
   
   root :to => "home#index", :via => :get
-  match "/uutiset/:id" => "home#show", :via => :get, :as => 'news'
+  match "/uutiset/:id" => "home#show", :via => :get, :as => 'news_post'
   
   constraints(:section => /[a-z0-9-]+/) do
-    match ':section/ajankohtaista' => 'section#news', :via => :get
+    match ':section/ajankohtaista' => 'section#news', :via => :get, :as => "section_news"
     match ':section/ottelut' => 'section#matches', :via => :get, :as => 'matches'
     match ':section/ottelu/:id' => 'section#show_match', :via => :get, :as => 'match'
     match ':section/vieraskirja' => 'section#guestbook', :via => :get, :as => 'guestbook'
