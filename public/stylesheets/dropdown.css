@@ -17,6 +17,8 @@ ul.topnav li {
   border-right:1px solid #5565ae;
 }
 
+ul.topnav li:first-child{ border-left:1px solid #5565ae; }
+
 ul.topnav li img {
   margin:0 0 0 3px;
 }
