@@ -6,6 +6,5 @@
 - @news.each do |news_post|
   .entry
     %h2= link_to news_post, news_path(news_post)
-    %meta
-      %time{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
-      %p= truncate(news_post.content, :length => 120, :separator => ' ')
+    %time.meta{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
+    %p= truncate(news_post.content, :length => 120, :separator => ' ')
