@@ -6,7 +6,7 @@
 = paginate @messages
   
 - @messages.each do |message|
-  %article.comment
+  %article.entry
     %h2= "#{message.author}: #{message.title}"
     %time.meta{:datetime => html5_datetime(message.created_at)}= message.created_at
     = auto_link(simple_format(message.content))

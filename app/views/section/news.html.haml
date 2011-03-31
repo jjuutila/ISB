@@ -4,7 +4,9 @@
 = paginate @news
 
 - @news.each do |news_post|
-  .entry
+  %article.entry
     %h2= link_to news_post, news_path(news_post)
     %time.meta{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
     %p= truncate(news_post.content, :length => 120, :separator => ' ')
+    
+= paginate @news
