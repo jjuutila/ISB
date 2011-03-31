@@ -1,8 +1,6 @@
 %header
   %h1 Vieraskirja
   
-= link_to "Kirjoita viesti", new_guestbook_message_path(@section.slug)
-  
 = paginate @messages
   
 - @messages.each do |message|
