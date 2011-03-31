@@ -84,12 +84,67 @@ namespace :import do
       puts member.errors if member.errors.count > 0
     end
   end
+  
+  desc "Loads guestbook comments from a XML file"
+  task :guestbook => :environment do
+    puts "Loading GUESTBOOK"
+    
+    xml = load_xml "guestbook"
+    guestbook_nodes = xml.xpath("//GuestBook")
+    
+    guestbook_nodes.each do |node|
+      author = node.children.css("Author").text()
+      message = node.children.css("Message").text()
+      section_id = node.children.css("SectionID").text()
+      title = node.children.css("Title").text()
+      date = node.children.css("WrittenOn").text()
+      email = node.children.css("Email").text()
+      ip = node.children.css("IpAddress").text()
+      
+      begin
+        section = Section.find section_id
+        guestbook_post = section.comments.build(:commentable_type => 'Section', :title => title, :content => message,
+          :email => email, :created_at => date, :updated_at => date, :author => author, :ip_addr => ip)
+        
+        if guestbook_post.save
+          puts "Save OK: #{date}"
+        else
+          puts "Discard post: #{guestbook_post.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound
+        puts "ERROR: Section #{section_id} not found!"
+      end
+    end
+  end
+  
+  desc "Loads seasons from a YML file"
+  task :seasons => :environment do
+    puts "Loading SEASONS"
+    yml = load_yml "seasons"
+    
+    yml.each do |season|
+      begin
+        section = Section.find season["SectionID"]
+        
+        new_season = Season.new(:division => season["Division"], :history => season["History"], :start_year => season["StartingYear"],
+          :section => section)
+          
+        if new_season.save
+          puts "Save OK: #{new_season}"
+        else
+          puts "Errors: #{new_season.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound
+        puts "ERROR: Section #{season["SectionID"]} not found!"
+      end
+    end
+  end
 
   desc "This drops the DB and loads the DB schema"
   task :reset => ['db:drop', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :members]
+  task :all => [:sections, :news, :members, :guestbook, :seasons]
   
   def load_yml file_name
     require 'yaml'
