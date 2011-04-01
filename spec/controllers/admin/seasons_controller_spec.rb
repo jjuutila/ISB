@@ -56,6 +56,13 @@ describe Admin::SeasonsController do
       end
     end
 
+    describe "with invalid params" do
+      it "re-renders the 'new' template." do
+        Season.should_receive(:new).with(@params) { mock_season(:save => false, :errors => {:any => "error"}) }
+        post :create, :season => @params
+        response.should render_template("new")
+      end
+    end
   end
   
   describe "GET 'edit'" do        

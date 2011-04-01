@@ -22,10 +22,14 @@ class Admin::SeasonsController < Admin::BaseController
 
   def create
     @season = Season.new(params[:season])
-    @season.partitions.first.season = @season
-    @season.partitions.first.position = 1
-    flash[:notice] = "Uusi kausi luotu." if @season.save
-    respond_with @season, :location => admin_season_path(@season)
+    # respond_with cannot be used because it doesn't seem to work properly when creating
+    # nested models: if an error exists in the underlying model
+    if @season.save
+      flash[:notice] = "Uusi kausi luotu."
+      redirect_to admin_season_path(@season)
+    else
+      render "new"
+    end
   end
 
   def update

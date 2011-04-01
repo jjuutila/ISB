@@ -38,4 +38,12 @@ describe Season do
       lambda { Season.latest(section) }.should raise_error ActiveRecord::RecordNotFound
     end
   end
+
+  context "configure default partition" do
+    it "sets self as partition.season before partition" do
+      season = Season.new :partitions_attributes => {"0" => {:name => "default"}}
+      season.valid?
+      season.partitions.first.season.should == season
+    end
+  end
 end

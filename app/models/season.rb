@@ -6,13 +6,15 @@ class Season < ActiveRecord::Base
   has_many :members, :through => :affairs
   has_many :partitions
   
-  validates_numericality_of :start_year, :only_integer => true, :equal_or_greater_than => 2000,
+  validates_numericality_of :start_year, :only_integer => true, :greater_than => 2000,
     :message => 'Virheellinen aloitusvuosi.'
   validates_presence_of :division, :start_year, :section
   
   accepts_nested_attributes_for :partitions
   
   scope :in_section, lambda {|section| includes(:partitions).where(:section_id => section.id)}
+  
+  before_validation :configure_default_partition
   
   # Gets the latest season in section
   def self.latest(section)
@@ -27,5 +29,13 @@ class Season < ActiveRecord::Base
   
   def timespan
     "#{start_year}-#{start_year + 1}"
+  end
+
+  def configure_default_partition
+    if partitions.length == 1
+      default_partition = partitions.first
+      default_partition.season = self
+      default_partition.position = 1
+    end
   end
 end
