@@ -5,27 +5,6 @@ Isb::Application.routes.draw do
   root :to => "home#index", :via => :get
   match "/uutiset/:id" => "home#show", :via => :get, :as => 'news_post'
   
-  constraints(:section => /[a-z0-9-]+/) do
-    match ':section/ajankohtaista' => 'section#news', :via => :get, :as => "section_news"
-    match ':section/ottelut' => 'section#matches', :via => :get, :as => 'matches'
-    match ':section/ottelu/:id' => 'section#show_match', :via => :get, :as => 'match'
-    match ':section/vieraskirja' => 'section#guestbook', :via => :get, :as => 'guestbook'
-    match ':section/vieraskirja/kirjoita' => 'section#new_guestbook_message', :via => :get, :as => 'new_guestbook_message'
-    match ':section/vieraskirja' => 'section#create_guestbook_message', :via => :post, :as => 'guestbook'
-    match ':section/linkit' => 'section#links', :via => :get, :as => 'links'
-    match ':section/pisteporssi' => 'section#statistics', :via => :get, :as => 'statistics'
-    match ':section/joukkue' => 'section#team', :via => :get, :as => 'team'
-    match ':section/sarjataulukko' => 'section#standings', :via => :get, :as => 'standings'
-    match ':section/yhteystiedot' => 'section#contact_info', :via => :get, :as => 'contact_info'
-    match ':section/pelaaja/:id' => 'section#player', :via => :get, :as => 'player'
-    match ':section' => redirect("/%{section}/ajankohtaista"), :via =>:get
-  end
-  
-  #scope(:name => "section", :path_names => { :new => "uusi", :edit => "muokkaa" }) do  
-    #resources :news, :path => ":section/uutiset"
-    #resources :seasons, :path => "kausi"
-  #end
-  
   namespace 'admin' do
     root :to => "News#index", :via => :get
     match "change_section" => "base#change_section", :via => :put, :as => 'change_section'
@@ -63,5 +42,21 @@ Isb::Application.routes.draw do
     resources :link_categories do
       resources :links, :except => [:index, :show]
     end
+  end
+  
+  constraints(:section => /[a-z0-9-]+/) do
+    match ':section/ajankohtaista' => 'section#news', :via => :get, :as => "section_news"
+    match ':section/ottelut' => 'section#matches', :via => :get, :as => 'matches'
+    match ':section/ottelu/:id' => 'section#show_match', :via => :get, :as => 'match'
+    match ':section/vieraskirja' => 'section#guestbook', :via => :get, :as => 'guestbook'
+    match ':section/vieraskirja/kirjoita' => 'section#new_guestbook_message', :via => :get, :as => 'new_guestbook_message'
+    match ':section/vieraskirja' => 'section#create_guestbook_message', :via => :post, :as => 'guestbook'
+    match ':section/linkit' => 'section#links', :via => :get, :as => 'links'
+    match ':section/pisteporssi' => 'section#statistics', :via => :get, :as => 'statistics'
+    match ':section/joukkue' => 'section#team', :via => :get, :as => 'team'
+    match ':section/sarjataulukko' => 'section#standings', :via => :get, :as => 'standings'
+    match ':section/yhteystiedot' => 'section#contact_info', :via => :get, :as => 'contact_info'
+    match ':section/pelaaja/:id' => 'section#player', :via => :get, :as => 'player'
+    match ':section' => redirect("/%{section}/ajankohtaista"), :via =>:get
   end
 end
