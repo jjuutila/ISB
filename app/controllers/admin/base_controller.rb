@@ -23,8 +23,7 @@ class Admin::BaseController < ActionController::Base
   end
   
   def change_section
-  	selected_section_id = params[:selected_section][:id]
-  	set_selected_section Section.find(selected_section_id)
+  	set_selected_section Section.find_by_slug(params[:section])
   	redirect_to :back
   end
 end

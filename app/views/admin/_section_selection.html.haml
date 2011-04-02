@@ -1,4 +1,32 @@
-%form(action= admin_change_section_path method='POST')
-  %label{:for => "selected_section_name"} Joukkueosio
-  =collection_select(:selected_section, :id, sections, :id, :name, :prompt => true)
-  %input(type='submit' value='Valitse')
+- content_for :javascript do
+  = javascript_include_tag "hoverIntent.js"
+
+  :javascript
+    $(document).ready(function() {
+      hiConfig = {
+        sensitivity: 2,
+        interval: 200, 
+        timeout: 300,
+        over: function() {
+          $(this).find("#combo-box-container").slideDown('fast').show();
+        },
+        out: function() {
+          $(this).find("#combo-box-container").hide();
+        }
+      }
+      $("#sections-combo-box").hoverIntent(hiConfig)
+    });
+
+#sections-combo-box
+  .inner-combo-box
+    = "Joukkueosio:"
+    %span#selected-section= @selected_section
+    = image_tag "triangle_orange.png", :size => "16x8"
+  
+  #combo-box-container
+    - Section.top_level.each do |section|
+      %ul.combo-box-items
+        %li
+          %h2= section
+        - for child_section in section.sections
+          %li= link_to child_section, admin_change_section_path(:section => child_section.slug), :method => :put

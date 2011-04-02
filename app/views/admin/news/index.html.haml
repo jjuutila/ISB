@@ -1,11 +1,11 @@
+= section_selection
+
 %header
   %h1 Ajankohtaista
 
 %nav#contextNavi
   %a{:href => new_admin_news_path, :title => 'Luo uusi uutinen'}= image_tag('add.png')
   %a{:href => new_admin_news_path}= 'Luo uusi uutinen'
-
-= section_selection
 
 = paginate @news
 

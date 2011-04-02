@@ -27,7 +27,7 @@ Isb::Application.routes.draw do
   
   namespace 'admin' do
     root :to => "News#index", :via => :get
-    match "change_section" => "base#change_section"
+    match "change_section" => "base#change_section", :via => :put, :as => 'change_section'
     match "latest_standings" => "team_standings#latest", :via => :get
     match "current_team" => "roles#current_team", :via => :get
     match 'latest_statistics' => "statistics#latest", :via => :get

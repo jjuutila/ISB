@@ -15,7 +15,7 @@
     %title= "ISB Hallintasivut - " + controller.controller_name.capitalize
     = csrf_meta_tag
     = javascript_include_tag "modernizr-1.6.min"
-    = stylesheet_link_tag "boilerplate", "formtastic.css", "formtastic_changes.css", "admin_style.css"
+    = stylesheet_link_tag "boilerplate", "formtastic.css", "formtastic_changes.css", "admin_style.css", "admin_section_selection"
   
   %body
     #wrapper
@@ -43,5 +43,5 @@
       
   %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"}
   = javascript_tag %{!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery.min.js"%3E%3C/script%3E'))}
-  = javascript_include_tag "jquery-ui.min"
+  = javascript_include_tag "rails.js", "jquery-ui.min"
   = yield :javascript
