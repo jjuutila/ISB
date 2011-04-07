@@ -6,5 +6,7 @@
         = link_to top_level_section, '#'
         %ul.subnav
           - top_level_section.sections.each do |child|
-            %li.section= link_to child, {:section => child.slug, :controller => "section", :action => "news" }
-            %li= link_to 'Ajankohtaista', {:section => child.slug, :controller => "section", :action => "news" }
+            %li.section= link_to child, section_news_path(child.slug)
+            %li= link_to 'Vieraskirja', guestbook_path(child.slug)
+            %li= link_to 'Sarjataulukko', standings_path(child.slug)
+            %li= link_to 'Tilastot', statistics_path(child.slug)
