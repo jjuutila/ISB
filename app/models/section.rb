@@ -5,6 +5,7 @@ class Section < ActiveRecord::Base
   has_and_belongs_to_many :news
   has_many :comments, :as => :commentable
   has_many :link_categories
+  has_many :seasons
   
   validates_presence_of :name, :slug
   

@@ -5,6 +5,7 @@ describe Section do
   context "validations" do
     it { should belong_to(:parent) }
     it { should have_many(:sections) }
+    it { should have_many(:seasons) }
     
     it { should have_and_belong_to_many(:news) }
 
