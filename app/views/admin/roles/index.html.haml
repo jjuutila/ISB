@@ -1,5 +1,5 @@
 - content_for :javascript do
-  = javascript_include_tag "dragdrop.js"
+  = javascript_include_tag "dragdrop.js", "text-change.js", "member_search.js"
   :javascript
     $(document).ready(function() {
       ddManager = new DragDropManager();
@@ -7,6 +7,8 @@
                     receiving_element: 'drop-place',
                     remote: { url: {base: "/admin/seasons/#{@season.id}/roles", format: ".js"}}
                     });
+                    
+      search = new MemberSearch()
     });
 
 %h1 Joukkue kaudella #{@season}
@@ -14,27 +16,30 @@
 #contextNavi
   = link_to image_tag('arrow_left.png', :size => '16x16'), admin_seasons_path
   = link_to 'Takaisin', admin_seasons_path
-  \|
 
-.help
-  = "Huom. Muutokset tallentuvat heti, kun pelaaja raahataan johonkin laatikoista."
+.help= "Huom. Muutokset tallentuvat heti, kun pelaaja raahataan johonkin laatikoista."
 
-#memberSelection
-  .memberColumn
+#member-selection
+  .member-column
     %h2 Kaikki jäsenet
+    
+    %div#member-search
+      %label{:for => :member_filter}= "Hae nimellä:"
+      = search_field_tag :member_filter
+    
     %ul{:class => "drop-place draggable-elements", :id => "role-"}
       - @unassigned_members.each do |member|
         %li{:id => "id-#{member.id}"}= member
   
-  .selectedTeam
+  .selected-team
     %h2 Joukkueeseen valitut
-    .memberColumn
+    .member-column
       %h3 Pelaajat
       %ul{:class => "drop-place draggable-elements", :id => "role-player"}
         - @players.each do |player|
           %li{:id => "id-#{player.id}"}= player
           
-    .memberColumn
+    .member-column
       %h3 Valmentajat
       %ul{:class => "drop-place draggable-elements", :id => "role-coach"}
         - @coaches.each do |coach|

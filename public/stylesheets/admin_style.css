@@ -175,35 +175,41 @@ td.action {
 
 table thead tr th { padding:0 5px 0 5px; }
 
-#memberSelection {
+#member-selection {
   width: 100%;
   overflow: hidden;
 }
 
-#memberSelection h2 {
+#member-selection h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.selectedTeam {
-  border: solid 1px #e4dee1;
-  width: 460px;
-  overflow: hidden;
-  padding:0 10px 0 10px;
+.selected-team {
+  border:solid 1px #e4dee1;
+  width:455px;
+  overflow:hidden;
+  padding:0 10px 10px 10px;
 }
 
-.memberColumn {
+.member-column {
   float:left;
-  width:200px;
+  width:220px;
   min-height: 40px;
   margin-right:15px;
 }
 
-.memberColumn h3 {
-  margin-bottom:0;
-  line-height: 0.7em;
+div.member-column:last-child {
+  margin-right:0;
 }
 
-.memberColumn ul {
+.member-column h3 {
+  margin-bottom:10px;
+  font:bold 15px sans-serif;
+}
+
+.member-column ul {
+  margin:10px 0 0 0;
   padding:4px;
   background-color:#C4D1EB;
   border:1px solid #e4dee1;
@@ -211,23 +217,23 @@ table thead tr th { padding:0 5px 0 5px; }
   list-style:none;
 }
 
-.memberColumn li {
+.member-column li {
   margin:3px;
   padding-left:5px;
   background-color:#FFFFFF;
   border: solid 1px #e4dee1;
-  line-height: 1.9em;
+  line-height: 2em;
   cursor:move;
 }
-.memberColumn li:last-child {
+.member-column li:last-child {
   margin-bottom:1.9em;
 }
 
-.ui-draggable-dragging {
-  list-style: none;
-}
-.ui-state-hover {
-  background-color: #4477CC;
+#member-search input { width: 98%; }
+
+li.ui-draggable-dragging {
+  list-style:none;
+  font-weight:bold;
 }
 
 h1.postTitle {
