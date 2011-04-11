@@ -1,0 +1,23 @@
+%header
+  %h1= 'All-Time pistepörssi'
+
+%nav#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_path(@season)
+  = link_to 'Takaisin', admin_season_path(@season)
+
+%p= "Pelaajat kaudelta #{@season.section}: #{@season}."
+
+= form_tag(alltime_statistics_admin_season_path(@season), :method => 'put') do
+  %table
+    %thead
+      %tr
+        %th
+        %th M
+        %th S
+      %tbody
+        - for player in @players
+          %tr{ :class => [cycle(:odd, :even), !player.errors.empty? && "row_contains_errors"] }
+            %td= player
+            %td= number_field_tag "all_time_statistics[#{player.id}][all_time_goals]", player.all_time_goals, :size => 3, :in => 0...300
+            %td= number_field_tag "all_time_statistics[#{player.id}][all_time_assists]", player.all_time_assists, :size => 3, :in => 0...300
+  = submit_tag 'Tallenna'

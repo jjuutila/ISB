@@ -3,11 +3,13 @@
 %header
   %h1= 'Tilastot ja joukkue'
 
-#contextNavi
+%nav#contextNavi
   %a{:href => new_admin_season_path, :title => 'Luo uusi kausi'}= image_tag('add.png', :size => '16x16')
   %a{:href => new_admin_season_path}= 'Luo uusi kausi'
   \|
   = link_to 'Pistepörssi', admin_latest_statistics_path
+  \|
+  = link_to_unless @seasons.blank?, 'All-Time pistepörssi', alltime_statistics_admin_season_path(@seasons.first)
   \|
   = link_to 'Sarjataulukko', admin_latest_standings_path
   \|
@@ -19,7 +21,9 @@
   %table
     %thead
       %tr
-        %th{:colspan => 3}= 'Kaudet'
+        %th
+        %th Muokkaa
+        %th Poista
     
     %tbody
       - for season in @seasons

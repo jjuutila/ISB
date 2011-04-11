@@ -9,19 +9,22 @@ describe Admin::StatisticsController do
     end
   end
   
+  def mock_member(stubs={})
+    (@mock_member ||= mock_model(Member).as_null_object).tap do |member|
+      member.stub(stubs) unless stubs.empty?
+    end
+  end
+  
   before(:each) do
-    @season = mock_model(Season)
-    Season.stub(:find).with(@season.id) { @season }
-    
     @partition = mock_model(Partition)
-    Partition.stub(:find).with(@partition.id) { @partition }
+    Partition.stub(:find).with(3) { @partition }
   end
   
   describe "GET edit_multiple" do
     it "assigns the requested partitions statistics as @statistics" do
       Statistic.should_receive(:where).with("partition_id = ?", @partition.id) { [mock_statistic] }
       
-      get :edit_multiple, :partition_id => @partition.id
+      get :edit_multiple, :partition_id => 3
       assigns(:statistics).should == [mock_statistic]
       assigns(:partition).should == @partition
     end
@@ -29,7 +32,7 @@ describe Admin::StatisticsController do
   
   describe "POST update_multiple" do
     before(:each) do
-      @params = {:partition_id => @partition.id, :statistics => {1 => :params}}
+      @params = {:partition_id => 3, :statistics => {1 => :params}}
     end
     
     describe "with valid params" do
@@ -88,8 +91,6 @@ describe Admin::StatisticsController do
     before(:each) do
       @section = mock_model(Section)
       controller.stub(:selected_section) { @section }
-      
-      @partition.stub(:season) { @season }
     end
     
     it "redirects to the latest season's latest partition's statistics" do
@@ -107,4 +108,97 @@ describe Admin::StatisticsController do
     end
   end
 
+
+  describe "GET 'edit_all_time_statistics'" do
+    before(:each) do
+      @section = mock_model(Section)
+      controller.stub(:selected_section) { @section }
+      
+      @season = mock_model(Season)
+      Season.stub(:find).with(5) { @season }
+
+      Member.stub(:with_role_in_season).with("player", @season) {[mock_member]}
+    end
+    
+    it "assigns requested season as @season" do
+      get :edit_all_time_statistics, :id => 5
+      assigns(:season).should == @season
+    end
+    
+    it "assigns players in requested season as @player" do
+      get :edit_all_time_statistics, :id => 5
+      assigns(:players).should == [mock_member]
+    end
+  end
+  
+  describe "POST 'update_all_time_statistics'" do
+    before(:each) do
+      @params = { :id => 5, :all_time_statistics => {1 => :params} }
+      
+      @season = mock_model(Season)
+      Season.stub(:find).with(5) { @season }
+    end
+    
+    describe "with valid params" do
+      before(:each) do
+        Member.stub(:update) { [mock_member] }
+      end
+      
+      it "updates all time statistics" do
+        Member.should_receive(:update).with([1], [:params]) { [mock_member] }
+        put :update_all_time_statistics, @params
+      end
+      
+      it "redirects to season" do
+        put :update_all_time_statistics, @params
+        response.should redirect_to admin_season_path @season
+      end
+      
+      it "sets flash.notice" do
+        put :update_all_time_statistics, @params
+        flash.notice.should == "All-Time pistepörssi päivitetty."
+      end
+      
+      it "assigns requested season as @season" do
+        put :update_all_time_statistics, @params
+        assigns(:season).should == @season
+      end
+    end
+    
+    describe "with invalid params" do
+      before(:each) do
+        Member.stub(:update) { [mock_member(:errors => {:anything => "error"})] }
+        
+        @section = mock_model(Section)
+        controller.stub(:selected_section) { @section }
+      end
+      
+      it "renders the edit_all_time_statistics view" do
+        put :update_all_time_statistics, @params
+        response.should render_template(:edit_all_time_statistics)
+      end
+      
+      it "assigns the edited players as @players" do
+        put :update_all_time_statistics, @params
+        assigns(:players).should == [mock_member]
+      end
+      
+      it "sets flash.notice" do
+        put :update_all_time_statistics, @params
+        flash.alert.should == "All-Time pistepörssi päivitettiin vain osittain, koska joissain kentissä on virheitä."
+      end
+      
+      it "redirects to edit_all_time_statistics if any of the members is not found" do
+        Member.stub(:update).and_raise(ActiveRecord::RecordNotFound)
+        put :update_all_time_statistics, @params
+        response.should redirect_to alltime_statistics_admin_season_path @season
+      end
+      
+      it "sets flash.notice if any of the statistic is not found" do
+        Member.stub(:update).and_raise(ActiveRecord::RecordNotFound)
+        put :update_all_time_statistics, @params
+        flash.alert.should == "All-Time pistepörssi päivitettiin vain osittain, koska joitain pelaajia ei löytynyt tietokannasta."
+      end
+    end
+  end
 end

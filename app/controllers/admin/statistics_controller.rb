@@ -1,7 +1,7 @@
 # coding: utf-8
 class Admin::StatisticsController < Admin::BaseController
   respond_to :html
-  before_filter :get_partition, :except => [:latest]
+  before_filter :get_partition, :except => [:latest, :edit_all_time_statistics, :update_all_time_statistics]
   
   def edit_multiple
     respond_with @statistics = Statistic.where("partition_id = ?", @partition.id)
@@ -34,6 +34,32 @@ class Admin::StatisticsController < Admin::BaseController
       redirect_to edit_multiple_admin_partition_statistics_path(latest_partition)
     rescue
       redirect_to admin_seasons_path
+    end
+  end
+  
+  def edit_all_time_statistics
+    @season = Season.find params[:id]
+    @players = Member.with_role_in_season("player", @season)
+  end
+  
+  def update_all_time_statistics
+    all_time_params = params[:all_time_statistics]
+    @season = Season.find params[:id]
+    
+    begin
+      @players = Member.update all_time_params.keys, all_time_params.values
+      players_with_error = @players.find_all {|s| !s.errors.empty?}
+    
+      if players_with_error.empty?
+        flash.notice = "All-Time pistepörssi päivitetty."
+        redirect_to admin_season_path @season
+      else
+        flash.alert = "All-Time pistepörssi päivitettiin vain osittain, koska joissain kentissä on virheitä."
+        render :edit_all_time_statistics
+      end
+    rescue ActiveRecord::RecordNotFound
+      flash.alert = "All-Time pistepörssi päivitettiin vain osittain, koska joitain pelaajia ei löytynyt tietokannasta."
+      redirect_to alltime_statistics_admin_season_path @season
     end
   end
   

@@ -25,6 +25,9 @@ Isb::Application.routes.draw do
     resources :seasons do
       resources :partitions, :except => :index
       resources :roles, :except => [:show, :new, :edit]
+      
+      get 'alltime_statistics', :on => :member, :controller => :statistics, :action => :edit_all_time_statistics
+      put 'alltime_statistics', :on => :member, :controller => :statistics, :action => :update_all_time_statistics
     end
     
     resources :partitions, :except => :index do
