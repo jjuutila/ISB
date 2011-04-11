@@ -47,5 +47,25 @@ describe Member do
       member.all_time_assists.should == 3
       member.all_time_goals.should == 12
     end
-  end  
+  end
+  
+  context "with_role_in_season" do
+    before(:each) do
+      @season = mock_model(Season)
+      
+      @player = Factory.create(:member)
+      @player.affairs.create(:season => @season, :role => "player")
+      
+      @coach = Factory.create(:member)
+      @coach.affairs.create(:season => @season, :role => "coach")
+    end
+    
+    it "gets members assigned as player in specified season" do
+      Member.with_role_in_season("player", @season).should == [@player]
+    end
+    
+    it "gets members assigned as coach in specified season" do
+      Member.with_role_in_season("coach", @season).should == [@coach]
+    end
+  end
 end
