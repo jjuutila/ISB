@@ -5,3 +5,4 @@ tmp/**/*
 .DS_Store
 .project
 public/system/**/*
+config/database.yml
