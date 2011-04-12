@@ -1,7 +1,7 @@
 # coding: utf-8
 class Admin::StatisticsController < Admin::BaseController
   respond_to :html
-  before_filter :get_partition, :except => [:latest, :edit_all_time_statistics, :update_all_time_statistics]
+  before_filter :get_partition, :except => [:latest, :edit_all_time_statistics, :update_all_time_statistics, :latest_all_time]
   
   def edit_multiple
     respond_with @statistics = Statistic.where("partition_id = ?", @partition.id)
@@ -60,6 +60,15 @@ class Admin::StatisticsController < Admin::BaseController
     rescue ActiveRecord::RecordNotFound
       flash.alert = "All-Time pistepörssi päivitettiin vain osittain, koska joitain pelaajia ei löytynyt tietokannasta."
       redirect_to alltime_statistics_admin_season_path @season
+    end
+  end
+  
+  def latest_all_time
+    begin
+      latest_season = Season.latest selected_section
+      redirect_to alltime_statistics_admin_season_path(latest_season)
+    rescue
+      redirect_to admin_seasons_path
     end
   end
   

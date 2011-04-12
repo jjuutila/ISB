@@ -201,4 +201,26 @@ describe Admin::StatisticsController do
       end
     end
   end
+  
+  describe "GET 'latest_all_time'" do
+    before(:each) do
+      @season = mock_model(Season)
+      @section = mock_model(Section)
+      controller.stub(:selected_section) { @section }
+    end
+    
+    it "redirects to the latest season all-time statistics" do
+      Season.should_receive(:latest).with(@section) { @season }
+      
+      get 'latest_all_time'
+      response.should redirect_to alltime_statistics_admin_season_path @season
+    end
+    
+    it "redirects to seasons if no partition is found" do
+      Season.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
+      
+      get 'latest_all_time'
+      response.should redirect_to admin_seasons_path
+    end
+  end
 end

@@ -12,6 +12,7 @@ Isb::Application.routes.draw do
     match "current_team" => "roles#current_team", :via => :get
     match 'latest_statistics' => "statistics#latest", :via => :get
     match 'latest_matches' => "matches#latest", :via => :get
+    match 'latest_all_time' => "statistics#latest_all_time", :via => :get
     
     resources :news
     resources :sections, :except => [:destroy] do

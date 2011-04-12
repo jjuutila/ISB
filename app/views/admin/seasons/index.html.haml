@@ -7,15 +7,15 @@
   %a{:href => new_admin_season_path, :title => 'Luo uusi kausi'}= image_tag('add.png', :size => '16x16')
   %a{:href => new_admin_season_path}= 'Luo uusi kausi'
   \|
-  = link_to 'Pistepörssi', admin_latest_statistics_path
+  = link_to_unless @seasons.blank?, 'Pistepörssi', admin_latest_statistics_path
   \|
-  = link_to_unless @seasons.blank?, 'All-Time pistepörssi', alltime_statistics_admin_season_path(@seasons.first)
+  = link_to_unless @seasons.blank?, 'All-Time pistepörssi', admin_latest_all_time_path
   \|
-  = link_to 'Sarjataulukko', admin_latest_standings_path
+  = link_to_unless @seasons.blank?, 'Sarjataulukko', admin_latest_standings_path
   \|
-  = link_to 'Ottelut', admin_latest_matches_path
+  = link_to_unless @seasons.blank?, 'Ottelut', admin_latest_matches_path
   \|
-  = link_to 'Joukkue', admin_current_team_path
+  = link_to_unless @seasons.blank?, 'Joukkue', admin_current_team_path
 
 - unless @seasons.blank?
   %table
