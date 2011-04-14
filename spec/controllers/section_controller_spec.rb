@@ -215,4 +215,13 @@ describe SectionController do
       assigns(:member).should == mock_player
     end
   end
+  
+  describe "GET 'all_time_statistics'" do
+    it "assigns all members as @players that have 'player' role in a season" do
+      player = mock_model(Member)
+      Member.should_receive(:players_in_any_season).with().and_return([player])
+      get :all_time_statistics, :section => 'edustus'
+      assigns(:players).should == [player]
+    end
+  end
 end

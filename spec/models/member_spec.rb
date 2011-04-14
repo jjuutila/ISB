@@ -68,4 +68,24 @@ describe Member do
       Member.with_role_in_season("coach", @season).should == [@coach]
     end
   end
+  
+  context "players_in_any_season" do
+    before(:each) do
+      season = mock_model(Season)
+      
+      @player = Factory.create(:member)
+      @player.affairs.create(:season => season, :role => "player")
+      
+      @coach = Factory.create(:member)
+      @coach.affairs.create(:season => season, :role => "coach")
+      
+      # Other season for checking duplicates
+      other_season = mock_model(Season)
+      @player.affairs.create(:season => other_season, :role => "player")
+    end
+    
+    it "gets members that are assigned to a season as a player" do
+      Member.players_in_any_season.should == [@player]
+    end
+  end 
 end

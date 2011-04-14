@@ -95,4 +95,8 @@ class SectionController < ApplicationController
   def player
     respond_with @member = Member.find(params[:id]) 
   end
+  
+  def all_time_statistics
+    respond_with @players = Member.players_in_any_season
+  end
 end

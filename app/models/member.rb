@@ -41,7 +41,13 @@ class Member < ActiveRecord::Base
   
   scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name ASC") }
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }
-  scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}
+  scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}  
+  
+  def self.players_in_any_season
+    # In PostreSQL all selected columns (except aggregated ones) must appear in the group-by clause.
+    Member.group(self.col_list).joins(:affairs).where(:affairs => {:role => :player}).
+      order("all_time_goals + all_time_assists DESC, all_time_goals DESC")
+  end
   
   def self.with_role_in_season(role, season)
     with_role(role).in_season(season)
@@ -60,5 +66,10 @@ class Member < ActiveRecord::Base
   def set_defaults
     self.all_time_assists = 0 unless self.all_time_assists
     self.all_time_goals = 0 unless self.all_time_goals
+  end
+  
+  # Creates a comma separeted list of columns in 'members' table
+  def self.col_list
+    Member.column_names.collect {|c| "members.#{c}"}.join(",")
   end
 end

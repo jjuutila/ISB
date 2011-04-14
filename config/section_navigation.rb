@@ -6,7 +6,9 @@ SimpleNavigation::Configuration.run do |navigation|
     end
     primary.item :team, 'Joukkue', team_path(@section.slug)
     primary.item :matches, 'Ottelut', matches_path(@section.slug)
-    primary.item :statistics, 'Pistepörssi', statistics_path(@section.slug)
+    primary.item :statistics, 'Pistepörssi', statistics_path(@section.slug) do |statistics|
+      statistics.item :all_time, "All-Time", all_time_statistics_path(@section.slug)
+    end
     primary.item :standings, 'Sarjataulukko', standings_path(@section.slug)
     primary.item :links, 'Linkit', links_path(@section.slug)
     primary.item :contact_info, 'Yhteystiedot', contact_info_path(@section.slug)

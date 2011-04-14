@@ -1,0 +1,17 @@
+%header
+  %h1= "All-Time pistepörssi"
+
+%table#statistics
+  %thead
+    %tr
+      %th
+      %th M
+      %th S
+      %th P
+    %tbody
+      - for player in @players
+        %tr{ :class => cycle(:odd, :even) }
+          %td= player
+          %td= player.all_time_goals
+          %td= player.all_time_assists
+          %td= player.all_time_points
