@@ -101,6 +101,7 @@ GEM
     paperclip (2.3.10)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
+    pg (0.10.1)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -177,6 +178,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   paperclip (~> 2.3)
+  pg
   rails (= 3.0.6)
   rspec-rails
   ruby-debug
