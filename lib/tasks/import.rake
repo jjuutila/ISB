@@ -80,7 +80,7 @@ namespace :import do
         :birth_year => year, :home_municipality => player["HomeMunicipality"], :all_time_goals => player["AlltimeGoals"],
         :all_time_assists => player["AlltimeAssists"], :position => position, :gender => is_male)
       
-      if member.valid?
+      if member.save
         puts "Saved member #{member}"
       else
         puts member.errors
