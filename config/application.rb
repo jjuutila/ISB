@@ -45,10 +45,10 @@ module Isb
     
     # Configure Devise to use admin layout. This way custom Devise controllers aren't needed.
     config.to_prepare do
-      Devise::SessionsController.layout "admin/application"
-      Devise::ConfirmationsController.layout "admin/application"
-      Devise::UnlocksController.layout "admin/application"
-      Devise::PasswordsController.layout "admin/application"
+      Devise::SessionsController.layout "admin/devise"
+      Devise::ConfirmationsController.layout "admin/devise"
+      Devise::UnlocksController.layout "admin/devise"
+      Devise::PasswordsController.layout "admin/devise"
     end
   end
 end
