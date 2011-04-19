@@ -6,6 +6,9 @@ Isb::Application.routes.draw do
   match "/uutiset/:id" => "home#show", :via => :get, :as => 'news_post'
   
   namespace 'admin' do
+    devise_for :users, :controllers => { :passwords => "devise/passwords", :sessions => "devise/sessions",
+      :confirmations => "devise/confirmations" }
+    
     root :to => redirect("/admin/news"), :via => :get
     match "change_section" => "base#change_section", :via => :put, :as => 'change_section'
     match "latest_standings" => "team_standings#latest", :via => :get

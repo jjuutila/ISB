@@ -1,6 +1,6 @@
 # coding: utf-8
 class Admin::BaseController < ActionController::Base
-  before_filter :set_locale
+  before_filter :set_locale, :authenticate_admin_user!
   protect_from_forgery
   layout 'admin/application'
   
@@ -25,5 +25,10 @@ class Admin::BaseController < ActionController::Base
   def change_section
   	set_selected_section Section.find_by_slug(params[:section])
   	redirect_to :back
+  end
+  
+  # Overwriting the sign_in redirect path method
+  def after_sign_in_path_for(resource_or_scope)
+    admin_news_index_path
   end
 end

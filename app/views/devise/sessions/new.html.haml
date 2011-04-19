@@ -1,0 +1,18 @@
+%header
+  %h1 Kirjaudu sisään
+
+= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+  %p
+    = f.label :email, "Sähköposti"
+    %br/
+    = f.email_field :email
+  %p
+    = f.label :password, "Salasana"
+    %br/
+    = f.password_field :password
+  - if devise_mapping.rememberable?
+    %p
+      = f.check_box :remember_me
+      = f.label :remember_me
+  %p= f.submit "Kirjaudu"
+= render :partial => "devise/shared/links"

@@ -11,6 +11,7 @@ gem 'kaminari'
 gem 'simple-navigation'
 gem 'paperclip', '~> 2.3'
 gem 'pg'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
@@ -25,7 +26,3 @@ group :development, :test do
   gem 'capybara'
   gem 'jasmine'
 end
-
-#group :production do
-  #gem 'pg'
-#end

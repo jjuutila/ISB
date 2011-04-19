@@ -42,5 +42,13 @@ module Isb
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # Configure Devise to use admin layout. This way custom Devise controllers aren't needed.
+    config.to_prepare do
+      Devise::SessionsController.layout "admin/application"
+      Devise::ConfirmationsController.layout "admin/application"
+      Devise::UnlocksController.layout "admin/application"
+      Devise::PasswordsController.layout "admin/application"
+    end
   end
 end
