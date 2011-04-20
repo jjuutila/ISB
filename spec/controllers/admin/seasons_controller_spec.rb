@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe Admin::SeasonsController do
+  user_login
+
   def mock_season(stubs={})
     (@mock_season ||= mock_model(Season).as_null_object).tap do |season|
       season.stub(stubs) unless stubs.empty?

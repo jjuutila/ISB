@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe Admin::RolesController do
+  user_login
 
   def mock_affair(stubs={})
     @mock_affair ||= mock_model(Affair, stubs).as_null_object
@@ -19,7 +20,7 @@ describe Admin::RolesController do
       Season.stub(:find).with(2) { mock_season }
     end
     
-    it "assigns the requested season as @season do" do
+    it "assigns the requested season as @season" do
       get :index, :season_id => 2
       assigns(:season).should eq(mock_season)
     end

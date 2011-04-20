@@ -2,6 +2,8 @@
 require 'spec_helper'
 
 describe Admin::NewsController do
+  user_login
+  
   def mock_news(stubs={})
     (@mock_news ||= mock_model(News).as_null_object).tap do |news|
       news.stub(stubs) unless stubs.empty?

@@ -2,7 +2,8 @@
 require 'spec_helper'
 
 describe Admin::LinkCategoriesController do
-
+  user_login
+  
   def mock_link_category(stubs={})
     @mock_link_category ||= mock_model(LinkCategory, stubs).as_null_object
   end

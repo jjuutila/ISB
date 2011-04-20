@@ -2,7 +2,8 @@
 require 'spec_helper'
 
 describe Admin::LinksController do
-
+  user_login
+  
   def mock_link(stubs={})
     @mock_link ||= mock_model(Link, stubs).as_null_object
   end

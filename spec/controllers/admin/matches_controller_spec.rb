@@ -2,7 +2,8 @@
 require 'spec_helper'
 
 describe Admin::MatchesController do
-
+  user_login
+  
   def mock_match(stubs={})
     @mock_match ||= mock_model(Match, stubs).as_null_object
   end

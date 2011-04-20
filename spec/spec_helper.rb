@@ -3,6 +3,17 @@ require 'spork'
 
 ENV["RAILS_ENV"] ||= 'test'
 
+module ControllerMacros
+  def user_login
+    before(:each) do
+      @user = Factory.build(:user)
+      @user.confirm!
+      @user.save!
+      sign_in @user
+    end
+  end
+end
+
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However, 
   # if you change any configuration or code from libraries loaded here, you'll
@@ -32,6 +43,10 @@ Spork.prefork do
     # examples within a transaction, remove the following line or assign false
     # instead of true.
     config.use_transactional_fixtures = true
+    
+    # Device helpers
+    config.include Devise::TestHelpers, :type => :controller
+    config.extend ControllerMacros, :type => :controller
   end
   
 end

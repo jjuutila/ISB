@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe Admin::TeamStandingsController do
-
+  user_login
+  
   def mock_team_standing(stubs={})
     (@mock_team_standing ||= mock_model(TeamStanding).as_null_object).tap do |team_standing|
       team_standing.stub(stubs) unless stubs.empty?

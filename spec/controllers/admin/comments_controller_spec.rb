@@ -2,6 +2,8 @@
 require 'spec_helper'
 
 describe Admin::CommentsController do
+  user_login
+  
   def mock_section(stubs={})
     (@mock_section ||= mock_model(Section).as_null_object).tap do |section|
       section.stub(stubs) unless stubs.empty?

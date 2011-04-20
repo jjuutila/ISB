@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe Admin::PartitionsController do
-
+  user_login
+  
   def mock_partition(stubs={})
     (@mock_partition ||= mock_model(Partition).as_null_object).tap do |partition|
       partition.stub(stubs) unless stubs.empty?
