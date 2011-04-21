@@ -16,7 +16,17 @@ class Section < ActiveRecord::Base
     self.where(:parent_id => nil).all
   end
   
+  def self.first_leaf!
+    first_leaf = leafs.first
+    raise ActiveRecord::RecordNotFound if first_leaf.nil?
+    first_leaf
+  end
+  
   def to_s
     name
+  end
+  
+  def leaf?
+    !(parent_id.blank? and parent.blank?)
   end
 end
