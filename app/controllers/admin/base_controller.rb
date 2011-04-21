@@ -8,22 +8,17 @@ class Admin::BaseController < ActionController::Base
     I18n.locale = :fi
   end
   
-  def selected_section 
-    @selected_section ||= session[:selected_section] && Section.find(session[:selected_section])
-    @selected_section ||= Section.leafs.first
-    
-    if !@selected_section
-      throw "No sections in the database."
-    end
-    return @selected_section
-  end
-  
-  def set_selected_section(section)
-    session[:selected_section] = section
+  def selected_section
+    @selected_section = current_admin_user.selected_section
   end
   
   def change_section
-  	set_selected_section Section.find_by_slug(params[:section])
+    begin
+      current_admin_user.selected_section = Section.find_by_slug(params[:section])
+      current_admin_user.save!
+    rescue
+      flash.alert = "Virheellinen joukkueosio. Mitään ei muutettu."
+    end
   	redirect_to :back
   end
   
