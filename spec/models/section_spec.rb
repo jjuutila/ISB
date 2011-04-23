@@ -67,4 +67,22 @@ describe Section do
       leaf.leaf?.should be false
     end
   end
+  
+  context "find_leaf_by_slug" do
+    before(:each) do
+      parent = Section.new :name => "Parent"
+      parent.save :validate => false
+    end
+    
+    it "returns found Section" do
+      child = Section.new :name => "Child", :parent_id => 1, :slug => 'child-slug'
+      child.save :validate => false
+      
+      Section.find_leaf_by_slug('child-slug').should == child
+    end
+    
+    it "raises ActiveRecord::RecordNotFound if no leaf Section is found" do
+      lambda { Section.find_leaf_by_slug('child-slug') }.should raise_error ActiveRecord::RecordNotFound
+    end
+  end
 end

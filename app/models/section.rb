@@ -22,6 +22,10 @@ class Section < ActiveRecord::Base
     first_leaf
   end
   
+  def self.find_leaf_by_slug slug
+    Section.leafs.find_by_slug! slug
+  end
+  
   def to_s
     name
   end
