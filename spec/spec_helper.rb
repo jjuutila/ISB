@@ -12,6 +12,15 @@ module ControllerMacros
       sign_in @user
     end
   end
+  
+  # For main site's before_filter
+  def find_section
+    before(:each) do
+      @section = mock_model(Section).as_null_object
+      @section.stub(:slug) { "edustus" }
+      Section.stub(:find_leaf_by_slug).with('edustus').and_return(@section)
+    end
+  end
 end
 
 Spork.prefork do

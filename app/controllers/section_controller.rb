@@ -1,20 +1,6 @@
 # coding: utf-8
-class SectionController < ApplicationController
+class SectionController < MainSiteController
   respond_to :html
-  before_filter :get_section_or_404
-  
-  def get_section_or_404
-    # Only leaf sections can be selected
-    @section = Section.leafs.find_by_slug params[:section]
-    render_404 if @section.nil?
-  end
-  
-  def render_404
-    respond_to do |format|
-      format.html { render :file => "#{Rails.root}/public/404.html", :layout => false, :status => :not_found }
-      format.any  { head :not_found }
-    end
-  end
   
   def news
     respond_with @news = News.in_section(@section, params[:page])

@@ -2,12 +2,6 @@
 require 'spec_helper'
 
 describe SectionController do
-  def mock_section(stubs={})
-    (@mock_section ||= mock_model(Section).as_null_object).tap do |section|
-      section.stub(stubs) unless stubs.empty?
-    end
-  end
-  
   def mock_news(stubs={})
     (@mock_news ||= mock_model(News).as_null_object).tap do |news|
       news.stub(stubs) unless stubs.empty?
@@ -37,14 +31,12 @@ describe SectionController do
       season.stub(stubs) unless stubs.empty?
     end
   end
-  
-  before(:each) do
-    Section.should_receive(:find_by_slug).and_return(mock_section(:slug => "edustus"))
-  end
+
+  find_section
   
   describe "'GET' news" do
     it "sets requested news posts as @news" do
-      News.should_receive(:in_section).with(mock_section, 2) {[mock_news]}
+      News.should_receive(:in_section).with(@section, 2) {[mock_news]}
       get :news, :section => 'edustus', :page => 2
       assigns(:news).should == [mock_news]
     end
@@ -52,7 +44,7 @@ describe SectionController do
   
   describe "'GET' matches" do
     it "sets the latest partition in requested section as @partition" do
-      Partition.should_receive(:latest).with(mock_section).and_return(mock_partition)
+      Partition.should_receive(:latest).with(@section).and_return(mock_partition)
       
       mock_match = mock_model(Match)
       Match.stub(:where) {[mock_match]}
@@ -89,7 +81,7 @@ describe SectionController do
   
   describe "'GET' guestbook" do
     it "sets the requested sections comments as @messages" do
-      Comment.should_receive(:messages).with(mock_section, 2).and_return([mock_comment])
+      Comment.should_receive(:messages).with(@section, 2).and_return([mock_comment])
       get :guestbook, :section => 'edustus', :page => 2
       assigns(:messages).should == [mock_comment]
     end
@@ -110,28 +102,28 @@ describe SectionController do
     
     describe "with valid params" do
       it "assigns a newly created comment as @message" do
-        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => true) }
+        @section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => true) }
         post :create_guestbook_message, :section => 'edustus', :comment => @params
         assigns(:message).should == mock_comment
       end
       
       it "redirects to guestbook page" do
-        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => true) }
+        @section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => true) }
         post :create_guestbook_message, :section => 'edustus', :comment => @params
-        response.should redirect_to(guestbook_path(mock_section.slug))
+        response.should redirect_to(guestbook_path(@section.slug))
       end
     end
     
     describe "with invalid params" do
       it "assigns a newly created but unsaved comment as @message" do
-        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => false,
+        @section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => false,
           :errors => {"some" => "error"}) }
         post :create_guestbook_message, :section => 'edustus', :comment => @params
         assigns(:message).should == mock_comment
       end
       
       it "re-renders the new_guestbook_message page" do
-        mock_section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => false,
+        @section.stub_chain(:comments, :build).with(@params) { mock_comment(:save => false,
           :errors => {"some" => "error"}) }
         post :create_guestbook_message, :section => 'edustus', :comment => @params
         should_not respond_with(:redirect)
@@ -143,7 +135,7 @@ describe SectionController do
   describe "'GET' links" do
     it "assigns requested section's all link categories as @link_categories" do
       mock_category = mock_model(LinkCategory)
-      LinkCategory.should_receive(:in_section).with(mock_section).and_return([mock_category])
+      LinkCategory.should_receive(:in_section).with(@section).and_return([mock_category])
       get :links, :section => 'edustus'
       assigns(:link_categories).should == [mock_category]
     end
@@ -151,7 +143,7 @@ describe SectionController do
   
   describe "'GET' statistics" do
     before(:each) do
-      Partition.stub(:latest).with(mock_section) { mock_partition }
+      Partition.stub(:latest).with(@section) { mock_partition }
     end
     
     it "assigns the requested sections most recents statistics as @statistics" do
@@ -194,7 +186,7 @@ describe SectionController do
   describe "'GET' standings" do
     it "assigns requested section's latest standings as @standings" do
       mock_standing = mock_model(TeamStanding)
-      Partition.stub(:latest).with(mock_section) { mock_partition }
+      Partition.stub(:latest).with(@section) { mock_partition }
       TeamStanding.should_receive(:in_partition).with(mock_partition).and_return([mock_standing])
       get :standings, :section => 'edustus'
       assigns(:standings).should == [mock_standing]
