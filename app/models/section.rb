@@ -1,5 +1,7 @@
 # coding: utf-8
 class Section < ActiveRecord::Base
+  default_scope :order => 'id ASC'
+  
   belongs_to :parent, :class_name => "Section"
   has_many :sections, :class_name => "Section", :foreign_key => "parent_id"
   has_and_belongs_to_many :news
