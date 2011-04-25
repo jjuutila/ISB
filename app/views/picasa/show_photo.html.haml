@@ -1,0 +1,11 @@
+%header
+  %h1= @album.title
+
+= picasa_pagination
+
+= image_tag(*@photo.url('720', {:class => 'gallery-photo'}))
+  
+%p.caption= @photo.summary
+
+= link_to image_tag('https://www.google.com/accounts/lh2/picasaweblogo-fi.gif'), @photo.links[1].href,
+  :title => 'Näytä kuva Google Picasassa', :rel => 'nofollow', :class => 'picasa-link'

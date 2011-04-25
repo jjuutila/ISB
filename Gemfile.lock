@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/fjg/ruby_picasa.git
+  revision: e22343ac9f84c26e8f9278f7c2bfdbe706f174cd
+  specs:
+    ruby-picasa (0.2.3)
+      objectify-xml (>= 0.2.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -103,6 +110,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     nokogiri (1.4.4)
+    objectify-xml (0.2.3)
+      activesupport
+      nokogiri
     orm_adapter (0.0.4)
     paperclip (2.3.11)
       activerecord (>= 2.3.0)
@@ -191,6 +201,7 @@ DEPENDENCIES
   rails (= 3.0.7)
   rspec-rails
   ruby-debug
+  ruby-picasa!
   shoulda
   simple-navigation
   spork

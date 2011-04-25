@@ -17,6 +17,8 @@ describe Section do
     it { should validate_presence_of(:slug) }
     
     it { should have_many(:link_categories) }
+    
+    it { subject.respond_to?(:picasa_user_id).should be true }
   end
   
   context "top_level" do

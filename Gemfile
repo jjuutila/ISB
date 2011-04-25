@@ -12,6 +12,7 @@ gem 'simple-navigation'
 gem 'paperclip', '~> 2.3'
 gem 'pg'
 gem 'devise'
+gem 'ruby-picasa', :require => 'ruby_picasa', :git => 'git://github.com/fjg/ruby_picasa.git'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'

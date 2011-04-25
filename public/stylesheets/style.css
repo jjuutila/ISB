@@ -87,8 +87,8 @@ body, html {
   height:100%;
 }
 
-a { color:#4e628b; }
-a:hover { color:#3080c8; }
+a { color:#3080c8; }
+a:hover { color:#4e628b; }
 
 #container {
   min-height:100%;
@@ -345,6 +345,70 @@ div#player-info {
 div#player-info ul {
   list-style: none;
   margin:0;
+}
+
+ul#photo-gallery {
+  margin:0;
+}
+
+ul#photo-gallery li {
+  list-style:none;
+  width:355px;
+  margin:0 0 20px 10px;
+  display:inline-block;
+  vertical-align:top;
+  background:#F7F9FD;
+  border:1px solid #E7F0F5;
+}
+
+ul#photo-gallery li article {
+  padding:10px;
+  vertical-align:top;
+}
+
+ul#photo-gallery li article img {
+  float:left;
+  margin:0 10px 10px 0;
+}
+
+ul#photo-gallery li article h1 {
+  font-size: 1.4em;
+  margin:0 0 6px 0;
+  padding:0;
+  vertical-align:top;
+}
+
+div#photo-album {
+  margin-left:0px;
+}
+
+div#photo-album img {
+  margin:1px;
+  vertical-align: middle;
+}
+
+img.gallery-photo {
+  border:1px solid #CCCCCC;
+  padding:4px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+nav.photo-pagination {
+  margin:5px;
+  text-align:center;
+}
+
+.photo-pagination a { margin:0 9px 0 9px; }
+
+p.caption {
+  font-weight: bold;
+  margin-left:10px;
+}
+
+.picasa-link img {
+  margin-top:20px;
 }
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }

@@ -65,6 +65,9 @@ Isb::Application.routes.draw do
     match ':section/sarjataulukko' => 'section#standings', :via => :get, :as => 'standings'
     match ':section/yhteystiedot' => 'section#contact_info', :via => :get, :as => 'contact_info'
     match ':section/pelaaja/:id' => 'section#player', :via => :get, :as => 'player'
+    match ':section/kuvagalleria' => 'picasa#index', :via => :get, :as => 'albums'
+    match ':section/kuvagalleria/:id' => 'picasa#show_album', :via => :get, :as => 'album'
+    match ':section/kuvagalleria/:album_id/:id' => 'picasa#show_photo', :via => :get, :as => 'photo'
     match ':section' => redirect("/%{section}/ajankohtaista"), :via =>:get
   end
 end

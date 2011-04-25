@@ -1,0 +1,12 @@
+%header
+  %h1 Kuvagalleria
+
+%ul#photo-gallery
+  - @albums.each do |album|
+    - thumbnail = album.thumbnails.first
+    %li
+      %article
+        = link_to image_tag(thumbnail.url, :width => thumbnail.width, :height => thumbnail.height), album_path(@section.slug, album.name)
+        %h1= link_to album.title, album_path(@section.slug, album.name)
+        %p= "Kuvia: #{album.numphotos}"
+        %time.meta{:datetime => html5_datetime(album.published)}= album.published.strftime('%d.%m.%Y')

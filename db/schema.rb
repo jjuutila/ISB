@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110414194053) do
+ActiveRecord::Schema.define(:version => 20110425141427) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
@@ -123,6 +123,7 @@ ActiveRecord::Schema.define(:version => 20110414194053) do
     t.integer "parent_id"
     t.string  "name"
     t.text    "contact_info"
+    t.string  "picasa_user_id"
   end
 
   create_table "statistics", :force => true do |t|

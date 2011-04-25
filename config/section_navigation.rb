@@ -10,6 +10,8 @@ SimpleNavigation::Configuration.run do |navigation|
       statistics.item :all_time, "All-Time", all_time_statistics_path(@section.slug)
     end
     primary.item :standings, 'Sarjataulukko', standings_path(@section.slug)
+    primary.item :photo_gallery, 'Kuvagalleria', albums_path(@section.slug), :highlights_on => /\/kuvagalleria/,
+      :if => Proc.new { @section.picasa_user_id }
     primary.item :links, 'Linkit', links_path(@section.slug)
     primary.item :contact_info, 'Yhteystiedot', contact_info_path(@section.slug)
   end

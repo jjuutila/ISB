@@ -1,0 +1,11 @@
+%header
+  %h1= @album.title
+
+#photo-album
+  - @album.photos.each do |photo|
+    - thumbnail = photo.thumbnails[1]
+    = link_to image_tag(thumbnail.url, :width => thumbnail.width, :height => thumbnail.height),
+        photo_path(@section.slug, @album.name, photo.id)
+
+= link_to image_tag('https://www.google.com/accounts/lh2/picasaweblogo-fi.gif'), @album.links[1].href,
+  :title => 'Näytä albumi Google Picasassa', :rel => 'nofollow', :class => 'picasa-link'
