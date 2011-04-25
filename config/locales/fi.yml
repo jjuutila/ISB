@@ -155,6 +155,8 @@ fi:
     pagination:
       previous: "&lt; Edellinen"
       next: "Seuraava &gt;"
+      first: "« Ensimmäinen"
+      last: "Viimeinen »"
   
   member:
     position:
