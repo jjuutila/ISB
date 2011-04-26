@@ -1,8 +1,8 @@
-- semantic_form_for @section, :url => url do |form| 
-  - form.inputs do
+= semantic_form_for @section, :url => url do |form| 
+  = form.inputs do
     = form.input :slug, :label => 'Slug'
-    = form.input :name, :label => 'Name'
-    = form.input :parent, :as => :select, :collection => Section.possible_parents
+    = form.input :name, :label => 'Nimi'
+    = form.input :picasa_user_id, :label => 'Käyttäjätunnus Picasassa'
   
-  - form.buttons do
+  = form.buttons do
     = form.commit_button
