@@ -10,7 +10,7 @@ fi:
 
   devise:
     failure:
-      unauthenticated: 'Sinun pitää kirjautua sisään tai rekisteröityä ennen kuin voit jatkaa.'
+      unauthenticated: 'Sinun pitää kirjautua sisään ennen kuin voit jatkaa.'
       unconfirmed: 'Sinun täytyy vahvistaa tunnuksesi ennen kuin voit jatkaa.'
       locked: 'Tunnuksesi on lukittu.'
       invalid: 'Epäkelpo sähköpostiosoite tai salasana.'
