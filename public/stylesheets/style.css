@@ -186,7 +186,12 @@ nav.pagination {
   border:none;
 }
 
-div#frontpage-banner img { border:1px solid #CCC; }
+div#frontpage-banner { padding:0; }
+
+div#frontpage-banner img {
+  border:1px solid #CCC;
+  margin:10px; 0 0 10px;
+}
 
 div#frontpage-banner-caption {
   opacity:0.85;
@@ -195,12 +200,11 @@ div#frontpage-banner-caption {
   overflow:hidden;
   width:938px;
   height:60px;
-  top:-65px;
-  margin-bottom:-60px;
-  left:1px;
+  top:444px;
+  margin-top:-60px;
+  left:11px;
   font-family:'Molengo', Verdana, Arial, Helvetica, sans-serif;
-  font-weight:normal;
-  font-size:3em;
+  font-size:3.1em;
   padding-left:28px;
 }
 
