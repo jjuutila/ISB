@@ -41,6 +41,20 @@ header#main h1 {
   letter-spacing:0.09em;
   padding-left:12px;
 }
+
+#sign-out {
+  float:right;
+  margin:30px 20px 0 0;
+}
+
+#sign-out a {
+  display:block;
+  border:1px solid #f68d28;
+  padding:5px;
+  border-radius:2px;
+  background-color:#f5f5f5;
+}
+
 #main-wrapper {
   padding-bottom:40px;
 }
