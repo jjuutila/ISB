@@ -127,7 +127,7 @@ div#main-header {
   font: normal 0.8em verdana, arial, helvetica, sans-seri;
 }
 
-#breadcrumb, #frontpage-news, #frontpage-matches, section#main, article#news {
+#breadcrumb, #frontpage-news, #frontpage-matches, section#main, article#news, div#frontpage-banner {
   border:1px solid #e1e1e2;
   margin-top:10px;
   padding:10px;
@@ -186,12 +186,30 @@ nav.pagination {
   border:none;
 }
 
+div#frontpage-banner img { border:1px solid #CCC; }
+
+div#frontpage-banner-caption {
+  opacity:0.85;
+  background-color:#F7F9FD;
+  position:relative;
+  overflow:hidden;
+  width:938px;
+  height:60px;
+  top:-65px;
+  margin-bottom:-60px;
+  left:1px;
+  font-family:'Molengo', Verdana, Arial, Helvetica, sans-serif;
+  font-weight:normal;
+  font-size:3em;
+  padding-left:28px;
+}
+
 section#frontpage-matches, section#frontpage-news {
   float:left;
   margin-bottom:10px;
 }
 
-section, article#news {
+section, article#news, div#frontpage-banner {
   background-color:#ffffff;
 }
 

@@ -1,3 +1,8 @@
+#frontpage-banner
+  = image_tag 'banner.jpg', :size => '966x426'
+  #frontpage-banner-caption
+    = "Sähäkkää salibandyä Ilmajoelta"
+
 %section#frontpage-news
   %h1 Tuoreimmat uutiset
   - @news.each do |news_post|
