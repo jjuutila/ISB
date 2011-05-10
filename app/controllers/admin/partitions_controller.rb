@@ -1,3 +1,5 @@
+# coding: utf-8
+
 class Admin::PartitionsController < Admin::BaseController
   respond_to :html
   
