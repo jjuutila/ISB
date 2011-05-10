@@ -1,3 +1,5 @@
+# coding: utf-8
+
 module PicasaHelper
   def picasa_pagination
     photo_index = @album.photos.find_index { |p| p.id.to_s == @photo.id.to_s }
