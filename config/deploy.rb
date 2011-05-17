@@ -28,19 +28,16 @@ require 'bundler/capistrano'
 namespace :deploy do
   desc "Custom ISB deployment: stop."
   task :stop, :roles => :app do
-    invoke_command "cd #{current_path}"
-    invoke_command "thin stop -C config/thin.yml"
+    invoke_command "thin stop -C #{current_path}/config/thin.yml"
   end
 
   desc "Custom ISB deployment: start."
   task :start, :roles => :app do
-    invoke_command "cd #{current_path}"
-    invoke_command "thin start -C config/thin.yml"
+    invoke_command "thin start -C #{current_path}/config/thin.yml"
   end
 
   desc "Custom ISB deployment: restart."
   task :restart, :roles => :app do
-    invoke_command "cd #{current_path}"
-    invoke_command "thin restart -C config/thin.yml"
+    invoke_command "thin restart -C #{current_path}/config/thin.yml"
   end
 end
