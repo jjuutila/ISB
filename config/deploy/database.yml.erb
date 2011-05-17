@@ -1,0 +1,9 @@
+production:
+  adapter: postgresql
+  database: isb
+  username: isb
+  host: db1.kapsi.fi
+  password: <%= Capistrano::CLI.ui.ask("Enter PostgreSQL database password: ") %>
+  encoding: utf8
+  pool: 5
+  timeout: 5000
