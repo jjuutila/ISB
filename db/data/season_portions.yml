@@ -1,0 +1,407 @@
+-
+  Id: 2
+  SeasonId: 1
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "2. divisioona"
+  StartingYear: 2007
+-
+  Id: 11
+  SeasonId: 2
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "4. divisioona"
+  StartingYear: 2007
+-
+  Id: 15
+  SeasonId: 3
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "B-juniorit"
+  StartingYear: 2007
+-
+  Id: 18
+  SeasonId: 4
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "C-juniorit"
+  StartingYear: 2007
+-
+  Id: 20
+  SeasonId: 5
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "D-juniorit"
+  StartingYear: 2007
+-
+  Id: 23
+  SeasonId: 6
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "Naiset"
+  StartingYear: 2007
+-
+  Id: 25
+  SeasonId: 7
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "Tytöt"
+  StartingYear: 2007
+-
+  Id: 9
+  SeasonId: 8
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "B84-juniorit"
+  StartingYear: 2000
+-
+  Id: 8
+  SeasonId: 9
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "5. divisioona"
+  StartingYear: 2001
+-
+  Id: 7
+  SeasonId: 10
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "5. divisioona"
+  StartingYear: 2002
+-
+  Id: 6
+  SeasonId: 11
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "4. divisioona"
+  StartingYear: 2003
+-
+  Id: 5
+  SeasonId: 12
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "3. divisioona"
+  StartingYear: 2004
+-
+  Id: 13
+  SeasonId: 13
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "5. divisioona"
+  StartingYear: 2005
+-
+  Id: 4
+  SeasonId: 14
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "2. divisioona"
+  StartingYear: 2005
+-
+  Id: 12
+  SeasonId: 15
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "5. divisioona"
+  StartingYear: 2006
+-
+  Id: 3
+  SeasonId: 16
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "2. divisioona"
+  StartingYear: 2006
+-
+  Id: 34
+  SeasonId: 16
+  OrderNumber: 2
+  Name: "Nousukarsinnat"
+  Division: "2. divisioona"
+  StartingYear: 2006
+-
+  Id: 16
+  SeasonId: 17
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "B89-juniorit"
+  StartingYear: 2006
+-
+  Id: 21
+  SeasonId: 18
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "D93-juniorit"
+  StartingYear: 2006
+-
+  Id: 1
+  SeasonId: 19
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "2. divisioona"
+  StartingYear: 2008
+-
+  Id: 26
+  SeasonId: 19
+  OrderNumber: 2
+  Name: "Nousukarsinnat"
+  Division: "2. divisioona"
+  StartingYear: 2008
+-
+  Id: 10
+  SeasonId: 20
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "4.divisioona"
+  StartingYear: 2008
+-
+  Id: 19
+  SeasonId: 21
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "D-juniorit"
+  StartingYear: 2008
+-
+  Id: 31
+  SeasonId: 21
+  OrderNumber: 2
+  Name: "Alueloppuhuipentuma"
+  Division: "D-juniorit"
+  StartingYear: 2008
+-
+  Id: 24
+  SeasonId: 22
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "C-tytöt"
+  StartingYear: 2008
+-
+  Id: 17
+  SeasonId: 23
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "C-pojat"
+  StartingYear: 2008
+-
+  Id: 28
+  SeasonId: 23
+  OrderNumber: 2
+  Name: "SM-Sarja"
+  Division: "C-pojat"
+  StartingYear: 2008
+-
+  Id: 14
+  SeasonId: 24
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "B-pojat"
+  StartingYear: 2008
+-
+  Id: 27
+  SeasonId: 24
+  OrderNumber: 3
+  Name: "Aluejatkosarja"
+  Division: "B-pojat"
+  StartingYear: 2008
+-
+  Id: 29
+  SeasonId: 24
+  OrderNumber: 4
+  Name: "SM Playoff- karsintojen karsinta"
+  Division: "B-pojat"
+  StartingYear: 2008
+-
+  Id: 30
+  SeasonId: 24
+  OrderNumber: 2
+  Name: "SM- Karsinta"
+  Division: "B-pojat"
+  StartingYear: 2008
+-
+  Id: 40
+  SeasonId: 24
+  OrderNumber: 5
+  Name: "Alkusarja"
+  Division: "B-pojat"
+  StartingYear: 2008
+-
+  Id: 22
+  SeasonId: 25
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "3. divisioona"
+  StartingYear: 2008
+-
+  Id: 32
+  SeasonId: 26
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "1.divisioona"
+  StartingYear: 2009
+-
+  Id: 35
+  SeasonId: 27
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "C-pojat"
+  StartingYear: 2009
+-
+  Id: 43
+  SeasonId: 27
+  OrderNumber: 2
+  Name: "Aluejatkosarja"
+  Division: "C-pojat"
+  StartingYear: 2009
+-
+  Id: 38
+  SeasonId: 28
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "C-tytöt"
+  StartingYear: 2009
+-
+  Id: 44
+  SeasonId: 28
+  OrderNumber: 2
+  Name: "Aluejatkosarja"
+  Division: "C-tytöt"
+  StartingYear: 2009
+-
+  Id: 46
+  SeasonId: 28
+  OrderNumber: 3
+  Name: "Karsinta play off -karsintaan"
+  Division: "C-tytöt"
+  StartingYear: 2009
+-
+  Id: 39
+  SeasonId: 29
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "D-juniorit"
+  StartingYear: 2009
+-
+  Id: 36
+  SeasonId: 30
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "3. divisioona"
+  StartingYear: 2009
+-
+  Id: 37
+  SeasonId: 31
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "4.divisioona"
+  StartingYear: 2009
+-
+  Id: 41
+  SeasonId: 32
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "B-Pojat"
+  StartingYear: 2009
+-
+  Id: 42
+  SeasonId: 32
+  OrderNumber: 3
+  Name: "2009-2010"
+  Division: "B-Pojat"
+  StartingYear: 2009
+-
+  Id: 45
+  SeasonId: 32
+  OrderNumber: 2
+  Name: "Aluejatkosarja"
+  Division: "B-Pojat"
+  StartingYear: 2009
+-
+  Id: 47
+  SeasonId: 33
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "3. divisioona"
+  StartingYear: 2010
+-
+  Id: 48
+  SeasonId: 34
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "2.Divisioona"
+  StartingYear: 2010
+-
+  Id: 59
+  SeasonId: 34
+  OrderNumber: 2
+  Name: "Nousukarsinnat"
+  Division: "2.Divisioona"
+  StartingYear: 2010
+-
+  Id: 49
+  SeasonId: 35
+  OrderNumber: 1
+  Name: "Runkosarja"
+  Division: "4.Divisioona"
+  StartingYear: 2010
+-
+  Id: 50
+  SeasonId: 36
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "C1-pojat"
+  StartingYear: 2010
+-
+  Id: 56
+  SeasonId: 36
+  OrderNumber: 2
+  Name: "Aluejatkosarja"
+  Division: "C1-pojat"
+  StartingYear: 2010
+-
+  Id: 51
+  SeasonId: 37
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "C-96"
+  StartingYear: 2010
+-
+  Id: 57
+  SeasonId: 37
+  OrderNumber: 2
+  Name: "Aluejatkosarja"
+  Division: "C-96"
+  StartingYear: 2010
+-
+  Id: 52
+  SeasonId: 38
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "D2 Pojat"
+  StartingYear: 2010
+-
+  Id: 53
+  SeasonId: 39
+  OrderNumber: 1
+  Name: "Alkusarja"
+  Division: "C-Tytöt"
+  StartingYear: 2010
+-
+  Id: 58
+  SeasonId: 39
+  OrderNumber: 2
+  Name: "Aluejatkosarja"
+  Division: "C-Tytöt"
+  StartingYear: 2010
+-
+  Id: 55
+  SeasonId: 40
+  OrderNumber: 1
+  Name: "Lohko 61"
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+-
+  Id: 54
+  SeasonId: 41
+  OrderNumber: 1
+  Name: "Runkosarja, Lohko 61"
+  Division: "5.divisioona"
+  StartingYear: 2010
+...

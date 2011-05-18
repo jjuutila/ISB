@@ -142,12 +142,34 @@ namespace :import do
       end
     end
   end
+  
+  desc "Loads season partitions from a YML file"
+  task :partitions => :environment do
+    puts "Loading partitions"
+    yml = load_yml "season_portions"
+    
+    yml.each do |partition_data|
+      begin
+        season = Season.find_by_division_and_start_year! partition_data["Division"], partition_data["StartingYear"]
+        
+        partition = season.partitions.build(:name => partition_data["Name"], :position => partition_data["OrderNumber"])
+          
+        if partition.save
+          puts "Save OK: #{season} - #{partition}"
+        else
+          puts "Errors: #{partition.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound
+        puts "ERROR: Season #{partition_data["Division"]}: #{partition_data["StartingYear"]} not found!"
+      end
+    end
+  end
 
   desc "This drops the DB and loads the DB schema"
   task :reset => ['db:drop', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :members, :guestbook, :seasons]
+  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions]
   
   def load_yml file_name
     require 'yaml'
