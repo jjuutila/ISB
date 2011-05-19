@@ -6,7 +6,7 @@ class Season < ActiveRecord::Base
   has_many :members, :through => :affairs
   has_many :partitions
   
-  validates_numericality_of :start_year, :only_integer => true, :greater_than => 2000,
+  validates_numericality_of :start_year, :only_integer => true, :greater_than_or_equal_to => 2000,
     :message => 'Virheellinen aloitusvuosi.'
   validates_presence_of :division, :start_year, :section
   
