@@ -1,0 +1,4609 @@
+-
+  TeamID: 1
+  SeasonPortionId: 7
+  TeamName: "ISB Ilmajoki"
+  Wins: 11
+  Losses: 5
+  Overtime: 2
+  GoalsFor: 103
+  GoalsAgainst: 60
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  TeamID: 2
+  SeasonPortionId: 7
+  TeamName: "TöVe"
+  Wins: 14
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 121
+  GoalsAgainst: 53
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  TeamID: 3
+  SeasonPortionId: 7
+  TeamName: "SATO"
+  Wins: 8
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 89
+  GoalsAgainst: 86
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  TeamID: 4
+  SeasonPortionId: 7
+  TeamName: "IU Salibanditos"
+  Wins: 7
+  Losses: 6
+  Overtime: 5
+  GoalsFor: 90
+  GoalsAgainst: 88
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  TeamID: 5
+  SeasonPortionId: 7
+  TeamName: "Jymy"
+  Wins: 7
+  Losses: 7
+  Overtime: 4
+  GoalsFor: 66
+  GoalsAgainst: 79
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  TeamID: 6
+  SeasonPortionId: 7
+  TeamName: "TEURI"
+  Wins: 6
+  Losses: 9
+  Overtime: 3
+  GoalsFor: 97
+  GoalsAgainst: 117
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  TeamID: 7
+  SeasonPortionId: 7
+  TeamName: "SC Rebels (KuKu)"
+  Wins: 0
+  Losses: 17
+  Overtime: 1
+  GoalsFor: 50
+  GoalsAgainst: 134
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  TeamID: 8
+  SeasonPortionId: 6
+  TeamName: "ISB Ilmajoki"
+  Wins: 10
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 94
+  GoalsAgainst: 53
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 9
+  SeasonPortionId: 6
+  TeamName: "SPV II"
+  Wins: 6
+  Losses: 8
+  Overtime: 0
+  GoalsFor: 60
+  GoalsAgainst: 87
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 10
+  SeasonPortionId: 6
+  TeamName: "TNH"
+  Wins: 4
+  Losses: 8
+  Overtime: 2
+  GoalsFor: 57
+  GoalsAgainst: 82
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 11
+  SeasonPortionId: 6
+  TeamName: "NSV"
+  Wins: 8
+  Losses: 5
+  Overtime: 1
+  GoalsFor: 76
+  GoalsAgainst: 73
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 12
+  SeasonPortionId: 6
+  TeamName: "SB-Kauhajoki"
+  Wins: 9
+  Losses: 3
+  Overtime: 2
+  GoalsFor: 94
+  GoalsAgainst: 51
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 13
+  SeasonPortionId: 6
+  TeamName: "Vikings"
+  Wins: 4
+  Losses: 10
+  Overtime: 0
+  GoalsFor: 63
+  GoalsAgainst: 78
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 14
+  SeasonPortionId: 6
+  TeamName: "KuRy"
+  Wins: 2
+  Losses: 11
+  Overtime: 1
+  GoalsFor: 51
+  GoalsAgainst: 102
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 15
+  SeasonPortionId: 6
+  TeamName: "TöVe"
+  Wins: 8
+  Losses: 4
+  Overtime: 2
+  GoalsFor: 100
+  GoalsAgainst: 69
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  TeamID: 16
+  SeasonPortionId: 5
+  TeamName: "Redy"
+  Wins: 11
+  Losses: 3
+  Overtime: 4
+  GoalsFor: 104
+  GoalsAgainst: 71
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 17
+  SeasonPortionId: 5
+  TeamName: "SB Vaasa II"
+  Wins: 10
+  Losses: 5
+  Overtime: 3
+  GoalsFor: 92
+  GoalsAgainst: 70
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 18
+  SeasonPortionId: 5
+  TeamName: "ISB Ilmajoki"
+  Wins: 10
+  Losses: 3
+  Overtime: 5
+  GoalsFor: 103
+  GoalsAgainst: 72
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 19
+  SeasonPortionId: 5
+  TeamName: "Jeppis FBC"
+  Wins: 9
+  Losses: 6
+  Overtime: 3
+  GoalsFor: 111
+  GoalsAgainst: 80
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 20
+  SeasonPortionId: 5
+  TeamName: "Crusaders"
+  Wins: 10
+  Losses: 6
+  Overtime: 2
+  GoalsFor: 113
+  GoalsAgainst: 80
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 21
+  SeasonPortionId: 5
+  TeamName: "Jukobox"
+  Wins: 10
+  Losses: 7
+  Overtime: 1
+  GoalsFor: 99
+  GoalsAgainst: 69
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 22
+  SeasonPortionId: 5
+  TeamName: "Nibacos II"
+  Wins: 8
+  Losses: 5
+  Overtime: 4
+  GoalsFor: 81
+  GoalsAgainst: 73
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 23
+  SeasonPortionId: 5
+  TeamName: "ToCo"
+  Wins: 5
+  Losses: 11
+  Overtime: 2
+  GoalsFor: 80
+  GoalsAgainst: 112
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 24
+  SeasonPortionId: 5
+  TeamName: "Peto"
+  Wins: 3
+  Losses: 13
+  Overtime: 2
+  GoalsFor: 59
+  GoalsAgainst: 96
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 25
+  SeasonPortionId: 5
+  TeamName: "SC Saragoza"
+  Wins: 0
+  Losses: 17
+  Overtime: 1
+  GoalsFor: 50
+  GoalsAgainst: 169
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  TeamID: 26
+  SeasonPortionId: 4
+  TeamName: "ISB Ilmajoki"
+  Wins: 10
+  Losses: 8
+  Overtime: 0
+  GoalsFor: 160
+  GoalsAgainst: 134
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 27
+  SeasonPortionId: 4
+  TeamName: "SBS Lapua"
+  Wins: 1
+  Losses: 17
+  Overtime: 0
+  GoalsFor: 93
+  GoalsAgainst: 149
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 28
+  SeasonPortionId: 4
+  TeamName: "Merikoski SBT"
+  Wins: 13
+  Losses: 4
+  Overtime: 1
+  GoalsFor: 137
+  GoalsAgainst: 90
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 29
+  SeasonPortionId: 4
+  TeamName: "Hillerit"
+  Wins: 9
+  Losses: 8
+  Overtime: 1
+  GoalsFor: 133
+  GoalsAgainst: 134
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 30
+  SeasonPortionId: 4
+  TeamName: "Woodcutters"
+  Wins: 15
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 141
+  GoalsAgainst: 109
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 31
+  SeasonPortionId: 4
+  TeamName: "Redy"
+  Wins: 2
+  Losses: 16
+  Overtime: 0
+  GoalsFor: 85
+  GoalsAgainst: 162
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 32
+  SeasonPortionId: 4
+  TeamName: "Sastamolo"
+  Wins: 14
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 132
+  GoalsAgainst: 85
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 33
+  SeasonPortionId: 4
+  TeamName: "TOPV"
+  Wins: 7
+  Losses: 11
+  Overtime: 0
+  GoalsFor: 97
+  GoalsAgainst: 100
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 34
+  SeasonPortionId: 4
+  TeamName: "OUHU"
+  Wins: 5
+  Losses: 13
+  Overtime: 0
+  GoalsFor: 115
+  GoalsAgainst: 145
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 35
+  SeasonPortionId: 4
+  TeamName: "OYUS"
+  Wins: 13
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 128
+  GoalsAgainst: 113
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 36
+  SeasonPortionId: 13
+  TeamName: "ISB-Ilmajoki II"
+  Wins: 4
+  Losses: 6
+  Overtime: 4
+  GoalsFor: 77
+  GoalsAgainst: 96
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 37
+  SeasonPortionId: 13
+  TeamName: "Kotkat"
+  Wins: 13
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 161
+  GoalsAgainst: 58
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 38
+  SeasonPortionId: 13
+  TeamName: "Wasa Devils"
+  Wins: 12
+  Losses: 1
+  Overtime: 1
+  GoalsFor: 130
+  GoalsAgainst: 50
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 39
+  SeasonPortionId: 13
+  TeamName: "PB Team"
+  Wins: 7
+  Losses: 4
+  Overtime: 3
+  GoalsFor: 99
+  GoalsAgainst: 83
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 40
+  SeasonPortionId: 13
+  TeamName: "FBC Luja II"
+  Wins: 3
+  Losses: 8
+  Overtime: 3
+  GoalsFor: 57
+  GoalsAgainst: 92
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 41
+  SeasonPortionId: 13
+  TeamName: "YKV"
+  Wins: 3
+  Losses: 11
+  Overtime: 0
+  GoalsFor: 60
+  GoalsAgainst: 121
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 42
+  SeasonPortionId: 13
+  TeamName: "Vikings"
+  Wins: 4
+  Losses: 8
+  Overtime: 2
+  GoalsFor: 58
+  GoalsAgainst: 80
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 43
+  SeasonPortionId: 13
+  TeamName: "IU"
+  Wins: 3
+  Losses: 10
+  Overtime: 1
+  GoalsFor: 64
+  GoalsAgainst: 126
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  TeamID: 44
+  SeasonPortionId: 12
+  TeamName: "ISB Ilmajoki II"
+  Wins: 8
+  Losses: 6
+  Overtime: 1
+  GoalsFor: 82
+  GoalsAgainst: 72
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 45
+  SeasonPortionId: 12
+  TeamName: "IU"
+  Wins: 4
+  Losses: 9
+  Overtime: 2
+  GoalsFor: 58
+  GoalsAgainst: 87
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 46
+  SeasonPortionId: 12
+  TeamName: "Vikings"
+  Wins: 5
+  Losses: 6
+  Overtime: 4
+  GoalsFor: 77
+  GoalsAgainst: 84
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 47
+  SeasonPortionId: 12
+  TeamName: "TöVe II"
+  Wins: 3
+  Losses: 10
+  Overtime: 2
+  GoalsFor: 58
+  GoalsAgainst: 100
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 48
+  SeasonPortionId: 12
+  TeamName: "Nurmon Jymy II"
+  Wins: 9
+  Losses: 4
+  Overtime: 2
+  GoalsFor: 98
+  GoalsAgainst: 62
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 49
+  SeasonPortionId: 12
+  TeamName: "Team Atria"
+  Wins: 8
+  Losses: 2
+  Overtime: 5
+  GoalsFor: 86
+  GoalsAgainst: 54
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 50
+  SeasonPortionId: 3
+  TeamName: "ISB Ilmajoki"
+  Wins: 15
+  Losses: 5
+  Overtime: 1
+  GoalsFor: 185
+  GoalsAgainst: 136
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 51
+  SeasonPortionId: 3
+  TeamName: "Nurmon Jymy"
+  Wins: 10
+  Losses: 8
+  Overtime: 3
+  GoalsFor: 129
+  GoalsAgainst: 121
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 52
+  SeasonPortionId: 3
+  TeamName: "Jukobox"
+  Wins: 6
+  Losses: 15
+  Overtime: 0
+  GoalsFor: 114
+  GoalsAgainst: 153
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 53
+  SeasonPortionId: 3
+  TeamName: "Redy"
+  Wins: 9
+  Losses: 11
+  Overtime: 1
+  GoalsFor: 143
+  GoalsAgainst: 144
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 54
+  SeasonPortionId: 3
+  TeamName: "SB Vaasa II"
+  Wins: 8
+  Losses: 12
+  Overtime: 1
+  GoalsFor: 111
+  GoalsAgainst: 167
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 55
+  SeasonPortionId: 3
+  TeamName: "Nibacos II"
+  Wins: 4
+  Losses: 17
+  Overtime: 0
+  GoalsFor: 112
+  GoalsAgainst: 166
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 56
+  SeasonPortionId: 3
+  TeamName: "Jeppis"
+  Wins: 9
+  Losses: 11
+  Overtime: 1
+  GoalsFor: 146
+  GoalsAgainst: 166
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 57
+  SeasonPortionId: 3
+  TeamName: "SBS Lapua"
+  Wins: 19
+  Losses: 1
+  Overtime: 1
+  GoalsFor: 206
+  GoalsAgainst: 93
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 58
+  SeasonPortionId: 16
+  TeamName: "ISB-Ilmajoki"
+  Wins: 1
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 59
+  SeasonPortionId: 16
+  TeamName: "SPV"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 60
+  SeasonPortionId: 16
+  TeamName: "Jeppis FBC"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 61
+  SeasonPortionId: 16
+  TeamName: "SB Vaasa"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 62
+  SeasonPortionId: 16
+  TeamName: "SB Kauhajoki"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 63
+  SeasonPortionId: 16
+  TeamName: "SPV II"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 64
+  SeasonPortionId: 16
+  TeamName: "NJ"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  TeamID: 65
+  SeasonPortionId: 2
+  TeamName: "ISB Ilmajoki"
+  Wins: 13
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 156
+  GoalsAgainst: 110
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 66
+  SeasonPortionId: 2
+  TeamName: "Sisu"
+  Wins: 5
+  Losses: 13
+  Overtime: 0
+  GoalsFor: 121
+  GoalsAgainst: 166
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 67
+  SeasonPortionId: 2
+  TeamName: "Redy"
+  Wins: 5
+  Losses: 13
+  Overtime: 0
+  GoalsFor: 111
+  GoalsAgainst: 155
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 68
+  SeasonPortionId: 2
+  TeamName: "HiPa"
+  Wins: 7
+  Losses: 11
+  Overtime: 0
+  GoalsFor: 138
+  GoalsAgainst: 155
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 69
+  SeasonPortionId: 2
+  TeamName: "PeTo"
+  Wins: 9
+  Losses: 9
+  Overtime: 0
+  GoalsFor: 109
+  GoalsAgainst: 116
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 70
+  SeasonPortionId: 2
+  TeamName: "Nibacos"
+  Wins: 12
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 126
+  GoalsAgainst: 81
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 71
+  SeasonPortionId: 2
+  TeamName: "Nurmon Jymy"
+  Wins: 3
+  Losses: 15
+  Overtime: 0
+  GoalsFor: 114
+  GoalsAgainst: 185
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 72
+  SeasonPortionId: 2
+  TeamName: "SB Vaasa"
+  Wins: 14
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 128
+  GoalsAgainst: 90
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 73
+  SeasonPortionId: 2
+  TeamName: "Jeppis FBC"
+  Wins: 6
+  Losses: 12
+  Overtime: 0
+  GoalsFor: 145
+  GoalsAgainst: 183
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 74
+  SeasonPortionId: 11
+  TeamName: "ISB Ilmajoki II"
+  Wins: 9
+  Losses: 6
+  Overtime: 3
+  GoalsFor: 89
+  GoalsAgainst: 75
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 75
+  SeasonPortionId: 11
+  TeamName: "Team Atria"
+  Wins: 7
+  Losses: 8
+  Overtime: 3
+  GoalsFor: 76
+  GoalsAgainst: 79
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 76
+  SeasonPortionId: 11
+  TeamName: "SC Rebels"
+  Wins: 7
+  Losses: 11
+  Overtime: 0
+  GoalsFor: 76
+  GoalsAgainst: 116
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 77
+  SeasonPortionId: 11
+  TeamName: "Vikings"
+  Wins: 3
+  Losses: 14
+  Overtime: 1
+  GoalsFor: 65
+  GoalsAgainst: 113
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 78
+  SeasonPortionId: 11
+  TeamName: "E.P.V.T"
+  Wins: 14
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 124
+  GoalsAgainst: 60
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 79
+  SeasonPortionId: 11
+  TeamName: "Jalas"
+  Wins: 11
+  Losses: 4
+  Overtime: 3
+  GoalsFor: 114
+  GoalsAgainst: 75
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 80
+  SeasonPortionId: 11
+  TeamName: "SC Saragoza"
+  Wins: 8
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 85
+  GoalsAgainst: 92
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 81
+  SeasonPortionId: 11
+  TeamName: "SB Kauhajoki"
+  Wins: 8
+  Losses: 8
+  Overtime: 2
+  GoalsFor: 85
+  GoalsAgainst: 77
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 82
+  SeasonPortionId: 11
+  TeamName: "Kurikan Ryhti"
+  Wins: 8
+  Losses: 5
+  Overtime: 5
+  GoalsFor: 113
+  GoalsAgainst: 89
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 83
+  SeasonPortionId: 2
+  TeamName: "SBS Lapua"
+  Wins: 16
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 200
+  GoalsAgainst: 107
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 84
+  SeasonPortionId: 11
+  TeamName: "Nurmon Jymy II"
+  Wins: 3
+  Losses: 13
+  Overtime: 2
+  GoalsFor: 60
+  GoalsAgainst: 120
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 85
+  SeasonPortionId: 25
+  TeamName: "ISB Ilmajoki"
+  Wins: 0
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "Tytöt"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 86
+  SeasonPortionId: 25
+  TeamName: "HiPa"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "Tytöt"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 87
+  SeasonPortionId: 25
+  TeamName: "Jeppis"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "Tytöt"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 88
+  SeasonPortionId: 23
+  TeamName: "SC Saragoza"
+  Wins: 13
+  Losses: 1
+  Overtime: 1
+  GoalsFor: 74
+  GoalsAgainst: 27
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 89
+  SeasonPortionId: 23
+  TeamName: "Blue Fox"
+  Wins: 10
+  Losses: 3
+  Overtime: 2
+  GoalsFor: 50
+  GoalsAgainst: 21
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 90
+  SeasonPortionId: 23
+  TeamName: "KauWi"
+  Wins: 8
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 49
+  GoalsAgainst: 31
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 91
+  SeasonPortionId: 23
+  TeamName: "ISB-Ilmajoki"
+  Wins: 2
+  Losses: 13
+  Overtime: 0
+  GoalsFor: 19
+  GoalsAgainst: 62
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 92
+  SeasonPortionId: 23
+  TeamName: "HiPa"
+  Wins: 6
+  Losses: 7
+  Overtime: 2
+  GoalsFor: 34
+  GoalsAgainst: 36
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 93
+  SeasonPortionId: 23
+  TeamName: "KäTa"
+  Wins: 3
+  Losses: 11
+  Overtime: 1
+  GoalsFor: 22
+  GoalsAgainst: 71
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 94
+  SeasonPortionId: 18
+  TeamName: "ISB-Ilmajoki"
+  Wins: 8
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 59
+  GoalsAgainst: 48
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 95
+  SeasonPortionId: 18
+  TeamName: "NJ Panthers"
+  Wins: 10
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 131
+  GoalsAgainst: 45
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 96
+  SeasonPortionId: 18
+  TeamName: "HiPa"
+  Wins: 5
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 51
+  GoalsAgainst: 50
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 97
+  SeasonPortionId: 18
+  TeamName: "SB Vaasa"
+  Wins: 4
+  Losses: 5
+  Overtime: 1
+  GoalsFor: 45
+  GoalsAgainst: 70
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 98
+  SeasonPortionId: 18
+  TeamName: "Blue Fox"
+  Wins: 2
+  Losses: 8
+  Overtime: 0
+  GoalsFor: 29
+  GoalsAgainst: 63
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 99
+  SeasonPortionId: 18
+  TeamName: "KannUra"
+  Wins: 0
+  Losses: 9
+  Overtime: 1
+  GoalsFor: 41
+  GoalsAgainst: 80
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  TeamID: 100
+  SeasonPortionId: 1
+  TeamName: "HiPa"
+  Wins: 7
+  Losses: 11
+  Overtime: 0
+  GoalsFor: 101
+  GoalsAgainst: 140
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 101
+  SeasonPortionId: 1
+  TeamName: "ISB Ilmajoki"
+  Wins: 15
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 203
+  GoalsAgainst: 102
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 102
+  SeasonPortionId: 1
+  TeamName: "Jeppis FBC"
+  Wins: 6
+  Losses: 12
+  Overtime: 0
+  GoalsFor: 112
+  GoalsAgainst: 182
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 103
+  SeasonPortionId: 1
+  TeamName: "Kotkat"
+  Wins: 8
+  Losses: 10
+  Overtime: 0
+  GoalsFor: 150
+  GoalsAgainst: 154
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 104
+  SeasonPortionId: 1
+  TeamName: "Nibacos"
+  Wins: 12
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 135
+  GoalsAgainst: 105
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 105
+  SeasonPortionId: 1
+  TeamName: "PeTo"
+  Wins: 8
+  Losses: 10
+  Overtime: 0
+  GoalsFor: 159
+  GoalsAgainst: 149
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 106
+  SeasonPortionId: 1
+  TeamName: "Redy"
+  Wins: 2
+  Losses: 16
+  Overtime: 0
+  GoalsFor: 83
+  GoalsAgainst: 200
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 107
+  SeasonPortionId: 1
+  TeamName: "SB Vaasa"
+  Wins: 7
+  Losses: 10
+  Overtime: 1
+  GoalsFor: 151
+  GoalsAgainst: 156
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 108
+  SeasonPortionId: 1
+  TeamName: "SBS Lapua"
+  Wins: 14
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 209
+  GoalsAgainst: 132
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 109
+  SeasonPortionId: 1
+  TeamName: "Sisu"
+  Wins: 10
+  Losses: 8
+  Overtime: 0
+  GoalsFor: 148
+  GoalsAgainst: 131
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 110
+  SeasonPortionId: 10
+  TeamName: "SB Kauhajoki"
+  Wins: 12
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 98
+  GoalsAgainst: 52
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 111
+  SeasonPortionId: 10
+  TeamName: "IU"
+  Wins: 5
+  Losses: 9
+  Overtime: 2
+  GoalsFor: 75
+  GoalsAgainst: 91
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 112
+  SeasonPortionId: 10
+  TeamName: "SC Rebels"
+  Wins: 3
+  Losses: 13
+  Overtime: 0
+  GoalsFor: 54
+  GoalsAgainst: 129
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 113
+  SeasonPortionId: 10
+  TeamName: "SC Alavus"
+  Wins: 11
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 92
+  GoalsAgainst: 54
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 114
+  SeasonPortionId: 10
+  TeamName: "PaSu"
+  Wins: 11
+  Losses: 2
+  Overtime: 3
+  GoalsFor: 86
+  GoalsAgainst: 50
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 115
+  SeasonPortionId: 10
+  TeamName: "ISB Ilmajoki II"
+  Wins: 8
+  Losses: 5
+  Overtime: 3
+  GoalsFor: 75
+  GoalsAgainst: 73
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 116
+  SeasonPortionId: 10
+  TeamName: "KuRy"
+  Wins: 5
+  Losses: 7
+  Overtime: 4
+  GoalsFor: 97
+  GoalsAgainst: 89
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 117
+  SeasonPortionId: 10
+  TeamName: "SC Saragoza"
+  Wins: 3
+  Losses: 12
+  Overtime: 1
+  GoalsFor: 66
+  GoalsAgainst: 99
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 118
+  SeasonPortionId: 10
+  TeamName: "Team Atria"
+  Wins: 7
+  Losses: 8
+  Overtime: 1
+  GoalsFor: 70
+  GoalsAgainst: 76
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 119
+  SeasonPortionId: 24
+  TeamName: "ISB Ilmajoki"
+  Wins: 3
+  Losses: 7
+  Overtime: 1
+  GoalsFor: 19
+  GoalsAgainst: 44
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 120
+  SeasonPortionId: 24
+  TeamName: "SPV"
+  Wins: 2
+  Losses: 8
+  Overtime: 1
+  GoalsFor: 20
+  GoalsAgainst: 66
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 121
+  SeasonPortionId: 24
+  TeamName: "Blue Fox"
+  Wins: 10
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 87
+  GoalsAgainst: 17
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 122
+  SeasonPortionId: 24
+  TeamName: "SB Vaasa"
+  Wins: 4
+  Losses: 5
+  Overtime: 2
+  GoalsFor: 32
+  GoalsAgainst: 52
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 123
+  SeasonPortionId: 24
+  TeamName: "TuuU"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 124
+  SeasonPortionId: 24
+  TeamName: "KSS"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 125
+  SeasonPortionId: 24
+  TeamName: "Ulma"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 126
+  SeasonPortionId: 24
+  TeamName: "Pisaba"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 127
+  SeasonPortionId: 19
+  TeamName: "ISB Ilmajoki"
+  Wins: 8
+  Losses: 3
+  Overtime: 3
+  GoalsFor: 96
+  GoalsAgainst: 54
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 128
+  SeasonPortionId: 19
+  TeamName: "NJ-95"
+  Wins: 11
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 143
+  GoalsAgainst: 53
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 129
+  SeasonPortionId: 19
+  TeamName: "SC Alajärvi"
+  Wins: 10
+  Losses: 3
+  Overtime: 1
+  GoalsFor: 125
+  GoalsAgainst: 37
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 130
+  SeasonPortionId: 19
+  TeamName: "SPV"
+  Wins: 7
+  Losses: 4
+  Overtime: 3
+  GoalsFor: 90
+  GoalsAgainst: 72
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 131
+  SeasonPortionId: 19
+  TeamName: "NJ-96"
+  Wins: 2
+  Losses: 12
+  Overtime: 0
+  GoalsFor: 16
+  GoalsAgainst: 133
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 132
+  SeasonPortionId: 19
+  TeamName: "FBC Remix"
+  Wins: 7
+  Losses: 6
+  Overtime: 1
+  GoalsFor: 83
+  GoalsAgainst: 86
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 133
+  SeasonPortionId: 19
+  TeamName: "SB Vaasa"
+  Wins: 4
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 67
+  GoalsAgainst: 112
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 134
+  SeasonPortionId: 19
+  TeamName: "Woodcutters"
+  Wins: 0
+  Losses: 12
+  Overtime: 2
+  GoalsFor: 35
+  GoalsAgainst: 138
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 135
+  SeasonPortionId: 17
+  TeamName: "ISB Ilmajoki"
+  Wins: 6
+  Losses: 0
+  Overtime: 1
+  GoalsFor: 48
+  GoalsAgainst: 15
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 136
+  SeasonPortionId: 17
+  TeamName: "SB Vaasa"
+  Wins: 0
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 19
+  GoalsAgainst: 58
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 137
+  SeasonPortionId: 17
+  TeamName: "SPV"
+  Wins: 4
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 48
+  GoalsAgainst: 39
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 138
+  SeasonPortionId: 17
+  TeamName: "FBC Remix"
+  Wins: 3
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 34
+  GoalsAgainst: 35
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 139
+  SeasonPortionId: 17
+  TeamName: "Nibacos"
+  Wins: 1
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 19
+  GoalsAgainst: 36
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 140
+  SeasonPortionId: 17
+  TeamName: "TU"
+  Wins: 3
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 31
+  GoalsAgainst: 30
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 141
+  SeasonPortionId: 17
+  TeamName: "HiPa"
+  Wins: 2
+  Losses: 2
+  Overtime: 3
+  GoalsFor: 33
+  GoalsAgainst: 33
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 142
+  SeasonPortionId: 17
+  TeamName: "KannUra"
+  Wins: 4
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 46
+  GoalsAgainst: 32
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 143
+  SeasonPortionId: 14
+  TeamName: "ISB Ilmajoki"
+  Wins: 4
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 38
+  GoalsAgainst: 9
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 144
+  SeasonPortionId: 14
+  TeamName: "SPV"
+  Wins: 0
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 18
+  GoalsAgainst: 55
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 145
+  SeasonPortionId: 14
+  TeamName: "SPV Jymy"
+  Wins: 5
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 45
+  GoalsAgainst: 14
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 146
+  SeasonPortionId: 14
+  TeamName: "SB Vaasa"
+  Wins: 3
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 33
+  GoalsAgainst: 23
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 147
+  SeasonPortionId: 14
+  TeamName: "FBC Remix"
+  Wins: 1
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 21
+  GoalsAgainst: 42
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 148
+  SeasonPortionId: 14
+  TeamName: "Woodcutters"
+  Wins: 2
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 21
+  GoalsAgainst: 33
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 149
+  SeasonPortionId: 22
+  TeamName: "ISB Ilmajoki"
+  Wins: 6
+  Losses: 9
+  Overtime: 3
+  GoalsFor: 50
+  GoalsAgainst: 51
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 150
+  SeasonPortionId: 22
+  TeamName: "KauWi"
+  Wins: 10
+  Losses: 6
+  Overtime: 2
+  GoalsFor: 52
+  GoalsAgainst: 50
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 151
+  SeasonPortionId: 22
+  TeamName: "Kisa"
+  Wins: 6
+  Losses: 8
+  Overtime: 4
+  GoalsFor: 59
+  GoalsAgainst: 51
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 152
+  SeasonPortionId: 22
+  TeamName: "KäTa"
+  Wins: 8
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 48
+  GoalsAgainst: 56
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 153
+  SeasonPortionId: 22
+  TeamName: "SB Vaasa III"
+  Wins: 1
+  Losses: 16
+  Overtime: 1
+  GoalsFor: 26
+  GoalsAgainst: 88
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 154
+  SeasonPortionId: 22
+  TeamName: "HiPa"
+  Wins: 17
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 74
+  GoalsAgainst: 19
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 155
+  SeasonPortionId: 22
+  TeamName: "SB Kauhajoki"
+  Wins: 6
+  Losses: 7
+  Overtime: 5
+  GoalsFor: 55
+  GoalsAgainst: 49
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  TeamID: 156
+  SeasonPortionId: 27
+  TeamName: "KannUra"
+  Wins: 8
+  Losses: 5
+  Overtime: 3
+  GoalsFor: 91
+  GoalsAgainst: 60
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 157
+  SeasonPortionId: 27
+  TeamName: "Blue Fox"
+  Wins: 7
+  Losses: 8
+  Overtime: 1
+  GoalsFor: 68
+  GoalsAgainst: 84
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 158
+  SeasonPortionId: 27
+  TeamName: "KäTa"
+  Wins: 2
+  Losses: 11
+  Overtime: 3
+  GoalsFor: 54
+  GoalsAgainst: 108
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 159
+  SeasonPortionId: 27
+  TeamName: "HiPa"
+  Wins: 6
+  Losses: 8
+  Overtime: 2
+  GoalsFor: 86
+  GoalsAgainst: 83
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 160
+  SeasonPortionId: 26
+  TeamName: "ISB Ilmajoki"
+  Wins: 6
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 51
+  GoalsAgainst: 45
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 161
+  SeasonPortionId: 26
+  TeamName: "AFC Campus"
+  Wins: 4
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 44
+  GoalsAgainst: 41
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 162
+  SeasonPortionId: 26
+  TeamName: "RSB-Team"
+  Wins: 3
+  Losses: 4
+  Overtime: 1
+  GoalsFor: 45
+  GoalsAgainst: 43
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 163
+  SeasonPortionId: 26
+  TeamName: "RSS Laaka"
+  Wins: 6
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 49
+  GoalsAgainst: 34
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 164
+  SeasonPortionId: 26
+  TeamName: "SBS Kings"
+  Wins: 0
+  Losses: 7
+  Overtime: 1
+  GoalsFor: 30
+  GoalsAgainst: 56
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 165
+  SeasonPortionId: 27
+  TeamName: "SB Vaasa"
+  Wins: 10
+  Losses: 2
+  Overtime: 4
+  GoalsFor: 83
+  GoalsAgainst: 49
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 166
+  SeasonPortionId: 27
+  TeamName: "Woodcutters"
+  Wins: 10
+  Losses: 5
+  Overtime: 1
+  GoalsFor: 101
+  GoalsAgainst: 73
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 167
+  SeasonPortionId: 27
+  TeamName: "FBC Remix"
+  Wins: 8
+  Losses: 7
+  Overtime: 1
+  GoalsFor: 68
+  GoalsAgainst: 74
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 168
+  SeasonPortionId: 27
+  TeamName: "SPV"
+  Wins: 1
+  Losses: 15
+  Overtime: 0
+  GoalsFor: 41
+  GoalsAgainst: 124
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 169
+  SeasonPortionId: 27
+  TeamName: "ISB Ilmajoki"
+  Wins: 12
+  Losses: 3
+  Overtime: 1
+  GoalsFor: 112
+  GoalsAgainst: 49
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  TeamID: 170
+  SeasonPortionId: 28
+  TeamName: "TPS"
+  Wins: 12
+  Losses: 1
+  Overtime: 1
+  GoalsFor: 101
+  GoalsAgainst: 45
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 171
+  SeasonPortionId: 28
+  TeamName: "PSS"
+  Wins: 7
+  Losses: 6
+  Overtime: 1
+  GoalsFor: 61
+  GoalsAgainst: 64
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 172
+  SeasonPortionId: 28
+  TeamName: "FBC Turku"
+  Wins: 4
+  Losses: 9
+  Overtime: 1
+  GoalsFor: 44
+  GoalsAgainst: 57
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 173
+  SeasonPortionId: 28
+  TeamName: "Oilers-93"
+  Wins: 7
+  Losses: 5
+  Overtime: 2
+  GoalsFor: 56
+  GoalsAgainst: 49
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 174
+  SeasonPortionId: 28
+  TeamName: "FoSu"
+  Wins: 6
+  Losses: 6
+  Overtime: 2
+  GoalsFor: 50
+  GoalsAgainst: 52
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 175
+  SeasonPortionId: 28
+  TeamName: "SSV"
+  Wins: 8
+  Losses: 4
+  Overtime: 2
+  GoalsFor: 80
+  GoalsAgainst: 44
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 176
+  SeasonPortionId: 28
+  TeamName: "TPS 14"
+  Wins: 5
+  Losses: 4
+  Overtime: 5
+  GoalsFor: 71
+  GoalsAgainst: 64
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 177
+  SeasonPortionId: 28
+  TeamName: "ISB-Ilmajoki"
+  Wins: 0
+  Losses: 14
+  Overtime: 0
+  GoalsFor: 26
+  GoalsAgainst: 114
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 178
+  SeasonPortionId: 29
+  TeamName: "ISB Ilmajoki"
+  Wins: 0
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 6
+  GoalsAgainst: 22
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  TeamID: 179
+  SeasonPortionId: 29
+  TeamName: "SB Vaasa"
+  Wins: 1
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 9
+  GoalsAgainst: 17
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  TeamID: 180
+  SeasonPortionId: 29
+  TeamName: "Merikoski SBT"
+  Wins: 3
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 21
+  GoalsAgainst: 5
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  TeamID: 181
+  SeasonPortionId: 29
+  TeamName: "LNM"
+  Wins: 2
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 18
+  GoalsAgainst: 10
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  TeamID: 182
+  SeasonPortionId: 30
+  TeamName: "ISB Ilmajoki"
+  Wins: 0
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 11
+  GoalsAgainst: 28
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 183
+  SeasonPortionId: 30
+  TeamName: "SPV Jymy"
+  Wins: 3
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 23
+  GoalsAgainst: 11
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 184
+  SeasonPortionId: 30
+  TeamName: "Nibacos"
+  Wins: 2
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 20
+  GoalsAgainst: 10
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 185
+  SeasonPortionId: 30
+  TeamName: "HiPa"
+  Wins: 1
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 12
+  GoalsAgainst: 17
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  TeamID: 186
+  SeasonPortionId: 34
+  TeamName: "KSS"
+  Wins: 4
+  Losses: 0
+  Overtime: 1
+  GoalsFor: 41
+  GoalsAgainst: 24
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  TeamID: 187
+  SeasonPortionId: 34
+  TeamName: "&#197;IF"
+  Wins: 4
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 41
+  GoalsAgainst: 37
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  TeamID: 188
+  SeasonPortionId: 34
+  TeamName: "ISB Ilmajoki"
+  Wins: 3
+  Losses: 1
+  Overtime: 1
+  GoalsFor: 41
+  GoalsAgainst: 37
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  TeamID: 189
+  SeasonPortionId: 34
+  TeamName: "SCH"
+  Wins: 1
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 40
+  GoalsAgainst: 47
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  TeamID: 190
+  SeasonPortionId: 34
+  TeamName: "Papas"
+  Wins: 1
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 28
+  GoalsAgainst: 37
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  TeamID: 191
+  SeasonPortionId: 34
+  TeamName: "Sbandy"
+  Wins: 1
+  Losses: 4
+  Overtime: 0
+  GoalsFor: 38
+  GoalsAgainst: 47
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  TeamID: 192
+  SeasonPortionId: 32
+  TeamName: "ISB Ilmajoki"
+  Wins: 6
+  Losses: 16
+  Overtime: 0
+  GoalsFor: 146
+  GoalsAgainst: 196
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 193
+  SeasonPortionId: 32
+  TeamName: "Blue Fox"
+  Wins: 12
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 168
+  GoalsAgainst: 110
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 194
+  SeasonPortionId: 32
+  TeamName: "Woodcutters"
+  Wins: 11
+  Losses: 10
+  Overtime: 1
+  GoalsFor: 159
+  GoalsAgainst: 150
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 195
+  SeasonPortionId: 32
+  TeamName: "AFC"
+  Wins: 6
+  Losses: 15
+  Overtime: 1
+  GoalsFor: 123
+  GoalsAgainst: 160
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 196
+  SeasonPortionId: 32
+  TeamName: "FBC Turku"
+  Wins: 12
+  Losses: 8
+  Overtime: 2
+  GoalsFor: 176
+  GoalsAgainst: 142
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 197
+  SeasonPortionId: 32
+  TeamName: "FBT Pori"
+  Wins: 17
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 144
+  GoalsAgainst: 95
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 198
+  SeasonPortionId: 32
+  TeamName: "SBS Pori"
+  Wins: 0
+  Losses: 22
+  Overtime: 0
+  GoalsFor: 47
+  GoalsAgainst: 308
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 199
+  SeasonPortionId: 32
+  TeamName: "Indians"
+  Wins: 14
+  Losses: 6
+  Overtime: 2
+  GoalsFor: 179
+  GoalsAgainst: 118
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 200
+  SeasonPortionId: 32
+  TeamName: "Rangers"
+  Wins: 8
+  Losses: 13
+  Overtime: 1
+  GoalsFor: 124
+  GoalsAgainst: 139
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 201
+  SeasonPortionId: 32
+  TeamName: "FoSu"
+  Wins: 14
+  Losses: 7
+  Overtime: 1
+  GoalsFor: 186
+  GoalsAgainst: 135
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 202
+  SeasonPortionId: 32
+  TeamName: "Ilves"
+  Wins: 12
+  Losses: 5
+  Overtime: 5
+  GoalsFor: 187
+  GoalsAgainst: 121
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 203
+  SeasonPortionId: 32
+  TeamName: "USB"
+  Wins: 12
+  Losses: 10
+  Overtime: 0
+  GoalsFor: 165
+  GoalsAgainst: 130
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 204
+  SeasonPortionId: 35
+  TeamName: "Woodcutters"
+  Wins: 0
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 14
+  GoalsAgainst: 70
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 205
+  SeasonPortionId: 35
+  TeamName: "Kisa"
+  Wins: 4
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 37
+  GoalsAgainst: 39
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 206
+  SeasonPortionId: 35
+  TeamName: "SPV"
+  Wins: 7
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 71
+  GoalsAgainst: 17
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 207
+  SeasonPortionId: 35
+  TeamName: "NJ"
+  Wins: 4
+  Losses: 1
+  Overtime: 2
+  GoalsFor: 59
+  GoalsAgainst: 37
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 208
+  SeasonPortionId: 35
+  TeamName: "KuKu"
+  Wins: 2
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 34
+  GoalsAgainst: 59
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 209
+  SeasonPortionId: 35
+  TeamName: "ISB-Ilmajoki"
+  Wins: 1
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 27
+  GoalsAgainst: 51
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 210
+  SeasonPortionId: 35
+  TeamName: "SC Alajärvi"
+  Wins: 5
+  Losses: 1
+  Overtime: 1
+  GoalsFor: 49
+  GoalsAgainst: 20
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 211
+  SeasonPortionId: 35
+  TeamName: "FBC Remix"
+  Wins: 3
+  Losses: 3
+  Overtime: 1
+  GoalsFor: 44
+  GoalsAgainst: 42
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 212
+  SeasonPortionId: 36
+  TeamName: "SB Vaasa II"
+  Wins: 16
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 149
+  GoalsAgainst: 12
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 213
+  SeasonPortionId: 36
+  TeamName: "KannUra"
+  Wins: 0
+  Losses: 15
+  Overtime: 1
+  GoalsFor: 9
+  GoalsAgainst: 128
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 214
+  SeasonPortionId: 36
+  TeamName: "SB Vaasa III"
+  Wins: 2
+  Losses: 13
+  Overtime: 1
+  GoalsFor: 28
+  GoalsAgainst: 84
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 215
+  SeasonPortionId: 36
+  TeamName: "SB Vaasa"
+  Wins: 11
+  Losses: 4
+  Overtime: 1
+  GoalsFor: 71
+  GoalsAgainst: 37
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 216
+  SeasonPortionId: 36
+  TeamName: "KuRy"
+  Wins: 6
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 44
+  GoalsAgainst: 50
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 217
+  SeasonPortionId: 36
+  TeamName: "Käta"
+  Wins: 3
+  Losses: 10
+  Overtime: 3
+  GoalsFor: 40
+  GoalsAgainst: 77
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 218
+  SeasonPortionId: 36
+  TeamName: "ISB Ilmajoki"
+  Wins: 9
+  Losses: 6
+  Overtime: 1
+  GoalsFor: 60
+  GoalsAgainst: 53
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 219
+  SeasonPortionId: 36
+  TeamName: "PaSu"
+  Wins: 9
+  Losses: 5
+  Overtime: 2
+  GoalsFor: 58
+  GoalsAgainst: 48
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 220
+  SeasonPortionId: 36
+  TeamName: "SB Kauhajoki"
+  Wins: 10
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 73
+  GoalsAgainst: 43
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 221
+  SeasonPortionId: 37
+  TeamName: "ISB Ilmajoki II"
+  Wins: 11
+  Losses: 8
+  Overtime: 2
+  GoalsFor: 113
+  GoalsAgainst: 107
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 222
+  SeasonPortionId: 37
+  TeamName: "Vikings"
+  Wins: 2
+  Losses: 18
+  Overtime: 1
+  GoalsFor: 68
+  GoalsAgainst: 184
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 223
+  SeasonPortionId: 37
+  TeamName: "IU"
+  Wins: 7
+  Losses: 13
+  Overtime: 1
+  GoalsFor: 114
+  GoalsAgainst: 117
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 224
+  SeasonPortionId: 37
+  TeamName: "SCS"
+  Wins: 14
+  Losses: 4
+  Overtime: 3
+  GoalsFor: 117
+  GoalsAgainst: 76
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 225
+  SeasonPortionId: 37
+  TeamName: "KuRy"
+  Wins: 9
+  Losses: 8
+  Overtime: 4
+  GoalsFor: 134
+  GoalsAgainst: 114
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 226
+  SeasonPortionId: 37
+  TeamName: "Jalas"
+  Wins: 8
+  Losses: 11
+  Overtime: 2
+  GoalsFor: 109
+  GoalsAgainst: 115
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 227
+  SeasonPortionId: 37
+  TeamName: "PB Team II"
+  Wins: 18
+  Losses: 1
+  Overtime: 2
+  GoalsFor: 168
+  GoalsAgainst: 60
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 228
+  SeasonPortionId: 37
+  TeamName: "ToCo"
+  Wins: 7
+  Losses: 13
+  Overtime: 1
+  GoalsFor: 106
+  GoalsAgainst: 156
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 229
+  SeasonPortionId: 38
+  TeamName: "SB Vaasa"
+  Wins: 5
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 25
+  GoalsAgainst: 14
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 230
+  SeasonPortionId: 38
+  TeamName: "Ponnistus"
+  Wins: 3
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 16
+  GoalsAgainst: 22
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 231
+  SeasonPortionId: 38
+  TeamName: "SPV"
+  Wins: 3
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 12
+  GoalsAgainst: 12
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 232
+  SeasonPortionId: 38
+  TeamName: "Blue Fox"
+  Wins: 6
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 53
+  GoalsAgainst: 3
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 233
+  SeasonPortionId: 38
+  TeamName: "Jeppis FBC"
+  Wins: 0
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 1
+  GoalsAgainst: 52
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 234
+  SeasonPortionId: 38
+  TeamName: "FBC Remix"
+  Wins: 1
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 20
+  GoalsAgainst: 34
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 235
+  SeasonPortionId: 38
+  TeamName: "ISB"
+  Wins: 3
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 19
+  GoalsAgainst: 9
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 236
+  SeasonPortionId: 39
+  TeamName: "ISB"
+  Wins: 5
+  Losses: 14
+  Overtime: 2
+  GoalsFor: 91
+  GoalsAgainst: 163
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 237
+  SeasonPortionId: 39
+  TeamName: "KäTa Tera"
+  Wins: 7
+  Losses: 13
+  Overtime: 1
+  GoalsFor: 113
+  GoalsAgainst: 150
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 238
+  SeasonPortionId: 39
+  TeamName: "SPV"
+  Wins: 21
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 222
+  GoalsAgainst: 63
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 239
+  SeasonPortionId: 39
+  TeamName: "NJ"
+  Wins: 12
+  Losses: 7
+  Overtime: 2
+  GoalsFor: 141
+  GoalsAgainst: 122
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 240
+  SeasonPortionId: 39
+  TeamName: "SB Kauhajoki"
+  Wins: 2
+  Losses: 16
+  Overtime: 3
+  GoalsFor: 103
+  GoalsAgainst: 197
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 241
+  SeasonPortionId: 39
+  TeamName: "Blue Fox"
+  Wins: 10
+  Losses: 8
+  Overtime: 3
+  GoalsFor: 128
+  GoalsAgainst: 112
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 242
+  SeasonPortionId: 39
+  TeamName: "KäTa Maru"
+  Wins: 7
+  Losses: 10
+  Overtime: 4
+  GoalsFor: 135
+  GoalsAgainst: 131
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 243
+  SeasonPortionId: 39
+  TeamName: "Nibacos"
+  Wins: 11
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 143
+  GoalsAgainst: 138
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 244
+  SeasonPortionId: 40
+  TeamName: "Blue Fox"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 245
+  SeasonPortionId: 40
+  TeamName: "Woodcutters"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 246
+  SeasonPortionId: 40
+  TeamName: "SPV 2"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 247
+  SeasonPortionId: 40
+  TeamName: "Sb Vaasa"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 248
+  SeasonPortionId: 40
+  TeamName: "FBC Remix"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 249
+  SeasonPortionId: 40
+  TeamName: "Nibacos"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 250
+  SeasonPortionId: 40
+  TeamName: "ISB-Ilmajoki"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 251
+  SeasonPortionId: 40
+  TeamName: "HiPa"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 252
+  SeasonPortionId: 40
+  TeamName: "NJ Panthers"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 253
+  SeasonPortionId: 40
+  TeamName: "SPV"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 5
+-
+  TeamID: 254
+  SeasonPortionId: 41
+  TeamName: "SPV"
+  Wins: 9
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 95
+  GoalsAgainst: 18
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 255
+  SeasonPortionId: 41
+  TeamName: "NJ Panthers"
+  Wins: 8
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 89
+  GoalsAgainst: 18
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 256
+  SeasonPortionId: 41
+  TeamName: "HiPa"
+  Wins: 6
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 52
+  GoalsAgainst: 45
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 257
+  SeasonPortionId: 41
+  TeamName: "ISB-Ilmajoki"
+  Wins: 3
+  Losses: 4
+  Overtime: 2
+  GoalsFor: 50
+  GoalsAgainst: 53
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 258
+  SeasonPortionId: 41
+  TeamName: "Nibacos"
+  Wins: 4
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 33
+  GoalsAgainst: 49
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 259
+  SeasonPortionId: 41
+  TeamName: "SB Vaasa"
+  Wins: 4
+  Losses: 4
+  Overtime: 1
+  GoalsFor: 28
+  GoalsAgainst: 47
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 260
+  SeasonPortionId: 41
+  TeamName: "SPV 2"
+  Wins: 2
+  Losses: 4
+  Overtime: 3
+  GoalsFor: 44
+  GoalsAgainst: 62
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 261
+  SeasonPortionId: 41
+  TeamName: "Woodcutters"
+  Wins: 2
+  Losses: 6
+  Overtime: 1
+  GoalsFor: 24
+  GoalsAgainst: 73
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 262
+  SeasonPortionId: 41
+  TeamName: "Blue Fox"
+  Wins: 1
+  Losses: 7
+  Overtime: 1
+  GoalsFor: 19
+  GoalsAgainst: 60
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 263
+  SeasonPortionId: 41
+  TeamName: "FBC Remix"
+  Wins: 2
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 45
+  GoalsAgainst: 54
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  TeamID: 264
+  SeasonPortionId: 44
+  TeamName: "Blue Fox D"
+  Wins: 1
+  Losses: 10
+  Overtime: 1
+  GoalsFor: 9
+  GoalsAgainst: 79
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 265
+  SeasonPortionId: 44
+  TeamName: "FBC Remix"
+  Wins: 4
+  Losses: 8
+  Overtime: 0
+  GoalsFor: 42
+  GoalsAgainst: 52
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 266
+  SeasonPortionId: 44
+  TeamName: "SB Vaasa"
+  Wins: 10
+  Losses: 1
+  Overtime: 1
+  GoalsFor: 80
+  GoalsAgainst: 14
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 267
+  SeasonPortionId: 44
+  TeamName: "SPV"
+  Wins: 5
+  Losses: 5
+  Overtime: 2
+  GoalsFor: 25
+  GoalsAgainst: 28
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 268
+  SeasonPortionId: 44
+  TeamName: "Ponnistus"
+  Wins: 7
+  Losses: 3
+  Overtime: 2
+  GoalsFor: 45
+  GoalsAgainst: 26
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 269
+  SeasonPortionId: 44
+  TeamName: "ISB"
+  Wins: 11
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 64
+  GoalsAgainst: 14
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 270
+  SeasonPortionId: 44
+  TeamName: "Jeppis FBC"
+  Wins: 0
+  Losses: 10
+  Overtime: 2
+  GoalsFor: 6
+  GoalsAgainst: 58
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 271
+  SeasonPortionId: 43
+  TeamName: "ISB"
+  Wins: 6
+  Losses: 5
+  Overtime: 1
+  GoalsFor: 60
+  GoalsAgainst: 77
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 272
+  SeasonPortionId: 43
+  TeamName: "KuKu"
+  Wins: 4
+  Losses: 8
+  Overtime: 0
+  GoalsFor: 53
+  GoalsAgainst: 74
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 273
+  SeasonPortionId: 43
+  TeamName: "SC Alajärvi"
+  Wins: 9
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 80
+  GoalsAgainst: 36
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 274
+  SeasonPortionId: 43
+  TeamName: "NJ"
+  Wins: 3
+  Losses: 8
+  Overtime: 1
+  GoalsFor: 43
+  GoalsAgainst: 77
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 275
+  SeasonPortionId: 43
+  TeamName: "Kisa"
+  Wins: 6
+  Losses: 4
+  Overtime: 2
+  GoalsFor: 61
+  GoalsAgainst: 55
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 276
+  SeasonPortionId: 43
+  TeamName: "FBC Remix"
+  Wins: 9
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 88
+  GoalsAgainst: 34
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 277
+  SeasonPortionId: 43
+  TeamName: "Woodcutters"
+  Wins: 3
+  Losses: 9
+  Overtime: 0
+  GoalsFor: 42
+  GoalsAgainst: 74
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 278
+  SeasonPortionId: 45
+  TeamName: "SPV 2"
+  Wins: 5
+  Losses: 7
+  Overtime: 2
+  GoalsFor: 70
+  GoalsAgainst: 102
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 279
+  SeasonPortionId: 45
+  TeamName: "NJ Panthers"
+  Wins: 12
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 145
+  GoalsAgainst: 47
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 280
+  SeasonPortionId: 45
+  TeamName: "ISB-Ilmajoki"
+  Wins: 7
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 66
+  GoalsAgainst: 84
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 281
+  SeasonPortionId: 45
+  TeamName: "FBC Remix"
+  Wins: 4
+  Losses: 10
+  Overtime: 0
+  GoalsFor: 64
+  GoalsAgainst: 94
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 282
+  SeasonPortionId: 45
+  TeamName: "HiPa"
+  Wins: 14
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 146
+  GoalsAgainst: 49
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 283
+  SeasonPortionId: 45
+  TeamName: "Blue Fox"
+  Wins: 3
+  Losses: 9
+  Overtime: 2
+  GoalsFor: 53
+  GoalsAgainst: 85
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 284
+  SeasonPortionId: 45
+  TeamName: "Nibacos"
+  Wins: 3
+  Losses: 10
+  Overtime: 1
+  GoalsFor: 53
+  GoalsAgainst: 95
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 285
+  SeasonPortionId: 45
+  TeamName: "SB Vaasa"
+  Wins: 7
+  Losses: 5
+  Overtime: 2
+  GoalsFor: 95
+  GoalsAgainst: 102
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 286
+  SeasonPortionId: 45
+  TeamName: "Woodcutters"
+  Wins: 4
+  Losses: 9
+  Overtime: 1
+  GoalsFor: 76
+  GoalsAgainst: 110
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  TeamID: 287
+  SeasonPortionId: 46
+  TeamName: "ISB"
+  Wins: 1
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 4
+  GoalsAgainst: 5
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  TeamID: 288
+  SeasonPortionId: 46
+  TeamName: "SB Vaasa"
+  Wins: 2
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 7
+  GoalsAgainst: 6
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  TeamID: 289
+  SeasonPortionId: 46
+  TeamName: "MuhU"
+  Wins: 0
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 2
+  GoalsAgainst: 6
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  TeamID: 290
+  SeasonPortionId: 46
+  TeamName: "LNM"
+  Wins: 2
+  Losses: 0
+  Overtime: 1
+  GoalsFor: 7
+  GoalsAgainst: 3
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  TeamID: 291
+  SeasonPortionId: 47
+  TeamName: "ISB"
+  Wins: 12
+  Losses: 1
+  Overtime: 5
+  GoalsFor: 72
+  GoalsAgainst: 26
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 292
+  SeasonPortionId: 47
+  TeamName: "PaSu"
+  Wins: 8
+  Losses: 7
+  Overtime: 3
+  GoalsFor: 47
+  GoalsAgainst: 41
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 293
+  SeasonPortionId: 47
+  TeamName: "KuRy"
+  Wins: 7
+  Losses: 9
+  Overtime: 2
+  GoalsFor: 33
+  GoalsAgainst: 46
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 294
+  SeasonPortionId: 47
+  TeamName: "SC Kokkola"
+  Wins: 5
+  Losses: 12
+  Overtime: 1
+  GoalsFor: 46
+  GoalsAgainst: 64
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 295
+  SeasonPortionId: 47
+  TeamName: "SB Kauhajoki"
+  Wins: 10
+  Losses: 5
+  Overtime: 3
+  GoalsFor: 66
+  GoalsAgainst: 43
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 296
+  SeasonPortionId: 47
+  TeamName: "HiPa"
+  Wins: 13
+  Losses: 2
+  Overtime: 3
+  GoalsFor: 71
+  GoalsAgainst: 26
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 297
+  SeasonPortionId: 47
+  TeamName: "KauWi"
+  Wins: 9
+  Losses: 5
+  Overtime: 4
+  GoalsFor: 57
+  GoalsAgainst: 47
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 298
+  SeasonPortionId: 47
+  TeamName: "SC Alavus"
+  Wins: 3
+  Losses: 11
+  Overtime: 4
+  GoalsFor: 39
+  GoalsAgainst: 46
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 299
+  SeasonPortionId: 47
+  TeamName: "SB Vaasa III"
+  Wins: 1
+  Losses: 14
+  Overtime: 3
+  GoalsFor: 29
+  GoalsAgainst: 107
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 300
+  SeasonPortionId: 47
+  TeamName: "FBC Remix"
+  Wins: 6
+  Losses: 8
+  Overtime: 4
+  GoalsFor: 42
+  GoalsAgainst: 47
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 301
+  SeasonPortionId: 48
+  TeamName: "ISB"
+  Wins: 15
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 211
+  GoalsAgainst: 133
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 302
+  SeasonPortionId: 48
+  TeamName: "White Fox"
+  Wins: 9
+  Losses: 9
+  Overtime: 0
+  GoalsFor: 172
+  GoalsAgainst: 143
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 303
+  SeasonPortionId: 48
+  TeamName: "Jymy"
+  Wins: 12
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 167
+  GoalsAgainst: 134
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 304
+  SeasonPortionId: 48
+  TeamName: "Sisu"
+  Wins: 10
+  Losses: 8
+  Overtime: 0
+  GoalsFor: 184
+  GoalsAgainst: 129
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 305
+  SeasonPortionId: 48
+  TeamName: "Nibacos"
+  Wins: 11
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 133
+  GoalsAgainst: 93
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 306
+  SeasonPortionId: 48
+  TeamName: "Kotkat"
+  Wins: 5
+  Losses: 13
+  Overtime: 0
+  GoalsFor: 166
+  GoalsAgainst: 244
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 307
+  SeasonPortionId: 48
+  TeamName: "HiPa"
+  Wins: 1
+  Losses: 17
+  Overtime: 0
+  GoalsFor: 110
+  GoalsAgainst: 267
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 308
+  SeasonPortionId: 49
+  TeamName: "ISB II"
+  Wins: 10
+  Losses: 3
+  Overtime: 3
+  GoalsFor: 62
+  GoalsAgainst: 43
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 309
+  SeasonPortionId: 49
+  TeamName: "SC Alajärvi"
+  Wins: 9
+  Losses: 3
+  Overtime: 4
+  GoalsFor: 76
+  GoalsAgainst: 36
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 310
+  SeasonPortionId: 49
+  TeamName: "FBC Remix"
+  Wins: 2
+  Losses: 12
+  Overtime: 2
+  GoalsFor: 47
+  GoalsAgainst: 91
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 311
+  SeasonPortionId: 49
+  TeamName: "SC Kokkola"
+  Wins: 10
+  Losses: 4
+  Overtime: 2
+  GoalsFor: 77
+  GoalsAgainst: 36
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 312
+  SeasonPortionId: 49
+  TeamName: "FBC Isojako"
+  Wins: 4
+  Losses: 11
+  Overtime: 1
+  GoalsFor: 42
+  GoalsAgainst: 86
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 313
+  SeasonPortionId: 49
+  TeamName: "LK Kings"
+  Wins: 5
+  Losses: 10
+  Overtime: 1
+  GoalsFor: 75
+  GoalsAgainst: 106
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 314
+  SeasonPortionId: 49
+  TeamName: "SB Amerikaarto"
+  Wins: 10
+  Losses: 3
+  Overtime: 3
+  GoalsFor: 85
+  GoalsAgainst: 38
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 315
+  SeasonPortionId: 49
+  TeamName: "HiPa II"
+  Wins: 4
+  Losses: 12
+  Overtime: 0
+  GoalsFor: 45
+  GoalsAgainst: 101
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 316
+  SeasonPortionId: 49
+  TeamName: "SBS Lapua"
+  Wins: 8
+  Losses: 4
+  Overtime: 4
+  GoalsFor: 85
+  GoalsAgainst: 57
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 317
+  SeasonPortionId: 50
+  TeamName: "Woodcutters"
+  Wins: 1
+  Losses: 3
+  Overtime: 1
+  GoalsFor: 17
+  GoalsAgainst: 38
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 318
+  SeasonPortionId: 50
+  TeamName: "KuKu"
+  Wins: 0
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 17
+  GoalsAgainst: 40
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 319
+  SeasonPortionId: 50
+  TeamName: "SPV"
+  Wins: 5
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 52
+  GoalsAgainst: 9
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 320
+  SeasonPortionId: 50
+  TeamName: "ISB"
+  Wins: 2
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 24
+  GoalsAgainst: 30
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 321
+  SeasonPortionId: 50
+  TeamName: "FBC Remix"
+  Wins: 4
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 30
+  GoalsAgainst: 21
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 322
+  SeasonPortionId: 50
+  TeamName: "NJ"
+  Wins: 2
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 23
+  GoalsAgainst: 25
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 323
+  SeasonPortionId: 51
+  TeamName: "ISB"
+  Wins: 2
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 33
+  GoalsAgainst: 75
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 324
+  SeasonPortionId: 51
+  TeamName: "SPV"
+  Wins: 8
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 104
+  GoalsAgainst: 32
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 325
+  SeasonPortionId: 51
+  TeamName: "NJ"
+  Wins: 5
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 68
+  GoalsAgainst: 50
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 326
+  SeasonPortionId: 51
+  TeamName: "Nibacos"
+  Wins: 3
+  Losses: 3
+  Overtime: 2
+  GoalsFor: 57
+  GoalsAgainst: 53
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 327
+  SeasonPortionId: 51
+  TeamName: "SB Kauhajoki"
+  Wins: 0
+  Losses: 7
+  Overtime: 1
+  GoalsFor: 46
+  GoalsAgainst: 98
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 328
+  SeasonPortionId: 52
+  TeamName: "NJ White"
+  Wins: 3
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 59
+  GoalsAgainst: 54
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 329
+  SeasonPortionId: 52
+  TeamName: "NJ Blue"
+  Wins: 1
+  Losses: 6
+  Overtime: 1
+  GoalsFor: 32
+  GoalsAgainst: 76
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 330
+  SeasonPortionId: 52
+  TeamName: "SB Vaasa-98"
+  Wins: 8
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 97
+  GoalsAgainst: 18
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 331
+  SeasonPortionId: 52
+  TeamName: "SB Vaasa-98/99"
+  Wins: 1
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 28
+  GoalsAgainst: 80
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 332
+  SeasonPortionId: 52
+  TeamName: "FBC Remix"
+  Wins: 3
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 38
+  GoalsAgainst: 65
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 333
+  SeasonPortionId: 52
+  TeamName: "SPV 98"
+  Wins: 7
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 75
+  GoalsAgainst: 36
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 334
+  SeasonPortionId: 52
+  TeamName: "Nibacos"
+  Wins: 3
+  Losses: 4
+  Overtime: 1
+  GoalsFor: 44
+  GoalsAgainst: 58
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 335
+  SeasonPortionId: 52
+  TeamName: "Blue Fox"
+  Wins: 5
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 60
+  GoalsAgainst: 34
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 336
+  SeasonPortionId: 52
+  TeamName: "ISB"
+  Wins: 3
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 41
+  GoalsAgainst: 61
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 337
+  SeasonPortionId: 52
+  TeamName: "FBC Remix musta"
+  Wins: 5
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 43
+  GoalsAgainst: 35
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 338
+  SeasonPortionId: 53
+  TeamName: "Blue Fox"
+  Wins: 2
+  Losses: 2
+  Overtime: 1
+  GoalsFor: 13
+  GoalsAgainst: 15
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 339
+  SeasonPortionId: 53
+  TeamName: "SPV"
+  Wins: 2
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 14
+  GoalsAgainst: 15
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 340
+  SeasonPortionId: 53
+  TeamName: "HiPa"
+  Wins: 1
+  Losses: 3
+  Overtime: 1
+  GoalsFor: 12
+  GoalsAgainst: 15
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 341
+  SeasonPortionId: 53
+  TeamName: "ISB"
+  Wins: 4
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 16
+  GoalsAgainst: 5
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 342
+  SeasonPortionId: 53
+  TeamName: "FBC Remix"
+  Wins: 5
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 29
+  GoalsAgainst: 3
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 343
+  SeasonPortionId: 53
+  TeamName: "Jeppis FBC"
+  Wins: 0
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 4
+  GoalsAgainst: 34
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 344
+  SeasonPortionId: 54
+  TeamName: "ISB III"
+  Wins: 3
+  Losses: 13
+  Overtime: 0
+  GoalsFor: 44
+  GoalsAgainst: 108
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 345
+  SeasonPortionId: 54
+  TeamName: "Team Atria"
+  Wins: 13
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 77
+  GoalsAgainst: 52
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 346
+  SeasonPortionId: 54
+  TeamName: "SoPs"
+  Wins: 7
+  Losses: 8
+  Overtime: 1
+  GoalsFor: 74
+  GoalsAgainst: 78
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 347
+  SeasonPortionId: 54
+  TeamName: "White Fox II"
+  Wins: 5
+  Losses: 11
+  Overtime: 0
+  GoalsFor: 77
+  GoalsAgainst: 83
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 348
+  SeasonPortionId: 54
+  TeamName: "Shadows"
+  Wins: 4
+  Losses: 9
+  Overtime: 3
+  GoalsFor: 63
+  GoalsAgainst: 84
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 349
+  SeasonPortionId: 54
+  TeamName: "TöVe"
+  Wins: 2
+  Losses: 12
+  Overtime: 2
+  GoalsFor: 46
+  GoalsAgainst: 92
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 350
+  SeasonPortionId: 54
+  TeamName: "SBS Lapua II"
+  Wins: 10
+  Losses: 4
+  Overtime: 2
+  GoalsFor: 92
+  GoalsAgainst: 54
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 351
+  SeasonPortionId: 54
+  TeamName: "SC Rebels"
+  Wins: 9
+  Losses: 7
+  Overtime: 0
+  GoalsFor: 64
+  GoalsAgainst: 80
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 352
+  SeasonPortionId: 54
+  TeamName: "Nurmon Jymy II"
+  Wins: 15
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 132
+  GoalsAgainst: 38
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 353
+  SeasonPortionId: 55
+  TeamName: "ISB"
+  Wins: 3
+  Losses: 9
+  Overtime: 4
+  GoalsFor: 29
+  GoalsAgainst: 45
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 354
+  SeasonPortionId: 55
+  TeamName: "SB Vaasa"
+  Wins: 5
+  Losses: 8
+  Overtime: 3
+  GoalsFor: 38
+  GoalsAgainst: 53
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 355
+  SeasonPortionId: 55
+  TeamName: "PSB Lapua"
+  Wins: 5
+  Losses: 9
+  Overtime: 2
+  GoalsFor: 35
+  GoalsAgainst: 52
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 356
+  SeasonPortionId: 55
+  TeamName: "SPV"
+  Wins: 3
+  Losses: 11
+  Overtime: 2
+  GoalsFor: 38
+  GoalsAgainst: 65
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 357
+  SeasonPortionId: 55
+  TeamName: "LNM"
+  Wins: 10
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 70
+  GoalsAgainst: 48
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 358
+  SeasonPortionId: 55
+  TeamName: "Nibacos"
+  Wins: 11
+  Losses: 4
+  Overtime: 1
+  GoalsFor: 77
+  GoalsAgainst: 47
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 359
+  SeasonPortionId: 55
+  TeamName: "Blue Fox"
+  Wins: 12
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 65
+  GoalsAgainst: 42
+  Division: "Tytöt 1.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  TeamID: 360
+  SeasonPortionId: 56
+  TeamName: "ISB"
+  Wins: 6
+  Losses: 5
+  Overtime: 1
+  GoalsFor: 78
+  GoalsAgainst: 66
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 361
+  SeasonPortionId: 56
+  TeamName: "FBC Remix"
+  Wins: 12
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 103
+  GoalsAgainst: 31
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 362
+  SeasonPortionId: 56
+  TeamName: "NJ"
+  Wins: 8
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 95
+  GoalsAgainst: 50
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 363
+  SeasonPortionId: 56
+  TeamName: "Alahärmän Kisa"
+  Wins: 8
+  Losses: 2
+  Overtime: 2
+  GoalsFor: 89
+  GoalsAgainst: 41
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 364
+  SeasonPortionId: 56
+  TeamName: "Hipa"
+  Wins: 2
+  Losses: 9
+  Overtime: 1
+  GoalsFor: 65
+  GoalsAgainst: 106
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 365
+  SeasonPortionId: 56
+  TeamName: "Nibacos"
+  Wins: 3
+  Losses: 8
+  Overtime: 1
+  GoalsFor: 50
+  GoalsAgainst: 104
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 366
+  SeasonPortionId: 56
+  TeamName: "KuKu"
+  Wins: 5
+  Losses: 5
+  Overtime: 2
+  GoalsFor: 71
+  GoalsAgainst: 69
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 367
+  SeasonPortionId: 56
+  TeamName: "Woodcutters"
+  Wins: 2
+  Losses: 9
+  Overtime: 1
+  GoalsFor: 58
+  GoalsAgainst: 108
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 368
+  SeasonPortionId: 56
+  TeamName: "KäTa"
+  Wins: 1
+  Losses: 9
+  Overtime: 2
+  GoalsFor: 51
+  GoalsAgainst: 79
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 369
+  SeasonPortionId: 56
+  TeamName: "Jeppis FBC"
+  Wins: 7
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 66
+  GoalsAgainst: 72
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 370
+  SeasonPortionId: 57
+  TeamName: "ISB"
+  Wins: 0
+  Losses: 6
+  Overtime: 0
+  GoalsFor: 19
+  GoalsAgainst: 59
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 371
+  SeasonPortionId: 57
+  TeamName: "Blue Fox"
+  Wins: 5
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 56
+  GoalsAgainst: 18
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 372
+  SeasonPortionId: 57
+  TeamName: "NJ"
+  Wins: 6
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 59
+  GoalsAgainst: 18
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 373
+  SeasonPortionId: 57
+  TeamName: "Nibacos"
+  Wins: 3
+  Losses: 3
+  Overtime: 0
+  GoalsFor: 37
+  GoalsAgainst: 44
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 374
+  SeasonPortionId: 57
+  TeamName: "SB Kauhajoki"
+  Wins: 1
+  Losses: 5
+  Overtime: 0
+  GoalsFor: 26
+  GoalsAgainst: 58
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 375
+  SeasonPortionId: 58
+  TeamName: "ISB"
+  Wins: 2
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 9
+  GoalsAgainst: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 376
+  SeasonPortionId: 58
+  TeamName: "Blue Fox"
+  Wins: 0
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 2
+  GoalsAgainst: 8
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 377
+  SeasonPortionId: 58
+  TeamName: "SPV"
+  Wins: 1
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 9
+  GoalsAgainst: 10
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 378
+  SeasonPortionId: 58
+  TeamName: "HiPa"
+  Wins: 0
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 19
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 379
+  SeasonPortionId: 58
+  TeamName: "Jeppis FBC"
+  Wins: 0
+  Losses: 2
+  Overtime: 0
+  GoalsFor: 4
+  GoalsAgainst: 13
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 380
+  SeasonPortionId: 58
+  TeamName: "LNM"
+  Wins: 1
+  Losses: 1
+  Overtime: 0
+  GoalsFor: 13
+  GoalsAgainst: 9
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 381
+  SeasonPortionId: 58
+  TeamName: "MuhU"
+  Wins: 2
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 18
+  GoalsAgainst: 2
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 382
+  SeasonPortionId: 58
+  TeamName: "Merikoski SBT"
+  Wins: 2
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 10
+  GoalsAgainst: 4
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 383
+  SeasonPortionId: 59
+  TeamName: "ISB"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  TeamID: 384
+  SeasonPortionId: 59
+  TeamName: "Lasb"
+  Wins: 0
+  Losses: 0
+  Overtime: 0
+  GoalsFor: 0
+  GoalsAgainst: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+...

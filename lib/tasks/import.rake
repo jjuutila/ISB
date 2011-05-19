@@ -164,12 +164,37 @@ namespace :import do
       end
     end
   end
+  
+  desc "Loads standings from a standings.yml"
+  task :standings => :environment do
+    puts "Loading standings"
+    yml = load_yml "standings"
+    
+    yml.each do |standings_data|
+      begin
+        season = Season.find_by_division_and_start_year! standings_data["Division"], standings_data["StartingYear"]
+        partition = season.partitions.find_by_position! standings_data["OrderNumber"]
+        
+        team_standing = partition.team_standings.build :name => standings_data["TeamName"], :wins => standings_data["Wins"],
+          :losses => standings_data["Losses"], :overtimes => standings_data["Overtime"], :goals_for => standings_data["GoalsFor"],
+          :goals_against => standings_data["GoalsAgainst"]
+          
+        if team_standing.save
+          puts "Save OK: #{season}, #{partition} - #{team_standing}"
+        else
+          puts "Errors: #{partition.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound
+        puts "ERROR: Problem with #{standings_data["Division"]}: #{standings_data["StartingYear"]} #{standings_data["OrderNumber"]}"
+      end
+    end
+  end
 
   desc "This drops the DB and loads the DB schema"
   task :reset => ['db:drop', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions]
+  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings]
   
   def load_yml file_name
     require 'yaml'
