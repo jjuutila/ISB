@@ -165,7 +165,7 @@ namespace :import do
     end
   end
   
-  desc "Loads standings from a standings.yml"
+  desc "Loads standings from standings.yml"
   task :standings => :environment do
     puts "Loading standings"
     yml = load_yml "standings"
@@ -175,7 +175,7 @@ namespace :import do
         season = Season.find_by_division_and_start_year! standings_data["Division"], standings_data["StartingYear"]
         partition = season.partitions.find_by_position! standings_data["OrderNumber"]
         
-        team_standing = partition.team_standings.build :name => standings_data["TeamName"], :wins => standings_data["Wins"],
+        home = partition.team_standings.build :name => standings_data["TeamName"], :wins => standings_data["Wins"],
           :losses => standings_data["Losses"], :overtimes => standings_data["Overtime"], :goals_for => standings_data["GoalsFor"],
           :goals_against => standings_data["GoalsAgainst"]
           
@@ -186,6 +186,54 @@ namespace :import do
         end
       rescue ActiveRecord::RecordNotFound
         puts "ERROR: Problem with #{standings_data["Division"]}: #{standings_data["StartingYear"]} #{standings_data["OrderNumber"]}"
+      end
+    end
+  end
+  
+  desc "Loads matches from matches.yml"
+  task :matches => :environment do
+    puts "Loading matches"
+    yml = load_yml "matches"
+    
+    yml.each do |match_data|
+      begin
+        season = Season.find_by_division_and_start_year! match_data["Division"], match_data["StartingYear"]
+        
+        partition = season.partitions.find_by_position! match_data["OrderNumber"]
+        
+        home_team = partition.team_standings.find_by_name! match_data["HomeName"]
+        visitor_team = partition.team_standings.find_by_name! match_data["VisitorName"]
+        
+        # Parse new match additional info from numerical format
+        additional_info_as_number = match_data["AdditionalInfo"]
+        if additional_info_as_number == 1
+          additional_info = "overtime"
+        elsif additional_info_as_number == 2
+          additional_info = "shootout"
+        else
+          additional_info = nil
+        end
+        
+        # Combine old MatchDate and StartTime fields into one variable
+        date = match_data["MatchDate"].split '-'
+        if match_data["StartTime"] # Some rows have null for StartTime
+          time = match_data["StartTime"].split ':'
+        else
+          time = [nil, nil]
+        end
+        start_time = Time.local date[0], date[1], date[2], time[0], time[1]
+        
+        match = partition.matches.build :home_team => home_team, :visitor_team => visitor_team, :report => match_data["MatchReport"],
+          :home_goals => match_data["HomeGoals"], :visitor_goals => match_data["VisitorGoals"], :location => match_data["Location"],
+          :additional_info => additional_info, :start_time => start_time
+        
+        if match.save
+          puts "Save OK: #{season} - #{match}: #{match.start_time}"
+        else
+          puts "Errors: #{partition.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound
+        puts "ERROR: Problem with #{match_data["Division"]}: #{match_data["StartingYear"]} #{match_data["OrderNumber"]}"
       end
     end
   end
