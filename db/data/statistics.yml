@@ -1,0 +1,10202 @@
+---
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 18
+  PenaltyMinutes: 4
+  Assists: 16
+  Goals: 20
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kuusisto"
+  GamesPlayed: 13
+  PenaltyMinutes: 6
+  Assists: 4
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 14
+  Goals: 31
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 17
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Kantoniemi"
+  GamesPlayed: 16
+  PenaltyMinutes: 8
+  Assists: 4
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 18
+  PenaltyMinutes: 4
+  Assists: 8
+  Goals: 26
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 5
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 18
+  PenaltyMinutes: 6
+  Assists: 23
+  Goals: 18
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 18
+  PenaltyMinutes: 22
+  Assists: 0
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 15
+  Goals: 9
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 16
+  PenaltyMinutes: 5
+  Assists: 12
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Kalevi"
+  LastName: "Kuikka"
+  GamesPlayed: 15
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 18
+  PenaltyMinutes: 4
+  Assists: 5
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 13
+  PenaltyMinutes: 6
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Kohtamäki"
+  GamesPlayed: 17
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 18
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 18
+  PenaltyMinutes: 8
+  Assists: 6
+  Goals: 18
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Matti"
+  LastName: "Pollari"
+  GamesPlayed: 13
+  PenaltyMinutes: 2
+  Assists: 10
+  Goals: 7
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Tommy"
+  LastName: "Koponen"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Pekka"
+  LastName: "Laitila"
+  GamesPlayed: 17
+  PenaltyMinutes: 2
+  Assists: 18
+  Goals: 10
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Anssi"
+  LastName: "Kesonen"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Latvala"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Huhtanen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 5
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Ala-Lipasti"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Metsä-Ketelä"
+  GamesPlayed: 11
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 14
+  Goals: 7
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Jouppila"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Puhtimäki"
+  GamesPlayed: 13
+  PenaltyMinutes: 2
+  Assists: 6
+  Goals: 17
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Ranto"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 6
+  Goals: 2
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Kivimäki"
+  GamesPlayed: 13
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 3
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Pekka"
+  LastName: "Huhtanen"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Turo"
+  LastName: "Oja-Lipasti"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 14
+  PenaltyMinutes: 27
+  Assists: 7
+  Goals: 10
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 10
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Kivimäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 36
+  Assists: 0
+  Goals: 1
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Haapamäki"
+  GamesPlayed: 18
+  PenaltyMinutes: 10
+  Assists: 6
+  Goals: 9
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 16
+  PenaltyMinutes: 4
+  Assists: 10
+  Goals: 8
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Latvasalo"
+  GamesPlayed: 16
+  PenaltyMinutes: 24
+  Assists: 5
+  Goals: 4
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Sameli"
+  LastName: "Niemi"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 4
+  Division: "4. divisioona"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Latva-Hoppala"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 5
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Tuohisaari"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 18
+  Goals: 21
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 17
+  Goals: 5
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Kuusisto"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kujala"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Komsi"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 1
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Mikael"
+  LastName: "Rinta-Röyskö"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Justus"
+  LastName: "Ristimäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 5
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Lauri"
+  LastName: "Jaakkola"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Markus"
+  LastName: "Isomäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 11
+  Goals: 33
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Reima"
+  LastName: "Salo"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Juonoja"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 4
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 15
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "C-juniorit"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Karoliina"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Armi"
+  LastName: "Autio"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Leena"
+  LastName: "Ojala"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Noora"
+  LastName: "Nyrhinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Jenni"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Mattila"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Marjaana"
+  LastName: "Rasku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Niina"
+  LastName: "Keskinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Heli"
+  LastName: "Risku-Rajala"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Irene"
+  LastName: "Viita"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 4
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Pia"
+  LastName: "Niemelä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Elina"
+  LastName: "Syrjä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Yli-Rahnasto"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Minna"
+  LastName: "Keskinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Ulla-Maija"
+  LastName: "Niemi"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Heidi"
+  LastName: "Vinter"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Mari"
+  LastName: "Ania"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Laura"
+  LastName: "Rissanen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "Naiset"
+  StartingYear: 2007
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 18
+  PenaltyMinutes: 6
+  Assists: 20
+  Goals: 17
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 18
+  PenaltyMinutes: 33
+  Assists: 17
+  Goals: 17
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 11
+  PenaltyMinutes: 8
+  Assists: 4
+  Goals: 14
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 13
+  PenaltyMinutes: 6
+  Assists: 3
+  Goals: 4
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Huhtanen"
+  GamesPlayed: 12
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 10
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Iisakki"
+  LastName: "Ala-Kauppila"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 15
+  PenaltyMinutes: 8
+  Assists: 7
+  Goals: 2
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Jouppila"
+  GamesPlayed: 17
+  PenaltyMinutes: 8
+  Assists: 7
+  Goals: 19
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Liminka"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 5
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Juutila"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Ari"
+  LastName: "Ketelä"
+  GamesPlayed: 18
+  PenaltyMinutes: 8
+  Assists: 6
+  Goals: 3
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Turo"
+  LastName: "Toivonen"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 4
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Ojaniemi"
+  GamesPlayed: 15
+  PenaltyMinutes: 6
+  Assists: 1
+  Goals: 3
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Ismo"
+  LastName: "Laitinen"
+  GamesPlayed: 13
+  PenaltyMinutes: 6
+  Assists: 3
+  Goals: 4
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Pekka"
+  LastName: "Huhtanen"
+  GamesPlayed: 5
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2002
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 14
+  PenaltyMinutes: 6
+  Assists: 14
+  Goals: 21
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 14
+  PenaltyMinutes: 10
+  Assists: 6
+  Goals: 13
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 14
+  PenaltyMinutes: 6
+  Assists: 12
+  Goals: 4
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 11
+  PenaltyMinutes: 47
+  Assists: 5
+  Goals: 2
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 10
+  Assists: 4
+  Goals: 1
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Huhtanen"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 5
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 10
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Jouppila"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 4
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Liminka"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 12
+  PenaltyMinutes: 6
+  Assists: 4
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Juutila"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Puhtimäki"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 12
+  PenaltyMinutes: 6
+  Assists: 10
+  Goals: 23
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Ari"
+  LastName: "Ketelä"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 3
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Turo"
+  LastName: "Toivonen"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Koskimäki"
+  GamesPlayed: 13
+  PenaltyMinutes: 8
+  Assists: 4
+  Goals: 9
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Ismo"
+  LastName: "Laitinen"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 6
+  Division: "4. divisioona"
+  StartingYear: 2003
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 8
+  PenaltyMinutes: 4
+  Assists: 16
+  Goals: 12
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 18
+  PenaltyMinutes: 6
+  Assists: 24
+  Goals: 12
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Vierula"
+  GamesPlayed: 14
+  PenaltyMinutes: 4
+  Assists: 4
+  Goals: 7
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 8
+  PenaltyMinutes: 8
+  Assists: 3
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 10
+  Goals: 13
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 11
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Fält"
+  GamesPlayed: 8
+  PenaltyMinutes: 6
+  Assists: 4
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 10
+  PenaltyMinutes: 14
+  Assists: 2
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Huhtanen"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Jouppila"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Puhtimäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 9
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 4
+  PenaltyMinutes: 18
+  Assists: 7
+  Goals: 3
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Ari"
+  LastName: "Ketelä"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 3
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Raittinen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Harri"
+  LastName: "Viitanen"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Koskimäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 6
+  Assists: 5
+  Goals: 5
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Ismo"
+  LastName: "Laitinen"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2004
+  OrderNumber: 1
+-
+  FirstName: "Johannes"
+  LastName: "Ala-Kauppila"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Latvala"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 8
+  PenaltyMinutes: 6
+  Assists: 3
+  Goals: 2
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Huhtanen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 10
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 13
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Mannila"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Talvitie"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Iisakki"
+  LastName: "Ala-Kauppila"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 4
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Sakari"
+  LastName: "Ala-Kauppila"
+  GamesPlayed: 6
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Parvi"
+  GamesPlayed: 7
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Ala-Lipasti"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 3
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Metsä-Ketelä"
+  GamesPlayed: 5
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 14
+  PenaltyMinutes: 6
+  Assists: 20
+  Goals: 14
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Jouppila"
+  GamesPlayed: 10
+  PenaltyMinutes: 6
+  Assists: 5
+  Goals: 6
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Liminka"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 6
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Kohtamäki"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Puhtimäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 4
+  Assists: 5
+  Goals: 15
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 3
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Ranto"
+  GamesPlayed: 8
+  PenaltyMinutes: 6
+  Assists: 3
+  Goals: 11
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Ismo"
+  LastName: "Laitinen"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 2
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Turo"
+  LastName: "Oja-Lipasti"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 2
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Miikka"
+  LastName: "Mantila"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 18
+  PenaltyMinutes: 4
+  Assists: 23
+  Goals: 20
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kuusisto"
+  GamesPlayed: 3
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 18
+  PenaltyMinutes: 4
+  Assists: 13
+  Goals: 32
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Ojala"
+  GamesPlayed: 17
+  PenaltyMinutes: 14
+  Assists: 1
+  Goals: 6
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 7
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Kantoniemi"
+  GamesPlayed: 16
+  PenaltyMinutes: 23
+  Assists: 5
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 12
+  Goals: 40
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 14
+  PenaltyMinutes: 4
+  Assists: 4
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 16
+  PenaltyMinutes: 10
+  Assists: 36
+  Goals: 25
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 14
+  Goals: 4
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Vierula"
+  GamesPlayed: 16
+  PenaltyMinutes: 34
+  Assists: 4
+  Goals: 6
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 17
+  PenaltyMinutes: 27
+  Assists: 2
+  Goals: 4
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Kalevi"
+  LastName: "Kuikka"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 15
+  PenaltyMinutes: 14
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 10
+  PenaltyMinutes: 4
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Viita"
+  GamesPlayed: 18
+  PenaltyMinutes: 6
+  Assists: 9
+  Goals: 11
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 4
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Niko"
+  LastName: "Raunio"
+  GamesPlayed: 1
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Malkamäki"
+  GamesPlayed: 5
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2005
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Latvala"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Huhtanen"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 4
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 13
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Ala-Lipasti"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Metsä-Ketelä"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 13
+  PenaltyMinutes: 12
+  Assists: 14
+  Goals: 12
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Kohtamäki"
+  GamesPlayed: 13
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Puhtimäki"
+  GamesPlayed: 10
+  PenaltyMinutes: 2
+  Assists: 10
+  Goals: 13
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 8
+  PenaltyMinutes: 10
+  Assists: 4
+  Goals: 7
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Ranto"
+  GamesPlayed: 7
+  PenaltyMinutes: 45
+  Assists: 3
+  Goals: 2
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Kivimäki"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 8
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Turo"
+  LastName: "Oja-Lipasti"
+  GamesPlayed: 9
+  PenaltyMinutes: 4
+  Assists: 4
+  Goals: 3
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Miikka"
+  LastName: "Mantila"
+  GamesPlayed: 6
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 4
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 13
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 6
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Kivimäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 42
+  Assists: 0
+  Goals: 1
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Haapamäki"
+  GamesPlayed: 15
+  PenaltyMinutes: 7
+  Assists: 8
+  Goals: 7
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Kyösti"
+  LastName: "Koivuniemi"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Kokko"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Henri"
+  LastName: "Puputti"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 7
+  Goals: 12
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Kuusisto"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Mika"
+  LastName: "Yrjänäinen"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 20
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 21
+  PenaltyMinutes: 14
+  Assists: 24
+  Goals: 16
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 21
+  PenaltyMinutes: 6
+  Assists: 16
+  Goals: 41
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Ojala"
+  GamesPlayed: 15
+  PenaltyMinutes: 14
+  Assists: 9
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 20
+  PenaltyMinutes: 0
+  Assists: 11
+  Goals: 40
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 20
+  PenaltyMinutes: 15
+  Assists: 12
+  Goals: 9
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 20
+  PenaltyMinutes: 8
+  Assists: 18
+  Goals: 15
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Vierula"
+  GamesPlayed: 12
+  PenaltyMinutes: 27
+  Assists: 4
+  Goals: 5
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 16
+  PenaltyMinutes: 28
+  Assists: 3
+  Goals: 4
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 19
+  Goals: 16
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 8
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Kalevi"
+  LastName: "Kuikka"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 14
+  PenaltyMinutes: 11
+  Assists: 0
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 19
+  PenaltyMinutes: 16
+  Assists: 3
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Jouppila"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 19
+  PenaltyMinutes: 8
+  Assists: 13
+  Goals: 12
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Pollarinen"
+  GamesPlayed: 20
+  PenaltyMinutes: 4
+  Assists: 11
+  Goals: 10
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Tommy"
+  LastName: "Koponen"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 7
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Rinta-Jaskari"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Klemola"
+  GamesPlayed: 3
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 9
+  PenaltyMinutes: 4
+  Assists: 7
+  Goals: 7
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 15
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Jarkko"
+  LastName: "Ojala"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 10
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 9
+  PenaltyMinutes: 4
+  Assists: 9
+  Goals: 4
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 5
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Tuomas"
+  LastName: "Vierula"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 9
+  PenaltyMinutes: 6
+  Assists: 1
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 11
+  Goals: 4
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Kalevi"
+  LastName: "Kuikka"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 9
+  PenaltyMinutes: 18
+  Assists: 0
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 9
+  PenaltyMinutes: 11
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Timo"
+  LastName: "Jouppila"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 9
+  PenaltyMinutes: 8
+  Assists: 4
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Petri"
+  LastName: "Pollarinen"
+  GamesPlayed: 9
+  PenaltyMinutes: 12
+  Assists: 1
+  Goals: 5
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Tommy"
+  LastName: "Koponen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Tomi"
+  LastName: "Rinta-Jaskari"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Jussi"
+  LastName: "Klemola"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2006
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Kuusisto"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B89-juniorit"
+  StartingYear: 2006
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 11
+  PenaltyMinutes: 2
+  Assists: 8
+  Goals: 9
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kuusisto"
+  GamesPlayed: 17
+  PenaltyMinutes: 10
+  Assists: 6
+  Goals: 17
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 17
+  PenaltyMinutes: 2
+  Assists: 12
+  Goals: 41
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 12
+  Goals: 10
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 18
+  PenaltyMinutes: 7
+  Assists: 4
+  Goals: 29
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 12
+  PenaltyMinutes: 4
+  Assists: 5
+  Goals: 8
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 41
+  Goals: 12
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 17
+  PenaltyMinutes: 34
+  Assists: 5
+  Goals: 7
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 30
+  Goals: 8
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 18
+  PenaltyMinutes: 8
+  Assists: 7
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 16
+  PenaltyMinutes: 19
+  Assists: 6
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 7
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Kohtamäki"
+  GamesPlayed: 17
+  PenaltyMinutes: 8
+  Assists: 5
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 15
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Matti"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 18
+  PenaltyMinutes: 14
+  Assists: 17
+  Goals: 23
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tommy"
+  LastName: "Koponen"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 13
+  PenaltyMinutes: 2
+  Assists: 8
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Pekka"
+  LastName: "Laitila"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 11
+  Goals: 10
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Syysmäki"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Laakkonen"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Raine"
+  LastName: "Niemistö"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Mansikkamäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Niko"
+  LastName: "Mäkelä"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 8
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 6
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Antti"
+  LastName: "Kuusisto"
+  GamesPlayed: 8
+  PenaltyMinutes: 4
+  Assists: 1
+  Goals: 3
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 8
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 7
+  Assists: 3
+  Goals: 9
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 6
+  Goals: 4
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 8
+  PenaltyMinutes: 10
+  Assists: 1
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 10
+  Goals: 7
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 8
+  PenaltyMinutes: 6
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Aki"
+  LastName: "Kohtamäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jussi"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Petri"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 7
+  PenaltyMinutes: 16
+  Assists: 8
+  Goals: 7
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Tommy"
+  LastName: "Koponen"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Pekka"
+  LastName: "Laitila"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 1
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Syysmäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Antti"
+  LastName: "Laakkonen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Niko"
+  LastName: "Mäkelä"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "2. divisioona"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Latvala"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Ojala"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 10
+  Goals: 7
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Kalevi"
+  LastName: "Kuikka"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Huhtanen"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 2
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 1
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Puhtimäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 11
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Ranto"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Kivimäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Pekka"
+  LastName: "Huhtanen"
+  GamesPlayed: 16
+  PenaltyMinutes: 4
+  Assists: 5
+  Goals: 17
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miikka"
+  LastName: "Mantila"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Saku"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 10
+  PenaltyMinutes: 6
+  Assists: 2
+  Goals: 2
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miki"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Kivimäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 37
+  Assists: 4
+  Goals: 1
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Haapamäki"
+  GamesPlayed: 16
+  PenaltyMinutes: 33
+  Assists: 3
+  Goals: 12
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Sihto"
+  GamesPlayed: 14
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 2
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Mika"
+  LastName: "Yrjänäinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Sameli"
+  LastName: "Niemi"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miro"
+  LastName: "Koskenranta"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Udelius"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 5
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Hotakainen"
+  GamesPlayed: 4
+  PenaltyMinutes: 18
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Raine"
+  LastName: "Lamberg"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 7
+  Division: "4.divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Panu"
+  LastName: "Kormano"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 4
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Klemola"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Severi"
+  LastName: "Koivuluoma"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Henri"
+  LastName: "Syrjä"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Iiro"
+  LastName: "Iso-Tuisku"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Sameli"
+  LastName: "Reinilä"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 8
+  Goals: 12
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Santaharju"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 13
+  Goals: 19
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jere"
+  LastName: "Lahti-Röyskö"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 5
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Matias"
+  LastName: "Joensuu"
+  GamesPlayed: 13
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 4
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Konsta"
+  LastName: "Heikkilä"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 12
+  Goals: 10
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Henri"
+  LastName: "Pakka"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 11
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 11
+  Goals: 15
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Renkola"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miikka"
+  LastName: "Viitasaari"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 5
+  Goals: 5
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Sepänmäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Kristian"
+  LastName: "Hautala"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Sebastian"
+  LastName: "Iso-Tuisku"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Palomaa"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 3
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Wallius"
+  GamesPlayed: 14
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 3
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Valtteri"
+  LastName: "Majalahti"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Eetu"
+  LastName: "Takamäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Artturi"
+  LastName: "Heikkilä"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Panu"
+  LastName: "Kormano"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Tuomas"
+  LastName: "Klemola"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Severi"
+  LastName: "Koivuluoma"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Henri"
+  LastName: "Syrjä"
+  GamesPlayed: 2
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Iiro"
+  LastName: "Iso-Tuisku"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Sameli"
+  LastName: "Reinilä"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Santaharju"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jere"
+  LastName: "Lahti-Röyskö"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Matias"
+  LastName: "Joensuu"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Konsta"
+  LastName: "Heikkilä"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Henri"
+  LastName: "Pakka"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jaakko"
+  LastName: "Renkola"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Miikka"
+  LastName: "Viitasaari"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Tuomas"
+  LastName: "Sepänmäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Sebastian"
+  LastName: "Iso-Tuisku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Timo"
+  LastName: "Palomaa"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Joonas"
+  LastName: "Wallius"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Valtteri"
+  LastName: "Majalahti"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Eetu"
+  LastName: "Takamäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Artturi"
+  LastName: "Heikkilä"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Maria"
+  LastName: "Syväniemi"
+  GamesPlayed: 7
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jenna"
+  LastName: "Knuuttila"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Henna"
+  LastName: "Siltala"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Pauliina"
+  LastName: "Ketola"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Lehtinen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Maiju"
+  LastName: "Kormano"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Veera"
+  LastName: "Joensuu"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Laura"
+  LastName: "Santaharju"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Veera"
+  LastName: "Kosonen"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Outi"
+  LastName: "Latva-Kokko"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Linda"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 6
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Reeta"
+  LastName: "Kosonen"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Sallamari"
+  LastName: "Koskinen"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 6
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jenna"
+  LastName: "Nevanperä"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 2
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Siltala"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Sanna"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jenna"
+  LastName: "Ala-Riihimäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Kivimäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Kivimäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Haapamäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Joona"
+  LastName: "Tuominen"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Kristian"
+  LastName: "Syrjälä"
+  GamesPlayed: 7
+  PenaltyMinutes: 8
+  Assists: 1
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Kivistö"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Loukasmäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Rinta-Runsala"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Aleksanteri"
+  LastName: "Särkelä"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 7
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kujala"
+  GamesPlayed: 7
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Komsi"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 2
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Mikael"
+  LastName: "Rinta-Röyskö"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Justus"
+  LastName: "Ristimäki"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 3
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 5
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 7
+  PenaltyMinutes: 4
+  Assists: 8
+  Goals: 13
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 6
+  Goals: 5
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jouni"
+  LastName: "Mäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 14
+  Assists: 2
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Ranto"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Joakim"
+  LastName: "Matalamäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 6
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Markus"
+  LastName: "Viemerö"
+  GamesPlayed: 5
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 2
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Joona"
+  LastName: "Tuominen"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Kristian"
+  LastName: "Syrjälä"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Olli"
+  LastName: "Kivistö"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Loukasmäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Olli"
+  LastName: "Rinta-Runsala"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Aleksanteri"
+  LastName: "Särkelä"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jarno"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 4
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Antti"
+  LastName: "Kujala"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Komsi"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Mikael"
+  LastName: "Rinta-Röyskö"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Justus"
+  LastName: "Ristimäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 12
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 4
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jouni"
+  LastName: "Mäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Timo"
+  LastName: "Ranto"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Joakim"
+  LastName: "Matalamäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 4
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Markus"
+  LastName: "Viemerö"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Miikka"
+  LastName: "Mantila"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 6
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Iivari"
+  LastName: "Heikkilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 8
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Lauri"
+  LastName: "Ketola"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Tuohisaari"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 3
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 3
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miki"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 3
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 3
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Juonoja"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 6
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Markus"
+  LastName: "Viemerö"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miro"
+  LastName: "Koskenranta"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Miikka"
+  LastName: "Mantila"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 13
+  Goals: 11
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Iivari"
+  LastName: "Heikkilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 17
+  Goals: 24
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Lauri"
+  LastName: "Ketola"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Tuomas"
+  LastName: "Tuohisaari"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 13
+  Goals: 18
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 8
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 7
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Miki"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 13
+  Goals: 6
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 5
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 6
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 27
+  Assists: 7
+  Goals: 11
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Markus"
+  LastName: "Viemerö"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Mikko"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 6
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Miro"
+  LastName: "Koskenranta"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 8
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 3
+-
+  FirstName: "Miikka"
+  LastName: "Mantila"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Iivari"
+  LastName: "Heikkilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Lauri"
+  LastName: "Ketola"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Tuomas"
+  LastName: "Tuohisaari"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 3
+  PenaltyMinutes: 12
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Miki"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 4
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Markus"
+  LastName: "Viemerö"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Mikko"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Miro"
+  LastName: "Koskenranta"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 4
+-
+  FirstName: "Miikka"
+  LastName: "Mantila"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Iivari"
+  LastName: "Heikkilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Lauri"
+  LastName: "Ketola"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Tuomas"
+  LastName: "Tuohisaari"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Miki"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Markus"
+  LastName: "Viemerö"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Mikko"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Miro"
+  LastName: "Koskenranta"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "B-pojat"
+  StartingYear: 2008
+  OrderNumber: 2
+-
+  FirstName: "Karoliina"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Armi"
+  LastName: "Autio"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Noora"
+  LastName: "Nyrhinen"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Jenni"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Mattila"
+  GamesPlayed: 16
+  PenaltyMinutes: 1
+  Assists: 4
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Marjaana"
+  LastName: "Rasku"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Niina"
+  LastName: "Keskinen"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 5
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Heli"
+  LastName: "Risku-Rajala"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Irene"
+  LastName: "Viita"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 13
+  Goals: 8
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Pia"
+  LastName: "Niemelä"
+  GamesPlayed: 18
+  PenaltyMinutes: 1
+  Assists: 4
+  Goals: 14
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Elina"
+  LastName: "Syrjä"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Yli-Rahnasto"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Mari"
+  LastName: "Ania"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Päivi"
+  LastName: "Kiikka"
+  GamesPlayed: 14
+  PenaltyMinutes: 1
+  Assists: 0
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Ella"
+  LastName: "Harju"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Virve"
+  LastName: "Mukkala"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Linda"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Ulla"
+  LastName: "Viitala"
+  GamesPlayed: 16
+  PenaltyMinutes: 1
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Salla"
+  LastName: "Lindgren"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Johanna"
+  LastName: "Nieminen"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2008
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 20
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 21
+  PenaltyMinutes: 12
+  Assists: 14
+  Goals: 12
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kuusisto"
+  GamesPlayed: 19
+  PenaltyMinutes: 9
+  Assists: 2
+  Goals: 12
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 20
+  PenaltyMinutes: 8
+  Assists: 11
+  Goals: 22
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Ojala"
+  GamesPlayed: 20
+  PenaltyMinutes: 12
+  Assists: 4
+  Goals: 4
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 21
+  PenaltyMinutes: 4
+  Assists: 5
+  Goals: 5
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Kantoniemi"
+  GamesPlayed: 18
+  PenaltyMinutes: 8
+  Assists: 6
+  Goals: 2
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 20
+  PenaltyMinutes: 0
+  Assists: 8
+  Goals: 22
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Hillu"
+  GamesPlayed: 16
+  PenaltyMinutes: 6
+  Assists: 1
+  Goals: 3
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 22
+  PenaltyMinutes: 12
+  Assists: 12
+  Goals: 10
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 15
+  PenaltyMinutes: 28
+  Assists: 5
+  Goals: 3
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 20
+  PenaltyMinutes: 0
+  Assists: 19
+  Goals: 10
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 22
+  PenaltyMinutes: 14
+  Assists: 0
+  Goals: 2
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Fält"
+  GamesPlayed: 17
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 0
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 19
+  PenaltyMinutes: 68
+  Assists: 6
+  Goals: 1
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Kohtamäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 19
+  PenaltyMinutes: 8
+  Assists: 1
+  Goals: 3
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 17
+  PenaltyMinutes: 16
+  Assists: 11
+  Goals: 10
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Pollarinen"
+  GamesPlayed: 22
+  PenaltyMinutes: 8
+  Assists: 14
+  Goals: 18
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 19
+  PenaltyMinutes: 0
+  Assists: 8
+  Goals: 1
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Pekka"
+  LastName: "Laitila"
+  GamesPlayed: 17
+  PenaltyMinutes: 4
+  Assists: 5
+  Goals: 6
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Syysmäki"
+  GamesPlayed: 19
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Keskisipilä"
+  GamesPlayed: 2
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 0
+  Division: "1.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Panu"
+  LastName: "Kormano"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Klemola"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Severi"
+  LastName: "Koivuluoma"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Iiro"
+  LastName: "Iso-Tuisku"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Sameli"
+  LastName: "Reinilä"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Santaharju"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 3
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jere"
+  LastName: "Lahti-Röyskö"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Matias"
+  LastName: "Joensuu"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 4
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Konsta"
+  LastName: "Heikkilä"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Henri"
+  LastName: "Pakka"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 13
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Renkola"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Miikka"
+  LastName: "Viitasaari"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Wallius"
+  GamesPlayed: 7
+  PenaltyMinutes: 6
+  Assists: 1
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Artturi"
+  LastName: "Heikkilä"
+  GamesPlayed: 7
+  PenaltyMinutes: 4
+  Assists: 1
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Rahkola"
+  GamesPlayed: 4
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Rantanen"
+  GamesPlayed: 5
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Samuli"
+  LastName: "Lähteenmaa"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Panu"
+  LastName: "Kormano"
+  GamesPlayed: 8
+  PenaltyMinutes: 6
+  Assists: 2
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Tuomas"
+  LastName: "Klemola"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Severi"
+  LastName: "Koivuluoma"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Iiro"
+  LastName: "Iso-Tuisku"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Sameli"
+  LastName: "Reinilä"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 2
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Santaharju"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 10
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jere"
+  LastName: "Lahti-Röyskö"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 5
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Matias"
+  LastName: "Joensuu"
+  GamesPlayed: 8
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Konsta"
+  LastName: "Heikkilä"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 5
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Henri"
+  LastName: "Pakka"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 7
+  Goals: 9
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jaakko"
+  LastName: "Renkola"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Miikka"
+  LastName: "Viitasaari"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Joonas"
+  LastName: "Wallius"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Artturi"
+  LastName: "Heikkilä"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Rahkola"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Antti"
+  LastName: "Latva-Kokko"
+  GamesPlayed: 6
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 2
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jarkko"
+  LastName: "Santaharju"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Rantala"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Rantanen"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Samuli"
+  LastName: "Lähteenmaa"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 1
+  Division: "C-pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Maria"
+  LastName: "Syväniemi"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Henna"
+  LastName: "Siltala"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Pauliina"
+  LastName: "Ketola"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Lehtinen"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Veera"
+  LastName: "Joensuu"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Veera"
+  LastName: "Kosonen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Linda"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 6
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Reeta"
+  LastName: "Kosonen"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Sallamari"
+  LastName: "Koskinen"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 6
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Siltala"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Mariia"
+  LastName: "Hietikko"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Emilia"
+  LastName: "Hellsten"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Vilma"
+  LastName: "Kosonen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Vilma"
+  LastName: "Välimaa"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Aino-Kaisa"
+  LastName: "Mantere"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Elina"
+  LastName: "Pentinmäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Heidi"
+  LastName: "Nevanperä"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Syväniemi"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Henna"
+  LastName: "Siltala"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Pauliina"
+  LastName: "Ketola"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Hanna"
+  LastName: "Lehtinen"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Veera"
+  LastName: "Joensuu"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Veera"
+  LastName: "Kosonen"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Linda"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 10
+  PenaltyMinutes: 2
+  Assists: 12
+  Goals: 7
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Reeta"
+  LastName: "Kosonen"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Sallamari"
+  LastName: "Koskinen"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 33
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Maria"
+  LastName: "Siltala"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Mariia"
+  LastName: "Hietikko"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 4
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Emilia"
+  LastName: "Hellsten"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Vilma"
+  LastName: "Kosonen"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 2
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Vilma"
+  LastName: "Välimaa"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Aino-Kaisa"
+  LastName: "Mantere"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 4
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Elina"
+  LastName: "Pentinmäki"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Heidi"
+  LastName: "Nevanperä"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Emilia"
+  LastName: "Peltoniemi"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Anni"
+  LastName: "Isoniemi"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 6
+  Goals: 4
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Maria"
+  LastName: "Viitala"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-tytöt"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 28
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Matias"
+  LastName: "Niukkala"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Jokela"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Sepänmäki"
+  GamesPlayed: 19
+  PenaltyMinutes: 8
+  Assists: 3
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Viljami"
+  LastName: "Koivuluoma"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Keisala"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Eemi"
+  LastName: "Tuominen"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Latva-Kokko"
+  GamesPlayed: 21
+  PenaltyMinutes: 2
+  Assists: 6
+  Goals: 13
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Veli-Matti"
+  LastName: "Kivelä"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 12
+  Goals: 11
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Elias"
+  LastName: "Ahde"
+  GamesPlayed: 13
+  PenaltyMinutes: 8
+  Assists: 13
+  Goals: 20
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jetro"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Hirvelä"
+  GamesPlayed: 21
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 19
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 4
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Röyskö"
+  GamesPlayed: 20
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Palomaa"
+  GamesPlayed: 21
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Laine"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 6
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Mikael"
+  LastName: "Reinilä"
+  GamesPlayed: 21
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jyri"
+  LastName: "Ala-Renko"
+  GamesPlayed: 20
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Konsta"
+  LastName: "Koivula"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 21
+  PenaltyMinutes: 2
+  Assists: 11
+  Goals: 19
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Santaharju"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jori"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 4
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Rantala"
+  GamesPlayed: 19
+  PenaltyMinutes: 4
+  Assists: 7
+  Goals: 2
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Riku-Oskari"
+  LastName: "Ojajärvi"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 4
+  Division: "D-juniorit"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Karoliina"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 7
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Armi"
+  LastName: "Autio"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 9
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Noora"
+  LastName: "Nyrhinen"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jenni"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 8
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Niina"
+  LastName: "Keskinen"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 3
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Yli-Rahnasto"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Mari"
+  LastName: "Ania"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Laura"
+  LastName: "Rissanen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Päivi"
+  LastName: "Kiikka"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Ella"
+  LastName: "Harju"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Virve"
+  LastName: "Mukkala"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Outi"
+  LastName: "Latva-Kokko"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Linda"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 7
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Ulla"
+  LastName: "Viitala"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Sallamari"
+  LastName: "Koskinen"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 8
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jenna"
+  LastName: "Nevanperä"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Salla"
+  LastName: "Lindgren"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Satu"
+  LastName: "Autio"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Sanna-Maija"
+  LastName: "Latikka"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Johanna"
+  LastName: "Pukara"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Johanna"
+  LastName: "Mäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Marjut"
+  LastName: "Kriikku"
+  GamesPlayed: 16
+  PenaltyMinutes: 4
+  Assists: 1
+  Goals: 3
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Heidi"
+  LastName: "Autio"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Essi"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Iina"
+  LastName: "Pohjola"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Anni"
+  LastName: "Isoniemi"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Riikka"
+  LastName: "Heikonen"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Latvala"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Kalevi"
+  LastName: "Kuikka"
+  GamesPlayed: 20
+  PenaltyMinutes: 2
+  Assists: 5
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 18
+  PenaltyMinutes: 7
+  Assists: 25
+  Goals: 8
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Nurkka"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Puhtimäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 12
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Ranto"
+  GamesPlayed: 6
+  PenaltyMinutes: 8
+  Assists: 3
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Kivimäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 15
+  PenaltyMinutes: 4
+  Assists: 5
+  Goals: 9
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 3
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 1
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Kivimäki"
+  GamesPlayed: 19
+  PenaltyMinutes: 25
+  Assists: 4
+  Goals: 8
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Haapamäki"
+  GamesPlayed: 21
+  PenaltyMinutes: 2
+  Assists: 12
+  Goals: 17
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Mika"
+  LastName: "Yrjänäinen"
+  GamesPlayed: 15
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 7
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Sihto"
+  GamesPlayed: 3
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Kristian"
+  LastName: "Syrjälä"
+  GamesPlayed: 2
+  PenaltyMinutes: 6
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 3
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 13
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 15
+  PenaltyMinutes: 53
+  Assists: 4
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Laakkonen"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 6
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 4
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Udelius"
+  GamesPlayed: 19
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 10
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tero"
+  LastName: "Lehtinen"
+  GamesPlayed: 16
+  PenaltyMinutes: 27
+  Assists: 5
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "&#197;lander"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 4
+  Division: "4.divisioona"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Iivari"
+  LastName: "Heikkilä"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Latva-Hoppala"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Kristian"
+  LastName: "Syrjälä"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Kivistö"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Aleksanteri"
+  LastName: "Särkelä"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kujala"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Komsi"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 6
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Mikael"
+  LastName: "Rinta-Röyskö"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Justus"
+  LastName: "Ristimäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 8
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jouni"
+  LastName: "Mäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Ranto"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Latvala"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Mäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Ohraluoma"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 1
+-
+  FirstName: "Iivari"
+  LastName: "Heikkilä"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Jarno"
+  LastName: "Latva-Hoppala"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 6
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 6
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Kristian"
+  LastName: "Syrjälä"
+  GamesPlayed: 25
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 5
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Olli"
+  LastName: "Kivistö"
+  GamesPlayed: 23
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 4
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Aleksanteri"
+  LastName: "Särkelä"
+  GamesPlayed: 22
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Jarno"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 25
+  PenaltyMinutes: 0
+  Assists: 10
+  Goals: 17
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Antti"
+  LastName: "Kujala"
+  GamesPlayed: 19
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Jani"
+  LastName: "Komsi"
+  GamesPlayed: 24
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 7
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 22
+  PenaltyMinutes: 0
+  Assists: 18
+  Goals: 7
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Mikael"
+  LastName: "Rinta-Röyskö"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Justus"
+  LastName: "Ristimäki"
+  GamesPlayed: 19
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 24
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 7
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 25
+  PenaltyMinutes: 0
+  Assists: 14
+  Goals: 29
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 23
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 6
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Jouni"
+  LastName: "Mäki"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Timo"
+  LastName: "Ranto"
+  GamesPlayed: 13
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 2
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Jussi"
+  LastName: "Latvala"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 6
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Tommi"
+  LastName: "Mäki"
+  GamesPlayed: 21
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Arttu"
+  LastName: "Ohraluoma"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 3
+-
+  FirstName: "Iivari"
+  LastName: "Heikkilä"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jarno"
+  LastName: "Latva-Hoppala"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 5
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 6
+  Goals: 6
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Kristian"
+  LastName: "Syrjälä"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Olli"
+  LastName: "Kivistö"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 4
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Aleksanteri"
+  LastName: "Särkelä"
+  GamesPlayed: 13
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jarno"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 10
+  Goals: 14
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Antti"
+  LastName: "Kujala"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Komsi"
+  GamesPlayed: 15
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 4
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 13
+  PenaltyMinutes: 0
+  Assists: 13
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Mikael"
+  LastName: "Rinta-Röyskö"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Justus"
+  LastName: "Ristimäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 6
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 16
+  PenaltyMinutes: 24
+  Assists: 11
+  Goals: 21
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 5
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jouni"
+  LastName: "Mäki"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 7
+  Goals: 2
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Timo"
+  LastName: "Ranto"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Toni"
+  LastName: "Marjamäki"
+  GamesPlayed: 4
+  PenaltyMinutes: 14
+  Assists: 0
+  Goals: 2
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Jussi"
+  LastName: "Latvala"
+  GamesPlayed: 6
+  PenaltyMinutes: 12
+  Assists: 0
+  Goals: 4
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Tommi"
+  LastName: "Mäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Arttu"
+  LastName: "Ohraluoma"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "B-Pojat"
+  StartingYear: 2009
+  OrderNumber: 2
+-
+  FirstName: "Karoliina"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 15
+  PenaltyMinutes: 4
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Armi"
+  LastName: "Autio"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 9
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jenni"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 8
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Marjaana"
+  LastName: "Rasku"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Niina"
+  LastName: "Keskinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Pia"
+  LastName: "Niemelä"
+  GamesPlayed: 15
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 8
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Yli-Rahnasto"
+  GamesPlayed: 18
+  PenaltyMinutes: 6
+  Assists: 1
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Ella"
+  LastName: "Harju"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Outi"
+  LastName: "Latva-Kokko"
+  GamesPlayed: 18
+  PenaltyMinutes: 2
+  Assists: 13
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Linda"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 5
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Ulla"
+  LastName: "Viitala"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sallamari"
+  LastName: "Koskinen"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 17
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Siltala"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Satu"
+  LastName: "Autio"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sanna-Maija"
+  LastName: "Latikka"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Johanna"
+  LastName: "Mäki"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Marjut"
+  LastName: "Kriikku"
+  GamesPlayed: 12
+  PenaltyMinutes: 10
+  Assists: 1
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Heidi"
+  LastName: "Autio"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Essi"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Anni"
+  LastName: "Isoniemi"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Riikka"
+  LastName: "Heikonen"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Minna"
+  LastName: "Ala-Lipasti"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 4
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sanna"
+  LastName: "Vuorinen"
+  GamesPlayed: 18
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Noora"
+  LastName: "Lipponen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eveliina"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sanna"
+  LastName: "Mikkonen"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 5
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sanna-Maija"
+  LastName: "Loukasmäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Essi"
+  LastName: "Valli"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "3. divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 17
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 18
+  PenaltyMinutes: 8
+  Assists: 24
+  Goals: 27
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kuusisto"
+  GamesPlayed: 18
+  PenaltyMinutes: 8
+  Assists: 11
+  Goals: 10
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 18
+  PenaltyMinutes: 4
+  Assists: 23
+  Goals: 34
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Ojala"
+  GamesPlayed: 16
+  PenaltyMinutes: 12
+  Assists: 9
+  Goals: 7
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Kantoniemi"
+  GamesPlayed: 13
+  PenaltyMinutes: 25
+  Assists: 5
+  Goals: 9
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 4
+  Assists: 13
+  Goals: 30
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 16
+  PenaltyMinutes: 6
+  Assists: 26
+  Goals: 22
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 16
+  PenaltyMinutes: 27
+  Assists: 8
+  Goals: 5
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 11
+  Goals: 5
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 17
+  PenaltyMinutes: 4
+  Assists: 4
+  Goals: 2
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Fält"
+  GamesPlayed: 17
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 7
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 11
+  PenaltyMinutes: 4
+  Assists: 0
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 3
+  PenaltyMinutes: 4
+  Assists: 4
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 6
+  PenaltyMinutes: 25
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 14
+  PenaltyMinutes: 20
+  Assists: 14
+  Goals: 14
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Pekka"
+  LastName: "Laitila"
+  GamesPlayed: 16
+  PenaltyMinutes: 4
+  Assists: 14
+  Goals: 17
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 11
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 17
+  PenaltyMinutes: 16
+  Assists: 2
+  Goals: 6
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Syysmäki"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Ojala"
+  GamesPlayed: 15
+  PenaltyMinutes: 14
+  Assists: 12
+  Goals: 10
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Paakkinen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Markku"
+  LastName: "Neva-Keturi"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 2
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Antti"
+  LastName: "Kuusisto"
+  GamesPlayed: 3
+  PenaltyMinutes: 4
+  Assists: 1
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Rahnasto"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 5
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jarkko"
+  LastName: "Ojala"
+  GamesPlayed: 3
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Heikki"
+  LastName: "Nikkola"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jukka"
+  LastName: "Kantoniemi"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Ville"
+  LastName: "Loukasmäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Sami"
+  LastName: "Koski"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Miika"
+  LastName: "Toivio"
+  GamesPlayed: 3
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Olli"
+  LastName: "Yli-Karjanmaa"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Tatu"
+  LastName: "Hietikko"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Juha-Matti"
+  LastName: "Valli"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Timo"
+  LastName: "Fält"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jarkko"
+  LastName: "Hietikko"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jarno"
+  LastName: "Haapamäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Tomi"
+  LastName: "Ania"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jussi"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 3
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Petri"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Turunen"
+  GamesPlayed: 3
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 3
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Aki"
+  LastName: "Vainio-Hynnilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Pekka"
+  LastName: "Laitila"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Tommi"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Syysmäki"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Janne"
+  LastName: "Ojala"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "2.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Latvala"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Kalevi"
+  LastName: "Kuikka"
+  GamesPlayed: 11
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tomi"
+  LastName: "Ruohoniemi"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Manne"
+  LastName: "Niemelä"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 1
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Aki"
+  LastName: "Kohtamäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 2
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Ranto"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Kivimäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 5
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jukka"
+  LastName: "Mäenpää"
+  GamesPlayed: 14
+  PenaltyMinutes: 12
+  Assists: 7
+  Goals: 2
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Haapamäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 1
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Rahko"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 6
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Petri"
+  LastName: "Kivimäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 12
+  Assists: 2
+  Goals: 10
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Haapamäki"
+  GamesPlayed: 15
+  PenaltyMinutes: 14
+  Assists: 3
+  Goals: 8
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Mika"
+  LastName: "Yrjänäinen"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 7
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Mika"
+  LastName: "Yrjänäinen"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jarno"
+  LastName: "Mäki-Jussila"
+  GamesPlayed: 13
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 2
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Rantanen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Riku"
+  LastName: "Heikonen"
+  GamesPlayed: 16
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 3
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jouni"
+  LastName: "Lampinen"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Joakim"
+  LastName: "Matalamäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Mikko"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Udelius"
+  GamesPlayed: 1
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tero"
+  LastName: "Lehtinen"
+  GamesPlayed: 16
+  PenaltyMinutes: 4
+  Assists: 10
+  Goals: 1
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "&#197;lander"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 4
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Toivio"
+  GamesPlayed: 16
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 7
+  Division: "4.Divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Panu"
+  LastName: "Kormano"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Severi"
+  LastName: "Koivuluoma"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sameli"
+  LastName: "Reinilä"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Santaharju"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 6
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jere"
+  LastName: "Lahti-Röyskö"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 6
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Matias"
+  LastName: "Joensuu"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Konsta"
+  LastName: "Heikkilä"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Henri"
+  LastName: "Pakka"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 2
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Joonas"
+  LastName: "Wallius"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Artturi"
+  LastName: "Heikkilä"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Rahkola"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Teemu"
+  LastName: "Rantanen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Samuli"
+  LastName: "Lähteenmaa"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Joakim"
+  LastName: "Matalamäki"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 4
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Panu"
+  LastName: "Kormano"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Severi"
+  LastName: "Koivuluoma"
+  GamesPlayed: 10
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Sameli"
+  LastName: "Reinilä"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 9
+  Goals: 6
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Eero"
+  LastName: "Santaharju"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 19
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jere"
+  LastName: "Lahti-Röyskö"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 6
+  Goals: 7
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Matias"
+  LastName: "Joensuu"
+  GamesPlayed: 12
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Konsta"
+  LastName: "Heikkilä"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 2
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Henri"
+  LastName: "Pakka"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 9
+  Goals: 15
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Joonas"
+  LastName: "Wallius"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Artturi"
+  LastName: "Heikkilä"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Rahkola"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Teemu"
+  LastName: "Rantanen"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 1
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Samuli"
+  LastName: "Lähteenmaa"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 8
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Joakim"
+  LastName: "Matalamäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 6
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Heikki"
+  LastName: "Rantanen"
+  GamesPlayed: 9
+  PenaltyMinutes: 16
+  Assists: 10
+  Goals: 7
+  Division: "C1-pojat"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Matias"
+  LastName: "Niukkala"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tuomas"
+  LastName: "Sepänmäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 3
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Viljami"
+  LastName: "Koivuluoma"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eemi"
+  LastName: "Tuominen"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Latva-Kokko"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 4
+  Goals: 3
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Veli-Matti"
+  LastName: "Kivelä"
+  GamesPlayed: 6
+  PenaltyMinutes: 6
+  Assists: 2
+  Goals: 2
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Elias"
+  LastName: "Ahde"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jetro"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Arttu"
+  LastName: "Hirvelä"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Röyskö"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Palomaa"
+  GamesPlayed: 6
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 2
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Laine"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 6
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Mikael"
+  LastName: "Reinilä"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jyri"
+  LastName: "Ala-Renko"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Konsta"
+  LastName: "Koivula"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 6
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jarkko"
+  LastName: "Santaharju"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jori"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Rantala"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Riku-Oskari"
+  LastName: "Ojajärvi"
+  GamesPlayed: 6
+  PenaltyMinutes: 14
+  Assists: 3
+  Goals: 2
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Matias"
+  LastName: "Niukkala"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Tuomas"
+  LastName: "Sepänmäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Viljami"
+  LastName: "Koivuluoma"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Eemi"
+  LastName: "Tuominen"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Antti"
+  LastName: "Latva-Kokko"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 6
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Veli-Matti"
+  LastName: "Kivelä"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Elias"
+  LastName: "Ahde"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jetro"
+  LastName: "Ala-Huikku"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Arttu"
+  LastName: "Hirvelä"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Miika"
+  LastName: "Lähdesmäki"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jussi"
+  LastName: "Röyskö"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Juha"
+  LastName: "Palomaa"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Ville"
+  LastName: "Laine"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 3
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Mikael"
+  LastName: "Reinilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jyri"
+  LastName: "Ala-Renko"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Konsta"
+  LastName: "Koivula"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Juuso"
+  LastName: "Haapamäki"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 3
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jarkko"
+  LastName: "Santaharju"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jori"
+  LastName: "Ala-Nikkola"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jani"
+  LastName: "Rantala"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Riku-Oskari"
+  LastName: "Ojajärvi"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "C-96"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Petri"
+  LastName: "Haaparanta"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 2
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juuso"
+  LastName: "Vuorenmäki"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 8
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Roope"
+  LastName: "Pelander"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Roope"
+  LastName: "Heikinsalo"
+  GamesPlayed: 5
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Röyskö"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Rahkola"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 5
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Mäkynen"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Janne"
+  LastName: "Kiviharju"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Leevi"
+  LastName: "Rantanen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Aleksi"
+  LastName: "Vuorinen"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juha"
+  LastName: "Salovaara"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 9
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Kivimäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 5
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Niki"
+  LastName: "Rantala"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 4
+  Goals: 2
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Lauri"
+  LastName: "Viitala"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 4
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Kalle"
+  LastName: "Mäkynen"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jesse"
+  LastName: "Pelto-Piri"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Rajamäki"
+  GamesPlayed: 7
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 1
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eetu"
+  LastName: "Kuusisto"
+  GamesPlayed: 7
+  PenaltyMinutes: 4
+  Assists: 2
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Leppälä"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Haapolahti"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "D2 Pojat"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Lehtinen"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Veera"
+  LastName: "Kosonen"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 6
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Siltala"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Emilia"
+  LastName: "Hellsten"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Vilma"
+  LastName: "Kosonen"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Vilma"
+  LastName: "Välimaa"
+  GamesPlayed: 5
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 1
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Elina"
+  LastName: "Pentinmäki"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Heidi"
+  LastName: "Nevanperä"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Maria"
+  LastName: "Viitala"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Laura"
+  LastName: "Luuri"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jenni"
+  LastName: "Kiviharju"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Alina"
+  LastName: "Metsä-Ketelä"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 1
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Anna"
+  LastName: "Tossavainen"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Aurora"
+  LastName: "Virtanen"
+  GamesPlayed: 3
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Elina"
+  LastName: "Viitala"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Petra"
+  LastName: "Hakoniemi"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Saija"
+  LastName: "Valkama"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Hanna"
+  LastName: "Lehtinen"
+  GamesPlayed: 6
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Veera"
+  LastName: "Kosonen"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 7
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Maria"
+  LastName: "Siltala"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Emilia"
+  LastName: "Hellsten"
+  GamesPlayed: 10
+  PenaltyMinutes: 2
+  Assists: 3
+  Goals: 9
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Vilma"
+  LastName: "Kosonen"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 2
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Vilma"
+  LastName: "Välimaa"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 5
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Elina"
+  LastName: "Pentinmäki"
+  GamesPlayed: 8
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 1
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Heidi"
+  LastName: "Nevanperä"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 1
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Maria"
+  LastName: "Viitala"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Laura"
+  LastName: "Luuri"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jenni"
+  LastName: "Kiviharju"
+  GamesPlayed: 9
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Alina"
+  LastName: "Metsä-Ketelä"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Anna"
+  LastName: "Tossavainen"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Aurora"
+  LastName: "Virtanen"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 1
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Elina"
+  LastName: "Viitala"
+  GamesPlayed: 10
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Petra"
+  LastName: "Hakoniemi"
+  GamesPlayed: 10
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Saija"
+  LastName: "Valkama"
+  GamesPlayed: 7
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 2
+  Division: "C-Tytöt"
+  StartingYear: 2010
+  OrderNumber: 2
+-
+  FirstName: "Jarno"
+  LastName: "Latva-Hoppala"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Saku"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 8
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 5
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Juho"
+  LastName: "Rinta"
+  GamesPlayed: 9
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 2
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Sihto"
+  GamesPlayed: 15
+  PenaltyMinutes: 0
+  Assists: 5
+  Goals: 7
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Sameli"
+  LastName: "Reinilä"
+  GamesPlayed: 2
+  PenaltyMinutes: 2
+  Assists: 0
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Eero"
+  LastName: "Santaharju"
+  GamesPlayed: 5
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 1
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Konsta"
+  LastName: "Heikkilä"
+  GamesPlayed: 0
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Olli"
+  LastName: "Kivistö"
+  GamesPlayed: 14
+  PenaltyMinutes: 4
+  Assists: 3
+  Goals: 1
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Kujala"
+  GamesPlayed: 2
+  PenaltyMinutes: 0
+  Assists: 1
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Komsi"
+  GamesPlayed: 14
+  PenaltyMinutes: 27
+  Assists: 2
+  Goals: 2
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Justus"
+  LastName: "Ristimäki"
+  GamesPlayed: 14
+  PenaltyMinutes: 2
+  Assists: 2
+  Goals: 1
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Kimi"
+  LastName: "Salo-Tuisku"
+  GamesPlayed: 14
+  PenaltyMinutes: 29
+  Assists: 8
+  Goals: 3
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Tommi"
+  LastName: "Mäki"
+  GamesPlayed: 12
+  PenaltyMinutes: 16
+  Assists: 1
+  Goals: 6
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Harri"
+  LastName: "Siltala"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Markku"
+  LastName: "Ranto"
+  GamesPlayed: 14
+  PenaltyMinutes: 0
+  Assists: 2
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Antti"
+  LastName: "Keskinen"
+  GamesPlayed: 12
+  PenaltyMinutes: 6
+  Assists: 2
+  Goals: 4
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Mika"
+  LastName: "Kiviharju"
+  GamesPlayed: 4
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jani"
+  LastName: "Kontiokoski"
+  GamesPlayed: 16
+  PenaltyMinutes: 6
+  Assists: 2
+  Goals: 2
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Timo"
+  LastName: "Talvitie"
+  GamesPlayed: 12
+  PenaltyMinutes: 0
+  Assists: 3
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Miika"
+  LastName: "Huikuri"
+  GamesPlayed: 10
+  PenaltyMinutes: 2
+  Assists: 1
+  Goals: 2
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Ville"
+  LastName: "Valtari"
+  GamesPlayed: 8
+  PenaltyMinutes: 4
+  Assists: 1
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jaakko"
+  LastName: "Heikkilä"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 0
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+-
+  FirstName: "Jussi"
+  LastName: "Mattila"
+  GamesPlayed: 5
+  PenaltyMinutes: 0
+  Assists: 0
+  Goals: 3
+  Division: "5.divisioona"
+  StartingYear: 2010
+  OrderNumber: 1
+...

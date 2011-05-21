@@ -1,3 +1,5 @@
+require 'cgi'
+    
 namespace :import do
   desc "Loads sections from a YML file"
   task :sections => :environment do
@@ -76,9 +78,10 @@ namespace :import do
         year = 1900
       end
           
-      member = Member.new(:first_name => player["FirstName"], :last_name => player["LastName"], :number => player["Number"],
-        :birth_year => year, :home_municipality => player["HomeMunicipality"], :all_time_goals => player["AlltimeGoals"],
-        :all_time_assists => player["AlltimeAssists"], :position => position, :gender => is_male)
+      member = Member.new(:first_name => player["FirstName"], :last_name => CGI.unescapeHTML(player["LastName"]),
+        :number => player["Number"], :birth_year => year, :home_municipality => player["HomeMunicipality"],
+        :all_time_goals => player["AlltimeGoals"], :all_time_assists => player["AlltimeAssists"], :position => position,
+        :gender => is_male)
       
       if member.save
         puts "Saved member #{member}"
@@ -230,10 +233,35 @@ namespace :import do
         if match.save
           puts "Save OK: #{season} - #{match}: #{match.start_time}"
         else
-          puts "Errors: #{partition.errors}"
+          puts "Errors: #{match.errors}"
         end
       rescue ActiveRecord::RecordNotFound
         puts "ERROR: Problem with #{match_data["Division"]}: #{match_data["StartingYear"]} #{match_data["OrderNumber"]}"
+      end
+    end
+  end
+  
+  desc "Loads statistics from statistics.yml"
+  task :statistics => :environment do
+    puts "Loading statistics"
+    yml = load_yml "statistics"
+    
+    yml.each do |statistics_data|
+      begin
+        season = Season.find_by_division_and_start_year! statistics_data["Division"], statistics_data["StartingYear"]
+        partition = season.partitions.find_by_position! statistics_data["OrderNumber"]
+        member = Member.find_by_last_name_and_first_name! CGI.unescapeHTML(statistics_data["LastName"]), statistics_data["FirstName"]
+        
+        statistic = partition.statistics.build :member => member, :assists => statistics_data["Assists"],
+          :goals => statistics_data["Goals"], :pim => statistics_data["PenaltyMinutes"], :matches => statistics_data["GamesPlayed"]
+        
+        if statistic.save
+          puts "Save OK: #{season} - #{statistic}"
+        else
+          puts "Errors: #{statistic.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound => e
+        puts e
       end
     end
   end
@@ -242,7 +270,7 @@ namespace :import do
   task :reset => ['db:drop', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings]
+  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings, :matches, :statistics]
   
   def load_yml file_name
     require 'yaml'
