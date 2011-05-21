@@ -10,6 +10,8 @@ class Match < ActiveRecord::Base
   validates_numericality_of :home_goals, :only_integer => true, :greater_than_or_equal_to => 0, :allow_nil => true
   validates_numericality_of :visitor_goals, :only_integer => true, :greater_than_or_equal_to => 0, :allow_nil => true
   
+  validates_inclusion_of :additional_info, :in => %w(shootout overtime), :allow_nil => true
+  
   validate :teams_cannot_be_equal
   
   scope :upcoming, where(:start_time => (DateTime.now.at_beginning_of_day)..(DateTime.now.advance(:days => 30))).
