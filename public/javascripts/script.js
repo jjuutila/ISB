@@ -24,10 +24,9 @@ jQuery(document).ready(function() {
       wrap: 'last'
   });
   
-  
   hiConfig = {
-    sensitivity: 2,
-    interval: 200, 
+    sensitivity: 8,
+    interval: 100,
     timeout: 300,
     over: function() {
       $(this).addClass("subhover");
