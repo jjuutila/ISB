@@ -4,4 +4,4 @@
   %meta
     %time{:datetime => html5_datetime(@match.start_time)}= @match.start_time
     = " | #{@match.partition.season}, #{@match.partition} | #{@match.location}"
-  %p#report= @match.report
+  %p#report= auto_link(simple_format(@match.report))
