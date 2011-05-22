@@ -265,12 +265,50 @@ namespace :import do
       end
     end
   end
+  
+  desc "Loads roles for members from roles.yml"
+  task :roles => :environment do
+    puts "Loading roles"
+    yml = load_yml "roles"
+    
+    yml.each do |affair_data|
+      begin
+        season = Season.find_by_division_and_start_year! affair_data["Division"], affair_data["StartingYear"]
+        member = Member.find_by_last_name_and_first_name! CGI.unescapeHTML(affair_data["LastName"]), affair_data["FirstName"]
+        
+        role_numerical = affair_data["Role"]
+        
+        case role_numerical
+          when 1
+            role = "player"
+          when 2
+            role = "coach"
+          when 3
+            role = "assistant"
+          when 4
+            role = "manager"
+          else
+            raise
+        end
 
-  desc "This drops the DB and loads the DB schema"
+        affair = season.affairs.build :member => member, :role => role
+        
+        if affair.save
+          puts "Save OK: #{season} - #{affair}"
+        else
+          puts "Errors: #{affair.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound => e
+        puts e
+      end
+    end
+  end
+
+  desc "Drops the database tables and then reloads the database schema"
   task :reset => ['db:drop', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings, :matches, :statistics]
+  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings, :matches, :statistics, :roles]
   
   def load_yml file_name
     require 'yaml'
