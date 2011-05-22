@@ -3,6 +3,7 @@ class Season < ActiveRecord::Base
   default_scope :order => 'start_year DESC'
 
   belongs_to :section
+  has_many :affairs
   has_many :members, :through => :affairs
   has_many :partitions
   
