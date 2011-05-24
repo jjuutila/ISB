@@ -72,24 +72,20 @@ describe Admin::TeamStandingsController do
   
   describe "POST update_multiple" do
     before(:each) do
-      @params = {:partition_id => @partition.id, :standings => {1 => :params}}
+      @params = { :partition_id => @partition.id, :standings => { 5 => {"these" => "params"} } }
     end
     
     describe "with valid params" do
-      it "updates standings" do
-        TeamStanding.should_receive(:update).with([1], [:params]) { [mock_team_standing] }
-        
-        put :update_multiple, @params
+      before(:each) do
+        TeamStanding.stub(:update).with([5], [{"these" => "params", 'rank' => 1}]) { [mock_team_standing] }
       end
       
       it "redirects to partition" do
-        TeamStanding.stub(:update) { [mock_team_standing] }
         put :update_multiple, @params
         response.should redirect_to admin_partition_path @partition
       end
       
       it "sets flash.notice" do
-        TeamStanding.stub(:update) { [mock_team_standing] }
         put :update_multiple, @params
         flash.notice.should == "Sarjataulukko päivitetty."
       end

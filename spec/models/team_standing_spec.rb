@@ -15,6 +15,7 @@ describe TeamStanding do
     it { should validate_numericality_of(:overtimes) }
     it { should validate_numericality_of(:goals_for) }
     it { should validate_numericality_of(:goals_against) }
+    it { should validate_numericality_of(:rank) }
   end
   
   context "after initialization" do

@@ -1,5 +1,7 @@
 # coding: utf-8
 class TeamStanding < ActiveRecord::Base
+  default_scope :order => 'rank ASC'
+  
   belongs_to :partition
   has_many :home_matches, :class_name => 'Match', :foreign_key => 'home_team_id'
   has_many :visitor_matches, :class_name => 'Match', :foreign_key => 'visitor_team_id'
@@ -11,11 +13,11 @@ class TeamStanding < ActiveRecord::Base
   validates_numericality_of :overtimes, :only_integer => true, :greater_than_or_equal_to => 0
   validates_numericality_of :goals_for, :only_integer => true, :greater_than_or_equal_to => 0
   validates_numericality_of :goals_against, :only_integer => true, :greater_than_or_equal_to => 0
+  validates_numericality_of :rank, :only_integer => true, :greater_than_or_equal_to => 1
   
   after_initialize :set_defaults
   
-  scope :in_partition, lambda { |partition| where(:partition_id => partition.id).
-    order("2 * wins + overtimes DESC, goals_for - goals_against DESC") }
+  scope :in_partition, lambda { |partition| where(:partition_id => partition.id) }
   
   def set_defaults
     self.wins = 0 unless self.wins

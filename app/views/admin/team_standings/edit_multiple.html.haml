@@ -1,27 +1,46 @@
-%h1 #{@partition.season.section}: Sarjataulukko kaudella #{@partition.season}
-%h2 #{@partition}
+- content_for :javascript do
+  = javascript_include_tag "sort-elements.js", "text-change.js", "numeric.js", "monitor_standings.js"
+  :javascript
+    $(document).ready(function() {
+      $('tbody').monitorStandings();
+    });
 
-#contextNavi
+%header
+  %h1 #{@partition.season.section}: Sarjataulukko kaudella #{@partition.season}
+
+%nav#contextNavi
   = link_to image_tag('arrow_left.png', :size => '16x16'), admin_partition_path(@partition)
   = link_to 'Takaisin', admin_partition_path(@partition)
+
+= check_box_tag :auto_sort_standings, 1, true
+= label_tag :auto_sort_standings, 'Järjestä sarjataulukko muutoksien jälkeen'
+
+%h2 #{@partition}
 
 = form_tag(update_multiple_admin_partition_team_standings_path(@partition), :method => 'put') do
   %table
     %thead
       %tr
-        %th 
+        %th
+        %th O
         %th V
         %th T
         %th H
         %th MS
+        %th P
       %tbody
         - for standing in @standings
-          %tr{ :class => [cycle(:odd, :even), !standing.errors.empty? && "row_contains_errors"] }
-            %td= standing
+          %tr{ :class => !standing.errors.empty? && "row_contains_errors" }
+            %td
+              = image_tag 'two_way_arrow.png', :size => '16x16'
+              = standing
+            %td.games-played-cell= standing.games_played
             %td= number_field_tag "standings[#{standing.id}][wins]", standing.wins, :size => 3, :in => 0...300
             %td= number_field_tag "standings[#{standing.id}][overtimes]", standing.overtimes, :size => 3, :in => 0...300
             %td= number_field_tag "standings[#{standing.id}][losses]", standing.losses, :size => 3, :in => 0...300
             %td
-              = number_field_tag("standings[#{standing.id}][goals_for]", standing.goals_for, :size => 3, :in => 0...300) + "-"
-              = number_field_tag "standings[#{standing.id}][goals_against]", standing.goals_against, :size => 3, :in => 0...300
+              = number_field_tag("standings[#{standing.id}][goals_for]", standing.goals_for, :size => 4, :min => 0) + "-"
+              = number_field_tag "standings[#{standing.id}][goals_against]", standing.goals_against, :size => 4, :min => 0
+            %td.points-cell= standing.points
+
   = submit_tag 'Tallenna'

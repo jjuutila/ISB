@@ -8,7 +8,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   end
 
   def edit
-    @admin_team_standind = TeamStanding.find(params[:id])
+    @team = TeamStanding.find(params[:id])
   end
 
   def create
@@ -45,13 +45,15 @@ class Admin::TeamStandingsController < Admin::BaseController
     standings_params = params[:standings]
     
     begin
-      @standings = TeamStanding.update standings_params.keys, standings_params.values
+      @standings = TeamStanding.update standings_params.keys, append_rank_to_standings(standings_params.values)
     rescue
       flash.alert = "Sarjataulukko päivitetty vain osittain, koska joitain tilastorivejä ei löytynyt tietokannasta."
       redirect_to edit_multiple_admin_partition_team_standings_path @partition and return
     end
     
     standings_with_error = @standings.find_all {|s| !s.errors.empty?}
+    
+    standings_with_error.each {|s| puts s.errors.inspect}
     
     if standings_with_error.empty?
       flash.notice = "Sarjataulukko päivitetty."
@@ -75,5 +77,10 @@ class Admin::TeamStandingsController < Admin::BaseController
   
   def get_partition
     @partition = Partition.find params[:partition_id]
+  end
+  
+  def append_rank_to_standings values
+    rank = 0
+    values.each {|data| data[:rank] = (rank += 1) }
   end
 end

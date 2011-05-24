@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110425141427) do
+ActiveRecord::Schema.define(:version => 20110522123748) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
@@ -147,6 +147,7 @@ ActiveRecord::Schema.define(:version => 20110425141427) do
     t.integer  "goals_against"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "rank"
   end
 
   create_table "users", :force => true do |t|

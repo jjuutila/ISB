@@ -108,10 +108,6 @@ tr.even {
   background-color:#f4f4f4;
 }
 
-tr.row_contains_errors {
-  background-color:#f2c0bd;
-}
-
 .inputs ol, .buttons ol {
   list-style: none;
 }
@@ -307,6 +303,21 @@ ul.ui-autocomplete {
 .ui-menu-item a { color:#f68d28; }
 
 .ui-corner-all { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+.ui-sortable tr {
+  line-height:28px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+}
+
+.ui-sortable tr td { padding-right:12px; }
+
+tr.ui-sortable-placeholder {
+  height:40px;
+  padding-right:12px;
+}
+
+tr.row_contains_errors { background-color:#f2c0bd; }
 
 footer {
   border-top:2px solid #e4dee1;
