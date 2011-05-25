@@ -1,12 +1,14 @@
 %h1 #{@partition.season.section}: #{@partition} kaudella #{@partition.season} 
 
-#contextNavi
+%nav#contextNavi
   = link_to image_tag('arrow_left.png', :size => '16x16'), admin_seasons_path
   = link_to 'Takaisin', admin_seasons_path
   \|
   = link_to_if @partition.team_standings.count > 1, 'Sarjataulukko', edit_multiple_admin_partition_team_standings_path(@partition)
   \|
   = link_to_if @partition.team_standings.count > 1, 'Ottelut', admin_partition_matches_path(@partition)
+  \|
+  = link_to_if @partition.statistics.count > 1, 'Pistepörssi', edit_multiple_admin_partition_statistics_path(@partition)
 
 %h2 Joukkueet
 %p
