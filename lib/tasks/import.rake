@@ -178,7 +178,7 @@ namespace :import do
         season = Season.find_by_division_and_start_year! standings_data["Division"], standings_data["StartingYear"]
         partition = season.partitions.find_by_position! standings_data["OrderNumber"]
         
-        home = partition.team_standings.build :name => standings_data["TeamName"], :wins => standings_data["Wins"],
+        team_standing = partition.team_standings.build :name => standings_data["TeamName"], :wins => standings_data["Wins"],
           :losses => standings_data["Losses"], :overtimes => standings_data["Overtime"], :goals_for => standings_data["GoalsFor"],
           :goals_against => standings_data["GoalsAgainst"]
           
