@@ -11,6 +11,7 @@ class Admin::BaseController < ActionController::Base
   def selected_section
     @selected_section = current_admin_user.selected_section
   end
+  helper_method :selected_section
   
   def change_section
     begin
