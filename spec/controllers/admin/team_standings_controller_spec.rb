@@ -13,6 +13,7 @@ describe Admin::TeamStandingsController do
   before(:each) do
     @partition = mock_model(Partition)
     Partition.stub(:find).with(@partition.id) { @partition }
+    @params = { 'these' => 'params' }
   end
   
   describe "GET new" do
@@ -26,35 +27,37 @@ describe Admin::TeamStandingsController do
   describe "POST create" do
     describe "with valid params" do
       before(:each) do
-        TeamStanding.stub(:new).with({'partition' => @partition}) { mock_team_standing(:save => true) }
+        @partition.stub_chain(:team_standings, :build).with(@params) { mock_team_standing(:save => true) }
       end
       
       it "assigns a newly created team as @team" do
-        post :create, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => @params
         assigns(:team).should be(mock_team_standing)
       end
       
       it "redirects to the show partition page" do
-        post :create, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => @params
         response.should redirect_to(admin_partition_path(@partition))
       end
       
       it "shows a flash message" do
-        post :create, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => @params
         flash[:notice].should == 'Uusi joukkue luotu.'
       end
     end
 
     describe "with invalid params" do
+      before(:each) do
+        @partition.stub_chain(:team_standings, :build).with(@params) { mock_team_standing(:save => false, :errors => {:anything => "error"}) }
+      end
+      
       it "assigns a newly created but unsaved team as @team" do
-        TeamStanding.stub(:new) { mock_team_standing(:save => false) }
-        post :create, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => @params
         assigns(:team).should be(mock_team_standing)
       end
 
       it "re-renders the 'new' template" do
-        TeamStanding.stub(:new) { mock_team_standing(:save => false, :errors => {:anything => "error"}) }
-        post :create, :partition_id => @partition.id, :team_standing => {}
+        post :create, :partition_id => @partition.id, :team_standing => @params
         response.should render_template("new")
       end
     end

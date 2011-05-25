@@ -12,7 +12,7 @@ class Admin::TeamStandingsController < Admin::BaseController
   end
 
   def create
-    @team = TeamStanding.new(params[:team_standing].merge(:partition => @partition))
+    @team = @partition.team_standings.build(params[:team_standing])
     flash.notice = 'Uusi joukkue luotu.' if @team.save
     respond_with @team, :location => admin_partition_path(@partition)
   end
@@ -52,8 +52,6 @@ class Admin::TeamStandingsController < Admin::BaseController
     end
     
     standings_with_error = @standings.find_all {|s| !s.errors.empty?}
-    
-    standings_with_error.each {|s| puts s.errors.inspect}
     
     if standings_with_error.empty?
       flash.notice = "Sarjataulukko päivitetty."
