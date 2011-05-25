@@ -4,7 +4,7 @@ class Admin::StatisticsController < Admin::BaseController
   before_filter :get_partition, :except => [:latest, :edit_all_time_statistics, :update_all_time_statistics, :latest_all_time]
   
   def edit_multiple
-    respond_with @statistics = Statistic.where("partition_id = ?", @partition.id)
+    respond_with @statistics = Statistic.in_partition(@partition)
   end
   
   def update_multiple

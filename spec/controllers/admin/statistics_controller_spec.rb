@@ -23,7 +23,7 @@ describe Admin::StatisticsController do
   
   describe "GET edit_multiple" do
     it "assigns the requested partitions statistics as @statistics" do
-      Statistic.should_receive(:where).with("partition_id = ?", @partition.id) { [mock_statistic] }
+      Statistic.should_receive(:in_partition).with(@partition) { [mock_statistic] }
       
       get :edit_multiple, :partition_id => 3
       assigns(:statistics).should == [mock_statistic]
