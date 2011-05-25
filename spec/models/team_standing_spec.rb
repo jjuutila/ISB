@@ -38,6 +38,37 @@ describe TeamStanding do
     end
   end
   
+  context "before validation" do
+    before(:each) do
+      @partition = mock_model(Partition)
+      @team = TeamStanding.new :partition => @partition
+    end
+      
+    context "with no other standings created" do
+      before(:each) do
+        @partition.stub(:team_standings) { [] }
+      end
+      
+      it "assigns rank 1 for created team" do
+        @team.save
+        @team.rank.should == 1
+      end
+    end
+    
+    context "when other standings exist" do
+      before(:each) do
+        other_team = mock_model(TeamStanding)
+        other_team.stub(:rank) { 3 }
+        @partition.stub(:team_standings) { [other_team] }
+      end
+      
+      it "assigns the created team's rank as the biggest in team's partition" do
+        @team.save
+        @team.rank.should == 4
+      end
+    end
+  end
+  
   context "points" do
     it "should give two points for a win" do
       standing = TeamStanding.new :wins => 2

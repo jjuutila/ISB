@@ -16,6 +16,7 @@ class TeamStanding < ActiveRecord::Base
   validates_numericality_of :rank, :only_integer => true, :greater_than_or_equal_to => 1
   
   after_initialize :set_defaults
+  before_validation :set_rank, :if => Proc.new { |team| team.rank.nil? and team.partition and team.new_record? }
   
   scope :in_partition, lambda { |partition| where(:partition_id => partition.id) }
   
@@ -25,6 +26,14 @@ class TeamStanding < ActiveRecord::Base
     self.overtimes = 0 unless self.overtimes
     self.goals_for = 0 unless self.goals_for
     self.goals_against = 0 unless self.goals_against
+  end
+  
+  def set_rank
+    if self.partition.team_standings.blank?
+      self.rank = 1
+    else
+      self.rank = self.partition.team_standings.last.rank + 1
+    end
   end
   
   def points
