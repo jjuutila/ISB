@@ -3,7 +3,6 @@ require 'cgi'
 namespace :import do
   desc "Loads sections from a YML file"
   task :sections => :environment do
-    puts "Loading SECTIONS"
     yml = load_yml "sections"
     yml.each do |section|
      puts Section.create(:name => section["name"], :slug => section["slug"], :parent_id => section["parent_id"])
@@ -125,7 +124,6 @@ namespace :import do
   
   desc "Loads seasons from a YML file"
   task :seasons => :environment do
-    puts "Loading SEASONS"
     yml = load_yml "seasons"
     
     yml.each do |season|
@@ -148,7 +146,6 @@ namespace :import do
   
   desc "Loads season partitions from a YML file"
   task :partitions => :environment do
-    puts "Loading partitions"
     yml = load_yml "season_portions"
     
     yml.each do |partition_data|
@@ -170,7 +167,6 @@ namespace :import do
   
   desc "Loads standings from standings.yml"
   task :standings => :environment do
-    puts "Loading standings"
     yml = load_yml "standings"
     
     yml.each do |standings_data|
@@ -195,7 +191,6 @@ namespace :import do
   
   desc "Loads matches from matches.yml"
   task :matches => :environment do
-    puts "Loading matches"
     yml = load_yml "matches"
     
     yml.each do |match_data|
@@ -243,14 +238,13 @@ namespace :import do
   
   desc "Loads statistics from statistics.yml"
   task :statistics => :environment do
-    puts "Loading statistics"
     yml = load_yml "statistics"
     
     yml.each do |statistics_data|
       begin
         season = Season.find_by_division_and_start_year! statistics_data["Division"], statistics_data["StartingYear"]
         partition = season.partitions.find_by_position! statistics_data["OrderNumber"]
-        member = Member.find_by_last_name_and_first_name! CGI.unescapeHTML(statistics_data["LastName"]), statistics_data["FirstName"]
+        member = find_member(statistics_data)
         
         statistic = partition.statistics.build :member => member, :assists => statistics_data["Assists"],
           :goals => statistics_data["Goals"], :pim => statistics_data["PenaltyMinutes"], :matches => statistics_data["GamesPlayed"]
@@ -268,13 +262,12 @@ namespace :import do
   
   desc "Loads roles for members from roles.yml"
   task :roles => :environment do
-    puts "Loading roles"
     yml = load_yml "roles"
     
     yml.each do |affair_data|
       begin
         season = Season.find_by_division_and_start_year! affair_data["Division"], affair_data["StartingYear"]
-        member = Member.find_by_last_name_and_first_name! CGI.unescapeHTML(affair_data["LastName"]), affair_data["FirstName"]
+        member = find_member(affair_data)
         
         role_numerical = affair_data["Role"]
         
@@ -303,14 +296,35 @@ namespace :import do
       end
     end
   end
+  
+  desc "Loads member questions and answers from questions.yml"
+  task :questions => :environment do
+    yml = load_yml "questions"
+    
+    yml.each do |question_data|
+      begin
+        member = find_member(question_data)
+        question = member.questions.build :content => question_data['Question'], :answer => question_data['Answer']
+        
+        if question.save
+          puts "Save OK: #{member} - #{question}"
+        else
+          puts "Errors: #{question.errors}"
+        end
+      rescue ActiveRecord::RecordNotFound => e
+        puts e
+      end
+    end
+  end
 
   desc "Drops the database tables and then reloads the database schema"
   task :reset => ['db:drop', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings, :matches, :statistics, :roles]
+  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings, :matches, :statistics, :roles, :questions]
   
   def load_yml file_name
+    puts "Loading #{file_name}"
     require 'yaml'
     YAML::load(File.open(File.join( RAILS_ROOT, 'db', 'data', "#{file_name}.yml")))
   end
@@ -318,5 +332,9 @@ namespace :import do
   def load_xml file_name
     require 'nokogiri'
     Nokogiri::XML(File.open(File.join( RAILS_ROOT, 'db', 'data', "#{file_name}.xml")))
+  end
+  
+  def find_member data
+    Member.find_by_last_name_and_first_name! CGI.unescapeHTML(data["LastName"]), data["FirstName"]
   end
 end
