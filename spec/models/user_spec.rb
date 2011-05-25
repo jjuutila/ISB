@@ -14,7 +14,7 @@ describe User do
       end
     
       it "accepts a leaf section" do
-        @section.stub(:leaf?).with() { true }
+        @section.should_receive(:leaf?) { true }
         @user.valid?
         @user.errors[:section].count.should == 0
       end

@@ -22,15 +22,15 @@ describe PicasaController do
   find_section
   
   before(:each) do
-    @picasa = mock(Picasa).as_null_object
+    @picasa = mock(Picasa)
     Picasa.stub(:new).with(nil) { @picasa }
     @section.stub(:picasa_user_id) { 'user_id' }
-    @picasa.stub(:user).with('user_id') { mock_user }
+    @picasa.stub(:user).with('user_id').and_return(mock_user)
   end
   
   describe "GET 'index'" do
     it "assigns specified user's albums as @albums" do
-      mock_user.should_receive(:albums).with() { [mock_album] }
+      mock_user.stub(:albums) { [mock_album] }
       get :index, :section => 'edustus'
       assigns(:albums).should == [mock_album]
     end

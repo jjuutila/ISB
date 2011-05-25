@@ -8,8 +8,8 @@ describe Admin::BaseController do
     before(:each) do
       user = mock_model(User)
       @section = mock_model(Section)
-      user.should_receive(:selected_section).with() { @section }
-      controller.stub(:current_admin_user).with() { user }
+      user.should_receive(:selected_section) { @section }
+      controller.stub(:current_admin_user) { user }
     end
     it "returns current user's section" do
       controller.selected_section.should == @section
@@ -24,7 +24,7 @@ describe Admin::BaseController do
   describe "PUT 'change_section'" do
     before(:each) do
       @user = mock_model(User)
-      controller.stub(:current_admin_user).with() { @user }
+      controller.stub(:current_admin_user) { @user }
       @section = mock_model(Section)
       @request.env["HTTP_REFERER"] = admin_news_index_path
     end
