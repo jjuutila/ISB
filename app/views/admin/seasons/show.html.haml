@@ -9,6 +9,8 @@
   \|
   = link_to image_tag('add.png', :size => '16x16'), new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
   = link_to "Luo uusi joukkueosio", new_admin_season_partition_path(@season), :title => 'Luo uusi joukkueosio'
+  \|
+  = link_to "Joukkue", admin_season_roles_path(@season), :title => 'Muokkaa joukkuetta'
 
 %table
   %thead
