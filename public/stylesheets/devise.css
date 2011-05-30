@@ -7,7 +7,7 @@ h1 {
 
 h2 {
   font:bold 1.4em Arial, Helvetica, sans-serif;
-  margin-bottom:6px;
+  margin-bottom:8px;
 }
 
 section.center-wrap {
@@ -28,3 +28,12 @@ div#alert {
   padding:5px;
   font-weight: bold;
 }
+
+ol {
+  list-style:none;
+  margin-left:10px;
+}
+
+label { display:block; }
+
+li { margin-top:10px; }

@@ -1,4 +1,11 @@
-%p
-  Welcome #{@resource.email}!
-%p You can confirm your account through the link below:
-%p= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token)
+%h1 Tervetuloa ISB:n hallintasivujen käyttäjäksi!
+%p Voit vahvistaa tilisi käyttäen #{link_to('tätä linkkiä', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token))} tai vierailemalla tässä osoitteessa:
+%p= confirmation_url(@resource, :confirmation_token => @resource.confirmation_token)
+%p Vahvistamisen jälkeen voit kirjautua hallintasivuille osoitteessa #{new_user_session_path()}.
+
+%ul
+  %li Käyttäjätunnus: #{@resource.email}
+  %li Salasana: #{@resource.password}
+
+%p Ole hyvä ja vaihda salasana ensimmäisen kirjautumisen jälkeen.
+%p Jos kohtaat ongelmia, niin ota yhteyttä sähköpostilla osoitteeseen webmaster@isb.fi

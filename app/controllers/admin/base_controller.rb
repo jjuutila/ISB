@@ -1,6 +1,6 @@
 # coding: utf-8
 class Admin::BaseController < ActionController::Base
-  before_filter :set_locale, :authenticate_admin_user!
+  before_filter :set_locale, :authenticate_user!
   protect_from_forgery
   layout 'admin/application'
   
@@ -9,14 +9,14 @@ class Admin::BaseController < ActionController::Base
   end
   
   def selected_section
-    @selected_section = current_admin_user.selected_section
+    @selected_section = current_user.selected_section
   end
   helper_method :selected_section
   
   def change_section
     begin
-      current_admin_user.selected_section = Section.find_by_slug(params[:section])
-      current_admin_user.save!
+      current_user.selected_section = Section.find_by_slug(params[:section])
+      current_user.save!
     rescue
       flash.alert = "Virheellinen joukkueosio. Mitään ei muutettu."
     end

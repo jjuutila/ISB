@@ -5,9 +5,13 @@ Isb::Application.routes.draw do
   root :to => "home#index", :via => :get
   match "/uutiset/:id" => "home#show", :via => :get, :as => 'news_post'
   
+  devise_for :users, :controllers => { :confirmations => "admin/confirmations" }, :path => 'admin/users'
+  
   namespace 'admin' do
-    devise_for :users, :controllers => { :passwords => "devise/passwords", :sessions => "devise/sessions",
-      :confirmations => "devise/confirmations" }
+    # Devise custom confirmation
+    as :user do
+      put "users/confirmation/confirm", :to => "confirmations#confirm"
+    end
     
     root :to => redirect("/admin/news"), :via => :get
     match "change_section" => "base#change_section", :via => :put, :as => 'change_section'

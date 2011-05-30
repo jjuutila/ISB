@@ -44,3 +44,6 @@ fi:
         subject: 'Ohjeet salasanan vaihtoon'
       unlock_instructions:
         subject: 'Ohjeet tunnuksen lukituksen poistoon'
+      confirmation_instructions:
+        subject: 'ISB:n hallintasivujen tunnuksen vahvistus'
+        user_subject: 'ISB:n hallintasivujen tunnuksen vahvistus'

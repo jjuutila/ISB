@@ -1,17 +1,14 @@
 %h2 Kirjaudu sisään
 
-= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-  %p
-    = f.label :email, "Sähköposti"
-    %br/
-    = f.email_field :email
-  %p
-    = f.label :password, "Salasana"
-    %br/
-    = f.password_field :password
-  - if devise_mapping.rememberable?
-    %p
-      = f.check_box :remember_me
-      = f.label :remember_me
-  %p= f.submit "Kirjaudu"
+- semantic_form_for resource, :as => resource_name, :url => session_path(resource_name) do |form|
+  = form.inputs do
+    = form.input :email, :label => 'Sähköposti', :required => false
+    = form.input :password, :label => 'Salasana', :required => false
+    
+    - if devise_mapping.rememberable?
+      = form.input :remember_me
+  
+  = form.buttons do
+    = form.commit_button :label => 'Kirjaudu'
+    
 = render :partial => "devise/shared/links"
