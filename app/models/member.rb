@@ -43,9 +43,10 @@ class Member < ActiveRecord::Base
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }
   scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}  
   
-  def self.players_in_any_season
+  def self.players_with_points_in_any_season
     # In PostreSQL all selected columns (except aggregated ones) must appear in the group-by clause.
-    Member.group(self.col_list).joins(:affairs).where(:affairs => {:role => :player}).
+    Member.group(self.col_list).joins(:affairs).
+      where("affairs.role = 'player' AND (all_time_goals + all_time_assists > 0)").
       order("all_time_goals + all_time_assists DESC, all_time_goals DESC")
   end
   
