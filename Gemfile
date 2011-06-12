@@ -1,9 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
-# TODO remove the rake constraint when a compatible RoR version is released
-gem 'rake', '~> 0.8.7'
-
+gem 'rails', '3.0.8'
 gem 'jquery-rails'
 gem 'formtastic', '~> 1.2.0'
 gem 'haml'
