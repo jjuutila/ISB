@@ -8,3 +8,8 @@
   %title= "Ilmajoen Salibandy"
   = stylesheet_link_tag "style.css?v=2", "dropdown", "http://fonts.googleapis.com/css?family=Molengo"
   = javascript_include_tag "modernizr-1.7.min"
+  - if Rails.env.production?
+    = javascript_include_tag "http://www.google-analytics.com/urchin.js"
+    :javascript
+      _uacct = "UA-122143-1";
+      urchinTracker();
