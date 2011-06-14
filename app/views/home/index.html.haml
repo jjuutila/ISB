@@ -13,14 +13,18 @@
         = " | "
         = section_link_list_for news_post.sections
 
-%section#frontpage-matches
-  %h1 Kuukauden ottelut
-  - unless @upcoming_matches.blank?
-    - @upcoming_matches.each do |match|
-      .entry
-        %h2= link_to match, match_path(match.partition.season.section.slug, match)
-        .meta
-          = "#{match.partition.season.section} |"
-          %time{:datetime => html5_datetime(match.start_time)}= match.start_time
-  - else
-    = "Ei tulevia otteluita."
+%div.frontpage-right-col
+  %section.basic-box
+    %h1 Kuukauden ottelut
+    - unless @upcoming_matches.blank?
+      - @upcoming_matches.each do |match|
+        .entry
+          %h2= link_to match, match_path(match.partition.season.section.slug, match)
+          .meta
+            = "#{match.partition.season.section} |"
+            %time{:datetime => html5_datetime(match.start_time)}= match.start_time
+    - else
+      = "Ei tulevia otteluita."
+      
+  %iframe{ :src => "http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FIlmajoenSalibandy&amp;width=350&amp;colorscheme=light&amp;show_faces=true&amp;border_color=#e1e1e2&amp;stream=false&amp;header=false&amp;height=62",
+           :scrolling => 'no', :frameborder => 0, :class => 'like-box basic-box', :allowTransparency => "true" }

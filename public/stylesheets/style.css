@@ -127,10 +127,11 @@ div#main-header {
   font: normal 0.8em verdana, arial, helvetica, sans-seri;
 }
 
-#breadcrumb, #frontpage-news, #frontpage-matches, section#main, article#news, div#frontpage-banner {
+.basic-box, #breadcrumb, #frontpage-news, section#main, article#news, div#frontpage-banner {
   border:1px solid #e1e1e2;
   margin-top:10px;
   padding:10px;
+  background-color:#ffffff;
 }
 
 nav#section-nav {
@@ -208,7 +209,7 @@ div#frontpage-banner-caption {
   padding-left:28px;
 }
 
-section#frontpage-matches, section#frontpage-news {
+div.frontpage-right-col, section#frontpage-news {
   float:left;
   margin-bottom:10px;
 }
@@ -433,6 +434,12 @@ p.caption {
 
 .picasa-link img {
   margin-top:20px;
+}
+
+iframe.like-box {
+  overflow:hidden;
+  width:350px;
+  height:62px;
 }
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
