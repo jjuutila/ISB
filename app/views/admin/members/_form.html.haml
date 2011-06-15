@@ -9,7 +9,11 @@
     = form.input :home_municipality, :label => 'Kotikunta'
     = form.input :number, :label => 'Numero'
     = form.input :position, :as => :select, :label => 'Pelipaikka', :include_blank => false,
-      :collection => {'-' => Member::UNASSIGNED, 'Hyökkääjä' => Member::ATTACKER, 'Puolustaja' => Member::DEFENDER, 'Maalivahti' => Member::GOALIE}
+      :collection => t("member.position").invert
+      
+    = form.input :shoots, :as => :select, :label => 'Kätisyys', :include_blank => true,
+      :collection => t("member.shoots").invert
+      
     = image_tag @member.photo.url(:normal)
     = form.input :photo, :label => 'Kuva'
   #questions

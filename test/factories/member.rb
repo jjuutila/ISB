@@ -7,4 +7,5 @@ Factory.define :member do |m|
   m.all_time_assists rand(1000)
   m.all_time_goals rand(1000)
   m.birth_year rand(20) + 1980
+  m.shoots nil
 end

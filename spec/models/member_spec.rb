@@ -26,6 +26,12 @@ describe Member do
     it {should ensure_inclusion_of(:birth_year).in_range(1900..DateTime::now().year()).with_message(/Syntymävuosi/) }
     
     it { should ensure_inclusion_of(:position).in_range(0..3).with_message(/pelipaikka/) }
+    
+    it { should allow_value("right").for(:shoots) }
+    it { should allow_value("left").for(:shoots) }
+    it { should allow_value(nil).for(:shoots) }
+    it { should allow_value("").for(:shoots) }
+    it { should_not allow_value("srhg").for(:shoots) }
   end
   
   context "printing" do

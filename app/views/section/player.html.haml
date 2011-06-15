@@ -21,10 +21,11 @@
         %li
           %strong Pelipaikka:
           = t("member.position.#{@member.position}")
-        
-      %li
-        %strong Kätisyys:
-        = "TO-DO"
+      
+      - if @member.shoots
+        %li
+          %strong Kätisyys:
+          = t("member.shoots.#{@member.shoots}")
         
       - for question in @member.questions
         %li

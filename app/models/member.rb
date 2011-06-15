@@ -31,6 +31,8 @@ class Member < ActiveRecord::Base
     
   validates_numericality_of :position, :only_integer => true, :less_than_or_equal_to => GOALIE,
     :greater_than_or_equal_to => UNASSIGNED, :message => "Epäkelpo pelipaikka."
+    
+  validates_inclusion_of :shoots, :in => ['left', 'right'], :allow_nil => true
 
   validates_attachment_size :photo, :less_than => 5.megabytes
   validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
@@ -41,7 +43,9 @@ class Member < ActiveRecord::Base
   
   scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name ASC") }
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }
-  scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}  
+  scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}
+  
+  before_validation :set_shoots_as_nil, :if => Proc.new { |m| m.shoots == "" }
   
   def self.players_with_points_in_any_season
     # In PostreSQL all selected columns (except aggregated ones) must appear in the group-by clause.
@@ -72,5 +76,9 @@ class Member < ActiveRecord::Base
   # Creates a comma separeted list of columns in 'members' table
   def self.col_list
     Member.column_names.collect {|c| "members.#{c}"}.join(",")
+  end
+  
+  def set_shoots_as_nil
+    self.shoots = nil
   end
 end
