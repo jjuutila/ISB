@@ -1,7 +1,5 @@
-.center-wrapper
-  %p © Ilmajoen salibandy 2011
-
-%aside.center-wrapper
+%aside#supporters{ :class => 'center-wrapper' }
+  %h1 Sponsorit
   %ul#supporter-carousel
     %li= link_to image_tag("/images/supporters/eepee.gif", :size => '190x39'), "http://www.eepee.fi/", :rel => "nofollow", :title => "Etelä-Pohjanmaan Osuuskauppa"
     %li= link_to image_tag("/images/supporters/intersport.gif", :size => '190x55'), "http://www.intersport.fi/", :rel => "nofollow", :title => "Intersport"
@@ -12,3 +10,6 @@
     %li= link_to image_tag("/images/supporters/lemminkainen_logo.png", :size => '190x48'), "http://www.lemminkainen.fi/", :rel => "nofollow", :title => "Lemminkäinen Oyj"
     %li= image_tag("/images/supporters/ilmajoen_apteekki.gif", :size => '190x42')
     %li= link_to image_tag("/images/supporters/carozel.png", :size => '190x88'), "http://www.carozel.fi/", :rel => "nofollow", :title => "Carozel"
+    
+.center-wrapper
+  %p © Ilmajoen salibandy 2011
