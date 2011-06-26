@@ -41,3 +41,9 @@ namespace :deploy do
     invoke_command "thin restart -C #{current_path}/config/thin.yml"
   end
 end
+
+namespace :logs do
+  task :production do
+    stream("tail -f /home/users/isb/isb-web/current/log/production.log")
+  end
+end
