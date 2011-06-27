@@ -10,13 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110615175755) do
+ActiveRecord::Schema.define(:version => 20110626152258) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
     t.integer "member_id"
     t.integer "season_id"
   end
+
+  add_index "affairs", ["season_id", "role"], :name => "index_affairs_on_season_id_and_role"
 
   create_table "comments", :force => true do |t|
     t.string   "title"
@@ -30,12 +32,16 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.datetime "updated_at"
   end
 
+  add_index "comments", ["commentable_id", "commentable_type"], :name => "index_comments_on_commentable_id_and_commentable_type"
+
   create_table "link_categories", :force => true do |t|
     t.string   "name"
     t.integer  "section_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "link_categories", ["section_id"], :name => "index_link_categories_on_section_id"
 
   create_table "links", :force => true do |t|
     t.string   "name"
@@ -44,6 +50,8 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "links", ["category_id"], :name => "index_links_on_category_id"
 
   create_table "matches", :force => true do |t|
     t.integer  "home_team_id"
@@ -58,6 +66,8 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "matches", ["partition_id"], :name => "index_matches_on_partition_id"
 
   create_table "members", :force => true do |t|
     t.integer  "number"
@@ -91,6 +101,8 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.integer "section_id"
   end
 
+  add_index "news_sections", ["section_id", "news_id"], :name => "index_news_sections_on_section_id_and_news_id"
+
   create_table "partitions", :force => true do |t|
     t.string   "name"
     t.integer  "season_id"
@@ -98,6 +110,8 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "partitions", ["season_id"], :name => "index_partitions_on_season_id"
 
   create_table "questions", :force => true do |t|
     t.string   "content"
@@ -119,6 +133,8 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.datetime "updated_at"
   end
 
+  add_index "seasons", ["section_id"], :name => "index_seasons_on_section_id"
+
   create_table "sections", :force => true do |t|
     t.string  "slug"
     t.integer "parent_id"
@@ -138,6 +154,8 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.datetime "updated_at"
   end
 
+  add_index "statistics", ["partition_id"], :name => "index_statistics_on_partition_id"
+
   create_table "team_standings", :force => true do |t|
     t.string   "name"
     t.integer  "partition_id"
@@ -150,6 +168,8 @@ ActiveRecord::Schema.define(:version => 20110615175755) do
     t.datetime "updated_at"
     t.integer  "rank"
   end
+
+  add_index "team_standings", ["partition_id"], :name => "index_team_standings_on_partition_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
