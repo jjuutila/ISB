@@ -59,7 +59,7 @@ class Member < ActiveRecord::Base
   end
   
   def all_time_points
-    2 * all_time_goals + all_time_assists
+    all_time_goals + all_time_assists
   end
   
   def to_s

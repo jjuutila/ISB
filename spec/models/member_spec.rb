@@ -34,13 +34,6 @@ describe Member do
     it { should_not allow_value("srhg").for(:shoots) }
   end
   
-  context "printing" do
-    it "returns number of all time points" do
-      member = Factory.build(:member, :all_time_assists => 32, :all_time_goals => 3)
-      member.all_time_points.should == 38
-    end
-  end
-  
   context "initalization" do
     it "sets alltime values to 0 if not set previously" do
       member = Member.new
@@ -52,6 +45,13 @@ describe Member do
       member = Member.new :all_time_assists => 3, :all_time_goals => 12
       member.all_time_assists.should == 3
       member.all_time_goals.should == 12
+    end
+  end
+  
+  context "all-time points" do
+    it "sums the the goals and assists" do
+      member = Member.new :all_time_goals => 5, :all_time_assists => 3
+      member.all_time_points.should == 8
     end
   end
   
