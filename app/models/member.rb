@@ -41,9 +41,10 @@ class Member < ActiveRecord::Base
   
   accepts_nested_attributes_for :questions, :allow_destroy => true
   
-  scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}).order("last_name ASC") }
+  scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}) }
   scope :not_in_season, lambda { |season| joins("LEFT JOIN affairs ON affairs.member_id = members.id AND affairs.season_id = #{season.id}").where(:affairs => {:member_id => nil}).order("last_name DESC") }
   scope :with_role, lambda { |role| joins(:affairs).where(:affairs => {:role => role})}
+  scope :all_time_players_for_season, lambda { |season| with_role("player").in_season(season).order("all_time_goals + all_time_assists DESC, last_name ASC")}
   
   before_validation :set_shoots_as_nil, :if => Proc.new { |m| m.shoots == "" }
   
@@ -55,7 +56,7 @@ class Member < ActiveRecord::Base
   end
   
   def self.with_role_in_season(role, season)
-    with_role(role).in_season(season)
+    with_role(role).in_season(season).order("number ASC, last_name ASC")
   end
   
   def all_time_points

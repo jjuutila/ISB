@@ -118,7 +118,7 @@ describe Admin::StatisticsController do
       @season = mock_model(Season)
       Season.stub(:find).with(5) { @season }
 
-      Member.stub(:with_role_in_season).with("player", @season) {[mock_member]}
+      Member.stub(:all_time_players_for_season).with(@season) {[mock_member]}
     end
     
     it "assigns requested season as @season" do

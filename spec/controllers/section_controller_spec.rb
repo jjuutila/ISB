@@ -170,7 +170,7 @@ describe SectionController do
   describe "'GET' team" do
     it "assigns requested section's most recent's season's players as @players" do
       Season.stub(:latest) {mock_season}
-      Member.stub_chain(:with_role, :in_season).with(mock_season).and_return([mock_member])
+      Member.stub(:with_role_in_season).with("player", mock_season).and_return([mock_member])
       get :team, :section => 'edustus'
       assigns(:players).should == [mock_member]
     end

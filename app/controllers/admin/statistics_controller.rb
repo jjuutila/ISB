@@ -39,7 +39,7 @@ class Admin::StatisticsController < Admin::BaseController
   
   def edit_all_time_statistics
     @season = Season.find params[:id]
-    @players = Member.with_role_in_season("player", @season)
+    @players = Member.all_time_players_for_season(@season)
   end
   
   def update_all_time_statistics
