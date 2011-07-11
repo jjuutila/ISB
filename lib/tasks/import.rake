@@ -1,11 +1,28 @@
 require 'cgi'
     
 namespace :import do
+  desc "Loads SectionGroups from section_groups.yml"
+  task :section_groups => :environment do
+    yml = load_yml "section_groups"
+    
+    yml.each do |group|
+      are_players_male = false
+      if group["gender"] == 'male'
+        are_players_male = true
+      end
+      
+      s = SectionGroup.new(:name => group["name"], :slug => group["slug"], :are_players_male => are_players_male)
+      s.save!
+      puts s
+    end
+  end
+  
   desc "Loads sections from a YML file"
   task :sections => :environment do
-    yml = load_yml "sections"
+    yml = load_yml "sections" 
     yml.each do |section|
-     puts Section.create(:name => section["name"], :slug => section["slug"], :parent_id => section["parent_id"])
+      group = SectionGroup.find section["section_group_id"]
+      puts Section.create(:name => section["name"], :slug => section["slug"], :group => group)
     end
   end
   
@@ -22,28 +39,24 @@ namespace :import do
       content = news_node.children.css("Content").text()
       created_at = news_node.children.css("AddTime").text()
       section_id = news_node.children.css("SectionID").text()
+      section = Section.find section_id
       
-      begin
-        section = Section.find section_id
-        
-        if !news_post.nil? and news_post.title == title and news_post.content == content
-          # It is a duplicate, add section
-          news_post.sections << section
-          news_post.save
-          puts "Added section for: #{news_post}"
-        else
-          # It is not a duplicate, create a new
-          news_post = News.create(:title => title, :content => content, :created_at => created_at,
-            :updated_at => created_at, :sections => [section])
-          puts "Created new: #{news_post}"
-        end
-      rescue ActiveRecord::RecordNotFound
-        puts "Section #{section_id} not found!"
+      if !news_post.nil? and news_post.title == title and news_post.content == content
+        # It is a duplicate, add section
+        news_post.sections << section
+        news_post.save
+        print "A"
+      else
+        # It is not a duplicate, create a new
+        news_post = News.create(:title => title, :content => content, :created_at => created_at,
+          :updated_at => created_at, :sections => [section])
+        print "N"
       end
     end
+    puts "\n"
   end
   
-  desc "Loads members from a YML file"
+  desc "Loads members from members.yml"
   task :members => :environment do
     puts "Loading MEMBERS"
     yml = load_yml "players"
@@ -80,7 +93,7 @@ namespace :import do
       member = Member.new(:first_name => player["FirstName"], :last_name => CGI.unescapeHTML(player["LastName"]),
         :number => player["Number"], :birth_year => year, :home_municipality => player["HomeMunicipality"],
         :all_time_goals => player["AlltimeGoals"], :all_time_assists => player["AlltimeAssists"], :position => position,
-        :gender => is_male)
+        :gender => is_male, :shoots => nil)
       
       if member.save
         puts "Saved member #{member}"
@@ -112,7 +125,7 @@ namespace :import do
           :email => email, :created_at => date, :updated_at => date, :author => author, :ip_addr => ip)
         
         if guestbook_post.save
-          puts "Save OK: #{date}"
+          print "+"
         else
           puts "Discard post: #{guestbook_post.errors}"
         end
@@ -120,6 +133,7 @@ namespace :import do
         puts "ERROR: Section #{section_id} not found!"
       end
     end
+    puts "\n"
   end
   
   desc "Loads seasons from a YML file"
@@ -250,7 +264,7 @@ namespace :import do
           :goals => statistics_data["Goals"], :pim => statistics_data["PenaltyMinutes"], :matches => statistics_data["GamesPlayed"]
         
         if statistic.save
-          puts "Save OK: #{season} - #{statistic}"
+          print "+"
         else
           puts "Errors: #{statistic.errors}"
         end
@@ -287,7 +301,7 @@ namespace :import do
         affair = season.affairs.build :member => member, :role => role
         
         if affair.save
-          puts "Save OK: #{season} - #{affair}"
+          print "+"
         else
           puts "Errors: #{affair.errors}"
         end
@@ -318,10 +332,11 @@ namespace :import do
   end
 
   desc "Drops the database tables and then reloads the database schema"
-  task :reset => ['db:drop', 'db:schema:load']
+  task :reset => ['db:drop', 'db:create', 'db:schema:load']
   
   desc "Loads all available data"
-  task :all => [:sections, :news, :members, :guestbook, :seasons, :partitions, :standings, :matches, :statistics, :roles, :questions]
+  task :all => [:section_groups, :sections, :news, :members, :guestbook, :seasons, :partitions,
+                :standings, :matches, :statistics, :roles, :questions]
   
   def load_yml file_name
     puts "Loading #{file_name}"

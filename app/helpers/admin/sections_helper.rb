@@ -1,5 +1,5 @@
 module Admin::SectionsHelper
   def section_selection
-    render :partial => 'admin/section_selection', :locals => { :sections => Section.leafs }
+    render :partial => 'admin/section_selection'
   end
 end

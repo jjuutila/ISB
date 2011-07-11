@@ -34,11 +34,20 @@ describe Admin::NewsController do
   end
   
   describe "GET new" do
-    it "assigns a new news post as @news" do
+    before(:each) do
       controller.stub(:selected_section) {mock_section}
+      Section.stub(:all) { [mock_section] }
+    end
+    it "assigns a new news post as @news" do
       News.should_receive(:new).with(:sections => [mock_section]) { mock_news }
       get :new
       assigns(:news).should be(mock_news)
+    end
+    
+    it "assigns available Sections as @sections" do
+      News.stub(:new)
+      get :new
+      assigns(:sections).should == ([mock_section])
     end
   end
   

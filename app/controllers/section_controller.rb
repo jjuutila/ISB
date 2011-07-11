@@ -83,6 +83,6 @@ class SectionController < MainSiteController
   end
   
   def all_time_statistics
-    respond_with @players = Member.players_with_points_in_any_season
+    respond_with @players = Member.players_with_points_in_any_season(@section.group.are_players_male)
   end
 end

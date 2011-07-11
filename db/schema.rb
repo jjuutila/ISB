@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110626152258) do
+ActiveRecord::Schema.define(:version => 20110703172109) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
@@ -135,13 +135,23 @@ ActiveRecord::Schema.define(:version => 20110626152258) do
 
   add_index "seasons", ["section_id"], :name => "index_seasons_on_section_id"
 
+  create_table "section_groups", :force => true do |t|
+    t.string   "name"
+    t.boolean  "are_players_male"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "sections", :force => true do |t|
     t.string  "slug"
-    t.integer "parent_id"
+    t.integer "section_group_id"
     t.string  "name"
     t.text    "contact_info"
     t.string  "picasa_user_id"
   end
+
+  add_index "sections", ["section_group_id"], :name => "index_sections_on_section_group_id"
 
   create_table "statistics", :force => true do |t|
     t.integer  "partition_id"

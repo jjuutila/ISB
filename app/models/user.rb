@@ -7,7 +7,6 @@ class User < ActiveRecord::Base
   belongs_to :section
   
   validates_presence_of :first_name, :last_name
-  validate :section_must_be_leaf, :unless => Proc.new { |u| u.section.nil? }
   
   def to_s
     "#{first_name} #{last_name}"
@@ -18,12 +17,8 @@ class User < ActiveRecord::Base
   end
   
   def selected_section
-    self.section = Section.first_leaf! if self.section.nil?
+    self.section = Section.first if self.section.nil?
     self.section
-  end
-  
-  def section_must_be_leaf
-    errors.add(:section, "Section must be a leaf section.") unless section.leaf?
   end
   
   protected

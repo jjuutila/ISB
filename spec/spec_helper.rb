@@ -18,7 +18,7 @@ module ControllerMacros
     before(:each) do
       @section = mock_model(Section).as_null_object
       @section.stub(:slug) { "edustus" }
-      Section.stub(:find_leaf_by_slug).with('edustus').and_return(@section)
+      Section.stub(:find_by_slug).with('edustus').and_return(@section)
     end
   end
 end

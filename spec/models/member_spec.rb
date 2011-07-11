@@ -79,18 +79,21 @@ describe Member do
     before(:each) do
       season = mock_model(Season)
       
-      @player_with_points = Factory.create(:member, :all_time_goals => 4)
+      @player_with_points = Factory.create(:member, :all_time_goals => 4, :gender => true)
       @player_with_points.affairs.create(:season => season, :role => "player")
       
-      player_with_no_points = Factory.create(:member, :all_time_goals => 0, :all_time_assists => 0)
+      player_with_no_points = Factory.create(:member, :all_time_goals => 0, :all_time_assists => 0, :gender => true)
       player_with_no_points.affairs.create(:season => season, :role => "player")
+      
+      female_with_points = Factory.create(:member, :all_time_goals => 9, :gender => false)
+      female_with_points.affairs.create(:season => season, :role => "player")
       
       coach = Factory.create(:member)
       coach.affairs.create(:season => season, :role => "coach")
     end
     
-    it "gets only members that are assigned to a season as a player and have all-time points" do
-      Member.players_with_points_in_any_season.should == [@player_with_points]
+    it "gets only male members that are assigned to a season as a player and have all-time points" do
+      Member.players_with_points_in_any_season(true).should == [@player_with_points]
     end
     
     it "gets a player only once even if the player is on many seasons" do
@@ -98,7 +101,7 @@ describe Member do
       other_season = mock_model(Season)
       @player_with_points.affairs.create(:season => other_season, :role => "player")
       
-      Member.players_with_points_in_any_season.should == [@player_with_points]
+      Member.players_with_points_in_any_season(true).should == [@player_with_points]
     end
   end
 end

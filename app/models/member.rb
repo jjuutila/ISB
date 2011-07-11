@@ -14,6 +14,7 @@ class Member < ActiveRecord::Base
   
   validates_presence_of :first_name, :last_name, :number
   
+  # Male = true, female = false
   validates_inclusion_of :gender, :in => [true, false]
   
   validates_numericality_of :number, :greater_than_or_equal_to => 0, :less_than_or_equal_to => 99,
@@ -48,10 +49,10 @@ class Member < ActiveRecord::Base
   
   before_validation :set_shoots_as_nil, :if => Proc.new { |m| m.shoots == "" }
   
-  def self.players_with_points_in_any_season
+  def self.players_with_points_in_any_season(gender_is_male)
     # In PostreSQL all selected columns (except aggregated ones) must appear in the group-by clause.
     Member.group(self.col_list).joins(:affairs).
-      where("affairs.role = 'player' AND (all_time_goals + all_time_assists > 0)").
+      where("affairs.role = 'player' AND (all_time_goals + all_time_assists > 0 AND gender = ?)", gender_is_male).
       order("all_time_goals + all_time_assists DESC, all_time_goals DESC")
   end
   

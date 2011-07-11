@@ -211,7 +211,10 @@ describe SectionController do
   describe "GET 'all_time_statistics'" do
     it "assigns members as @players that have 'player' role and have scored some points" do
       player = mock_model(Member)
-      Member.should_receive(:players_with_points_in_any_season).with(no_args()).and_return([player])
+      group = mock_model(SectionGroup)
+      group.stub(:are_players_male) { true }
+      @section.stub(:group) { group }
+      Member.should_receive(:players_with_points_in_any_season).with(true).and_return([player])
       get :all_time_statistics, :section => 'edustus'
       assigns(:players).should == [player]
     end

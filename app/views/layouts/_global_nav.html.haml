@@ -1,12 +1,12 @@
 %nav{ :id => 'global-nav', :class => 'center-wrapper' }
   %ul.topnav
     %li= link_to 'Etusivu', '/'
-    - Section.top_level.each do |top_level_section|
+    - SectionGroup.all.each do |group|
       %li
-        = link_to top_level_section, '#'
+        = link_to group, '#'
         %ul.subnav
-          - top_level_section.sections.each do |child|
-            %li.section= link_to child, section_news_path(child.slug)
-            %li= link_to 'Vieraskirja', guestbook_path(child.slug)
-            %li= link_to 'Sarjataulukko', standings_path(child.slug)
-            %li= link_to 'Tilastot', statistics_path(child.slug)
+          - group.sections.each do |section|
+            %li.section= link_to section, section_news_path(section.slug)
+            %li= link_to 'Vieraskirja', guestbook_path(section.slug)
+            %li= link_to 'Sarjataulukko', standings_path(section.slug)
+            %li= link_to 'Tilastot', statistics_path(section.slug)

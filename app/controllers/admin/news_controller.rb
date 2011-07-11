@@ -2,10 +2,10 @@
 
 class Admin::NewsController < Admin::BaseController
   respond_to :html
+  before_filter :get_sections, :only => [:new, :edit, :create, :update]
   
   def index
-    @selected_section = selected_section
-    respond_with @news = News.in_section(@selected_section, params[:page])
+    respond_with @news = News.in_section(selected_section, params[:page])
   end
 
   def show
@@ -36,5 +36,11 @@ class Admin::NewsController < Admin::BaseController
     @news = News.find(params[:id])
     @news.destroy
     respond_with @news, :location => admin_news_index_url
+  end
+  
+  private
+  
+  def get_sections
+    @sections = Section.all
   end
 end

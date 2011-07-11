@@ -1,75 +1,60 @@
 -
   id: 1
-  parent_id: 12
-  name: Edustus
+  section_group_id: 1
+  name: Miehet edustus
   slug: miehet-edustus
 -
   id: 2
-  parent_id: 12
+  section_group_id: 1
   name: Miehet II
   slug: miehet-ii
 -
   id: 3
-  parent_id: 14
+  section_group_id: 3
   name: B-Pojat
   slug: pojat-b
 -
   id: 4
-  parent_id: 14
+  section_group_id: 3
   name: C1-Pojat
   slug: pojat-c1
 -
   id: 5
-  parent_id: 14
+  section_group_id: 3
   name: D-Pojat
   slug: pojat-d
 -
   id: 6
-  parent_id: 13
+  section_group_id: 2
   name: Naiset edustus
   slug: naiset-edustus
 -
   id: 7
-  parent_id: 15
+  section_group_id: 4
   name: B-Tytöt
   slug: tytot-b
 -
   id: 8
-  parent_id: 12
+  section_group_id: 2
   name: Miehet III
   slug: miehet-iii
 -
   id: 9
-  parent_id: 14
+  section_group_id: 3
   name: C2-Pojat
   slug: pojat-c2
 -
   id: 10
-  parent_id: 15
+  section_group_id: 4
   name: C-Tytöt
   slug: tytot-c
 -
   id: 11
-  parent_id: 15
+  section_group_id: 4
   name: D-Tytöt
   slug: tytot-d
 -
   id: 12
-  parent_id:
-  name: Miehet
-  slug: miehet
--
-  id: 13
-  parent_id:
-  name: Naiset
-  slug: naiset
--
-  id: 14
-  parent_id:
-  name: Pojat
-  slug: pojat
--
-  id: 15
-  parent_id:
-  name: Tytöt
-  slug: tytot
+  section_group_id: 2
+  name: Naiset II
+  slug: naiset-ii

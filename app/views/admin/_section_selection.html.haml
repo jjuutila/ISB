@@ -24,9 +24,9 @@
     = image_tag "triangle_orange.png", :size => "16x8"
   
   #combo-box-container
-    - Section.top_level.each do |section|
+    - SectionGroup.all.each do |group|
       %ul.combo-box-items
         %li
-          %h2= section
-        - for child_section in section.sections
-          %li= link_to child_section, admin_change_section_path(:section => child_section.slug), :method => :put
+          %h2= group
+        - for section in group.sections
+          %li= link_to section, admin_change_section_path(:section => section.slug), :method => :put
