@@ -11,29 +11,11 @@ describe Admin::SectionsController do
   end
   
   describe "GET 'edit_contact'" do
-    describe "with leaf section" do
-      it "assigns the requested section as @section" do
-        Section.should_receive(:find).with(2) { mock_section(:parent => mock_model(Section)) }
-        get 'edit_contact', :id => 2
-        assigns(:section).should == mock_section
-        response.should be_success
-      end
-    end
-    
-    describe "with parent section" do
-      before(:each) do
-        Section.stub(:find) { mock_section(:parent => nil) }
-      end
-      
-      it "redirects to index" do
-        get 'edit_contact', :id => 2
-        response.should redirect_to admin_sections_path
-      end
-      
-      it "sets flash.error message" do
-        get 'edit_contact', :id => 2
-        flash[:alert].should == 'Vain joukkueosioiden historiatietoja voi muokata.'
-      end
+    it "assigns the requested section as @section" do
+      Section.should_receive(:find).with(2) { mock_section(:parent => mock_model(Section)) }
+      get 'edit_contact', :id => 2
+      assigns(:section).should == mock_section
+      response.should be_success
     end
   end
   

@@ -3,7 +3,7 @@ class Admin::SectionsController < Admin::BaseController
   respond_to :html
   
   def index
-    respond_with @sections = Section.top_level
+    respond_with @sections = Section.all
   end
 
   def show

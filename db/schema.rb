@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110703172109) do
+ActiveRecord::Schema.define(:version => 20110711160226) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
@@ -149,6 +149,7 @@ ActiveRecord::Schema.define(:version => 20110703172109) do
     t.string  "name"
     t.text    "contact_info"
     t.string  "picasa_user_id"
+    t.boolean "is_visible",       :default => false
   end
 
   add_index "sections", ["section_group_id"], :name => "index_sections_on_section_group_id"

@@ -3,6 +3,7 @@
     = form.input :slug, :label => 'Slug'
     = form.input :name, :label => 'Nimi'
     = form.input :picasa_user_id, :label => 'Käyttäjätunnus Picasassa'
+    = form.input :is_visible, :label => 'Näkyvillä'
   
   = form.buttons do
-    = form.commit_button
+    = form.commit_button :label => 'Tallenna'

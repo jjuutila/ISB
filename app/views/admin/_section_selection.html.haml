@@ -24,7 +24,7 @@
     = image_tag "triangle_orange.png", :size => "16x8"
   
   #combo-box-container
-    - SectionGroup.all.each do |group|
+    - SectionGroup.visible.each do |group|
       %ul.combo-box-items
         %li
           %h2= group

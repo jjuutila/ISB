@@ -8,7 +8,6 @@
 %table
   %thead
     %tr
-      %th 
       %th Joukkueosio
       %th Muokkaa
       %th Yhteystiedot
@@ -16,11 +15,5 @@
     - @sections.each do |section|
       %tr
         %td= section
-        %td
         %td.action= link_to image_tag('pencil.png', :size => '16x16'), edit_admin_section_path(section), :title => 'Muokkaa'
-      - for child in section.sections
-        %tr
-          %td
-          %td= child
-          %td.action= link_to image_tag('pencil.png', :size => '16x16'), edit_admin_section_path(child), :title => 'Muokkaa'
-          %td.action= link_to image_tag('telephone_edit.png', :size => '16x16'), edit_contact_admin_section_path(child), :title => 'Muokkaa'
+        %td.action= link_to image_tag('telephone_edit.png', :size => '16x16'), edit_contact_admin_section_path(section), :title => 'Muokkaa'
