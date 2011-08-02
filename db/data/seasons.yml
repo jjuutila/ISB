@@ -2,360 +2,303 @@
   SeasonID: 1
   SectionID: 1
   StartingYear: 2007
-  Division: 2. divisioona
-  History: |-
-    Kausi 2007-2008 oli seuralle kehittymisen aikaa. Naisten ja B-tyttöjen joukkueet aloittivat ensi kertaa sarjassa, samaten kuin C-poikien joukkue. Kokonaisjoukkuemäärä seurassa kasvoi yhtäkkiä 7:ään joukkeeseen. Jaostolle tämä asetti runsaasti uusia haasteita, mutta onneksi jokaiselle joukkueelle löydettiin taustavoimia sen verran, että kausi oli mahdollista viedä kunnialla loppuun.
-    
-    Edustusjoukkueen kausi päättyi runkosarjaan, kun 3.sija ei edellyttänyt jatkopeleihin. SBS Lapua ja SB Vaasa menivät nousukarsintoihin. Ensi vuonna uudella onnella! Kiitos kaikille taustajoukoille, tukijoille ja pelaajille onnistuneesta kaudesta.
+  Division: "2. divisioona"
+  History: "Kausi 2007-2008 oli seuralle kehittymisen aikaa. Naisten ja B-tyttöjen joukkueet aloittivat ensi kertaa sarjassa, samaten kuin C-poikien joukkue. Kokonaisjoukkuemäärä seurassa kasvoi yhtäkkiä 7:ään joukkeeseen. Jaostolle tämä asetti runsaasti uusia haasteita, mutta onneksi jokaiselle joukkueelle löydettiin taustavoimia sen verran, että kausi oli mahdollista viedä kunnialla loppuun.\r\n\r\nEdustusjoukkueen kausi päättyi runkosarjaan, kun 3.sija ei edellyttänyt jatkopeleihin. SBS Lapua ja SB Vaasa menivät nousukarsintoihin. Ensi vuonna uudella onnella! Kiitos kaikille taustajoukoille, tukijoille ja pelaajille onnistuneesta kaudesta."
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 2
   SectionID: 2
   StartingYear: 2007
-  Division: 4. divisioona
+  Division: "4. divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 3
   SectionID: 3
   StartingYear: 2007
-  Division: B-juniorit
+  Division: "B-juniorit"
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 4
   SectionID: 4
   StartingYear: 2007
-  Division: C-juniorit
+  Division: "C-juniorit"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 5
   SectionID: 5
   StartingYear: 2007
-  Division: D-juniorit
+  Division: "D-juniorit"
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 6
   SectionID: 6
   StartingYear: 2007
-  Division: Naiset
+  Division: "Naiset"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 7
   SectionID: 7
   StartingYear: 2007
-  Division: Tytöt
+  Division: "Tytöt"
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 8
   SectionID: 1
   StartingYear: 2000
-  Division: B84-juniorit
-  History: ISB aloittaa sarjapelinsä. Sarja on B-84-junioreiden länsilohko, vastustajina muun muassa SPV, Happee, Kaskinen ja Nurmo. Pelit sujuvat ailahdellen, ja sijoitumme keskikastiin. Tatu Hietikko on pistepörssin kärkimies ISB:n paidassa, ja Sami Koski säestää hyvin sijoittuen hänkin kärkikolmikkoon.
+  Division: "B84-juniorit"
+  History: "ISB aloittaa sarjapelinsä. Sarja on B-84-junioreiden länsilohko, vastustajina muun muassa SPV, Happee, Kaskinen ja Nurmo. Pelit sujuvat ailahdellen, ja sijoitumme keskikastiin. Tatu Hietikko on pistepörssin kärkimies ISB:n paidassa, ja Sami Koski säestää hyvin sijoittuen hänkin kärkikolmikkoon."
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 9
   SectionID: 1
   StartingYear: 2001
-  Division: 5. divisioona
-  History: |-
-    ISB aloitti tosimiesten pelit siirtymällä miesten V-divisioonaan kaudelle 2001-2002. Kausi käynnistyi takkuisesti, maaleja kyllä tehtiin, mutta oma verkko soi jatkuvasti. Ongelmia oli eniten roolituksessa: ei osattu puolustaa ja hyökätä joukkueena, vaan säntäiltiin ympäriinsä.
-    Kausi eteni synkissä merkeissä joulutauolle asti, mutta tuolloin ankara harjoittelu ja spartalainen kuri alkoi tuottaa hedelmää. ISB nousi tuhkasta kuin uudelleensyntyneenä. Jokaiselle alkoi tulla onnistumisia, ja kun joukkue sai hyvän hengen päälle, ne suorastaan kasaantuivat. Jengi paransi otteitaan vaihto vaihdolta ja ottelu ottelulta. Kevätkierroksen hurmoksen ansiosta nousimme sarjataulukossa viidenneksi, aivan neloseen nousseen Sisun kantaan. Kausi valitettavasti loppui meidän osaltamme kesken, eikä joukkue päässyt kipuamaan enää ylemmäs sarjataulukossa.
-    Pistepörssissä saimme kärkikymmenikköön neljä pelaajaa, joista Sami Koski parhaana oli ensimmäinen ja Sami Hillun sijoittuessa hienosti toiseksi. Kauden jälkeen Koski ja puolustajien aateliin kuulunut Heikki Nikkola ottivat harppauksen eteenpäin urillaan siirtyen Team Atriaan.
+  Division: "5. divisioona"
+  History: "ISB aloitti tosimiesten pelit siirtymällä miesten V-divisioonaan kaudelle 2001-2002. Kausi käynnistyi takkuisesti, maaleja kyllä tehtiin, mutta oma verkko soi jatkuvasti. Ongelmia oli eniten roolituksessa: ei osattu puolustaa ja hyökätä joukkueena, vaan säntäiltiin ympäriinsä.\r\nKausi eteni synkissä merkeissä joulutauolle asti, mutta tuolloin ankara harjoittelu ja spartalainen kuri alkoi tuottaa hedelmää. ISB nousi tuhkasta kuin uudelleensyntyneenä. Jokaiselle alkoi tulla onnistumisia, ja kun joukkue sai hyvän hengen päälle, ne suorastaan kasaantuivat. Jengi paransi otteitaan vaihto vaihdolta ja ottelu ottelulta. Kevätkierroksen hurmoksen ansiosta nousimme sarjataulukossa viidenneksi, aivan neloseen nousseen Sisun kantaan. Kausi valitettavasti loppui meidän osaltamme kesken, eikä joukkue päässyt kipuamaan enää ylemmäs sarjataulukossa.\r\nPistepörssissä saimme kärkikymmenikköön neljä pelaajaa, joista Sami Koski parhaana oli ensimmäinen ja Sami Hillun sijoittuessa hienosti toiseksi. Kauden jälkeen Koski ja puolustajien aateliin kuulunut Heikki Nikkola ottivat harppauksen eteenpäin urillaan siirtyen Team Atriaan."
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 10
   SectionID: 1
   StartingYear: 2002
-  Division: 5. divisioona
-  History: |-
-    Kesän aikana ISB vahvistui ja rinki laajeni. Uusia miehiä tuli niin omasta kylästä kuin kaukomailtakin. Eli Vaasasta ja Peräseinäjoelta.
-    Alusta asti olimme mukana kärkikahinoissa, varsinkin Töysää vastaan taisteltiin verissä päin.
-    Pitkään kauteen mahtui niin ylä- kuin alamäkiäkin, ja ketjut elivät jatkuvasti, mutta tavoitteet toteutuivat silti, ja nousu nelosdivisioonaan varmistui jo ennen viimeistä turnausta.
-    Pistepörssissä komeilivat jälleen ISB-miehet kärkiporukoissa, vaikka kärkipaikka menikin Töysään. Kauden jälkeen joukkue heitti hellät hyvästit jälleen muutamalle vihreämmille laitumille siirtyneelle pelaajalle, mutta kovan tason vahvistukset lupaavat hyvää tulevalle kaudelle.
+  Division: "5. divisioona"
+  History: "Kesän aikana ISB vahvistui ja rinki laajeni. Uusia miehiä tuli niin omasta kylästä kuin kaukomailtakin. Eli Vaasasta ja Peräseinäjoelta.\r\nAlusta asti olimme mukana kärkikahinoissa, varsinkin Töysää vastaan taisteltiin verissä päin.\r\nPitkään kauteen mahtui niin ylä- kuin alamäkiäkin, ja ketjut elivät jatkuvasti, mutta tavoitteet toteutuivat silti, ja nousu nelosdivisioonaan varmistui jo ennen viimeistä turnausta.\r\nPistepörssissä komeilivat jälleen ISB-miehet kärkiporukoissa, vaikka kärkipaikka menikin Töysään. Kauden jälkeen joukkue heitti hellät hyvästit jälleen muutamalle vihreämmille laitumille siirtyneelle pelaajalle, mutta kovan tason vahvistukset lupaavat hyvää tulevalle kaudelle."
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 11
   SectionID: 1
   StartingYear: 2003
-  Division: 4. divisioona
-  History: |-
-    Kausi kulki mielenkiintoisissa merkeissä, matkaan mahtui niin yllätyksiä, pettymyksiä kuin riemun hetkiäkin. Uudet vahvistukset toivat kokemusta ja paljon pisteitä joukkueeseen, vaikka menetyksetkin olivat kovia. Kesken kauden saimme myös "ihkaoikean" valmentajan, kun oman kylän poika Neva-Keturin Markku tuli omien kakkosdivaripelien ohella hoitamaan valmennuspuolta kotikuntaan.
-    
-    Tälläkin kaudella monissa otteluissa taisteltiin mm. TöVen kanssa ja kaikki pelaajat muistavat varmasti Seinäjoen turnauksen, jossa TöVe tuli tasoihin viime sekunneilla. Monet ottelut olivat kuitenkin melko selviä ja peliesitykset paranivat koko ajan. Mm. kevätkierroksen kärkiottelu Lappajärven NSV:tä vastaan päättyi puhtaasti 5-0! Kauden ollessa paketissa saatoimmekin sitten huomata, että 14 pelistä saldona oli 10 voittoa, 2 tasapeli ja vain 2 tappiota. Lohkon kärkisija ja suora nousu 3.divisioonaan oli varmistettu!
+  Division: "4. divisioona"
+  History: "Kausi kulki mielenkiintoisissa merkeissä, matkaan mahtui niin yllätyksiä, pettymyksiä kuin riemun hetkiäkin. Uudet vahvistukset toivat kokemusta ja paljon pisteitä joukkueeseen, vaikka menetyksetkin olivat kovia. Kesken kauden saimme myös \"ihkaoikean\" valmentajan, kun oman kylän poika Neva-Keturin Markku tuli omien kakkosdivaripelien ohella hoitamaan valmennuspuolta kotikuntaan.\r\n\r\nTälläkin kaudella monissa otteluissa taisteltiin mm. TöVen kanssa ja kaikki pelaajat muistavat varmasti Seinäjoen turnauksen, jossa TöVe tuli tasoihin viime sekunneilla. Monet ottelut olivat kuitenkin melko selviä ja peliesitykset paranivat koko ajan. Mm. kevätkierroksen kärkiottelu Lappajärven NSV:tä vastaan päättyi puhtaasti 5-0! Kauden ollessa paketissa saatoimmekin sitten huomata, että 14 pelistä saldona oli 10 voittoa, 2 tasapeli ja vain 2 tappiota. Lohkon kärkisija ja suora nousu 3.divisioonaan oli varmistettu!"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 12
   SectionID: 1
   StartingYear: 2004
-  Division: 3. divisioona
-  History: |-
-    Historian ensimmäiseen III-divarikauteen lähdettäessä oli tilanne taas jollain tapaa uusi, kun joukkueella oli välillä "oikeitakin" harjoituksia. Valmennuskaksikko Antti Kuusisto - Markku Neva-Keturi piti "aaivan valtavia" treenejä ja hurjimmissa kuvitelmissa jotkut puhuivat jo jopa noususta kakkosdivariin.
-    Alkukausi sujuikin pääasiassa voitollisissa merkeissä, Toivion Miikan huolehtiessa pistepörssin kärkipaikasta. Vuoden 2004 loppupuolella koitti kuitenkin nousijajoukkueelle arki. Vaasan turnauksesta marraskuussa ISB korjasi mukaan vielä yhden pisteen, mutta Peräseinäjoelta joulukuussa ei heltynyt enää sitäkään, kun SB Vaasa II ja Jukobox molemmat veivät ISB:n päänahan.
-    Tammikuussa asiat alkoivat muuttua. Pelaajaverkkoja ei tarvinnut edes heitellä vesille, kun ISB:n kasvatit Tatu Hietikko ja Sami Koski päättivät palata ylemmiltä sarjatasoilta pelastamaan ahdingossa olevaa kasvattajaseuraansa. Tammikuun alun Pietarsaaren turnaukseen pojat eivät kuitenkaan vielä ehtineet, mutta nousu oli alkanut. Sen jälkeen kun Miika oli alkuverryttelyssä suoritetussa painimatsissa telonut Fältin olkapään sairaalakuntoon, hän päätti hyvittää joukkueelle luottopuolustajan menetyksen ja johdatti ISB:n voittoon ja tasapeliin. Näillä pisteillä kärkitaistelu oli taas vaihteeksi askeleen lähempänä.
-    Kristiinankaupungissa nähtiin sitten jo uusvanhojen ISB:läisten paluu valkopaitaan ja tulos oli sen mukaista. Jälleen kolme pistettä ja kärki sen kuin lähestyi. Vaasassa helmikuun loppupuolella oli pitkästä aikaa vuorossa neljän pisteen turnaus. Siitä iso kiitos Juha Puhtimäelle, joka ehti ensimmäiseen peliin paikalle vasta kolmanteen erään, mutta takoikin siinä sitten lämpimikseen kolme maalia ja näin oli kalavelat maksettu Jukoboxille lukemin 6-4. Kälviän turnaus viikkoa myöhemmin tuotti jälleen sen tutun 3 pistettä, kun Top Cornersin kanssa pisteet tasattiin ja PeTosta otettiin revanssi syyskierroksen tappion jäljiltä.
-    Viimeiseen ja ratkaisevaan turnaukseen Kokkolan tykkihalliin saatiin pitkästä aikaa, tai oikeastaan ainoan kerran kauden aikana, mukaan käytännössä ykkösmiehistö. Ensimmäisessä pelissä oli suuret panokset, kun sarjakärki Redy asettui puolustamaan kotihallissa mainettaan. Todella kiihkeän ottelun lopputulos oli lopulta 5-4 ISB:lle ja näin viimeiseen peliin SB Vaasan II-joukkuetta vastaan muodostui todella kovat panokset. Kyseessä oli ottelun voittajan pääsy II-divisioonan karsijan paikalle. Pelin tärkeys näkyi otteissa, eikä ISB:n miehistön esitys todellakaan ollut mairittelevaa katseltavaa. Ottelun lopputulos on kuitenkin se mikä ratkaisee ja 10-7 voitto käynnisti juhlat! Muutaman päivän päästä tästä liitto vahvisti aiemmat epäilyt siitä, että II-divariin ei tarvitse karsia, koska sieltä oli noussut kaksi ja pudonnut kolme joukkuetta. Näin ISB:lle historiallinen paikka II-divisioonaan kaudelle 2005-2006!
+  Division: "3. divisioona"
+  History: "Historian ensimmäiseen III-divarikauteen lähdettäessä oli tilanne taas jollain tapaa uusi, kun joukkueella oli välillä \"oikeitakin\" harjoituksia. Valmennuskaksikko Antti Kuusisto - Markku Neva-Keturi piti \"aaivan valtavia\" treenejä ja hurjimmissa kuvitelmissa jotkut puhuivat jo jopa noususta kakkosdivariin.\r\nAlkukausi sujuikin pääasiassa voitollisissa merkeissä, Toivion Miikan huolehtiessa pistepörssin kärkipaikasta. Vuoden 2004 loppupuolella koitti kuitenkin nousijajoukkueelle arki. Vaasan turnauksesta marraskuussa ISB korjasi mukaan vielä yhden pisteen, mutta Peräseinäjoelta joulukuussa ei heltynyt enää sitäkään, kun SB Vaasa II ja Jukobox molemmat veivät ISB:n päänahan.\r\nTammikuussa asiat alkoivat muuttua. Pelaajaverkkoja ei tarvinnut edes heitellä vesille, kun ISB:n kasvatit Tatu Hietikko ja Sami Koski päättivät palata ylemmiltä sarjatasoilta pelastamaan ahdingossa olevaa kasvattajaseuraansa. Tammikuun alun Pietarsaaren turnaukseen pojat eivät kuitenkaan vielä ehtineet, mutta nousu oli alkanut. Sen jälkeen kun Miika oli alkuverryttelyssä suoritetussa painimatsissa telonut Fältin olkapään sairaalakuntoon, hän päätti hyvittää joukkueelle luottopuolustajan menetyksen ja johdatti ISB:n voittoon ja tasapeliin. Näillä pisteillä kärkitaistelu oli taas vaihteeksi askeleen lähempänä.\r\nKristiinankaupungissa nähtiin sitten jo uusvanhojen ISB:läisten paluu valkopaitaan ja tulos oli sen mukaista. Jälleen kolme pistettä ja kärki sen kuin lähestyi. Vaasassa helmikuun loppupuolella oli pitkästä aikaa vuorossa neljän pisteen turnaus. Siitä iso kiitos Juha Puhtimäelle, joka ehti ensimmäiseen peliin paikalle vasta kolmanteen erään, mutta takoikin siinä sitten lämpimikseen kolme maalia ja näin oli kalavelat maksettu Jukoboxille lukemin 6-4. Kälviän turnaus viikkoa myöhemmin tuotti jälleen sen tutun 3 pistettä, kun Top Cornersin kanssa pisteet tasattiin ja PeTosta otettiin revanssi syyskierroksen tappion jäljiltä.\r\nViimeiseen ja ratkaisevaan turnaukseen Kokkolan tykkihalliin saatiin pitkästä aikaa, tai oikeastaan ainoan kerran kauden aikana, mukaan käytännössä ykkösmiehistö. Ensimmäisessä pelissä oli suuret panokset, kun sarjakärki Redy asettui puolustamaan kotihallissa mainettaan. Todella kiihkeän ottelun lopputulos oli lopulta 5-4 ISB:lle ja näin viimeiseen peliin SB Vaasan II-joukkuetta vastaan muodostui todella kovat panokset. Kyseessä oli ottelun voittajan pääsy II-divisioonan karsijan paikalle. Pelin tärkeys näkyi otteissa, eikä ISB:n miehistön esitys todellakaan ollut mairittelevaa katseltavaa. Ottelun lopputulos on kuitenkin se mikä ratkaisee ja 10-7 voitto käynnisti juhlat! Muutaman päivän päästä tästä liitto vahvisti aiemmat epäilyt siitä, että II-divariin ei tarvitse karsia, koska sieltä oli noussut kaksi ja pudonnut kolme joukkuetta. Näin ISB:lle historiallinen paikka II-divisioonaan kaudelle 2005-2006!"
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 13
   SectionID: 2
   StartingYear: 2005
-  Division: 5. divisioona
+  Division: "5. divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 14
   SectionID: 1
   StartingYear: 2005
-  Division: 2. divisioona
-  History: |-
-    Ilmajoen salibandyn mennyt kausi oli kasvun aikaa. Jaoston toiminta moninkertaistui kaikilla mahdollisilla tavoilla aikaisemmista vuosista: joukkueiden määrä tuplaantui, budjetti moninkertaistui ja toiminnan näkyvyydessä tapahtui valtava loikkaus. 2-divisioonaan nousseen edustusjoukkueen lisäksi perustettiin alimmalle V-divisioona -tasolle II-joukkue harrastelijatason pelaajille. Junioreissa jo aiemmin toimineen C-90 -joukkueen rinnalle perustettiin -92 syntyneiden joukkue, joka keskittyi vielä tänä talvena harjoitteluun. Kysyntää junioritoimintaan tuntuu olevan vielä rutkasti lisää, ja vetäjätilanteen salliessa joukkueita varmasti tuleekin tulevaisuudessa olemaan enemmän.
-    
-    Aikaisempiin vuosiin verrattuna ISB:n toiminnan näkyvyys on lisääntynyt huimasti. Lehti-ilmoitukset ja -jutut ovat osaltaan tuoneet näkyvyyttä, samaten kuin yllättävänkin hyvä katsojakeskiarvo. Huippuna loistavat Suomen Cupin 4.kierroksen ottelu SM-liigajoukkue Jyväskylän Happeeta vastaan (289 katsojaa!) ja 2-divisioonakauden voitokas avausottelu paikallisvastustaja SBS Lapuaa vastaan (n.170 katsojaa). Keskimäärin ISB:n 2-divisioonaotteluita kävi seuraamassa hieman yli 100 katsojaa.
-    
-    Edustusjoukkueen kausi sisälsi niin riemun hetkiä kuin sarjanousijalle tyypillisiä notkahduksiakin. Lopulta sijoitus oli sarjanousijalle hyvä viides, kun joukkueita sarjassa oli 10. Farmiyhteistyö liigajoukkue Seinäjoen Peli-Veljien kanssa oli myös hedelmällistä. Muutama ilmajokinen olikin mukana nostamassa kauden päätteeksi SPV:n A-poikia SM-sarjaan. II-joukkue sijoittui neljänneksi 8 joukkueen sarjassa. Juniorit (C-90) kasvoivat korkoa -89 sarjassa ja voitto jäikin vielä haaveksi, vaikka se loppukaudella lähellä olikin.
-    
-    ISB-Ilmajoki kiittää kaikkia tukijoitaan, kannattajiaan, taustahenkilöitä ja tietenkin itse pääosan esittäjiä, pelaajia kuluneesta kaudesta. Tehdään ensi kaudesta vielä onnistuneempi!
+  Division: "2. divisioona"
+  History: "Ilmajoen salibandyn mennyt kausi oli kasvun aikaa. Jaoston toiminta moninkertaistui kaikilla mahdollisilla tavoilla aikaisemmista vuosista: joukkueiden määrä tuplaantui, budjetti moninkertaistui ja toiminnan näkyvyydessä tapahtui valtava loikkaus. 2-divisioonaan nousseen edustusjoukkueen lisäksi perustettiin alimmalle V-divisioona -tasolle II-joukkue harrastelijatason pelaajille. Junioreissa jo aiemmin toimineen C-90 -joukkueen rinnalle perustettiin -92 syntyneiden joukkue, joka keskittyi vielä tänä talvena harjoitteluun. Kysyntää junioritoimintaan tuntuu olevan vielä rutkasti lisää, ja vetäjätilanteen salliessa joukkueita varmasti tuleekin tulevaisuudessa olemaan enemmän.\r\n\r\nAikaisempiin vuosiin verrattuna ISB:n toiminnan näkyvyys on lisääntynyt huimasti. Lehti-ilmoitukset ja -jutut ovat osaltaan tuoneet näkyvyyttä, samaten kuin yllättävänkin hyvä katsojakeskiarvo. Huippuna loistavat Suomen Cupin 4.kierroksen ottelu SM-liigajoukkue Jyväskylän Happeeta vastaan (289 katsojaa!) ja 2-divisioonakauden voitokas avausottelu paikallisvastustaja SBS Lapuaa vastaan (n.170 katsojaa). Keskimäärin ISB:n 2-divisioonaotteluita kävi seuraamassa hieman yli 100 katsojaa.\r\n\r\nEdustusjoukkueen kausi sisälsi niin riemun hetkiä kuin sarjanousijalle tyypillisiä notkahduksiakin. Lopulta sijoitus oli sarjanousijalle hyvä viides, kun joukkueita sarjassa oli 10. Farmiyhteistyö liigajoukkue Seinäjoen Peli-Veljien kanssa oli myös hedelmällistä. Muutama ilmajokinen olikin mukana nostamassa kauden päätteeksi SPV:n A-poikia SM-sarjaan. II-joukkue sijoittui neljänneksi 8 joukkueen sarjassa. Juniorit (C-90) kasvoivat korkoa -89 sarjassa ja voitto jäikin vielä haaveksi, vaikka se loppukaudella lähellä olikin.\r\n\r\nISB-Ilmajoki kiittää kaikkia tukijoitaan, kannattajiaan, taustahenkilöitä ja tietenkin itse pääosan esittäjiä, pelaajia kuluneesta kaudesta. Tehdään ensi kaudesta vielä onnistuneempi!"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 15
   SectionID: 2
   StartingYear: 2006
-  Division: 5. divisioona
+  Division: "5. divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 16
   SectionID: 1
   StartingYear: 2006
-  Division: 2. divisioona
-  History: |-
-    Taas on yksi kausi takana ISB:n historiassa. Ja uusi edessä. Mennyttä kautta katsellessa voi huomata toiminnan jaostossa kehittyneen edelleen. Joukkueita oli jälleen yksi enemmän, kun D-juniorit aloittivat toimintansa, vieläpä melko hyvällä menestyksellä sijoittuen 9 joukkueen sarjassa viidenneksi. B-juniorit olivat ikäluokkauudistuksen myötä väliinputoajia, sillä pääasiassa vuonna -90 syntyneet pelaajat joutuivat jälleen pelaamaan vuonna -89 syntyneiden sarjassa. Tänä vuonna nähtiin kuitenkin jo avausvoitto ja pelit olivat muutenkin pääosin erittäin tiukkoja. B-junioreista peräti kahdeksan pelaajaa pelasi kauden aikana myös miesten pelejä II-joukkueessa.
-    
-    Miesten II-joukkue pelasi melko vaiherikkaan kauden. Avausturnauksessa kovasti vajaamiehisenä pelannut lauma kärsi heti kaksi tappiota, joista toinen tosin muuttui myöhemmin voitoksi Isojoen peluutettua edustusoikeudetonta pelaajaa. Voittoja alkoi kuitenkin pikkuhiljaa tulla, mutta ei niin mahdottomalla tahdilla. Syyskauden kohokohta oli voitto kotisalissa Team Atriasta 8-4. Kevään avausturnauksessa saatiin iso voitto Jymy II:sta Nurmossa, mutta sillä kustannuksella, että Anian Tomilta murtui käsi. Pisteitä kertyi loppukaudella kuitenkin sen verran, että kolmas sija sarjassa saavutettiin ja nousu 4.divariin on totta!
-    
-    Edustusjoukkueen kausi oli pitkä, hikinen, mutta myös onnistunut. Kausi käynnistyi peräti kuuden ottelun voittoputkella, kunnes Nurmossa pudottiin maan pinnalle oikein reilusti. Kun kotona hävittiin ennakkosuosikki Lapualle ja vielä vieraissa Redylle, niin alkukauden voittoputkesta ei ollut tietoakaan. Vuodenvaihteen tienoilla ketjukoostumukset alkoivat kuitenkin vihdoin hakeutua uomiinsa ja Lapualla päästiin jo lähelle kovan luokan voittoa. Tämän jälkeen loppukauden otteluissa koppaan kertyi 7 voittoa, yksi tasapeli ja vain yksi maalin tappio ISB:lle merkityksettömässä runkosarjan päätösottelussa Pietarsaaressa.
-    
-    Runkosarjan kakkossija tiesi kaksiosaista karsintaa pohjoislohkon voittajaa, haukiputaalaista Kellon Lyöntiä vastaan. Avausottelu Haukiputaalla oli tiukka, mutta ISB käänsi ottelun edukseen lukemin 3-5. Toinen osa heti seuraavana päivän toi Ilmajoki-halliin upean tunnelman rumpuryhmineen. Pelin päätyttyä KeLyn voittoon, oli edessä jatkoaika, jonka Sami Hillun komea laukaus päätti ISB:n eduksi. ISB pääsi näin ollen nousukarsintasarjaan, jossa edessä oli viisi kivenkovaa ottelua.
-    
-    Avausottelussa Kajaanin Papas saapui Ilmajoelle ja ISB:n uskollinen fanijoukko esitteli uudet "ISB ISKURYHMÄ" - paidat, joiden siivittämänä ottelu voitettiin 7-5. Sipoossa kärsittiin kovan taistelun jälkeen jatkoaikatappio, kun taas Hyvinkäällä oltiin parilla maalilla parempia. Kotona kaatui Lahden Sbandy 10-9 ja ratkaisevaan otteluun vastaan tuli tappioitta pelannut Kuopion KSS. Tasapeli 6-6 tiesi KSS:n nousua suoraan 1.divariin ja ISB:n pelien jatkumista Lohjan LoSB:a vastaan, joka oli ollut 1.divarin länsilohkossa 8. Kotiottelun parasta antia oli ISKURYHMÄN pitämä meteli, sillä ISB:llä olivat keinot vähissä rutinoitunutta vastustajaansa vastaan. Tappio 3-7 ja seuraavan viikonlopun vielä selvempi tappio eivät jättäneet sijaa selittelyille, vaan lohjalaiset jatkavat ykkösdivarissa ja ISB kakkosessa. Piste.
-    
-    Kausi oli joka tapauksessa opettavainen monella osa-alueella ja tulevaa kautta odotellaankin vesi kielellä. Edustusjoukkue on uusiutunut, kakkosjoukkue lähtee ensimmäiseen kauteensa nelosessa, B-junnut ovat ensimmäistä kertaa -90 sarjassa, D-junnut pelaavat edelleen. Uusina joukkueina mukaan ovat tulleet C-pojat, B-tytöt ja naiset. Eli 7 joukkuetta mukana SSBL:n sarjoissa, kun kolme vuotta sitten samaan aikaan joukkueita oli yksi!
-    
-    Tervetuloa seuraamaan ISB:n otteita eri sarjoissa! Jokainen joukkue pelaa vähintään yhden turnauksen Ilmajoki-hallilla, joten kauas ei ole pakko lähteä.
+  Division: "2. divisioona"
+  History: "Taas on yksi kausi takana ISB:n historiassa. Ja uusi edessä. Mennyttä kautta katsellessa voi huomata toiminnan jaostossa kehittyneen edelleen. Joukkueita oli jälleen yksi enemmän, kun D-juniorit aloittivat toimintansa, vieläpä melko hyvällä menestyksellä sijoittuen 9 joukkueen sarjassa viidenneksi. B-juniorit olivat ikäluokkauudistuksen myötä väliinputoajia, sillä pääasiassa vuonna -90 syntyneet pelaajat joutuivat jälleen pelaamaan vuonna -89 syntyneiden sarjassa. Tänä vuonna nähtiin kuitenkin jo avausvoitto ja pelit olivat muutenkin pääosin erittäin tiukkoja. B-junioreista peräti kahdeksan pelaajaa pelasi kauden aikana myös miesten pelejä II-joukkueessa.\r\n\r\nMiesten II-joukkue pelasi melko vaiherikkaan kauden. Avausturnauksessa kovasti vajaamiehisenä pelannut lauma kärsi heti kaksi tappiota, joista toinen tosin muuttui myöhemmin voitoksi Isojoen peluutettua edustusoikeudetonta pelaajaa. Voittoja alkoi kuitenkin pikkuhiljaa tulla, mutta ei niin mahdottomalla tahdilla. Syyskauden kohokohta oli voitto kotisalissa Team Atriasta 8-4. Kevään avausturnauksessa saatiin iso voitto Jymy II:sta Nurmossa, mutta sillä kustannuksella, että Anian Tomilta murtui käsi. Pisteitä kertyi loppukaudella kuitenkin sen verran, että kolmas sija sarjassa saavutettiin ja nousu 4.divariin on totta!\r\n\r\nEdustusjoukkueen kausi oli pitkä, hikinen, mutta myös onnistunut. Kausi käynnistyi peräti kuuden ottelun voittoputkella, kunnes Nurmossa pudottiin maan pinnalle oikein reilusti. Kun kotona hävittiin ennakkosuosikki Lapualle ja vielä vieraissa Redylle, niin alkukauden voittoputkesta ei ollut tietoakaan. Vuodenvaihteen tienoilla ketjukoostumukset alkoivat kuitenkin vihdoin hakeutua uomiinsa ja Lapualla päästiin jo lähelle kovan luokan voittoa. Tämän jälkeen loppukauden otteluissa koppaan kertyi 7 voittoa, yksi tasapeli ja vain yksi maalin tappio ISB:lle merkityksettömässä runkosarjan päätösottelussa Pietarsaaressa.\r\n\r\nRunkosarjan kakkossija tiesi kaksiosaista karsintaa pohjoislohkon voittajaa, haukiputaalaista Kellon Lyöntiä vastaan. Avausottelu Haukiputaalla oli tiukka, mutta ISB käänsi ottelun edukseen lukemin 3-5. Toinen osa heti seuraavana päivän toi Ilmajoki-halliin upean tunnelman rumpuryhmineen. Pelin päätyttyä KeLyn voittoon, oli edessä jatkoaika, jonka Sami Hillun komea laukaus päätti ISB:n eduksi. ISB pääsi näin ollen nousukarsintasarjaan, jossa edessä oli viisi kivenkovaa ottelua.\r\n\r\nAvausottelussa Kajaanin Papas saapui Ilmajoelle ja ISB:n uskollinen fanijoukko esitteli uudet \"ISB ISKURYHMÄ\" - paidat, joiden siivittämänä ottelu voitettiin 7-5. Sipoossa kärsittiin kovan taistelun jälkeen jatkoaikatappio, kun taas Hyvinkäällä oltiin parilla maalilla parempia. Kotona kaatui Lahden Sbandy 10-9 ja ratkaisevaan otteluun vastaan tuli tappioitta pelannut Kuopion KSS. Tasapeli 6-6 tiesi KSS:n nousua suoraan 1.divariin ja ISB:n pelien jatkumista Lohjan LoSB:a vastaan, joka oli ollut 1.divarin länsilohkossa 8. Kotiottelun parasta antia oli ISKURYHMÄN pitämä meteli, sillä ISB:llä olivat keinot vähissä rutinoitunutta vastustajaansa vastaan. Tappio 3-7 ja seuraavan viikonlopun vielä selvempi tappio eivät jättäneet sijaa selittelyille, vaan lohjalaiset jatkavat ykkösdivarissa ja ISB kakkosessa. Piste.\r\n\r\nKausi oli joka tapauksessa opettavainen monella osa-alueella ja tulevaa kautta odotellaankin vesi kielellä. Edustusjoukkue on uusiutunut, kakkosjoukkue lähtee ensimmäiseen kauteensa nelosessa, B-junnut ovat ensimmäistä kertaa -90 sarjassa, D-junnut pelaavat edelleen. Uusina joukkueina mukaan ovat tulleet C-pojat, B-tytöt ja naiset. Eli 7 joukkuetta mukana SSBL:n sarjoissa, kun kolme vuotta sitten samaan aikaan joukkueita oli yksi!\r\n\r\nTervetuloa seuraamaan ISB:n otteita eri sarjoissa! Jokainen joukkue pelaa vähintään yhden turnauksen Ilmajoki-hallilla, joten kauas ei ole pakko lähteä."
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 17
   SectionID: 3
   StartingYear: 2006
-  Division: B89-juniorit
+  Division: "B89-juniorit"
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 18
   SectionID: 5
   StartingYear: 2006
-  Division: D93-juniorit
+  Division: "D93-juniorit"
   ShowGames: 0
   ShowPlayers: 1
 -
   SeasonID: 19
   SectionID: 1
   StartingYear: 2008
-  Division: 2. divisioona
-  History: |-
-    Monin tavoin historiallinen kausi 2008-2009 on ISB:n kohdalla takanapäin. Päällimmäisenä jäivät mieleen miesten edustusjoukkueen nousu 1.divisioonaan ja C-poikien pääseminen kovatasoiseen SM-sarjaan ainoana pohjalaisjoukkueena. Toki muutkin joukkueet hoitivat leiviskänsä mallikkaasti kantaen ISB:n logoa ylväästi alueemme pelikentillä. Seuraavassa lyhyt katsaus joukkueiden kauteen.
-    
-    C-tytöt pelasivat ensimmäistä kauttaan sarjassa, tosin suuri osa oli pelannut aikaisempana vuonna jo B-tyttöjen joukkueessa. Neljän joukkueen sarjassa tehtiin piristykseksi ekskursiomatkoja myös Itä-Suomen alueelle, jossa saatiin uusia tuttavuuksia. Peli kehittyi tytöillä taas kukonaskelin ja voittoja sekä pisteitä kertyi jo edellisvuoteen verrattuna mukavasti. Ensi vuoteen onkin hieno lähteä parantamaan entisestään.
-    
-    D95-pojat taistelivat runkosarjassa itsensä jännittävien loppuvaiheiden jälkeen kolmanneksi, joka tiesi paikkaa alueloppuhuipentumaan. Siellä puolivälierissä tuli katkera tappio Alahärmän Kisalle rankkareilla, mutta ottelussa 5.sijasta Blue Fox taipui 3-6.
-    
-    C93-pojat voittivat Pohjanmaan alueen alkusarjan ilman tappioita ja matka jatkui hieman yllättäen SM-sarjaan saakka. SM-sarjassa pojat saivat hyvää kokemusta kovista peleistä ja näkivät missä maan huippujoukkueet menevät tällä hetkellä. Suomen mestariksi pelasi lopulta itsensä TPS.
-    
-    B91-pojat kokivat alkusarjassa ainoastaan yhden tappion SPV Jymylle, joka meni puhtaalla pelillä SM-sarjaan. SM-karsintaan 2.sija kuitenkin oikeutti, mutta tämä turnaus Kannuksessa ei mennyt putkeen ja näin kausi jatkui aluejatkosarjassa. 16 ottelun jälkeen ISB:n keräämät 25 pistettä oikeuttivat 1.sijaan ja pääsyyn SM-Playoff-karsintojen karsintaan. Täältä menivät kuitenkin jatkoon Merikoski ja LNM. 
-    
-    Naiset paransivat peliään huomattavasti avauskaudesta, tähän osasyynä varmasti uusi valmentajakaksikko. Jopa III-divarin kärkijoukkue HiPa haastettiin välillä tasaväkisestikin, eikä mikään joukkue ollut enää mahdoton vastustaja. Tasaisessa keskikastissa sijoitukseksi 6.
-    
-    Miesten II-joukkue jatkoi taivaltaan IV-divarissa. Aikaisempien vuosien tapaan joukkueen vaihtuvuus oli jälleen suurta turnauksien välillä ja harrastajaporukan mahdollisuudet sarjanousuun kariutuvatkin usein juuri tähän. Miehiä on välillä 7, välillä 15. Joka tapauksessa jälleen kärkikahinoissa oltiin ja lopulta 4.sija paikallisvastustajien Atria ja KuRy edellä maistui.
-    
-    Edustusjoukkueen kausi lähti heti alusta lennokkaasti liikkeelle, kun Lapualta haettiin makoisa ja harvinainen 17-5 -voitto. Meno jatkui samankaltaisena aina tammikuulle asti, jolloin Pietarsaaressa koettiin jatkoaikatappio. Koko kaudella 2 tappiota ja yksi tasapeli vieraissa, kotona kaikista yhdeksästä pelistä voitto. Uskomaton runkosarja!
-    
-    Nousukarsintasarjassa samaan lohkoon tuli 1.divarijoukkueista RSS Laaka Riihimäeltä ja kakkosen joukkueista AFC Campus Turusta, SBS Kings Espoosta ja RSB-team Rovaniemeltä. Kerrassaan loistavia pelejä, kotona (ja myös joka vieraspelissä Rovaniemeä myöten) uskomaton, kannustava ISB-yleisö, huippuna viimeinen kotiottelu Laakaa vastaan 322 katsojan silmien edessä. Pelaajalle kokemuksia jo sinänsä! Vielä kun karsinnat huipentuivat nousuun 1.divisioonaan, ei juuri parempaa kautta olisi voinut kuvitella. 
-    
-    Suurkiitos kaikille, jotka ovat mahdollistamassa liikuttavan hyvää harrastusta Ilmajoella. Tukijat, taustavoimat, kannattajat, pelimannet ja osaavat valmentajat. Kiitos.
+  Division: "2. divisioona"
+  History: "Monin tavoin historiallinen kausi 2008-2009 on ISB:n kohdalla takanapäin. Päällimmäisenä jäivät mieleen miesten edustusjoukkueen nousu 1.divisioonaan ja C-poikien pääseminen kovatasoiseen SM-sarjaan ainoana pohjalaisjoukkueena. Toki muutkin joukkueet hoitivat leiviskänsä mallikkaasti kantaen ISB:n logoa ylväästi alueemme pelikentillä. Seuraavassa lyhyt katsaus joukkueiden kauteen.\r\n\r\nC-tytöt pelasivat ensimmäistä kauttaan sarjassa, tosin suuri osa oli pelannut aikaisempana vuonna jo B-tyttöjen joukkueessa. Neljän joukkueen sarjassa tehtiin piristykseksi ekskursiomatkoja myös Itä-Suomen alueelle, jossa saatiin uusia tuttavuuksia. Peli kehittyi tytöillä taas kukonaskelin ja voittoja sekä pisteitä kertyi jo edellisvuoteen verrattuna mukavasti. Ensi vuoteen onkin hieno lähteä parantamaan entisestään.\r\n\r\nD95-pojat taistelivat runkosarjassa itsensä jännittävien loppuvaiheiden jälkeen kolmanneksi, joka tiesi paikkaa alueloppuhuipentumaan. Siellä puolivälierissä tuli katkera tappio Alahärmän Kisalle rankkareilla, mutta ottelussa 5.sijasta Blue Fox taipui 3-6.\r\n\r\nC93-pojat voittivat Pohjanmaan alueen alkusarjan ilman tappioita ja matka jatkui hieman yllättäen SM-sarjaan saakka. SM-sarjassa pojat saivat hyvää kokemusta kovista peleistä ja näkivät missä maan huippujoukkueet menevät tällä hetkellä. Suomen mestariksi pelasi lopulta itsensä TPS.\r\n\r\nB91-pojat kokivat alkusarjassa ainoastaan yhden tappion SPV Jymylle, joka meni puhtaalla pelillä SM-sarjaan. SM-karsintaan 2.sija kuitenkin oikeutti, mutta tämä turnaus Kannuksessa ei mennyt putkeen ja näin kausi jatkui aluejatkosarjassa. 16 ottelun jälkeen ISB:n keräämät 25 pistettä oikeuttivat 1.sijaan ja pääsyyn SM-Playoff-karsintojen karsintaan. Täältä menivät kuitenkin jatkoon Merikoski ja LNM. \r\n\r\nNaiset paransivat peliään huomattavasti avauskaudesta, tähän osasyynä varmasti uusi valmentajakaksikko. Jopa III-divarin kärkijoukkue HiPa haastettiin välillä tasaväkisestikin, eikä mikään joukkue ollut enää mahdoton vastustaja. Tasaisessa keskikastissa sijoitukseksi 6.\r\n\r\nMiesten II-joukkue jatkoi taivaltaan IV-divarissa. Aikaisempien vuosien tapaan joukkueen vaihtuvuus oli jälleen suurta turnauksien välillä ja harrastajaporukan mahdollisuudet sarjanousuun kariutuvatkin usein juuri tähän. Miehiä on välillä 7, välillä 15. Joka tapauksessa jälleen kärkikahinoissa oltiin ja lopulta 4.sija paikallisvastustajien Atria ja KuRy edellä maistui.\r\n\r\nEdustusjoukkueen kausi lähti heti alusta lennokkaasti liikkeelle, kun Lapualta haettiin makoisa ja harvinainen 17-5 -voitto. Meno jatkui samankaltaisena aina tammikuulle asti, jolloin Pietarsaaressa koettiin jatkoaikatappio. Koko kaudella 2 tappiota ja yksi tasapeli vieraissa, kotona kaikista yhdeksästä pelistä voitto. Uskomaton runkosarja!\r\n\r\nNousukarsintasarjassa samaan lohkoon tuli 1.divarijoukkueista RSS Laaka Riihimäeltä ja kakkosen joukkueista AFC Campus Turusta, SBS Kings Espoosta ja RSB-team Rovaniemeltä. Kerrassaan loistavia pelejä, kotona (ja myös joka vieraspelissä Rovaniemeä myöten) uskomaton, kannustava ISB-yleisö, huippuna viimeinen kotiottelu Laakaa vastaan 322 katsojan silmien edessä. Pelaajalle kokemuksia jo sinänsä! Vielä kun karsinnat huipentuivat nousuun 1.divisioonaan, ei juuri parempaa kautta olisi voinut kuvitella. \r\n\r\nSuurkiitos kaikille, jotka ovat mahdollistamassa liikuttavan hyvää harrastusta Ilmajoella. Tukijat, taustavoimat, kannattajat, pelimannet ja osaavat valmentajat. Kiitos."
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 20
   SectionID: 2
   StartingYear: 2008
-  Division: 4.divisioona
+  Division: "4.divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 21
   SectionID: 5
   StartingYear: 2008
-  Division: D-juniorit
+  Division: "D-juniorit"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 22
   SectionID: 7
   StartingYear: 2008
-  Division: C-tytöt
+  Division: "C-tytöt"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 23
   SectionID: 4
   StartingYear: 2008
-  Division: C-pojat
+  Division: "C-pojat"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 24
   SectionID: 3
   StartingYear: 2008
-  Division: B-pojat
+  Division: "B-pojat"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 25
   SectionID: 6
   StartingYear: 2008
-  Division: 3. divisioona
+  Division: "3. divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 26
   SectionID: 1
   StartingYear: 2009
-  Division: 1.divisioona
+  Division: "1.divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 27
   SectionID: 4
   StartingYear: 2009
-  Division: C-pojat
+  Division: "C-pojat"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 28
   SectionID: 7
   StartingYear: 2009
-  Division: C-tytöt
+  Division: "C-tytöt"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 29
   SectionID: 5
   StartingYear: 2009
-  Division: D-juniorit
+  Division: "D-juniorit"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 30
   SectionID: 6
   StartingYear: 2009
-  Division: 3. divisioona
+  Division: "3. divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 31
   SectionID: 2
   StartingYear: 2009
-  Division: 4.divisioona
+  Division: "4.divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 32
   SectionID: 3
   StartingYear: 2009
-  Division: B-Pojat
+  Division: "B-Pojat"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 33
   SectionID: 6
   StartingYear: 2010
-  Division: 3. divisioona
+  Division: "3. divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 34
   SectionID: 1
   StartingYear: 2010
-  Division: 2.Divisioona
+  Division: "2.Divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 35
   SectionID: 2
   StartingYear: 2010
-  Division: 4.Divisioona
+  Division: "4.Divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 36
   SectionID: 4
   StartingYear: 2010
-  Division: C1-pojat
+  Division: "C1-pojat"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 37
   SectionID: 9
   StartingYear: 2010
-  Division: C-96
+  Division: "C-96"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 38
   SectionID: 5
   StartingYear: 2010
-  Division: D2 Pojat
+  Division: "D2 Pojat"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 39
   SectionID: 10
   StartingYear: 2010
-  Division: C-Tytöt
+  Division: "C-Tytöt"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 40
   SectionID: 7
   StartingYear: 2010
-  Division: Tytöt 1.divisioona
+  Division: "Tytöt 1.divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 41
   SectionID: 8
   StartingYear: 2010
-  Division: 5.divisioona
+  Division: "5.divisioona"
   ShowGames: 1
   ShowPlayers: 1
 -
   SeasonID: 42
   SectionID: 11
   StartingYear: 2010
-  Division: Alkusarja
+  Division: "Alkusarja"
   ShowGames: 1
   ShowPlayers: 1
 ...

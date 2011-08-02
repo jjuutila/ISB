@@ -32,13 +32,13 @@ namespace :import do
     news_post = nil
     
     xml = load_xml "news"
-    news_nodes = xml.xpath("//News")
+    news_nodes = xml.xpath("//table[@name='News']")
     
     news_nodes.each do |news_node|
-      title = news_node.children.css("Title").text()
-      content = news_node.children.css("Content").text()
-      created_at = news_node.children.css("AddTime").text()
-      section_id = news_node.children.css("SectionID").text()
+      title = news_node.at_xpath("column[@name='Title']").text()
+      content = news_node.at_xpath("column[@name='Content']").text()
+      created_at = news_node.at_xpath("column[@name='AddTime']").text()
+      section_id = news_node.at_xpath("column[@name='SectionID']").text()
       section = Section.find section_id
       
       if !news_post.nil? and news_post.title == title and news_post.content == content
@@ -108,16 +108,16 @@ namespace :import do
     puts "Loading GUESTBOOK"
     
     xml = load_xml "guestbook"
-    guestbook_nodes = xml.xpath("//GuestBook")
+    guestbook_nodes = xml.xpath("//table[@name='GuestBook']")
     
     guestbook_nodes.each do |node|
-      author = node.children.css("Author").text()
-      message = node.children.css("Message").text()
-      section_id = node.children.css("SectionID").text()
-      title = node.children.css("Title").text()
-      date = node.children.css("WrittenOn").text()
-      email = node.children.css("Email").text()
-      ip = node.children.css("IpAddress").text()
+      author = node.at_xpath("column[@name='Author']").text()
+      message = node.at_xpath("column[@name='Message']").text()
+      section_id = node.at_xpath("column[@name='SectionID']").text()
+      title = node.at_xpath("column[@name='Title']").text()
+      date = node.at_xpath("column[@name='WrittenOn']").text()
+      email = node.at_xpath("column[@name='Email']").text()
+      ip = node.at_xpath("column[@name='IpAddress']").text()
       
       begin
         section = Section.find section_id
@@ -244,8 +244,8 @@ namespace :import do
         else
           puts "Errors: #{match.errors}"
         end
-      rescue ActiveRecord::RecordNotFound
-        puts "ERROR: Problem with #{match_data["Division"]}: #{match_data["StartingYear"]} #{match_data["OrderNumber"]}"
+      rescue ActiveRecord::RecordNotFound => e
+        puts e
       end
     end
   end
