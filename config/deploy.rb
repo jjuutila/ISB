@@ -16,9 +16,9 @@ set :branch, "master"
 
 set :user, "isb"
 
-role :web, "karviainen.kapsi.fi"                    # Your HTTP server, Apache/etc
-role :app, "karviainen.kapsi.fi"                    # This may be the same as your `Web` server
-role :db,  "karviainen.kapsi.fi", :primary => true  # This is where Rails migrations will run
+role :web, "kirsikka.kapsi.fi"                    # Your HTTP server, Apache/etc
+role :app, "kirsikka.kapsi.fi"                    # This may be the same as your `Web` server
+role :db,  "kirsikka.kapsi.fi", :primary => true  # This is where Rails migrations will run
 
 set :deploy_to, "/home/users/isb/isb-web"
 set :use_sudo, false
