@@ -122,7 +122,11 @@ namespace :import do
       begin
         section = Section.find section_id
         guestbook_post = section.comments.build(:commentable_type => 'Section', :title => title, :content => message,
-          :email => email, :created_at => date, :updated_at => date, :author => author, :ip_addr => ip)
+          :email => email, :author => author)
+        
+        guestbook_post.created_at = date
+        guestbook_post.updated_at = date
+        guestbook_post.ip_addr = ip
         
         if guestbook_post.save
           print "+"
