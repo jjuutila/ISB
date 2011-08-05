@@ -1,11 +1,8 @@
 %h1 Tervetuloa ISB:n hallintasivujen käyttäjäksi!
-%p Voit vahvistaa tilisi käyttäen #{link_to('tätä linkkiä', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token))} tai vierailemalla tässä osoitteessa:
+%p Voit vahvistaa tilisi ja valita salasanasi käyttäen #{link_to('tätä linkkiä', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token))} tai vierailemalla tässä osoitteessa:
 %p= confirmation_url(@resource, :confirmation_token => @resource.confirmation_token)
-%p Vahvistamisen jälkeen voit kirjautua hallintasivuille osoitteessa #{new_user_session_path()}.
+%p Tilin vahvistamisen ja salasanan valitsemisen jälkeen voit kirjautua hallintasivuille osoitteessa #{new_user_session_url()}.
 
-%ul
-  %li Käyttäjätunnus: #{@resource.email}
-  %li Salasana: #{@resource.password}
+%p Käyttäjätunnuksesi on: #{@resource.email}
 
-%p Ole hyvä ja vaihda salasana ensimmäisen kirjautumisen jälkeen.
-%p Jos kohtaat ongelmia, niin ota yhteyttä sähköpostilla osoitteeseen webmaster@isb.fi
+%p Jos kohtaat ongelmia, niin ota yhteyttä sähköpostilla osoitteeseen isb@isb.fi

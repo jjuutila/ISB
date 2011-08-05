@@ -9,7 +9,7 @@ class Admin::ConfirmationsController <  Devise::ConfirmationsController
   end
   
   def confirm
-    @user = User.find_by_confirmation_token!(params[:confirmation_token])
+    @user = User.find_by_confirmation_token!(params[:user][:confirmation_token])
     if @user.update_attributes(params[:user])
       @user.confirm!
       sign_in(@user)

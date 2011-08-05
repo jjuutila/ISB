@@ -27,7 +27,7 @@ describe Admin::ConfirmationsController do
   
   describe "PUT 'confirm'" do
     before(:each) do
-      @params = { :confirmation_token => @token, :user => {:these => :params } }
+      @params = { :user => {:these => :params, :confirmation_token => @token } }
       User.stub(:find_by_confirmation_token!).with(@token) { mock_user }
       controller.stub(:sign_in)
       mock_user.stub(:confirm!)
@@ -44,7 +44,7 @@ describe Admin::ConfirmationsController do
       end
       
       it "updates users password" do
-        mock_user.should_receive(:update_attributes).with('these' => :params) { true }
+        mock_user.should_receive(:update_attributes).with('these' => :params, 'confirmation_token' => @token) { true }
         put :confirm, @params
       end
       

@@ -51,6 +51,6 @@ Isb::Application.configure do
   Paperclip.options[:command_path] = "/usr/bin/"
   
   # Email
-  config.action_mailer.default_url_options = { :host => 'isb.kapsi.fi' }
+  config.action_mailer.default_url_options = { :host => 'isb.fi' }
   config.action_mailer.smtp_settings = { :address => 'mail.kapsi.fi' }
 end

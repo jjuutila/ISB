@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :confirmable, :recoverable, :timeoutable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :first_name, :last_name
+  attr_accessible :password, :password_confirmation, :first_name, :last_name
   
   belongs_to :section
   

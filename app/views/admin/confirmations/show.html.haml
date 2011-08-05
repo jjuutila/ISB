@@ -1,8 +1,9 @@
 %h2 Tilin vahvistaminen
 %p Ennen tilin vahvistamista sinun täytyy asettaa salasanasi alla olevalla lomakkeella. Salasana täytyy olla vähintää 6 merkkiä pitkä.
 
-- semantic_form_for @user, :url => admin_users_confirmation_confirm_path(@user) do |form|
+- semantic_form_for @user, :url => admin_users_confirmation_confirm_path() do |form|
   = form.inputs do
+    = form.input :confirmation_token, :as => :hidden
     = form.input :password, :label => 'Salasana'
     = form.input :password_confirmation, :label => 'Salasana uudestaan'
   
