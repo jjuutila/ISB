@@ -19,31 +19,15 @@ class Admin::SectionsController < Admin::BaseController
   end
 
   def create
-    @admin_section = Section.new(params[:section])
-
-    respond_to do |format|
-      if @admin_section.save
-        format.html { redirect_to(admin_sections_path(), :notice => 'Section was successfully created.') }
-        format.xml  { render :xml => @admin_section, :status => :created, :location => @admin_section }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @admin_section.errors, :status => :unprocessable_entity }
-      end
-    end
+    @section = Section.new(params[:section])
+    flash.notice = 'Uusi joukkueosio lisätty.' if @section.save
+    respond_with @section, :location => admin_sections_path
   end
 
   def update
-    @admin_section = Section.find(params[:id])
-
-    respond_to do |format|
-      if @admin_section.update_attributes(params[:section])
-        format.html { redirect_to(admin_sections_path(), :notice => 'Section was successfully updated.') }
-        format.xml  { head :ok }
-      else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @admin_section.errors, :status => :unprocessable_entity }
-      end
-    end
+    @section = Section.find(params[:id])
+    flash[:notice] = 'Joukkueosio päivitetty.' if @section.update_attributes(params[:section])
+    respond_with @section, :location => admin_sections_path()
   end
   
   def edit_contact

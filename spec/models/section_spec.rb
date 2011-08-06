@@ -2,6 +2,10 @@
 require 'spec_helper'
 
 describe Section do
+  def valid_attributes
+    { :name => 'A Section', :slug => 'a-section', :group => mock_model(SectionGroup) }
+  end
+  
   context "validations" do
     it { should belong_to(:group) }
     it { should validate_presence_of(:group) }
@@ -15,6 +19,10 @@ describe Section do
     it { should_not allow_value("").for(:name) }
     
     it { should validate_presence_of(:slug) }
+    it "should only accept unique slugs" do
+      Section.create!(valid_attributes)
+      Section.new.should validate_uniqueness_of(:slug)
+    end
     
     it { subject.respond_to?(:picasa_user_id).should be true }
   end

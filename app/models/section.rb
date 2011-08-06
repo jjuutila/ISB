@@ -10,6 +10,7 @@ class Section < ActiveRecord::Base
   
   validates_presence_of :name, :slug, :group
   validates_inclusion_of :is_visible, :in => [true, false]
+  validates_uniqueness_of :slug
   
   scope :visible, where(:is_visible => true)
   
