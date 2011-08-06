@@ -47,13 +47,7 @@ class Admin::SectionsController < Admin::BaseController
   end
   
   def edit_contact
-    @section = Section.find(params[:id])
-    if @section.parent.nil?
-      flash.alert = 'Vain joukkueosioiden historiatietoja voi muokata.'
-      redirect_to admin_sections_path
-    else
-      respond_with @section
-    end 
+    respond_with @section = Section.find(params[:id])
   end
   
   def update_contact
