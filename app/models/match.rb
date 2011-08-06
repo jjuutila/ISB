@@ -14,6 +14,8 @@ class Match < ActiveRecord::Base
   
   validate :teams_cannot_be_equal
   
+  default_scope :order => 'start_time ASC'
+  
   scope :upcoming, where(:start_time => (DateTime.now.at_beginning_of_day)..(DateTime.now.advance(:days => 30))).
     includes(:visitor_team, :home_team, :partition => [{:season => :section}]).order(:start_time)
   
