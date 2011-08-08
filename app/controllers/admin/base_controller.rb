@@ -22,9 +22,4 @@ class Admin::BaseController < ActionController::Base
     end
   	redirect_to :back
   end
-  
-  # Overwriting the sign_in redirect path method
-  def after_sign_in_path_for(resource_or_scope)
-    admin_news_index_path
-  end
 end

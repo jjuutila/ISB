@@ -6,6 +6,8 @@ Isb::Application.routes.draw do
   match "/uutiset/:id" => "home#show", :via => :get, :as => 'news_post'
   
   devise_for :users, :controllers => { :confirmations => "admin/confirmations" }, :path => 'admin/users'
+  # Devise default root for redirection after sign in
+  match "/admin/news" => "admin/news#index", :via => :get, :as => 'user_root'  
   
   namespace 'admin' do
     # Devise custom confirmation
