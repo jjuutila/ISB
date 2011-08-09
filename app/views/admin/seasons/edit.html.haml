@@ -6,9 +6,7 @@
 
 = semantic_form_for @season, :url => admin_season_path(@season) do |form| 
   = form.inputs do
-    = form.input :section, :as => :select, :label => "Joukkueosio",
-      :collection => Section.leafs, :include_blank => false
-    = form.input :start_year, :label => "Aloitusvuosi"
+    = form.input :start_year, :label => "Aloitusvuosi", :input_html => { :maxlength => 4 }
     = form.input :division, :label => 'Divisioona'
 
   = form.buttons do
