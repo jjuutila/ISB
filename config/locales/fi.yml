@@ -157,6 +157,7 @@ fi:
       next: "Seuraava &gt;"
       first: "« Ensimmäinen"
       last: "Viimeinen »"
+      truncate: "..."
   
   member:
     position:
