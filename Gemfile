@@ -12,6 +12,7 @@ gem 'paperclip', '~> 2.3'
 gem 'pg'
 gem 'devise'
 gem 'ruby-picasa', :require => 'ruby_picasa', :git => 'git://github.com/fjg/ruby_picasa.git'
+gem 'acts_as_list'
 
 group :development, :test do
   gem 'factory_girl_rails'

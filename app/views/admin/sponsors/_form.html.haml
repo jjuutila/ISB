@@ -1,0 +1,13 @@
+= semantic_form_for @sponsor, :url => url, :html => { :multipart => true } do |form|
+  = form.inputs do
+    = form.input :name, :label => 'Nimi'
+    = form.input :url, :label => 'Osoite'
+    
+    - if @sponsor.logo.file?
+      = image_tag @sponsor.logo.url(:normal)
+      
+    = "Sponsorialueen taustaväri on #ECECEC. Eli jos haluat logokuvan taustan yhteneväksi sivun kanssa, niin muokkaa kuvan taustaväriksi #ECECEC tai läpinäkyvä, jos kuvaformaatti tukee sitä."
+    = form.input :logo
+    
+  = form.buttons do
+    = form.commit_button :label => 'Tallenna'

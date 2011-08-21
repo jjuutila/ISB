@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'spork'
+require "paperclip/matchers"
 
 ENV["RAILS_ENV"] ||= 'test'
 
@@ -56,6 +57,9 @@ Spork.prefork do
     # Device helpers
     config.include Devise::TestHelpers, :type => :controller
     config.extend ControllerMacros, :type => :controller
+    
+    # Paperclip matchers
+    config.include Paperclip::Shoulda::Matchers
   end
   
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110711160226) do
+ActiveRecord::Schema.define(:version => 20110729173805) do
 
   create_table "affairs", :force => true do |t|
     t.string  "role"
@@ -153,6 +153,20 @@ ActiveRecord::Schema.define(:version => 20110711160226) do
   end
 
   add_index "sections", ["section_group_id"], :name => "index_sections_on_section_group_id"
+
+  create_table "sponsors", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.integer  "position"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "logo_width",        :limit => 2
+    t.integer  "logo_height"
+  end
 
   create_table "statistics", :force => true do |t|
     t.integer  "partition_id"

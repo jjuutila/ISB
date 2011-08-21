@@ -31,6 +31,9 @@ Isb::Application.routes.draw do
     
     resources :comments, :except => [:new, :create, :show]
     resources :members, :except => [:destroy, :show]
+    resources :sponsors, :except => [:show] do
+      put :positions, :on => :collection
+    end
     
     resources :seasons do
       resources :partitions, :except => :index

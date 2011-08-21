@@ -182,6 +182,8 @@ nav.pagination {
   border:none;
 }
 
+.jcarousel-clip-horizontal { overflow-x: hidden; }
+
 div#frontpage-banner { padding:0; }
 
 div#frontpage-banner img {
@@ -223,7 +225,7 @@ section#frontpage-news {
 }
 
 div#main-container {
-  padding-bottom:260px; /*footer height + 40px*/
+  padding-bottom:310px; /*footer height + 40px*/
   overflow:auto;
 }
 section#main { overflow:hidden; }
@@ -288,8 +290,8 @@ ul#supporter-carousel { display:none; }
 footer {
   position: relative;
   width:100%;
-  margin-top:-220px;
-  height:220px;
+  margin-top:-270px;
+  height:270px;
   background:#435396;
   clear:both;
   color: #FFFFFF;

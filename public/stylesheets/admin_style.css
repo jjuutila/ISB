@@ -321,6 +321,8 @@ tr.ui-sortable-placeholder {
 
 tr.row_contains_errors { background-color:#f2c0bd; }
 
+.sortable-sponsors tr { cursor:move; }
+
 footer {
   border-top:2px solid #e4dee1;
   font:bold normal 0.90em/1.4em Arial, Helvetica, sans-serif;

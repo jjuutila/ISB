@@ -1,0 +1,7 @@
+%h1 Muokkaa sponsoria
+
+%nav#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_sponsors_path
+  = link_to 'Takaisin', admin_sponsors_path
+
+= render :partial => 'form', :locals => {:url => admin_sponsor_path(@sponsor)}

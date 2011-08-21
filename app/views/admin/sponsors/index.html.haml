@@ -1,0 +1,35 @@
+- content_for :javascript do
+  = javascript_include_tag "sort_sponsors.js"
+  :javascript
+    $(document).ready(function() {
+      $('section#content').sortSponsors();
+    });
+
+%header
+  %h1 Sponsorit
+
+%nav#contextNavi
+  %a{:href => new_admin_sponsor_path, :title => 'Lisää uusi'}= image_tag('add.png', :size => '16x16')
+  %a{:href => new_admin_sponsor_path}= 'Lisää uusi'
+
+%div#sort-actions
+  %button{:id => 'sort-sponsors'} Muokkaa järjestystä
+
+%table.sponsors
+  %thead
+    %tr
+      %th Logo
+      %th Tiedot
+    
+  %tbody
+    - @sponsors.each do |sponsor|
+      %tr{ :id => "sponsor-#{sponsor.id}" }
+        %td= image_tag sponsor.logo.url(:normal)
+        %td
+          = sponsor.name
+          %br
+          = link_to sponsor.url, sponsor.url
+          %div{:class => 'sponsor-actions'}
+            = link_to image_tag('pencil.png'), edit_admin_sponsor_path(sponsor), :title => 'Muokkaa'
+            = link_to image_tag('cross.png', :size => '16x16'), admin_sponsor_path(sponsor), :title => 'Poista',
+              :confirm => "Haluatko varmasti poistaa sponsorin \"#{sponsor}\"?", :method => :delete

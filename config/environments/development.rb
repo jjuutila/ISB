@@ -24,11 +24,8 @@ Isb::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
   
   # ImageMagick location
-  Paperclip.options[:command_path] = "/usr/bin/"
+  Paperclip.options[:command_path] = "/usr/bin/identify"
   
   # Devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
-
-
-
