@@ -7,6 +7,6 @@
   %article.entry
     %h2= "#{message.author}: #{message.title}"
     %time.meta{:datetime => html5_datetime(message.created_at)}= message.created_at
-    = simple_format(auto_link(h(message.content)))
+    = auto_link(simple_format(h(message.content)), :link => :urls, :html => { :ref => 'nofollow' }).html_safe
 
 = paginate @messages
