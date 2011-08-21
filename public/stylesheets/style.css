@@ -305,6 +305,10 @@ form.comment ol label{
   display: block;
 }
 
+form.comment ol li{
+  margin:12px 0 12px 0;
+}
+
 form.comment p.inline-errors {
   color: #FF0000;
   margin-bottom: 8px;
