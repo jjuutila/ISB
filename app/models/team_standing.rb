@@ -18,8 +18,6 @@ class TeamStanding < ActiveRecord::Base
   after_initialize :set_defaults
   before_validation :set_rank, :if => Proc.new { |team| team.rank.nil? and team.partition and team.new_record? }
   
-  scope :in_partition, lambda { |partition| where(:partition_id => partition.id) }
-  
   def set_defaults
     self.wins = 0 unless self.wins
     self.losses = 0 unless self.losses

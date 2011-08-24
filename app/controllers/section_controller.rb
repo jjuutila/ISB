@@ -65,13 +65,8 @@ class SectionController < MainSiteController
   end
   
   def standings
-    begin
-      @partition = Partition.latest @section
-      @standings = TeamStanding.in_partition @partition
-    rescue ActiveRecord::RecordNotFound
-      @standings = []
-    end
-    respond_with @standings
+    @partition = Partition.latest @section
+    respond_with @partition
   end
   
   def contact_info

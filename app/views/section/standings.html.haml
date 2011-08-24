@@ -1,26 +1,7 @@
 %header
-  - if @partition and @standings.size > 0
+  - if @partition and @partition.team_standings.size > 0
     %h1= "Sarjataulukko kaudella #{@partition.season}, #{@partition.name.downcase}"
   - else
     %h1= "Sarjataulukkoa ei ole saatavilla"
   
-%table#statistics
-  %thead
-    %tr
-      %th
-      %th O
-      %th V
-      %th T
-      %th H
-      %th P
-      %th MS
-    %tbody
-      - for standing in @standings
-        %tr{ :class => cycle(:odd, :even) }
-          %td= standing
-          %td= standing.games_played
-          %td= standing.wins
-          %td= standing.overtimes
-          %td= standing.losses
-          %td= standing.points
-          %td= "#{standing.goals_for}-#{standing.goals_against}"
+= render :partial => 'section/team_standings', :locals => { :partition => @partition }
