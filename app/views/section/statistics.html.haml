@@ -4,21 +4,4 @@
   - else
     %h1= "Pistepörssi ei ole saatavilla"
 
-%table#statistics
-  %thead
-    %tr
-      %th
-      %th O
-      %th M
-      %th S
-      %th P
-      %th J
-    %tbody
-      - for statistic in @statistics
-        %tr{ :class => cycle(:odd, :even) }
-          %td= statistic.member
-          %td= statistic.matches
-          %td= statistic.goals
-          %td= statistic.assists
-          %td= statistic.points
-          %td= statistic.pim
+= render :partial => 'section/statistics', :locals => { :statistics => @statistics }
