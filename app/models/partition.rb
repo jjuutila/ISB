@@ -8,6 +8,7 @@ class Partition < ActiveRecord::Base
   validates_presence_of :name, :position, :season
   validates_numericality_of :position, :only_integer => true, :greater_than => 0
   
+  default_scope :order => 'position DESC'
   scope :in_season, lambda { |id| where("season_id = ?", id) }
   
   before_validation :set_position
