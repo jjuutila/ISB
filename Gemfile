@@ -23,6 +23,6 @@ group :development, :test do
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'capybara'
-  gem 'jasmine'
   gem 'guard-rspec'
+  gem 'libnotify'
 end
