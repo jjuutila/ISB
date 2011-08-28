@@ -2,12 +2,6 @@
   - if @matches.size > 0
     %h1= "Ottelut kaudella #{@partition.season}, #{@partition}"
   - else
-    %h1= "Ei otteluita"
+    %h1= "Ei tiedossa olevia otteluita"
 
-- if @matches.size > 0
-  - @matches.each do |match|
-    .entry
-      %h2= link_to_unless match.report.blank?, "#{match} #{match.result}", match_path(@section.slug, match)
-      %meta
-        %time{:datetime => html5_datetime(match.start_time)}= match.start_time
-        = " | #{match.location}"
+= render :partial => 'section/matches', :locals => { :matches => @matches }
