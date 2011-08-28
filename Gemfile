@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.0.10'
 gem 'jquery-rails'
 gem 'formtastic', '~> 1.2.0'
 gem 'haml'
@@ -23,6 +23,10 @@ group :development, :test do
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'capybara'
+  gem 'jasmine'
+end
+
+group :test do
   gem 'guard-rspec'
   gem 'libnotify'
 end
