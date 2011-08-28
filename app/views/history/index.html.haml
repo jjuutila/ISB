@@ -1,0 +1,6 @@
+%header
+  %h1 Historia
+
+%ul.seasons
+  - @seasons.each do |season|
+    %li= link_to "Kausi #{season}", history_show_path(@section.slug, season.start_year)

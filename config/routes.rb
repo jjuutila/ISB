@@ -78,5 +78,7 @@ Isb::Application.routes.draw do
     match ':section/kuvagalleria/:id' => 'picasa#show_album', :via => :get, :as => 'album'
     match ':section/kuvagalleria/:album_id/:id' => 'picasa#show_photo', :via => :get, :as => 'photo'
     match ':section' => redirect("/%{section}/ajankohtaista"), :via =>:get
+    match ':section/historia' => 'history#index', :via => :get, :as => 'history'
+    match ':section/historia/:year' => 'history#show', :via => :get, :as => 'history_show', :constraints => { :year => /\d{4}/ }
   end
 end

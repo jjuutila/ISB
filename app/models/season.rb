@@ -39,4 +39,12 @@ class Season < ActiveRecord::Base
       default_partition.position = 1
     end
   end
+  
+  def has_history?
+    !history.blank?
+  end
+  
+  def self.all_except_newest(section)
+    self.where(:section_id => section.id).offset(1).order('start_year DESC')
+  end
 end

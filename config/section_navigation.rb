@@ -5,7 +5,7 @@ SimpleNavigation::Configuration.run do |navigation|
       guestbook.item :new_guestbook_message, 'Kirjoita viesti', new_guestbook_message_path(@section.slug)
     end
     primary.item :team, 'Joukkue', team_path(@section.slug)
-    primary.item :matches, 'Ottelut', matches_path(@section.slug)
+    primary.item :matches, 'Ottelut', matches_path(@section.slug), :highlights_on => /\/ottelu/
     primary.item :statistics, 'Pistepörssi', statistics_path(@section.slug) do |statistics|
       statistics.item :all_time, "All-Time", all_time_statistics_path(@section.slug)
     end
@@ -14,5 +14,6 @@ SimpleNavigation::Configuration.run do |navigation|
       :if => Proc.new { @section.picasa_user_id }
     primary.item :links, 'Linkit', links_path(@section.slug)
     primary.item :contact_info, 'Yhteystiedot', contact_info_path(@section.slug)
+    primary.item :history, 'Historia', history_path(@section.slug), :highlights_on => /\/historia/
   end
 end

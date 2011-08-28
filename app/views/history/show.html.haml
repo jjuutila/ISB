@@ -1,0 +1,23 @@
+%article
+  %header
+    %h1= "Kausi #{@season}"
+
+  - if @season.has_history?
+    %h2 Tarina
+    = auto_link(simple_format(h(@season.history)), :link => :urls, :html => { :ref => 'nofollow' }).html_safe
+  
+  - @season.partitions.each do |partition|
+    %section
+      %h2= partition
+      
+      -if partition.matches.count > 0
+        %h3 Ottelut
+        = render :partial => 'section/matches', :locals => { :matches => partition.matches }
+      
+      - if partition.team_standings.count > 0
+        %h3 Sarjataulukko
+        = render :partial => 'section/team_standings', :locals => { :partition => partition }
+        
+      - if partition.statistics.count > 0
+        %h3 Pistepörssi
+        = render :partial => 'section/statistics', :locals => { :statistics => partition.statistics }

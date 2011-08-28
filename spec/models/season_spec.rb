@@ -46,4 +46,25 @@ describe Season do
       season.partitions.first.season.should == season
     end
   end
+  
+  context "all_except_newest" do
+    it "get all Seasons except the newest Season in the given Section" do
+      section = mock_model(Section)
+      other_section = mock_model(Section)
+      
+      seasons = FactoryGirl.create_list(:season, 3, :section => section).reverse
+      seasons.delete seasons[0]
+      
+      FactoryGirl.create(:season, :section => other_section)
+      
+      Season.all_except_newest(section).should eq seasons
+    end
+  end
+  
+  context "has_history?" do
+    it "is true if Season has a history text" do
+      s = Season.new :history => "some text"
+      s.has_history?.should be true
+    end
+  end
 end

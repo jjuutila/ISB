@@ -244,8 +244,17 @@ section#main { overflow:hidden; }
   word-spacing:0.15em;
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   font-weight: normal;  
-  font-size: 20px;
-  margin: 6px 0 0 0;
+  font-size:20px;
+  margin: 16px 0 4px 0;
+  padding:0;
+}
+
+#main-container h3 {
+  word-spacing:0.15em;
+  font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  font-weight:normal;
+  font-size:16px;
+  margin:26px 0 4px 0;
   padding:0;
 }
 
@@ -253,6 +262,8 @@ section#main { overflow:hidden; }
   color:#999;
   font-size:11px;
 }
+
+time.meta, .meta time { font-style:italic; }
 
 .meta a { color:#999; }
 
@@ -452,6 +463,14 @@ iframe.like-box {
   overflow:hidden;
   width:350px;
   height:62px;
+}
+
+ul.seasons {
+  list-style: none;
+}
+
+ul.seasons li {
+  line-height:28px;
 }
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
