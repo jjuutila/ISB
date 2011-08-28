@@ -191,6 +191,8 @@ div#frontpage-banner img {
   margin:10px; 0 0 10px;
 }
 
+article#news header h1, h2.news { text-transform:uppercase;}
+
 div#frontpage-banner-caption {
   opacity:0.85;
   background-color:#F7F9FD;

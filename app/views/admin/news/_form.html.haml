@@ -1,6 +1,10 @@
 = form.inputs do
   = form.input :sections, :as => :check_boxes, :label => 'Joukkueosiot',
     :collection => @sections
+  
+  %div.note= "Huom! Uutisotsikot ovat pääsivuilla muotoilussa asetettu näkymään isoilla kirjaimilla,
+        joten otsikkoa ei tarvitse kirjoittaa tähän kokonaan isoilla kirjaimilla."
+  
   = form.input :title, :label => 'Otsikko', :input_html => { :size => 80 }
   = form.input :content, :label => 'Sisältö'
 = form.buttons do
