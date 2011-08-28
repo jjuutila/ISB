@@ -41,6 +41,6 @@ class Admin::NewsController < Admin::BaseController
   private
   
   def get_sections
-    @sections = Section.all
+    @sections = Section.visible
   end
 end

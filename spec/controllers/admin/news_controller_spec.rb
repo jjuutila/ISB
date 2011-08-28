@@ -36,8 +36,9 @@ describe Admin::NewsController do
   describe "GET new" do
     before(:each) do
       controller.stub(:selected_section) {mock_section}
-      Section.stub(:all) { [mock_section] }
+      Section.stub(:visible) { [mock_section] }
     end
+    
     it "assigns a new news post as @news" do
       News.should_receive(:new).with(:sections => [mock_section]) { mock_news }
       get :new
