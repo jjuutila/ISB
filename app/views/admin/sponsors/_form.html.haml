@@ -6,8 +6,9 @@
     - if @sponsor.logo.file?
       = image_tag @sponsor.logo.url(:normal)
       
-    = "Sponsorialueen taustaväri on #ECECEC. Eli jos haluat logokuvan taustan yhteneväksi sivun kanssa, niin muokkaa kuvan taustaväriksi #ECECEC tai läpinäkyvä, jos kuvaformaatti tukee sitä."
+    %p= "Sponsorialueen taustaväri on #ECECEC. Eli jos haluat logokuvan taustan yhteneväksi sivun kanssa, niin muokkaa kuvan taustaväriksi #ECECEC tai läpinäkyvä, jos kuvaformaatti tukee sitä."
     = form.input :logo
+    %p= "Kuva pienennetään 190x190 kokoiseksi."
     
   = form.buttons do
     = form.commit_button :label => 'Tallenna'
