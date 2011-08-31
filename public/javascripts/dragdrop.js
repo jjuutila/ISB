@@ -162,15 +162,10 @@ DraggedElement = (function() {
     }
   };
   DraggedElement.prototype.makeRequest = function() {
-    var type;
-    type = this.requestMethod;
-    if (this.requestMethod.toUpperCase() === 'GET') {
-      type = 'GET';
-    }
     return $.ajax({
       url: this.buildUrl(),
       data: this.buildRequestData(),
-      type: type,
+      type: this.convertToPostIfDeleteOrPut(this.requestMethod),
       beforeSend: this.proxy(function() {
         return this.overwriteRequestHeader(arguments);
       }),
@@ -194,6 +189,14 @@ DraggedElement = (function() {
     data[this.getType().toString()] = this.getId();
     data["data"] = modelData;
     return data;
+  };
+  DraggedElement.prototype.convertToPostIfDeleteOrPut = function(method) {
+    method = method.toUpperCase();
+    if (method === 'DELETE' || method === 'PUT') {
+      return 'POST';
+    } else {
+      return method;
+    }
   };
   DraggedElement.prototype.getHostType = function() {
     if ((this.newHostElement.attr("id").split("-")).length === 2) {

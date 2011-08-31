@@ -115,15 +115,10 @@ class DraggedElement extends Base
       null
   
   makeRequest:() ->
-    type = @requestMethod
-
-    if (@requestMethod.toUpperCase() is 'GET')
-      type = 'GET'
-
     $.ajax({
       url: @buildUrl(),
       data: @buildRequestData(),
-      type: type,
+      type: @convertToPostIfDeleteOrPut(@requestMethod),
       beforeSend: @proxy ->
         @overwriteRequestHeader(arguments)
 
@@ -147,6 +142,15 @@ class DraggedElement extends Base
     data["data"] = modelData
     data
 
+  # Conversion is needed for production environment to work properly because
+  # HTTP DELETE is restricted in the production Apache configuration.
+  convertToPostIfDeleteOrPut:(method) ->
+    method = method.toUpperCase()
+    if method == 'DELETE' or method == 'PUT'
+      'POST'
+    else
+      method
+    
   getHostType:() ->
     if((@newHostElement.attr("id").split("-")).length == 2)
       (@newHostElement.attr("id")).split("-")[0]
@@ -168,7 +172,7 @@ class DraggedElement extends Base
 
   overwriteRequestHeader:(arguments) ->
     xhr = arguments[0]
-    xhr.setRequestHeader("X-Http-Method-Override", @requestMethod);
+    xhr.setRequestHeader("X-Http-Method-Override", @requestMethod)
 
   successFullRequest:(args) ->
     @moveItem(@newHostElement, @referenceToSelf)
