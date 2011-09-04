@@ -7,7 +7,7 @@ class HistoryController < MainSiteController
   end
   
   def show
-    respond_with @season = Season.includes(:partitions => [:matches, :team_standings, {:statistics => :member} ])
+    respond_with @season = Season.includes(:partitions => [:matches, :team_standings, :statistics_with_matches])
       .find_by_start_year_and_section_id!(params[:year], @section.id)
   end
 end

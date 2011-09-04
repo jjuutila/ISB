@@ -7,17 +7,18 @@
     = auto_link(simple_format(h(@season.history)), :link => :urls, :html => { :ref => 'nofollow' }).html_safe
   
   - @season.partitions.each do |partition|
-    %section
-      %h2= partition
-      
-      -if partition.matches.count > 0
-        %h3 Ottelut
-        = render :partial => 'section/matches', :locals => { :matches => partition.matches }
-      
-      - if partition.team_standings.count > 0
-        %h3 Sarjataulukko
-        = render :partial => 'section/team_standings', :locals => { :partition => partition }
+    -if partition.matches.count > 0 or partition.team_standings.count > 0 or partition.statistics_with_matches.count > 0
+      %section
+        %h2= partition
         
-      - if partition.statistics.count > 0
-        %h3 Pistepörssi
-        = render :partial => 'section/statistics', :locals => { :statistics => partition.statistics }
+        -if partition.matches.count > 0
+          %h3 Ottelut
+          = render :partial => 'section/matches', :locals => { :matches => partition.matches }
+        
+        - if partition.team_standings.count > 0
+          %h3 Sarjataulukko
+          = render :partial => 'section/team_standings', :locals => { :partition => partition }
+          
+        - if partition.statistics_with_matches.count > 0
+          %h3 Pistepörssi
+          = render :partial => 'section/statistics', :locals => { :statistics => partition.statistics_with_matches }

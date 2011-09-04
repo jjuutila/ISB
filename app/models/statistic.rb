@@ -20,6 +20,8 @@ class Statistic < ActiveRecord::Base
   
   scope :in_partition, lambda { |partition| where("partition_id = ?", partition.id).
     includes(:member) }
+    
+  scope :with_matches, where('matches > 0')
   
   def points
     self.goals + self.assists

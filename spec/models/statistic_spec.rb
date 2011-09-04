@@ -77,4 +77,17 @@ describe Statistic do
       statistic.errors[:unique].count.should == 0
     end
   end
+  
+  context "scope with_matches" do
+    it "gets only rows where matches > 0" do
+      members = FactoryGirl.create_list(:member, 3)
+      partition = mock_model(Partition)
+      
+      Statistic.create!(:member => members[0], :partition => partition)
+      with_matches = Statistic.create!(:matches => 21, :member => members[1], :partition => partition)
+      Statistic.create!(:goals => 11, :member => members[2], :partition => partition)
+      
+      Statistic.with_matches.should == [with_matches]
+    end
+  end
 end
