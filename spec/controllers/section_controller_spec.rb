@@ -189,6 +189,11 @@ describe SectionController do
       get :standings, :section => 'edustus'
       assigns(:partition).should == mock_partition
     end
+    
+    it "assigns nil as @partition if no partitions are found" do
+      get :standings, :section => 'edustus'
+      assigns(:partition).should == nil
+    end
   end
   
   describe "'GET' player" do

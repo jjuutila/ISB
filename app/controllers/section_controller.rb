@@ -65,7 +65,13 @@ class SectionController < MainSiteController
   end
   
   def standings
-    @partition = Partition.latest @section
+    begin
+      @partition = Partition.latest @section
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Latest Partition not found from #{@section}."
+      @partition = nil
+    end
+    
     respond_with @partition
   end
   
