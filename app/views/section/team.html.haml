@@ -13,3 +13,10 @@
     %ul
       - @coaches.each do |coach|
         %li= link_to coach, player_path(@section.slug, coach)
+        
+.parallel-col
+  - if @assistants.count > 0
+    %h2 Joukkeenjohto
+    %ul
+      - @assistants.each do |assistant|
+        %li= link_to assistant, player_path(@section.slug, assistant)

@@ -8,6 +8,7 @@ class Admin::RolesController < Admin::BaseController
     @unassigned_members = Member.not_in_season @season
     @players = Member.with_role("player").in_season @season
     @coaches = Member.with_role("coach").in_season @season
+    @assistants = Member.with_role("assistant").in_season @season
     
     respond_with
   end

@@ -175,11 +175,12 @@ describe SectionController do
       assigns(:players).should == [mock_member]
     end
     
-    it "assigns an empty array as @players and @coaches if season is not found" do
+    it "assigns @players, @assistants and @coaches as an empty array if season is not found" do
       Season.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
       get :team, :section => 'edustus'
       assigns(:coaches).should == []
       assigns(:players).should == []
+      assigns(:assistants).should == []
     end
   end
   

@@ -13,9 +13,9 @@
 
 %h1 Joukkue kaudella #{@season}
 
-#contextNavi
-  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_seasons_path
-  = link_to 'Takaisin', admin_seasons_path
+%nav#contextNavi
+  = link_to image_tag('arrow_left.png', :size => '16x16'), admin_season_path(@season)
+  = link_to 'Takaisin', admin_season_path(@season)
 
 .note= "Huom. Muutokset tallentuvat heti, kun pelaaja raahataan johonkin laatikoista."
 
@@ -26,11 +26,11 @@
     %div#member-search
       %label{:for => :member_filter}= "Hae nimellä:"
       = search_field_tag :member_filter
-    
+
     %ul{:class => "drop-place draggable-elements", :id => "role-"}
       - @unassigned_members.each do |member|
         %li{:id => "id-#{member.id}"}= member
-  
+
   .selected-team
     %h2 Joukkueeseen valitut
     .member-column
@@ -38,9 +38,15 @@
       %ul{:class => "drop-place draggable-elements", :id => "role-player"}
         - @players.each do |player|
           %li{:id => "id-#{player.id}"}= player
-          
+
     .member-column
       %h3 Valmentajat
       %ul{:class => "drop-place draggable-elements", :id => "role-coach"}
         - @coaches.each do |coach|
           %li{:id => "id-#{coach.id}"}= coach
+
+    .member-column
+      %h3 Joukkeenjohto
+      %ul{:class => "drop-place draggable-elements", :id => "role-assistant"}
+        - @assistants.each do |assistant|
+          %li{:id => "id-#{assistant.id}"}= assistant
