@@ -20,7 +20,9 @@
     %tr{ :class => cycle(:odd, :even) }
       %td= link
       %td= link_to link.url, link.url, :rel => "nofollow"
-      %td.action= link_to image_tag('pencil.png', :size => '16x16', :title => 'Muokkaa'), edit_admin_link_category_link_path(link)
-      %td.action= link_to image_tag('cross.png', :size => '16x16', :title => 'Poista'), admin_link_category_link_path(link),
+      %td.action= link_to image_tag('pencil.png', :size => '16x16', :title => 'Muokkaa'),
+        edit_admin_link_category_link_path(@link_category, link)
+      %td.action= link_to image_tag('cross.png', :size => '16x16', :title => 'Poista'),
+        admin_link_category_link_path(@link_category, link),
         :confirm => 'Haluatko varmasti poistaa linkin?',
         :method => :delete
