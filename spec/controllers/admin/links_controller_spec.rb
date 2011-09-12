@@ -13,7 +13,7 @@ describe Admin::LinksController do
   end
   
   before(:each) do
-    LinkCategory.stub(:find).with(2) {mock_category}
+    LinkCategory.stub(:find).with("2") {mock_category}
   end
 
   describe "GET new" do

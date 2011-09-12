@@ -29,7 +29,7 @@ describe Admin::CommentsController do
 
   describe "PUT update" do
     before(:each) do
-      Comment.stub(:find).with(37) { mock_comment }
+      Comment.stub(:find).with("37") { mock_comment }
     end
     describe "with valid params" do
       it "updates the requested comment" do

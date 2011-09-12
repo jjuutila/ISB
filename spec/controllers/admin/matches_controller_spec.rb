@@ -10,7 +10,7 @@ describe Admin::MatchesController do
   
   before(:each) do
     @partition = mock_model(Partition)
-    Partition.stub(:find).with(@partition.id) { @partition }
+    Partition.stub(:find).with(@partition.id.to_s) { @partition }
     @params = {'these' => 'params'}
   end
 

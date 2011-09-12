@@ -36,7 +36,7 @@ describe SectionController do
   
   describe "'GET' news" do
     it "sets requested news posts as @news" do
-      News.should_receive(:in_section).with(@section, 2) {[mock_news]}
+      News.should_receive(:in_section).with(@section, "2") {[mock_news]}
       get :news, :section => 'edustus', :page => 2
       assigns(:news).should == [mock_news]
     end
@@ -73,7 +73,7 @@ describe SectionController do
   describe "'GET' show_match" do
     it "sets the requested match as @match" do
       mock_match = mock_model(Match)
-      Match.should_receive(:find).with(3).and_return(mock_match)
+      Match.should_receive(:find).with("3").and_return(mock_match)
       get :show_match, :section => 'edustus', :id => 3
       assigns(:match).should == mock_match
     end
@@ -81,7 +81,7 @@ describe SectionController do
   
   describe "'GET' guestbook" do
     it "sets the requested sections comments as @messages" do
-      Comment.should_receive(:messages).with(@section, 2).and_return([mock_comment])
+      Comment.should_receive(:messages).with(@section, "2").and_return([mock_comment])
       get :guestbook, :section => 'edustus', :page => 2
       assigns(:messages).should == [mock_comment]
     end
@@ -200,7 +200,7 @@ describe SectionController do
   describe "'GET' player" do
     it "assigns requested member as @member" do
       mock_player = mock_model(Member)
-      Member.should_receive(:find).with(3).and_return(mock_player)
+      Member.should_receive(:find).with("3").and_return(mock_player)
       get :player, :section => 'edustus', :id => 3
       assigns(:member).should == mock_player
     end

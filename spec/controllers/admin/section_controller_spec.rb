@@ -12,7 +12,7 @@ describe Admin::SectionsController do
   
   describe "GET 'edit_contact'" do
     it "assigns the requested section as @section" do
-      Section.should_receive(:find).with(2) { mock_section(:parent => mock_model(Section)) }
+      Section.should_receive(:find).with("2") { mock_section(:parent => mock_model(Section)) }
       get 'edit_contact', :id => 2
       assigns(:section).should == mock_section
       response.should be_success

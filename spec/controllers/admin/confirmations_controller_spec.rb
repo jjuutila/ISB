@@ -44,7 +44,7 @@ describe Admin::ConfirmationsController do
       end
       
       it "updates users password" do
-        mock_user.should_receive(:update_attributes).with('these' => :params, 'confirmation_token' => @token) { true }
+        mock_user.should_receive(:update_attributes).with('these' => "params", 'confirmation_token' => @token) { true }
         put :confirm, @params
       end
       

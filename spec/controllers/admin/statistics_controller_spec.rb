@@ -18,7 +18,7 @@ describe Admin::StatisticsController do
   
   before(:each) do
     @partition = mock_model(Partition)
-    Partition.stub(:find).with(3) { @partition }
+    Partition.stub(:find).with("3") { @partition }
   end
   
   describe "GET edit_multiple" do
@@ -38,7 +38,7 @@ describe Admin::StatisticsController do
     
     describe "with valid params" do
       it "updates statistics" do
-        Statistic.should_receive(:update).with([1], [:params]) { [mock_statistic] }
+        Statistic.should_receive(:update).with([1], ["params"]) { [mock_statistic] }
         put :update_multiple, @params
       end
       
@@ -116,7 +116,7 @@ describe Admin::StatisticsController do
       controller.stub(:selected_section) { @section }
       
       @season = mock_model(Season)
-      Season.stub(:find).with(5) { @season }
+      Season.stub(:find).with("5") { @season }
 
       Member.stub(:all_time_players_for_season).with(@season) {[mock_member]}
     end
@@ -137,7 +137,7 @@ describe Admin::StatisticsController do
       @params = { :id => 5, :all_time_statistics => {1 => :params} }
       
       @season = mock_model(Season)
-      Season.stub(:find).with(5) { @season }
+      Season.stub(:find).with("5") { @season }
     end
     
     describe "with valid params" do
@@ -146,7 +146,7 @@ describe Admin::StatisticsController do
       end
       
       it "updates all time statistics" do
-        Member.should_receive(:update).with([1], [:params]) { [mock_member] }
+        Member.should_receive(:update).with([1], ["params"]) { [mock_member] }
         put :update_all_time_statistics, @params
       end
       

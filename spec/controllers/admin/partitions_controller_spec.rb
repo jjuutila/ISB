@@ -38,7 +38,7 @@ describe Admin::PartitionsController do
     
     before(:each) do
       @season = mock_model(Season)
-      Season.stub(:find).with(@season.id) { @season }
+      Season.stub(:find).with(@season.id.to_s) { @season }
       @params = {'these' => 'params'}
     end
 
@@ -49,7 +49,7 @@ describe Admin::PartitionsController do
       
       it "assigns requested season as @season" do
         @season.stub_chain(:partitions, :build).with(@params).and_return(mock_partition(:save => true))
-        Season.should_receive(:find).with(@season.id).and_return(@season)
+        Season.should_receive(:find).with(@season.id.to_s).and_return(@season)
         post :create, :season_id => @season.id, :partition => @params
         assigns(:season).should be(@season)
       end
@@ -76,7 +76,7 @@ describe Admin::PartitionsController do
       end
       
       it "redirects to seasons if requested season is not found" do
-        Season.should_receive(:find).with(@season.id).and_raise(ActiveRecord::RecordNotFound)
+        Season.should_receive(:find).with(@season.id.to_s).and_raise(ActiveRecord::RecordNotFound)
         post :create, :season_id => @season.id, :partition => @params
         response.should redirect_to admin_seasons_path
       end

@@ -28,7 +28,7 @@ describe HomeController do
   
   describe "GET 'show'" do
     it "sets the request post as @news" do
-      News.should_receive(:find).with(3) {mock_news}
+      News.should_receive(:find).with("3") {mock_news}
       get "show", :id => 3
       assigns(:news).should == mock_news
     end

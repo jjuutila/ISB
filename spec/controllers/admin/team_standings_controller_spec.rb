@@ -12,13 +12,13 @@ describe Admin::TeamStandingsController do
   
   before(:each) do
     @partition = mock_model(Partition)
-    Partition.stub(:find).with(@partition.id) { @partition }
+    Partition.stub(:find).with(@partition.id.to_s) { @partition }
     @params = { 'these' => 'params' }
   end
   
   describe "GET new" do
     it "assigns a new team as @team" do
-      TeamStanding.stub(:new).with(:partition_id => @partition.id) { mock_team_standing }
+      TeamStanding.stub(:new).with(:partition_id => @partition.id.to_s) { mock_team_standing }
       get :new, :partition_id => @partition.id
       assigns(:team).should be(mock_team_standing)
     end

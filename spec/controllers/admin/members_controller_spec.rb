@@ -58,7 +58,7 @@ describe Admin::MembersController do
   
   describe "GET 'edit'" do    
     it "sets the requested member as @member" do
-      Member.should_receive(:find).with(5) { mock_member }
+      Member.should_receive(:find).with("5") { mock_member }
       get 'edit', :id => 5
       assigns(:member).should == mock_member
     end
@@ -86,7 +86,7 @@ describe Admin::MembersController do
       end
       
       it "assigns the member as @member" do
-        Member.should_receive(:find).with(5) { mock_member(:update_attributes => false) }
+        Member.should_receive(:find).with("5") { mock_member(:update_attributes => false) }
         put :update, {:member => @attributes, :id => 5 }
         assigns(:member).should == mock_member
       end

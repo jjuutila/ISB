@@ -17,7 +17,7 @@ describe Admin::RolesController do
 
   describe "GET index" do
     before(:each) do
-      Season.stub(:find).with(2) { mock_season }
+      Season.stub(:find).with("2") { mock_season }
     end
     
     it "assigns the requested season as @season" do
@@ -46,8 +46,8 @@ describe Admin::RolesController do
   
   describe "POST create" do
     before(:each) do
-      Season.stub(:find).with(2) { mock_season }
-      Member.stub(:find).with(1) { mock_member }
+      Season.stub(:find).with("2") { mock_season }
+      Member.stub(:find).with("1") { mock_member }
       @params = {"role" => "player"}
     end
     
@@ -71,8 +71,8 @@ describe Admin::RolesController do
   
   describe "PUT update" do
     before(:each) do
-      Season.stub(:find).with(2) { mock_season }
-      Member.stub(:find).with(1) { mock_member }
+      Season.stub(:find).with("2") { mock_season }
+      Member.stub(:find).with("1") { mock_member }
       @params = {"these" => "params"}
     end
     
@@ -101,8 +101,8 @@ describe Admin::RolesController do
   
   describe "DELETE destroy" do
     before(:each) do
-      Season.stub(:find).with(2) { mock_season }
-      Member.stub(:find).with(1) { mock_member }
+      Season.stub(:find).with("2") { mock_season }
+      Member.stub(:find).with("1") { mock_member }
     end
     
     it "destroys the requested affair" do

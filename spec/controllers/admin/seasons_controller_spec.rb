@@ -70,7 +70,7 @@ describe Admin::SeasonsController do
   describe "GET 'edit'" do        
     it "assigns the requested season as @season" do
       controller.stub(:selected_section) { mock_section }
-      Season.stub(:find).with(2) { mock_season }
+      Season.stub(:find).with("2") { mock_season }
       get 'edit', :id => 2
       assigns(:season).should == mock_season
       response.should be_success
@@ -84,7 +84,7 @@ describe Admin::SeasonsController do
     
     describe "with valid params" do
       it "redirects to season page after successfull update." do
-        Season.stub(:find).with(2) { mock_season(:update_attributes => true) }
+        Season.stub(:find).with("2") { mock_season(:update_attributes => true) }
         put :update, :season => @params, :id => 2
         response.should redirect_to admin_season_path(mock_season)
       end
@@ -92,7 +92,7 @@ describe Admin::SeasonsController do
 
     describe "with invalid params" do
       it "re-renders the 'edit' template." do
-        Season.stub(:find).with(3) { mock_season(:update_attributes => false,
+        Season.stub(:find).with("3") { mock_season(:update_attributes => false,
           :errors => {:anything => "error"}) }
         put :update, {:season => @params, :id => 3 }
         response.should render_template("edit")
