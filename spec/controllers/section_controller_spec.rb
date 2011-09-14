@@ -42,31 +42,19 @@ describe SectionController do
     end
   end
   
-  describe "'GET' matches" do
+  describe "'GET' latest_matches" do
     it "sets the latest partition in requested section as @partition" do
       Partition.should_receive(:latest).with(@section).and_return(mock_partition)
-      
-      mock_match = mock_model(Match)
-      Match.stub(:where) {[mock_match]}
-      
-      get :matches, :section => 'edustus'
+      get :latest_matches, :section => 'edustus'
       assigns(:partition).should == mock_partition
     end
-    
-    it "sets matches from the newest partition in requested section as @matches" do
-      Partition.stub(:latest) {mock_partition}
-      
-      mock_match = mock_model(Match)
-      Match.should_receive(:where).with(:partition_id => mock_partition.id).and_return([mock_match])
-      
-      get :matches, :section => 'edustus'
-      assigns(:matches).should == [mock_match]
-    end
-    
-    it "sets empty array as @matches if no partition is found" do
-      Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
-      get :matches, :section => 'edustus'
-      assigns(:matches).should == []
+  end
+  
+  describe "'GET' show_matches" do
+    it "assigns requested Partitions as @partition" do
+      Partition.stub(:find).with("3") { mock_partition }
+      get :show_matches, :section => 'edustus', :id => "3"
+      assigns(:partition).should == mock_partition
     end
   end
   
@@ -141,29 +129,29 @@ describe SectionController do
     end
   end
   
-  describe "'GET' statistics" do
+  describe "'GET' latest_statistics" do
     before(:each) do
       Partition.stub(:latest).with(@section) { mock_partition }
     end
     
-    it "assigns the requested sections most recents statistics as @statistics" do
+    it "assigns the requested Sections most recent Partition as @partition" do
       mock_statistics = mock_model(Statistic)
-      Statistic.should_receive(:in_partition).with(mock_partition).and_return([mock_statistics])
-      get :statistics, :section => 'edustus'
-      assigns(:statistics).should == [mock_statistics]
-    end
-    
-    it "assigns the requested sections newest partition as @partition" do
-      mock_statistics = mock_model(Statistic)
-      Statistic.stub(:in_partition) {[mock_statistics]}
-      get :statistics, :section => 'edustus'
+      get :latest_statistics, :section => 'edustus'
       assigns(:partition).should == mock_partition
     end
     
-    it "assigns an empty array as @statistics if requested section doesn't have any partitions" do
+    it "assigns nil as @partition if requested Section doesn't have any Partitions" do
       Partition.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
-      get :statistics, :section => 'edustus'
-      assigns(:statistics).should == []
+      get :latest_statistics, :section => 'edustus'
+      assigns(:partition).should == nil
+    end
+  end
+  
+  describe "'GET' show_statistics" do
+    it "assigns requested Partitions as @partition" do
+      Partition.stub(:find).with("3") { mock_partition }
+      get :show_statistics, :section => 'edustus', :id => "3"
+      assigns(:partition).should == mock_partition
     end
   end
   
@@ -184,16 +172,24 @@ describe SectionController do
     end
   end
   
-  describe "'GET' standings" do
+  describe "'GET' latest_standings" do
     it "assigns requested Section's latest partition as @partition" do
       Partition.stub(:latest).with(@section) { mock_partition }
-      get :standings, :section => 'edustus'
+      get :latest_standings, :section => 'edustus'
       assigns(:partition).should == mock_partition
     end
     
     it "assigns nil as @partition if no partitions are found" do
       get :standings, :section => 'edustus'
       assigns(:partition).should == nil
+    end
+  end
+  
+  describe "'GET' show_standings" do
+    it "assigns requested Partitions as @partition" do
+      Partition.stub(:find).with("3") { mock_partition }
+      get :show_standings, :section => 'edustus', :id => "3"
+      assigns(:partition).should == mock_partition
     end
   end
   

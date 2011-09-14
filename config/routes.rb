@@ -62,16 +62,19 @@ Isb::Application.routes.draw do
   
   constraints(:section => /[a-z0-9-]+/) do
     match ':section/ajankohtaista' => 'section#news', :via => :get, :as => "section_news"
-    match ':section/ottelut' => 'section#matches', :via => :get, :as => 'matches'
+    match ':section/ottelut' => 'section#latest_matches', :via => :get, :as => 'latest_matches'
+    match ':section/ottelut/:id' => 'section#show_matches', :via => :get, :as => 'show_matches'
     match ':section/ottelu/:id' => 'section#show_match', :via => :get, :as => 'match'
     match ':section/vieraskirja' => 'section#guestbook', :via => :get, :as => 'guestbook'
     match ':section/vieraskirja/kirjoita' => 'section#new_guestbook_message', :via => :get, :as => 'new_guestbook_message'
     match ':section/vieraskirja' => 'section#create_guestbook_message', :via => :post, :as => 'guestbook'
     match ':section/linkit' => 'section#links', :via => :get, :as => 'links'
-    match ':section/pisteporssi' => 'section#statistics', :via => :get, :as => 'statistics'
+    match ':section/pisteporssi' => 'section#latest_statistics', :via => :get, :as => 'latest_statistics'
+    match ':section/pisteporssi/:id' => 'section#show_statistics', :via => :get, :as => 'show_statistics'
     match ':section/pisteporssi/all-time' => 'section#all_time_statistics', :via => :get, :as => 'all_time_statistics'
     match ':section/joukkue' => 'section#team', :via => :get, :as => 'team'
-    match ':section/sarjataulukko' => 'section#standings', :via => :get, :as => 'standings'
+    match ':section/sarjataulukko' => 'section#latest_standings', :via => :get, :as => 'latest_standings'
+    match ':section/sarjataulukko/:id' => 'section#show_standings', :via => :get, :as => 'show_standings'
     match ':section/yhteystiedot' => 'section#contact_info', :via => :get, :as => 'contact_info'
     match ':section/pelaaja/:id' => 'section#player', :via => :get, :as => 'player'
     match ':section/kuvagalleria' => 'picasa#index', :via => :get, :as => 'albums'

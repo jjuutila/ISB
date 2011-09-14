@@ -1,7 +1,10 @@
 %header
-  - if @matches.size > 0
+  - if @partition and @partition.matches.size > 0
     %h1= "Ottelut kaudella #{@partition.season}, #{@partition}"
   - else
     %h1= "Ei tiedossa olevia otteluita"
 
-= render :partial => 'section/matches', :locals => { :matches => @matches }
+- if @partition
+  = partition_content_link_list_for(@partition) {|p| show_matches_path(@section.slug, p) }
+  
+= render :partial => 'section/matches', :locals => { :matches => @partition.matches }
