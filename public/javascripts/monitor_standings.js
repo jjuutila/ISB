@@ -9,7 +9,6 @@ $.fn.extend({
     $(this).sortable({
       cursor: 'move'
     });
-    $(this).disableSelection();
     return $(this).find('input').bind('textchange', __bind(function(event) {
       self.updateValues(event.currentTarget);
       if ($('#auto_sort_standings').is(':checked')) {

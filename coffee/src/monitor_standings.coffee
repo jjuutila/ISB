@@ -7,7 +7,6 @@ $.fn.extend
     
     # Sortable jQuery UI
     $(this).sortable({ cursor: 'move' })
-    $(this).disableSelection()
     
     $(this).find('input').bind 'textchange', (event) =>
       self.updateValues(event.currentTarget)
