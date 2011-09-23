@@ -28,7 +28,7 @@
           %th H
           %th MS
           %th P
-        %tbody
+        %tbody.team-standings
           - for standing in @standings
             %tr{ :class => !standing.errors.empty? && "row_contains_errors" }
               %td

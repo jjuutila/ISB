@@ -304,6 +304,10 @@ ul.ui-autocomplete {
 
 .ui-corner-all { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 
+tbody.team-standings.ui-sortable {
+  cursor: move;
+}
+
 .ui-sortable tr {
   line-height:28px;
   border: 1px solid #cccccc;
