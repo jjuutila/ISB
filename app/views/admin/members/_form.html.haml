@@ -5,17 +5,18 @@
     = form.input :first_name, :label => 'Etunimi'
     = form.input :last_name, :label => 'Sukunimi'
     = form.input :gender, :as => :radio, :label => 'Sukupuoli', :collection => {'Mies' => true, 'Nainen' => false}
-    = form.input :birth_year, :label => 'Syntymävuosi'
+    = form.input :birth_year, :label => 'Syntymävuosi', :input_html => {:step => 1}
     = form.input :home_municipality, :label => 'Kotikunta'
-    = form.input :number, :label => 'Numero'
+    = form.input :number, :label => 'Numero', :input_html => {:step => 1}
     = form.input :position, :as => :select, :label => 'Pelipaikka', :include_blank => false,
       :collection => t("member.position").invert
       
     = form.input :shoots, :as => :select, :label => 'Kätisyys', :include_blank => true,
       :collection => t("member.shoots").invert
-      
+
     = image_tag @member.photo.url(:normal)
     = form.input :photo, :label => 'Kuva'
+
   #questions
     %h2 Kysymykset
     = form.semantic_fields_for :questions do |q|

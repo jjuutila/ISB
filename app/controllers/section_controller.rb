@@ -6,15 +6,14 @@ class SectionController < MainSiteController
     respond_with @news = News.in_section(@section, params[:page])
   end
   
-  def matches
-    begin
-      @partition = Partition.latest @section
-      @matches = Match.where(:partition_id => @partition.id)
-    rescue ActiveRecord::RecordNotFound
-      logger.error "Latest partition not found from #{@section}."
-      @matches = []
-    end
-    respond_with @matches
+  def latest_matches
+    get_latest_partition_or_nil
+    render :action => 'matches'
+  end
+  
+  def show_matches
+    @partition = Partition.find(params[:id])
+    render :action => 'matches'
   end
   
   def show_match
@@ -42,14 +41,14 @@ class SectionController < MainSiteController
     respond_with @link_categories = LinkCategory.in_section(@section)
   end
   
-  def statistics
-    begin
-      @partition = Partition.latest @section
-      @statistics = Statistic.in_partition @partition
-    rescue ActiveRecord::RecordNotFound
-      @statistics = []
-    end
-    respond_with @statistics
+  def latest_statistics
+    get_latest_partition_or_nil
+    render :action => 'statistics'
+  end
+  
+  def show_statistics
+    @partition = Partition.find(params[:id])
+    render :action => 'statistics'
   end
   
   def team
@@ -66,15 +65,14 @@ class SectionController < MainSiteController
     end
   end
   
-  def standings
-    begin
-      @partition = Partition.latest @section
-    rescue ActiveRecord::RecordNotFound
-      logger.error "Latest Partition not found from #{@section}."
-      @partition = nil
-    end
-    
-    respond_with @partition
+  def latest_standings
+    get_latest_partition_or_nil
+    render :action => 'standings'
+  end
+  
+  def show_standings
+    @partition = Partition.find(params[:id])
+    render :action => 'standings'
   end
   
   def contact_info
@@ -87,5 +85,16 @@ class SectionController < MainSiteController
   
   def all_time_statistics
     respond_with @players = Member.players_with_points_in_any_season(@section.group.are_players_male)
+  end
+  
+  private
+  
+  def get_latest_partition_or_nil
+    begin
+      @partition = Partition.latest @section
+    rescue ActiveRecord::RecordNotFound
+      logger.error "Latest Partition not found from #{@section}."
+      @partition = nil
+    end
   end
 end

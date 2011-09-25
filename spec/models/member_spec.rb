@@ -32,6 +32,12 @@ describe Member do
     it { should allow_value(nil).for(:shoots) }
     it { should allow_value("").for(:shoots) }
     it { should_not allow_value("srhg").for(:shoots) }
+    
+    it { should validate_attachment_content_type(:photo).
+          allowing('image/png', 'image/jpg', 'image/jpeg').
+          rejecting('text/plain', 'text/xml') }
+          
+    it { should validate_attachment_size(:photo).less_than(20.megabytes) }
   end
   
   context "initalization" do

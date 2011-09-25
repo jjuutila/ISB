@@ -8,5 +8,5 @@
           - group.sections.each do |section|
             %li.section= link_to section, section_news_path(section.slug)
             %li= link_to 'Vieraskirja', guestbook_path(section.slug)
-            %li= link_to 'Sarjataulukko', standings_path(section.slug)
-            %li= link_to 'Pistepörssi', statistics_path(section.slug)
+            %li= link_to 'Sarjataulukko', latest_standings_path(section.slug)
+            %li= link_to 'Pistepörssi', latest_statistics_path(section.slug)

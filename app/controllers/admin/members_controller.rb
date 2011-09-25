@@ -5,7 +5,7 @@ class Admin::MembersController < Admin::BaseController
   before_filter :get_questions, :only => [:new, :create, :edit, :update]
   
   def index
-    respond_with @members = Member.all
+    respond_with @members = Member.order('last_name ASC, first_name ASC')
   end
   
   def new

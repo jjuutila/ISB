@@ -3,5 +3,8 @@
     %h1= "Sarjataulukko kaudella #{@partition.season}, #{@partition.name.downcase}"
   - else
     %h1= "Sarjataulukkoa ei ole saatavilla"
+    
+- if @partition
+  = partition_content_link_list_for(@partition) {|p| show_standings_path(@section.slug, p) }
   
 = render :partial => 'section/team_standings', :locals => { :partition => @partition }

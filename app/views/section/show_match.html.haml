@@ -1,7 +1,7 @@
 %article
   %header
     %h1= "#{@match} #{@match.result}"
-  %meta
+  .meta
     %time{:datetime => html5_datetime(@match.start_time)}= @match.start_time
     = " | #{@match.partition.season}, #{@match.partition} | #{@match.location}"
   %p#report= simple_format(auto_link(h(@match.report)))
