@@ -14,5 +14,5 @@
   %tbody
     - @members.each do |member|
       %tr{ :class => cycle(:odd, :even) }
-        %td= member
+        %td #{member.last_name} #{member.first_name}
         %td.action= link_to image_tag('pencil.png'), edit_admin_member_path(member), :title => 'Muokkaa'

@@ -9,7 +9,7 @@ describe Admin::MembersController do
   
   describe "GET 'index'" do
     it "should assign all members as @members" do
-      Member.should_receive(:all).and_return([mock_member])
+      Member.should_receive(:order).and_return([mock_member])
       get 'index'
       assigns(:members).should == [mock_member]
     end
