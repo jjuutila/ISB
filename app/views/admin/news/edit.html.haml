@@ -9,5 +9,5 @@
   
 %time{:datetime => html5_datetime(@news.created_at)}= "Luotu #{@news.created_at}"
 
-- semantic_form_for @news, :url => admin_news_path(@news) do |form| 
+= semantic_form_for @news, :url => admin_news_path(@news) do |form| 
   = render :partial => 'form', :object => form
