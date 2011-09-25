@@ -15,6 +15,11 @@ gem 'ruby-picasa', :require => 'ruby_picasa', :git => 'git://github.com/fjg/ruby
 gem 'acts_as_list'
 gem 'rails_autolink'
 
+group :assets do
+  gem 'coffee-rails', '~> 3.1.0'
+  gem 'uglifier'
+end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'

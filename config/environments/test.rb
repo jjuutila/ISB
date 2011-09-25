@@ -36,4 +36,8 @@ Isb::Application.configure do
   # Shoulda configuration 
   config.gem 'rspec-rails', :lib => false
   config.gem 'shoulda',     :lib => false
+  
+  # Configure static asset server for tests with Cache-Control for performance
+  config.serve_static_assets = true
+  config.static_cache_control = "public, max-age=3600"
 end

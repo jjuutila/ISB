@@ -1,11 +1,5 @@
 !!!
 %html
-  <!--[if lt IE 7 ]> <html lang="fi" class="no-js ie6"> <![endif]-->
-  <!--[if IE 7 ]>    <html lang="fi" class="no-js ie7"> <![endif]-->
-  <!--[if IE 8 ]>    <html lang="fi" class="no-js ie8"> <![endif]-->
-  <!--[if IE 9 ]>    <html lang="fi" class="no-js ie9"> <![endif]-->
-  <!--[if (gt IE 9)|!(IE)]><!--> <html lang="fi" class="no-js"> <!--<![endif]-->
-  
   = render :partial => 'layouts/head'
   
   %body
@@ -18,7 +12,5 @@
           %section#main= yield
           
     %footer= render :partial => 'layouts/footer'
-
-  %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"}
-  = javascript_tag %{!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery.min.js"%3E%3C/script%3E'))}
-  = javascript_include_tag "jquery.jcarousel.min", "hoverIntent", "script"
+    
+  = javascript_include_tag "application", "jquery.jcarousel.min", "hoverIntent"
