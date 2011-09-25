@@ -5,6 +5,8 @@ class Member < ActiveRecord::Base
   DEFENDER = 2
   GOALIE = 3
   
+  PHOTO_MAX_SIZE_IN_MEGABYTES = 20
+  
   has_attached_file :photo, :styles => { :normal => "300x400>" }
   
   has_many :affairs
@@ -35,8 +37,10 @@ class Member < ActiveRecord::Base
     
   validates_inclusion_of :shoots, :in => ['left', 'right'], :allow_nil => true
 
-  validates_attachment_size :photo, :less_than => 5.megabytes
-  validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
+  validates_attachment_size :photo, :less_than => PHOTO_MAX_SIZE_IN_MEGABYTES.megabytes,
+    :message => 'Pelaajakuvan maksimikoko on #{PHOTO_MAX_SIZE_IN_MEGABYTES} Mt.'
+    
+  validates_attachment_content_type :photo, :content_type => ['image/jpg', 'image/jpeg', 'image/png']
   
   after_initialize :set_defaults
   
