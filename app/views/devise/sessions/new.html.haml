@@ -1,9 +1,9 @@
 %h2 Kirjaudu sisään
 
-- semantic_form_for resource, :as => resource_name, :url => session_path(resource_name) do |form|
+= semantic_form_for resource, :as => resource_name, :url => session_path(resource_name) do |form|
   = form.inputs do
-    = form.input :email, :label => 'Sähköposti', :required => false
-    = form.input :password, :label => 'Salasana', :required => false
+    = form.input :email, :label => 'Sähköposti', :required => false, :input_html => {:size => 30}
+    = form.input :password, :label => 'Salasana', :required => false, :input_html => {:size => 30}
     
     - if devise_mapping.rememberable?
       = form.input :remember_me
