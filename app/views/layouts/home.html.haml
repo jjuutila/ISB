@@ -3,11 +3,10 @@
   = render :partial => 'layouts/head'
     
   %body
-    #container
-      #top= render :partial => 'layouts/global_nav'
+    #container 
       #main-header= render :partial => 'layouts/header'
       %div{:class => "center-wrapper", :id => "main-container"}= yield
 
     %footer= render :partial => 'layouts/footer'
 
-  = javascript_include_tag "application", "jquery.jcarousel.min", "hoverIntent"
+  = javascript_include_tag "application"

@@ -4,13 +4,15 @@
   
   %body
     #container
-      #top= render :partial => 'layouts/global_nav'
       #main-header= render :partial => 'layouts/header'
       .center-wrapper
         #main-container
+          %nav{ :id => 'global-sub-nav'}
+            = render_navigation(:context => :global, :items => generate_global_menu_items, :level => 2)
           %nav#section-nav= render :partial => 'layouts/section_nav'
+          
           %section#main= yield
           
     %footer= render :partial => 'layouts/footer'
     
-  = javascript_include_tag "application", "jquery.jcarousel.min", "hoverIntent"
+  = javascript_include_tag "application"

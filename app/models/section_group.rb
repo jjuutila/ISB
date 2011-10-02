@@ -9,4 +9,8 @@ class SectionGroup < ActiveRecord::Base
   def to_s
     name
   end
+  
+  def first_sections_slug
+    self.sections.length > 0 ? sections.first.slug : nil
+  end
 end
