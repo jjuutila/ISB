@@ -35,6 +35,7 @@ div#main-header {
   vertical-align:middle;
 }
 
+/* SectionGroup level navigation */
 nav#global-nav {
   float:left;
   margin: 128px 0 0 20px;
@@ -74,6 +75,29 @@ nav#global-nav ul li a {
 nav#global-nav ul li.selected a {
   color: #435396;
 }
+
+/* Section level navigation */
+nav#global-sub-nav ul {
+  margin: 10px 0 0 173px;
+}
+
+nav#global-sub-nav ul li {
+  display: inline-block;
+  margin-left:8px;
+  padding: 5px 10px 5px 10px;
+}
+
+nav#global-sub-nav ul li.selected {
+  background-color: #435396;
+  border-radius: 6px;
+  border: 1px solid #50609f;
+} 
+
+
+nav#global-sub-nav ul li.selected a {
+  color: #f7f8fb;
+}
+
 
 .basic-box, #frontpage-news, section#main, article#news, div#frontpage-banner {
   border:1px solid #e1e1e2;
