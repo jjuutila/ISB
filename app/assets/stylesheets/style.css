@@ -93,11 +93,13 @@ nav#global-sub-nav ul li.selected {
   border: 1px solid #50609f;
 } 
 
+nav#global-sub-nav ul li a {
+  color: #435396;
+}
 
 nav#global-sub-nav ul li.selected a {
   color: #f7f8fb;
 }
-
 
 .basic-box, #frontpage-news, section#main, article#news, div#frontpage-banner {
   border:1px solid #e1e1e2;
