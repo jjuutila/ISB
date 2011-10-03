@@ -21,7 +21,7 @@ module GlobalMenuHelper
       :key => s.slug,
       :name => s.name,
       :url => section_news_path(s.slug),
-      :options => { :highlights_on => Regexp.new("\/#{s.slug}") }
+      :options => { :highlights_on => Regexp.new("\/#{s.slug}/") }
       } }
   end
 end
