@@ -70,7 +70,7 @@ Isb::Application.routes.draw do
     match ':section/vieraskirja' => 'section#create_guestbook_message', :via => :post, :as => 'guestbook'
     match ':section/linkit' => 'section#links', :via => :get, :as => 'links'
     match ':section/pisteporssi' => 'section#latest_statistics', :via => :get, :as => 'latest_statistics'
-    match ':section/pisteporssi/:id' => 'section#show_statistics', :via => :get, :as => 'show_statistics'
+    match ':section/pisteporssi/:id' => 'section#show_statistics', :via => :get, :as => 'show_statistics', :constraints => { :id => /\d+/ }
     match ':section/pisteporssi/all-time' => 'section#all_time_statistics', :via => :get, :as => 'all_time_statistics'
     match ':section/joukkue' => 'section#team', :via => :get, :as => 'team'
     match ':section/sarjataulukko' => 'section#latest_standings', :via => :get, :as => 'latest_standings'
