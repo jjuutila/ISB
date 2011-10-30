@@ -138,19 +138,16 @@ DraggedElement = (function() {
     return this.getHostId() === null;
   };
   DraggedElement.prototype.destroy = function() {
-    console.log("destroy");
     this.requestMethod = 'DELETE';
     this.idToUrl = "/" + this.getId();
     return this.makeRequest();
   };
   DraggedElement.prototype.update = function() {
-    console.log("update");
     this.requestMethod = 'PUT';
     this.idToUrl = "/" + this.getId();
     return this.makeRequest();
   };
   DraggedElement.prototype.create = function() {
-    console.log;
     this.requestMethod = 'POST';
     return this.makeRequest();
   };
@@ -170,7 +167,7 @@ DraggedElement = (function() {
         return this.overwriteRequestHeader(arguments);
       }),
       error: this.proxy(function() {
-        return this.failuredRequet(arguments);
+        return this.failuredRequest();
       }),
       success: this.proxy(function() {
         return this.successFullRequest(arguments);
@@ -178,7 +175,6 @@ DraggedElement = (function() {
     });
   };
   DraggedElement.prototype.buildUrl = function() {
-    console.log(this.options);
     return this.options.url.base + this.idToUrl + this.options.url.format;
   };
   DraggedElement.prototype.buildRequestData = function() {
@@ -229,16 +225,14 @@ DraggedElement = (function() {
   DraggedElement.prototype.successFullRequest = function(args) {
     return this.moveItem(this.newHostElement, this.referenceToSelf);
   };
-  DraggedElement.prototype.failuredRequet = function(args) {
-    console.log("Failure: ");
-    return console.log(args);
+  DraggedElement.prototype.failuredRequest = function() {
+    return alert('Pelaajan siirtäminen epäonnistui.');
   };
   DraggedElement.prototype.hide = function(element) {
     return elememnt.hide();
   };
   DraggedElement.prototype.moveItem = function(to, element) {
     return element.fadeOut(function() {
-      console.log(to, element);
       return element.appendTo(to).show();
     });
   };

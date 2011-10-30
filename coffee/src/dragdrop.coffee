@@ -92,19 +92,16 @@ class DraggedElement extends Base
     @getHostId() is null
 
   destroy:() ->
-    console.log("destroy")
     @requestMethod = 'DELETE'
     @idToUrl = "/" + @getId()
     @makeRequest()
     
   update:() ->
-    console.log("update")
     @requestMethod = 'PUT'
     @idToUrl = "/" + @getId()
     @makeRequest()
 
   create:() ->
-    console.log
     @requestMethod = 'POST'
     @makeRequest()
     
@@ -123,14 +120,13 @@ class DraggedElement extends Base
         @overwriteRequestHeader(arguments)
 
       error: @proxy -> 
-        @failuredRequet(arguments)
+        @failuredRequest()
       
       success: @proxy ->
         @successFullRequest(arguments)
     });
   
   buildUrl:() ->
-    console.log @options
     @options.url.base + @idToUrl + @options.url.format
   
   buildRequestData:() ->
@@ -177,14 +173,13 @@ class DraggedElement extends Base
   successFullRequest:(args) ->
     @moveItem(@newHostElement, @referenceToSelf)
   
-  failuredRequet: (args) ->
-    console.log "Failure: "
-    console.log args
+  failuredRequest: ->
+    alert('Pelaajan siirtäminen epäonnistui.')
         
   hide:(element) ->
     elememnt.hide()
     
   moveItem:(to, element) ->
     element.fadeOut ->
-      console.log to, element
       element.appendTo(to).show()
+

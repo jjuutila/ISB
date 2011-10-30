@@ -60,7 +60,7 @@ Isb::Application.routes.draw do
     end
   end
   
-  constraints(:section => /[a-z0-9-]+/) do
+  constraints(:section => /[a-z0-9-]+/, :id => /\d+/) do
     match ':section/ajankohtaista' => 'section#news', :via => :get, :as => "section_news"
     match ':section/ottelut' => 'section#latest_matches', :via => :get, :as => 'latest_matches'
     match ':section/ottelut/:id' => 'section#show_matches', :via => :get, :as => 'show_matches'
@@ -78,9 +78,9 @@ Isb::Application.routes.draw do
     match ':section/yhteystiedot' => 'section#contact_info', :via => :get, :as => 'contact_info'
     match ':section/pelaaja/:id' => 'section#player', :via => :get, :as => 'player'
     match ':section/kuvagalleria' => 'picasa#index', :via => :get, :as => 'albums'
-    match ':section/kuvagalleria/:id' => 'picasa#show_album', :via => :get, :as => 'album'
-    match ':section/kuvagalleria/:album_id/:id' => 'picasa#show_photo', :via => :get, :as => 'photo'
-    match ':section' => redirect("/%{section}/ajankohtaista"), :via =>:get
+    match ':section/kuvagalleria/:id' => 'picasa#show_album', :via => :get, :as => 'album', :constraints => { :id => /[A-Za-z0-9-]+/ }
+    match ':section/kuvagalleria/:album_id/:id' => 'picasa#show_photo', :via => :get, :as => 'photo', :constraints => { :album_id => /[A-Za-z0-9-]+/ }
+    match ':section' => redirect("/%{section}/ajankohtaista"), :via => :get
     match ':section/historia' => 'history#index', :via => :get, :as => 'history'
     match ':section/historia/:year' => 'history#show', :via => :get, :as => 'history_show', :constraints => { :year => /\d{4}/ }
   end
