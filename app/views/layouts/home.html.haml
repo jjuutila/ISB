@@ -4,9 +4,8 @@
     
   %body
     #container 
-      #main-header= render :partial => 'layouts/header'
-      %div{:class => "center-wrapper", :id => "main-container"}= yield
-
-    %footer= render :partial => 'layouts/footer'
+      = render :partial => 'layouts/header'
+      %div{:id => "main-container"}= yield
+      %footer= render :partial => 'layouts/footer'
 
   = javascript_include_tag "application"

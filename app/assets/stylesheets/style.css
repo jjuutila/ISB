@@ -1,6 +1,6 @@
 body, html {
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-  background-color:#f7f8fb;
+  background-color:#333366;
   color:#565656;
   height:100%;
 }
@@ -9,7 +9,11 @@ a { color:#3080c8; }
 
 a:hover, .meta a:hover { color:#4e628b; }
 
-#container { min-height:100%; }
+#container {
+  min-height:100%;
+  width:988px;
+  margin:auto;
+}
 
 div.center-wrapper, aside.center-wrapper, nav.center-wrapper{
   margin:auto;
@@ -23,10 +27,9 @@ div#main-header {
   border-bottom: 2px solid #435396;
 }
 
-#main-header header{
-  display: block;
-  margin:auto;
-  width: 988px;
+header#main-header {
+  background-color:#C4D1EB;
+  height:230px;
 }
 
 #main-header img {
@@ -37,8 +40,9 @@ div#main-header {
 
 /* SectionGroup level navigation */
 nav#global-nav {
-  float:left;
-  margin: 128px 0 0 20px;
+  clear:left;
+  background-color:#5F5F61;
+  height: 60px;
 }
 
 nav#global-nav ul {
