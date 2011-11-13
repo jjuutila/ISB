@@ -11,8 +11,11 @@ a:hover, .meta a:hover { color:#4e628b; }
 
 #container {
   min-height:100%;
-  width:988px;
+  width:990px;
   margin:auto;
+  border-left:5px solid #444861;
+  border-right:5px solid #444861;
+  background-color:#192154;
 }
 
 div.center-wrapper, aside.center-wrapper, nav.center-wrapper{
@@ -28,7 +31,7 @@ div#main-header {
 }
 
 header#main-header {
-  background-color:#C4D1EB;
+  background-color:#4E5582;
   height:230px;
 }
 
@@ -105,14 +108,14 @@ nav#global-sub-nav ul li.selected a {
   color: #f7f8fb;
 }
 
-.basic-box, #frontpage-news, section#main, article#news, div#frontpage-banner {
+.basic-box, #frontpage-news, section#main, article#news {
   border:1px solid #e1e1e2;
   margin-top:10px;
   padding:8px;
   background-color:#ffffff;
 }
 
-.frontpage-right-col section { width:358px; }
+.frontpage-right-col section { width:359px; }
 
 nav#section-nav {
   float:left;
@@ -198,7 +201,7 @@ div.frontpage-right-col, section#frontpage-news {
   margin-bottom:10px;
 }
 
-section, article#news, div#frontpage-banner {
+section, article#news {
   background-color:#ffffff;
 }
 
@@ -207,8 +210,8 @@ section#frontpage-matches {
 }
 
 section#frontpage-news {
-  width:584px;
-  margin-right:10px;
+  width:565px;
+  margin:10px 10px 0 10px;
 }
 
 div#main-container {
@@ -461,4 +464,3 @@ ul.seasons {
 ul.seasons li {
   line-height:28px;
 }
-
