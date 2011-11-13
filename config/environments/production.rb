@@ -29,6 +29,7 @@ Isb::Application.configure do
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
+  # Heroku needs this to be true
   config.serve_static_assets = true
 
   # Enable serving of images, stylesheets, and javascripts from an asset server
@@ -56,9 +57,11 @@ Isb::Application.configure do
   
   # Compress JavaScripts and CSS
   config.assets.compress = true
+  
+  config.assets.css_compressor = :yui
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true

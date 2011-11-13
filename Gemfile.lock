@@ -8,6 +8,10 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    POpen4 (0.1.4)
+      Platform (>= 0.4.0)
+      open4
+    Platform (0.4.0)
     actionmailer (3.1.0)
       actionpack (= 3.1.0)
       mail (~> 2.3.0)
@@ -111,6 +115,7 @@ GEM
     objectify-xml (0.2.3)
       activesupport
       nokogiri
+    open4 (1.2.0)
     orm_adapter (0.0.5)
     paperclip (2.4.2)
       activerecord (>= 2.3.0)
@@ -188,6 +193,8 @@ GEM
       rack (>= 1.0)
     xpath (0.1.4)
       nokogiri (~> 1.3)
+    yui-compressor (0.9.6)
+      POpen4 (>= 0.1.4)
 
 PLATFORMS
   ruby
@@ -218,3 +225,4 @@ DEPENDENCIES
   spork
   uglifier
   validation_reflection
+  yui-compressor

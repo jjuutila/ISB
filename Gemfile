@@ -18,6 +18,7 @@ gem 'rails_autolink'
 group :assets do
   gem 'coffee-rails', '~> 3.1.0'
   gem 'uglifier'
+  gem 'yui-compressor'
 end
 
 group :development, :test do
