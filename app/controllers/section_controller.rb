@@ -6,6 +6,10 @@ class SectionController < MainSiteController
     respond_with @news = News.in_section(@section, params[:page])
   end
   
+  def show_news_post
+    respond_with @news = @section.news.find(params[:id])
+  end
+  
   def latest_matches
     get_latest_partition_or_nil
     render :action => 'matches'

@@ -6,6 +6,15 @@ describe SectionController do
       { :get => "/miehet-edustus/ajankohtaista" }.should route_to(:controller => "section",
         :section => "miehet-edustus", :action => "news")
     end
+    
+    it "recognizes and generates #show_news_post" do
+      { :get => "/miehet-edustus/ajankohtaista/5" }.should route_to(:controller => "section",
+        :section => "miehet-edustus", :id => "5", :action => "show_news_post")
+    end
+    
+    it "does not route news post with non-numeric id" do
+      { :get => "/miehet-edustus/ajankohtaista/foo" }.should_not be_routable
+    end
   end
   
   describe "statistics routing" do

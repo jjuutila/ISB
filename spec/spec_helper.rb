@@ -15,11 +15,11 @@ module ControllerMacros
   end
   
   # For main site's before_filter
-  def find_section
+  def create_section
     before(:each) do
-      @section = mock_model(Section).as_null_object
-      @section.stub(:slug) { "edustus" }
-      Section.stub(:find_by_slug).with('edustus').and_return(@section)
+      group = Factory.create :section_group, :name => 'Miehet'
+      @section = Section.create! :name => 'Edustus', :slug => 'edustus', :group => group,
+        :picasa_user_id => 'user_id' 
     end
   end
 end

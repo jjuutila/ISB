@@ -1,0 +1,6 @@
+%article
+  %header
+    %h1= @news
+  %div.meta
+    %time{:datetime => html5_datetime(@news.created_at), :pubdate => :pubdate}= @news.created_at
+  = simple_format(auto_link(h(@news.content)))

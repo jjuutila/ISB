@@ -19,12 +19,11 @@ describe PicasaController do
     end
   end
   
-  find_section
+  create_section
   
   before(:each) do
     @picasa = mock(Picasa)
     Picasa.stub(:new).with(nil) { @picasa }
-    @section.stub(:picasa_user_id) { 'user_id' }
     @picasa.stub(:user).with('user_id').and_return(mock_user)
   end
   

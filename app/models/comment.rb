@@ -19,10 +19,6 @@ class Comment < ActiveRecord::Base
   validates_format_of :email, :allow_blank => true, :message => 'Virheellinen sähköpostiosoite.',
     :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i
   
-  # Just for first state when comments acts as guestbook
-  validates_inclusion_of :commentable_id, :in => Section.all.collect(&:id),
-    :message => "Valitse joukkueosio."
-  
   belongs_to :commentable, :polymorphic => true
   before_create :set_type
   
