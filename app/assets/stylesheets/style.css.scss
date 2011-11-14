@@ -1,6 +1,6 @@
 body, html {
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-  background-color:#333366;
+  background-color:#444861;
   color:#565656;
   height:100%;
 }
@@ -13,8 +13,8 @@ a:hover, .meta a:hover { color:#4e628b; }
   min-height:100%;
   width:990px;
   margin:auto;
-  border-left:6px solid #444861;
-  border-right:6px solid #444861;
+  border-left:6px solid #4E5582;
+  border-right:6px solid #4E5582;
   background-color:#192154;
 }
 
@@ -22,12 +22,13 @@ a:hover, .meta a:hover { color:#4e628b; }
  * Header
 */
 header#main-header {
-  background-color:#4E5582;
   height:170px;
+  background-image: image-url("header.png");
 }
 
 #main-header img {
-  
+  position: absolute;
+  margin:6px 0 0 8px;
 }
 
 /************************************************
@@ -35,15 +36,17 @@ header#main-header {
  */
 nav#global-nav {
   display: inline-block;
-  background-color:#5F5F61;
+  background-color:#7B6221;
   height: 40px;
+  width: 100%;  
+  margin-top:130px;
+  
 }
 
 nav#global-nav ul {
-  display: inline;
   list-style:none;
   padding: 0 20px;
-  margin: 0;
+  margin: 0 0 0 150px;
   font-size: 1.2em;
 }
 
@@ -170,7 +173,7 @@ div#frontpage-banner { padding:0; }
 
 div#frontpage-banner img {
   border:1px solid #CCC;
-  margin:10px; 0 0 10px;
+  margin:10px 0 0 10px;
 }
 
 article#news header h1, h2.news { text-transform:uppercase;}
