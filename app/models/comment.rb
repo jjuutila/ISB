@@ -1,5 +1,9 @@
 # coding: utf-8
-class Comment < ActiveRecord::Base  
+class Comment < ActiveRecord::Base
+  attr_accessor :name
+  # This field should always empty. It is used to check for spam messages.
+  @name
+    
   default_scope :order => 'created_at DESC'
   
   attr_accessible :title, :content, :author, :email
@@ -23,6 +27,8 @@ class Comment < ActiveRecord::Base
   validates_inclusion_of :commentable_id, :in => Section.all.collect(&:id),
     :message => "Valitse joukkueosio."
   
+  validate :name_must_be_blank
+  
   belongs_to :commentable, :polymorphic => true
   before_create :set_type
   
@@ -41,4 +47,9 @@ class Comment < ActiveRecord::Base
     self.commentable_type = "Section"
   end
   
+  def name_must_be_blank
+    unless name.blank?
+      errors.add :name, 'You should not see nor fill this field.'
+    end
+  end
 end
