@@ -34,6 +34,8 @@ class SectionController < MainSiteController
   
   def create_guestbook_message
     @message = @section.comments.build params[:comment]
+    @message.name = params[:name]
+    @message.inspect
     if @message.save
       redirect_to guestbook_path(@section.slug)
     else

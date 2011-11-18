@@ -2,6 +2,7 @@
   %h1 Kirjoita vieraskirjaan
   
 = semantic_form_for @message, :url => guestbook_path(@section.slug) do |form|
+  = text_field_tag :name, nil, :style => 'display:none'
   = form.inputs do
     = form.input :title, :label => 'Otsikko', :input_html => { :size => 60 }
     = form.input :author, :label => 'Kirjoittaja', :input_html => { :size => 40 }
