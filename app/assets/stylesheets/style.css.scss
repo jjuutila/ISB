@@ -21,7 +21,7 @@ a:hover, .meta a:hover { color:#4e628b; }
   min-height:100%;
   width:996px;
   margin:auto;
-  background-color:white;
+  background-color:#f6f7f9;
   box-shadow: 0 0 11px 9px darken($body-background-blue, 15%);
 }
 
@@ -209,6 +209,7 @@ div.frontpage-right-col, section#frontpage-news {
 
 section, article#news {
   background-color:#ffffff;
+  box-shadow: 2px 2px 5px #cfcdcd;
 }
 
 section#frontpage-matches {
