@@ -1,8 +1,16 @@
+$body-background-blue: #4f5ebd;
+
 body, html {
+  height:100%;
+}
+body {
   font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
   background-color:#fdfdfd;
   color:#565656;
-  height:100%;
+  background-image: image-url("background.png");
+  background-repeat:repeat-x;
+  background-color: $body-background-blue;
+  background-position: center top;
 }
 
 a { color:#3080c8; }
@@ -13,9 +21,8 @@ a:hover, .meta a:hover { color:#4e628b; }
   min-height:100%;
   width:996px;
   margin:auto;
-  border-left:6px solid #4E5582;
-  border-right:6px solid #4E5582;
-  background-color:#192154;
+  background-color:white;
+  box-shadow: 0 0 11px 9px darken($body-background-blue, 15%);
 }
 
 /************************************************
