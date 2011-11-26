@@ -6,4 +6,4 @@ tmp/**/*
 .project
 public/system/**/*
 config/database.yml
-public/assets/**/*
+public/assets/*
