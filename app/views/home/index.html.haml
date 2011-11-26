@@ -3,7 +3,7 @@
     = "Sähäkkää salibandyä Ilmajoelta"
   = image_tag 'banner.jpg', :size => '966x433'
 
-%section#frontpage-news
+%section#frontpage-news{ :class => 'basic-box' }
   %h1 Tuoreimmat uutiset
   - @news.each do |news_post|
     .entry

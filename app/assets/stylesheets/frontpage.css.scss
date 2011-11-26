@@ -1,0 +1,51 @@
+/************************************************
+ * Columns
+ */
+.frontpage-right-col section { width:359px; }
+
+section#frontpage-matches {
+  width:350px;
+}
+
+div.frontpage-right-col, section#frontpage-news {
+  float:left;
+  margin-bottom:10px;
+}
+
+section#frontpage-news {
+  width:570px;
+  margin:10px 10px 0 0;
+}
+
+/************************************************
+ * Banner
+ */
+div#frontpage-banner img {
+  border:1px solid #CCC;
+  margin:10px 0 0 0;
+}
+
+div#frontpage-banner-caption {
+  opacity:0.85;
+  background-color:#F7F9FD;
+  position:relative;
+  overflow:hidden;
+  width:948px;
+  height:60px;
+  top:444px;
+  margin-top:-60px;
+  left:1px;
+  font-family:'Molengo', Verdana, Arial, Helvetica, sans-serif;
+  font-size:2.2em;
+  padding-left:18px;
+}
+
+/************************************************
+ * Facebook
+ */
+iframe.like-box {
+  overflow:hidden;
+  width:350px;
+  height:62px;
+  border:none;
+}

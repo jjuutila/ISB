@@ -1,8 +1,5 @@
 %aside#supporters
-  %h1 Sponsorit
   %ul#supporter-carousel
     - Sponsor.all.each do |sponsor|
       %li= link_to_unless sponsor.url.blank?, image_tag(sponsor.logo.url(:normal), :size => sponsor.logo_dimensions),
         sponsor.url, :rel => "nofollow", :title => sponsor.name
-
-%p © Ilmajoen salibandy 2011

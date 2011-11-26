@@ -5,12 +5,14 @@
   %body
     #container
       = render :partial => 'layouts/header'
+      %nav{ :id => 'global-sub-nav'}
+        = render_navigation(:context => :global, :items => generate_global_menu_items, :level => 2)
+      
       #main-container
-        %nav{ :id => 'global-sub-nav'}
-          = render_navigation(:context => :global, :items => generate_global_menu_items, :level => 2)
-        %nav#section-nav= render :partial => 'layouts/section_nav'
+        %nav{ :id => 'section-nav' }
+          = render_navigation(:level => 1..2, :context => :section)
         
-        %section#main= yield
+        %section{ :id => 'main', :class => 'basic-box' }= yield
       %footer= render :partial => 'layouts/footer'
     
   = javascript_include_tag "application"
