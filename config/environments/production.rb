@@ -22,7 +22,8 @@ Isb::Application.configure do
   # config.log_level = :debug
   
   # Rotate logs: 5 x 50 MB files
-  config.logger = Logger.new(Rails.root.join("log", "production.log"), 5, 50*1024*1024)
+  # Does not work in Heroku
+  #config.logger = Logger.new(Rails.root.join("log", "production.log"), 5, 50*1024*1024)
 
   # Use a different logger for distributed setups
   # config.logger = SyslogLogger.new
