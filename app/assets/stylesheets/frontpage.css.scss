@@ -1,11 +1,7 @@
 /************************************************
  * Columns
  */
-.frontpage-right-col section { width:359px; }
-
-section#frontpage-matches {
-  width:350px;
-}
+.frontpage-right-col section { width:360px; }
 
 div.frontpage-right-col, section#frontpage-news {
   float:left;
@@ -20,23 +16,28 @@ section#frontpage-news {
 /************************************************
  * Banner
  */
-div#frontpage-banner img {
+$banner-height: 331px;
+$caption-height: 50px;
+
+div#frontpage-banner {
   border:1px solid #CCC;
   margin:10px 0 0 0;
+  background-image: image-url("banner.jpg");
+  width: 974px;
+  height: $banner-height;
+  background-repeat: none;
+  box-shadow: 2px 2px 12px 1px #cfcdcd;
 }
 
 div#frontpage-banner-caption {
+  margin-top: $banner-height - $caption-height;
   opacity:0.85;
   background-color:#F7F9FD;
-  position:relative;
   overflow:hidden;
-  width:948px;
-  height:60px;
-  top:444px;
-  margin-top:-60px;
-  left:1px;
+  width:956px;
+  height: $caption-height;
   font-family:'Molengo', Verdana, Arial, Helvetica, sans-serif;
-  font-size:2.2em;
+  font-size:2.1em;
   padding-left:18px;
 }
 
