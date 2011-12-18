@@ -1,9 +1,10 @@
 # coding: utf-8
 class Comment < ActiveRecord::Base
-  attr_accessor :name
-  # This field should always empty. It is used to check for spam messages.
-  @name
-    
+  HONEYPOT_SECRET = 'tasty honey'
+
+  attr_accessor :honeypot
+  attr_accessible :honeypot
+  
   default_scope :order => 'created_at DESC'
   
   attr_accessible :title, :content, :author, :email
@@ -23,7 +24,7 @@ class Comment < ActiveRecord::Base
   validates_format_of :email, :allow_blank => true, :message => 'Virheellinen sähköpostiosoite.',
     :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i
   
-  validate :name_must_be_blank
+  validate :honeypot_check, :on => :create 
   
   belongs_to :commentable, :polymorphic => true
   before_create :set_type
@@ -35,7 +36,7 @@ class Comment < ActiveRecord::Base
   def to_s
     title
   end
-    
+  
   protected
   
   def set_type
@@ -43,9 +44,9 @@ class Comment < ActiveRecord::Base
     self.commentable_type = "Section"
   end
   
-  def name_must_be_blank
-    unless name.blank?
-      errors.add :name, 'You should not see nor fill this field.'
+  def honeypot_check
+    unless honeypot == HONEYPOT_SECRET
+      errors.add :honeypot, 'Honeypot check failed, are you a spam bot?.'
     end
   end
 end

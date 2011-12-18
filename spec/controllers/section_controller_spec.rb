@@ -84,7 +84,8 @@ describe SectionController do
   describe "'POST' create_guestbook_message" do
     describe "with valid params" do
       before(:each) do
-        @params = {'author' => 'name', :title => 'a title', :content => 'some content'}
+        @params = {'author' => 'name', :title => 'a title', :content => 'some content',
+          :honeypot => Comment::HONEYPOT_SECRET}
       end
       
       it "redirects to guestbook page" do

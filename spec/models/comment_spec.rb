@@ -10,11 +10,10 @@ describe Comment do
     it { should ensure_length_of(:content).is_at_least(2).with_short_message(/lyhyt/) }
     it { should ensure_length_of(:author).is_at_least(1).is_at_most(40).with_short_message("Anna nimimerkki.").with_long_message(/pitkä/) }
     
-    it "should not be valid if name is not blank" do
-      c = Comment.new
-      c.name = 'foobar'
+    it "should not be valid if honeypot is not the honeypot secret value" do
+      c = Comment.new(:honeypot => 'foobar')
       c.valid?
-      c.errors.include?(:name).should be true
+      c.errors.include?(:honeypot).should be true
     end
   end
   

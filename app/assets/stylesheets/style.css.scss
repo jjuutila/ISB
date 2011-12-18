@@ -295,6 +295,12 @@ form.comment ol li{
   margin:12px 0 12px 0;
 }
 
+form.comment fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 form.comment p.inline-errors {
   color: #FF0000;
   margin-bottom: 8px;
@@ -302,6 +308,10 @@ form.comment p.inline-errors {
 
 form.comment fieldset.inputs input {
   width:300px;
+}
+
+.honeypot {
+  display: none;
 }
 
 /************************************************
