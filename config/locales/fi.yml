@@ -171,3 +171,6 @@ fi:
     shoots:
       left: "vasen"
       right: "oikea"
+  
+  formtastic:
+    required: "Pakollinen kenttä"
