@@ -2,6 +2,8 @@ $body-background-color: #4f5ebd;
 $box-border-color: #CCC;
 $blue-background-color: #435396;
 $box-shadow: 2px 2px 12px 1px #cfcdcd;
+$header-height: 160px;
+$global-nav-height: 40px;
 
 body, html {
   height:100%;
@@ -33,14 +35,14 @@ a:hover, .meta a:hover { color:#4e628b; }
  * Header
 */
 header#main-header {
-  height:170px;
+  height: $header-height;
   background-image: image-url("header.png");
   border-bottom: 1px solid #444861;
 }
 
 #main-header img {
   position: absolute;
-  margin:6px 0 0 8px;
+  margin:1px 0 0 8px;
   z-index:10;
 }
 
@@ -49,9 +51,9 @@ header#main-header {
  */
 nav#global-nav {
   display: inline-block;
-  height: 40px;
-  width: 100%;  
-  margin-top:130px;
+  height: $global-nav-height;
+  width: 100%;
+  margin-top: $header-height - $global-nav-height;
 }
 
 nav#global-nav ul {
@@ -75,7 +77,7 @@ nav#global-nav ul li.selected {
 }
 
 nav#global-nav ul li a {
-  color: #f7f8fb;
+  color: #435396;
   text-decoration:none;
 }
 
