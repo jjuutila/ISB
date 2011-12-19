@@ -107,6 +107,12 @@ describe Admin::StatisticsController do
       get 'latest'
       response.should redirect_to admin_seasons_path
     end
+    
+    it "sets a flash alert if no partition is found" do
+      Season.stub(:latest).and_raise(ActiveRecord::RecordNotFound)
+      get 'latest'
+      flash.alert.empty?.should_not be_true
+    end
   end
 
 

@@ -33,6 +33,7 @@ class Admin::StatisticsController < Admin::BaseController
       latest_partition = Partition.latest selected_section
       redirect_to edit_multiple_admin_partition_statistics_path(latest_partition)
     rescue
+      flash.alert = "Uusimmalle kaudelle ei ole yhtään osioa."
       redirect_to admin_seasons_path
     end
   end
