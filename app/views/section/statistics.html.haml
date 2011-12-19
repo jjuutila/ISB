@@ -6,5 +6,4 @@
 
 - if @partition
   = partition_content_link_list_for(@partition) {|p| show_statistics_path(@section.slug, p) }
-
-= render :partial => 'section/statistics', :locals => { :statistics => @partition.statistics }
+  = render :partial => 'section/statistics', :locals => { :statistics => @partition.statistics }
