@@ -17,7 +17,7 @@ section#frontpage-news {
  * Banner
  */
 $banner-height: 331px;
-$caption-height: 50px;
+$caption-height: 45px;
 
 div#frontpage-banner {
   border:1px solid #CCC;
@@ -36,8 +36,7 @@ div#frontpage-banner-caption {
   overflow:hidden;
   width:956px;
   height: $caption-height;
-  font-family:'Molengo', Verdana, Arial, Helvetica, sans-serif;
-  font-size:2.1em;
+  font-size:3.3em;
   padding-left:18px;
 }
 
