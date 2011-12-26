@@ -22,6 +22,11 @@ group :assets do
   gem 'yui-compressor'
 end
 
+group :production do
+  gem 'execjs'
+  gem 'therubyracer'
+end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
