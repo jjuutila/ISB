@@ -68,4 +68,7 @@ Isb::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+  
+  # Also compile the JS files in vendor directory
+  config.assets.precompile << '*.js'
 end
