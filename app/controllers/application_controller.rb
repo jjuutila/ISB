@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
   before_filter :set_section_groups
   
   def set_section_groups
-    @section_groups = SectionGroup.all
+    @section_groups = SectionGroup.visible
   end
 end
