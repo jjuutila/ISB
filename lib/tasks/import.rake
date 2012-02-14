@@ -131,7 +131,7 @@ namespace :import do
         if guestbook_post.save
           print "+"
         else
-          puts "Discard post: #{guestbook_post.errors}"
+          puts "Discard post: #{guestbook_post.errors.inspect}"
         end
       rescue ActiveRecord::RecordNotFound
         puts "ERROR: Section #{section_id} not found!"
@@ -345,12 +345,12 @@ namespace :import do
   def load_yml file_name
     puts "Loading #{file_name}"
     require 'yaml'
-    YAML::load(File.open(File.join( RAILS_ROOT, 'db', 'data', "#{file_name}.yml")))
+    YAML::load(File.open(File.join(Rails.root, 'db', 'data', "#{file_name}.yml")))
   end
   
   def load_xml file_name
     require 'nokogiri'
-    Nokogiri::XML(File.open(File.join( RAILS_ROOT, 'db', 'data', "#{file_name}.xml")))
+    Nokogiri::XML(File.open(File.join( Rails.root, 'db', 'data', "#{file_name}.xml")))
   end
   
   def find_member data
