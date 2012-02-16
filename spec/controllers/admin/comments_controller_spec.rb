@@ -4,12 +4,6 @@ require 'spec_helper'
 describe Admin::CommentsController do
   user_login
   
-  def mock_section(stubs={})
-    (@mock_section ||= mock_model(Section).as_null_object).tap do |section|
-      section.stub(stubs) unless stubs.empty?
-    end
-  end
-  
   def mock_comment(stubs={})
     (@mock_comment ||= mock_model(Comment).as_null_object).tap do |comment|
       comment.stub(stubs) unless stubs.empty?
@@ -18,7 +12,8 @@ describe Admin::CommentsController do
   
   describe "GET index" do
     it "assigns all in selected section's comments as @comments" do
-      controller.should_receive(:selected_section) { mock_section }
+      mock_section = mock_model(Section)
+      controller.stub(:selected_section) { mock_section }
       Comment.should_receive(:messages).with(mock_section, nil) { [mock_comment] }
       
       get :index

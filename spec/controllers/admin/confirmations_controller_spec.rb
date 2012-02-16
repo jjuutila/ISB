@@ -3,11 +3,9 @@
 require 'spec_helper'
 
 describe Admin::ConfirmationsController do
-  def mock_user(stubs={})
-    (@mock_user ||= mock_model(User).as_null_object).tap do |user|
-      user.stub(stubs) unless stubs.empty?
-    end
-  end
+
+  let(:mock_user) { mock_model(User) }
+
   before(:each) do
     request.env["devise.mapping"] = Devise.mappings[:user]
     @token = 'abcdef'

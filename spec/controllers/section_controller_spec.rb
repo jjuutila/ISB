@@ -13,12 +13,8 @@ describe SectionController do
       member.stub(stubs) unless stubs.empty?
     end
   end
-  
-  def mock_season(stubs={})
-    (@mock_season ||= mock_model(Season).as_null_object).tap do |season|
-      season.stub(stubs) unless stubs.empty?
-    end
-  end
+
+  let(:mock_season) { mock_model(Season) }
 
   create_section
   
@@ -56,8 +52,8 @@ describe SectionController do
   
   describe "'GET' show_match" do
     it "sets the requested match as @match" do
-      mock_match = mock_model(Match)
-      Match.should_receive(:find).with("3").and_return(mock_match)
+      mock_match = mock_model(::Match)
+      ::Match.should_receive(:find).with("3").and_return(mock_match)
       get :show_match, :section => 'edustus', :id => 3
       assigns(:match).should == mock_match
     end

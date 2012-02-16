@@ -28,7 +28,7 @@ fi:
       confirmed: 'Tunnuksesi on nyt vahvistettu. Olet kirjautuneena sisälle.'
     registrations:
       signed_up: 'Tervetuloa! Rekisteröintisi onnistui.'
-      inactive_signed_up: 'Rekisteröintisi onnistui. Emme kuitenkaan voineet kirjata sinua sisään koska tunnuksesi on %{reason}.'
+      signed_up_but_inactive: 'Rekisteröintisi onnistui. Emme kuitenkaan voineet kirjata sinua sisään koska tunnustasi ei ole vielä aktivoitu.'
       updated: 'Tunnuksesi on päivitetty.'
       destroyed: 'Näkemiin! Tunnuksesi on nyt poistettu. Toivottavasti näemme sinut vielä uudelleen.'
     unlocks:

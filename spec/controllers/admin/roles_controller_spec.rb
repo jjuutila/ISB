@@ -10,10 +10,8 @@ describe Admin::RolesController do
   def mock_member(stubs={})
     @mock_member ||= mock_model(Member, stubs).as_null_object
   end
-  
-  def mock_season(stubs={})
-    @mock_season ||= mock_model(Season, stubs).as_null_object
-  end
+
+  let(:mock_season) { mock_model(Season) }
 
   describe "GET index" do
     before(:each) do

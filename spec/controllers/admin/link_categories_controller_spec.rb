@@ -3,16 +3,10 @@ require 'spec_helper'
 
 describe Admin::LinkCategoriesController do
   user_login
+
+  let(:mock_link_category) { mock_model(LinkCategory) }
   
-  def mock_link_category(stubs={})
-    @mock_link_category ||= mock_model(LinkCategory, stubs).as_null_object
-  end
-  
-  def mock_section(stubs={})
-    (@mock_section ||= mock_model(Section).as_null_object).tap do |section|
-      section.stub(stubs) unless stubs.empty?
-    end
-  end
+  let(:mock_section) { mock_model(Section) }
 
   describe "GET index" do
     it "assigns link_categories in selected section as @link_categories" do
@@ -59,7 +53,8 @@ describe Admin::LinkCategoriesController do
     describe "with valid params" do
       before(:each) do
         controller.stub(:selected_section) {mock_section}
-        mock_section.stub_chain(:link_categories, :build).with({'these' => 'params'}) { mock_link_category(:save => true) }
+        mock_link_category.stub(:save) { true }
+        mock_section.stub_chain(:link_categories, :build).with({'these' => 'params'}).and_return(mock_link_category)
       end
       
       it "assigns a newly created link_category as @link_category" do
@@ -81,7 +76,8 @@ describe Admin::LinkCategoriesController do
     describe "with invalid params" do
       before(:each) do
         controller.stub(:selected_section) {mock_section}
-        mock_section.stub_chain(:link_categories, :build).with({'these' => 'params'}) { mock_link_category(:save => false) }
+        mock_link_category.stub(:save => false, :errors => {:any => "error"})
+        mock_section.stub_chain(:link_categories, :build).with({'these' => 'params'}).and_return(mock_link_category)
       end
       
       it "assigns a newly created but unsaved link_category as @link_category" do
@@ -98,40 +94,43 @@ describe Admin::LinkCategoriesController do
 
   describe "PUT update" do
     describe "with valid params" do
-      it "updates the requested link_category" do
-        LinkCategory.stub(:find).with("37") { mock_link_category }
-        mock_link_category.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :id => "37", :link_category => {'these' => 'params'}
+      before(:each) do
+        mock_link_category.should_receive(:update_attributes).and_return(true)
       end
 
       it "assigns the requested link_category as @link_category" do
-        LinkCategory.stub(:find) { mock_link_category(:update_attributes => true) }
+        LinkCategory.stub(:find) { mock_link_category }
         put :update, :id => "1"
         assigns(:link_category).should be(mock_link_category)
       end
 
       it "redirects to the link_category" do
-        LinkCategory.stub(:find) { mock_link_category(:update_attributes => true) }
+        LinkCategory.stub(:find) { mock_link_category }
         put :update, :id => "1"
         response.should redirect_to(admin_link_category_path(mock_link_category))
       end
       
       it "sets the flash.notice" do
-        LinkCategory.stub(:find) { mock_link_category(:update_attributes => true) }
+        LinkCategory.stub(:find) { mock_link_category }
         put :update, :id => "1"
         flash[:notice].should == 'Linkkikategoria päivitetty.'
       end
     end
 
     describe "with invalid params" do
+      before(:each) do
+        mock_link_category.should_receive(:update_attributes).and_return(false)
+        mock_link_category.stub(:errors => {:any => :errors})
+      end
+      
       it "assigns the link_category as @link_category" do
-        LinkCategory.stub(:find) { mock_link_category(:update_attributes => false) }
+        LinkCategory.stub(:find) { mock_link_category }
         put :update, :id => "1"
         assigns(:link_category).should be(mock_link_category)
       end
 
       it "re-renders the 'edit' template" do
-        LinkCategory.stub(:find) { mock_link_category(:update_attributes => false) }
+        LinkCategory.stub(:find) { mock_link_category }
         put :update, :id => "1"
         response.should render_template("edit")
       end

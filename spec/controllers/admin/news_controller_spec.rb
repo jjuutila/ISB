@@ -9,12 +9,8 @@ describe Admin::NewsController do
       news.stub(stubs) unless stubs.empty?
     end
   end
-  
-  def mock_section(stubs={})
-    (@mock_section ||= mock_model(Section).as_null_object).tap do |section|
-      section.stub(stubs) unless stubs.empty?
-    end
-  end
+
+  let(:mock_section) { mock_model(Section) }
   
   describe "GET index" do
     it "assigns news in selected section as @news" do
