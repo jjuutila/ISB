@@ -3,7 +3,7 @@ class SectionController < MainSiteController
   respond_to :html
   
   def news
-    respond_with @news = News.in_section(@section, params[:page])
+    respond_with @news = News.in_section(@section, params[:sivu])
   end
   
   def show_news_post
@@ -25,7 +25,7 @@ class SectionController < MainSiteController
   end
   
   def guestbook
-    respond_with @messages = Comment.messages(@section, params[:page])
+    respond_with @messages = Comment.messages(@section, params[:sivu])
   end
   
   def new_guestbook_message

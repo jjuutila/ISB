@@ -156,8 +156,8 @@ fi:
   
   views:
     pagination:
-      previous: "&lt; Edellinen"
-      next: "Seuraava &gt;"
+      previous: "« Edellinen"
+      next: "Seuraava »"
       first: "« Ensimmäinen"
       last: "Viimeinen »"
       truncate: "..."

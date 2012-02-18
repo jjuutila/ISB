@@ -1,7 +1,7 @@
 %header
   %h1 Ajankohtaista
 
-= paginate @news
+= paginate @news, :theme => 'main_site_theme'
 
 - @news.each do |news_post|
   %article.entry
@@ -9,4 +9,4 @@
     %time.meta{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
     %p= truncate(news_post.content, :length => 120, :separator => ' ')
     
-= paginate @news
+= paginate @news, :theme => 'main_site_theme'

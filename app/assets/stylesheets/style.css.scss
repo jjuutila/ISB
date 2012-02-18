@@ -164,7 +164,53 @@ a.selected { text-decoration: none; }
  * Pagination
  */
 nav.pagination {
-  margin: 10px 0 10px;
+  margin: 10px auto 10px auto;
+  width: 660px;
+  
+  span {
+    padding: 0 4px 0 4px;
+    display: inline-block;
+  }
+
+  span.current {
+    padding: 5px 9px 5px 9px;
+    color: white;
+    background-color: $blue-background-color;
+    border-radius: 8px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: $orange;
+  }
+
+  span.page-numbers {
+    padding: 0;
+    width: 370px;
+    text-align: center;
+  }
+
+  span.next {
+    padding: 0;
+    width: 140px;
+    text-align: right;
+  }
+
+  span.prev {
+    width: 140px;
+    padding: 0;
+  }
+
+  span.next a, span.prev a {
+    background-color: $orange;
+    border-radius: 4px;
+    padding: 5px 9px 5px 9px;
+    color: white;
+  }
 }
 
 /************************************************
