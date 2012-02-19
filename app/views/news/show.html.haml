@@ -1,8 +1,6 @@
-%article{:id => 'news', :class => 'basic-box' }
+%article
   %header
     %h1= @news
   %div.meta
     %time{:datetime => html5_datetime(@news.created_at), :pubdate => :pubdate}= @news.created_at
-    = " | "
-    = @news.sections.to_sentence :two_words_connector => " ja ", :last_word_connector => ", ja "
   = simple_format(auto_link(h(@news.content)))

@@ -18,22 +18,6 @@ describe SectionController do
 
   create_section
   
-  describe "'GET' news" do
-    it "sets requested news posts as @news" do
-      news = Factory.create :news, :sections => [@section]
-      get :news, :section => 'edustus', :page => 1
-      assigns(:news).should == [news]
-    end
-  end
-  
-  describe "'GET' show_news_post" do
-    it "sets the requested news post as @news" do
-      news = Factory.create :news, :sections => [@section]
-      get :show_news_post, :section => 'edustus', :id => news.id 
-      assigns(:news).should == news
-    end
-  end
-  
   describe "'GET' latest_matches" do
     it "sets the latest partition in requested section as @partition" do
       Partition.should_receive(:latest).with(@section).and_return(mock_partition)

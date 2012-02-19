@@ -1,3 +1,4 @@
+# coding: utf-8
 SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
     primary.item :news, 'Ajankohtaista', section_news_path(@section.slug)

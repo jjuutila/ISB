@@ -36,7 +36,7 @@ describe HomeController do
     it "renders template news/show" do
       News.stub(:find) {mock_news}
       get "show", :id => 3
-      response.should render_template("news/show")
+      response.should render_template("show_news")
     end
   end
 end

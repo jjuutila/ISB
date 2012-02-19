@@ -10,6 +10,6 @@ class HomeController < ApplicationController
   
   def show
     @news = News.find params[:id]
-    render "news/show"
+    render "show_news"
   end
 end
