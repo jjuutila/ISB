@@ -62,7 +62,7 @@ Isb::Application.routes.draw do
   
   constraints(:section => /[a-z0-9-]+/, :id => /\d+/) do
     match ':section/ajankohtaista' => 'news#index', :via => :get, :as => "section_news"
-    match ':section/ajankohtaista/:id' => 'news#show', :via => :get, :as => 'show_news_post'
+    match ':section/ajankohtaista/:slug' => 'news#show', :via => :get, :as => 'show_news_post'
     match ':section/ottelut' => 'section#latest_matches', :via => :get, :as => 'latest_matches'
     match ':section/ottelut/:id' => 'section#show_matches', :via => :get, :as => 'show_matches'
     match ':section/ottelu/:id' => 'section#show_match', :via => :get, :as => 'match'

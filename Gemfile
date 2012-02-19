@@ -13,6 +13,7 @@ gem 'devise', '~> 1.5'
 gem 'ruby-picasa', :require => 'ruby_picasa', :git => 'git://github.com/fjg/ruby_picasa.git'
 gem 'acts_as_list'
 gem 'rails_autolink'
+gem 'friendly_id', '~> 4.0.0'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2'

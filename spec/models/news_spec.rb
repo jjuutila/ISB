@@ -1,5 +1,5 @@
 # coding: utf-8
-require File.expand_path("../../spec_helper.rb", __FILE__)
+require 'spec_helper'
 
 describe News do
   context "validating" do
@@ -18,11 +18,41 @@ describe News do
     it { should_not allow_value("").for(:slug) }
   end
   
-  context "is created" do
-    it "should have a slug" do
-      section = Factory.build(:section)
-      news = Factory.create(:news, :title => "Tämä on otsikko.", :sections => [section])
+  context "slug" do
+    before(:each) do
+      @section = Factory.build(:section)
+    end
+
+    it "is generated on update" do  
+      news = Factory.create(:news, :title => "Tämä on otsikko.", :sections => [@section])
       news.slug.should == "tama-on-otsikko"
+    end
+
+    it "is updated on update" do
+      news = Factory.create(:news, :sections => [@section])
+      
+      news.title = 'Updated title'
+      news.save
+
+      news.slug.should == 'updated-title'
+    end
+
+    it "is created unique" do
+      Factory.create(:news, :title => "Common title", :sections => [@section])
+
+      news = Factory.create(:news, :title => "Common title", :sections => [@section])
+
+      news.slug.should == 'common-title--2'
+    end
+
+    it "is updated unique" do
+      Factory.create(:news, :title => "Common title", :sections => [@section])
+      news = Factory.create(:news, :title => "Other title", :sections => [@section])
+      
+      news.title = 'Common title'
+      news.save
+
+      news.slug.should == 'common-title--2'
     end
   end
 end

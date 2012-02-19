@@ -1,5 +1,8 @@
 # coding: utf-8
 class News < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
   default_scope :order => 'created_at DESC'
   
   has_and_belongs_to_many :sections
@@ -11,21 +14,11 @@ class News < ActiveRecord::Base
 
   scope :recent, includes(:sections).limit(10)
   
-  before_validation :update_or_create_slug
-  
   def to_s
     title
   end
   
   def self.in_section(section, page)
     joins(:sections).where(:sections => {:id => section.id}).page(page).per(10)
-  end
-
-private
-  
-  def update_or_create_slug  
-    if self.new_record? || self.title_changed? || self.slug.blank? || self.slug.nil?
-      self.slug = self.title.parameterize  unless self.title.nil?
-    end
   end
 end

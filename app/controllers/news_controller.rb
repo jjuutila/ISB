@@ -7,6 +7,6 @@ class NewsController < MainSiteController
   end
   
   def show
-    respond_with @news = @section.news.find(params[:id])
+    respond_with @news = @section.news.find(params[:slug])
   end
 end

@@ -4,7 +4,7 @@ require 'spec_helper'
 describe NewsController do
   create_section
 
-  describe "'GET' news" do
+  describe "'GET' index" do
     it "sets requested news posts as @news" do
       news = Factory.create :news, :sections => [@section]
       get :index, :section => 'edustus'
@@ -12,10 +12,10 @@ describe NewsController do
     end
   end
   
-  describe "'GET' show_news_post" do
+  describe "'GET' show" do
     it "sets the requested news post as @news" do
       news = Factory.create :news, :sections => [@section]
-      get :show, :section => 'edustus', :id => news.id 
+      get :show, :section => 'edustus', :slug => news.id 
       assigns(:news).should == news
     end
   end
