@@ -1,5 +1,7 @@
 # coding: utf-8
 class NewsController < MainSiteController
+  include ActionView::Helpers::TextHelper
+
   respond_to :html
 
   def index
@@ -7,6 +9,11 @@ class NewsController < MainSiteController
   end
   
   def show
-    respond_with @news = @section.news.find(params[:slug])
+    @news = @section.news.find(params[:slug])
+
+    add_title @news.title
+    @meta_description = truncate(@news.content, :length => 120, :separator => ' ')
+
+    respond_with @news
   end
 end

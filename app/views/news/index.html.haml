@@ -8,5 +8,7 @@
     %h2.news= link_to news_post, show_news_post_path(@section.slug, news_post)
     %time.meta{:datetime => html5_datetime(news_post.created_at)}= news_post.created_at
     %p= truncate(news_post.content, :length => 120, :separator => ' ')
+    .read-more
+      =link_to 'Lue lisää...', show_news_post_path(@section.slug, news_post), :class => 'orange-button'
     
 = paginate @news, :theme => 'main_site_theme'
