@@ -5,7 +5,7 @@ class Admin::NewsController < Admin::BaseController
   before_filter :get_sections, :only => [:new, :edit, :create, :update]
   
   def index
-    respond_with @news = News.in_section(selected_section, params[:page])
+    respond_with @news = News.in_section(selected_section, params[:sivu])
   end
 
   def show

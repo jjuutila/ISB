@@ -3,7 +3,7 @@ class Admin::CommentsController < Admin::BaseController
   respond_to :html
   
   def index
-    @comments = Comment.messages selected_section, params[:page]
+    @comments = Comment.messages selected_section, params[:sivu]
     respond_with @comments
   end
 
