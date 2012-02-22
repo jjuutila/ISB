@@ -7,3 +7,6 @@ tmp/**/*
 public/system/**/*
 config/database.yml
 public/assets/*
+*.sublime-project
+*.sublime-workspace
+.sass-cache
