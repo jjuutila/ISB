@@ -16,7 +16,7 @@ describe Admin::NewsController do
     it "assigns news in selected section as @news" do
       controller.stub(:selected_section) {mock_section}
       News.should_receive(:in_section).with(mock_section, "2") {[mock_news]}
-      get :index, :page => 2
+      get :index, :sivu => 2
       assigns(:news).should eq([mock_news])
     end
   end
