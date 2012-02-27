@@ -48,20 +48,6 @@ class SectionController < MainSiteController
     render :action => 'statistics'
   end
   
-  def team
-    begin
-      @season = Season.latest @section
-      @players = Member.with_role_in_season("player", @season)
-      @coaches = Member.with_role("coach").in_season @season
-      @assistants = Member.with_role("assistant").in_season @season
-    rescue ActiveRecord::RecordNotFound
-      logger.error "Latest Season not found from #{@section}."
-      @players = []
-      @coaches = []
-      @assistants = []
-    end
-  end
-  
   def latest_standings
     get_latest_partition_or_nil
     render :action => 'standings'
@@ -74,10 +60,6 @@ class SectionController < MainSiteController
   
   def contact_info
     respond_with
-  end
-  
-  def player
-    respond_with @member = Member.find(params[:id]) 
   end
   
   def all_time_statistics

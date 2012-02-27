@@ -73,11 +73,11 @@ Isb::Application.routes.draw do
     match ':section/pisteporssi' => 'section#latest_statistics', :via => :get, :as => 'latest_statistics'
     match ':section/pisteporssi/:id' => 'section#show_statistics', :via => :get, :as => 'show_statistics'
     match ':section/pisteporssi/all-time' => 'section#all_time_statistics', :via => :get, :as => 'all_time_statistics'
-    match ':section/joukkue' => 'section#team', :via => :get, :as => 'team'
+    match ':section/joukkue' => 'team#index', :via => :get, :as => 'team'
+    match ':section/pelaaja/:id' => 'team#show', :via => :get, :as => 'player'
     match ':section/sarjataulukko' => 'section#latest_standings', :via => :get, :as => 'latest_standings'
     match ':section/sarjataulukko/:id' => 'section#show_standings', :via => :get, :as => 'show_standings'
     match ':section/yhteystiedot' => 'section#contact_info', :via => :get, :as => 'contact_info'
-    match ':section/pelaaja/:id' => 'section#player', :via => :get, :as => 'player'
     match ':section/kuvagalleria' => 'picasa#index', :via => :get, :as => 'albums'
     match ':section/kuvagalleria/:id' => 'picasa#show_album', :via => :get, :as => 'album', :constraints => { :id => /[A-Za-z0-9-]+/ }
     match ':section/kuvagalleria/:album_id/:id' => 'picasa#show_photo', :via => :get, :as => 'photo', :constraints => { :album_id => /[A-Za-z0-9-]+/ }

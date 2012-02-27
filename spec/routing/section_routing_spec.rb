@@ -79,15 +79,4 @@ describe SectionController do
         :section => "miehet-edustus", :action => "create_guestbook_message")
     end
   end
-  
-  describe "player routing" do
-    it "recognizes and generates #player" do
-      { :get => "/miehet-edustus/pelaaja/5" }.should route_to(:controller => "section",
-        :section => "miehet-edustus", :id => "5", :action => "player")
-    end
-    
-    it "does not recognize a non-numeric id" do
-      { :get => "/miehet-edustus/pelaaja/foo" }.should_not be_routable
-    end
-  end
 end

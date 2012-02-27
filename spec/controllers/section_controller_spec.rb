@@ -7,12 +7,6 @@ describe SectionController do
       partition.stub(stubs) unless stubs.empty?
     end
   end
-  
-  def mock_member(stubs={})
-    (@mock_member ||= mock_model(Member).as_null_object).tap do |member|
-      member.stub(stubs) unless stubs.empty?
-    end
-  end
 
   let(:mock_season) { mock_model(Season) }
 
@@ -127,23 +121,6 @@ describe SectionController do
     end
   end
   
-  describe "'GET' team" do
-    it "assigns requested section's most recent's season's players as @players" do
-      Season.stub(:latest) {mock_season}
-      Member.stub(:with_role_in_season).with("player", mock_season).and_return([mock_member])
-      get :team, :section => 'edustus'
-      assigns(:players).should == [mock_member]
-    end
-    
-    it "assigns @players, @assistants and @coaches as an empty array if season is not found" do
-      Season.should_receive(:latest).and_raise(ActiveRecord::RecordNotFound)
-      get :team, :section => 'edustus'
-      assigns(:coaches).should == []
-      assigns(:players).should == []
-      assigns(:assistants).should == []
-    end
-  end
-  
   describe "'GET' latest_standings" do
     it "assigns requested Section's latest partition as @partition" do
       Partition.stub(:latest).with(@section) { mock_partition }
@@ -162,15 +139,6 @@ describe SectionController do
       Partition.stub(:find).with("3") { mock_partition }
       get :show_standings, :section => 'edustus', :id => "3"
       assigns(:partition).should == mock_partition
-    end
-  end
-  
-  describe "'GET' player" do
-    it "assigns requested member as @member" do
-      mock_player = mock_model(Member)
-      Member.should_receive(:find).with("3").and_return(mock_player)
-      get :player, :section => 'edustus', :id => 3
-      assigns(:member).should == mock_player
     end
   end
   
