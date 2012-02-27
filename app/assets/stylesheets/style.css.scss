@@ -424,7 +424,11 @@ tr.even {
 
 /************************************************
  * Team page
- */             
+ */
+div.content-wrapper {
+  overflow: hidden;
+}
+
 div.parallel-col {
   float:left;
   margin-right: 100px;
