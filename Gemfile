@@ -32,8 +32,7 @@ group :development, :test do
   gem 'faker'
   gem "spork"
   gem 'rspec-rails', '~> 2.7'
-  # Temporary version for fixing a RoR 3.2 problem
-  gem 'shoulda', :git=>'git://github.com/3den/shoulda.git'
+  gem 'shoulda'
   gem 'capybara'
   gem 'jasmine'
 end

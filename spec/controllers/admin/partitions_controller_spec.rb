@@ -95,6 +95,10 @@ describe Admin::PartitionsController do
   end
 
   describe "PUT update" do
+      before(:each) do
+        @season = mock_model(Season)
+        mock_partition(:season => @season)
+      end
 
     describe "with valid params" do
       it "updates the requested partition" do
@@ -110,27 +114,25 @@ describe Admin::PartitionsController do
       end
 
       it "redirects to the partition" do
-        season = mock_model(Season)
-        Partition.should_receive(:find).with("1") { mock_partition(:update_attributes => true, :season => season) }
+        Partition.should_receive(:find).with("1") { mock_partition(:update_attributes => true, ) }
         put :update, :season_id => '2', :id => "1"
-        response.should redirect_to(admin_season_partition_path(season, mock_partition))
+        response.should redirect_to(admin_season_partition_path(@season, mock_partition))
       end
     end
 
     describe "with invalid params" do
       it "assigns the partition as @partition" do
-        Partition.should_receive(:find).with("1") { mock_partition(:update_attributes => false)  }
+        Partition.stub(:find) { mock_partition(:update_attributes => false, :errors => {:any => 'error'}) }
         put :update, :season_id => '2', :id => "1"
         assigns(:partition).should be(mock_partition)
       end
 
       it "re-renders the 'edit' template" do
-        Partition.stub(:find) { mock_partition(:update_attributes => false) }
+        Partition.stub(:find) { mock_partition(:update_attributes => false, :errors => {:any => 'error'}) }
         put :update, :season_id => '2', :id => "1"
         response.should render_template("edit")
       end
     end
-
   end
 
   describe "DELETE destroy" do

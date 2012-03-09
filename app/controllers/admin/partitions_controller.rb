@@ -36,14 +36,8 @@ class Admin::PartitionsController < Admin::BaseController
   
   def update
     @partition = Partition.find(params[:id])
-    
-    respond_to do |format|
-      if @partition.update_attributes(params[:partition])
-        format.html { redirect_to(admin_season_partition_path(@partition.season, @partition), :notice => 'Kausiosio päivitetty.') }
-      else
-        format.html { render :action => "edit" }
-      end
-    end
+    flash.notice = 'Kausiosio päivitetty.' if @partition.update_attributes(params[:partition])
+    respond_with @partition, :location => admin_season_partition_path(@partition.season, @partition)
   end
   
   def destroy
