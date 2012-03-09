@@ -79,7 +79,7 @@ describe Admin::NewsController do
 
     describe "with invalid params" do 
       it "assigns a newly created but unsaved news post as @news" do
-        News.stub(:new) { mock_news(:save => false, :errors => {:any => "error"}) }
+        News.stub(:new) { mock_news(:errors => {:any => "error"}) }
         post :create, :news => {'these' => 'params'}
         assigns(:news).should be(mock_news)
       end
