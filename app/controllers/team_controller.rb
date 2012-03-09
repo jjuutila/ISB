@@ -17,6 +17,7 @@ class TeamController < MainSiteController
   end
 
   def show
-    respond_with @member = Member.find(params[:id]) 
+    respond_with @member = Member.includes(:statistics => {:partition => :season}).
+      order('seasons.start_year desc').find(params[:id])
   end
 end

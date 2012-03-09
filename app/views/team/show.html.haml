@@ -1,33 +1,55 @@
 %article
   %header
     %h1= "##{@member.number} #{@member}"
-    
-  %div#player-pic
-    = image_tag @member.photo.url(:normal)
-    
-  %div#player-info
-    %ul
-      - if @member.birth_year
-        %li
-          %strong Syntynyt:
-          = @member.birth_year
-        
-      - if @member.home_municipality
-        %li
-          %strong Kotikunta:
-          = @member.home_municipality
-        
-      - if @member.position
-        %li
-          %strong Pelipaikka:
-          = t("member.position.#{@member.position}")
+
+  .content-wrapper
+    %div#player-pic
+      = image_tag @member.photo.url(:normal)
       
-      - if @member.shoots
-        %li
-          %strong Kätisyys:
-          = t("member.shoots.#{@member.shoots}")
+    %div#player-info
+      %ul
+        - if @member.birth_year
+          %li
+            %strong Syntynyt:
+            = @member.birth_year
+          
+        - if @member.home_municipality
+          %li
+            %strong Kotikunta:
+            = @member.home_municipality
+          
+        - if @member.position
+          %li
+            %strong Pelipaikka:
+            = t("member.position.#{@member.position}")
         
-      - for question in @member.questions
-        %li
-          %strong= question
-          = question.answer
+        - if @member.shoots
+          %li
+            %strong Kätisyys:
+            = t("member.shoots.#{@member.shoots}")
+          
+        - for question in @member.questions
+          %li
+            %strong= question
+            = question.answer
+
+      - unless @member.statistics.empty?
+        %h2.cb Tilastot
+        %table#statistics
+          %thead
+            %tr
+              %th Kausi
+              %th O
+              %th M
+              %th S
+              %th P
+              %th J
+          %tbody
+            - sum_statistics_per_season(@member.statistics).each do |season, statistic|
+              %tr{ :class => cycle(:odd, :even) }
+                %td= season
+                %td= statistic.matches
+                %td= statistic.goals
+                %td= statistic.assists
+                %td= statistic.points
+                %td= statistic.pim

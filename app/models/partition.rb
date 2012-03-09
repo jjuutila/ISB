@@ -3,7 +3,7 @@ class Partition < ActiveRecord::Base
   belongs_to :season
   has_many :team_standings
   has_many :matches
-  has_many :statistics
+  has_many :statistics, :inverse_of => :partition
   has_many :statistics_with_matches, :class_name => 'Statistic', :conditions => 'matches > 0',
     :include => :member
   

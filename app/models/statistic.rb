@@ -35,6 +35,14 @@ class Statistic < ActiveRecord::Base
     matching_stats = Statistic.where :member_id => member_id, :partition_id => partition_id
     errors.add(:unique, "Member already has statistics.") if matching_stats.count != 0
   end
+
+  def +(statistic)
+    self.matches += statistic.matches
+    self.pim += statistic.pim
+    self.assists += statistic.assists
+    self.goals += statistic.goals
+    self
+  end
   
   private
   
@@ -43,5 +51,5 @@ class Statistic < ActiveRecord::Base
     self.pim = 0 unless self.pim
     self.assists = 0 unless self.assists
     self.goals = 0 unless self.goals    
-  end 
+  end
 end

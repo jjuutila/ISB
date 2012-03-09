@@ -458,12 +458,20 @@ div#player-pic img {
   margin:4px;
 }
 
-div#player-info ul {
-  list-style: none;
-  margin:0;
-}
+div#player-info {
+  h2 {
+    clear: both;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
 
-div#player-info ul li { margin-bottom:6px; }
+  li {
+    margin-bottom:6px;
+  }
+ }
+}
 
 /************************************************
  * History page

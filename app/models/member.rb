@@ -23,10 +23,10 @@ class Member < ActiveRecord::Base
     :message => 'Numero tulee olla väliltä 0-99.'
     
   validates_numericality_of :all_time_assists, :greater_than_or_equal_to => 0, :less_than_or_equal_to => 999,
-    :message => 'Syötöt tulee olla väliltä 0-99.'
+    :message => 'Syötöt tulee olla väliltä 0-999.'
     
   validates_numericality_of :all_time_goals, :greater_than_or_equal_to => 0, :less_than_or_equal_to => 999,
-    :message => 'Maalit tulee olla väliltä 0-99.'
+    :message => 'Maalit tulee olla väliltä 0-999.'
   
   validates_numericality_of :birth_year, :greater_than_or_equal_to => 1900,
     :less_than_or_equal_to => DateTime::now().year(),
@@ -42,8 +42,6 @@ class Member < ActiveRecord::Base
     
   validates_attachment_content_type :photo, :content_type => ['image/jpg', 'image/jpeg', 'image/png']
   
-  after_initialize :set_defaults
-  
   accepts_nested_attributes_for :questions, :allow_destroy => true
   
   scope :in_season, lambda { |season| joins(:affairs).where(:affairs => {:season_id => season.id}) }
@@ -52,9 +50,10 @@ class Member < ActiveRecord::Base
   scope :all_time_players_for_season, lambda { |season| with_role("player").in_season(season).order("all_time_goals + all_time_assists DESC, last_name ASC")}
   
   before_validation :set_shoots_as_nil, :if => Proc.new { |m| m.shoots == "" }
+  before_validation :set_alltime_to_zero
   
   def self.players_with_points_in_any_season(gender_is_male)
-    # In PostreSQL all selected columns (except aggregated ones) must appear in the group-by clause.
+    # In PostgreSQL all selected columns (except aggregated ones) must appear in the group-by clause.
     Member.group(self.col_list).joins(:affairs).
       where("affairs.role = 'player' AND (all_time_goals + all_time_assists > 0 AND gender = ?)", gender_is_male).
       order("all_time_goals + all_time_assists DESC, all_time_goals DESC")
@@ -74,9 +73,9 @@ class Member < ActiveRecord::Base
   
   protected
   
-  def set_defaults
-    self.all_time_assists = 0 unless self.all_time_assists
-    self.all_time_goals = 0 unless self.all_time_goals
+  def set_alltime_to_zero
+    self.all_time_assists ||= 0
+    self.all_time_goals ||= 0
   end
   
   # Creates a comma separeted list of columns in 'members' table

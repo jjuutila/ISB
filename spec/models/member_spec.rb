@@ -40,15 +40,21 @@ describe Member do
     it { should validate_attachment_size(:photo).less_than(20.megabytes) }
   end
   
-  context "initalization" do
+  context "before validations" do
     it "sets alltime values to 0 if not set previously" do
       member = Member.new
+
+      member.valid?
+
       member.all_time_assists.should == 0
       member.all_time_goals.should == 0
     end
     
     it "doesn't change alltime values if set previously" do
       member = Member.new :all_time_assists => 3, :all_time_goals => 12
+
+      member.valid?
+
       member.all_time_assists.should == 3
       member.all_time_goals.should == 12
     end
@@ -57,6 +63,9 @@ describe Member do
   context "all-time points" do
     it "sums the the goals and assists" do
       member = Member.new :all_time_goals => 5, :all_time_assists => 3
+
+      member.valid?
+
       member.all_time_points.should == 8
     end
   end
