@@ -6,13 +6,19 @@
 
 %head
   %meta{ :charset => 'UTF-8' }
-  %meta{ :name => "description", :content => @meta_description }
+  %meta{ :name => "description", :content => yield(:description) }
   %meta{ :name => "keywords", :content => "Ilmajoen, Salibandy, ISB, Ilmajoki" }
   %meta{ :name => "author", :content => "Ilmajoen Salibandy ry" }
   %meta{ :name => 'og:image', :content => fb_logo_path }
   
   =favicon_link_tag "favicon.ico"
-  %title= @meta_title
+
+  %title
+    - if content_for?(:title)
+      = yield(:title)
+      = " - "
+    = "Ilmajoen Salibandy"
+
   = stylesheet_link_tag "application", "http://fonts.googleapis.com/css?family=Molengo"
   = javascript_include_tag "modernizr.custom.js"
   

@@ -1,10 +1,6 @@
 # coding: utf-8
 class ApplicationController < ActionController::Base
-  before_filter :set_section_groups, :meta_defaults
-
-  def add_title(title)
-    @meta_title = title + ' - Ilmajoen Salibandy'
-  end
+  before_filter :set_section_groups
   
   private
 
@@ -13,7 +9,6 @@ class ApplicationController < ActionController::Base
   end
 
   def meta_defaults
-    @meta_title = 'Ilmajoen Salibandy'
     @meta_description = "Sähäkkää salibandyä Ilmajoelta"
   end
 end
