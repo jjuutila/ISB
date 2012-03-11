@@ -7,8 +7,4 @@ class ApplicationController < ActionController::Base
   def set_section_groups
     @section_groups = SectionGroup.visible
   end
-
-  def meta_defaults
-    @meta_description = "Sähäkkää salibandyä Ilmajoelta"
-  end
 end
