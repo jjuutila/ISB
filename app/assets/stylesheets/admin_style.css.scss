@@ -32,19 +32,23 @@ img {
 header#main {
   padding:8px 5px 0 10px;
   color:#303032;
-}
+  
+  div.title {
+    float: left;
+  }
 
-header#main h1 {
-  display: inline;
-  vertical-align:super;
-  font:normal bold 2.7em Arial, sans-serif;
-  letter-spacing:0.09em;
-  padding-left:12px;
+  h1 {
+    display: inline;
+    vertical-align: super;
+    font: normal bold 2.7em Arial, sans-serif;
+    letter-spacing: 0.09em;
+    padding-left: 12px;
+  }
 }
 
 #sign-out {
   float:right;
-  margin:30px 20px 0 0;
+  margin:30px 20px 10px 0;
 }
 
 #sign-out a {
@@ -127,37 +131,39 @@ fieldset.inputs ol li.inline-input input {
 button.remove-question {
   float:right;
 }
+
 nav#global {
-  margin:12px 0 -1px;
-  clear:both;
-}
+  margin: 80px 0 -1px 0;
+  clear: both;
 
-nav#global ul {
-  list-style:none;
-}
+  ul {
+    list-style: none;
+    margin: 0;
 
-nav#global ul li {
-  display:inline-block;
-  background-color:#5562bc;
-  margin-right:10px;
-  padding:8px;
-  border:1px solid #e1e1e1;
-}
+    li {
+      display:inline-block;
+      background-color:#5562bc;
+      margin-right:10px;
+      padding:8px;
+      border:1px solid #e1e1e1;
+    }
 
-nav#global ul li.selected {
-  background-color:#F9F9F9;
-  border-bottom-color:#F9F9F9;
-}
+    li.selected {
+      background-color:#F9F9F9;
+      border-bottom-color:#F9F9F9;
 
-nav#global ul li a {
-  text-decoration:none;
-  font:normal bold 1.1em/1.5em Arial, sans-serif;
-  color:#ffffff;
-  text-transform: uppercase;
-}
+      a {
+        color:#f68d28;
+      }
+    }
 
-nav#global ul li.selected a {
-  color:#f68d28;
+    li a {
+      text-decoration:none;
+      font:normal bold 1.1em/1.5em Arial, sans-serif;
+      color:#ffffff;
+      text-transform: uppercase;
+    }
+  }
 }
 
 #contextNavi {

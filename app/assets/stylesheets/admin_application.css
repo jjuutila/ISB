@@ -3,6 +3,6 @@
  *= require normalize.css
  *= require formtastic
  *= require formtastic_changes.css
- *= require admin_style.css
+ *= require admin_style.css.scss
  *= require admin_section_selection.css.scss
  */

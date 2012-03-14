@@ -1,5 +1,6 @@
-= image_tag('isb_logo_small.png', :size => '60x60')
-%h1 Hallintasivut
+.title
+  = image_tag('isb_logo_small.png', :size => '60x60')
+  %h1 Hallintasivut
 
 #sign-out
   = link_to 'Kirjaudu ulos', destroy_user_session_path
