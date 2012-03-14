@@ -28,10 +28,10 @@
     = form.commit_button :label => 'Tallenna'
     
   - content_for :javascript do
-    = javascript_include_tag "qa_item_handler.js"
+    = javascript_include_tag "qa_item_handler"
     :javascript
       $(document).ready(function() {
         var availableQuestions = #{make_string_array @questions}
-        questions = new QAItemHandler($('#questions'), availableQuestions);
+        questions = new window.QAItemHandler($('#questions'), availableQuestions);
         questions.init();
       });

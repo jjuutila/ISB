@@ -12,7 +12,7 @@ class QAItemHandler
     @orderedList = @fieldset.children().first()
     
   addMoreButton: ->
-    addButton = $('<button type="button" class="new-question"><img alt="Add" src="/images/add.png" /> Uusi kysymys</button>')
+    addButton = $('<button type="button" class="new-question"><img alt="Add" src="<%= asset_path('add.png') %>" /> Uusi kysymys</button>')
     @container.after(addButton)
     addButton.click =>
       @addNewQuestion()
@@ -25,7 +25,7 @@ class QAItemHandler
 
     
   createRemoveButton: ->
-    removeButton = $('<button type="button" class="remove-question"><img alt="cross" src="/images/cross.png" /></button>')
+    removeButton = $('<button type="button" class="remove-question"><img alt="cross" src="<%= asset_path('cross.png') %>" /></button>')
     removeButton.bind 'click', {questionIndex: @questionNumber}, (event) =>
       @removeQuestion(event)
       
@@ -61,3 +61,5 @@ class QAItemHandler
     
     fieldset.append(@createRemoveButton())
     @questionNumber++
+
+window.QAItemHandler = QAItemHandler
