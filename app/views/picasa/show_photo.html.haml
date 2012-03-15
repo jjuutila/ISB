@@ -1,3 +1,6 @@
+- title "#{@album.title} - #{@section}"
+- description truncate(@photo.summary, :length => 120, :separator => ' ')
+
 %header
   %h1= @album.title
 

@@ -1,3 +1,6 @@
+- title @news.title
+- description truncate(@news.content, :length => 120, :separator => ' ')
+
 %article{:id => 'news', :class => 'basic-box' }
   %header
     %h1= @news
