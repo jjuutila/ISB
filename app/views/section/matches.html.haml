@@ -7,6 +7,5 @@
     %h1= "Ei tiedossa olevia otteluita"
 
 - if @partition
-  = partition_content_link_list_for(@partition) {|p| show_matches_path(@section.slug, p) }
-  
-= render :partial => 'section/matches', :locals => { :matches => @partition.matches }
+  = partition_content_link_list_for(@partition) {|p| show_matches_path(@section.slug, p) }  
+  = render :partial => 'section/matches', :locals => { :matches => @partition.matches }
