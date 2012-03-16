@@ -1,3 +1,4 @@
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
 
 # Capistrano database.yml task
 require File.expand_path('../deploy/capistrano_database', __FILE__)
@@ -11,8 +12,7 @@ set :application, "isb"
 set :repository,  "git://github.com/jaskaj/ISB.git"
 
 set :scm, :git
-set :deploy_via, :remote_cache
-set :branch, "master"
+set :git_shallow_clone, 1
 
 set :user, "isb"
 
