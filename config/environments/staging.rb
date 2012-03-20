@@ -32,6 +32,9 @@ Isb::Application.configure do
   # Heroku needs this to be true
   config.serve_static_assets = true
 
+  # Required for Devise in Heroku
+  config.assets.initialize_on_precompile = false
+
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
 
