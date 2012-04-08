@@ -15,7 +15,7 @@
             %strong Syntynyt:
             = @member.birth_year
           
-        - if @member.home_municipality
+        - unless @member.home_municipality.blank?
           %li
             %strong Kotikunta:
             = @member.home_municipality
