@@ -1,7 +1,9 @@
-Factory.define :season do |f|
-  f.sequence(:division) {|n| "#{n}. divisioona" }
-  f.history Faker::Lorem.paragraph(1)
-  f.state "active"
-  f.association :section
-  f.sequence(:start_year, 2010) {|n| n }
+FactoryGirl.define do
+  factory :season do
+    sequence(:division) {|n| "#{n}. divisioona" }
+    history Faker::Lorem.paragraph(1)
+    state "active"
+    association :section
+    sequence(:start_year, 2010) {|n| n }
+  end
 end

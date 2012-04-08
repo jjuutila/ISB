@@ -74,10 +74,10 @@ describe Member do
     before(:each) do
       @season = mock_model(Season)
       
-      @player = Factory.create(:member)
+      @player = FactoryGirl.create(:member)
       @player.affairs.create(:season => @season, :role => "player")
       
-      @coach = Factory.create(:member)
+      @coach = FactoryGirl.create(:member)
       @coach.affairs.create(:season => @season, :role => "coach")
     end
     
@@ -94,16 +94,16 @@ describe Member do
     before(:each) do
       season = mock_model(Season)
       
-      @player_with_points = Factory.create(:member, :all_time_goals => 4, :gender => true)
+      @player_with_points = FactoryGirl.create(:member, :all_time_goals => 4, :gender => true)
       @player_with_points.affairs.create(:season => season, :role => "player")
       
-      player_with_no_points = Factory.create(:member, :all_time_goals => 0, :all_time_assists => 0, :gender => true)
+      player_with_no_points = FactoryGirl.create(:member, :all_time_goals => 0, :all_time_assists => 0, :gender => true)
       player_with_no_points.affairs.create(:season => season, :role => "player")
       
-      female_with_points = Factory.create(:member, :all_time_goals => 9, :gender => false)
+      female_with_points = FactoryGirl.create(:member, :all_time_goals => 9, :gender => false)
       female_with_points.affairs.create(:season => season, :role => "player")
       
-      coach = Factory.create(:member)
+      coach = FactoryGirl.create(:member)
       coach.affairs.create(:season => season, :role => "coach")
     end
     

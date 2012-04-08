@@ -27,7 +27,7 @@ describe Partition do
   
   context "latest" do
     it "should find the latest season's last partition" do
-      section = Factory.build :section
+      section = FactoryGirl.build :section
       season = mock_model(Season)
       Season.stub(:latest).with(section) { season }
       Season.create :start_year => 2009, :division => "2. divisioona", :section => section

@@ -17,7 +17,7 @@ describe User do
   describe "selected_section" do
     before(:each) do
       @user = User.new(:first_name => "John", :last_name => "Doe")
-      @section = Factory.create :section
+      @section = FactoryGirl.create :section
     end
     
     it "sets User.section as the first leaf section found if User.section is nil" do

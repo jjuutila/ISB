@@ -6,7 +6,7 @@ require 'spork'
 module ControllerMacros
   def user_login
     before(:each) do
-      @user = Factory.build(:user)
+      @user = FactoryGirl.build(:user)
       @user.confirm!
       @user.save!
       sign_in @user
@@ -16,7 +16,7 @@ module ControllerMacros
   # For main site's before_filter
   def create_section
     before(:each) do
-      group = Factory.create :section_group, :name => 'Miehet'
+      group = FactoryGirl.create :section_group, :name => 'Miehet'
       @section = Section.create! :name => 'Edustus', :slug => 'edustus', :group => group,
         :picasa_user_id => 'user_id' 
     end

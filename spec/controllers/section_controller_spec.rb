@@ -39,7 +39,7 @@ describe SectionController do
   
   describe "'GET' guestbook" do
     it "sets the requested section's comments as @messages" do
-      message = Factory.build :comment
+      message = FactoryGirl.build :comment
       message.assign_attributes({:commentable_id => @section.id, :commentable => @section},
         :without_protection => true)
       message.save!

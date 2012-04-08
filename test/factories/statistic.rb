@@ -1,6 +1,8 @@
-Factory.define :statistic do |s|
-  s.assists rand(100)
-  s.goals rand(100)
-  s.pim rand(100)
-  s.matches rand(100)
+FactoryGirl.define do
+  factory :statistic do
+    assists rand(100)
+    goals rand(100)
+    pim rand(100)
+    matches rand(100)
+  end
 end

@@ -1,3 +1,5 @@
-Factory.define :team_standing do |f|
-  f.sequence(:name) {|n| "Team #{n}" }
+FactoryGirl.define do
+  factory :team_standing do
+    sequence(:name) {|n| "Team #{n}" }
+  end
 end

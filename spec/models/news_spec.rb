@@ -20,16 +20,16 @@ describe News do
   
   context "slug" do
     before(:each) do
-      @section = Factory.build(:section)
+      @section = FactoryGirl.build(:section)
     end
 
     it "is generated on update" do  
-      news = Factory.create(:news, :title => "Tämä on otsikko.", :sections => [@section])
+      news = FactoryGirl.create(:news, :title => "Tämä on otsikko.", :sections => [@section])
       news.slug.should == "tama-on-otsikko"
     end
 
     it "is updated on update" do
-      news = Factory.create(:news, :sections => [@section])
+      news = FactoryGirl.create(:news, :sections => [@section])
       
       news.title = 'Updated title'
       news.save
@@ -38,16 +38,16 @@ describe News do
     end
 
     it "is created unique" do
-      Factory.create(:news, :title => "Common title", :sections => [@section])
+      FactoryGirl.create(:news, :title => "Common title", :sections => [@section])
 
-      news = Factory.create(:news, :title => "Common title", :sections => [@section])
+      news = FactoryGirl.create(:news, :title => "Common title", :sections => [@section])
 
       news.slug.should == 'common-title--2'
     end
 
     it "is updated unique" do
-      Factory.create(:news, :title => "Common title", :sections => [@section])
-      news = Factory.create(:news, :title => "Other title", :sections => [@section])
+      FactoryGirl.create(:news, :title => "Common title", :sections => [@section])
+      news = FactoryGirl.create(:news, :title => "Other title", :sections => [@section])
       
       news.title = 'Common title'
       news.save
