@@ -1,8 +1,6 @@
 module MemberStatisticsHelper
   def sum_statistics_per_season statistics
-    results = Hash.new
-
-    statistics.each do |statistic|
+    statistics.each_with_object(Hash.new) do |statistic, results|
       season = statistic.partition.season
 
       unless results.has_key? season
@@ -11,7 +9,5 @@ module MemberStatisticsHelper
 
       results[season] += statistic
     end
-
-    results
   end
 end
