@@ -10,7 +10,7 @@ class Affair < ActiveRecord::Base
   scope :players_on_season, lambda { |id| where("season_id = ? AND role = ?", id, 'player') }
   
   def is_member_already_assigned
-    matching_affairs = Affair.where :member_id => member_id, :season_id => season_id
-    errors.add(:unique, "Member already assigned to season.") if matching_affairs.count != 0
+    number_of_matching_affairs = Affair.where(:member_id => member_id, :season_id => season_id).count
+    errors.add(:unique, "Member already assigned to season.") if number_of_matching_affairs > 0
   end
 end
