@@ -1,26 +1,15 @@
-class SeasonObserver < ActiveRecord::Observer
-  observe :affair, :partition
+class AffairObserver < ActiveRecord::Observer
   
   def after_create(object)
-    if object.class == Affair
-      create_statistics_for_player object
-    elsif object.class == Partition
-      create_statistics_for_partition object
-    end
+    create_statistics_for_player object
   end
   
   def after_update(object)
-    if object.class == Affair
-      affair_updated object
-    end
+    affair_updated object
   end
   
-  def after_destroy(object)
-    if object.class == Affair
-      destroy_statistics_from_season object
-    elsif object.class == Partition
-      destroy_statistics_from_partition object
-    end
+  def after_destroy(model)
+    destroy_statistics_from_season model
   end
   
   private
