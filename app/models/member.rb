@@ -54,7 +54,7 @@ class Member < ActiveRecord::Base
   
   def self.players_with_points_in_any_season(gender_is_male)
     # In PostgreSQL all selected columns (except aggregated ones) must appear in the group-by clause.
-    Member.group(self.col_list).joins(:affairs).
+    Member.group(self.create_comma_separated_column_list).joins(:affairs).
       where("affairs.role = 'player' AND (all_time_goals + all_time_assists > 0 AND gender = ?)", gender_is_male).
       order("all_time_goals + all_time_assists DESC, all_time_goals DESC")
   end
@@ -78,9 +78,8 @@ class Member < ActiveRecord::Base
     self.all_time_goals ||= 0
   end
   
-  # Creates a comma separeted list of columns in 'members' table
-  def self.col_list
-    Member.column_names.collect {|c| "members.#{c}"}.join(",")
+  def self.create_comma_separated_column_list
+    Member.column_names.collect {|column| "members.#{column}"}.join(",")
   end
   
   def set_shoots_as_nil
