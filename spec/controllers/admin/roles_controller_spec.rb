@@ -45,7 +45,7 @@ describe Admin::RolesController do
   describe "POST create" do
     before(:each) do
       Season.stub(:find).with("2") { mock_season }
-      Member.stub(:find).with("1") { mock_member }
+      Member.stub(:find).with(1) { mock_member }
       @params = {"role" => "player"}
     end
     
