@@ -27,16 +27,18 @@ group :production do
   gem 'therubyracer'
 end
 
+group "development" do
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  # OS X file change notifier
+  gem 'rb-fsevent', '~> 0.9.1'
+end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
-  gem "spork"
   gem 'rspec-rails', '~> 2.7'
   gem 'shoulda'
   gem 'capybara'
   gem 'jasmine'
-end
-
-group :test do
-  gem 'guard-rspec'
 end
