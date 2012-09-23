@@ -25,6 +25,7 @@ end
 group :production do
   gem 'execjs'
   gem 'therubyracer'
+  gem 'newrelic_rpm'
 end
 
 group "development" do
