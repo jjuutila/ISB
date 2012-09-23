@@ -4,4 +4,4 @@
   = link_to image_tag('arrow_left.png', :size => '16x16'), admin_link_category_path(@link.category)
   = link_to 'Takaisin', admin_link_category_path(@link.category)
 
-= render :partial => 'form', :locals => {:url => admin_link_category_link_path(@link)}
+= render :partial => 'form', :locals => {:url => admin_link_category_link_path(@link.category, @link)}
