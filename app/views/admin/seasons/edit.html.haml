@@ -9,5 +9,5 @@
     = form.input :start_year, :label => "Aloitusvuosi", :input_html => { :maxlength => 4 }
     = form.input :division, :label => 'Divisioona'
 
-  = form.buttons do
-    = form.commit_button :label => 'Tallenna'
+  = form.actions do
+    = form.action :submit, :label => 'Tallenna'

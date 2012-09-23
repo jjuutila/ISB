@@ -8,7 +8,7 @@
     - if devise_mapping.rememberable?
       = form.input :remember_me
   
-  = form.buttons do
-    = form.commit_button :label => 'Kirjaudu'
+  = form.actions do
+    = form.action :submit, :label => 'Kirjaudu'
     
 = render :partial => "devise/shared/links"

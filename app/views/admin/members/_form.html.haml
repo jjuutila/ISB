@@ -24,8 +24,8 @@
         = q.input :content, :label => "Kysymys", :wrapper_html => { :class => "inline-input" }, :input_html => {:class => 'question'}
         = q.input :answer, :label => "Vastaus", :wrapper_html => { :class => "inline-input" }
 
-  = form.buttons do
-    = form.commit_button :label => 'Tallenna'
+  = form.actions do
+    = form.action :submit, :label => 'Tallenna'
     
   - content_for :javascript do
     = javascript_include_tag "qa_item_handler"

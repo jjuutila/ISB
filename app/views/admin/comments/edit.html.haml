@@ -14,5 +14,5 @@
     = form.input :email, :label => 'Sähköposti'
     = form.input :content, :label => 'Viesti'
   
-  = form.buttons do
-    = form.commit_button "Tallenna"
+  = form.actions do
+    = form.action :submit, :label => "Tallenna"

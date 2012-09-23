@@ -7,5 +7,5 @@
   
   = form.input :title, :label => 'Otsikko', :input_html => { :size => 80 }
   = form.input :content, :label => 'Sisältö'
-= form.buttons do
-  = form.commit_button :label => 'Tallenna'
+= form.actions do
+  = form.action :submit, :label => 'Tallenna'

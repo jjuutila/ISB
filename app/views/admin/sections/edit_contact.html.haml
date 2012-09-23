@@ -12,5 +12,5 @@
     #help Huom! Tähän lomakkeeseen syötetty HTML-merkkaus näkyy sellaisenaan pääsivuilla.
     = form.input :contact_info, :label => 'Yhteystiedot'
     
-  = form.buttons do
-    = form.commit_button :label => 'Tallenna'
+  = form.actions do
+    = form.action :submit, :label => 'Tallenna'
