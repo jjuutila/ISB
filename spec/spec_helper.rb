@@ -2,6 +2,7 @@ ENV["RAILS_ENV"] ||= 'test'
 
 require 'rubygems'
 require 'spork'
+require 'capybara/rspec'
 
 module ControllerMacros
   def user_login
