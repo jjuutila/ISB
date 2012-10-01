@@ -1,13 +1,12 @@
 # Capistrano database.yml task
 require File.expand_path('../deploy/capistrano_database', __FILE__)
 
-$:.unshift(File.expand_path('./lib', ENV['rvm_path']))  # Add RVM's lib directory to the load path.
 require "rvm/capistrano"                                # Load RVM's capistrano plugin.
 set :rvm_ruby_string, 'ruby-1.9.2-p290@isb'             # RVM gemset
 set :rvm_type, :user                                    # Deploying to user's home directory
 
 set :application, "isb"
-set :repository,  "git://github.com/jaskaj/ISB.git"
+set :repository,  "git://github.com/jjuutila/ISB.git"
 
 set :scm, :git
 set :git_shallow_clone, 1
